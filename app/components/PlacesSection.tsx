@@ -9,7 +9,7 @@ export default function PlacesSection() {
       id: 1,
       name: "Hunza Valley",
       region: "Gilgit-Baltistan",
-      image: "/hunza.jpg",
+      image: "/hunza1.jpg",
       highlights: ["Karimabad", "Attabad Lake", "Rakaposhi View"],
       description: "Ancient forts, turquoise lakes, and snow-capped peaks"
     },
@@ -17,7 +17,7 @@ export default function PlacesSection() {
       id: 2,
       name: "Skardu",
       region: "Gilgit-Baltistan",
-      image: "/skardu.jpg",
+      image: "/skardu1.jpg",
       highlights: ["Shangrila Resort", "Deosai Plains", "Shigar Fort"],
       description: "Gateway to K2 and breathtaking mountain landscapes"
     },
@@ -25,7 +25,7 @@ export default function PlacesSection() {
       id: 3,
       name: "Naran Kaghan",
       region: "Khyber Pakhtunkhwa",
-      image: "/naran.jpg",
+      image: "/naran1.jpg",
       highlights: ["Saif-ul-Malook", "Babusar Top", "Lulusar Lake"],
       description: "Lush green valleys and crystal-clear lakes"
     },
@@ -33,7 +33,7 @@ export default function PlacesSection() {
       id: 4,
       name: "Swat Valley",
       region: "Khyber Pakhtunkhwa",
-      image: "/cultural tours.jpg",
+      image: "/swat.jpg",
       highlights: ["Kalam", "Malam Jabba", "Mingora"],
       description: "Switzerland of Pakistan with rich cultural heritage"
     },

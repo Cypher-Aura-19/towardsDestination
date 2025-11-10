@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="w-full max-w-[1400px] mx-auto px-3 xs:px-4 sm:px-6 py-2.5 xs:py-3 sm:py-4">
         <div className="flex items-center justify-between gap-2 xs:gap-4 sm:gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 shrink-0">
             <div className="relative w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 flex-shrink-0">
               <Image
                 src="/logo.jpeg"
@@ -81,6 +81,12 @@ export default function Navbar() {
               International Tours
             </Link>
             <Link 
+              href="/gallery"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap"
+            >
+              Gallery
+            </Link>
+            <Link 
               href="/about" 
               className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap"
             >
@@ -97,7 +103,7 @@ export default function Navbar() {
           {/* Desktop Book Now Button */}
           <Link 
             href="/contact"
-            className="hidden xl:inline-flex bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-md whitespace-nowrap flex-shrink-0"
+            className="hidden xl:inline-flex bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-md whitespace-nowrap shrink-0"
           >
             Book Now
           </Link>
@@ -174,6 +180,13 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               International Tours
+            </Link>
+            <Link 
+              href="/gallery" 
+              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Gallery
             </Link>
             <Link 
               href="/about" 

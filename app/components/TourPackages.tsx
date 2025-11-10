@@ -12,16 +12,16 @@ export default function TourPackages() {
       priceByRoad: "PKR 45,000",
       priceByAir: "PKR 65,000",
       priceLabel: "/person",
-      image: "/hunza.jpg", // Add your image to public folder
+      image: "/hunza1.jpg", // Add your image to public folder
     },
     {
       id: 2,
-      name: "Skardu & Deosai Plains",
+      name: "Skardu & Hunza",
       location: "Skardu, Pakistan",
       priceByRoad: "PKR 55,000",
       priceByAir: "PKR 75,000",
       priceLabel: "/person",
-      image: "/skardu.jpg", // Add your image to public folder
+      image: "/skardu1.jpg", // Add your image to public folder
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export default function TourPackages() {
       priceByRoad: "PKR 35,000",
       priceByAir: "PKR 50,000",
       priceLabel: "/person",
-      image: "/naran.jpg", // Add your image to public folder
+      image: "/naran1.jpg", // Add your image to public folder
     }
   ];
 
