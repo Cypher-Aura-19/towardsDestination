@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 text-center">
           {/* Company Badge */}
           <div className="mb-4 xs:mb-6">
-            <span className="inline-block bg-white text-gray-900 px-3 xs:px-4 sm:px-6 py-2 xs:py-2.5 sm:py-3 rounded-md text-xs xs:text-sm font-bold">
+            <span className="inline-block bg-white text-red-600 px-3 xs:px-4 sm:px-6 py-2 xs:py-2.5 sm:py-3 rounded-md text-xs xs:text-sm font-bold">
               🏔️ ABOUT OUR COMPANY
             </span>
           </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
           </h1>
           
           <p className="text-base xs:text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
-            <span className="bg-white text-gray-900 px-2.5 xs:px-4 py-1.5 xs:py-2 inline-block rounded-lg text-sm xs:text-lg sm:text-xl md:text-2xl">Let's have an Adventure</span>
+            <span className="bg-white text-red-600 px-2.5 xs:px-4 py-1.5 xs:py-2 inline-block rounded-lg text-sm xs:text-lg sm:text-xl md:text-2xl">Let's have an Adventure</span>
           </p>
           
           <p className="text-white/95 text-sm xs:text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-4 xs:mb-6">
@@ -103,7 +103,7 @@ export default function AboutPage() {
           
           {/* Registration Badge */}
           <div className="inline-flex items-center gap-1.5 xs:gap-2 bg-white/10 backdrop-blur-sm text-white px-3 xs:px-4 sm:px-6 py-2 xs:py-2.5 sm:py-3 rounded-full text-xs xs:text-sm font-semibold">
-            ✓ Registered: FBR • SECP • DTS for Travel • Nadra
+            Registered: FBR • SECP • DTS for Travel • Nadra
           </div>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 xs:gap-6 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-1 xs:mb-2">{stat.value}</div>
+                <div className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-red-600 mb-1 xs:mb-2">{stat.value}</div>
                 <div className="text-gray-600 font-semibold text-xs xs:text-sm sm:text-base">{stat.label}</div>
               </div>
             ))}
@@ -127,10 +127,10 @@ export default function AboutPage() {
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           {/* Section Header */}
           <div className="text-center mb-8 xs:mb-12 sm:mb-16">
-            <span className="inline-block bg-gray-900 text-white px-3 xs:px-4 py-2 rounded-full text-xs xs:text-sm font-bold mb-4">
-              📖 OUR JOURNEY
+            <span className="inline-block bg-red-600 text-white px-3 xs:px-4 py-2 rounded-full text-xs xs:text-sm font-bold mb-4">
+              OUR JOURNEY
             </span>
-            <h2 className="text-xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 break-words">
+            <h2 className="text-xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-600 mb-4 break-words">
               The TOWARDSDESTINATION.PK Story
             </h2>
             <p className="text-gray-600 text-sm xs:text-base sm:text-lg max-w-2xl mx-auto">
@@ -195,20 +195,20 @@ export default function AboutPage() {
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           {/* Section Header */}
           <div className="text-center mb-8 xs:mb-12 sm:mb-16">
-            <span className="inline-block bg-gray-900 text-white px-3 xs:px-4 py-2 rounded-full text-xs xs:text-sm font-bold mb-4">
-              🎯 MISSION & VISION
+            <span className="inline-block bg-red-600 text-white px-3 xs:px-4 py-2 rounded-full text-xs xs:text-sm font-bold mb-4">
+              MISSION & VISION
             </span>
-            <h2 className="text-xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-600 mb-4">
               What Drives Us Forward
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xs:gap-6 sm:gap-8">
             <div className="bg-gray-50 rounded-xl xs:rounded-2xl p-4 xs:p-6 sm:p-8 md:p-10 border border-gray-200">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3 xs:mb-4">Our Mission</h3>
+              <h3 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-red-600 mb-3 xs:mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed text-sm xs:text-base">
                 To provide exceptional travel experiences that showcase the natural beauty and cultural richness of Pakistan, 
                 while ensuring the highest standards of safety, comfort, and customer satisfaction. We aim to make travel 
@@ -216,10 +216,10 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl xs:rounded-2xl p-4 xs:p-6 sm:p-8 md:p-10 border border-gray-200">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3 xs:mb-4">Our Vision</h3>
+              <h3 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-red-600 mb-3 xs:mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed text-sm xs:text-base">
                 To become Pakistan's leading travel service provider, recognized for our commitment to excellence, 
                 innovation, and sustainable tourism. We envision a future where Pakistan's northern beauty is celebrated 
@@ -234,10 +234,10 @@ export default function AboutPage() {
       <section className="py-12 xs:py-16 sm:py-20">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
-            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-red-600 mb-4">
               Our Core Values
             </h2>
-            <p className="text-sm xs:text-base text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 text-sm xs:text-base max-w-2xl mx-auto">
               The principles that guide everything we do and shape our commitment to excellence.
             </p>
           </div>
@@ -247,10 +247,10 @@ export default function AboutPage() {
               const IconComponent = value.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-red-600 mb-3">
                     {value.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -267,17 +267,17 @@ export default function AboutPage() {
       <section className="hidden lg:block py-12 xs:py-16 sm:py-20 bg-gray-50">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
-            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-red-600 mb-4">
               Our Journey
             </h2>
-            <p className="text-sm xs:text-base text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 text-sm xs:text-base max-w-2xl mx-auto">
               Key milestones that have shaped our growth and success over the years.
             </p>
           </div>
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 hidden lg:block"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-red-600 hidden lg:block"></div>
 
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
@@ -285,14 +285,14 @@ export default function AboutPage() {
                   <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                     <div className="bg-white rounded-xl p-6 shadow-sm inline-block">
                       <div className="flex items-center gap-3 mb-2">
-                        <Clock className="w-5 h-5 text-gray-900" />
-                        <span className="text-2xl font-bold text-gray-900">{milestone.year}</span>
+                        <Clock className="w-5 h-5 text-red-600" />
+                        <span className="text-2xl font-bold text-red-600">{milestone.year}</span>
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{milestone.event}</h3>
+                      <h3 className="text-xl font-bold text-red-600 mb-2">{milestone.event}</h3>
                       <p className="text-gray-600">{milestone.description}</p>
                     </div>
                   </div>
-                  <div className="hidden lg:block w-4 h-4 bg-gray-900 rounded-full relative z-10"></div>
+                  <div className="hidden lg:block w-4 h-4 bg-red-600 rounded-full relative z-10"></div>
                   <div className="flex-1"></div>
                 </div>
               ))}
@@ -305,10 +305,10 @@ export default function AboutPage() {
       <section className="py-12 xs:py-16 sm:py-20">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
-            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-red-600 mb-4">
               Meet Our Team
             </h2>
-            <p className="text-sm xs:text-base text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 text-sm xs:text-base max-w-2xl mx-auto">
               Dedicated professionals committed to making your travel experience exceptional.
             </p>
           </div>
@@ -324,7 +324,7 @@ export default function AboutPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                <h3 className="text-xl font-bold text-red-600 mb-1">
                   {member.name}
                 </h3>
                 <p className="text-gray-600 font-medium mb-2">{member.role}</p>
@@ -336,7 +336,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 xs:py-16 sm:py-20 bg-gray-900">
+      <section className="py-12 xs:py-16 sm:py-20 bg-red-600">
         <div className="w-full max-w-4xl mx-auto px-3 xs:px-4 sm:px-6 text-center">
           <h2 className="text-xl xs:text-3xl sm:text-4xl font-bold text-white mb-4 xs:mb-6">
             Ready to Start Your Journey?
@@ -345,10 +345,10 @@ export default function AboutPage() {
             Let us help you create unforgettable memories in Pakistan's beautiful northern regions.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
               Explore Tours
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
               Contact Us
             </button>
           </div>

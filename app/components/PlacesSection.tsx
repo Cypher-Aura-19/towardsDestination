@@ -56,15 +56,19 @@ export default function PlacesSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-white">
-      <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-red-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-16">
-          <span className="inline-block bg-gray-900 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4">
+        <div className="text-center mb-8 sm:mb-16 animate-fade-in-up">
+          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pulse-glow">
             🗺️ EXPLORE PAKISTAN
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Top Places to Visit in Pakistan
+          <h2 className="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
+            <span className="gradient-text">Top Places to Visit in Pakistan</span>
+
           </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
             Discover the breathtaking beauty of Pakistan's northern regions. From majestic mountains to serene valleys, 
@@ -77,21 +81,22 @@ export default function PlacesSection() {
           {places.map((place) => (
             <div 
               key={place.id}
-              className="group cursor-pointer"
+              className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-red-200 border border-transparent animate-fade-in-up"
+              style={{animationDelay: `${place.id * 0.15}s`}}
             >
               {/* Image Container */}
-              <div className="relative h-80 rounded-2xl overflow-hidden mb-4">
+              <div className="relative h-80 overflow-hidden">
                 <Image
                   src={place.image}
                   alt={place.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-125 group-hover:rotate-1 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-red-900/20 to-transparent group-hover:from-black/90 transition-all duration-500"></div>
                 
                 {/* Region Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="inline-flex items-center gap-1 bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-bold">
+                <div className="absolute top-4 left-4 animate-fade-in-left">
+                  <span className="inline-flex items-center gap-1 bg-white text-red-600 px-3 py-1 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <MapPin className="w-3 h-3" />
                     {place.region}
                   </span>
@@ -127,7 +132,7 @@ export default function PlacesSection() {
         <div className="text-center mt-12">
           <a 
             href="/public-tours/by-air"
-            className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full font-bold transition-colors text-lg"
+            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 text-lg shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow"
           >
             Explore All Destinations
             <ArrowRight className="w-5 h-5" />

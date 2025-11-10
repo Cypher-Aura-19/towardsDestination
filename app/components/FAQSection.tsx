@@ -39,42 +39,44 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-0 left-0 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 animate-fade-in-up">
           {/* Left Side - Header */}
-          <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <div className="animate-fade-in-left">
+            <h2 className="text-4xl lg:text-5xl font-bold text-red-600 mb-6 leading-tight">
               Frequently Asked<br />
               Questions
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Have questions? We've got answers! Learn everything you need to plan your journey to Northern Pakistan or your Umrah pilgrimage.
             </p>
-            <button className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors font-medium">
+            <button className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
               Contact Us
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
 
           {/* Right Side - FAQ Accordion */}
-          <div className="space-y-4">
+          <div className="space-y-4 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
             {faqs.map((faq, index) => (
               <div 
                 key={faq.id}
-                className="border-b border-gray-200 pb-4"
+                className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-lg hover:border-red-200 transition-all duration-300 pb-4"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex items-center justify-between text-left group"
                 >
-                  <span className="text-lg font-semibold text-gray-900 pr-4 group-hover:text-gray-700 transition-colors">
+                  <span className="text-lg font-semibold text-red-600 pr-4 group-hover:text-gray-700 transition-colors">
                     {faq.question}
                   </span>
                   <div className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-colors ${
                     openIndex === index 
-                      ? 'bg-gray-900 border-gray-900 text-white' 
-                      : 'border-gray-900 text-gray-900 group-hover:bg-gray-900 group-hover:border-gray-900 group-hover:text-white'
+                      ? 'bg-red-600 border-red-600 text-white' 
+                      : 'border-red-600 text-red-600 group-hover:bg-red-600 group-hover:border-red-600 group-hover:text-white'
                   }`}>
                     {openIndex === index ? (
                       <Minus className="w-4 h-4" />

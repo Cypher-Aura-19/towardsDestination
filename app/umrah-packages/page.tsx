@@ -165,7 +165,7 @@ export default function UmrahPackages() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-              <Plane className="w-6 h-6 text-gray-900" />
+              <Plane className="w-6 h-6 text-red-600" />
             </div>
             <span className="text-white/90 text-sm font-medium">Sacred Journey</span>
           </div>
@@ -184,7 +184,7 @@ export default function UmrahPackages() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-red-600 mb-4">
               Choose Your Package
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -197,12 +197,12 @@ export default function UmrahPackages() {
               <div 
                 key={pkg.id}
                 className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative ${
-                  pkg.popular ? 'ring-2 ring-gray-900' : ''
+                  pkg.popular ? 'ring-2 ring-red-600' : ''
                 }`}
               >
                 {pkg.popular && (
                   <div className="absolute top-6 right-6 z-10">
-                    <span className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1">
+                    <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1">
                       <Star className="w-4 h-4 fill-white" />
                       Most Popular
                     </span>
@@ -219,7 +219,7 @@ export default function UmrahPackages() {
                       className="object-cover"
                     />
                     <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full">
-                      <span className="text-sm font-medium text-gray-900">{pkg.category}</span>
+                      <span className="text-sm font-medium text-red-600">{pkg.category}</span>
                     </div>
                   </div>
 
@@ -227,7 +227,7 @@ export default function UmrahPackages() {
                   <div className="p-8 lg:col-span-7">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                        <h3 className="text-2xl font-bold text-red-600 mb-2">
                           {pkg.name}
                         </h3>
                         <div className="flex items-center gap-2 text-gray-600">
@@ -240,20 +240,20 @@ export default function UmrahPackages() {
                     {/* Hotels */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-200">
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Hotel className="w-4 h-4 text-gray-900" />
+                        <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Hotel className="w-4 h-4 text-red-600" />
                         </div>
                         <div>
-                          <p className="font-semibold text-gray-900 text-sm mb-1">Makkah</p>
+                          <p className="font-semibold text-red-600 text-sm mb-1">Makkah</p>
                           <p className="text-gray-600 text-sm">{pkg.makkahHotel}</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Hotel className="w-4 h-4 text-gray-900" />
+                        <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Hotel className="w-4 h-4 text-red-600" />
                         </div>
                         <div>
-                          <p className="font-semibold text-gray-900 text-sm mb-1">Madinah</p>
+                          <p className="font-semibold text-red-600 text-sm mb-1">Madinah</p>
                           <p className="text-gray-600 text-sm">{pkg.madinahHotel}</p>
                         </div>
                       </div>
@@ -263,7 +263,7 @@ export default function UmrahPackages() {
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                       {pkg.highlights.slice(0, 4).map((highlight, index) => (
                         <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-gray-900 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -273,10 +273,10 @@ export default function UmrahPackages() {
                     <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-gray-900">{pkg.price}</p>
+                        <p className="text-3xl font-bold text-red-600">{pkg.price}</p>
                         <p className="text-xs text-gray-500 mt-1">per person</p>
                       </div>
-                      <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
+                      <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
                         Book Now
                       </button>
                     </div>
@@ -293,7 +293,7 @@ export default function UmrahPackages() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-red-600 mb-6">
                 Ziyarat Tours Included
               </h2>
               <p className="text-gray-600 text-lg mb-8">
@@ -302,7 +302,7 @@ export default function UmrahPackages() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {ziyadatPlaces.map((place, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-gray-900 flex-shrink-0" />
+                    <MapPin className="w-4 h-4 text-red-600 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{place}</span>
                   </div>
                 ))}
@@ -323,42 +323,42 @@ export default function UmrahPackages() {
       {/* What's Included */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
             What's Included in All Packages
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Plane className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Flights</h3>
+              <h3 className="text-lg font-bold text-red-600 mb-2">Flights</h3>
               <p className="text-gray-600 text-sm">
                 Round-trip airfare from Pakistan to Saudi Arabia
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Hotel className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Accommodation</h3>
+              <h3 className="text-lg font-bold text-red-600 mb-2">Accommodation</h3>
               <p className="text-gray-600 text-sm">
                 Quality hotels near Haram & Masjid Nabawi
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Utensils className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Meals</h3>
+              <h3 className="text-lg font-bold text-red-600 mb-2">Meals</h3>
               <p className="text-gray-600 text-sm">
                 Daily meals as per package selection
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Guide</h3>
+              <h3 className="text-lg font-bold text-red-600 mb-2">Guide</h3>
               <p className="text-gray-600 text-sm">
                 Experienced multilingual tour guide
               </p>
@@ -368,7 +368,7 @@ export default function UmrahPackages() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-red-600">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Begin Your Spiritual Journey?
@@ -377,10 +377,10 @@ export default function UmrahPackages() {
             Contact us today to book your Umrah package or get a customized quote for your group.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
               Book Now
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
               Request Custom Quote
             </button>
           </div>

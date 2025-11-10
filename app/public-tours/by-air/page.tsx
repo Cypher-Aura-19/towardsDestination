@@ -157,14 +157,14 @@ export default function PublicToursByAir() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-gray-900 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
               ✈️ TOWARDSDESTINATION.PK - Public Group Tours
             </span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
             Northern Pakistan Tours<br />
-            <span className="bg-white text-gray-900 px-4 py-2 inline-block rounded-lg mt-2">By Air Travel</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Air Travel</span>
           </h1>
           
           <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
@@ -194,10 +194,10 @@ export default function PublicToursByAir() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
               ✈️ AVAILABLE TOUR PACKAGES
             </span>
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-4xl font-extrabold text-red-600 mb-4">
               Choose Your Perfect Air Tour
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -220,8 +220,8 @@ export default function PublicToursByAir() {
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1">
-                    <Plane className="w-4 h-4 text-gray-900" />
-                    <span className="text-xs font-medium text-gray-900">By Air</span>
+                    <Plane className="w-4 h-4 text-red-600" />
+                    <span className="text-xs font-medium text-red-600">By Air</span>
                   </div>
                 </div>
 
@@ -232,7 +232,7 @@ export default function PublicToursByAir() {
                     <span className="text-sm">{pkg.location}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-red-600 mb-3">
                     {pkg.name}
                   </h3>
 
@@ -247,7 +247,7 @@ export default function PublicToursByAir() {
                   <ul className="space-y-2 mb-6">
                     {pkg.highlights.slice(0, 3).map((highlight, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                        <Check className="w-4 h-4 text-gray-900 flex-shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -257,9 +257,9 @@ export default function PublicToursByAir() {
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-gray-900">{pkg.price}</p>
+                      <p className="text-2xl font-bold text-red-600">{pkg.price}</p>
                     </div>
-                    <button className="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                       Book Now
                     </button>
                   </div>
@@ -273,33 +273,33 @@ export default function PublicToursByAir() {
       {/* Why Choose Air Travel */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
             Why Choose Air Travel?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Plane className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Save Time</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Save Time</h3>
               <p className="text-gray-600">
                 Reach your destination in hours instead of days, maximizing your vacation time.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Aerial Views</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Aerial Views</h3>
               <p className="text-gray-600">
                 Enjoy breathtaking views of mountain ranges and valleys from above.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Comfort</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Comfort</h3>
               <p className="text-gray-600">
                 Travel in comfort and arrive refreshed, ready to explore immediately.
               </p>

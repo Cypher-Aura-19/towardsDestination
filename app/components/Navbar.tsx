@@ -26,7 +26,7 @@ export default function Navbar() {
               />
             </div>
             <div className="hidden lg:block">
-              <span className="text-xl font-bold text-gray-900 block leading-tight whitespace-nowrap">TOWARDSDESTINATION.PK</span>
+              <span className="text-xl font-bold text-red-600 block leading-tight whitespace-nowrap">TOWARDSDESTINATION.PK</span>
               <span className="text-xs text-gray-600 font-semibold whitespace-nowrap">Let's have an Adventure</span>
             </div>
           </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
           {/* Desktop Book Now Button */}
           <Link 
             href="/contact"
-            className="hidden xl:inline-flex bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-md whitespace-nowrap flex-shrink-0"
+            className="hidden xl:inline-flex bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-md whitespace-nowrap flex-shrink-0"
           >
             Book Now
           </Link>
@@ -105,7 +105,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="xl:hidden p-2 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+            className="xl:hidden p-2 text-red-600 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -193,7 +193,7 @@ export default function Navbar() {
             {/* Mobile Book Now Button */}
             <Link 
               href="/contact"
-              className="block mx-4 mt-4 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full text-center font-bold transition-colors shadow-md"
+              className="block mx-4 mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-center font-bold transition-colors shadow-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Book Now

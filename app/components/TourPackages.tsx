@@ -35,24 +35,28 @@ export default function TourPackages() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-40"></div>
+      <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header - Travel Agency Style */}
-        <div className="text-center mb-8 sm:mb-12">
-          <span className="inline-block bg-gray-900 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
+          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
             🏔️ POPULAR TOUR PACKAGES
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
-            Explore Northern Pakistan
+          <h2 className="text-[26px] xs:text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">
+            <span className="gradient-text">Explore Northern Pakistan</span>
+
           </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto mb-6">
             Discover breathtaking valleys, majestic mountains, and crystal-clear lakes. Choose from our carefully curated tour packages with flexible travel options.
           </p>
           <div className="flex justify-center gap-4">
-            <a href="/public-tours/by-air" className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+            <a href="/public-tours/by-air" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               View All Tours
             </a>
-            <a href="/contact" className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-6 py-3 rounded-lg font-bold transition-colors">
+            <a href="/contact" className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Custom Package
             </a>
           </div>
@@ -63,23 +67,24 @@ export default function TourPackages() {
           {destinations.map((destination) => (
             <div 
               key={destination.id}
-              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
+              style={{animationDelay: `${destination.id * 0.1}s`}}
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src={destination.image}
                   alt={destination.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700"
                 />
                 {/* Overlay Badge */}
-                <div className="absolute top-4 left-4 bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-bold">
+                <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse-glow">
                   ⭐ BEST SELLER
                 </div>
                 
                 {/* Price Badge */}
-                <div className="absolute bottom-4 right-4 bg-gray-900 text-white px-4 py-2 rounded-lg shadow-xl">
+                <div className="absolute bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
                   <div className="text-xs font-semibold">Starting from</div>
                   <div className="text-xl font-bold">{destination.priceByRoad}</div>
                 </div>
@@ -91,7 +96,7 @@ export default function TourPackages() {
                   {destination.name}
                 </h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
-                  <MapPin className="w-4 h-4 text-gray-900" />
+                  <MapPin className="w-4 h-4 text-red-600" />
                   <span className="text-sm">{destination.location}</span>
                 </div>
                 
@@ -101,14 +106,14 @@ export default function TourPackages() {
                     <div className="text-xs text-gray-600">By Road</div>
                     <div className="text-sm font-bold text-gray-900">{destination.priceByRoad}</div>
                   </div>
-                  <div className="flex-1 bg-gray-900 px-3 py-2 rounded-lg text-center">
+                  <div className="flex-1 bg-red-600 px-3 py-2 rounded-lg text-center">
                     <div className="text-xs text-white">By Air</div>
                     <div className="text-sm font-bold text-white">{destination.priceByAir}</div>
                   </div>
                 </div>
                 
                 {/* Book Button */}
-                <button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg font-bold transition-colors">
+                <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105">
                   View Details & Book
                 </button>
               </div>

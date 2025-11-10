@@ -26,12 +26,15 @@ export default function ActivitiesSection() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-20 right-20 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Our Popular Activities
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+            <span className="gradient-text">Our Popular Activities</span>
+
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             From thrilling mountain treks to immersive cultural experiences, we offer diverse activities that showcase the best of Pakistan's northern beauty and heritage.
@@ -40,24 +43,25 @@ export default function ActivitiesSection() {
 
         {/* Activities Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {activities.map((activity) => (
+          {activities.map((activity, index) => (
             <div 
               key={activity.id}
-              className="group cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 border border-transparent hover:border-red-200 animate-fade-in-up"
+              style={{animationDelay: `${index * 0.1}s`}}
             >
               {/* Image */}
-              <div className="relative h-64 rounded-2xl overflow-hidden mb-4">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src={activity.image}
                   alt={activity.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="object-cover group-hover:scale-125 group-hover:rotate-1 transition-all duration-700"
                 />
               </div>
 
               {/* Content */}
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-red-600 mb-2 group-hover:text-gray-700 transition-colors">
                   {activity.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -70,7 +74,7 @@ export default function ActivitiesSection() {
 
         {/* Browse All Button */}
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition-colors font-medium">
+          <button className="flex items-center gap-2 px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
             Browse All Activities
             <ArrowRight className="w-5 h-5" />
           </button>
