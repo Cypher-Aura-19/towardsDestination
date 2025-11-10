@@ -1,0 +1,340 @@
+"use client";
+
+import { useState } from "react";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import { Users, Calendar, MapPin, Send, Star } from "lucide-react";
+import Image from "next/image";
+
+export default function PrivateToursPage() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    whatsapp: "",
+    roomsRequired: "",
+    persons: "",
+    departureFrom: "",
+    placesToVisit: "",
+    startDate: "",
+    endDate: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Format message for WhatsApp
+    const whatsappMessage = `*Private Tour Request*%0A%0A*Full Name:* ${formData.fullName}%0A*Email:* ${formData.email}%0A*WhatsApp/Phone:* ${formData.whatsapp}%0A*Rooms Required:* ${formData.roomsRequired}%0A*Number of Persons:* ${formData.persons}%0A*Departure From:* ${formData.departureFrom}%0A*Places to Visit:* ${formData.placesToVisit}%0A*Start Date:* ${formData.startDate}%0A*End Date:* ${formData.endDate}%0A%0A*Additional Message:*%0A${formData.message}`;
+    
+    // WhatsApp number
+    const whatsappNumber = "923153309070";
+    
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
+    
+    // Reset form
+    setFormData({
+      fullName: "",
+      email: "",
+      whatsapp: "",
+      roomsRequired: "",
+      persons: "",
+      departureFrom: "",
+      placesToVisit: "",
+      startDate: "",
+      endDate: "",
+      message: ""
+    });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const features = [
+    "Customized itinerary based on your preferences",
+    "Private vehicle with experienced driver",
+    "Dedicated tour guide",
+    "Flexible schedule and stops",
+    "Premium accommodation options",
+    "Personalized service throughout"
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero.jpg"
+            alt="Private Tours"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          {/* Company Badge */}
+          <div className="mb-6">
+            <span className="inline-block bg-white text-gray-900 px-4 py-2 rounded-md text-sm font-bold">
+              👥 TOWARDSDESTINATION.PK - Exclusive Private Tours
+            </span>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+            Customized Private Tours<br />
+            <span className="bg-white text-gray-900 px-4 py-2 inline-block rounded-lg mt-2">Tailored Just for You</span>
+          </h1>
+          
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
+            Create your perfect journey with our fully customized private tours. Travel with your family or friends at your own pace with personalized itineraries.
+          </p>
+          
+          {/* Quick Stats */}
+          <div className="grid grid-cols-3 gap-4 max-w-2xl">
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">100%</div>
+              <div className="text-xs text-white/80 font-semibold">Customizable</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">24/7</div>
+              <div className="text-xs text-white/80 font-semibold">Support</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">VIP</div>
+              <div className="text-xs text-white/80 font-semibold">Service</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Private Tours */}
+      <section className="py-12 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Exclusive Experience</h3>
+              <p className="text-gray-600">
+                Travel with your family or friends only. No strangers, complete privacy.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Flexible Schedule</h3>
+              <p className="text-gray-600">
+                Choose your dates, duration, and pace. Complete control over your itinerary.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Custom Destinations</h3>
+              <p className="text-gray-600">
+                Visit the places you want. We'll create a personalized route for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Request Form */}
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Request Your Private Tour
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Fill out the form below with your requirements, and we'll create a customized tour package just for you.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-200">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Row 1: Full Name & Email */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="text"
+                    name="fullName"
+                    required
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              {/* Row 2: WhatsApp/Phone */}
+              <div>
+                <input
+                  type="tel"
+                  name="whatsapp"
+                  required
+                  value={formData.whatsapp}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                  placeholder="WhatsApp/Phone +92 300 1234567"
+                />
+              </div>
+
+              {/* Row 3: Room Required & Persons */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="number"
+                    name="roomsRequired"
+                    required
+                    min="1"
+                    value={formData.roomsRequired}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Room Required"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name="persons"
+                    required
+                    min="1"
+                    value={formData.persons}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Persons"
+                  />
+                </div>
+              </div>
+
+              {/* Row 4: Departure From & Places to Visit */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="text"
+                    name="departureFrom"
+                    required
+                    value={formData.departureFrom}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Departure From"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="placesToVisit"
+                    required
+                    value={formData.placesToVisit}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Places You Want To Visit"
+                  />
+                </div>
+              </div>
+
+              {/* Row 5: Start Date & End Date */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="date"
+                    name="startDate"
+                    required
+                    value={formData.startDate}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="Start Date"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="date"
+                    name="endDate"
+                    required
+                    value={formData.endDate}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900"
+                    placeholder="End Date"
+                  />
+                </div>
+              </div>
+
+              {/* Row 6: Message */}
+              <div>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={5}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-gray-900 resize-none"
+                  placeholder="Message (Optional - Any special requirements or preferences)"
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white py-4 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 text-lg"
+              >
+                Request Trip
+                <Send className="w-5 h-5" />
+              </button>
+
+              <p className="text-sm text-gray-600 text-center">
+                Your request will be sent via WhatsApp. We'll respond within 24 hours with a customized quote.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              What's Included in Private Tours
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Every private tour is customized, but here's what you can expect.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm">
+                <Star className="w-5 h-5 text-gray-900 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}

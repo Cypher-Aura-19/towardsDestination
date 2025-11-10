@@ -1,0 +1,346 @@
+"use client";
+
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import { Bus, Calendar, Users, MapPin, Check } from "lucide-react";
+import Image from "next/image";
+
+export default function PublicToursByRoad() {
+  const packages = [
+    {
+      id: 1,
+      name: "Hunza Valley Classic Tour",
+      location: "Gilgit-Baltistan",
+      duration: "7 Days / 6 Nights",
+      price: "PKR 45,000",
+      image: "/hunza.jpg",
+      highlights: [
+        "Comfortable AC coach travel",
+        "Karakoram Highway journey",
+        "Rakaposhi viewpoint stops",
+        "Karimabad & Altit Fort",
+        "Attabad Lake activities",
+        "All meals & accommodation"
+      ]
+    },
+    {
+      id: 2,
+      name: "Skardu Road Adventure",
+      location: "Skardu, Gilgit-Baltistan",
+      duration: "8 Days / 7 Nights",
+      price: "PKR 55,000",
+      image: "/skardu.jpg",
+      highlights: [
+        "Scenic Karakoram Highway",
+        "Deosai Plains safari",
+        "Shangrila & Kachura Lakes",
+        "Shigar Valley exploration",
+        "Manthal Buddha Rock",
+        "Photography stops included"
+      ]
+    },
+    {
+      id: 3,
+      name: "Naran Kaghan Valley Tour",
+      location: "Khyber Pakhtunkhwa",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 35,000",
+      image: "/naran.jpg",
+      highlights: [
+        "Islamabad to Naran drive",
+        "Lake Saif-ul-Malook jeep ride",
+        "Babusar Top excursion",
+        "Lulusar Lake visit",
+        "Shogran & Siri Paye",
+        "Comfortable hotels"
+      ]
+    },
+    {
+      id: 4,
+      name: "Swat Valley Heritage Tour",
+      location: "Swat, Khyber Pakhtunkhwa",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 38,000",
+      image: "/cultural tours.jpg",
+      highlights: [
+        "Scenic Swat motorway",
+        "Malam Jabba resort visit",
+        "Buddhist archaeological sites",
+        "Mingora bazaar tour",
+        "Mahodand Lake day trip",
+        "Local cuisine experience"
+      ]
+    },
+    {
+      id: 5,
+      name: "Chitral & Kalash Explorer",
+      location: "Khyber Pakhtunkhwa",
+      duration: "7 Days / 6 Nights",
+      price: "PKR 52,000",
+      image: "/photography.jpg",
+      highlights: [
+        "Lowari Tunnel crossing",
+        "Kalash Valley immersion",
+        "Traditional village stays",
+        "Chitral Fort & Museum",
+        "Shandur Pass (seasonal)",
+        "Cultural festivals"
+      ]
+    },
+    {
+      id: 6,
+      name: "Neelum Valley Paradise",
+      location: "Azad Kashmir",
+      duration: "6 Days / 5 Nights",
+      price: "PKR 42,000",
+      image: "/hunza.jpg",
+      highlights: [
+        "Muzaffarabad to Kel drive",
+        "Arang Kel chairlift",
+        "Ratti Gali Lake trek",
+        "Sharda & Kundal Shahi",
+        "River-side camping",
+        "Local trout fish meals"
+      ]
+    },
+    {
+      id: 7,
+      name: "Fairy Meadows Road Trek",
+      location: "Nanga Parbat Base",
+      duration: "6 Days / 5 Nights",
+      price: "PKR 48,000",
+      image: "/mountain trekking.jpg",
+      highlights: [
+        "Karakoram Highway travel",
+        "Raikot Bridge jeep ride",
+        "Fairy Meadows trek",
+        "Nanga Parbat base camp",
+        "Camping under stars",
+        "Mountain guide included"
+      ]
+    },
+    {
+      id: 8,
+      name: "Astore & Rama Lake Journey",
+      location: "Gilgit-Baltistan",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 44,000",
+      image: "/skardu.jpg",
+      highlights: [
+        "Astore Valley drive",
+        "Rama Lake camping",
+        "Rupal Valley tour",
+        "Nanga Parbat south face",
+        "Local village visits",
+        "Traditional food"
+      ]
+    },
+    {
+      id: 9,
+      name: "Hunza to Khunjerab Pass",
+      location: "Gilgit-Baltistan",
+      duration: "6 Days / 5 Nights",
+      price: "PKR 50,000",
+      image: "/photography.jpg",
+      highlights: [
+        "Highest paved border crossing",
+        "Passu Cones & Glacier",
+        "Gulmit & Borith Lake",
+        "Khunjerab National Park",
+        "Wildlife spotting",
+        "Border photography"
+      ]
+    },
+    {
+      id: 10,
+      name: "Complete Northern Circuit",
+      location: "Multi-destination",
+      duration: "12 Days / 11 Nights",
+      price: "PKR 85,000",
+      image: "/cultural tours.jpg",
+      highlights: [
+        "Islamabad to Gilgit route",
+        "Hunza, Skardu & Naran",
+        "Multiple valley coverage",
+        "All major attractions",
+        "Comprehensive itinerary",
+        "Best value package"
+      ]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero.jpg"
+            alt="Northern Pakistan Tours By Road"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          {/* Company Badge */}
+          <div className="mb-6">
+            <span className="inline-block bg-white text-gray-900 px-4 py-2 rounded-md text-sm font-bold">
+              🚌 TOWARDSDESTINATION.PK - Public Group Tours
+            </span>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+            Northern Pakistan Tours<br />
+            <span className="bg-white text-gray-900 px-4 py-2 inline-block rounded-lg mt-2">By Road Travel</span>
+          </h1>
+          
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
+            Journey through the legendary Karakoram Highway with our group tours. Experience scenic mountain roads and breathtaking views at a comfortable pace.
+          </p>
+          
+          {/* Quick Stats */}
+          <div className="grid grid-cols-3 gap-4 max-w-2xl">
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">10+</div>
+              <div className="text-xs text-white/80 font-semibold">Tour Packages</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">7-10</div>
+              <div className="text-xs text-white/80 font-semibold">Days Duration</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
+              <div className="text-2xl font-bold text-white">100%</div>
+              <div className="text-xs text-white/80 font-semibold">Safe & Secure</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Packages Grid */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <span className="inline-block bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+              🚌 AVAILABLE TOUR PACKAGES
+            </span>
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+              Choose Your Perfect Road Tour
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              All packages include comfortable transport, accommodation, meals, and guided tours. Experience the journey!
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {packages.map((pkg) => (
+              <div 
+                key={pkg.id}
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow"
+              >
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
+                  <Image
+                    src={pkg.image}
+                    alt={pkg.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1">
+                    <Bus className="w-4 h-4 text-gray-900" />
+                    <span className="text-xs font-medium text-gray-900">By Road</span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 text-gray-600 mb-2">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-sm">{pkg.location}</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    {pkg.name}
+                  </h3>
+
+                  <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{pkg.duration}</span>
+                    </div>
+                  </div>
+
+                  {/* Highlights */}
+                  <ul className="space-y-2 mb-6">
+                    {pkg.highlights.slice(0, 3).map((highlight, index) => (
+                      <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
+                        <Check className="w-4 h-4 text-gray-900 flex-shrink-0 mt-0.5" />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Price & Button */}
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                    <div>
+                      <p className="text-sm text-gray-600">Starting from</p>
+                      <p className="text-2xl font-bold text-gray-900">{pkg.price}</p>
+                    </div>
+                    <button className="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Road Travel */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Why Choose Road Travel?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Scenic Journey</h3>
+              <p className="text-gray-600">
+                Experience the world-famous Karakoram Highway with countless photo opportunities.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Bus className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Budget Friendly</h3>
+              <p className="text-gray-600">
+                More economical option while still enjoying comfortable travel and great experiences.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Cultural Immersion</h3>
+              <p className="text-gray-600">
+                Stop at local villages, interact with communities, and experience authentic culture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
