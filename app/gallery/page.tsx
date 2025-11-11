@@ -55,7 +55,7 @@ export default function Page() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-24 xs:pt-28 sm:pt-32 pb-8 xs:pb-10 sm:pb-12">
+      <section className="relative pt-32 xs:pt-36 sm:pt-40 md:pt-48 pb-16 xs:pb-20 sm:pb-24 md:pb-32 min-h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.jpg"
@@ -68,8 +68,8 @@ export default function Page() {
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 text-center">
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl font-extrabold text-white mb-2">Gallery</h1>
-          <p className="text-white/90 text-sm xs:text-base sm:text-lg max-w-2xl mx-auto">Photos and videos from our tours — click any item to preview.</p>
+          <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold text-white mb-4 xs:mb-6">Gallery</h1>
+          <p className="text-white/90 text-base xs:text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">Photos and videos from our tours — click any item to preview.</p>
         </div>
       </section>
 

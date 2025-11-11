@@ -1,9 +1,12 @@
 "use client";
 
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function TourPackages() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const destinations = [
     {
       id: 1,
@@ -35,13 +38,13 @@ export default function TourPackages() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-linear-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-30"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-40"></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header - Travel Agency Style */}
-        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up relative z-40">
           <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
             🏔️ POPULAR TOUR PACKAGES
           </span>
@@ -53,9 +56,34 @@ export default function TourPackages() {
             Discover breathtaking valleys, majestic mountains, and crystal-clear lakes. Choose from our carefully curated tour packages with flexible travel options.
           </p>
           <div className="flex justify-center gap-4">
-            <a href="/public-tours/by-air" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
-              View All Tours
-            </a>
+            {/* View All Tours with Dropdown */}
+            <div 
+              className="relative z-30"
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
+            >
+              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2">
+                View All Tours
+                <ChevronDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-xl py-2 border border-gray-100 transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                <a 
+                  href="/public-tours/by-air"
+                  className="block  py-1 text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                >
+                  🛫  By Air
+                </a>
+                <a 
+                  href="/public-tours/by-road"
+                  className="block py-1 text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                >
+                  🚗  By Road
+                </a>
+              </div>
+            </div>
+            
             <a href="/contact" className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Custom Package
             </a>
@@ -63,7 +91,7 @@ export default function TourPackages() {
         </div>
 
         {/* Destination Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-0">
           {destinations.map((destination) => (
             <div 
               key={destination.id}
@@ -71,7 +99,7 @@ export default function TourPackages() {
               style={{animationDelay: `${destination.id * 0.1}s`}}
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+              <div className="relative h-64 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
                 <Image
                   src={destination.image}
                   alt={destination.name}

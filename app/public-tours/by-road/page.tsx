@@ -2,172 +2,157 @@
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Bus, Calendar, Users, MapPin, Check } from "lucide-react";
+import { Bus, Calendar, Users, MapPin, Check, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PublicToursByRoad() {
-  const packages = [
-    {
-      id: 1,
-      name: "Hunza Valley Classic Tour",
-      location: "Gilgit-Baltistan",
-      duration: "7 Days / 6 Nights",
-      price: "PKR 45,000",
-      image: "/hunza.jpg",
-      highlights: [
-        "Comfortable AC coach travel",
-        "Karakoram Highway journey",
-        "Rakaposhi viewpoint stops",
-        "Karimabad & Altit Fort",
-        "Attabad Lake activities",
-        "All meals & accommodation"
-      ]
-    },
-    {
-      id: 2,
-      name: "Skardu Road Adventure",
-      location: "Skardu, Gilgit-Baltistan",
-      duration: "8 Days / 7 Nights",
-      price: "PKR 55,000",
-      image: "/skardu.jpg",
-      highlights: [
-        "Scenic Karakoram Highway",
-        "Deosai Plains safari",
-        "Shangrila & Kachura Lakes",
-        "Shigar Valley exploration",
-        "Manthal Buddha Rock",
-        "Photography stops included"
-      ]
-    },
-    {
-      id: 3,
-      name: "Naran Kaghan Valley Tour",
-      location: "Khyber Pakhtunkhwa",
-      duration: "5 Days / 4 Nights",
-      price: "PKR 35,000",
-      image: "/naran.jpg",
-      highlights: [
-        "Islamabad to Naran drive",
-        "Lake Saif-ul-Malook jeep ride",
-        "Babusar Top excursion",
-        "Lulusar Lake visit",
-        "Shogran & Siri Paye",
-        "Comfortable hotels"
-      ]
-    },
-    {
-      id: 4,
-      name: "Swat Valley Heritage Tour",
-      location: "Swat, Khyber Pakhtunkhwa",
-      duration: "5 Days / 4 Nights",
-      price: "PKR 38,000",
-      image: "/cultural tours.jpg",
-      highlights: [
-        "Scenic Swat motorway",
-        "Malam Jabba resort visit",
-        "Buddhist archaeological sites",
-        "Mingora bazaar tour",
-        "Mahodand Lake day trip",
-        "Local cuisine experience"
-      ]
-    },
-    {
-      id: 5,
-      name: "Chitral & Kalash Explorer",
-      location: "Khyber Pakhtunkhwa",
-      duration: "7 Days / 6 Nights",
-      price: "PKR 52,000",
-      image: "/photography.jpg",
-      highlights: [
-        "Lowari Tunnel crossing",
-        "Kalash Valley immersion",
-        "Traditional village stays",
-        "Chitral Fort & Museum",
-        "Shandur Pass (seasonal)",
-        "Cultural festivals"
-      ]
-    },
-    {
-      id: 6,
-      name: "Neelum Valley Paradise",
-      location: "Azad Kashmir",
-      duration: "6 Days / 5 Nights",
-      price: "PKR 42,000",
-      image: "/hunza.jpg",
-      highlights: [
-        "Muzaffarabad to Kel drive",
-        "Arang Kel chairlift",
-        "Ratti Gali Lake trek",
-        "Sharda & Kundal Shahi",
-        "River-side camping",
-        "Local trout fish meals"
-      ]
-    },
-    {
-      id: 7,
-      name: "Fairy Meadows Road Trek",
-      location: "Nanga Parbat Base",
-      duration: "6 Days / 5 Nights",
-      price: "PKR 48,000",
-      image: "/mountain trekking.jpg",
-      highlights: [
-        "Karakoram Highway travel",
-        "Raikot Bridge jeep ride",
-        "Fairy Meadows trek",
-        "Nanga Parbat base camp",
-        "Camping under stars",
-        "Mountain guide included"
-      ]
-    },
-    {
-      id: 8,
-      name: "Astore & Rama Lake Journey",
-      location: "Gilgit-Baltistan",
-      duration: "5 Days / 4 Nights",
-      price: "PKR 44,000",
-      image: "/skardu.jpg",
-      highlights: [
-        "Astore Valley drive",
-        "Rama Lake camping",
-        "Rupal Valley tour",
-        "Nanga Parbat south face",
-        "Local village visits",
-        "Traditional food"
-      ]
-    },
-    {
-      id: 9,
-      name: "Hunza to Khunjerab Pass",
-      location: "Gilgit-Baltistan",
-      duration: "6 Days / 5 Nights",
-      price: "PKR 50,000",
-      image: "/photography.jpg",
-      highlights: [
-        "Highest paved border crossing",
-        "Passu Cones & Glacier",
-        "Gulmit & Borith Lake",
-        "Khunjerab National Park",
-        "Wildlife spotting",
-        "Border photography"
-      ]
-    },
-    {
-      id: 10,
-      name: "Complete Northern Circuit",
-      location: "Multi-destination",
-      duration: "12 Days / 11 Nights",
-      price: "PKR 85,000",
-      image: "/cultural tours.jpg",
-      highlights: [
-        "Islamabad to Gilgit route",
-        "Hunza, Skardu & Naran",
-        "Multiple valley coverage",
-        "All major attractions",
-        "Comprehensive itinerary",
-        "Best value package"
-      ]
-    }
-  ];
+ 
+const packages = [
+  {
+    id: 1,
+    title: "KUMRAT, KALA CHASHMA & DOJANGA MEADOWS (3 Days) Tour",
+    duration: "3 days 2 nights",
+    location: "Kumrat Valley",
+    price: 14500,
+    image: "/kumrat.jpg",
+    rating: 4.8,
+    reviews: 125
+  },
+  {
+    id: 2,
+    title: "5 Days Trip to Hunza & Naltar Valley",
+    duration: "5 Days, 4 Nights",
+    location: "Hunza & Naltar",
+    price: 22000,
+    image: "/hunza.jpg",
+    rating: 4.9,
+    reviews: 210
+  },
+  {
+    id: 3,
+    title: "Naran & Shogran Honeymoon Tour Package (3 Days)",
+    duration: "3 Days 2 Nights",
+    location: "Naran & Shogran",
+    price: 105000,
+    image: "/naran.jpg",
+    rating: 5.0,
+    reviews: 98
+  },
+  {
+    id: 4,
+    title: "3 Days – Naran | Shogran Group Tour Packages",
+    duration: "3 Days 2 Nights",
+    location: "Naran & Shogran",
+    price: 14000,
+    image: "/shogran.jpg",
+    rating: 4.7,
+    reviews: 156
+  },
+  {
+    id: 5,
+    title: "5 Days Trip to Neelum Valley | Taobat| Arang Kel & Ratti Gali",
+    duration: "5 Days 4 Nights",
+    location: "Neelum Valley, Kashmir",
+    price: 25000,
+    image: "/neelum valley.jpg",
+    rating: 4.9,
+    reviews: 189
+  },
+  {
+    id: 6,
+    title: "4 Days Trip to Ratti Gali & Arang kel",
+    duration: "4 Days 3 Nights",
+    location: "Kashmir",
+    price: 0,
+    image: "/arang kel.jpg",
+    rating: 4.6,
+    reviews: 87
+  },
+  {
+    id: 7,
+    title: "Taobat & Arang kel Kashmir : 4 Days Trip",
+    duration: "4 Days 3 Nights",
+    location: "Kashmir",
+    price: 17500,
+    image: "/arang kel.jpg",
+    rating: 4.7,
+    reviews: 92
+  },
+  {
+    id: 8,
+    title: "4 Days Trip to Kumrat | Jahaz Banda & Katora Lake",
+    duration: "4 Days 3 Nights",
+    location: "Kumrat Valley",
+    price: 17500,
+    image: "/kumrat.jpg",
+    rating: 4.8,
+    reviews: 143
+  },
+  {
+    id: 9,
+    title: "3 Days Trip to Ratti Gali Kashmir",
+    duration: "3 Days 2 Nights",
+    location: "Kashmir",
+    price: 15500,
+    image: "/ratti-gali.jpg",
+    rating: 4.5,
+    reviews: 76
+  },
+  {
+    id: 10,
+    title: "5 Days Trip to Fairy Meadows & Beyal Camp",
+    duration: "5 Days 4 Nights",
+    location: "Fairy Meadows",
+    price: 24000,
+    image: "/fairy-meadows.jpg",
+    rating: 4.9,
+    reviews: 167
+  },
+  {
+    id: 11,
+    title: "6 Days Trip to Astore | Minimarg | Rama Meadows| Deosai",
+    duration: "6 Days 5 Nights",
+    location: "Astore & Deosai",
+    price: 28000,
+    image: "/deosai.jpg",
+    rating: 4.8,
+    reviews: 134
+  },
+  {
+    id: 12,
+    title: "8 Days Trip to Hunza & Skardu Valley",
+    duration: "8 Days 7 Nights",
+    location: "Hunza & Skardu",
+    price: 32000,
+    image: "/skardu.jpg" // Image Source
+  },
+  {
+    id: 13,
+    title: "6 Days Trip to Skardu & Deosai Plains",
+    duration: "6 Days 5 Nights",
+    location: "Skardu & Deosai",
+    price: 26000,
+    image: "/skardu.jpg" // Image Source
+  },
+  {
+    id: 14,
+    title: "3 Days Trip to Neelum Valley & Arang Kel",
+    duration: "3 Days 2 Nights",
+    location: "Neelum Valley, Kashmir",
+    price: 14000,
+    image: "/neelum valley.jpg" // Image Source
+  },
+  {
+    id: 15,
+    title: "3 Days Trip to Kalam & Malam Jabba, Swat Valley",
+    duration: "3 Days 2 Nights",
+    location: "Swat Valley",
+    price: 14000,
+    image: "/swat.jpg" // Image Source
+  }
+];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -239,15 +224,16 @@ export default function PublicToursByRoad() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {packages.map((pkg) => (
-              <div 
+              <Link 
                 key={pkg.id}
+                href={`/public-tours/by-road/${pkg.id}`}
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow"
               >
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden">
                   <Image
                     src={pkg.image}
-                    alt={pkg.name}
+                    alt={pkg.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -265,38 +251,36 @@ export default function PublicToursByRoad() {
                   </div>
                   
                   <h3 className="text-xl font-bold text-red-600 mb-3">
-                    {pkg.name}
+                    {pkg.title}
                   </h3>
 
-                  <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{pkg.duration}</span>
-                    </div>
+                  {/* Duration */}
+                  <div className="flex items-center gap-2 text-gray-600 mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-sm">{pkg.duration}</span>
                   </div>
 
-                  {/* Highlights */}
-                  <ul className="space-y-2 mb-6">
-                    {pkg.highlights.slice(0, 3).map((highlight, index) => (
-                      <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                        <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Reviews */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="flex items-center gap-1">
+                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <span className="text-sm font-semibold text-gray-900">{pkg.rating}</span>
+                    </div>
+                    <span className="text-sm text-gray-500">({pkg.reviews} reviews)</span>
+                  </div>
 
                   {/* Price & Button */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-red-600">{pkg.price}</p>
+                      <p className="text-2xl font-bold text-red-600">PKR {pkg.price.toLocaleString()}</p>
                     </div>
                     <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
-                      Book Now
+                      View Details
                     </button>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
