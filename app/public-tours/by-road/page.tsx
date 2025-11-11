@@ -25,7 +25,7 @@ const packages = [
     duration: "5 Days, 4 Nights",
     location: "Hunza & Naltar",
     price: 22000,
-    image: "/hunza.jpg",
+    image: "/hunza1.jpg",
     rating: 4.9,
     reviews: 210
   },
@@ -35,7 +35,7 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Naran & Shogran",
     price: 105000,
-    image: "/naran.jpg",
+    image: "/naran1.jpg",
     rating: 5.0,
     reviews: 98
   },
@@ -45,7 +45,7 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Naran & Shogran",
     price: 14000,
-    image: "/shogran.jpg",
+    image: "/naran1.jpg",
     rating: 4.7,
     reviews: 156
   },
@@ -55,7 +55,7 @@ const packages = [
     duration: "5 Days 4 Nights",
     location: "Neelum Valley, Kashmir",
     price: 25000,
-    image: "/neelum valley.jpg",
+    image: "/neelum.jpg",
     rating: 4.9,
     reviews: 189
   },
@@ -65,7 +65,7 @@ const packages = [
     duration: "4 Days 3 Nights",
     location: "Kashmir",
     price: 0,
-    image: "/arang kel.jpg",
+    image: "/neelum.jpg",
     rating: 4.6,
     reviews: 87
   },
@@ -75,7 +75,7 @@ const packages = [
     duration: "4 Days 3 Nights",
     location: "Kashmir",
     price: 17500,
-    image: "/arang kel.jpg",
+    image: "/neelum.jpg",
     rating: 4.7,
     reviews: 92
   },
@@ -95,7 +95,7 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Kashmir",
     price: 15500,
-    image: "/ratti-gali.jpg",
+    image: "/logo.jpeg",
     rating: 4.5,
     reviews: 76
   },
@@ -105,7 +105,7 @@ const packages = [
     duration: "5 Days 4 Nights",
     location: "Fairy Meadows",
     price: 24000,
-    image: "/fairy-meadows.jpg",
+    image: "/logo.jpeg",
     rating: 4.9,
     reviews: 167
   },
@@ -115,7 +115,7 @@ const packages = [
     duration: "6 Days 5 Nights",
     location: "Astore & Deosai",
     price: 28000,
-    image: "/deosai.jpg",
+    image: "/logo.jpeg",
     rating: 4.8,
     reviews: 134
   },
@@ -141,7 +141,7 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Neelum Valley, Kashmir",
     price: 14000,
-    image: "/neelum valley.jpg" // Image Source
+    image: "/neelum.jpg" // Image Source
   },
   {
     id: 15,
