@@ -2,24 +2,92 @@
 
 import { ArrowRight, Play, Star } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 export default function Hero() {
+  const slideshowRef = useRef<HTMLDivElement>(null);
+  
+  // Array of hero images for slideshow
+  const heroImages = [
+    "/hero.jpg",
+    "/hunza1.jpg",
+    "/skardu.jpg",
+    "/naran1.jpg",
+    "/swat.jpg",
+    "/neelum.jpg",
+  ];
+
+  useEffect(() => {
+    if (!slideshowRef.current) return;
+
+    const slides = slideshowRef.current.querySelectorAll('.hero-slide');
+    if (slides.length === 0) return;
+
+    let currentIndex = 0;
+
+    // Set initial state - first image visible, others hidden
+    gsap.set(slides, { opacity: 0, scale: 1.1 });
+    gsap.set(slides[0], { opacity: 1, scale: 1 });
+
+    const animateSlideshow = () => {
+      const currentSlide = slides[currentIndex];
+      const nextIndex = (currentIndex + 1) % slides.length;
+      const nextSlide = slides[nextIndex];
+
+      // Create timeline for smooth transition
+      const tl = gsap.timeline();
+
+      // Fade out and zoom current slide
+      tl.to(currentSlide, {
+        opacity: 0,
+        scale: 1,
+        duration: 1.5,
+        ease: "power2.inOut",
+      });
+
+      // Fade in and zoom next slide (overlapping)
+      tl.to(
+        nextSlide,
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5,
+          ease: "power2.inOut",
+        },
+        "-=1.5" // Start at the same time as previous animation
+      );
+
+      currentIndex = nextIndex;
+    };
+
+    // Start slideshow with 5 second intervals
+    const interval = setInterval(animateSlideshow, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen pt-32 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/hero.jpg"
-          alt="Northern Pakistan Mountains"
-          fill
-          className="object-cover"
-          priority
-        />
+      {/* Background Slideshow */}
+      <div className="absolute inset-0 z-0" ref={slideshowRef}>
+        {heroImages.map((image, index) => (
+          <div key={index} className="hero-slide absolute inset-0">
+            <Image
+              src={image}
+              alt={`Northern Pakistan - Slide ${index + 1}`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+              quality={90}
+            />
+          </div>
+        ))}
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-red-900/30 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-red-900/30 to-black/60 z-10"></div>
         {/* Animated Shapes */}
-        <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/20 rounded-full blur-3xl animate-float z-10"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
       </div>
 
       {/* Content */}

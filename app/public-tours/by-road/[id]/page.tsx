@@ -172,7 +172,7 @@ export default function TourDetailPage() {
       <Navbar />
       
       {/* Header Section with Breadcrumb and Title */}
-      <section className="bg-white border-b border-gray-200 pt-24 pb-8">
+      <section className="bg-white border-b border-gray-200 pt-40 pb-10">
         <div className="max-w-7xl mx-auto px-6">
           {/* Province Tag */}
           <div className="mb-4">
@@ -198,10 +198,11 @@ export default function TourDetailPage() {
       </section>
 
       {/* Main Content with Image and Sidebar */}
-      <div className="max-w-7xl mx-auto px-6 pt-8">
+      <div className="max-w-7xl mx-auto px-6 pt-6 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Hero Image - Takes 2 columns */}
-          <div className="lg:col-span-2">
+          {/* Left Column - Image and Content - Takes 2 columns */}
+          <div className="lg:col-span-2 space-y-6">
+            {/* Hero Image */}
             <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src={pkg.image}
@@ -224,6 +225,281 @@ export default function TourDetailPage() {
                 </button>
               </div>
             </div>
+
+            {/* Description */}
+            <section className="bg-white rounded-xl p-6 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  {pkg.title}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {pkg.description}
+              </p>
+            </section>
+
+            {/* Tour Highlights */}
+            <section className="bg-white rounded-xl p-6 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Highlights</h2>
+              <ul className="space-y-3">
+                {pkg.highlights.map((highlight: string, index: number) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                    <span className="text-gray-700">{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* Points to Visit */}
+            {pkg.pointsToVisit && (
+              <section className="bg-white rounded-xl p-6 shadow-sm">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Points to Visit</h2>
+                <ul className="space-y-3">
+                  {pkg.pointsToVisit.map((point: string, index: number) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {/* Tour Details */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Details</h2>
+              <div className="space-y-3">
+                <div>
+                  <span className="font-semibold text-gray-900">Duration:</span>
+                  <span className="text-gray-700 ml-2">{pkg.duration}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-900">Tour Type:</span>
+                  <span className="text-gray-700 ml-2">{pkg.tourType || "By Road"}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-900">Group Size:</span>
+                  <span className="text-gray-700 ml-2">{pkg.groupSize || "Varies"}</span>
+                </div>
+              </div>
+            </section>
+
+            {/* Why Choose */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Why Choose the {pkg.title}?
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                This package blends natural beauty, tranquility, and adventure, making it an ideal choice for travelers. From exploring scenic valleys to enjoying peaceful moments, every aspect is filled with memorable experiences and relaxation.
+              </p>
+            </section>
+
+            {/* Pricing Table */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pricing Options</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-green-700 text-white">
+                      <th className="border border-gray-300 px-4 py-3 text-left">Sharing Type</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
+                      <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pkg.pricing && (
+                      <>
+                        <tr className="bg-white hover:bg-gray-50">
+                          <td className="border text-black border-gray-300 px-4 py-3 font-semibold">Quad Sharing</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.quadSharing?.standard}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.deluxe}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.premium}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.executive}</td>
+                        </tr>
+                        <tr className="bg-gray-50 hover:bg-gray-100">
+                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Twin Sharing</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.standard}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.deluxe}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.premium}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.executive}</td>
+                        </tr>
+                        <tr className="bg-white hover:bg-gray-50">
+                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Solo Sharing</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.standard}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.deluxe}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.premium}</td>
+                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.executive}</td>
+                        </tr>
+                      </>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+              
+              {/* Exceptions */}
+              {pkg.exceptions && pkg.exceptions.length > 0 && (
+                <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                  <h3 className="font-bold text-gray-900 mb-3">Exceptions:</h3>
+                  <ul className="space-y-1">
+                    {pkg.exceptions.map((exception: string, index: number) => (
+                      <li key={index} className="text-sm text-gray-700">• {exception}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {/* Notes */}
+              {pkg.notes && pkg.notes.length > 0 && (
+                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                  <h3 className="font-bold text-gray-900 mb-3">Notes:</h3>
+                  <ul className="space-y-1">
+                    {pkg.notes.map((note: string, index: number) => (
+                      <li key={index} className="text-sm text-gray-700">• {note}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </section>
+
+            {/* Hotel List */}
+            {pkg.hotelList && pkg.hotelList.length > 0 && (
+              <section>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Hotel List</h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-green-700 text-white">
+                        <th className="border border-gray-300 px-4 py-3 text-left">Location</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {pkg.hotelList.map((hotel: any, index: number) => (
+                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{hotel.location}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.standard}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.deluxe}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.premium}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.executive}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            )}
+
+            {/* Departure Schedule */}
+            {pkg.departureSchedule && pkg.departureSchedule.length > 0 && (
+              <section>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Departure Schedule</h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-green-700 text-white">
+                        <th className="border border-gray-300 px-4 py-3 text-left">Departure City</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 1</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 2</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {pkg.departureSchedule.map((schedule: any, index: number) => (
+                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{schedule.city}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure1}</td>
+                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure2}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            )}
+
+            {/* Included/Excluded */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Included/Excluded</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  {pkg.included.map((item: string, index: number) => (
+                    <div key={index} className="flex items-start gap-2 mb-3">
+                      <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  {pkg.excluded.map((item: string, index: number) => (
+                    <div key={index} className="flex items-start gap-2 mb-3">
+                      <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Tour Itinerary */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Itinerary</h2>
+              <div className="space-y-6">
+                {pkg.itinerary.map((day: any, index: number) => (
+                  <div key={index} className="border-l-4 border-red-600 pl-6 py-2">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {day.day}: {day.title}
+                    </h3>
+                    <p className="text-gray-600">{day.description}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Contact Information */}
+            {pkg.contact && (
+              <section className="p-6 bg-linear-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
+                <div className="space-y-3">
+                  {pkg.contact.email && (
+                    <div className="flex items-center gap-3">
+                      <Mail className="w-5 h-5 text-green-700" />
+                      <a href={`mailto:${pkg.contact.email}`} className="text-gray-700 hover:text-green-700">
+                        {pkg.contact.email}
+                      </a>
+                    </div>
+                  )}
+                  {pkg.contact.whatsapp && (
+                    <div className="flex items-center gap-3">
+                      <Phone className="w-5 h-5 text-green-700" />
+                      <a href={`httpsTo://wa.me/${pkg.contact.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
+                        WhatsApp: {pkg.contact.whatsapp}
+                      </a>
+                    </div>
+                  )}
+                  {pkg.contact.instagram && (
+                    <div className="flex items-center gap-3">
+                      <span className="w-5 h-5 text-green-700">📷</span>
+                      <a href="https://www.instagram.com/natureexplorers.pk?igsh=ZzgwMXk1aTl2ajR4&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
+                        {pkg.contact.instagram}
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </section>
+            )}
+
+            {/* Bulk Discount */}
+            {pkg.bulkDiscount && (
+              <section>
+                <div className="p-6 bg-linear-to-r from-red-50 to-orange-50 rounded-lg border-2 border-red-200">
+                  <h3 className="text-xl font-bold text-red-700 mb-2">💰 Special Offer!</h3>
+                  <p className="text-gray-700">{pkg.bulkDiscount}</p>
+                </div>
+              </section>
+            )}
           </div>
 
           {/* Sidebar - Booking Form - Takes 1 column */}
@@ -500,292 +776,6 @@ export default function TourDetailPage() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Content Sections Below - Starts immediately after image */}
-      <div className="max-w-7xl mx-auto px-6 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Content - Takes 2 columns to match image width */}
-          <div className="lg:col-span-2">
-            {/* Description */}
-            <section className="mb-8 bg-white rounded-xl p-6 shadow-sm">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  {pkg.title}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {pkg.description}
-              </p>
-            </section>
-
-            {/* Tour Highlights */}
-            <section className="mb-8 bg-white rounded-xl p-6 shadow-sm">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Highlights</h2>
-              <ul className="space-y-3">
-                {pkg.highlights.map((highlight: string, index: number) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
-            {/* Points to Visit */}
-            {pkg.pointsToVisit && (
-              <section className="mb-8 bg-white rounded-xl p-6 shadow-sm">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Points to Visit</h2>
-                <ul className="space-y-3">
-                  {pkg.pointsToVisit.map((point: string, index: number) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
-
-            {/* Tour Details */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Details</h2>
-              <div className="space-y-3">
-                <div>
-                  <span className="font-semibold text-gray-900">Duration:</span>
-                  <span className="text-gray-700 ml-2">{pkg.duration}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Tour Type:</span>
-                  <span className="text-gray-700 ml-2">{pkg.tourType || "By Road"}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Group Size:</span>
-                  <span className="text-gray-700 ml-2">{pkg.groupSize || "Varies"}</span>
-                </div>
-              </div>
-            </section>
-
-            {/* Why Choose */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Why Choose the {pkg.title}?
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                This package blends natural beauty, tranquility, and adventure, making it an ideal choice for travelers. From exploring scenic valleys to enjoying peaceful moments, every aspect is filled with memorable experiences and relaxation.
-              </p>
-            </section>
-
-            {/* Pricing Table */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pricing Options</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-green-700 text-white">
-                      <th className="border border-gray-300 px-4 py-3 text-left">Sharing Type</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {pkg.pricing && (
-                      <>
-                        <tr className="bg-white hover:bg-gray-50">
-                          <td className="border text-black border-gray-300 px-4 py-3 font-semibold">Quad Sharing</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.quadSharing?.standard}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.deluxe}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.premium}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.executive}</td>
-                        </tr>
-                        <tr className="bg-gray-50 hover:bg-gray-100">
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Twin Sharing</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.standard}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.deluxe}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.premium}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.executive}</td>
-                        </tr>
-                        <tr className="bg-white hover:bg-gray-50">
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Solo Sharing</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.standard}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.deluxe}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.premium}</td>
-                          <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.executive}</td>
-                        </tr>
-                      </>
-                    )}
-                  </tbody>
-                </table>
-              </div>
-              
-              {/* Exceptions */}
-              {pkg.exceptions && pkg.exceptions.length > 0 && (
-                <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Exceptions:</h3>
-                  <ul className="space-y-1">
-                    {pkg.exceptions.map((exception: string, index: number) => (
-                      <li key={index} className="text-sm text-gray-700">• {exception}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              
-              {/* Notes */}
-              {pkg.notes && pkg.notes.length > 0 && (
-                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Notes:</h3>
-                  <ul className="space-y-1">
-                    {pkg.notes.map((note: string, index: number) => (
-                      <li key={index} className="text-sm text-gray-700">• {note}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </section>
-
-            {/* Hotel List */}
-            {pkg.hotelList && pkg.hotelList.length > 0 && (
-              <section className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Hotel List</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="bg-green-700 text-white">
-                        <th className="border border-gray-300 px-4 py-3 text-left">Location</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {pkg.hotelList.map((hotel: any, index: number) => (
-                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{hotel.location}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.standard}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.deluxe}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.premium}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.executive}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            )}
-
-            {/* Departure Schedule */}
-            {pkg.departureSchedule && pkg.departureSchedule.length > 0 && (
-              <section className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Departure Schedule</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="bg-green-700 text-white">
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure City</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 1</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 2</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {pkg.departureSchedule.map((schedule: any, index: number) => (
-                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{schedule.city}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure1}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure2}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            )}
-
-            {/* Included/Excluded */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Included/Excluded</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  {pkg.included.map((item: string, index: number) => (
-                    <div key={index} className="flex items-start gap-2 mb-3">
-                      <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {pkg.excluded.map((item: string, index: number) => (
-                    <div key={index} className="flex items-start gap-2 mb-3">
-                      <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Tour Itinerary */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Itinerary</h2>
-              <div className="space-y-6">
-                {pkg.itinerary.map((day: any, index: number) => (
-                  <div key={index} className="border-l-4 border-red-600 pl-6 py-2">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      {day.day}: {day.title}
-                    </h3>
-                    <p className="text-gray-600">{day.description}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Contact Information */}
-            {pkg.contact && (
-              <section className="mb-12 p-6 bg-linear-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <div className="space-y-3">
-                  {pkg.contact.email && (
-                    <div className="flex items-center gap-3">
-                      <Mail className="w-5 h-5 text-green-700" />
-                      <a href={`mailto:${pkg.contact.email}`} className="text-gray-700 hover:text-green-700">
-                        {pkg.contact.email}
-                      </a>
-                    </div>
-                  )}
-                  {pkg.contact.whatsapp && (
-                    <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-green-700" />
-                      <a href={`httpsTo://wa.me/${pkg.contact.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
-                        WhatsApp: {pkg.contact.whatsapp}
-                      </a>
-                    </div>
-                  )}
-                  {pkg.contact.instagram && (
-                    <div className="flex items-center gap-3">
-                      <span className="w-5 h-5 text-green-700">📷</span>
-                      <a href="https://www.instagram.com/natureexplorers.pk?igsh=ZzgwMXk1aTl2ajR4&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
-                        {pkg.contact.instagram}
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </section>
-            )}
-
-            {/* Bulk Discount */}
-            {pkg.bulkDiscount && (
-              <section className="mb-12">
-                <div className="p-6 bg-linear-to-r from-red-50 to-orange-50 rounded-lg border-2 border-red-200">
-                  <h3 className="text-xl font-bold text-red-700 mb-2">💰 Special Offer!</h3>
-                  <p className="text-gray-700">{pkg.bulkDiscount}</p>
-                </div>
-              </section>
-            )}
-          </div>
-
-          {/* Empty column for spacing */}
-          <div className="lg:col-span-1"></div>
         </div>
       </div>
 
