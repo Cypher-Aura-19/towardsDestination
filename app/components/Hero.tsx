@@ -27,7 +27,7 @@ export default function Hero() {
     let currentIndex = 0;
 
     // Set initial state - first image visible, others hidden
-    gsap.set(slides, { opacity: 0, scale: 1.1 });
+    gsap.set(slides, { opacity: 0, scale: 1 });
     gsap.set(slides[0], { opacity: 1, scale: 1 });
 
     const animateSlideshow = () => {
@@ -35,40 +35,44 @@ export default function Hero() {
       const nextIndex = (currentIndex + 1) % slides.length;
       const nextSlide = slides[nextIndex];
 
-      // Create timeline for smooth transition
+      // Create timeline for smooth fade transition
       const tl = gsap.timeline();
 
-      // Fade out and zoom current slide
+      // Fade out current slide with slight zoom
       tl.to(currentSlide, {
         opacity: 0,
-        scale: 1,
-        duration: 1.5,
+        scale: 1.05,
+        duration: 2,
         ease: "power2.inOut",
       });
 
-      // Fade in and zoom next slide (overlapping)
-      tl.to(
+      // Fade in next slide (overlapping for smooth crossfade)
+      tl.fromTo(
         nextSlide,
+        {
+          opacity: 0,
+          scale: 1.05,
+        },
         {
           opacity: 1,
           scale: 1,
-          duration: 1.5,
+          duration: 2,
           ease: "power2.inOut",
         },
-        "-=1.5" // Start at the same time as previous animation
+        "-=1.8" // Overlap for smooth crossfade effect
       );
 
       currentIndex = nextIndex;
     };
 
-    // Start slideshow with 5 second intervals
+    // Start slideshow with 10 second intervals
     const interval = setInterval(animateSlideshow, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-32 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <section className="relative min-h-screen pt-[120px] overflow-hidden bg-linear-to-br from-gray-900 via-gray-800 to-black">
       {/* Background Slideshow */}
       <div className="absolute inset-0 z-0" ref={slideshowRef}>
         {heroImages.map((image, index) => (
@@ -77,14 +81,19 @@ export default function Hero() {
               src={image}
               alt={`Northern Pakistan - Slide ${index + 1}`}
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority={index === 0}
-              quality={90}
+              quality={95}
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center center',
+              }}
             />
           </div>
         ))}
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-red-900/30 to-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/60 via-red-900/30 to-black/60 z-10"></div>
         {/* Animated Shapes */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/20 rounded-full blur-3xl animate-float z-10"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
@@ -132,83 +141,7 @@ export default function Hero() {
         </div>
 
         {/* Search Destination Form at Bottom */}
-        <div className="pb-4 sm:pb-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-          <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 w-full max-w-6xl border border-gray-100 hover:shadow-red-500/20 transition-shadow duration-500">
-            {/* Form Title */}
-            <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4 sm:mb-6 text-center">
-              Plan Your Journey
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-              {/* Tour Type */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Tour Type</label>
-                <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white">
-                  <option value="">Select Tour</option>
-                  <option value="northern-road">Northern Pakistan (By Road)</option>
-                  <option value="northern-air">Northern Pakistan (By Air)</option>
-                  <option value="umrah">Umrah Package</option>
-                  <option value="hotel">Hotel Stay</option>
-                </select>
-              </div>
-
-              {/* Check In Date */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Check In</label>
-                <input
-                  type="date"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                />
-              </div>
-
-              {/* Check Out Date */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Check Out</label>
-                <input
-                  type="date"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                />
-              </div>
-
-              {/* Guests */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Guests</label>
-                <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white">
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5+ Guests</option>
-                </select>
-              </div>
-
-              {/* Search Button */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700 invisible">Search</label>
-                <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px]">
-                  Search
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-
-            {/* Additional Options */}
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm">
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Direct flights only</span>
-              </label>
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Include nearby airports</span>
-              </label>
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Flexible dates</span>
-              </label>
-            </div>
-          </div>
-        </div>
+   
       </div>
     </section>
   );

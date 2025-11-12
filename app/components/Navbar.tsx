@@ -15,7 +15,7 @@ export default function Navbar() {
     <>
       <TopBar />
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg border-b border-gray-100" style={{ marginTop: '33px' }}>
-      <div className="w-full max-w-[1400px] mx-auto px-3 xs:px-4 sm:px-6 py-2.5 xs:py-3 sm:py-4">
+      <div className="w-full max-w-[1400px] mx-auto px-3 xs:px-4 sm:px-6 py-2 xs:py-3 sm:py-4">
         <div className="flex items-center justify-between gap-2 xs:gap-4 sm:gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 shrink-0">

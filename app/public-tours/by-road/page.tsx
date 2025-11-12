@@ -55,7 +55,7 @@ const packages = [
     duration: "5 Days 4 Nights",
     location: "Neelum Valley, Kashmir",
     price: 25000,
-    image: "/neelum.jpg",
+    image: "/neelum5.jpg",
     rating: 4.9,
     reviews: 189
   },
@@ -95,7 +95,7 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Kashmir",
     price: 15500,
-    image: "/logo.jpeg",
+    image: "/neelum3.jpg",
     rating: 4.5,
     reviews: 76
   },
@@ -115,7 +115,7 @@ const packages = [
     duration: "6 Days 5 Nights",
     location: "Astore & Deosai",
     price: 28000,
-    image: "/logo.jpeg",
+    image: "/astore.jpg",
     rating: 4.8,
     reviews: 134
   },
@@ -125,7 +125,7 @@ const packages = [
     duration: "8 Days 7 Nights",
     location: "Hunza & Skardu",
     price: 32000,
-    image: "/skardu.jpg" // Image Source
+    image: "/skardu8.jpg" // Image Source
   },
   {
     id: 13,
@@ -133,7 +133,7 @@ const packages = [
     duration: "6 Days 5 Nights",
     location: "Skardu & Deosai",
     price: 26000,
-    image: "/skardu.jpg" // Image Source
+    image: "/skardu6.jpg" // Image Source
   },
   {
     id: 14,

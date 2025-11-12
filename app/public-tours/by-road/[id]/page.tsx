@@ -7,6 +7,46 @@ import { MapPin, Calendar, Users, Check, X, Phone, Mail, ChevronLeft, ChevronRig
 import Image from "next/image";
 import { useState } from "react";
 
+// Helper function to make important words bold
+const formatTextWithBold = (text: string) => {
+  const importantWords = [
+    // Locations
+    'Kumrat', 'Kala Chashma', 'Dojanga', 'Hunza', 'Skardu', 'Naltar', 'Neelum', 'Arang Kel', 'Ratti Gali',
+    'Naran', 'Shogran', 'Swat', 'Kalam', 'Malam Jabba', 'Fairy Meadows', 'Beyal Camp', 'Deosai',
+    'Astore', 'Minimarg', 'Rama', 'Attabad', 'Passu', 'Khunjerab', 'Chitral', 'Kalash', 'Shandur',
+    'Gilgit', 'Baltistan', 'Kashmir', 'Taobat', 'Sharda', 'Kel', 'Keran', 'Basho', 'Shigar',
+    'Khyber Pakhtunkhwa', 'KPK', 'AJK', 'Azad Kashmir', 'Baltit Fort', 'Altit Fort',
+    // Activities
+    'trekking', 'hiking', 'camping', 'rafting', 'bonfire', 'jeep', 'Jeep', 'sightseeing',
+    'Musical Night', 'Cycling Tours', 'Cultural Tours', 'Adventure', 'adventure',
+    // Important terms
+    'TOWARDSDESTINATION.PK', 'Book', 'Experience', 'Beauty', 'Mesmerizing', 'mesmerizing',
+    'Best', 'best', 'North Pakistan', 'Pakistan Tour', 'Valley', 'Lake', 'Meadows',
+    'Waterfall', 'waterfalls', 'Border', 'Mountains', 'Scenic', 'scenic',
+    // Tour specifics
+    'Breakfast', 'Dinner', 'Accommodation', 'Transportation', 'Guide', 'Professional',
+    'Departure', 'Arrival', 'Visit', 'Explore', 'Free time', 'Overnight',
+    'Standard Package', 'Deluxe', 'Premium', 'Executive'
+  ];
+
+  let formattedText = text;
+  
+  importantWords.forEach(word => {
+    // Create a regex that matches the word with word boundaries, case-insensitive
+    const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+    formattedText = formattedText.replace(regex, '<strong>$1</strong>');
+  });
+
+  return formattedText;
+};
+
+// Component to render formatted text
+const FormattedText = ({ text }: { text: string }) => {
+  return (
+    <span dangerouslySetInnerHTML={{ __html: formatTextWithBold(text) }} />
+  );
+};
+
 
 const packageDetails: any = {
   "1": {
@@ -18,7 +58,7 @@ const packageDetails: any = {
     image: "/kumrat.jpg",
     groupSize: "20 - 25",
     tourType: "Daily Tour",
-    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with Nature Explorer Tours Pvt. Ltd. Book your Trip Now and Experience the Beauty of Kumrat Valley with Nature Explorer Tours. Nature Explorer Tours is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with TOWARDSDESTINATION.PK Pvt. Ltd. Book your Trip Now and Experience the Beauty of Kumrat Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     pointsToVisit: [
       "Kumrat Valley",
       "Kala Chashma",
@@ -109,7 +149,7 @@ const packageDetails: any = {
     "image": "/hunza1.jpg",
     "groupSize": "100 people",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with Nature Explorer Tours. Nature Explorer Tours is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Mansehra",
       "Balakot",
@@ -269,9 +309,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount offer: 5% discount for 5 to 20 adults"
   },
@@ -364,9 +404,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+923120506457",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": null
   },
@@ -379,7 +419,7 @@ const packageDetails: any = {
     "image": "/naran1.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Naran with Nature Explorer Tours. Nature Explorer Tours is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Naran with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     "pointsToVisit": [
       "Shogran",
       "Siri paye Meadows",
@@ -490,9 +530,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": null
   },
@@ -502,10 +542,10 @@ const packageDetails: any = {
     "location": "Azad Jammu and Kashmir (AJK)",
     "duration": "5 Days 4 Nights",
     "price": 25000,
-    "image": "/neelum.jpg",
+    "image": "/neelum5.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with Nature Explorer Tours.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with TOWARDSDESTINATION.PK.",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -639,9 +679,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
-      "whatsapp": "+92 344 70709307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "email": "info@towardsdestination.pk",
+      "whatsapp": "+92 315 3309070",
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   }
@@ -654,7 +694,7 @@ const packageDetails: any = {
     "image": "/neelum.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with Nature Explorer Tours.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with TOWARDSDESTINATION.PK.",
     "pointsToVisit": [
       "Muzafrabad",
       "Neelum_Jhelum_project",
@@ -789,9 +829,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for up to 25 adults"
   },
@@ -803,7 +843,7 @@ const packageDetails: any = {
     "price": 17500,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with Nature Explorer Tours (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
+    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with TOWARDSDESTINATION.PK (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -927,9 +967,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -942,7 +982,7 @@ const packageDetails: any = {
     "image": "/kumrat.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with Nature Explorer Tours.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with TOWARDSDESTINATION.PK.",
     "pointsToVisit": [
       "Chakdara",
       "Upper Dir",
@@ -1067,9 +1107,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1079,10 +1119,10 @@ const packageDetails: any = {
     "location": "Azad Jammu and Kashmir (AJK)",
     "duration": "3 Days 2 Nights",
     "price": 13500,
-    "image": "/logo.jpeg",
+    "image": "/neelum3.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with Nature Explorer Tours.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with TOWARDSDESTINATION.PK.",
     "pointsToVisit": [
       "Ratti Gali",
       "Kutton Waterfall",
@@ -1197,9 +1237,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": null
   },
@@ -1212,7 +1252,7 @@ const packageDetails: any = {
     "image": "/logo.jpeg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "TOWARDSDESTINATION.PK Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1355,9 +1395,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1367,9 +1407,9 @@ const packageDetails: any = {
     "location": "Gilgit",
     "duration": "6 Days 5 Nights",
     "price": 28000,
-    "image": "/logo.jpeg",
+    "image": "/astore.jpg",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours presents Astore | Minimarg | Rama Meadows| Deosai. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "TOWARDSDESTINATION.PK presents Astore | Minimarg | Rama Meadows| Deosai. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1517,9 +1557,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -1529,10 +1569,10 @@ const packageDetails: any = {
     "location": "Gilgit",
     "duration": "8 Days 7 Nights",
     "price": 32000,
-    "image": "/skardu.jpg",
+    "image": "/skardu8.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "TOWARDSDESTINATION.PK Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1734,9 +1774,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1746,10 +1786,10 @@ const packageDetails: any = {
     "location": "Gilgit",
     "duration": "6 Days 5 Nights",
     "price": 26000,
-    "image": "/skardu.jpg",
+    "image": "/skardu6.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "TOWARDSDESTINATION.PK presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Sightseeing of Balakot",
       "Kiwai Waterfall",
@@ -1925,9 +1965,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -1939,7 +1979,7 @@ const packageDetails: any = {
     "price": 14000,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with Nature Explorer Tours. Nature Explorer Tours is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Shardah",
       "Kel",
@@ -2050,9 +2090,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -2065,7 +2105,7 @@ const packageDetails: any = {
     "image": "/swat.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH NATURE EXPLORER TOURS PVT. LTD. Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with Nature Explorer Tours. Nature Explorer Tours is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Sightseeing of Swat",
       "Mingora",
@@ -2183,9 +2223,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@natureexplorertours.com",
+      "email": "info@towardsdestination.pk",
       "whatsapp": "+92 344 7079307",
-      "instagram": "NATURE EXPLORER TOURS"
+      "instagram": "TOWARDSDESTINATION.PK"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   }
@@ -2301,105 +2341,108 @@ export default function TourDetailPage() {
                 className="w-full h-auto object-contain"
                 priority
               />
-              {/* Share and Favorite Buttons */}
-              <div className="absolute top-4 right-4 flex gap-3">
-                <button className="w-12 h-12 rounded-full bg-teal-500 hover:bg-teal-600 text-white flex items-center justify-center shadow-lg transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                  </svg>
-                </button>
-                <button className="w-12 h-12 rounded-full bg-teal-500 hover:bg-teal-600 text-white flex items-center justify-center shadow-lg transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </button>
-              </div>
+           
             </div>
 
             {/* Description */}
-            <section className="bg-white rounded-xl p-6 shadow-sm">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <section className="bg-white rounded-xl p-8 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
                   {pkg.title}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {pkg.description}
+              <p className="text-gray-700 leading-relaxed text-lg font-light tracking-wide">
+                <FormattedText text={pkg.description} />
               </p>
             </section>
 
             {/* Tour Highlights */}
-            <section className="bg-white rounded-xl p-6 shadow-sm">
+            <section className="bg-white rounded-xl p-8 shadow-sm">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Highlights</h2>
-              <ul className="space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                 {pkg.highlights.map((highlight: string, index: number) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{highlight}</span>
-                  </li>
+                  <div key={index} className="flex items-start gap-3 group hover:bg-green-50 p-3 rounded-lg transition-colors">
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-700 font-medium">
+                      <FormattedText text={highlight} />
+                    </span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </section>
 
             {/* Points to Visit */}
             {pkg.pointsToVisit && (
-              <section className="bg-white rounded-xl p-6 shadow-sm">
+              <section className="bg-white rounded-xl p-8 shadow-sm">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Points to Visit</h2>
-                <ul className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                   {pkg.pointsToVisit.map((point: string, index: number) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{point}</span>
-                    </li>
+                    <div key={index} className="flex items-start gap-3 group hover:bg-red-50 p-3 rounded-lg transition-colors">
+                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                      <span className="text-gray-700 font-medium">
+                        <FormattedText text={point} />
+                      </span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </section>
             )}
 
             {/* Tour Details */}
-            <section>
+            <section className="bg-white rounded-xl p-6 shadow-sm">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Details</h2>
-              <div className="space-y-3">
-                <div>
-                  <span className="font-semibold text-gray-900">Duration:</span>
-                  <span className="text-gray-700 ml-2">{pkg.duration}</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
+                  <Calendar className="w-6 h-6 text-blue-600" />
+                  <div>
+                    <div className="text-sm text-gray-600">Duration</div>
+                    <div className="font-semibold text-gray-900">{pkg.duration}</div>
+                  </div>
                 </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Tour Type:</span>
-                  <span className="text-gray-700 ml-2">{pkg.tourType || "By Road"}</span>
+                <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+                  <MapPin className="w-6 h-6 text-green-600" />
+                  <div>
+                    <div className="text-sm text-gray-600">Tour Type</div>
+                    <div className="font-semibold text-gray-900">{pkg.tourType || "By Road"}</div>
+                  </div>
                 </div>
-                <div>
-                  <span className="font-semibold text-gray-900">Group Size:</span>
-                  <span className="text-gray-700 ml-2">{pkg.groupSize || "Varies"}</span>
+                <div className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg">
+                  <Users className="w-6 h-6 text-purple-600" />
+                  <div>
+                    <div className="text-sm text-gray-600">Group Size</div>
+                    <div className="font-semibold text-gray-900">{pkg.groupSize || "Varies"}</div>
+                  </div>
                 </div>
               </div>
             </section>
 
             {/* Why Choose */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <section className="bg-white rounded-xl p-8 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Why Choose the {pkg.title}?
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed text-lg font-light tracking-wide">
                 This package blends natural beauty, tranquility, and adventure, making it an ideal choice for travelers. From exploring scenic valleys to enjoying peaceful moments, every aspect is filled with memorable experiences and relaxation.
               </p>
             </section>
 
             {/* Pricing Table */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pricing Options</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-green-700 text-white">
-                      <th className="border border-gray-300 px-4 py-3 text-left">Sharing Type</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {pkg.pricing && (
-                      <>
+            <section className="bg-white rounded-xl p-8 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Pricing Options</h2>
+              
+              {/* Standard Pricing Table (for most packages) */}
+              {pkg.pricing && (pkg.pricing.quadSharing || pkg.pricing.twinSharing || pkg.pricing.soloSharing) && (
+                <div className="overflow-x-auto mb-6">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-green-700 text-white">
+                        <th className="border border-gray-300 px-4 py-3 text-left">Sharing Type</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {pkg.pricing.quadSharing && (
                         <tr className="bg-white hover:bg-gray-50">
                           <td className="border text-black border-gray-300 px-4 py-3 font-semibold">Quad Sharing</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.quadSharing?.standard}</td>
@@ -2407,33 +2450,142 @@ export default function TourDetailPage() {
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.premium}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.quadSharing?.executive}</td>
                         </tr>
+                      )}
+                      {pkg.pricing.twinSharing && (
                         <tr className="bg-gray-50 hover:bg-gray-100">
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Twin Sharing</td>
+                          <td className="border text-black border-gray-300 px-4 py-3 font-semibold">Twin Sharing</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.standard}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.deluxe}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.premium}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">PKR {pkg.pricing.twinSharing?.executive}</td>
                         </tr>
+                      )}
+                      {pkg.pricing.soloSharing && (
                         <tr className="bg-white hover:bg-gray-50">
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">Solo Sharing</td>
+                          <td className="border text-black border-gray-300 px-4 py-3 font-semibold">Solo Sharing</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.standard}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.deluxe}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.premium}</td>
                           <td className="border border-gray-300 px-4 py-3 text-green-700 font-bold">{pkg.pricing.soloSharing?.executive}</td>
                         </tr>
-                      </>
-                    )}
-                  </tbody>
-                </table>
-              </div>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {/* Special Pricing (from Islamabad/Lahore) - For Honeymoon packages */}
+              {pkg.pricing && (pkg.pricing.fromIslamabad || pkg.pricing.fromLahore) && (
+                <div className="space-y-4 mb-6">
+                  {pkg.pricing.fromIslamabad && (
+                    <div className="bg-white border border-gray-300 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900 mb-4">From Islamabad</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="text-center p-4 bg-green-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Standard Package</div>
+                          <div className="text-2xl font-bold text-green-700">PKR {pkg.pricing.fromIslamabad.standard_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                        <div className="text-center p-4 bg-green-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Deluxe Package</div>
+                          <div className="text-2xl font-bold text-green-700">PKR {pkg.pricing.fromIslamabad.deluxe_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                        <div className="text-center p-4 bg-green-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Executive Package</div>
+                          <div className="text-2xl font-bold text-green-700">PKR {pkg.pricing.fromIslamabad.executive_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {pkg.pricing.fromLahore && (
+                    <div className="bg-white border border-gray-300 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900 mb-4">From Lahore</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="text-center p-4 bg-blue-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Standard Package</div>
+                          <div className="text-2xl font-bold text-blue-700">PKR {pkg.pricing.fromLahore.standard_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                        <div className="text-center p-4 bg-blue-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Deluxe Package</div>
+                          <div className="text-2xl font-bold text-blue-700">PKR {pkg.pricing.fromLahore.deluxe_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                        <div className="text-center p-4 bg-blue-50 rounded-lg">
+                          <div className="text-sm text-gray-600 mb-1">Executive Package</div>
+                          <div className="text-2xl font-bold text-blue-700">PKR {pkg.pricing.fromLahore.executive_per_couple}</div>
+                          <div className="text-xs text-gray-500">Per Couple</div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Couple Package Pricing */}
+              {pkg.pricing && pkg.pricing.couplePackage && (
+                <div className="bg-linear-to-r from-pink-50 to-purple-50 border-2 border-pink-300 rounded-lg p-6 mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">💑 Couple Package</h3>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-pink-700">PKR {pkg.pricing.couplePackage.standard}</div>
+                    <div className="text-sm text-gray-600 mt-2">Special package for couples</div>
+                  </div>
+                </div>
+              )}
+
+              {/* Karachi Addon Pricing */}
+              {pkg.pricing && pkg.pricing.karachiAddon && (
+                <div className="bg-linear-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">✈️ Additional Charges for Karachi Participants</h3>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="bg-white rounded p-4">
+                        <div className="text-sm text-gray-600 mb-1">Economy Train</div>
+                        <div className="text-xl font-bold text-orange-700">PKR {pkg.pricing.karachiAddon.economyTrain}</div>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <div className="text-sm text-gray-600 mb-1">Business Train</div>
+                        <div className="text-xl font-bold text-orange-700">PKR {pkg.pricing.karachiAddon.businessTrain}</div>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <div className="text-sm text-gray-600 mb-1">Bus</div>
+                        <div className="text-xl font-bold text-orange-700">PKR {pkg.pricing.karachiAddon.bus}</div>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <div className="text-sm text-gray-600 mb-1">Air</div>
+                        <div className="text-xl font-bold text-orange-700">{pkg.pricing.karachiAddon.air}</div>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-orange-200">
+                      <h4 className="font-semibold text-gray-900 mb-2">Hotel Charges in Islamabad (2 Nights)</h4>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white rounded p-3">
+                          <div className="text-sm text-gray-600">Quad Sharing</div>
+                          <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiAddon.hotelQuad}</div>
+                        </div>
+                        <div className="bg-white rounded p-3">
+                          <div className="text-sm text-gray-600">Twin Sharing</div>
+                          <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiAddon.hotelTwin}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
               
               {/* Exceptions */}
               {pkg.exceptions && pkg.exceptions.length > 0 && (
-                <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Exceptions:</h3>
-                  <ul className="space-y-1">
+                <div className="mt-8 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-lg">
+                  <h3 className="font-bold text-amber-900 mb-4 flex items-center gap-2 text-lg">
+                    <span>⚠️</span> Exceptions:
+                  </h3>
+                  <ul className="space-y-2">
                     {pkg.exceptions.map((exception: string, index: number) => (
-                      <li key={index} className="text-sm text-gray-700">• {exception}</li>
+                      <li key={index} className="text-gray-700 font-medium">
+                        • <FormattedText text={exception} />
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -2441,11 +2593,15 @@ export default function TourDetailPage() {
               
               {/* Notes */}
               {pkg.notes && pkg.notes.length > 0 && (
-                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Notes:</h3>
-                  <ul className="space-y-1">
+                <div className="mt-6 p-6 bg-blue-50 border-l-4 border-blue-400 rounded-lg">
+                  <h3 className="font-bold text-blue-900 mb-4 flex items-center gap-2 text-lg">
+                    <span>📝</span> Important Notes:
+                  </h3>
+                  <ul className="space-y-2">
                     {pkg.notes.map((note: string, index: number) => (
-                      <li key={index} className="text-sm text-gray-700">• {note}</li>
+                      <li key={index} className="text-gray-700 font-medium">
+                        • <FormattedText text={note} />
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -2454,27 +2610,27 @@ export default function TourDetailPage() {
 
             {/* Hotel List */}
             {pkg.hotelList && pkg.hotelList.length > 0 && (
-              <section>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Hotel List</h2>
+              <section className="bg-white rounded-xl p-8 shadow-sm">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8">Hotel List</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-green-700 text-white">
-                        <th className="border border-gray-300 px-4 py-3 text-left">Location</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Standard</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Deluxe</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Premium</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Executive</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Location</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Standard</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Deluxe</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Premium</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Executive</th>
                       </tr>
                     </thead>
                     <tbody>
                       {pkg.hotelList.map((hotel: any, index: number) => (
-                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{hotel.location}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.standard}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.deluxe}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.premium}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{hotel.executive}</td>
+                        <tr key={index} className={index % 2 === 0 ? 'bg-white hover:bg-gray-50' : 'bg-gray-50 hover:bg-gray-100'}>
+                          <td className="border text-black border-gray-300 px-4 py-3 font-bold">{hotel.location}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{hotel.standard}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{hotel.deluxe}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{hotel.premium}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{hotel.executive}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -2485,23 +2641,23 @@ export default function TourDetailPage() {
 
             {/* Departure Schedule */}
             {pkg.departureSchedule && pkg.departureSchedule.length > 0 && (
-              <section>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Departure Schedule</h2>
+              <section className="bg-white rounded-xl p-8 shadow-sm">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8">Departure Schedule</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-green-700 text-white">
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure City</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 1</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Departure 2</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Departure City</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Departure 1</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Departure 2</th>
                       </tr>
                     </thead>
                     <tbody>
                       {pkg.departureSchedule.map((schedule: any, index: number) => (
-                        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                          <td className="border  text-black border-gray-300 px-4 py-3 font-semibold">{schedule.city}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure1}</td>
-                          <td className="border  text-black border-gray-300 px-4 py-3">{schedule.departure2}</td>
+                        <tr key={index} className={index % 2 === 0 ? 'bg-white hover:bg-gray-50' : 'bg-gray-50 hover:bg-gray-100'}>
+                          <td className="border text-black border-gray-300 px-4 py-3 font-bold">{schedule.city}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{schedule.departure1}</td>
+                          <td className="border text-gray-700 border-gray-300 px-4 py-3 font-medium">{schedule.departure2}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -2510,39 +2666,77 @@ export default function TourDetailPage() {
               </section>
             )}
 
-            {/* Included/Excluded */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Included/Excluded</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  {pkg.included.map((item: string, index: number) => (
-                    <div key={index} className="flex items-start gap-2 mb-3">
-                      <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
+            {/* Departure Note (for packages with custom schedule) */}
+            {pkg.departureNote && (
+              <section className="bg-white rounded-xl p-8 shadow-sm">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8">Departure Information</h2>
+                <div className="bg-linear-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-lg p-6">
+                  <div className="flex items-start gap-4">
+                    <Calendar className="w-8 h-8 text-blue-700 shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-gray-900 mb-3 text-xl">Flexible Departure Dates</h3>
+                      <p className="text-gray-700 leading-relaxed font-medium">
+                        <FormattedText text={pkg.departureNote} />
+                      </p>
                     </div>
-                  ))}
+                  </div>
                 </div>
-                <div>
-                  {pkg.excluded.map((item: string, index: number) => (
-                    <div key={index} className="flex items-start gap-2 mb-3">
-                      <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
-                    </div>
-                  ))}
+              </section>
+            )}
+
+            {/* Included/Excluded */}
+            <section className="bg-white rounded-xl p-8 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Included/Excluded</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                  <h3 className="text-xl font-bold text-green-800 mb-5 flex items-center gap-2">
+                    <Check className="w-6 h-6" />
+                    Included
+                  </h3>
+                  <div className="space-y-3">
+                    {pkg.included.map((item: string, index: number) => (
+                      <div key={index} className="flex items-start gap-3 group">
+                        <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                        <span className="text-gray-700 font-medium">
+                          <FormattedText text={item} />
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+                  <h3 className="text-xl font-bold text-red-800 mb-5 flex items-center gap-2">
+                    <X className="w-6 h-6" />
+                    Excluded
+                  </h3>
+                  <div className="space-y-3">
+                    {pkg.excluded.map((item: string, index: number) => (
+                      <div key={index} className="flex items-start gap-3 group">
+                        <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                        <span className="text-gray-700 font-medium">
+                          <FormattedText text={item} />
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
 
             {/* Tour Itinerary */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tour Itinerary</h2>
+            <section className="bg-white rounded-xl p-8 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Tour Itinerary</h2>
               <div className="space-y-6">
                 {pkg.itinerary.map((day: any, index: number) => (
-                  <div key={index} className="border-l-4 border-red-600 pl-6 py-2">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      {day.day}: {day.title}
+                  <div key={index} className="relative border-l-4 border-teal-600 pl-8 py-4 hover:bg-teal-50 rounded-r-lg transition-colors group">
+                    <div className="absolute -left-3 top-6 w-6 h-6 bg-teal-600 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                      <span className="text-teal-600">{day.day}:</span>
+                      <span>{day.title}</span>
                     </h3>
-                    <p className="text-gray-600">{day.description}</p>
+                    <p className="text-gray-700 leading-relaxed font-light">
+                      <FormattedText text={day.description} />
+                    </p>
                   </div>
                 ))}
               </div>
@@ -2550,31 +2744,40 @@ export default function TourDetailPage() {
 
             {/* Contact Information */}
             {pkg.contact && (
-              <section className="p-6 bg-linear-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <div className="space-y-3">
+              <section className="p-8 bg-linear-to-r from-green-50 to-emerald-50 rounded-xl border-2 border-green-300 shadow-sm">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">📞 Contact Us</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
                   {pkg.contact.email && (
-                    <div className="flex items-center gap-3">
-                      <Mail className="w-5 h-5 text-green-700" />
-                      <a href={`mailto:${pkg.contact.email}`} className="text-gray-700 hover:text-green-700">
-                        {pkg.contact.email}
-                      </a>
+                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow overflow-hidden">
+                      <Mail className="w-6 h-6 text-green-700 shrink-0" />
+                      <div className="min-w-0 flex-1">
+                        <div className="text-xs text-gray-600 mb-1">Email</div>
+                        <a href={`mailto:${pkg.contact.email}`} className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
+                          {pkg.contact.email}
+                        </a>
+                      </div>
                     </div>
                   )}
                   {pkg.contact.whatsapp && (
-                    <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-green-700" />
-                      <a href={`httpsTo://wa.me/${pkg.contact.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
-                        WhatsApp: {pkg.contact.whatsapp}
-                      </a>
+                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow overflow-hidden">
+                      <Phone className="w-6 h-6 text-green-700 shrink-0" />
+                      <div className="min-w-0 flex-1">
+                        <div className="text-xs text-gray-600 mb-1">WhatsApp</div>
+                        <a href={`https://wa.me/${pkg.contact.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
+                          {pkg.contact.whatsapp}
+                        </a>
+                      </div>
                     </div>
                   )}
                   {pkg.contact.instagram && (
-                    <div className="flex items-center gap-3">
-                      <span className="w-5 h-5 text-green-700">📷</span>
-                      <a href="https://www.instagram.com/natureexplorers.pk?igsh=ZzgwMXk1aTl2ajR4&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-700">
-                        {pkg.contact.instagram}
-                      </a>
+                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow overflow-hidden">
+                      <span className="w-6 h-6 text-green-700 text-xl shrink-0">📷</span>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-xs text-gray-600 mb-1">Instagram</div>
+                        <a href="https://www.instagram.com/towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
+                          {pkg.contact.instagram}
+                        </a>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -2584,9 +2787,13 @@ export default function TourDetailPage() {
             {/* Bulk Discount */}
             {pkg.bulkDiscount && (
               <section>
-                <div className="p-6 bg-linear-to-r from-red-50 to-orange-50 rounded-lg border-2 border-red-200">
-                  <h3 className="text-xl font-bold text-red-700 mb-2">💰 Special Offer!</h3>
-                  <p className="text-gray-700">{pkg.bulkDiscount}</p>
+                <div className="p-8 bg-linear-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
+                  <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                    <span className="text-3xl">💰</span> Special Offer!
+                  </h3>
+                  <p className="text-gray-800 text-lg font-medium leading-relaxed">
+                    <FormattedText text={pkg.bulkDiscount} />
+                  </p>
                 </div>
               </section>
             )}
