@@ -9,22 +9,19 @@ import Image from "next/image";
 export default function PrivateToursPage() {
   const [formData, setFormData] = useState({
     fullName: "",
-    email: "",
     whatsapp: "",
-    roomsRequired: "",
     persons: "",
+    travelType: "by-road",
     departureFrom: "",
     placesToVisit: "",
-    startDate: "",
-    endDate: "",
-    message: ""
+    startDate: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // Format message for WhatsApp
-    const whatsappMessage = `*Private Tour Request*%0A%0A*Full Name:* ${formData.fullName}%0A*Email:* ${formData.email}%0A*WhatsApp/Phone:* ${formData.whatsapp}%0A*Rooms Required:* ${formData.roomsRequired}%0A*Number of Persons:* ${formData.persons}%0A*Departure From:* ${formData.departureFrom}%0A*Places to Visit:* ${formData.placesToVisit}%0A*Start Date:* ${formData.startDate}%0A*End Date:* ${formData.endDate}%0A%0A*Additional Message:*%0A${formData.message}`;
+    const whatsappMessage = `*Private Tour Request*%0A%0A*Full Name:* ${formData.fullName}%0A*WhatsApp/Phone:* ${formData.whatsapp}%0A*Travel Mode:* ${formData.travelType === "by-road" ? "By Road" : "By Air"}%0A*Number of Persons:* ${formData.persons}%0A*Departure From:* ${formData.departureFrom}%0A*Places to Visit:* ${formData.placesToVisit}%0A*Preferred Travel Date:* ${formData.startDate || "Flexible"}`;
     
     // WhatsApp number
     const whatsappNumber = "923153309070";
@@ -35,15 +32,12 @@ export default function PrivateToursPage() {
     // Reset form
     setFormData({
       fullName: "",
-      email: "",
       whatsapp: "",
-      roomsRequired: "",
       persons: "",
+      travelType: "by-road",
       departureFrom: "",
       placesToVisit: "",
-      startDate: "",
-      endDate: "",
-      message: ""
+      startDate: ""
     });
   };
 
@@ -163,8 +157,7 @@ export default function PrivateToursPage() {
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-200">
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Row 1: Full Name & Email */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-6">
                 <div>
                   <input
                     type="text"
@@ -176,46 +169,65 @@ export default function PrivateToursPage() {
                     placeholder="Full Name"
                   />
                 </div>
+
                 <div>
                   <input
-                    type="email"
-                    name="email"
+                    type="tel"
+                    name="whatsapp"
                     required
-                    value={formData.email}
+                    value={formData.whatsapp}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Email"
+                    placeholder="WhatsApp/Phone +92 300 1234567"
                   />
                 </div>
-              </div>
 
-              {/* Row 2: WhatsApp/Phone */}
-              <div>
-                <input
-                  type="tel"
-                  name="whatsapp"
-                  required
-                  value={formData.whatsapp}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                  placeholder="WhatsApp/Phone +92 300 1234567"
-                />
-              </div>
-
-              {/* Row 3: Room Required & Persons */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <input
-                    type="number"
-                    name="roomsRequired"
-                    required
-                    min="1"
-                    value={formData.roomsRequired}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Room Required"
-                  />
+                  <span className="block text-sm font-semibold text-gray-700 mb-3">
+                    Preferred Travel Mode
+                  </span>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <label className="cursor-pointer">
+                      <input
+                        type="radio"
+                        name="travelType"
+                        value="by-road"
+                        checked={formData.travelType === "by-road"}
+                        onChange={handleChange}
+                        className="hidden"
+                      />
+                      <div
+                        className={`w-full px-4 py-3 rounded-lg border transition ${
+                          formData.travelType === "by-road"
+                            ? "border-red-600 bg-red-50 text-red-700 font-semibold"
+                            : "border-gray-300 text-gray-700 hover:border-red-600"
+                        }`}
+                      >
+                        🚌 By Road
+                      </div>
+                    </label>
+                    <label className="cursor-pointer">
+                      <input
+                        type="radio"
+                        name="travelType"
+                        value="by-air"
+                        checked={formData.travelType === "by-air"}
+                        onChange={handleChange}
+                        className="hidden"
+                      />
+                      <div
+                        className={`w-full px-4 py-3 rounded-lg border transition ${
+                          formData.travelType === "by-air"
+                            ? "border-red-600 bg-red-50 text-red-700 font-semibold"
+                            : "border-gray-300 text-gray-700 hover:border-red-600"
+                        }`}
+                      >
+                        ✈️ By Air
+                      </div>
+                    </label>
+                  </div>
                 </div>
+
                 <div>
                   <input
                     type="number"
@@ -225,13 +237,10 @@ export default function PrivateToursPage() {
                     value={formData.persons}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Persons"
+                    placeholder="Number of Travelers"
                   />
                 </div>
-              </div>
 
-              {/* Row 4: Departure From & Places to Visit */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <input
                     type="text"
@@ -240,9 +249,10 @@ export default function PrivateToursPage() {
                     value={formData.departureFrom}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Departure From"
+                    placeholder="Departure City"
                   />
                 </div>
+
                 <div>
                   <input
                     type="text"
@@ -251,47 +261,23 @@ export default function PrivateToursPage() {
                     value={formData.placesToVisit}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Places You Want To Visit"
+                    placeholder="Preferred Destinations"
                   />
                 </div>
-              </div>
 
-              {/* Row 5: Start Date & End Date */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <input
                     type="date"
                     name="startDate"
-                    required
                     value={formData.startDate}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="Start Date"
+                    placeholder="Preferred Start Date"
                   />
+                  <p className="text-xs text-gray-500 mt-2">
+                    Leave blank if your dates are flexible.
+                  </p>
                 </div>
-                <div>
-                  <input
-                    type="date"
-                    name="endDate"
-                    required
-                    value={formData.endDate}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
-                    placeholder="End Date"
-                  />
-                </div>
-              </div>
-
-              {/* Row 6: Message */}
-              <div>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600 resize-none"
-                  placeholder="Message (Optional - Any special requirements or preferences)"
-                />
               </div>
 
               {/* Submit Button */}
