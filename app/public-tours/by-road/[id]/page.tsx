@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { MapPin, Calendar, Users, Check, X, Phone, Mail, ChevronLeft, ChevronRight, Minus, Plus } from "lucide-react";
+import { MapPin, Calendar, Users, Check, X, Phone, Mail, ChevronLeft, ChevronRight, Minus, Plus, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -20,7 +20,7 @@ const formatTextWithBold = (text: string) => {
     'trekking', 'hiking', 'camping', 'rafting', 'bonfire', 'jeep', 'Jeep', 'sightseeing',
     'Musical Night', 'Cycling Tours', 'Cultural Tours', 'Adventure', 'adventure',
     // Important terms
-    'TOWARDSDESTINATION.PK', 'Book', 'Experience', 'Beauty', 'Mesmerizing', 'mesmerizing',
+    '@towardsdestination.pk', 'Book', 'Experience', 'Beauty', 'Mesmerizing', 'mesmerizing',
     'Best', 'best', 'North Pakistan', 'Pakistan Tour', 'Valley', 'Lake', 'Meadows',
     'Waterfall', 'waterfalls', 'Border', 'Mountains', 'Scenic', 'scenic',
     // Tour specifics
@@ -58,7 +58,7 @@ const packageDetails: any = {
     image: "/kumrat.jpg",
     groupSize: "20 - 25",
     tourType: "Daily Tour",
-    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with TOWARDSDESTINATION.PK Pvt. Ltd. Book your Trip Now and Experience the Beauty of Kumrat Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with @towardsdestination.pk Pvt. Ltd. Book your Trip Now and Experience the Beauty of Kumrat Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     pointsToVisit: [
       "Kumrat Valley",
       "Kala Chashma",
@@ -134,7 +134,7 @@ const packageDetails: any = {
       }
     ],
     contact: {
-      email: "info@towardsdestination.pk",
+      email: "Info.Towardsdestination@gmail.com",
       whatsapp: "+92315 3309070",
       instagram: "Towards Destination"
     },
@@ -149,7 +149,7 @@ const packageDetails: any = {
     "image": "/hunza1.jpg",
     "groupSize": "100 people",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Mansehra",
       "Balakot",
@@ -309,9 +309,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount offer: 5% discount for 5 to 20 adults"
   },
@@ -404,9 +404,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+923120506457",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": null
   },
@@ -419,7 +419,7 @@ const packageDetails: any = {
     "image": "/naran1.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Naran with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Naran with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     "pointsToVisit": [
       "Shogran",
       "Siri paye Meadows",
@@ -530,9 +530,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": null
   },
@@ -545,7 +545,7 @@ const packageDetails: any = {
     "image": "/neelum5.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with TOWARDSDESTINATION.PK.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with @towardsdestination.pk.",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -679,9 +679,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
+      "email": "Info.Towardsdestination@gmail.com",
       "whatsapp": "+92 315 3309070",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   }
@@ -694,7 +694,7 @@ const packageDetails: any = {
     "image": "/neelum.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with TOWARDSDESTINATION.PK.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with @towardsdestination.pk.",
     "pointsToVisit": [
       "Muzafrabad",
       "Neelum_Jhelum_project",
@@ -829,9 +829,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for up to 25 adults"
   },
@@ -843,7 +843,7 @@ const packageDetails: any = {
     "price": 17500,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with TOWARDSDESTINATION.PK (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
+    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with @towardsdestination.pk (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -967,9 +967,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -982,7 +982,7 @@ const packageDetails: any = {
     "image": "/kumrat.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with TOWARDSDESTINATION.PK.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with @towardsdestination.pk.",
     "pointsToVisit": [
       "Chakdara",
       "Upper Dir",
@@ -1107,9 +1107,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1122,7 +1122,7 @@ const packageDetails: any = {
     "image": "/neelum3.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with TOWARDSDESTINATION.PK.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with @towardsdestination.pk.",
     "pointsToVisit": [
       "Ratti Gali",
       "Kutton Waterfall",
@@ -1237,9 +1237,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": null
   },
@@ -1252,7 +1252,7 @@ const packageDetails: any = {
     "image": "/logo.jpeg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "TOWARDSDESTINATION.PK Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1395,9 +1395,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1409,7 +1409,7 @@ const packageDetails: any = {
     "price": 28000,
     "image": "/astore.jpg",
     "tourType": "Specific Tour",
-    "description": "TOWARDSDESTINATION.PK presents Astore | Minimarg | Rama Meadows| Deosai. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk presents Astore | Minimarg | Rama Meadows| Deosai. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1557,9 +1557,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -1572,7 +1572,7 @@ const packageDetails: any = {
     "image": "/skardu8.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "TOWARDSDESTINATION.PK Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1774,9 +1774,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 25 adults"
   },
@@ -1789,7 +1789,7 @@ const packageDetails: any = {
     "image": "/skardu6.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "TOWARDSDESTINATION.PK presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Sightseeing of Balakot",
       "Kiwai Waterfall",
@@ -1965,9 +1965,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -1979,7 +1979,7 @@ const packageDetails: any = {
     "price": 14000,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Shardah",
       "Kel",
@@ -2090,9 +2090,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   },
@@ -2105,7 +2105,7 @@ const packageDetails: any = {
     "image": "/swat.jpg",
     "groupSize": "Unlimited",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH TOWARDSDESTINATION.PK PVT. LTD. Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with TOWARDSDESTINATION.PK. TOWARDSDESTINATION.PK is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Sightseeing of Swat",
       "Mingora",
@@ -2223,9 +2223,9 @@ const packageDetails: any = {
       }
     ],
     "contact": {
-      "email": "info@towardsdestination.pk",
-      "whatsapp": "+92 344 7079307",
-      "instagram": "TOWARDSDESTINATION.PK"
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
   }
@@ -2296,6 +2296,13 @@ export default function TourDetailPage() {
     });
   };
 
+  const handleWhatsAppInquiry = () => {
+    const whatsappNumber = "923153309070";
+    const message = `Hello! I'm interested in the tour package: ${pkg.title}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -2352,6 +2359,21 @@ export default function TourDetailPage() {
               <p className="text-gray-700 leading-relaxed text-lg font-light tracking-wide">
                 <FormattedText text={pkg.description} />
               </p>
+              
+              {/* WhatsApp Inquiry Button */}
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-3 shadow-lg hover:shadow-xl"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  Inquire via WhatsApp
+                </button>
+                <p className="text-center text-sm text-gray-500 mt-3">
+                  Click to chat with us on WhatsApp for instant booking and queries
+                </p>
+              </div>
             </section>
 
             {/* Tour Highlights */}
@@ -2763,7 +2785,7 @@ export default function TourDetailPage() {
                       <Phone className="w-6 h-6 text-green-700 shrink-0" />
                       <div className="min-w-0 flex-1">
                         <div className="text-xs text-gray-600 mb-1">WhatsApp</div>
-                        <a href={`https://wa.me/${pkg.contact.whatsapp.replace('+', '')}`} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
+                        <a href={`https://wa.me/${pkg.contact.whatsapp.replace('+', '')}?text=${encodeURIComponent("Interested in This Package")}`} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
                           {pkg.contact.whatsapp}
                         </a>
                       </div>
@@ -2774,7 +2796,7 @@ export default function TourDetailPage() {
                       <span className="w-6 h-6 text-green-700 text-xl shrink-0">📷</span>
                       <div className="min-w-0 flex-1">
                         <div className="text-xs text-gray-600 mb-1">Instagram</div>
-                        <a href="https://www.instagram.com/towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
+                        <a href="https://www.instagram.com/@towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
                           {pkg.contact.instagram}
                         </a>
                       </div>
@@ -3065,8 +3087,8 @@ export default function TourDetailPage() {
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
                     <Mail className="w-4 h-4" />
-                    <a href="mailto:info@towardsdestination.pk" className="text-sm hover:text-green-600 transition-colors">
-                      info@towardsdestination.pk
+                    <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-green-600 transition-colors">
+                      Info.Towardsdestination@gmail.com
                     </a>
                   </div>
                 </div>

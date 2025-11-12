@@ -60,8 +60,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@towardsdestination.pk", "Quick response guaranteed"],
-      link: "mailto:info@towardsdestination.pk"
+      details: ["Info.Towardsdestination@gmail.com", "Quick response guaranteed"],
+      link: "Info.Towardsdestination@gmail.com"
     },
     {
       icon: Clock,
@@ -121,22 +121,22 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => {
               const IconComponent = info.icon;
               return (
-                <div key={index} className="bg-white rounded-xl p-4 xs:p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-white" />
+                <div key={index} className="bg-white rounded-xl p-6 xs:p-7 sm:p-8 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-5">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-bold text-red-600 mb-2">{info.title}</h3>
+                  <h3 className="font-bold text-red-600 mb-3 text-lg">{info.title}</h3>
                   {info.link ? (
                     <a href={info.link} className="block">
                       {info.details.map((detail, idx) => (
-                        <p key={idx} className={`${idx === 0 ? 'text-red-600 font-medium' : 'text-gray-600 text-sm'}`}>
+                        <p key={idx} className={`${idx === 0 ? 'text-red-600 font-semibold text-base' : 'text-gray-600 text-sm'}`}>
                           {detail}
                         </p>
                       ))}
                     </a>
                   ) : (
                     info.details.map((detail, idx) => (
-                      <p key={idx} className={`${idx === 0 ? 'text-red-600 font-medium' : 'text-gray-600 text-sm'}`}>
+                      <p key={idx} className={`${idx === 0 ? 'text-red-600 font-semibold text-base' : 'text-gray-600 text-sm'}`}>
                         {detail}
                       </p>
                     ))

@@ -35,27 +35,56 @@ export default function AboutPage() {
       description: "Deep knowledge of Pakistan's northern regions and cultural insights for authentic experiences."
     }
   ];
-
-  const team = [
-    {
-      name: "Muhammad Ahmed",
-      role: "Founder & CEO",
-      image: "/cultural tours.jpg",
-      description: "15+ years in tourism industry"
-    },
-    {
-      name: "Fatima Khan",
-      role: "Operations Director",
-      image: "/photography.jpg",
-      description: "Expert in tour planning"
-    },
-    {
-      name: "Ali Hassan",
-      role: "Tour Manager",
-      image: "/mountain trekking.jpg",
-      description: "Certified mountain guide"
-    }
-  ];
+const team = [
+  {
+    name: "Muhammad Asad Sindhu",
+    role: "Founder/CEO", // 
+    image: "/team/1.png", // Placeholder path
+    description: "Founder & CEO of TowardsDestination.pk" // 
+  },
+  {
+    name: "Ms. Aqsa Aziz Jamali", // [cite: 36]
+    role: "Team Member", // Placeholder role
+    image: "/team/2.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Mis Iqra Arshad Faraz", // [cite: 40]
+    role: "Team Member", // Placeholder role
+    image: "/team/3.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Shafah Mehmood", // [cite: 41]
+    role: "Team Member", // Placeholder role
+    image: "/team/4.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Ms. Fatima Nadeem", // [cite: 42]
+    role: "Team Member", // Placeholder role
+    image: "/team/5.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Mariam Tahir", // [cite: 43]
+    role: "Team Member", // Placeholder role
+    image: "/team/6.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Mr. Hafiz Zeeshan", // [cite: 44]
+    role: "Team Member", // Placeholder role
+    image: "/team/7.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  },
+  {
+    name: "Mr. Arham Gull", // [cite: 45]
+    role: "Team Member", // Placeholder role
+    image: "/team/8.png", // Placeholder path
+    description: "Valuable member of the team" // Placeholder description
+  }
+];
 
   const milestones = [
     { year: "2012", event: "Company Founded", description: "Started with a vision to showcase Pakistan's beauty" },
@@ -316,12 +345,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 xs:gap-8">
             {team.map((member, index) => (
               <div key={index} className="group">
-                <div className="relative h-80 rounded-2xl overflow-hidden mb-4">
+                <div className="relative h-80 rounded-2xl overflow-hidden mb-4 bg-gray-100">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-red-600 mb-1">

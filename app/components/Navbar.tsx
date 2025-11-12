@@ -60,13 +60,13 @@ export default function Navbar() {
                   href="/public-tours/by-air"
                   className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
-                  By Air
+                 🛫 By Air
                 </Link>
                 <Link 
                   href="/public-tours/by-road"
                   className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
-                  By Road
+                 🛣 ️ By Road
                 </Link>
               </div>
             </div>
@@ -158,14 +158,14 @@ export default function Navbar() {
                   className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  By Air
+                  🛫 By Air
                 </Link>
                 <Link 
                   href="/public-tours/by-road"
                   className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  By Road
+                   🚗 By Road
                 </Link>
               </div>
             </div>
