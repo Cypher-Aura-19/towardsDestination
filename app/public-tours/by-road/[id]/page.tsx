@@ -136,7 +136,7 @@ const packageDetails: any = {
     contact: {
       email: "Info.Towardsdestination@gmail.com",
       whatsapp: "+92315 3309070",
-      instagram: "Towards Destination"
+      instagram: "@towardsdestination.pk"
     },
     bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-20 adults"
   },
@@ -2768,7 +2768,28 @@ export default function TourDetailPage() {
             {pkg.contact && (
               <section className="p-8 bg-linear-to-r from-green-50 to-emerald-50 rounded-xl border-2 border-green-300 shadow-sm">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">📞 Contact Us</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+                
+                {/* WhatsApp - Full Width Row */}
+                {pkg.contact.whatsapp && (
+                  <div className="mb-4">
+                    <div className="flex items-center gap-5 p-6 bg-white rounded-xl hover:shadow-lg transition-shadow overflow-hidden border-2 border-green-500">
+                      {/* WhatsApp Logo SVG */}
+                      <svg className="w-16 h-16 shrink-0" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" fill="#25D366"/>
+                        <path d="M34.75 13.35C32.65 11.25 29.85 10.05 26.85 10.05C20.45 10.05 15.25 15.25 15.25 21.65C15.25 23.65 15.75 25.55 16.75 27.25L15.15 33.05L21.15 31.45C22.75 32.35 24.55 32.85 26.35 32.85H26.85C33.25 32.85 38.45 27.65 38.45 21.25C38.45 18.25 37.25 15.45 34.75 13.35ZM26.85 30.95C25.25 30.95 23.65 30.45 22.25 29.65L21.95 29.45L18.35 30.35L19.25 26.85L19.05 26.55C18.15 25.05 17.65 23.35 17.65 21.65C17.65 16.55 21.75 12.45 26.85 12.45C29.35 12.45 31.65 13.35 33.35 15.05C35.05 16.75 35.95 19.05 35.95 21.55C36.05 26.65 31.95 30.95 26.85 30.95ZM31.95 24.05C31.65 23.85 30.15 23.15 29.85 23.05C29.55 22.85 29.35 22.85 29.15 23.15C28.95 23.45 28.35 24.05 28.15 24.25C27.95 24.45 27.85 24.45 27.55 24.35C27.25 24.15 26.25 23.85 25.05 22.85C24.15 22.05 23.55 21.05 23.35 20.75C23.15 20.45 23.35 20.25 23.45 20.15C23.65 19.95 23.85 19.65 24.05 19.45C24.25 19.25 24.25 19.05 24.35 18.85C24.45 18.65 24.35 18.45 24.25 18.35C24.15 18.15 23.55 16.65 23.35 16.15C23.15 15.55 22.85 15.65 22.65 15.65H22.05C21.85 15.65 21.55 15.75 21.25 16.05C20.95 16.35 20.15 17.05 20.15 18.55C20.15 20.05 21.25 21.55 21.45 21.75C21.65 21.95 23.55 24.85 26.45 26.15C27.15 26.45 27.65 26.65 28.05 26.75C28.75 26.95 29.35 26.95 29.85 26.85C30.35 26.75 31.55 26.15 31.75 25.45C32.05 24.75 32.05 24.15 31.95 24.05Z" fill="white"/>
+                      </svg>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-sm font-semibold text-gray-600 mb-2">WhatsApp</div>
+                        <a href="https://api.whatsapp.com/send/?phone=923153309070&text=Hello%21+I%27m+interested+in+your+tour+packages.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-bold break-all text-xl block">
+                          {pkg.contact.whatsapp}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
+                {/* Email and Instagram - Two Columns */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {pkg.contact.email && (
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow overflow-hidden">
                       <Mail className="w-6 h-6 text-green-700 shrink-0" />
@@ -2776,17 +2797,6 @@ export default function TourDetailPage() {
                         <div className="text-xs text-gray-600 mb-1">Email</div>
                         <a href={`mailto:${pkg.contact.email}`} className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
                           {pkg.contact.email}
-                        </a>
-                      </div>
-                    </div>
-                  )}
-                  {pkg.contact.whatsapp && (
-                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow overflow-hidden">
-                      <Phone className="w-6 h-6 text-green-700 shrink-0" />
-                      <div className="min-w-0 flex-1">
-                        <div className="text-xs text-gray-600 mb-1">WhatsApp</div>
-                        <a href={`https://wa.me/${pkg.contact.whatsapp.replace('+', '')}?text=${encodeURIComponent("Interested in This Package")}`} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-green-700 font-medium break-all text-sm block">
-                          {pkg.contact.whatsapp}
                         </a>
                       </div>
                     </div>
@@ -3024,10 +3034,10 @@ export default function TourDetailPage() {
                       <input
                         type="text"
                         name="name"
-                        required
+                        
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Name *"
+                        placeholder="Name "
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 placeholder-gray-500"
                       />
                     </div>
@@ -3036,10 +3046,10 @@ export default function TourDetailPage() {
                       <input
                         type="email"
                         name="email"
-                        required
+                        
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="Email *"
+                        placeholder="Email "
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 placeholder-gray-500"
                       />
                     </div>
@@ -3048,10 +3058,10 @@ export default function TourDetailPage() {
                       <input
                         type="tel"
                         name="phone"
-                        required
+                        
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="Phone/WhatsApp *"
+                        placeholder="Phone/WhatsApp "
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 placeholder-gray-500"
                       />
                     </div>
@@ -3062,8 +3072,8 @@ export default function TourDetailPage() {
                         value={formData.message}
                         onChange={handleChange}
                         rows={4}
-                        placeholder="Your Message or Inquiry *"
-                        required
+                        placeholder="Your Message or Inquiry "
+                        
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 resize-none text-gray-900 placeholder-gray-500"
                       />
                     </div>

@@ -105,7 +105,7 @@ export default function Navbar() {
 
           {/* Desktop Book Now Button */}
           <Link 
-            href="/contact"
+            href="/private-tours"
             className="hidden xl:inline-flex bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-md whitespace-nowrap shrink-0"
           >
             Book Now

@@ -2,38 +2,37 @@
 
 import { MapPin, ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function TourPackages() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // Featured tours from public-tours/by-road
   const destinations = [
     {
-      id: 1,
-      name: "Hunza Valley Tour",
-      location: "Gilgit-Baltistan, Pakistan",
-      priceByRoad: "PKR 45,000",
-      priceByAir: "PKR 65,000",
-      priceLabel: "/person",
-      image: "/hunza1.jpg", // Add your image to public folder
-    },
-    {
       id: 2,
-      name: "Skardu & Hunza",
-      location: "Skardu, Pakistan",
-      priceByRoad: "PKR 55,000",
-      priceByAir: "PKR 75,000",
-      priceLabel: "/person",
-      image: "/skardu1.jpg", // Add your image to public folder
+      name: "5 Days Trip to Hunza & Naltar Valley",
+      location: "Hunza & Naltar",
+      price: 22000,
+      image: "/hunza1.jpg",
+      duration: "5 Days, 4 Nights"
     },
     {
-      id: 3,
-      name: "Naran Kaghan Valley",
-      location: "Khyber Pakhtunkhwa, Pakistan",
-      priceByRoad: "PKR 35,000",
-      priceByAir: "PKR 50,000",
-      priceLabel: "/person",
-      image: "/naran1.jpg", // Add your image to public folder
+      id: 12,
+      name: "8 Days Trip to Hunza & Skardu Valley",
+      location: "Hunza & Skardu",
+      price: 32000,
+      image: "/skardu8.jpg",
+      duration: "8 Days 7 Nights"
+    },
+    {
+      id: 4,
+      name: "3 Days – Naran | Shogran Group Tour",
+      location: "Naran & Shogran",
+      price: 14000,
+      image: "/naran1.jpg",
+      duration: "3 Days 2 Nights"
     }
   ];
 
@@ -93,8 +92,9 @@ export default function TourPackages() {
         {/* Destination Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-0">
           {destinations.map((destination) => (
-            <div 
+            <Link
               key={destination.id}
+              href={`/public-tours/by-road/${destination.id}`}
               className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
               style={{animationDelay: `${destination.id * 0.1}s`}}
             >
@@ -114,13 +114,13 @@ export default function TourPackages() {
                 {/* Price Badge */}
                 <div className="absolute bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
                   <div className="text-xs font-semibold">Starting from</div>
-                  <div className="text-xl font-bold">{destination.priceByRoad}</div>
+                  <div className="text-xl font-bold">PKR {destination.price.toLocaleString()}</div>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
                   {destination.name}
                 </h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
@@ -128,24 +128,25 @@ export default function TourPackages() {
                   <span className="text-sm">{destination.location}</span>
                 </div>
                 
-                {/* Travel Options */}
-                <div className="flex gap-2 mb-4">
-                  <div className="flex-1 bg-gray-50 px-3 py-2 rounded-lg text-center border border-gray-200">
-                    <div className="text-xs text-gray-600">By Road</div>
-                    <div className="text-sm font-bold text-gray-900">{destination.priceByRoad}</div>
+                {/* Tour Info */}
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
+                  <div>
+                    <div className="text-xs text-gray-500">Duration</div>
+                    <div className="text-sm font-semibold text-gray-900">{destination.duration}</div>
                   </div>
-                  <div className="flex-1 bg-red-600 px-3 py-2 rounded-lg text-center">
-                    <div className="text-xs text-white">By Air</div>
-                    <div className="text-sm font-bold text-white">{destination.priceByAir}</div>
+                  <div className="text-right">
+                    <div className="text-xs text-gray-500">Travel Mode</div>
+                    <div className="text-sm font-semibold text-red-600">🚗 By Road</div>
                   </div>
                 </div>
                 
                 {/* Book Button */}
-                <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105">
+                <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2">
                   View Details & Book
+                  <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

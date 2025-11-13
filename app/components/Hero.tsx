@@ -2,14 +2,93 @@
 
 import { ArrowRight, Play, Star } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState, useRef, useEffect } from "react";
+
+// Popular destinations
+const popularLocations = [
+  "Hunza",
+  "Skardu",
+  "Naran",
+  "Shogran",
+  "Neelum Valley",
+  "Kashmir",
+  "Kumrat",
+  "Fairy Meadows",
+  "Astore",
+  "Swat",
+  "Gilgit",
+  "Naltar",
+  "Deosai",
+  "Ratti Gali",
+  "Arang Kel",
+  "Taobat",
+  "Keran",
+  "Sharda",
+  "Minimarg",
+  "Rama Meadows"
+];
 
 export default function Hero() {
+  const router = useRouter();
+  const [location, setLocation] = useState("");
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
+  const [guests, setGuests] = useState("1");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [filteredLocations, setFilteredLocations] = useState<string[]>([]);
+  const suggestionsRef = useRef<HTMLDivElement>(null);
+
+  // Filter locations based on input
+  useEffect(() => {
+    if (location.trim()) {
+      const filtered = popularLocations.filter((loc) =>
+        loc.toLowerCase().includes(location.toLowerCase())
+      );
+      setFilteredLocations(filtered);
+      setShowSuggestions(filtered.length > 0);
+    } else {
+      setFilteredLocations([]);
+      setShowSuggestions(false);
+    }
+  }, [location]);
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (suggestionsRef.current && !suggestionsRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleLocationSelect = (selectedLocation: string) => {
+    setLocation(selectedLocation);
+    setShowSuggestions(false);
+  };
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Build query parameters
+    const params = new URLSearchParams();
+    if (location) params.append("location", location);
+    if (checkIn) params.append("checkIn", checkIn);
+    if (checkOut) params.append("checkOut", checkOut);
+    if (guests) params.append("guests", guests);
+    
+    // Navigate to search results page
+    router.push(`/search?${params.toString()}`);
+  };
   return (
     <section className="relative min-h-screen pt-[120px] overflow-hidden bg-linear-to-br from-gray-900 via-gray-800 to-black">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/main4.jpg"
+          src="/main5.png"
           alt="Northern Pakistan"
           fill
           className="object-contain object-center"
@@ -29,19 +108,19 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 py-12 sm:py-20 min-h-screen flex flex-col justify-between">
-        <div className="flex-1 flex items-center pt-4 sm:pt-8 w-full">
-          <div className="max-w-3xl w-full">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 py-4 sm:py-3 min-h-screen flex flex-col">
+        <div className="flex-1 flex items-start pt-2 sm:pt-4 w-full">
+          <div className="w-full">
             {/* Main Heading - Travel Agency Style */}
-            <div className="mb-4 animate-fade-in-up">
-              <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="mb-3 animate-fade-in-up">
+              <span className="inline-block bg-white text-red-600 px-2 sm:px-3 py-1.5 rounded-md text-[10px] sm:text-xs font-bold mb-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 🌟 Pakistan's #1 Travel Company
               </span>
             </div>
             
-            <h1 className="text-[28px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               Explore Pakistan's<br />
-              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 inline-block rounded-lg mt-2 text-[20px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl shadow-2xl hover:scale-105 transition-transform duration-300">Northern Beauty</span> & Beyond
+              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 inline-block rounded-lg mt-2 text-[18px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl shadow-2xl hover:scale-105 transition-transform duration-300">Northern Beauty</span> & Beyond
             </h1>
 
             {/* Description */}
@@ -66,90 +145,104 @@ export default function Hero() {
               </div>
             </div>
 
-          </div>
-        </div>
-
-        {/* Search Destination Form at Bottom */}
-         {/* Search Destination Form at Bottom */}
-        <div className="pb-4 sm:pb-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+            {/* Search Destination Form */}
+            <div className="mt-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
           <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 w-full max-w-6xl border border-gray-100 hover:shadow-red-500/20 transition-shadow duration-500">
             {/* Form Title */}
             <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4 sm:mb-6 text-center">
               Plan Your Journey
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-              {/* Tour Type */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Tour Type</label>
-                <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white">
-                  <option value="">Select Tour</option>
-                  <option value="northern-road">Northern Pakistan (By Road)</option>
-                  <option value="northern-air">Northern Pakistan (By Air)</option>
-                  <option value="umrah">Umrah Package</option>
-                  <option value="hotel">Hotel Stay</option>
-                </select>
-              </div>
+            <form onSubmit={handleSearch}>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                {/* Location */}
+                <div className="flex flex-col gap-2 relative" ref={suggestionsRef}>
+                  <label className="text-sm font-semibold text-gray-700">Location</label>
+                  <input
+                    type="text"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    onFocus={() => location.trim() && setShowSuggestions(true)}
+                    placeholder="e.g., Hunza, Skardu, Naran"
+                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                    autoComplete="off"
+                  />
+                  
+                  {/* Suggestions Dropdown */}
+                  {showSuggestions && filteredLocations.length > 0 && (
+                    <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto z-50">
+                      {filteredLocations.map((loc, index) => (
+                        <button
+                          key={index}
+                          type="button"
+                          onClick={() => handleLocationSelect(loc)}
+                          className="w-full text-left px-4 py-3 hover:bg-red-50 hover:text-red-600 transition-colors text-gray-900 border-b border-gray-100 last:border-b-0"
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="text-red-600">📍</span>
+                            <span className="font-medium">{loc}</span>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
-              {/* Check In Date */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Check In</label>
-                <input
-                  type="date"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                />
-              </div>
+                {/* Check In Date */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold text-gray-700">Check In</label>
+                  <input
+                    type="date"
+                    value={checkIn}
+                    onChange={(e) => setCheckIn(e.target.value)}
+                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  />
+                </div>
 
-              {/* Check Out Date */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Check Out</label>
-                <input
-                  type="date"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                />
-              </div>
+                {/* Check Out Date */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold text-gray-700">Check Out</label>
+                  <input
+                    type="date"
+                    value={checkOut}
+                    onChange={(e) => setCheckOut(e.target.value)}
+                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  />
+                </div>
 
-              {/* Guests */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700">Guests</label>
-                <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white">
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5+ Guests</option>
-                </select>
-              </div>
+                {/* Guests */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold text-gray-700">Guests</label>
+                  <select 
+                    value={guests}
+                    onChange={(e) => setGuests(e.target.value)}
+                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white"
+                  >
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                  </select>
+                </div>
 
-              {/* Search Button */}
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-gray-700 invisible">Search</label>
-                <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px]">
-                  Search
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                {/* Search Button */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold text-gray-700 invisible">Search</label>
+                  <button 
+                    type="submit"
+                    className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px]"
+                  >
+                    Search
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
-            </div>
-
-            {/* Additional Options */}
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm">
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Direct flights only</span>
-              </label>
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Include nearby airports</span>
-              </label>
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-2 focus:ring-red-600" />
-                <span className="text-gray-700">Flexible dates</span>
-              </label>
-            </div>
+            </form>
           </div>
         </div>
-   
-   
+          </div>
+        </div>
       </div>
     </section>
   );
