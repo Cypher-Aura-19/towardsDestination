@@ -150,9 +150,23 @@ export default function PrivateToursPage() {
             <h2 className="text-4xl font-bold text-red-600 mb-4">
               Request Your Private Tour
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
               Fill out the form below with your requirements, and we'll create a customized tour package just for you.
             </p>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <a 
+                href="/private-tours/by-air"
+                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                ✈️ Browse By Air Tours
+              </a>
+              <a 
+                href="/private-tours/honeymoon"
+                className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                💑 Browse Honeymoon Packages
+              </a>
+            </div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-200">
@@ -312,7 +326,7 @@ export default function PrivateToursPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm">
-                <Star className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                <Star className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
                 <span className="text-gray-700">{feature}</span>
               </div>
             ))}

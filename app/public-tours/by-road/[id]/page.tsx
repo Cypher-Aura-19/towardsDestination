@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { MapPin, Calendar, Users, Check, X, Phone, Mail, ChevronLeft, ChevronRight, Minus, Plus, MessageCircle } from "lucide-react";
+import { MapPin, Calendar, Users, Check, X, Phone, Mail, ChevronLeft, ChevronRight, Minus, Plus, MessageCircle, Send, Facebook, Instagram, Youtube } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -3107,6 +3107,126 @@ export default function TourDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Contact Section */}
+      <section className="py-16 bg-linear-to-br from-red-50 via-white to-red-50">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Send Message Button */}
+          <div className="text-center mb-8">
+            <button
+              onClick={handleWhatsAppInquiry}
+              className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto"
+            >
+              <Send className="w-5 h-5" />
+              Send Message
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Our Contact Card */}
+            <div className="bg-red-100 rounded-2xl p-8 shadow-lg border border-red-200">
+              <h2 className="text-3xl font-bold text-red-800 mb-6">Our Contact</h2>
+              
+              {/* Phone */}
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-gray-800 font-semibold mb-1">Phone</p>
+                  <a href="tel:+923174101300" className="text-red-700 hover:text-red-800 underline font-medium">
+                    +92 317 4101300
+                  </a>
+                  <a href="https://wa.me/923153309070" target="_blank" rel="noopener noreferrer" className="block text-red-700 hover:text-red-800 underline font-medium mt-1">
+                    WhatsApp: 0315 3309070
+                  </a>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-gray-800 font-semibold mb-1">Email Address</p>
+                  <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-700 hover:text-red-800 underline font-medium">
+                    Info.Towardsdestination@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Social Media */}
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-red-800 mb-4">Social Media</h3>
+                <div className="flex items-center gap-4">
+                  <a 
+                    href="https://facebook.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors shadow-md hover:shadow-lg"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-6 h-6 text-white" />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors shadow-md hover:shadow-lg"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-6 h-6 text-white" />
+                  </a>
+                  <a 
+                    href="https://youtube.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors shadow-md hover:shadow-lg"
+                    aria-label="YouTube"
+                  >
+                    <Youtube className="w-6 h-6 text-white" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Where to Find Us */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-red-200">
+              <h2 className="text-3xl font-bold text-red-800 mb-6">Where to Find Us</h2>
+              
+              <div className="space-y-4">
+                <div>
+                  <p className="text-red-700 font-bold text-lg mb-2">Islamabad Office (Main Head Office)</p>
+                  <a 
+                    href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-red-700 transition-colors block"
+                  >
+                    Office no 406, Main Peshawar Rd, near Hotel One Inn Daewoo Express, Jhangi Sayedan, Islamabad, 44000
+                  </a>
+                </div>
+                
+                <div className="pt-4 border-t border-gray-200">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Phone className="w-5 h-5 text-red-600" />
+                    <a href="tel:+923174101300" className="text-red-700 hover:text-red-800 underline font-medium">
+                      +92 317 4101300
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-red-600" />
+                    <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-700 hover:text-red-800 underline font-medium">
+                      Info.Towardsdestination@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>

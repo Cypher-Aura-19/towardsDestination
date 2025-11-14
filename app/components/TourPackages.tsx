@@ -37,10 +37,10 @@ export default function TourPackages() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-linear-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-linear-to-b from-red-50 via-white to-red-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-30"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-50"></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header - Travel Agency Style */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up relative z-40">
@@ -95,7 +95,7 @@ export default function TourPackages() {
             <Link
               key={destination.id}
               href={`/public-tours/by-road/${destination.id}`}
-              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
+              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-red-100 hover:border-red-300 hover:-translate-y-2 animate-fade-in-up"
               style={{animationDelay: `${destination.id * 0.1}s`}}
             >
               {/* Image Container */}
@@ -120,7 +120,7 @@ export default function TourPackages() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                <h3 className="text-xl font-bold text-red-700 mb-2 group-hover:text-red-800 transition-colors">
                   {destination.name}
                 </h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
@@ -129,14 +129,14 @@ export default function TourPackages() {
                 </div>
                 
                 {/* Tour Info */}
-                <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-red-100">
                   <div>
-                    <div className="text-xs text-gray-500">Duration</div>
-                    <div className="text-sm font-semibold text-gray-900">{destination.duration}</div>
+                    <div className="text-xs text-red-600">Duration</div>
+                    <div className="text-sm font-semibold text-red-700">{destination.duration}</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xs text-gray-500">Travel Mode</div>
-                    <div className="text-sm font-semibold text-red-600">🚗 By Road</div>
+                    <div className="text-xs text-red-600">Travel Mode</div>
+                    <div className="text-sm font-semibold text-red-700">🚗 By Road</div>
                   </div>
                 </div>
                 

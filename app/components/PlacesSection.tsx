@@ -56,10 +56,10 @@ export default function PlacesSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-linear-to-b from-white via-red-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-red-100 rounded-full blur-3xl opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-40 animate-float" style={{animationDelay: '2s'}}></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-16 animate-fade-in-up">
@@ -81,7 +81,7 @@ export default function PlacesSection() {
           {places.map((place) => (
             <div 
               key={place.id}
-              className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-red-200 border border-transparent animate-fade-in-up"
+              className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-red-300 border border-red-100 animate-fade-in-up"
               style={{animationDelay: `${place.id * 0.15}s`}}
             >
               {/* Image Container */}
@@ -92,11 +92,11 @@ export default function PlacesSection() {
                   fill
                   className="object-cover group-hover:scale-125 group-hover:rotate-1 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-red-900/20 to-transparent group-hover:from-black/90 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-red-900/20 to-transparent group-hover:from-black/90 transition-all duration-500"></div>
                 
                 {/* Region Badge */}
                 <div className="absolute top-4 left-4 animate-fade-in-left">
-                  <span className="inline-flex items-center gap-1 bg-white text-red-600 px-3 py-1 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span className="inline-flex items-center gap-1 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <MapPin className="w-3 h-3" />
                     {place.region}
                   </span>

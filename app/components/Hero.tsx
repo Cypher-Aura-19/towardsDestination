@@ -101,10 +101,11 @@ export default function Hero() {
           }}
         />
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-linear-to-br from-black/60 via-red-900/30 to-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/60 via-red-900/40 to-black/60 z-10"></div>
         {/* Animated Shapes */}
-        <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/20 rounded-full blur-3xl animate-float z-10"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/30 rounded-full blur-3xl animate-float z-10"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-700/20 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-red-500/15 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '2s'}}></div>
       </div>
 
       {/* Content */}

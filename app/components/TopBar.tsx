@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function TopBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-linear-to-r from-green-700 to-green-600 text-white py-2 text-base">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-linear-to-r from-red-800 via-red-700 to-red-800 text-white py-2 text-base">
       <div className="w-full max-w-[1400px] mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-2">
           {/* Contact Info */}
@@ -14,7 +14,7 @@ export default function TopBar() {
               href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-green-100 transition-colors"
+              className="flex items-center gap-2 hover:text-red-100 transition-colors"
             >
               <MapPin className="w-4 h-4 shrink-0" />
               <span className="hidden lg:inline text-sm font-medium">Office no 406, Main Peshawar Rd, Jhangi Sayedan, Islamabad</span>
@@ -23,7 +23,7 @@ export default function TopBar() {
             
             <a 
               href="mailto:info@towardsdestination.pk"
-              className="flex items-center gap-2 hover:text-green-100 transition-colors"
+              className="flex items-center gap-2 hover:text-red-100 transition-colors"
             >
               <Mail className="w-4 h-4 shrink-0" />
               <span className="hidden sm:inline text-sm font-medium">Info.Towardsdestination@gmail.com</span>
@@ -32,7 +32,7 @@ export default function TopBar() {
             
             <a 
               href="tel:+923174101300"
-              className="flex items-center gap-2 hover:text-green-100 transition-colors"
+              className="flex items-center gap-2 hover:text-red-100 transition-colors"
             >
               <Phone className="w-4 h-4 shrink-0" />
               <span className="text-sm font-medium">+92 317 4101300</span>
@@ -43,13 +43,13 @@ export default function TopBar() {
           <div className="flex items-center gap-3 xs:gap-4">
             <Link 
               href="/about"
-              className="hidden sm:inline text-sm hover:text-green-100 transition-colors font-semibold"
+              className="hidden sm:inline text-sm hover:text-red-100 transition-colors font-semibold"
             >
               About Us
             </Link>
             <Link 
               href="/contact"
-              className="hidden sm:inline text-sm hover:text-green-100 transition-colors font-semibold"
+              className="hidden sm:inline text-sm hover:text-red-100 transition-colors font-semibold"
             >
               Contact Us
             </Link>
@@ -60,7 +60,7 @@ export default function TopBar() {
                 href="https://facebook.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-green-100 transition-colors"
+                className="hover:text-red-100 transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ export default function TopBar() {
                 href="https://www.instagram.com/towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-green-100 transition-colors"
+                className="hover:text-red-100 transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ export default function TopBar() {
                 href="https://youtube.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-green-100 transition-colors"
+                className="hover:text-red-100 transition-colors"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
