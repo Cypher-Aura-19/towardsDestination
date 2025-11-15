@@ -84,20 +84,20 @@ export default function Hero() {
     router.push(`/search?${params.toString()}`);
   };
   return (
-    <section className="relative min-h-screen pt-[120px] overflow-hidden bg-gray-900">
+    <section className="relative min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-[120px] overflow-hidden bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/main5.png"
           alt="Northern Pakistan"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center opacity-100"
           priority
           quality={100}
           sizes="100vw"
         />
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-red-900/40 to-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-red-900/20 to-black/40 z-10"></div>
         {/* Animated Shapes */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/30 rounded-full blur-3xl animate-float z-10"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-700/20 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>

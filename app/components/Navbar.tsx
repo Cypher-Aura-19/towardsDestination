@@ -29,7 +29,7 @@ export default function Navbar() {
                 alt="TOWARDSDESTINATION.PK - Let's have an Adventure"
                 width={240}
                 height={90}
-                className="object-contain scale-[0.7] sm:scale-90 md:scale-90"
+                className="object-contain scale-[0.8] sm:scale-90 md:scale-90"
                 priority
               />
             </div>
