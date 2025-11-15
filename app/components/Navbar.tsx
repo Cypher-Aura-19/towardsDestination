@@ -8,8 +8,10 @@ import TopBar from "./TopBar";
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+  const [isMobileServicesDropdownOpen, setIsMobileServicesDropdownOpen] = useState(false);
 
   return (
     <>
@@ -83,6 +85,34 @@ export default function Navbar() {
             >
               International Tours
             </Link>
+
+            {/* Other Services Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsServicesDropdownOpen(true)}
+              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap">
+                Other Services
+                <ChevronDown className={`w-4 h-4 transition-transform ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full left-0 mt-2 w-52 bg-white rounded-lg shadow-xl py-2 border border-gray-100 transition-all duration-200 ${isServicesDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                <Link 
+                  href="/rental-services"
+                  className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                >
+                  🚗 Rental Services
+                </Link>
+                <Link 
+                  href="/hotel-services"
+                  className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                >
+                  🏨 Hotel Services
+                </Link>
+              </div>
+            </div>
             <Link 
               href="/gallery"
               className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap"
@@ -184,6 +214,38 @@ export default function Navbar() {
             >
               International Tours
             </Link>
+
+            {/* Mobile Other Services Dropdown */}
+            <div>
+              <button 
+                onClick={() => setIsMobileServicesDropdownOpen(!isMobileServicesDropdownOpen)}
+                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              >
+                Other Services
+                <ChevronDown className={`w-4 h-4 transition-transform ${
+                  isMobileServicesDropdownOpen ? 'rotate-180' : ''
+                }`} />
+              </button>
+              
+              <div className={`transition-all duration-200 overflow-hidden ${
+                isMobileServicesDropdownOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+              }`}>
+                <Link 
+                  href="/rental-services"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  🚗 Rental Services
+                </Link>
+                <Link 
+                  href="/hotel-services"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  🏨 Hotel Services
+                </Link>
+              </div>
+            </div>
             <Link 
               href="/gallery" 
               className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
