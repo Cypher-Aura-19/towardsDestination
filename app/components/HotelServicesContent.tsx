@@ -10,74 +10,20 @@ export default function HotelServicesContent() {
   const hotelServices = [
     {
       id: 1,
-      name: "Mountain View Resort",
-      location: "Hunza Valley",
+      name: "Premium Mountain Resort",
+      location: "Northern Pakistan",
       rating: 4.8,
       reviews: 245,
       price: 8000,
       image: "/hotel.jpg",
       amenities: ["Free Wi-Fi", "Breakfast", "Parking", "Restaurant"],
       priceType: "/night",
-      description: "Experience breathtaking mountain views with world-class hospitality in the heart of Hunza Valley.",
+      description: "Experience breathtaking mountain views with world-class hospitality in the heart of Northern Pakistan.",
       fullAmenities: [
         { icon: Wifi, label: "Free Wi-Fi" },
         { icon: Coffee, label: "Complimentary Breakfast" },
         { icon: Car, label: "Free Parking" },
         { icon: Utensils, label: "Restaurant" }
-      ]
-    },
-    {
-      id: 2,
-      name: "Skardu Luxury Hotel",
-      location: "Skardu",
-      rating: 4.6,
-      reviews: 189,
-      price: 12000,
-      image: "/skardu1.jpg",
-      amenities: ["Free Wi-Fi", "Breakfast", "Parking", "Spa"],
-      priceType: "/night",
-      description: "Luxury accommodation with premium spa facilities overlooking the stunning Skardu landscape.",
-      fullAmenities: [
-        { icon: Wifi, label: "Free Wi-Fi" },
-        { icon: Coffee, label: "Complimentary Breakfast" },
-        { icon: Car, label: "Free Parking" },
-        { icon: Utensils, label: "Spa Services" }
-      ]
-    },
-    {
-      id: 3,
-      name: "Naran Comfort Inn",
-      location: "Naran",
-      rating: 4.7,
-      reviews: 156,
-      price: 6500,
-      image: "/naran.jpg",
-      amenities: ["Free Wi-Fi", "Breakfast", "Parking", "Garden"],
-      priceType: "/night",
-      description: "Cozy comfort inn nestled in the lush green valleys of Naran with beautiful garden views.",
-      fullAmenities: [
-        { icon: Wifi, label: "Free Wi-Fi" },
-        { icon: Coffee, label: "Complimentary Breakfast" },
-        { icon: Car, label: "Free Parking" },
-        { icon: Utensils, label: "Garden Lounge" }
-      ]
-    },
-    {
-      id: 4,
-      name: "Swat Valley Resort",
-      location: "Swat",
-      rating: 4.5,
-      reviews: 203,
-      price: 9500,
-      image: "/swat.jpg",
-      amenities: ["Free Wi-Fi", "Breakfast", "Parking", "Pool"],
-      priceType: "/night",
-      description: "Resort paradise with swimming pool and recreational facilities in scenic Swat Valley.",
-      fullAmenities: [
-        { icon: Wifi, label: "Free Wi-Fi" },
-        { icon: Coffee, label: "Complimentary Breakfast" },
-        { icon: Car, label: "Free Parking" },
-        { icon: Utensils, label: "Swimming Pool" }
       ]
     }
   ];
@@ -183,13 +129,13 @@ export default function HotelServicesContent() {
           </div>
 
           {/* Hotels Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="max-w-2xl mx-auto">
           {hotelServices.map((hotel, index) => (
-            <div
+            <a
+              href={`/hotel-services/${hotel.id}`}
               key={hotel.id}
-              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
+              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up block"
               style={{animationDelay: `${index * 0.1}s`}}
-              onClick={() => setSelectedHotel(hotel.id)}
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
@@ -251,11 +197,11 @@ export default function HotelServicesContent() {
                 
                 {/* Book Button */}
                 <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
-                  Book Stay
+                  View Details
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
+            </a>
           ))}
           </div>
 

@@ -2228,6 +2228,904 @@ const packageDetails: any = {
       "instagram": "@towardsdestination.pk"
     },
     "bulkDiscount": "Group Discount Offer: 5% discount for 5 to 20 adults"
+  },
+  "16": {
+    "id": 16,
+    "title": "08 Days Pakistan Trip to Shogran & Kashmir Valley (From Karachi)",
+    "location": "Shogran & Kashmir Valley",
+    "duration": "8 days, 7 nights",
+    "price": 38000,
+    "image": "/shogran.jpg",
+    "groupSize": "24 people",
+    "tourType": "Specific Tour",
+    "description": "Nature Explorer Tours Presents Shogran & Kashmir valley Trips from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
+    "pointsToVisit": [
+      "Balakot",
+      "Kiwai waterfall",
+      "Shogran Valley",
+      "Siri Paye Meadows",
+      "Gari Habib ullah Top",
+      "Muzaffrabad",
+      "Dhani waterfall",
+      "Kutton waterfall",
+      "Keran",
+      "Upper Neelum",
+      "Khanpur Dam"
+    ],
+    "highlights": [
+      "Visit Shogran Valley & Siri Paye Meadows",
+      "Explore Kashmir Valley & Upper Neelum",
+      "Visit Kiwai, Dhani & Kutton Waterfalls",
+      "See Khanpur Dam",
+      "Bonfire & Live BBQ",
+      "Musical Night"
+    ],
+    "included": [
+      "Transport",
+      "All Road Toll Taxes",
+      "05 Dinner/ 07 Breakfasts",
+      "Hotel pick & Drop from Bus Terminal",
+      "Bonfire",
+      "Accommodation at Hotels",
+      "Professional Guide",
+      "Live BBQ",
+      "Instrument for fun activity like Ludo, Card and frisbee etc",
+      "Basic First Aid"
+    ],
+    "excluded": [
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, road blocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Lunch isn't included in the package",
+      "Any kind of jeep is not included in the package",
+      "Entry Ticket of Altit & Baltit Forts",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "KERAN",
+        "standard": "Meer continental"
+      },
+      {
+        "location": "ISLAMABAD",
+        "standard": "Madcrew Lodges"
+      },
+      {
+        "location": "BALAKOT",
+        "standard": "Royal Park"
+      }
+    ],
+    "departureSchedule": [
+      {
+        "city": "Karachi",
+        "departure1": "Every Friday"
+      },
+      {
+        "city": "Islamabad",
+        "departure1": "Every Sunday"
+      }
+    ],
+    "pricing": {
+      "karachiQuadSharing": {
+        "standard": "38,000"
+      },
+      "karachiTwinSharing": {
+        "standard": "52,500"
+      },
+      "islamabadQuadSharing": {
+        "standard": "22,000"
+      },
+      "islamabadTwinSharing": {
+        "standard": "27,500"
+      }
+    },
+    "exceptions": [
+      "Kids age 5-8: 50% charges and given jumper seat.",
+      "Kids age <= 4: Free and given jumper seat if available or Lap"
+    ],
+    "notes": [
+      "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
+      "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
+      "Any Type of Jeep charges and Entry Tickets are not included in the package.",
+      "Heater/Ac charges are not included standard package.",
+      "Jeep charges for Shogran/Siripaye will be Rs. 2000/head. (Approximately)",
+      "All the Hotels are subject to availability and can be changed due to availability issues."
+    ],
+    "itinerary": [
+      {
+        "day": "Day 01",
+        "title": "DEPARTURE FROM KARACHI",
+        "description": "Pick up Members from Karachi Bus Terminal. Continous drive to Islamabad. Short stays on the ways"
+      },
+      {
+        "day": "Day 02",
+        "title": "ARRIVAL TO ISLAMABAD",
+        "description": "Arrival to Islamabad and check in hotel"
+      },
+      {
+        "day": "Day 03",
+        "title": "DEPARTURE FROM ISLAMABAD",
+        "description": "Departure from Islamabad for Kashmir Valley"
+      },
+      {
+        "day": "Day 04",
+        "title": "UPPER NEELUM - BALAKOT",
+        "description": "Explore Upper Neelum Valley. Visit Kutton waterfall, Keran and other scenic points. Departure for Balakot"
+      },
+      {
+        "day": "Day 05",
+        "title": "SHOGRAN VALLEY TOUR",
+        "description": "Visit Shogran Valley. Transfer to Jeep for Siri Paye Meadows. Visit Kiwai waterfall. Explore Gari Habib ullah Top"
+      },
+      {
+        "day": "Day 06",
+        "title": "BALAKOT - ISLAMABAD",
+        "description": "Departure from Balakot to Islamabad. Visit Khanpur Dam on the way. Arrival to Islamabad"
+      },
+      {
+        "day": "Day 07",
+        "title": "ISLAMBAD - KARACHI",
+        "description": "Departure from Islamabad to Karachi. Overnight journey"
+      },
+      {
+        "day": "Day 08",
+        "title": "ARRIVAL TO KARACHI",
+        "description": "Arrival to Karachi Bus Terminal"
+      }
+    ],
+    "contact": {
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": "Group Discount Offer: 5% discount for groups of 5-25 adults"
+  },
+  "17": {
+    "id": 17,
+    "title": "10 Days Pakistan Trip to Swat, Shogran & Kashmir Valley (From Karachi)",
+    "location": "Swat, Shogran & Kashmir Valley",
+    "duration": "10 days, 9 nights",
+    "price": 48000,
+    "image": "/swat.jpg",
+    "groupSize": "24 people",
+    "tourType": "Specific Tour",
+    "description": "Nature Explorer Tours Presents Pakistan Trip to Swat, Shogran & Kashmir valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Swat, Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
+    "pointsToVisit": [
+      "Swat Valley",
+      "Fizaghat",
+      "Malam Jabba",
+      "Bahrain",
+      "Kalam",
+      "Madayan",
+      "Ushu Forest",
+      "Palogha valley",
+      "Mahudhand Lake",
+      "Saif ullah Lake",
+      "Shangla Top",
+      "Balakot",
+      "Kiwai waterfall",
+      "Shogran Valley",
+      "Siri Paye Meadows",
+      "Gari Habib ullah Top",
+      "Muzaffrabad",
+      "Dhani waterfall",
+      "Kutton waterfall",
+      "Keran",
+      "Upper Neelum"
+    ],
+    "highlights": [
+      "Explore Swat Valley, Kalam & Malam Jabba",
+      "Visit Mahudhand Lake & Saif ullah Lake",
+      "See Shogran Valley & Siri Paye Meadows",
+      "Explore Kashmir Valley & Upper Neelum",
+      "Visit multiple waterfalls",
+      "Bonfire & Live BBQ",
+      "Musical Night"
+    ],
+    "included": [
+      "Transport",
+      "All Road Toll Taxes",
+      "07 Dinner/ 08 Breakfasts",
+      "Bonfire",
+      "Accommodation at Hotels",
+      "Professional Guide",
+      "Live BBQ",
+      "Instrument for fun activity like Ludo, Card and frisbee etc",
+      "Basic First Aid"
+    ],
+    "excluded": [
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, road blocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Lunch isn't included in the package",
+      "Any kind of jeep is not included in the package",
+      "Entry Ticket of Altit & Baltit Forts",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "KALAM",
+        "standard": "Holiday Inn"
+      },
+      {
+        "location": "KERAN",
+        "standard": "Meer continental"
+      },
+      {
+        "location": "BEHRAIN",
+        "standard": "Bahrain continental"
+      },
+      {
+        "location": "BALAKOT",
+        "standard": "Royal Park"
+      },
+      {
+        "location": "FIZAGHAT",
+        "standard": "Peace Hotel"
+      }
+    ],
+    "departureSchedule": [
+      {
+        "city": "Karachi",
+        "departure1": "Every Friday"
+      },
+      {
+        "city": "Islamabad",
+        "departure1": "Every Sunday"
+      }
+    ],
+    "pricing": {
+      "karachiQuadSharing": {
+        "standard": "48,000"
+      },
+      "karachiTwinSharing": {
+        "standard": "62,000"
+      },
+      "islamabadQuadSharing": {
+        "standard": "30,000"
+      },
+      "islamabadTwinSharing": {
+        "standard": "40,000"
+      }
+    },
+    "exceptions": [
+      "Kids age 5-8: 50% charges and given jumper seat.",
+      "Kids age <= 4: Free and given jumper seat if available or Lap"
+    ],
+    "notes": [
+      "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
+      "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
+      "Any Type of Jeep charges and Entry Tickets are not included in the package.",
+      "Heater/Ac charges are not included standard package.",
+      "Jeep charges for Mahudand lake will be Rs. 1500/head. (Approximately)",
+      "Jeep charges for Shogran/Siripaye will be Rs. 2000/head. (Approximately)",
+      "All the Hotels are subject to availability and can be changed due to availability issues."
+    ],
+    "itinerary": [
+      {
+        "day": "Day 01",
+        "title": "DEPARTURE FROM KARACHI",
+        "description": "Pick up Members from Karachi Bus Terminal. Continous drive to Islamabad. Short stays on the ways"
+      },
+      {
+        "day": "Day 02",
+        "title": "ARRIVAL TO ISLAMABAD",
+        "description": "Arrival to Islamabad and check in hotel"
+      },
+      {
+        "day": "Day 03",
+        "title": "DEPARTURE FROM ISLAMABAD",
+        "description": "Departure from Islamabad for Kashmir Valley"
+      },
+      {
+        "day": "Day 04",
+        "title": "UPPER NEELUM - BALAKOT",
+        "description": "Explore Upper Neelum Valley. Visit Kutton waterfall, Keran and other scenic points. Departure for Balakot"
+      },
+      {
+        "day": "Day 05",
+        "title": "SHOGRAN VALLEY TOUR",
+        "description": "Visit Shogran Valley. Transfer to Jeep for Siri Paye Meadows. Visit Kiwai waterfall. Explore Gari Habib ullah Top"
+      },
+      {
+        "day": "Day 06",
+        "title": "BALAKOT - SHANGLA - MALAM JABBA",
+        "description": "Departure from Balakot. Drive through Shangla Top. Arrival to Malam Jabba. Explore Malam Jabba ski resort"
+      },
+      {
+        "day": "Day 07",
+        "title": "MALAM JABBA - FIZAGHAT",
+        "description": "Departure from Malam Jabba to Fizaghat/Mingora. Explore Swat Valley"
+      },
+      {
+        "day": "Day 08",
+        "title": "KALAM - MAHUDHAND LAKE",
+        "description": "Departure for Kalam Valley. Visit Bahrain, Madayan. Transfer to Jeep for Mahudhand Lake. Visit Ushu Forest, Palogha Valley and Saif Ullah Lake. Back to Kalam"
+      },
+      {
+        "day": "Day 09",
+        "title": "KALAM VALLEY - ISLAMABAD",
+        "description": "Explore Kalam Valley. Departure for Islamabad. Short stays on the way. Arrival to Islamabad"
+      },
+      {
+        "day": "Day 10",
+        "title": "ISLAMBAD - KARACHI",
+        "description": "Departure from Islamabad to Karachi. Arrival to Karachi Bus Terminal"
+      }
+    ],
+    "contact": {
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": "Group Discount Offer: 5% discount for groups of 5-25 adults"
+  },
+  "18": {
+    "id": 18,
+    "title": "07 Days Trip to Swat Valley (From Karachi)",
+    "location": "Swat Valley",
+    "duration": "7 days, 6 nights",
+    "price": 30000,
+    "image": "/swat.jpg",
+    "groupSize": "24 people",
+    "tourType": "Specific Tour",
+    "description": "Nature Explorer Tours Presents 07 Days Trip to Swat valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Swat Valley with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
+    "pointsToVisit": [
+      "Swat Valley",
+      "Fizaghat",
+      "Malam Jabba",
+      "Bahrain",
+      "Kalam",
+      "Madayan",
+      "Ushu Forest",
+      "Palogha valley",
+      "Mahudhand Lake",
+      "Saif ullah Lake"
+    ],
+    "highlights": [
+      "Explore Swat Valley & Fizaghat",
+      "Visit Malam Jabba ski resort",
+      "See Kalam & Bahrain",
+      "Visit Mahudhand Lake & Saif ullah Lake",
+      "Explore Ushu Forest & Palogha valley",
+      "Bonfire & Live BBQ"
+    ],
+    "included": [
+      "Transport",
+      "All Road Toll Taxes",
+      "03 Dinner/ 05 Breakfasts",
+      "Bonfire",
+      "Accommodation at Hotels 4 Nights",
+      "Professional Guide",
+      "Live BBQ",
+      "Instrument for fun activity like Ludo, Card and frisbee etc",
+      "Basic First Aid"
+    ],
+    "excluded": [
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, road blocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Lunch isn't included in the package",
+      "Any kind of jeep is not included in the package",
+      "Entry Ticket of Altit & Baltit Forts",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "Fizaghat",
+        "standard": "Parkway Hotel",
+        "deluxe": "Parkway Hotel",
+        "executive": "Burj ul swat"
+      },
+      {
+        "location": "KALAM",
+        "standard": "Holday Inn",
+        "deluxe": "Holiday Inn",
+        "executive": "Zen Lexus"
+      }
+    ],
+    "departureSchedule": [
+      {
+        "city": "Karachi",
+        "departure1": "Every Wednesday",
+        "departure2": "Every Sunday"
+      },
+      {
+        "city": "Islamabad",
+        "departure1": "Every Friday",
+        "departure2": "Every Tuesday"
+      }
+    ],
+    "pricing": {
+      "karachiQuadSharing": {
+        "standard": "30,000",
+        "deluxe": "35,000"
+      },
+      "karachiTwinSharing": {
+        "standard": "37,500",
+        "deluxe": "45,000",
+        "executive": "52,500"
+      },
+      "islamabadQuadSharing": {
+        "standard": "13,000",
+        "deluxe": "17,500"
+      },
+      "islamabadTwinSharing": {
+        "standard": "15,000",
+        "deluxe": "20,000",
+        "executive": "27,500"
+      }
+    },
+    "exceptions": [
+      "Kids age 5-8: 50% charges and given jumper seat.",
+      "Kids age <= 4: Free and given jumper seat if available or Lap"
+    ],
+    "notes": [
+      "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
+      "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
+      "Any Type of Jeep charges and Entry Tickets are not included in the package.",
+      "Heater/Ac charges are not included standard package.",
+      "Jeep charges for Mahudand lake will be Rs. 1500/head. (Approximately)",
+      "All the Hotels are subject to availability and can be changed due to availability issues."
+    ],
+    "itinerary": [],
+    "contact": {
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": "Group Discount Offer: 5% discount for groups of 5-25 adults"
+  },
+  "19": {
+    "id": 19,
+    "title": "09 Days Trip to Hunza Valley (From Karachi)",
+    "location": "Hunza Valley",
+    "duration": "9 days, 8 nights",
+    "price": 42000,
+    "image": "/hunza1.jpg",
+    "groupSize": "24 people",
+    "tourType": "Specific Tour",
+    "description": "Nature Explorer Tours Presents 09 Days Trip to Hunza valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
+    "pointsToVisit": [
+      "Mansehra",
+      "Karakoram highway",
+      "Naran",
+      "Kaghan",
+      "Kiwai waterfall",
+      "Lulusar lake",
+      "Babusar Top",
+      "Chillas",
+      "Nanga Perbat View Point",
+      "Junction Point of Three Mightiest Mountains",
+      "Gilgit",
+      "Altit Fort",
+      "Baltit Fort",
+      "Hunza Valley",
+      "Hunza Shoping Center",
+      "Attabad Lake",
+      "Attabad Tunnel",
+      "Rakaposhi View Point",
+      "Passu Cones",
+      "Hussaini Suspension Bridge",
+      "Khunjerab Pass",
+      "Besham",
+      "Dassu waterfall",
+      "summer nala",
+      "Basha dam Sight"
+    ],
+    "highlights": [
+      "Visit Hunza Valley & Karimabad",
+      "Explore Attabad Lake & Passu Cones",
+      "Drive to Khunjerab Pass (China Border)",
+      "Visit Altit & Baltit Forts",
+      "See Nanga Parbat View Point",
+      "Visit Rakaposhi View Point",
+      "Explore Hussaini Suspension Bridge",
+      "Bonfire & Live BBQ"
+    ],
+    "included": [
+      "Transport",
+      "All Road Toll Taxes",
+      "4 Dinner/ 06 Breakfasts",
+      "Bonfire",
+      "Accommodation at Hotels 7 Nights",
+      "Professional Guide",
+      "Live BBQ",
+      "Instrument for fun activity like Ludo, Card and frisbee etc",
+      "Basic First Aid"
+    ],
+    "excluded": [
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, road blocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Lunch isn't included in the package",
+      "Any kind of jeep is not included in the package",
+      "Entry Ticket of Altit & Baltit Forts",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "Chilas",
+        "standard": "Regal Inn",
+        "deluxe": "Grace Continental",
+        "premium": "Shangrilla Hotel",
+        "executive": "Shangrilla Hotel"
+      },
+      {
+        "location": "Hunza",
+        "standard": "Hunza Hidden Palace",
+        "deluxe": "Northern Sapphire",
+        "premium": "Roomy Dastan",
+        "executive": "Luxus Hunza"
+      },
+      {
+        "location": "Besham",
+        "standard": "Ramada Besham",
+        "deluxe": "Ramada Besham",
+        "premium": "Besham Hilton",
+        "executive": "Besham Hilton"
+      }
+    ],
+    "departureSchedule": [
+      {
+        "city": "Karachi",
+        "departure1": "Every Thursday (Day Time)"
+      },
+      {
+        "city": "Islamabad",
+        "departure1": "Every Saturday morning at 5:00 am"
+      }
+    ],
+    "pricing": {
+      "karachiQuadSharing": {
+        "standard": "42,000"
+      },
+      "karachiTwinSharing": {
+        "standard": "49,000",
+        "deluxe": "58,000",
+        "premium": "65,000",
+        "executive": "85,000"
+      },
+      "islamabadQuadSharing": {
+        "standard": "21,000"
+      },
+      "islamabadTwinSharing": {
+        "standard": "24,000",
+        "deluxe": "32,500",
+        "premium": "40,000",
+        "executive": "60,000"
+      }
+    },
+    "exceptions": [
+      "Kids age 5-8: 50% charges and given jumper seat.",
+      "Kids age <= 4: Free and given jumper seat if available or Lap"
+    ],
+    "notes": [
+      "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
+      "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
+      "Any Type of Jeep charges and Entry Tickets are not included in the package.",
+      "Jeep charges for Naltar Valley will be Rs. 3,000/head. (Approximately)",
+      "All the Hotels are subject to availability and can be changed due to availability issues."
+    ],
+    "itinerary": [],
+    "contact": {
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": "Group Discount Offer: 5% discount for groups of 5-25 adults"
+  },
+  "20": {
+    "id": 20,
+    "title": "12 Days Tour package Hunza & Skardu Valley (From Karachi)",
+    "location": "Hunza & Skardu Valley",
+    "duration": "12 days, 11 nights",
+    "price": 50000,
+    "image": "/skardu8.jpg",
+    "groupSize": "24 people",
+    "tourType": "Specific Tour",
+    "description": "Nature Explorer Tours Presents 12 Days Trip to Hunza & Skardu valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip then just DM us & book your Trip now with us.",
+    "pointsToVisit": [
+      "Mansehra",
+      "Karakoram highway",
+      "Naran",
+      "Kaghan",
+      "Kiwai waterfall",
+      "Lulusar lake",
+      "Babusar Top",
+      "Chillas",
+      "Nanga Perbat View Point",
+      "Junction Point of Three Mightiest Mountains",
+      "Gilgit",
+      "Altit Fort",
+      "Baltit Fort",
+      "Hunza Valley",
+      "Hunza Shoping Center",
+      "Attabad Lake",
+      "Attabad Tunnel",
+      "Rakaposhi View Point",
+      "Passu Cones",
+      "Hussaini Suspension Bridge",
+      "Khunjerab Pass",
+      "Upper Kachura lake",
+      "Shangrilla Resort",
+      "Shigar fort",
+      "Sarfaranga Cold Desert",
+      "Manthoka waterfall",
+      "Sheosar Lake",
+      "Satpara Lake",
+      "Bara Pani",
+      "Kala Pani",
+      "Besham",
+      "Dassu waterfall",
+      "summer nala",
+      "Basha dam Sight",
+      "Basho Valley",
+      "Basho suspention Bridge"
+    ],
+    "highlights": [
+      "Visit Hunza Valley & Skardu Valley",
+      "Explore Attabad Lake & Passu Cones",
+      "Drive to Khunjerab Pass (China Border)",
+      "Visit Altit & Baltit Forts",
+      "See Shangrilla Resort & Upper Kachura Lake",
+      "Visit Shigar Fort & Sarfaranga Cold Desert",
+      "Explore Basho Valley & Suspension Bridge",
+      "Visit Sheosar Lake & Satpara Lake",
+      "Bonfire & Live BBQ"
+    ],
+    "included": [
+      "Transport",
+      "All Road Toll Taxes",
+      "07 Dinner/ 08 Breakfasts",
+      "Bonfire",
+      "Accommodation at Hotels 11 Nights",
+      "Professional Guide",
+      "Live BBQ",
+      "Instrument for fun activity like Ludo, Card and frisbee etc",
+      "Basic First Aid"
+    ],
+    "excluded": [
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, road blocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Lunch isn't included in the package",
+      "Any kind of jeep is not included in the package",
+      "Entry Ticket of Altit & Baltit Forts",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "Chilas",
+        "standard": "Regal Inn",
+        "deluxe": "Grace Continental",
+        "premium": "Shangrilla Hotel",
+        "executive": "Shangrilla Hotel"
+      },
+      {
+        "location": "Gilgit",
+        "standard": "Alpine Guest House",
+        "deluxe": "Duroyou Inn",
+        "premium": "Mandarin Inn",
+        "executive": "Serena Hotel"
+      },
+      {
+        "location": "Hunza",
+        "standard": "Hunza Hidden Palace",
+        "deluxe": "Northern Sapphire",
+        "premium": "Roomy Dastan",
+        "executive": "Luxus Hunza"
+      },
+      {
+        "location": "Skardu",
+        "standard": "Trout Villa",
+        "deluxe": "Snowland",
+        "premium": "Avari Express",
+        "executive": "Himmel"
+      },
+      {
+        "location": "Besham",
+        "standard": "Ramada Besham",
+        "deluxe": "Ramada Besham",
+        "premium": "Besham Hilton",
+        "executive": "Besham Hilton"
+      }
+    ],
+    "departureSchedule": [
+      {
+        "city": "Karachi",
+        "departure1": "Every Thursday (Day Time)"
+      },
+      {
+        "city": "Islamabad",
+        "departure1": "Every Saturday morning at 5:00 am"
+      }
+    ],
+    "pricing": {
+      "karachiQuadSharing": {
+        "standard": "50,000"
+      },
+      "karachiTwinSharing": {
+        "standard": "60,000",
+        "deluxe": "75,000",
+        "premium": "92,500",
+        "executive": "120,000"
+      },
+      "islamabadQuadSharing": {
+        "standard": "30,000"
+      },
+      "islamabadTwinSharing": {
+        "standard": "35,000",
+        "deluxe": "50,000",
+        "premium": "67,500",
+        "executive": "95,000"
+      }
+    },
+    "exceptions": [
+      "Kids age 5-8: 50% charges and given jumper seat.",
+      "Kids age <= 4: Free and given jumper seat if available or Lap"
+    ],
+    "notes": [
+      "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
+      "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
+      "Any Type of Jeep charges and Entry Tickets are not included in the package.",
+      "Jeep charges for Basho Meadows will be Rs. 2,000/head. (Approximately)",
+      "All the Hotels are subject to availability and can be changed due to availability issues."
+    ],
+    "itinerary": [],
+    "contact": {
+      "email": "Info.Towardsdestination@gmail.com",
+      "whatsapp": "+92315-3309070",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": "Group Discount Offer: 5% discount for groups of 5-25 adults"
+  },
+  "21": {
+    "id": 21,
+    "title": "Discover Pakistan: Hunza | Skardu | Lahore | Islamabad (8 Days Trip)",
+    "location": "Hunza, Skardu, Lahore & Islamabad",
+    "duration": "8 Days 7 Nights",
+    "price": 455,
+    "image": "/hunza1.jpg",
+    "groupSize": "17 people",
+    "tourType": "Daily Tour",
+    "description": "Nature Explorer tours Offers Discover Pakistan: Hunza | Skardu | Lahore | Islamabad Package for their beloved clients. If you are looking for comfortable Trip to North Pakistan in one go then you are at right place. We have a Various range of trekking tours in north Pakistan. People who are looking for adventurous tours then these Tour Package are recommended. Experience the beauty of Pakistan with this amazing journey. Explore the peaceful valleys of Hunza and Skardu, full of natural wonders. Visit Lahore for its rich culture and history, and enjoy the modern charm of Islamabad. Travel by road and air for a smooth and memorable trip!",
+    "pointsToVisit": [
+      "Islamabad",
+      "Naran Valley",
+      "Gilgit",
+      "Hunza Valley",
+      "Attabad Lake",
+      "Passu Cones",
+      "Khunjerab Pass",
+      "Altit Fort",
+      "Baltit Fort",
+      "Naltar Valley",
+      "Skardu Valley",
+      "Shangrila Resort",
+      "Upper Kachura Lake",
+      "Shigar Valley",
+      "Manthoka Waterfall",
+      "Saif ul Malook Lake",
+      "Lahore",
+      "Badshahi Mosque",
+      "Lahore Fort",
+      "Minar-e-Pakistan"
+    ],
+    "highlights": [
+      "Explore Hunza Valley & Skardu Valley",
+      "Visit Attabad Lake with boating",
+      "Drive to Khunjerab Pass (China Border)",
+      "Visit Altit & Baltit Forts",
+      "Explore Naltar Valley & SOQ Valley",
+      "Visit Shangrila Resort & Upper Kachura Lake",
+      "See Manthoka Waterfall",
+      "Visit Saif ul Malook Lake",
+      "Explore Lahore's historical sites",
+      "Traditional Musical Night with Bonfire",
+      "Domestic Air Ticket included (one side)"
+    ],
+    "included": [
+      "Warm welcome at Airport",
+      "Transportation",
+      "Fuel/Toll tax/Challan/Driver/Guide",
+      "Domestic Air Ticket (one side)",
+      "07 Nights Hotel accommodation (Twin Sharing)",
+      "Meal: Full Board (7 Breakfast-7 Lunches- 8 Dinners)",
+      "Visa support/invitation letter for travelling",
+      "Jeeps for Naltar, SOQ Valley and Saif ul Malook Lake",
+      "Tickets for Altit/Baltit fort/Shangrila Resort/ Manthoka Waterfall/ Khunjrab National Park",
+      "Boating at Attabad Lake",
+      "Traditional Musical Night with Bonfire",
+      "Unlimited water bottles during travelling"
+    ],
+    "excluded": [
+      "International Flight Tickets",
+      "Laundry, Phone Calls & Other Personal Expenses.",
+      "Extra expense due to land sliding, roadblocks, bad weather and other political reasons.",
+      "Personal insurance.",
+      "Rescue, Helicopter coverage.",
+      "Tips for Guide, porter & cook",
+      "Anything not mentioned in the \"SERVICES INCLUDED\" list"
+    ],
+    "hotelList": [
+      {
+        "location": "Islamabad",
+        "standard": "Green Line Motel / Hotel Red Line / Grand Islamabad Hotel",
+        "deluxe": "Envoy Continental Hotel / Grand Hotel / Roomy",
+        "executive": "Ramada Hotel / Hill View / Best Western"
+      },
+      {
+        "location": "Naran Valley",
+        "standard": "Cloud Way Hotel / Gateway Hotel",
+        "deluxe": "Hotel Home / Northern Retreat / Fairyland Hotel",
+        "executive": "Hotel Sarai / Maisonette Hotel and Resort"
+      },
+      {
+        "location": "Gilgit",
+        "standard": "Gateway Hotel / Alpine Guest House",
+        "deluxe": "Duroyou Inn Gilgit / Heritage Hotel / Mandarin Inn Hotel",
+        "executive": "Serena Hotel Gilgit / Riverdale Hotel"
+      },
+      {
+        "location": "Hunza Valley",
+        "standard": "Hunza Hidden Palace / Darvesh Hotel / Campo de Berg",
+        "deluxe": "Grand Motel Hunza / Tribes and Tales / Passu Tourist Lodges",
+        "executive": "Monarch Resort / Famree Resort / Hunza Darbar / Luxus Hotel Attabad Lake / Hard Rocks"
+      },
+      {
+        "location": "Besham",
+        "standard": "Ramada Hotel / Besham Continental",
+        "deluxe": "Besham Hilton Hotel",
+        "executive": "Besham Hilton Hotel / Besham Continental"
+      },
+      {
+        "location": "Skardu",
+        "standard": "Trout Villa Hotel / Skardu Viewpoint / Baltistan Resort",
+        "deluxe": "Space Hotel Shigar / Maple Hotel / Himalaya Inn",
+        "executive": "La Vista Resort / Shangrila Hotel / Khoj Resort / Serena Hotel Shigar Valley / Serena Hotel Khaplu Valley / Byrsa"
+      },
+      {
+        "location": "Lahore",
+        "standard": "Hotel Shanghai / Mars Hotel / Lahore Continental",
+        "deluxe": "Fallet's Express Hotel / Hilton Suites",
+        "executive": "Ramada by Wyndham / Four Points Inn"
+      }
+    ],
+    "departureSchedule": [],
+    "pricing": {
+      "foreignerPricing": {
+        "standard": "USD 455 PER PAX",
+        "deluxe": "USD 625 PER PAX",
+        "executive": "USD 1000 PER PAX"
+      }
+    },
+    "exceptions": [],
+    "notes": [
+      "All hotels are subject to availability and can be changed according to the circumstances.",
+      "In such case the equivalent hotel to the said hotel will be provided",
+      "This package is designed for foreign tourists",
+      "Visa support/invitation letter for travelling is included",
+      "Full board meals included (Breakfast, Lunch, Dinner)",
+      "Domestic air ticket (one side) is included in the package"
+    ],
+    "itinerary": [],
+    "contact": {
+      "email": "info@natureexplorertours.com",
+      "whatsapp": "+92312-0506457",
+      "instagram": "@towardsdestination.pk"
+    },
+    "bulkDiscount": null
   }
 };
 
@@ -2543,6 +3441,184 @@ export default function TourDetailPage() {
                       </div>
                     </div>
                   )}
+                </div>
+              )}
+
+              {/* Karachi Specific Pricing */}
+              {pkg.pricing && (pkg.pricing.karachiQuadSharing || pkg.pricing.karachiTwinSharing) && (
+                <div className="space-y-4 mb-6">
+                  <div className="bg-white border border-orange-300 rounded-lg p-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">From Karachi</h3>
+                    
+                    {/* Quad Sharing */}
+                    {pkg.pricing.karachiQuadSharing && (
+                      <div className="mb-4">
+                        <h4 className="text-sm font-semibold text-gray-700 mb-2">Quad Sharing (4 Persons in one Room)</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                          {pkg.pricing.karachiQuadSharing.standard && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Standard</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiQuadSharing.standard}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiQuadSharing.deluxe && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Deluxe</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiQuadSharing.deluxe}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiQuadSharing.premium && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Premium</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiQuadSharing.premium}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiQuadSharing.executive && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Executive</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiQuadSharing.executive}</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Twin Sharing */}
+                    {pkg.pricing.karachiTwinSharing && (
+                      <div>
+                        <h4 className="text-sm font-semibold text-gray-700 mb-2">Twin Sharing (2 Persons in one Room)</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                          {pkg.pricing.karachiTwinSharing.standard && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Standard</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiTwinSharing.standard}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiTwinSharing.deluxe && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Deluxe</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiTwinSharing.deluxe}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiTwinSharing.premium && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Premium</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiTwinSharing.premium}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.karachiTwinSharing.executive && (
+                            <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-200">
+                              <div className="text-xs text-gray-600 mb-1">Executive</div>
+                              <div className="text-lg font-bold text-orange-700">PKR {pkg.pricing.karachiTwinSharing.executive}</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  
+                  <div className="bg-white border border-blue-300 rounded-lg p-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">From Islamabad</h3>
+                    
+                    {/* Quad Sharing */}
+                    {pkg.pricing.islamabadQuadSharing && (
+                      <div className="mb-4">
+                        <h4 className="text-sm font-semibold text-gray-700 mb-2">Quad Sharing (4 Persons in one Room)</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                          {pkg.pricing.islamabadQuadSharing.standard && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Standard</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.standard}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadQuadSharing.deluxe && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Deluxe</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.deluxe}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadQuadSharing.premium && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Premium</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.premium}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadQuadSharing.executive && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Executive</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.executive}</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Twin Sharing */}
+                    {pkg.pricing.islamabadTwinSharing && (
+                      <div>
+                        <h4 className="text-sm font-semibold text-gray-700 mb-2">Twin Sharing (2 Persons in one Room)</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                          {pkg.pricing.islamabadTwinSharing.standard && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Standard</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.standard}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadTwinSharing.deluxe && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Deluxe</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.deluxe}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadTwinSharing.premium && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Premium</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.premium}</div>
+                            </div>
+                          )}
+                          {pkg.pricing.islamabadTwinSharing.executive && (
+                            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
+                              <div className="text-xs text-gray-600 mb-1">Executive</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.executive}</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {/* Foreigner Pricing (USD) */}
+              {pkg.pricing && pkg.pricing.foreignerPricing && (
+                <div className="bg-gradient-to-r from-green-50 to-teal-50 border-2 border-green-300 rounded-lg p-6 mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">🌍 International Package Pricing (USD)</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {pkg.pricing.foreignerPricing.standard && (
+                      <div className="text-center p-4 bg-white rounded-lg border-2 border-green-200">
+                        <div className="text-sm text-gray-600 mb-2">Standard Package</div>
+                        <div className="text-3xl font-bold text-green-700">{pkg.pricing.foreignerPricing.standard}</div>
+                        <div className="text-xs text-gray-500 mt-2">Per Person</div>
+                      </div>
+                    )}
+                    {pkg.pricing.foreignerPricing.deluxe && (
+                      <div className="text-center p-4 bg-white rounded-lg border-2 border-green-200">
+                        <div className="text-sm text-gray-600 mb-2">Deluxe Package</div>
+                        <div className="text-3xl font-bold text-green-700">{pkg.pricing.foreignerPricing.deluxe}</div>
+                        <div className="text-xs text-gray-500 mt-2">Per Person</div>
+                      </div>
+                    )}
+                    {pkg.pricing.foreignerPricing.executive && (
+                      <div className="text-center p-4 bg-white rounded-lg border-2 border-green-200">
+                        <div className="text-sm text-gray-600 mb-2">Executive Package</div>
+                        <div className="text-3xl font-bold text-green-700">{pkg.pricing.foreignerPricing.executive}</div>
+                        <div className="text-xs text-gray-500 mt-2">Per Person</div>
+                      </div>
+                    )}
+                  </div>
+                  <div className="mt-4 text-center">
+                    <p className="text-sm text-gray-600">✈️ Includes: Domestic Air Ticket (one side) | Full Board Meals | Visa Support</p>
+                  </div>
                 </div>
               )}
 

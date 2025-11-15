@@ -5,8 +5,10 @@ import Footer from "@/app/components/Footer";
 import { Bus, Calendar, Users, MapPin, Check, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function PublicToursByRoad() {
+  const [selectedCity, setSelectedCity] = useState<string>("all");
  
 const packages = [
   {
@@ -17,7 +19,8 @@ const packages = [
     price: 14500,
     image: "/kumrat.jpg",
     rating: 4.8,
-    reviews: 125
+    reviews: 125,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 2,
@@ -27,7 +30,8 @@ const packages = [
     price: 22000,
     image: "/hunza1.jpg",
     rating: 4.9,
-    reviews: 210
+    reviews: 210,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 3,
@@ -37,7 +41,8 @@ const packages = [
     price: 105000,
     image: "/naran1.jpg",
     rating: 5.0,
-    reviews: 98
+    reviews: 98,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 4,
@@ -47,7 +52,8 @@ const packages = [
     price: 14000,
     image: "/naran1.jpg",
     rating: 4.7,
-    reviews: 156
+    reviews: 156,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 5,
@@ -57,7 +63,8 @@ const packages = [
     price: 25000,
     image: "/neelum5.jpg",
     rating: 4.9,
-    reviews: 189
+    reviews: 189,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 6,
@@ -67,7 +74,8 @@ const packages = [
     price: 0,
     image: "/neelum.jpg",
     rating: 4.6,
-    reviews: 87
+    reviews: 87,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 7,
@@ -77,7 +85,8 @@ const packages = [
     price: 17500,
     image: "/neelum.jpg",
     rating: 4.7,
-    reviews: 92
+    reviews: 92,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 8,
@@ -87,7 +96,8 @@ const packages = [
     price: 17500,
     image: "/kumrat.jpg",
     rating: 4.8,
-    reviews: 143
+    reviews: 143,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 9,
@@ -97,7 +107,8 @@ const packages = [
     price: 15500,
     image: "/neelum3.jpg",
     rating: 4.5,
-    reviews: 76
+    reviews: 76,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 10,
@@ -107,7 +118,8 @@ const packages = [
     price: 24000,
     image: "/logo.jpeg",
     rating: 4.9,
-    reviews: 167
+    reviews: 167,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 11,
@@ -117,7 +129,8 @@ const packages = [
     price: 28000,
     image: "/astore.jpg",
     rating: 4.8,
-    reviews: 134
+    reviews: 134,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 12,
@@ -125,7 +138,10 @@ const packages = [
     duration: "8 Days 7 Nights",
     location: "Hunza & Skardu",
     price: 32000,
-    image: "/skardu8.jpg" // Image Source
+    image: "/skardu8.jpg",
+    rating: 4.8,
+    reviews: 150,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 13,
@@ -133,7 +149,10 @@ const packages = [
     duration: "6 Days 5 Nights",
     location: "Skardu & Deosai",
     price: 26000,
-    image: "/skardu6.jpg" // Image Source
+    image: "/skardu6.jpg",
+    rating: 4.7,
+    reviews: 120,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 14,
@@ -141,7 +160,10 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Neelum Valley, Kashmir",
     price: 14000,
-    image: "/neelum.jpg" // Image Source
+    image: "/neelum.jpg",
+    rating: 4.6,
+    reviews: 95,
+    city: "lahore-islamabad-faisalabad"
   },
   {
     id: 15,
@@ -149,9 +171,83 @@ const packages = [
     duration: "3 Days 2 Nights",
     location: "Swat Valley",
     price: 14000,
-    image: "/swat.jpg" // Image Source
+    image: "/swat.jpg",
+    rating: 4.7,
+    reviews: 110,
+    city: "lahore-islamabad-faisalabad"
+  },
+  {
+    id: 16,
+    title: "08 Days Pakistan Trip to Shogran & Kashmir Valley (From Karachi)",
+    duration: "8 days, 7 nights",
+    location: "Shogran & Kashmir Valley",
+    price: 38000,
+    image: "/shogran.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "karachi"
+  },
+  {
+    id: 17,
+    title: "10 Days Pakistan Trip to Swat, Shogran & Kashmir Valley (From Karachi)",
+    duration: "10 days, 9 nights",
+    location: "Swat, Shogran & Kashmir Valley",
+    price: 48000,
+    image: "/swat.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "karachi"
+  },
+  {
+    id: 18,
+    title: "07 Days Trip to Swat Valley (From Karachi)",
+    duration: "7 days, 6 nights",
+    location: "Swat Valley",
+    price: 30000,
+    image: "/swat.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "karachi"
+  },
+  {
+    id: 19,
+    title: "09 Days Trip to Hunza Valley (From Karachi)",
+    duration: "9 days, 8 nights",
+    location: "Hunza Valley",
+    price: 42000,
+    image: "/hunza1.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "karachi"
+  },
+  {
+    id: 20,
+    title: "12 Days Tour package Hunza & Skardu Valley (From Karachi)",
+    duration: "12 days, 11 nights",
+    location: "Hunza & Skardu Valley",
+    price: 50000,
+    image: "/skardu8.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "karachi"
+  },
+  {
+    id: 21,
+    title: "Discover Pakistan: Hunza | Skardu | Lahore | Islamabad (8 Days Trip)",
+    duration: "8 Days 7 Nights",
+    location: "Hunza, Skardu, Lahore & Islamabad",
+    price: 455,
+    image: "/hunza1.jpg",
+    rating: 0,
+    reviews: 0,
+    city: "lahore-islamabad-faisalabad",
+    currency: "USD"
   }
 ];
+
+  const filteredPackages = selectedCity === "all" 
+    ? packages 
+    : packages.filter(pkg => pkg.city === selectedCity);
 
 
   return (
@@ -221,9 +317,45 @@ const packages = [
               All packages include comfortable transport, accommodation, meals, and guided tours. Experience the journey!
             </p>
           </div>
+
+          {/* City Filter */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex bg-white rounded-lg shadow-md p-2 gap-2">
+              <button
+                onClick={() => setSelectedCity("all")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  selectedCity === "all"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                All Tours
+              </button>
+              <button
+                onClick={() => setSelectedCity("lahore-islamabad-faisalabad")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  selectedCity === "lahore-islamabad-faisalabad"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                Lahore / Islamabad / Faisalabad
+              </button>
+              <button
+                onClick={() => setSelectedCity("karachi")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  selectedCity === "karachi"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                Karachi
+              </button>
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
+            {filteredPackages.map((pkg) => (
               <Link 
                 key={pkg.id}
                 href={`/public-tours/by-road/${pkg.id}`}
@@ -261,19 +393,27 @@ const packages = [
                   </div>
 
                   {/* Reviews */}
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      <span className="text-sm font-semibold text-gray-900">{pkg.rating}</span>
+                  {pkg.reviews > 0 ? (
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="flex items-center gap-1">
+                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <span className="text-sm font-semibold text-gray-900">{pkg.rating}</span>
+                      </div>
+                      <span className="text-sm text-gray-500">({pkg.reviews} reviews)</span>
                     </div>
-                    <span className="text-sm text-gray-500">({pkg.reviews} reviews)</span>
-                  </div>
+                  ) : (
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="text-sm text-gray-500">No reviews yet</span>
+                    </div>
+                  )}
 
                   {/* Price & Button */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-red-600">PKR {pkg.price.toLocaleString()}</p>
+                      <p className="text-2xl font-bold text-red-600">
+                        {pkg.currency === "USD" ? `USD ${pkg.price}` : `PKR ${pkg.price.toLocaleString()}`}
+                      </p>
                     </div>
                     <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                       View Details
