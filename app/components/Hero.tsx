@@ -84,24 +84,20 @@ export default function Hero() {
     router.push(`/search?${params.toString()}`);
   };
   return (
-    <section className="relative min-h-screen pt-[120px] overflow-hidden bg-linear-to-br from-gray-900 via-gray-800 to-black">
+    <section className="relative min-h-screen pt-[120px] overflow-hidden bg-gray-900">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/main5.png"
           alt="Northern Pakistan"
           fill
-          className="object-contain object-center"
+          className="object-cover object-center"
           priority
           quality={100}
           sizes="100vw"
-          style={{
-            objectFit: 'cover',
-            objectPosition: 'center center',
-          }}
         />
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-linear-to-br from-black/60 via-red-900/40 to-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-red-900/40 to-black/60 z-10"></div>
         {/* Animated Shapes */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/30 rounded-full blur-3xl animate-float z-10"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-700/20 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
@@ -114,7 +110,7 @@ export default function Hero() {
           <div className="w-full">
             {/* Main Heading - Travel Agency Style */}
             <div className="mb-3 animate-fade-in-up">
-              <span className="inline-block bg-white text-red-600 px-2 sm:px-3 py-1.5 rounded-md text-[10px] sm:text-xs font-bold mb-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold mb-2 shadow-md border-0 hover:shadow-lg transition-all duration-300">
                 🌟 Pakistan's #1 Travel Company
               </span>
             </div>

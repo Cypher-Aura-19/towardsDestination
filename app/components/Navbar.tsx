@@ -23,13 +23,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-2 xs:gap-4 sm:gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center justify-center gap-2 sm:gap-3 shrink-0 mx-auto xl:mx-0">
-            <div className="relative w-48 h-16 xs:w-56 xs:h-18 sm:w-64 sm:h-20 shrink-0 overflow-hidden flex items-center justify-center">
+            <div className="relative w-48 h-16 xs:w-56 xs:h-18 sm:w-64 sm:h-20 shrink-0 flex items-center justify-center">
               <Image
                 src="/logo1.jpeg"
-                alt="TOWARDSDESTINATION.PK"
-                width={180}
-                height={120}
-                className="object-contain scale-100"
+                alt="TOWARDSDESTINATION.PK - Let's have an Adventure"
+                width={240}
+                height={90}
+                className="object-contain scale-[0.7] sm:scale-90 md:scale-90"
                 priority
               />
             </div>
@@ -212,7 +212,7 @@ export default function Navbar() {
           <div className="py-4 space-y-2 border-t border-gray-200">
             <Link 
               href="/" 
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
@@ -222,10 +222,10 @@ export default function Navbar() {
             <div>
               <button 
                 onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
-                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               >
                 Public Tours
-                <ChevronDown className={`w-4 h-4 transition-transform ${
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
                   isMobileDropdownOpen ? 'rotate-180' : ''
                 }`} />
               </button>
@@ -235,14 +235,14 @@ export default function Navbar() {
               }`}>
                 <Link 
                   href="/public-tours/by-air"
-                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   🛫 By Air
                 </Link>
                 <Link 
                   href="/public-tours/by-road"
-                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                    🚗 By Road
@@ -254,10 +254,10 @@ export default function Navbar() {
             <div>
               <button 
                 onClick={() => setIsMobilePrivateDropdownOpen(!isMobilePrivateDropdownOpen)}
-                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               >
                 Private Tours
-                <ChevronDown className={`w-4 h-4 transition-transform ${
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
                   isMobilePrivateDropdownOpen ? 'rotate-180' : ''
                 }`} />
               </button>
@@ -265,51 +265,47 @@ export default function Navbar() {
               <div className={`transition-all duration-200 overflow-hidden ${
                 isMobilePrivateDropdownOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
               }`}>
-                <div className="pl-8 pr-4 py-2">
-                  <div className="text-xs font-bold text-gray-500 uppercase mb-1">By Air</div>
+            
                   <Link 
                     href="/private-tours/by-air"
-                    className="block py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                    className="block py-2 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg px-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     ✈️ By Air Tours
                   </Link>
-                </div>
-                <div className="pl-8 pr-4 py-2">
-                  <div className="text-xs font-bold text-gray-500 uppercase mb-1">Honeymoon</div>
+               
+                
                   <Link 
                     href="/private-tours/honeymoon"
-                    className="block py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                    className="block py-2 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg px-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     💑 Honeymoon Packages
                   </Link>
-                </div>
-                <div className="pl-8 pr-4 py-2">
-                  <div className="text-xs font-bold text-gray-500 uppercase mb-1">Luxury</div>
+               
+               
                   <Link 
                     href="/private-tours/luxury"
-                    className="block py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                    className="block py-2 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg px-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     ⭐ Luxury Tours
                   </Link>
-                </div>
-                <div className="pl-8 pr-4 py-2">
-                  <div className="text-xs font-bold text-gray-500 uppercase mb-1">Custom</div>
+                
+                
                   <Link 
                     href="/private-tours"
-                    className="block py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                    className="block py-2 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg px-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     ✨ Customize Your Tour
                   </Link>
-                </div>
+                
               </div>
             </div>
             <Link 
               href="/international-tours" 
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               International Tours
@@ -319,10 +315,10 @@ export default function Navbar() {
             <div>
               <button 
                 onClick={() => setIsMobileServicesDropdownOpen(!isMobileServicesDropdownOpen)}
-                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+                className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               >
                 Other Services
-                <ChevronDown className={`w-4 h-4 transition-transform ${
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
                   isMobileServicesDropdownOpen ? 'rotate-180' : ''
                 }`} />
               </button>
@@ -331,15 +327,15 @@ export default function Navbar() {
                 isMobileServicesDropdownOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
               }`}>
                 <Link 
-                  href="/rental-services"
-                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  href="/transportation"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   🚗 Rental Services
                 </Link>
                 <Link 
-                  href="/hotel-services"
-                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  href="/hotels"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   🏨 Hotel Services
@@ -348,21 +344,21 @@ export default function Navbar() {
             </div>
             <Link 
               href="/gallery" 
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Gallery
             </Link>
             <Link 
               href="/about" 
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link 
               href="/contact" 
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
@@ -370,8 +366,8 @@ export default function Navbar() {
             
             {/* Mobile Book Now Button */}
             <Link 
-              href="/contact"
-              className="block mx-4 mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-center font-bold transition-colors shadow-md"
+              href="/private-tours"
+              className="block mx-4 mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-center font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Book Now
