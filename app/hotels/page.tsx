@@ -16,7 +16,7 @@ const hotels = [
     rating: 3,
     reviews: 0,
     price: 5000,
-    image: "/skardu1.jpg",
+    image: "/tr.jpg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Room Service"]
   },
@@ -28,7 +28,7 @@ const hotels = [
     rating: 3,
     reviews: 0,
     price: 8000,
-    image: "/swat1.jpg",
+    image: "/pr.jpeg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Garden"]
   },
@@ -40,7 +40,7 @@ const hotels = [
     rating: 4,
     reviews: 0,
     price: 3499,
-    image: "/skardu1.jpg",
+    image: "/one.jpeg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Mountain View"]
   }
@@ -77,7 +77,7 @@ export default function HotelsPage() {
       <section className="relative pt-40 pb-32">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hunza1.jpg"
+            src="/hotel.jpg"
             alt="Hotels"
             fill
             className="object-cover"
@@ -296,7 +296,7 @@ export default function HotelsPage() {
                       src={hotel.image}
                       alt={hotel.name}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                     {hotel.topPick && (
                       <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
