@@ -15,9 +15,10 @@ export default function UmrahSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-white via-red-50/30 to-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-linear-to-b from-white via-red-50 to-red-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
@@ -35,7 +36,7 @@ export default function UmrahSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           {/* Left Side - Content */}
-          <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:border-red-200 transition-all duration-500">
+          <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-xl border border-red-200 hover:shadow-2xl hover:border-red-300 transition-all duration-500">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
                 <span className="text-2xl">🕋</span>
@@ -50,7 +51,7 @@ export default function UmrahSection() {
             </p>
 
             {/* Duration & Price */}
-            <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-6 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-linear-to-br from-red-100 via-red-50 to-white rounded-2xl p-6 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-red-200">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2 text-gray-600">
                   <Calendar className="w-5 h-5" />
@@ -78,7 +79,7 @@ export default function UmrahSection() {
               <ul className="space-y-3">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}

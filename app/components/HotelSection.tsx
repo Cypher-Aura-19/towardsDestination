@@ -40,7 +40,7 @@ export default function HotelSection() {
 
           {/* Right Side - Content */}
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-red-600 mb-4">
               Our Premium Hotel
             </h2>
             <div className="flex items-center gap-2 text-gray-600 mb-6">
@@ -54,14 +54,14 @@ export default function HotelSection() {
 
             {/* Amenities */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Amenities</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-4">Amenities</h3>
               <div className="grid grid-cols-2 gap-4">
                 {amenities.map((amenity, index) => {
                   const IconComponent = amenity.icon;
                   return (
                     <div key={index} className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <IconComponent className="w-5 h-5 text-gray-900" />
+                      <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                        <IconComponent className="w-5 h-5 text-red-600" />
                       </div>
                       <span className="text-gray-700 font-medium">{amenity.label}</span>
                     </div>
@@ -71,26 +71,26 @@ export default function HotelSection() {
             </div>
 
             {/* Room Rates */}
-            <div className="bg-gray-50 rounded-2xl p-6 mb-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Room Rates</h3>
+            <div className="bg-red-50 rounded-2xl p-6 mb-6 border border-red-100">
+              <h3 className="text-lg font-bold text-red-600 mb-3">Room Rates</h3>
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Standard Room</span>
-                  <span className="font-bold text-gray-900">PKR 8,000/night</span>
+                  <span className="font-bold text-red-600">PKR 8,000/night</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Deluxe Room</span>
-                  <span className="font-bold text-gray-900">PKR 12,000/night</span>
+                  <span className="font-bold text-red-600">PKR 12,000/night</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Suite</span>
-                  <span className="font-bold text-gray-900">PKR 18,000/night</span>
+                  <span className="font-bold text-red-600">PKR 18,000/night</span>
                 </div>
               </div>
             </div>
 
             {/* Book Button */}
-            <button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-full font-medium transition-colors">
+            <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-medium transition-colors shadow-lg hover:shadow-xl">
               Book Your Stay
             </button>
           </div>

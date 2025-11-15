@@ -11,10 +11,21 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  /* Custom Red Color - Brand Primary */
+  /* Enhanced Red Color Palette - Brand Primary */
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-200: #FECACA;
+  --color-red-300: #FCA5A5;
+  --color-red-400: #F87171;
+  --color-red-500: #EF4444;
   --color-red-600: #E62727;
   --color-red-700: #CC2222;
-  --color-red-50: #FEF2F2;
+  --color-red-800: #991B1B;
+  --color-red-900: #7F1D1D;
+  
+  /* Custom Dark Red Variations */
+  --color-dark-red: #8B1A1A;
+  --color-deep-red: #6B1515;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -127,9 +138,9 @@ body {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* Gradient Text */
+/* Gradient Text - Enhanced Red Variations */
 .gradient-text {
-  background: linear-gradient(135deg, #E62727 0%, #FF6B6B 100%);
+  background: linear-gradient(135deg, #CC2222 0%, #E62727 50%, #F87171 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

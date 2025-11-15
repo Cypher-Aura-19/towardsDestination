@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "luc
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-red-600 via-red-700 to-red-600 text-white relative overflow-hidden">
+    <footer className="bg-linear-to-br from-red-600 via-red-700 to-red-600 text-white relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
@@ -14,18 +14,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 animate-fade-in-up">
           {/* Company Info */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="relative w-12 h-12 bg-white rounded-lg p-1 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Link href="/" className="flex items-center mb-4">
+              <div className="relative w-80 h-20 sm:w-56 sm:h-20 shrink-0">
                 <Image
-                  src="/logo.jpeg"
+                  src="/logo1.jpeg"
                   alt="TOWARDSDESTINATION.PK"
                   fill
-                  className="object-contain"
+                  className="object-cover"
+                  priority
                 />
               </div>
-              <span className="text-xl font-bold text-white">TOWARDSDESTINATION.PK</span>
             </Link>
-            <p className="text-lg font-semibold text-white mb-2">Let's have an Adventure</p>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2012.
             </p>
@@ -123,13 +122,13 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-white flex-shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-white shrink-0 mt-1" />
                 <a href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                   Office no 406, Main Peshawar Rd, near Hotel One Inn Daewoo Express, Jhangi Sayedan, Islamabad, 44000
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-white flex-shrink-0" />
+                <Phone className="w-5 h-5 text-white shrink-0" />
                 <div className="text-gray-300">
                   <a href="tel:+923174101300" className="hover:text-white transition-colors block">
                     UAN: +92 317 4101300
@@ -140,7 +139,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-white flex-shrink-0" />
+                <Mail className="w-5 h-5 text-white shrink-0" />
                 <a href="mailto:info@towardsdestination.pk" className="text-gray-300 hover:text-white transition-colors">
                   info@towardsdestination.pk
                 </a>
@@ -159,10 +158,10 @@ export default function Footer() {
               <Link href="#" className="text-gray-300 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-red-300 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-red-300 transition-colors">
                 Cookie Policy
               </Link>
             </div>

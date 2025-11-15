@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center gap-3 group animate-bounce hover:animate-none px-5 py-4"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center gap-3 group animate-bounce hover:animate-none px-5 py-4 ring-2 ring-red-500/30 hover:ring-red-500/50"
       aria-label="Chat on WhatsApp"
     >
       {/* WhatsApp Icon SVG */}

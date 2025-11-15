@@ -108,7 +108,7 @@ export default function ContactPage() {
             Have questions about our tours or packages? We're here to help you plan your perfect journey.
           </p>
           <div className="flex items-center gap-2 text-white/90 text-xs xs:text-sm">
-            <div className="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+            <div className="w-2 h-2 bg-red-500 rounded-full shrink-0"></div>
             <span>Registered with FBR, SECP, DTS & Nadra</span>
           </div>
         </div>
@@ -268,8 +268,8 @@ export default function ContactPage() {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* WhatsApp Direct */}
-              <div className="bg-green-50 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 border border-green-200">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+              <div className="bg-red-50 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 border border-red-200">
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-red-600 mb-2">
@@ -282,7 +282,7 @@ export default function ContactPage() {
                   href="https://wa.me/923153309070"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full font-medium transition-colors text-center"
+                  className="block w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-medium transition-colors text-center"
                 >
                   Start Chat
                 </a>

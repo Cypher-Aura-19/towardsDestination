@@ -87,11 +87,11 @@ export default function GallerySection() {
               {stories.map((story) => (
                 <div 
                   key={story.id}
-                  className="relative h-96 rounded-2xl overflow-hidden group cursor-pointer flex-shrink-0"
+                  className="relative h-96 rounded-2xl overflow-hidden group cursor-pointer shrink-0"
                   style={{ width: `${100 / stories.length}%` }}
                 >
                   {/* Placeholder for image - Replace with actual images from public folder */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600">
+                  <div className="absolute inset-0 bg-linear-to-br from-red-600 via-red-700 to-red-800">
                     <div className="absolute inset-0 flex items-center justify-center text-white text-sm">
                       Add image: {story.image}
                     </div>
@@ -106,7 +106,7 @@ export default function GallerySection() {
                   */}
                   
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
                   
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -134,14 +134,14 @@ export default function GallerySection() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-colors"
+              className="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-colors"
+              className="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
               aria-label="Next slide"
             >
               <ChevronRight className="w-6 h-6" />
