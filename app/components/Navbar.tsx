@@ -95,6 +95,12 @@ export default function Navbar() {
                 >
                  💑 Honeymoon
                 </Link>
+                <Link 
+                  href="/private-tours"
+                  className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors border-t border-gray-100"
+                >
+                 ✨ Customize Tour
+                </Link>
               </div>
             </div>
             <Link 
@@ -102,6 +108,12 @@ export default function Navbar() {
               className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap"
             >
               International Tours
+            </Link>
+            <Link 
+              href="/hotels"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-semibold whitespace-nowrap"
+            >
+              Hotels
             </Link>
             <Link 
               href="/gallery"
@@ -209,7 +221,7 @@ export default function Navbar() {
               </button>
               
               <div className={`transition-all duration-200 overflow-hidden ${
-                isMobilePrivateDropdownOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                isMobilePrivateDropdownOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
               }`}>
                 <Link 
                   href="/private-tours/by-air"
@@ -225,6 +237,13 @@ export default function Navbar() {
                 >
                   💑 Honeymoon
                 </Link>
+                <Link 
+                  href="/private-tours"
+                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors border-t border-gray-100"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  ✨ Customize Your Tour
+                </Link>
               </div>
             </div>
             <Link 
@@ -233,6 +252,13 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               International Tours
+            </Link>
+            <Link 
+              href="/hotels" 
+              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors font-semibold rounded-lg"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Hotels
             </Link>
             <Link 
               href="/gallery" 
