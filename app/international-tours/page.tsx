@@ -5,6 +5,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Plane, Calendar, Hotel, Check, Star, MapPin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function InternationalToursPage() {
   const [activeTab, setActiveTab] = useState("all");
@@ -16,7 +17,7 @@ export default function InternationalToursPage() {
       price: "PKR 150,000",
       category: "Cultural Experience",
       popular: true,
-      image: "/umrah.jpg",
+      image: "/baku.jpg",
       destination: "Baku, Azerbaijan",
       type: "baku",
       highlights: [
@@ -38,7 +39,7 @@ export default function InternationalToursPage() {
       price: "PKR 220,000",
       category: "Historical & Cultural",
       popular: true,
-      image: "/umrah.jpg",
+      image: "/turkey.jpeg",
       destination: "Istanbul & Cappadocia, Turkey",
       type: "turkey",
       highlights: [
@@ -59,7 +60,7 @@ export default function InternationalToursPage() {
       duration: "5 Days / 4 Nights",
       price: "PKR 180,000",
       category: "Luxury & Shopping",
-      image: "/umrah.jpg",
+      image: "/dubai.jpeg",
       destination: "Dubai, UAE",
       type: "dubai",
       highlights: [
@@ -80,7 +81,7 @@ export default function InternationalToursPage() {
       duration: "5 Days / 4 Nights",
       price: "PKR 160,000",
       category: "City Break",
-      image: "/umrah.jpg",
+      image: "/turkey.jpeg",
       destination: "Istanbul, Turkey",
       type: "turkey",
       highlights: [
@@ -437,12 +438,18 @@ export default function InternationalToursPage() {
                         <p className="text-sm text-gray-600">per person</p>
                       </div>
                       <div className="flex gap-3">
-                        <button className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
+                        <Link 
+                          href={`/international-tours/${tour.id}`}
+                          className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
+                        >
                           View Details
-                        </button>
-                        <button className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
+                        </Link>
+                        <Link 
+                          href={`/international-tours/${tour.id}`}
+                          className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105"
+                        >
                           Book Now
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

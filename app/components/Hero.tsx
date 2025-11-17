@@ -85,24 +85,40 @@ export default function Hero() {
   };
   return (
     <section className="relative min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-[120px] overflow-hidden bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image - Mobile */}
+      <div className="absolute inset-0 z-0 md:hidden">
         <Image
-          src="/main5.png"
+          src="/hero8.png"
           alt="Northern Pakistan"
           fill
-          className="object-cover object-center opacity-100"
+          className="object-cover object-center"
           priority
           quality={100}
           sizes="100vw"
         />
         {/* Animated Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-red-900/20 to-black/40 z-10"></div>
-        {/* Animated Shapes */}
-        <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/30 rounded-full blur-3xl animate-float z-10"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-700/20 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-red-500/15 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '2s'}}></div>
       </div>
+      
+      {/* Background Image - Desktop */}
+      <div className="absolute inset-0 z-0 hidden md:block">
+        <Image
+          src="/hero4.png"
+          alt="Northern Pakistan"
+          fill
+          className="object-cover object-center"
+          priority
+          quality={100}
+          sizes="100vw"
+        />
+        {/* Animated Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-red-900/20 to-black/40 z-10"></div>
+      </div>
+      
+      {/* Animated Shapes */}
+      <div className="absolute top-20 right-20 w-72 h-72 bg-red-600/30 rounded-full blur-3xl animate-float z-10"></div>
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-red-700/20 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-red-500/15 rounded-full blur-3xl animate-float z-10" style={{animationDelay: '2s'}}></div>
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 py-4 sm:py-3 min-h-screen flex flex-col">

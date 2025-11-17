@@ -20,10 +20,11 @@ export default function Footer() {
                   src="/logo1.jpeg"
                   alt="TOWARDSDESTINATION.PK"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
               </div>
+              
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2012.
