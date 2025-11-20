@@ -88,7 +88,7 @@ export default function Hero() {
       {/* Background Image - Mobile */}
       <div className="absolute inset-0 z-0 md:hidden">
         <Image
-          src="/hero8.png"
+          src="/hero9.png"
           alt="Northern Pakistan"
           fill
           className="object-cover object-center"
@@ -122,7 +122,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 py-4 sm:py-3 min-h-screen flex flex-col">
-        <div className="flex-1 flex items-start pt-2 sm:pt-4 w-full">
+        <div className="flex-1 flex items-center md:items-start pt-1 md:pt-1 w-full">
           <div className="w-full">
             {/* Main Heading - Travel Agency Style */}
             <div className="mb-3 animate-fade-in-up">
@@ -159,25 +159,25 @@ export default function Hero() {
             </div>
 
             {/* Search Destination Form */}
-            <div className="mt-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-          <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 w-full max-w-6xl border border-gray-100 hover:shadow-red-500/20 transition-shadow duration-500">
+            <div className="mt-6 sm:mt-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+          <div className="bg-white/90 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-6 md:p-8 w-full max-w-6xl border border-white/20 hover:shadow-red-500/20 transition-shadow duration-500">
             {/* Form Title */}
-            <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4 sm:mb-6 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-red-600 mb-3 sm:mb-4 md:mb-6 text-center">
               Plan Your Journey
             </h3>
             
             <form onSubmit={handleSearch}>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                 {/* Location */}
-                <div className="flex flex-col gap-2 relative" ref={suggestionsRef}>
-                  <label className="text-sm font-semibold text-gray-700">Location</label>
+                <div className="flex flex-col gap-1.5 relative md:col-span-2 lg:col-span-1" ref={suggestionsRef}>
+                  <label className="text-xs sm:text-sm font-semibold text-gray-700">Location</label>
                   <input
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     onFocus={() => location.trim() && setShowSuggestions(true)}
                     placeholder="e.g., Hunza, Skardu, Naran"
-                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                    className="px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 text-sm"
                     autoComplete="off"
                   />
                   
@@ -201,35 +201,38 @@ export default function Hero() {
                   )}
                 </div>
 
-                {/* Check In Date */}
-                <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-gray-700">Check In</label>
-                  <input
-                    type="date"
-                    value={checkIn}
-                    onChange={(e) => setCheckIn(e.target.value)}
-                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                  />
-                </div>
+                {/* Check In & Check Out - Same Row on Mobile */}
+                <div className="grid grid-cols-2 gap-3 md:col-span-2 lg:col-span-2">
+                  {/* Check In Date */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700">Check In</label>
+                    <input
+                      type="date"
+                      value={checkIn}
+                      onChange={(e) => setCheckIn(e.target.value)}
+                      className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 text-sm bg-white"
+                    />
+                  </div>
 
-                {/* Check Out Date */}
-                <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-gray-700">Check Out</label>
-                  <input
-                    type="date"
-                    value={checkOut}
-                    onChange={(e) => setCheckOut(e.target.value)}
-                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                  />
+                  {/* Check Out Date */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700">Check Out</label>
+                    <input
+                      type="date"
+                      value={checkOut}
+                      onChange={(e) => setCheckOut(e.target.value)}
+                      className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 text-sm bg-white"
+                    />
+                  </div>
                 </div>
 
                 {/* Guests */}
-                <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-gray-700">Guests</label>
+                <div className="flex flex-col gap-1.5 md:col-span-2 lg:col-span-1">
+                  <label className="text-xs sm:text-sm font-semibold text-gray-700">Guests</label>
                   <select 
                     value={guests}
                     onChange={(e) => setGuests(e.target.value)}
-                    className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white"
+                    className="px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white text-sm"
                   >
                     <option value="1">1 Guest</option>
                     <option value="2">2 Guests</option>
@@ -240,14 +243,14 @@ export default function Hero() {
                 </div>
 
                 {/* Search Button */}
-                <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-gray-700 invisible">Search</label>
+                <div className="flex flex-col gap-1.5 md:col-span-2 lg:col-span-1">
+                  <label className="text-xs sm:text-sm font-semibold text-gray-700 invisible hidden lg:block">Search</label>
                   <button 
                     type="submit"
-                    className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px]"
+                    className="px-4 py-2 sm:px-6 sm:py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 lg:h-[46px] shadow-lg hover:shadow-xl"
                   >
                     Search
-                    <ArrowRight className="w-5 h-5" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                 </div>
               </div>
