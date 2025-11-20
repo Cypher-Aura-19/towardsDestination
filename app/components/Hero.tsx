@@ -122,7 +122,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 py-4 sm:py-3 min-h-screen flex flex-col">
-        <div className="flex-1 flex items-center md:items-start pt-1 md:pt-1 w-full">
+        <div className="flex-1 flex items-start pt-2 sm:pt-4 w-full">
           <div className="w-full">
             {/* Main Heading - Travel Agency Style */}
             <div className="mb-3 animate-fade-in-up">
