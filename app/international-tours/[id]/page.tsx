@@ -107,8 +107,8 @@ const tourDetails: any = {
     name: "Turkey Grand Tour",
     location: "Istanbul & Cappadocia, Turkey",
     duration: "7 Days / 6 Nights",
-    price: "PKR 220,000",
-    priceUSD: "$772",
+    price: "PKR 389,999",
+    priceUSD: "$1,368",
     image: "/T.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
@@ -194,9 +194,10 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 220,000 ($772)",
-      per_person_triple: "PKR 210,000 ($737)",
-      single_supplement: "PKR 40,000 ($140)"
+      per_person_quad: "PKR 389,999 ($1,368)",
+      per_person_triple: "PKR 389,999 ($1,368)",
+      per_person_double: "PKR 429,999 ($1,509)",
+      per_person_single: "PKR 459,999 ($1,614)"
     },
     notes: [
       "Turkey visa available on arrival for Pakistani passport holders",
@@ -211,8 +212,8 @@ const tourDetails: any = {
     name: "Dubai Luxury Experience",
     location: "Dubai, UAE",
     duration: "5 Days / 4 Nights",
-    price: "PKR 180,000",
-    priceUSD: "$632",
+    price: "PKR 249,999",
+    priceUSD: "$877",
     image: "/dubai.jpeg",
     groupSize: "Flexible",
     tourType: "International Tour",
@@ -285,9 +286,10 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 180,000 ($632)",
-      per_person_triple: "PKR 170,000 ($596)",
-      single_supplement: "PKR 35,000 ($123)"
+      per_person_quad: "PKR 249,999 ($877)",
+      per_person_triple: "PKR 249,999 ($877)",
+      per_person_double: "PKR 280,000 ($982)",
+      per_person_single: "PKR 300,000 ($1,053)"
     },
     notes: [
       "UAE visa processing assistance provided",
@@ -389,9 +391,9 @@ const tourDetails: any = {
     name: "Maldives Male Luxury Escape",
     location: "Male, Maldives",
     duration: "5 Days / 4 Nights",
-    price: "PKR 250,000",
-    priceUSD: "$877",
-    image: "/M.jpg",
+    price: "PKR 299,999",
+    priceUSD: "$1,053",
+    image: "/maldives.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
     description: "Experience paradise on earth with our exclusive Maldives luxury package. Stay in stunning overwater villas, dive into crystal-clear turquoise waters, and indulge in world-class hospitality. This tropical escape offers the perfect blend of relaxation, adventure, and romance with pristine beaches, vibrant coral reefs, and unforgettable sunsets.",
@@ -464,9 +466,10 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 250,000 ($877)",
-      per_person_triple: "PKR 240,000 ($842)",
-      single_supplement: "PKR 60,000 ($211)"
+      per_person_quad: "PKR 299,999 ($1,053)",
+      per_person_triple: "PKR 299,999 ($1,053)",
+      per_person_double: "PKR 319,999 ($1,123)",
+      per_person_single: "PKR 359,999 ($1,263)"
     },
     notes: [
       "Maldives offers visa-free entry for Pakistani passport holders (30 days)",
@@ -480,10 +483,10 @@ const tourDetails: any = {
     id: 6,
     name: "Indonesia Bali Paradise",
     location: "Bali, Indonesia",
-    duration: "6 Days / 5 Nights",
-    price: "PKR 195,000",
-    priceUSD: "$684",
-    image: "/I.jpg",
+    duration: "5 Days / 4 Nights",
+    price: "PKR 299,999",
+    priceUSD: "$1,053",
+    image: "/bali.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
     description: "Discover the enchanting Island of Gods with our comprehensive Bali tour package. Experience the perfect blend of stunning beaches, ancient temples, lush rice terraces, vibrant culture, and warm Balinese hospitality. From the artistic heart of Ubud to the pristine beaches of Nusa Dua, this tour offers an unforgettable tropical paradise experience.",
@@ -562,9 +565,10 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 195,000 ($684)",
-      per_person_triple: "PKR 185,000 ($649)",
-      single_supplement: "PKR 40,000 ($140)"
+      per_person_quad: "PKR 299,999 ($1,053)",
+      per_person_triple: "PKR 299,999 ($1,053)",
+      per_person_double: "PKR 319,999 ($1,123)",
+      per_person_single: "PKR 359,999 ($1,263)"
     },
     notes: [
       "Indonesia offers visa on arrival for Pakistani passport holders",
@@ -630,7 +634,7 @@ default function InternationalTourDetail() {
       <Navbar />
 
       {/* Header Section */}
-      <section className="bg-white border-b border-gray-200 pt-40 pb-10">
+      <section className="bg-white border-b border-gray-200 pt-40 pb-10 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-4">
             <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-4 py-2 rounded-md text-sm font-bold">
@@ -643,7 +647,7 @@ default function InternationalTourDetail() {
             {tour.name}
           </h1>
           
-          <div className="flex flex-wrap items-center gap-6 text-gray-700">
+          <div className="flex flex-wrap items-center gap-6 text-gray-700 mb-6">
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-blue-600" />
               <span className="text-lg">{tour.location}</span>
@@ -655,6 +659,41 @@ default function InternationalTourDetail() {
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-blue-600" />
               <span className="text-lg">{tour.groupSize}</span>
+            </div>
+          </div>
+
+          {/* Why Choose Us Box - Full Width */}
+          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-5 shadow-xl text-white">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="bg-white/20 p-2 rounded-lg">
+                  <Star className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-bold">Why Choose Us?</h3>
+              </div>
+              
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">6+ Years Experience</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">20,000+ Happy Clients</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">100% Visa Assistance</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">24/7 Support</span>
+                </div>
+              </div>
+
+              <div className="hidden lg:block text-xs text-white/90 max-w-xs">
+                Expert team handling every aspect of your journey.
+              </div>
             </div>
           </div>
         </div>
@@ -690,6 +729,42 @@ default function InternationalTourDetail() {
                   <Send className="w-5 h-5" />
                   Inquire via WhatsApp
                 </button>
+              </div>
+            </section>
+
+            {/* Why Choose Us */}
+            <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 border-2 border-blue-200 shadow-lg">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-blue-600 text-white p-3 rounded-full">
+                  <Plane className="w-6 h-6" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-blue-800 mb-3">
+                    Why Choose Towardsdestination.pk?
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed">
+                    Towardsdestination.pk is a leading travel company with <span className="font-bold text-blue-600">6+ years of experience</span>, dedicated to providing exceptional travel experiences. With a proven track record of serving <span className="font-bold text-blue-600">20,000+ clients</span>, our team of experts handles every aspect of your journey, from flights and accommodations to activities and tours, ensuring a seamless and memorable trip.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div className="bg-white rounded-lg p-4 shadow text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">6+</div>
+                  <div className="text-xs text-gray-600 font-semibold">Years Experience</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">20,000+</div>
+                  <div className="text-xs text-gray-600 font-semibold">Happy Clients</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">100%</div>
+                  <div className="text-xs text-gray-600 font-semibold">Visa Assistance</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">24/7</div>
+                  <div className="text-xs text-gray-600 font-semibold">Support</div>
+                </div>
               </div>
             </section>
 
@@ -887,10 +962,10 @@ default function InternationalTourDetail() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-900"
                     >
                       <option value="1">1 Person</option>
-                      <option value="2">2 People</option>
-                      <option value="3">3 People</option>
-                      <option value="4">4 People</option>
-                      <option value="5+">5+ People</option>
+                      <option value="2">2 Person</option>
+                      <option value="3">3 Person</option>
+                      <option value="4">4 Person</option>
+                      <option value="5+">5+ Person</option>
                     </select>
                   </div>
 

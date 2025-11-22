@@ -58,7 +58,7 @@ export default function PrivateToursPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif" }}>
       <Navbar />
       
       {/* Hero Section */}
@@ -76,33 +76,33 @@ export default function PrivateToursPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold" style={{ fontFamily: "'Poppins', sans-serif" }}>
               👥 TOWARDSDESTINATION.PK - Exclusive Private Tours
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', 'Georgia', serif" }}>
             Customized Private Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">Tailored Just for You</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Tailored Just for You</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
-            Create your perfect journey with our fully customized private tours. Travel with your family or friends at your own pace with personalized itineraries.
+          <p className="text-white text-base md:text-lg max-w-4xl mb-6 leading-relaxed" style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif" }}>
+            Experience Pakistan's breathtaking beauty with Towardsdestination.pk's Exclusive Private Tours. From the majestic valleys of Hunza and Skardu to the serene landscapes of Naran and Swat, we craft personalized journeys tailored to your preferences. Travel at your own pace with dedicated vehicles, expert guides, flexible itineraries, and premium accommodations. Whether by road or air, we handle every detail for your perfect adventure.
           </p>
           
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 max-w-2xl">
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-xs text-white/80 font-semibold">Customizable</div>
+              <div className="text-2xl font-bold text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>100%</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Customizable</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">24/7</div>
-              <div className="text-xs text-white/80 font-semibold">Support</div>
+              <div className="text-2xl font-bold text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>24/7</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Support</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">VIP</div>
-              <div className="text-xs text-white/80 font-semibold">Service</div>
+              <div className="text-2xl font-bold text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>VIP</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Service</div>
             </div>
           </div>
         </div>
@@ -116,8 +116,8 @@ export default function PrivateToursPage() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Exclusive Experience</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Exclusive Experience</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Travel with your family or friends only. No strangers, complete privacy.
               </p>
             </div>
@@ -125,8 +125,8 @@ export default function PrivateToursPage() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Flexible Schedule</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Flexible Schedule</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Choose your dates, duration, and pace. Complete control over your itinerary.
               </p>
             </div>
@@ -134,8 +134,8 @@ export default function PrivateToursPage() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Custom Destinations</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Custom Destinations</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Visit the places you want. We'll create a personalized route for you.
               </p>
             </div>
@@ -147,26 +147,13 @@ export default function PrivateToursPage() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
+            <h2 className="text-4xl font-bold text-red-600 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
               Request Your Private Tour
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-6" style={{ fontFamily: "'Inter', sans-serif" }}>
               Fill out the form below with your requirements, and we'll create a customized tour package just for you.
             </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <a 
-                href="/private-tours/by-air"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                ✈️ Browse By Air Tours
-              </a>
-              <a 
-                href="/private-tours/honeymoon"
-                className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                💑 Browse Honeymoon Packages
-              </a>
-            </div>
+    
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-200">
@@ -315,10 +302,10 @@ export default function PrivateToursPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-red-600 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
               What's Included in Private Tours
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
               Every private tour is customized, but here's what you can expect.
             </p>
           </div>

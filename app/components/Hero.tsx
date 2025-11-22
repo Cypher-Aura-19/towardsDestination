@@ -34,7 +34,8 @@ export default function Hero() {
   const [location, setLocation] = useState("");
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState("1");
+  const [adults, setAdults] = useState("2");
+  const [children, setChildren] = useState("0");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredLocations, setFilteredLocations] = useState<string[]>([]);
   const suggestionsRef = useRef<HTMLDivElement>(null);
@@ -77,8 +78,9 @@ export default function Hero() {
     const params = new URLSearchParams();
     if (location) params.append("location", location);
     if (checkIn) params.append("checkIn", checkIn);
-    if (checkOut) params.append("checkOut", checkOut);
-    if (guests) params.append("guests", guests);
+    if (checkOut) params.append("days", checkOut);
+    if (adults) params.append("adults", adults);
+    if (children) params.append("children", children);
     
     // Navigate to search results page
     router.push(`/search?${params.toString()}`);
@@ -126,35 +128,35 @@ export default function Hero() {
           <div className="w-full">
             {/* Main Heading - Travel Agency Style */}
             <div className="mb-3 animate-fade-in-up">
-              <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold mb-2 shadow-md border-0 hover:shadow-lg transition-all duration-300">
+              <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold mb-2 shadow-md border-0 hover:shadow-lg transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 🌟 Pakistan's #1 Travel Company
               </span>
             </div>
             
-            <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up" style={{animationDelay: '0.2s', fontFamily: "'Playfair Display', 'Georgia', serif"}}>
               Explore Pakistan's<br />
-              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 inline-block rounded-lg mt-2 text-[18px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl shadow-2xl hover:scale-105 transition-transform duration-300">Northern Beauty</span> & Beyond
+              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 inline-block rounded-lg mt-2 text-[18px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl shadow-2xl hover:scale-105 transition-transform duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>Northern Beauty</span> & Beyond
             </h1>
 
             {/* Description */}
-            <p className="text-white text-sm xs:text-base sm:text-lg md:text-xl mb-6 max-w-2xl leading-relaxed font-medium animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            <p className="text-white text-sm xs:text-base sm:text-lg md:text-xl mb-6 max-w-2xl leading-relaxed font-medium animate-fade-in-up" style={{animationDelay: '0.4s', fontFamily: "'Inter', 'Segoe UI', sans-serif"}}>
               Premium Tour Packages • Umrah Services • Luxury Hotels<br />
-              <span className="bg-red-600/80 text-white px-2 sm:px-3 py-1 rounded-md inline-block mt-2 text-xs xs:text-sm sm:text-base animate-pulse-glow">Book Your Dream Journey Today!</span>
+              <span className="bg-red-600/80 text-white px-2 sm:px-3 py-1 rounded-md inline-block mt-2 text-xs xs:text-sm sm:text-base animate-pulse-glow" style={{ fontFamily: "'Poppins', sans-serif" }}>Book Your Dream Journey Today!</span>
             </p>
             
             {/* Trust Badges - Travel Company Style */}
             <div className="grid grid-cols-3 gap-1.5 xs:gap-2 sm:gap-4 mb-8 w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600">15K+</div>
-                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight">Happy Travelers</div>
+                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>15K+</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight" style={{ fontFamily: "'Inter', sans-serif" }}>Happy Travelers</div>
               </div>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600">12+</div>
-                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight">Years Experience</div>
+                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>12+</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight" style={{ fontFamily: "'Inter', sans-serif" }}>Years Experience</div>
               </div>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600">100%</div>
-                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight">Licensed & Insured</div>
+                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>100%</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight" style={{ fontFamily: "'Inter', sans-serif" }}>Licensed & Insured</div>
               </div>
             </div>
 
@@ -162,7 +164,7 @@ export default function Hero() {
             <div className="mt-6 sm:mt-8 flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
           <div className="bg-white/90 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-6 md:p-8 w-full max-w-6xl border border-white/20 hover:shadow-red-500/20 transition-shadow duration-500">
             {/* Form Title */}
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-red-600 mb-3 sm:mb-4 md:mb-6 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-red-600 mb-3 sm:mb-4 md:mb-6 text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
               Plan Your Journey
             </h3>
             
@@ -170,7 +172,7 @@ export default function Hero() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                 {/* Location */}
                 <div className="flex flex-col gap-1.5 relative md:col-span-2 lg:col-span-1" ref={suggestionsRef}>
-                  <label className="text-xs sm:text-sm font-semibold text-gray-700">Location</label>
+                  <label className="text-xs sm:text-sm font-semibold text-gray-700" style={{ fontFamily: "'Inter', sans-serif" }}>Location</label>
                   <input
                     type="text"
                     value={location}
@@ -201,52 +203,73 @@ export default function Hero() {
                   )}
                 </div>
 
-                {/* Check In & Check Out - Same Row on Mobile */}
+                {/* Starting Date & Number of Days - Same Row on Mobile */}
                 <div className="grid grid-cols-2 gap-3 md:col-span-2 lg:col-span-2">
-                  {/* Check In Date */}
+                  {/* Starting Date */}
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-xs sm:text-sm font-semibold text-gray-700">Check In</label>
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700" style={{ fontFamily: "'Inter', sans-serif" }}>Starting Date</label>
                     <input
                       type="date"
                       value={checkIn}
                       onChange={(e) => setCheckIn(e.target.value)}
                       className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 text-sm bg-white"
+                      placeholder="Select date"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
                     />
                   </div>
 
-                  {/* Check Out Date */}
+                  {/* Number of Days */}
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-xs sm:text-sm font-semibold text-gray-700">Check Out</label>
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700" style={{ fontFamily: "'Inter', sans-serif" }}>Number of Days</label>
                     <input
-                      type="date"
+                      type="number"
                       value={checkOut}
                       onChange={(e) => setCheckOut(e.target.value)}
+                      placeholder="e.g., 5"
+                      min="1"
                       className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 text-sm bg-white"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
                     />
                   </div>
                 </div>
 
-                {/* Guests */}
-                <div className="flex flex-col gap-1.5 md:col-span-2 lg:col-span-1">
-                  <label className="text-xs sm:text-sm font-semibold text-gray-700">Guests</label>
-                  <select 
-                    value={guests}
-                    onChange={(e) => setGuests(e.target.value)}
-                    className="px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white text-sm"
-                  >
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5+ Guests</option>
-                  </select>
+                {/* Num of Adults & Num of Childs - Same Row on Mobile */}
+                <div className="grid grid-cols-2 gap-3 md:col-span-2 lg:col-span-1">
+                  {/* Number of Adults */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700" style={{ fontFamily: "'Inter', sans-serif" }}>Adults</label>
+                    <input
+                      type="number"
+                      value={adults}
+                      onChange={(e) => setAdults(e.target.value)}
+                      placeholder="e.g., 2"
+                      min="1"
+                      className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white text-sm"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    />
+                  </div>
+
+                  {/* Number of Children */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs sm:text-sm font-semibold text-gray-700" style={{ fontFamily: "'Inter', sans-serif" }}>Childs</label>
+                    <input
+                      type="number"
+                      value={children}
+                      onChange={(e) => setChildren(e.target.value)}
+                      placeholder="e.g., 0"
+                      min="0"
+                      className="px-2 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 bg-white text-sm"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    />
+                  </div>
                 </div>
 
                 {/* Search Button */}
                 <div className="flex flex-col gap-1.5 md:col-span-2 lg:col-span-1">
-                  <label className="text-xs sm:text-sm font-semibold text-gray-700 invisible hidden lg:block">Search</label>
+                  <label className="text-xs sm:text-sm font-semibold text-gray-700 invisible hidden lg:block" style={{ fontFamily: "'Inter', sans-serif" }}>Search</label>
                   <button 
                     type="submit"
+                    style={{ fontFamily: "'Poppins', sans-serif" }}
                     className="px-4 py-2 sm:px-6 sm:py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 lg:h-[46px] shadow-lg hover:shadow-xl"
                   >
                     Search

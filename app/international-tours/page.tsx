@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export default function InternationalToursPage() {
   const [activeTab, setActiveTab] = useState("all");
+  const [showUmrahPackages, setShowUmrahPackages] = useState(false);
   const internationalTours = [
     {
       id: 1,
@@ -37,8 +38,8 @@ export default function InternationalToursPage() {
       id: 2,
       name: "Turkey Grand Tour",
       duration: "7 Days / 6 Nights",
-      price: "PKR 220,000",
-      priceUSD: "$772",
+      price: "PKR 389,999",
+      priceUSD: "$1,368",
       category: "Historical & Cultural",
       popular: true,
       image: "/T.jpg",
@@ -59,12 +60,12 @@ export default function InternationalToursPage() {
     {
       id: 3,
       name: "Indonesia Bali Paradise",
-      duration: "6 Days / 5 Nights",
-      price: "PKR 195,000",
-      priceUSD: "$684",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 299,999",
+      priceUSD: "$1,053",
       category: "Tropical Paradise",
       popular: true,
-      image: "/I.jpg",
+      image: "/bali.jpg",
       destination: "Bali, Indonesia",
       type: "bali",
       highlights: [
@@ -105,11 +106,11 @@ export default function InternationalToursPage() {
       id: 5,
       name: "Maldives Male Luxury Escape",
       duration: "5 Days / 4 Nights",
-      price: "PKR 250,000",
-      priceUSD: "$877",
+      price: "PKR 299,999",
+      priceUSD: "$1,053",
       category: "Luxury Beach Resort",
       popular: true,
-      image: "/M.jpg",
+      image: "/maldives.jpg",
       destination: "Male, Maldives",
       type: "maldives",
       highlights: [
@@ -128,8 +129,8 @@ export default function InternationalToursPage() {
       id: 6,
       name: "Dubai Luxury Experience",
       duration: "5 Days / 4 Nights",
-      price: "PKR 180,000",
-      priceUSD: "$632",
+      price: "PKR 249,999",
+      priceUSD: "$877",
       category: "Luxury & Shopping",
       image: "/dubai.jpeg",
       destination: "Dubai, UAE",
@@ -324,7 +325,8 @@ export default function InternationalToursPage() {
           </h1>
           
           <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
-            Explore the world with our curated international tour packages. From the cultural wonders of Turkey and Baku to the luxury of Dubai, we offer complete travel solutions with flights, hotels, and guided tours.
+         Explore the World with Towardsdestination.pk, Join our International Tour Packages.
+From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the Nature of Maldives and Baki, we offer complete Travel Solutions with Flights Assistance, Hotel Accommodations and Guide Assistance 24/7
           </p>
           
           {/* Quick Stats */}
@@ -344,6 +346,7 @@ export default function InternationalToursPage() {
           </div>
         </div>
       </section>
+
 
       {/* International Tours Section */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -532,22 +535,115 @@ export default function InternationalToursPage() {
           </div>
 
           {/* Umrah Packages Section */}
-          <div className="text-center mb-12 mt-20">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              🕋 SACRED JOURNEY
-            </span>
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
-              Umrah Packages
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Select from our range of carefully curated Umrah packages designed to suit different needs and budgets.
-            </p>
-          </div>
+          {(activeTab === "all" || activeTab === "umrah") && (
+            <>
+              <div className="text-center mb-12 mt-20">
+                <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                  🕋 SACRED JOURNEY
+                </span>
+                <h2 className="text-4xl font-bold text-red-600 mb-4">
+                  Umrah Packages
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Select from our range of carefully curated Umrah packages designed to suit different needs and budgets.
+                </p>
+              </div>
 
-          <div className="space-y-8">
-            {umrahPackages
-              .filter((pkg) => activeTab === "all" || pkg.type === activeTab)
-              .map((pkg) => (
+              {/* Single Consolidated Umrah Card */}
+              <Link href="/international-tours/umrah">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ring-2 ring-red-600 mb-8 cursor-pointer">
+                  <div className="absolute top-6 right-6 z-10">
+                    <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                      <Star className="w-4 h-4 fill-white" />
+                      6 Package Options
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                    {/* Image */}
+                    <div className="relative h-80 lg:h-auto lg:col-span-5">
+                      <Image
+                        src="/umrah.jpg"
+                        alt="Umrah Packages"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                        <span className="text-sm font-medium text-red-600">Multiple Options Available</span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-8 lg:col-span-7">
+                      <div className="flex items-start justify-between mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-red-600 mb-2">
+                            Umrah Packages 2024-2025
+                          </h3>
+                          <div className="flex items-center gap-2 text-gray-600">
+                            <Calendar className="w-4 h-4" />
+                            <span className="text-sm">10-20 Days Options Available</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Package Types */}
+                      <div className="mb-6 pb-6 border-b border-gray-200">
+                        <p className="text-gray-700 mb-4">Choose from 6 carefully designed packages:</p>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                          {umrahPackages.map((pkg) => (
+                            <div key={pkg.id} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                              <p className="text-xs font-semibold text-red-600 mb-1">{pkg.name}</p>
+                              <p className="text-xs text-gray-600">{pkg.price}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Key Highlights */}
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                        <li className="flex items-start gap-2 text-sm text-gray-600">
+                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <span>Round-trip airfare included</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-sm text-gray-600">
+                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <span>3 to 5-star hotel options</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-sm text-gray-600">
+                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <span>Complete visa processing</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-sm text-gray-600">
+                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <span>Ziyarat tours included</span>
+                        </li>
+                      </ul>
+
+                      {/* Price & Button */}
+                      <div className="flex items-center justify-between pt-6 border-t border-gray-200">
+                        <div>
+                          <p className="text-sm text-gray-600 mb-1">Starting from</p>
+                          <p className="text-3xl font-bold text-red-600">PKR 180,000</p>
+                          <p className="text-xs text-gray-500 mt-1">per person</p>
+                        </div>
+                        <div className="flex gap-3">
+                          <span className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
+                            View Details
+                          </span>
+                          <span className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
+                            Book Now
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Remove expandable section - now goes to detail page */}
+              <div className="space-y-8 mb-8 hidden">
+                {umrahPackages.map((pkg) => (
               <div 
                 key={pkg.id}
                 className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative ${
@@ -639,6 +735,8 @@ export default function InternationalToursPage() {
               </div>
             ))}
           </div>
+            </>
+          )}
         </div>
       </section>
 
