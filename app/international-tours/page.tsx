@@ -64,7 +64,7 @@ export default function InternationalToursPage() {
       priceUSD: "$684",
       category: "Tropical Paradise",
       popular: true,
-      image: "/bali.jpg",
+      image: "/I.jpg",
       destination: "Bali, Indonesia",
       type: "bali",
       highlights: [
@@ -109,7 +109,7 @@ export default function InternationalToursPage() {
       priceUSD: "$877",
       category: "Luxury Beach Resort",
       popular: true,
-      image: "/maldives.jpg",
+      image: "/M.jpg",
       destination: "Male, Maldives",
       type: "maldives",
       highlights: [
