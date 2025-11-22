@@ -36,24 +36,26 @@ export default function InternationalToursPage() {
     },
     {
       id: 2,
-      name: "Turkey Grand Tour",
-      duration: "7 Days / 6 Nights",
-      price: "PKR 389,999",
-      priceUSD: "$1,368",
-      category: "Historical & Cultural",
+      name: "Turkey Tours 2024-2025",
+      duration: "5-7 Days Options",
+      price: "PKR 339,999",
+      priceUSD: "$1,193",
+      category: "Multiple Options",
       popular: true,
       image: "/T.jpg",
       destination: "Istanbul & Cappadocia, Turkey",
       type: "turkey",
+      isMultiPackage: true,
+      packageCount: "2 Package Options",
       highlights: [
-        "Round-trip airfare to Istanbul",
-        "4-star hotels in Istanbul & Cappadocia",
-        "All meals included",
+        "5-Day Istanbul Special Package",
+        "7-Day Grand Tour with Cappadocia",
+        "Round-trip airfare included",
+        "4-star hotel accommodation",
         "Blue Mosque & Hagia Sophia tours",
         "Topkapi Palace & Grand Bazaar",
-        "Hot air balloon ride in Cappadocia",
-        "Underground cities exploration",
-        "Bosphorus cruise",
+        "Hot air balloon ride (7-day tour)",
+        "Bosphorus cruise included",
         "Professional English-speaking guide"
       ]
     },
@@ -82,11 +84,12 @@ export default function InternationalToursPage() {
     },
     {
       id: 4,
-      name: "Turkey Istanbul Special",
+      name: "Turkey Istanbul Special - Hidden",
       duration: "5 Days / 4 Nights",
       price: "PKR 160,000",
       priceUSD: "$561",
       category: "City Break",
+      hidden: true,
       image: "/T.jpg",
       destination: "Istanbul, Turkey",
       type: "turkey",
@@ -312,16 +315,19 @@ export default function InternationalToursPage() {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          {/* Company Badge */}
-          <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
-              🕋 TOWARDSDESTINATION.PK - International Tours
+          {/* Company Name - More Visible */}
+          <div className="mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              TOWARDSDESTINATION.PK
+            </h2>
+            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-md text-sm font-bold">
+              🌍 International Tours
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-            International Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">2024-2025</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Explore the World<br />
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>With Premium Packages</span>
           </h1>
           
           <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
@@ -382,7 +388,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🕋 Umrah
+                 Umrah
               </button>
               <button
                 onClick={() => setActiveTab("turkey")}
@@ -392,7 +398,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🇹🇷 Turkey
+                 Turkey
               </button>
               <button
                 onClick={() => setActiveTab("baku")}
@@ -402,7 +408,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🇦🇿 Baku
+                 Baku
               </button>
               <button
                 onClick={() => setActiveTab("bali")}
@@ -412,7 +418,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🇮🇩 Bali
+                 Bali
               </button>
               <button
                 onClick={() => setActiveTab("maldives")}
@@ -422,7 +428,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🇲🇻 Maldives
+                 Maldives
               </button>
               <button
                 onClick={() => setActiveTab("dubai")}
@@ -432,14 +438,14 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                🇦🇪 Dubai
+                 Dubai
               </button>
             </div>
           </div>
 
           <div className="space-y-8 mb-20">
             {internationalTours
-              .filter((tour) => activeTab === "all" || tour.type === activeTab)
+              .filter((tour) => !tour.hidden && (activeTab === "all" || tour.type === activeTab))
               .map((tour) => (
               <div 
                 key={tour.id}
@@ -451,7 +457,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                   <div className="absolute top-6 right-6 z-10">
                     <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
                       <Star className="w-4 h-4 fill-white" />
-                      Most Popular
+                      {tour.isMultiPackage ? tour.packageCount : 'Most Popular'}
                     </span>
                   </div>
                 )}
@@ -515,13 +521,13 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       </div>
                       <div className="flex gap-3">
                         <Link 
-                          href={`/international-tours/${tour.id}`}
+                          href={tour.isMultiPackage ? `/international-tours/turkey` : `/international-tours/${tour.id}`}
                           className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
                         >
                           View Details
                         </Link>
                         <Link 
-                          href={`/international-tours/${tour.id}`}
+                          href={tour.isMultiPackage ? `/international-tours/turkey` : `/international-tours/${tour.id}`}
                           className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105"
                         >
                           Book Now

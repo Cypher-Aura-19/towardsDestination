@@ -207,96 +207,104 @@ const tourDetails: any = {
       "Modest dress recommended for mosque visits"
     ]
   },
-  "3": {
+  "3":{
     id: 3,
-    name: "Dubai Luxury Experience",
-    location: "Dubai, UAE",
+    name: "Indonesia Bali Paradise",
+    location: "Bali, Indonesia",
     duration: "5 Days / 4 Nights",
-    price: "PKR 249,999",
-    priceUSD: "$877",
-    image: "/dubai.jpeg",
+    price: "PKR 299,999",
+    priceUSD: "$1,053",
+    image: "/bali.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
-    description: "Experience the glamour and luxury of Dubai with our exclusive 5-day tour package. From the world's tallest building Burj Khalifa to the traditional souks, from thrilling desert safaris to luxurious dhow cruises, this tour offers the perfect blend of modern marvels and Arabian heritage. Enjoy world-class shopping, dining, and entertainment in this futuristic city.",
+    description: "Discover the enchanting Island of Gods with our comprehensive Bali tour package. Experience the perfect blend of stunning beaches, ancient temples, lush rice terraces, vibrant culture, and warm Balinese hospitality. From the artistic heart of Ubud to the pristine beaches of Nusa Dua, this tour offers an unforgettable tropical paradise experience.",
     pointsToVisit: [
-      "Burj Khalifa (124th & 125th floor)",
-      "Dubai Mall & Dubai Fountain",
-      "Palm Jumeirah & Atlantis",
-      "Dubai Marina",
-      "Jumeirah Beach & Burj Al Arab",
-      "Dubai Creek & Gold Souk",
-      "Spice Souk & Textile Souk",
-      "Dubai Frame",
-      "Global Village (seasonal)",
-      "Desert Safari with BBQ Dinner"
+      "Ubud Rice Terraces (Tegalalang)",
+      "Sacred Monkey Forest Sanctuary",
+      "Tanah Lot Temple",
+      "Uluwatu Temple",
+      "Tegenungan Waterfall",
+      "Tirta Empul Holy Water Temple",
+      "Nusa Dua Beach",
+      "Seminyak Beach",
+      "Traditional Balinese Village",
+      "Art Markets & Handicraft Centers"
     ],
     highlights: [
       "Round-trip airfare included",
-      "5-star hotel accommodation",
-      "Daily breakfast at hotel",
-      "Burj Khalifa 124th floor tickets",
-      "Desert safari with BBQ dinner & shows",
-      "Dubai Marina dhow cruise with dinner",
-      "Dubai city tour",
-      "All transfers in luxury vehicles"
+      "4-star beachfront resort",
+      "Daily breakfast included",
+      "Ubud rice terraces & monkey forest",
+      "Tanah Lot temple sunset tour",
+      "Traditional Balinese spa session",
+      "Water sports at Nusa Dua beach",
+      "Uluwatu temple & Kecak dance"
     ],
     included: [
       "Round-trip economy class airfare",
-      "5-star hotel accommodation (4 nights)",
+      "4-star beachfront resort (5 nights)",
       "Daily breakfast",
-      "Burj Khalifa tickets (124th floor)",
-      "Desert safari with BBQ dinner",
-      "Dubai Marina dhow cruise with dinner",
-      "Dubai city tour",
-      "Airport transfers in luxury vehicle",
-      "All taxes and service charges"
+      "All sightseeing tours as per itinerary",
+      "Professional English-speaking guide",
+      "Traditional Balinese massage & spa",
+      "Kecak fire dance performance",
+      "Water sports activities",
+      "Airport transfers in AC vehicle",
+      "All entrance fees to attractions"
     ],
     excluded: [
-      "UAE visa fees",
-      "Lunch and dinner (except included)",
+      "Indonesia visa fees (visa on arrival)",
+      "Lunch and dinner",
       "Personal expenses",
       "Travel insurance",
-      "Optional activities and tours"
+      "Optional activities",
+      "Tips and gratuities"
     ],
     itinerary: [
       {
         day: "Day 01",
-        title: "Arrival in Dubai",
-        description: "Arrival at Dubai International Airport. Meet and greet. Transfer to 5-star hotel in luxury vehicle. Check-in and rest. Evening free for leisure. Overnight in Dubai."
+        title: "Arrival in Bali",
+        description: "Arrival at Ngurah Rai International Airport, Bali. Meet and greet by our representative. Transfer to beachfront resort. Check-in and rest. Evening free to explore nearby beach or relax at resort. Welcome dinner at resort. Overnight in Bali."
       },
       {
         day: "Day 02",
-        title: "Dubai City Tour & Burj Khalifa",
-        description: "After breakfast, half-day Dubai city tour. Visit Jumeirah Beach, Burj Al Arab (photo stop), Palm Jumeirah, Atlantis Hotel. Visit Gold Souk and Spice Souk. Evening visit to Burj Khalifa 124th floor. Watch Dubai Fountain show. Overnight in Dubai."
+        title: "Ubud Cultural Tour",
+        description: "Breakfast at resort. Full day Ubud tour. Visit Tegalalang Rice Terraces for stunning photos. Explore Sacred Monkey Forest Sanctuary. Visit Tirta Empul Holy Water Temple. Lunch at local restaurant with rice terrace view. Visit traditional art markets and handicraft centers. Return to resort. Overnight in Bali."
       },
       {
         day: "Day 03",
-        title: "Desert Safari Adventure",
-        description: "Breakfast at hotel. Day free for shopping at Dubai Mall or Mall of Emirates. Afternoon pickup for desert safari. Dune bashing, camel ride, sandboarding. BBQ dinner with belly dance and Tanoura shows. Return to hotel. Overnight in Dubai."
+        title: "Tanah Lot & Beach Activities",
+        description: "Breakfast at resort. Morning visit to Tegenungan Waterfall. Afternoon water sports at Nusa Dua Beach - banana boat, parasailing, jet ski. Evening visit to iconic Tanah Lot Temple for spectacular sunset views. Dinner at beachfront restaurant. Return to resort. Overnight in Bali."
       },
       {
         day: "Day 04",
-        title: "Dubai Marina & Dhow Cruise",
-        description: "Breakfast at hotel. Visit Dubai Marina and JBR Beach. Optional: Visit Dubai Frame or Global Village. Evening Dubai Marina dhow cruise with international buffet dinner. Overnight in Dubai."
+        title: "Uluwatu Temple & Kecak Dance",
+        description: "Breakfast at resort. Morning at leisure - enjoy resort facilities or optional activities. Afternoon visit to Uluwatu Temple perched on cliff edge. Watch traditional Kecak Fire Dance performance at sunset. Seafood dinner at Jimbaran Beach. Return to resort. Overnight in Bali."
       },
       {
         day: "Day 05",
+        title: "Spa & Leisure Day",
+        description: "Breakfast at resort. Morning traditional Balinese spa and massage session. Afternoon free for shopping at Seminyak or relaxing at beach. Optional: Visit Bali Safari Park or water park. Farewell dinner at resort. Overnight in Bali."
+      },
+      {
+        day: "Day 06",
         title: "Departure",
-        description: "Breakfast at hotel. Check-out. Last minute shopping if time permits. Transfer to Dubai Airport for departure flight. End of tour."
+        description: "Breakfast at resort. Check-out. Last minute shopping or beach time if flight schedule permits. Transfer to Ngurah Rai Airport for departure flight. End of tour with wonderful memories of Bali."
       }
     ],
     pricing: {
-      per_person_quad: "PKR 249,999 ($877)",
-      per_person_triple: "PKR 249,999 ($877)",
-      per_person_double: "PKR 280,000 ($982)",
-      per_person_single: "PKR 300,000 ($1,053)"
+      per_person_quad: "PKR 299,999 ($1,053)",
+      per_person_triple: "PKR 299,999 ($1,053)",
+      per_person_double: "PKR 319,999 ($1,123)",
+      per_person_single: "PKR 359,999 ($1,263)"
     },
     notes: [
-      "UAE visa processing assistance provided",
-      "Best time to visit: November to March",
-      "Currency: UAE Dirham (AED)",
-      "Modest dress code in public places",
-      "Shopping festival in January-February offers great deals"
+      "Indonesia offers visa on arrival for Pakistani passport holders",
+      "Best time to visit: April to October (dry season)",
+      "Currency: Indonesian Rupiah (IDR)",
+      "Modest dress required for temple visits",
+      "Bali is known for affordable shopping and dining",
+      "Prices may vary according to season and flight availability"
     ]
   },
   "4": {
@@ -481,102 +489,94 @@ const tourDetails: any = {
   },
   "6": {
     id: 6,
-    name: "Indonesia Bali Paradise",
-    location: "Bali, Indonesia",
+    name: "Dubai Luxury Experience",
+    location: "Dubai, UAE",
     duration: "5 Days / 4 Nights",
-    price: "PKR 299,999",
-    priceUSD: "$1,053",
-    image: "/bali.jpg",
+    price: "PKR 249,999",
+    priceUSD: "$877",
+    image: "/dubai.jpeg",
     groupSize: "Flexible",
     tourType: "International Tour",
-    description: "Discover the enchanting Island of Gods with our comprehensive Bali tour package. Experience the perfect blend of stunning beaches, ancient temples, lush rice terraces, vibrant culture, and warm Balinese hospitality. From the artistic heart of Ubud to the pristine beaches of Nusa Dua, this tour offers an unforgettable tropical paradise experience.",
+    description: "Experience the glamour and luxury of Dubai with our exclusive 5-day tour package. From the world's tallest building Burj Khalifa to the traditional souks, from thrilling desert safaris to luxurious dhow cruises, this tour offers the perfect blend of modern marvels and Arabian heritage. Enjoy world-class shopping, dining, and entertainment in this futuristic city.",
     pointsToVisit: [
-      "Ubud Rice Terraces (Tegalalang)",
-      "Sacred Monkey Forest Sanctuary",
-      "Tanah Lot Temple",
-      "Uluwatu Temple",
-      "Tegenungan Waterfall",
-      "Tirta Empul Holy Water Temple",
-      "Nusa Dua Beach",
-      "Seminyak Beach",
-      "Traditional Balinese Village",
-      "Art Markets & Handicraft Centers"
+      "Burj Khalifa (124th & 125th floor)",
+      "Dubai Mall & Dubai Fountain",
+      "Palm Jumeirah & Atlantis",
+      "Dubai Marina",
+      "Jumeirah Beach & Burj Al Arab",
+      "Dubai Creek & Gold Souk",
+      "Spice Souk & Textile Souk",
+      "Dubai Frame",
+      "Global Village (seasonal)",
+      "Desert Safari with BBQ Dinner"
     ],
     highlights: [
       "Round-trip airfare included",
-      "4-star beachfront resort",
-      "Daily breakfast included",
-      "Ubud rice terraces & monkey forest",
-      "Tanah Lot temple sunset tour",
-      "Traditional Balinese spa session",
-      "Water sports at Nusa Dua beach",
-      "Uluwatu temple & Kecak dance"
+      "5-star hotel accommodation",
+      "Daily breakfast at hotel",
+      "Burj Khalifa 124th floor tickets",
+      "Desert safari with BBQ dinner & shows",
+      "Dubai Marina dhow cruise with dinner",
+      "Dubai city tour",
+      "All transfers in luxury vehicles"
     ],
     included: [
       "Round-trip economy class airfare",
-      "4-star beachfront resort (5 nights)",
+      "5-star hotel accommodation (4 nights)",
       "Daily breakfast",
-      "All sightseeing tours as per itinerary",
-      "Professional English-speaking guide",
-      "Traditional Balinese massage & spa",
-      "Kecak fire dance performance",
-      "Water sports activities",
-      "Airport transfers in AC vehicle",
-      "All entrance fees to attractions"
+      "Burj Khalifa tickets (124th floor)",
+      "Desert safari with BBQ dinner",
+      "Dubai Marina dhow cruise with dinner",
+      "Dubai city tour",
+      "Airport transfers in luxury vehicle",
+      "All taxes and service charges"
     ],
     excluded: [
-      "Indonesia visa fees (visa on arrival)",
-      "Lunch and dinner",
+      "UAE visa fees",
+      "Lunch and dinner (except included)",
       "Personal expenses",
       "Travel insurance",
-      "Optional activities",
-      "Tips and gratuities"
+      "Optional activities and tours"
     ],
     itinerary: [
       {
         day: "Day 01",
-        title: "Arrival in Bali",
-        description: "Arrival at Ngurah Rai International Airport, Bali. Meet and greet by our representative. Transfer to beachfront resort. Check-in and rest. Evening free to explore nearby beach or relax at resort. Welcome dinner at resort. Overnight in Bali."
+        title: "Arrival in Dubai",
+        description: "Arrival at Dubai International Airport. Meet and greet. Transfer to 5-star hotel in luxury vehicle. Check-in and rest. Evening free for leisure. Overnight in Dubai."
       },
       {
         day: "Day 02",
-        title: "Ubud Cultural Tour",
-        description: "Breakfast at resort. Full day Ubud tour. Visit Tegalalang Rice Terraces for stunning photos. Explore Sacred Monkey Forest Sanctuary. Visit Tirta Empul Holy Water Temple. Lunch at local restaurant with rice terrace view. Visit traditional art markets and handicraft centers. Return to resort. Overnight in Bali."
+        title: "Dubai City Tour & Burj Khalifa",
+        description: "After breakfast, half-day Dubai city tour. Visit Jumeirah Beach, Burj Al Arab (photo stop), Palm Jumeirah, Atlantis Hotel. Visit Gold Souk and Spice Souk. Evening visit to Burj Khalifa 124th floor. Watch Dubai Fountain show. Overnight in Dubai."
       },
       {
         day: "Day 03",
-        title: "Tanah Lot & Beach Activities",
-        description: "Breakfast at resort. Morning visit to Tegenungan Waterfall. Afternoon water sports at Nusa Dua Beach - banana boat, parasailing, jet ski. Evening visit to iconic Tanah Lot Temple for spectacular sunset views. Dinner at beachfront restaurant. Return to resort. Overnight in Bali."
+        title: "Desert Safari Adventure",
+        description: "Breakfast at hotel. Day free for shopping at Dubai Mall or Mall of Emirates. Afternoon pickup for desert safari. Dune bashing, camel ride, sandboarding. BBQ dinner with belly dance and Tanoura shows. Return to hotel. Overnight in Dubai."
       },
       {
         day: "Day 04",
-        title: "Uluwatu Temple & Kecak Dance",
-        description: "Breakfast at resort. Morning at leisure - enjoy resort facilities or optional activities. Afternoon visit to Uluwatu Temple perched on cliff edge. Watch traditional Kecak Fire Dance performance at sunset. Seafood dinner at Jimbaran Beach. Return to resort. Overnight in Bali."
+        title: "Dubai Marina & Dhow Cruise",
+        description: "Breakfast at hotel. Visit Dubai Marina and JBR Beach. Optional: Visit Dubai Frame or Global Village. Evening Dubai Marina dhow cruise with international buffet dinner. Overnight in Dubai."
       },
       {
         day: "Day 05",
-        title: "Spa & Leisure Day",
-        description: "Breakfast at resort. Morning traditional Balinese spa and massage session. Afternoon free for shopping at Seminyak or relaxing at beach. Optional: Visit Bali Safari Park or water park. Farewell dinner at resort. Overnight in Bali."
-      },
-      {
-        day: "Day 06",
         title: "Departure",
-        description: "Breakfast at resort. Check-out. Last minute shopping or beach time if flight schedule permits. Transfer to Ngurah Rai Airport for departure flight. End of tour with wonderful memories of Bali."
+        description: "Breakfast at hotel. Check-out. Last minute shopping if time permits. Transfer to Dubai Airport for departure flight. End of tour."
       }
     ],
     pricing: {
-      per_person_quad: "PKR 299,999 ($1,053)",
-      per_person_triple: "PKR 299,999 ($1,053)",
-      per_person_double: "PKR 319,999 ($1,123)",
-      per_person_single: "PKR 359,999 ($1,263)"
+      per_person_quad: "PKR 249,999 ($877)",
+      per_person_triple: "PKR 249,999 ($877)",
+      per_person_double: "PKR 280,000 ($982)",
+      per_person_single: "PKR 300,000 ($1,053)"
     },
     notes: [
-      "Indonesia offers visa on arrival for Pakistani passport holders",
-      "Best time to visit: April to October (dry season)",
-      "Currency: Indonesian Rupiah (IDR)",
-      "Modest dress required for temple visits",
-      "Bali is known for affordable shopping and dining",
-      "Prices may vary according to season and flight availability"
+      "UAE visa processing assistance provided",
+      "Best time to visit: November to March",
+      "Currency: UAE Dirham (AED)",
+      "Modest dress code in public places",
+      "Shopping festival in January-February offers great deals"
     ]
   }
 };
