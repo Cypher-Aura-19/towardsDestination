@@ -14,10 +14,11 @@ export default function InternationalToursPage() {
       id: 1,
       name: "Baku Azerbaijan Tour",
       duration: "5 Days / 4 Nights",
-      price: "PKR 150,000",
+      price: "PKR 249,999",
+      priceUSD: "$877",
       category: "Cultural Experience",
       popular: true,
-      image: "/baku.jpg",
+      image: "/A.jpg",
       destination: "Baku, Azerbaijan",
       type: "baku",
       highlights: [
@@ -37,9 +38,10 @@ export default function InternationalToursPage() {
       name: "Turkey Grand Tour",
       duration: "7 Days / 6 Nights",
       price: "PKR 220,000",
+      priceUSD: "$772",
       category: "Historical & Cultural",
       popular: true,
-      image: "/turkey.jpeg",
+      image: "/T.jpg",
       destination: "Istanbul & Cappadocia, Turkey",
       type: "turkey",
       highlights: [
@@ -56,9 +58,78 @@ export default function InternationalToursPage() {
     },
     {
       id: 3,
+      name: "Indonesia Bali Paradise",
+      duration: "6 Days / 5 Nights",
+      price: "PKR 195,000",
+      priceUSD: "$684",
+      category: "Tropical Paradise",
+      popular: true,
+      image: "/bali.jpg",
+      destination: "Bali, Indonesia",
+      type: "bali",
+      highlights: [
+        "Round-trip airfare included",
+        "4-star beachfront resort",
+        "Daily breakfast included",
+        "Ubud rice terraces & monkey forest",
+        "Tanah Lot temple sunset tour",
+        "Traditional Balinese spa session",
+        "Water sports at Nusa Dua beach",
+        "Uluwatu temple & Kecak dance",
+        "All transfers & guided tours"
+      ]
+    },
+    {
+      id: 4,
+      name: "Turkey Istanbul Special",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 160,000",
+      priceUSD: "$561",
+      category: "City Break",
+      image: "/T.jpg",
+      destination: "Istanbul, Turkey",
+      type: "turkey",
+      highlights: [
+        "Round-trip economy airfare",
+        "4-star hotel in Sultanahmet area",
+        "Breakfast included daily",
+        "Guided city tour of Istanbul",
+        "Blue Mosque & Hagia Sophia",
+        "Topkapi Palace entrance",
+        "Grand Bazaar shopping tour",
+        "Bosphorus boat cruise",
+        "Airport transfers included"
+      ]
+    },
+    {
+      id: 5,
+      name: "Maldives Male Luxury Escape",
+      duration: "5 Days / 4 Nights",
+      price: "PKR 250,000",
+      priceUSD: "$877",
+      category: "Luxury Beach Resort",
+      popular: true,
+      image: "/maldives.jpg",
+      destination: "Male, Maldives",
+      type: "maldives",
+      highlights: [
+        "Round-trip airfare included",
+        "5-star overwater villa resort",
+        "All-inclusive meal plan",
+        "Private speedboat transfers",
+        "Snorkeling & diving excursions",
+        "Sunset dolphin cruise",
+        "Spa & wellness treatments",
+        "Water sports activities",
+        "Romantic beach dinner setup"
+      ]
+    },
+    {
+      id: 6,
       name: "Dubai Luxury Experience",
       duration: "5 Days / 4 Nights",
       price: "PKR 180,000",
+      priceUSD: "$632",
       category: "Luxury & Shopping",
       image: "/dubai.jpeg",
       destination: "Dubai, UAE",
@@ -73,27 +144,6 @@ export default function InternationalToursPage() {
         "Dubai Marina dhow cruise",
         "Palm Jumeirah & Atlantis visit",
         "All transfers in luxury vehicles"
-      ]
-    },
-    {
-      id: 4,
-      name: "Turkey Istanbul Special",
-      duration: "5 Days / 4 Nights",
-      price: "PKR 160,000",
-      category: "City Break",
-      image: "/turkey.jpeg",
-      destination: "Istanbul, Turkey",
-      type: "turkey",
-      highlights: [
-        "Round-trip economy airfare",
-        "4-star hotel in Sultanahmet area",
-        "Breakfast included daily",
-        "Guided city tour of Istanbul",
-        "Blue Mosque & Hagia Sophia",
-        "Topkapi Palace entrance",
-        "Grand Bazaar shopping tour",
-        "Bosphorus boat cruise",
-        "Airport transfers included"
       ]
     }
   ];
@@ -352,6 +402,26 @@ export default function InternationalToursPage() {
                 🇦🇿 Baku
               </button>
               <button
+                onClick={() => setActiveTab("bali")}
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
+                  activeTab === "bali"
+                    ? "bg-red-600 text-white scale-105"
+                    : "bg-white text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                🇮🇩 Bali
+              </button>
+              <button
+                onClick={() => setActiveTab("maldives")}
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
+                  activeTab === "maldives"
+                    ? "bg-red-600 text-white scale-105"
+                    : "bg-white text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                🇲🇻 Maldives
+              </button>
+              <button
                 onClick={() => setActiveTab("dubai")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "dubai"
@@ -435,6 +505,9 @@ export default function InternationalToursPage() {
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Starting from</p>
                         <p className="text-3xl font-bold text-red-600">{tour.price}</p>
+                        {tour.priceUSD && (
+                          <p className="text-lg text-gray-500">({tour.priceUSD} USD)</p>
+                        )}
                         <p className="text-sm text-gray-600">per person</p>
                       </div>
                       <div className="flex gap-3">

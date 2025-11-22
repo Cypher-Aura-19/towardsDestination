@@ -15,8 +15,9 @@ const tourDetails: any = {
     name: "Baku Azerbaijan Tour",
     location: "Baku, Azerbaijan",
     duration: "5 Days / 4 Nights",
-    price: "PKR 150,000",
-    image: "/baku.jpg",
+    price: "PKR 249,999",
+    priceUSD: "$877",
+    image: "/A.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
     description: "Experience the magical blend of ancient history and modern architecture in Baku, Azerbaijan. Known as the 'Land of Fire', Azerbaijan offers stunning landscapes, rich culture, and warm hospitality. This comprehensive tour covers all major attractions including the UNESCO-listed Old City, modern Flame Towers, and the mysterious Gobustan rock art.",
@@ -86,16 +87,19 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 150,000",
-      per_person_triple: "PKR 140,000",
-      single_supplement: "PKR 30,000"
+      per_person_quad: "PKR 249,999 ($877)",
+      per_person_triple: "PKR 249,999 ($877)",
+      per_person_double: "PKR 280,000 ($982)",
+      per_person_single: "PKR 300,000 ($1,053)"
     },
     notes: [
       "Visa: Azerbaijan offers e-visa for Pakistani passport holders",
       "Best time to visit: April to October",
       "Currency: Azerbaijani Manat (AZN)",
       "Language: Azerbaijani (English widely spoken in tourist areas)",
-      "Prices subject to change based on flight availability"
+      "Prices may vary according to season and flight availability",
+      "Peak season (June-September) may have higher rates",
+      "Early booking recommended for better rates"
     ]
   },
   "2": {
@@ -104,7 +108,8 @@ const tourDetails: any = {
     location: "Istanbul & Cappadocia, Turkey",
     duration: "7 Days / 6 Nights",
     price: "PKR 220,000",
-    image: "/turkey.jpeg",
+    priceUSD: "$772",
+    image: "/T.jpg",
     groupSize: "Flexible",
     tourType: "International Tour",
     description: "Discover the enchanting beauty of Turkey with our comprehensive 7-day tour covering Istanbul and Cappadocia. Experience the perfect blend of European and Asian cultures, explore ancient Byzantine and Ottoman heritage, witness the surreal landscapes of Cappadocia, and enjoy a magical hot air balloon ride. This tour offers an unforgettable journey through Turkey's most iconic destinations.",
@@ -189,9 +194,9 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 220,000",
-      per_person_triple: "PKR 210,000",
-      single_supplement: "PKR 40,000"
+      per_person_double: "PKR 220,000 ($772)",
+      per_person_triple: "PKR 210,000 ($737)",
+      single_supplement: "PKR 40,000 ($140)"
     },
     notes: [
       "Turkey visa available on arrival for Pakistani passport holders",
@@ -207,6 +212,7 @@ const tourDetails: any = {
     location: "Dubai, UAE",
     duration: "5 Days / 4 Nights",
     price: "PKR 180,000",
+    priceUSD: "$632",
     image: "/dubai.jpeg",
     groupSize: "Flexible",
     tourType: "International Tour",
@@ -279,9 +285,9 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 180,000",
-      per_person_triple: "PKR 170,000",
-      single_supplement: "PKR 35,000"
+      per_person_double: "PKR 180,000 ($632)",
+      per_person_triple: "PKR 170,000 ($596)",
+      single_supplement: "PKR 35,000 ($123)"
     },
     notes: [
       "UAE visa processing assistance provided",
@@ -297,6 +303,7 @@ const tourDetails: any = {
     location: "Istanbul, Turkey",
     duration: "5 Days / 4 Nights",
     price: "PKR 160,000",
+    priceUSD: "$561",
     image: "/turkey.jpeg",
     groupSize: "Flexible",
     tourType: "International Tour",
@@ -366,15 +373,206 @@ const tourDetails: any = {
       }
     ],
     pricing: {
-      per_person_double: "PKR 160,000",
-      per_person_triple: "PKR 150,000",
-      single_supplement: "PKR 30,000"
+      per_person_double: "PKR 160,000 ($561)",
+      per_person_triple: "PKR 150,000 ($526)",
+      single_supplement: "PKR 30,000 ($105)"
     },
     notes: [
       "Turkey visa available on arrival",
       "Best time: April-May, September-October",
       "Currency: Turkish Lira (TRY)",
       "Modest dress for mosques"
+    ]
+  },
+  "5": {
+    id: 5,
+    name: "Maldives Male Luxury Escape",
+    location: "Male, Maldives",
+    duration: "5 Days / 4 Nights",
+    price: "PKR 250,000",
+    priceUSD: "$877",
+    image: "/maldives.jpg",
+    groupSize: "Flexible",
+    tourType: "International Tour",
+    description: "Experience paradise on earth with our exclusive Maldives luxury package. Stay in stunning overwater villas, dive into crystal-clear turquoise waters, and indulge in world-class hospitality. This tropical escape offers the perfect blend of relaxation, adventure, and romance with pristine beaches, vibrant coral reefs, and unforgettable sunsets.",
+    pointsToVisit: [
+      "Male City Tour",
+      "Grand Friday Mosque",
+      "Maldives National Museum",
+      "Local Island Visit",
+      "Sandbank Picnic",
+      "Coral Reef Snorkeling Sites",
+      "Underwater Restaurant Experience",
+      "Sunset Fishing Point",
+      "Bioluminescent Beach"
+    ],
+    highlights: [
+      "Round-trip airfare included",
+      "5-star overwater villa resort",
+      "All-inclusive meal plan",
+      "Private speedboat transfers",
+      "Snorkeling & diving excursions",
+      "Sunset dolphin cruise",
+      "Spa & wellness treatments",
+      "Water sports activities"
+    ],
+    included: [
+      "Round-trip economy class airfare",
+      "5-star overwater villa (4 nights)",
+      "All-inclusive meals & beverages",
+      "Private speedboat transfers",
+      "Daily snorkeling trips",
+      "Sunset dolphin watching cruise",
+      "Complimentary spa session",
+      "Water sports (kayaking, paddleboarding)",
+      "Romantic beach dinner setup",
+      "Airport meet & greet"
+    ],
+    excluded: [
+      "Maldives visa (free on arrival)",
+      "Scuba diving certification courses",
+      "Premium alcoholic beverages",
+      "Personal expenses",
+      "Travel insurance",
+      "Tips and gratuities"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Paradise",
+        description: "Arrival at Velana International Airport, Male. Meet and greet by resort representative. Private speedboat transfer to resort. Check-in to overwater villa. Welcome drink and resort orientation. Evening free to relax. Dinner at resort. Overnight in Maldives."
+      },
+      {
+        day: "Day 02",
+        title: "Snorkeling & Water Sports",
+        description: "Breakfast at resort. Morning snorkeling excursion to nearby coral reefs. Spot colorful tropical fish, sea turtles, and rays. Lunch at resort. Afternoon water sports activities - kayaking, paddleboarding, jet skiing. Sunset dolphin watching cruise. Dinner at resort. Overnight in Maldives."
+      },
+      {
+        day: "Day 03",
+        title: "Island Hopping & Local Culture",
+        description: "Breakfast at villa. Half-day Male city tour - visit Grand Friday Mosque, National Museum, and local markets. Lunch at local restaurant. Afternoon sandbank picnic with swimming and relaxation. Return to resort. Spa and wellness treatment. Dinner at resort. Overnight in Maldives."
+      },
+      {
+        day: "Day 04",
+        title: "Leisure & Romance",
+        description: "Breakfast at resort. Day at leisure - enjoy resort facilities, private beach, infinity pool. Optional activities: scuba diving, fishing trip, or underwater restaurant experience. Evening romantic beach dinner setup with bonfire. Overnight in Maldives."
+      },
+      {
+        day: "Day 05",
+        title: "Departure",
+        description: "Breakfast at villa. Check-out. Last minute swimming or relaxation. Private speedboat transfer to Male Airport. Departure flight. End of tour with unforgettable memories."
+      }
+    ],
+    pricing: {
+      per_person_double: "PKR 250,000 ($877)",
+      per_person_triple: "PKR 240,000 ($842)",
+      single_supplement: "PKR 60,000 ($211)"
+    },
+    notes: [
+      "Maldives offers visa-free entry for Pakistani passport holders (30 days)",
+      "Best time to visit: November to April (dry season)",
+      "Currency: Maldivian Rufiyaa (MVR), USD widely accepted",
+      "Perfect for honeymoons and romantic getaways",
+      "Seaplane transfers available at additional cost for distant resorts"
+    ]
+  },
+  "6": {
+    id: 6,
+    name: "Indonesia Bali Paradise",
+    location: "Bali, Indonesia",
+    duration: "6 Days / 5 Nights",
+    price: "PKR 195,000",
+    priceUSD: "$684",
+    image: "/bali.jpg",
+    groupSize: "Flexible",
+    tourType: "International Tour",
+    description: "Discover the enchanting Island of Gods with our comprehensive Bali tour package. Experience the perfect blend of stunning beaches, ancient temples, lush rice terraces, vibrant culture, and warm Balinese hospitality. From the artistic heart of Ubud to the pristine beaches of Nusa Dua, this tour offers an unforgettable tropical paradise experience.",
+    pointsToVisit: [
+      "Ubud Rice Terraces (Tegalalang)",
+      "Sacred Monkey Forest Sanctuary",
+      "Tanah Lot Temple",
+      "Uluwatu Temple",
+      "Tegenungan Waterfall",
+      "Tirta Empul Holy Water Temple",
+      "Nusa Dua Beach",
+      "Seminyak Beach",
+      "Traditional Balinese Village",
+      "Art Markets & Handicraft Centers"
+    ],
+    highlights: [
+      "Round-trip airfare included",
+      "4-star beachfront resort",
+      "Daily breakfast included",
+      "Ubud rice terraces & monkey forest",
+      "Tanah Lot temple sunset tour",
+      "Traditional Balinese spa session",
+      "Water sports at Nusa Dua beach",
+      "Uluwatu temple & Kecak dance"
+    ],
+    included: [
+      "Round-trip economy class airfare",
+      "4-star beachfront resort (5 nights)",
+      "Daily breakfast",
+      "All sightseeing tours as per itinerary",
+      "Professional English-speaking guide",
+      "Traditional Balinese massage & spa",
+      "Kecak fire dance performance",
+      "Water sports activities",
+      "Airport transfers in AC vehicle",
+      "All entrance fees to attractions"
+    ],
+    excluded: [
+      "Indonesia visa fees (visa on arrival)",
+      "Lunch and dinner",
+      "Personal expenses",
+      "Travel insurance",
+      "Optional activities",
+      "Tips and gratuities"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Bali",
+        description: "Arrival at Ngurah Rai International Airport, Bali. Meet and greet by our representative. Transfer to beachfront resort. Check-in and rest. Evening free to explore nearby beach or relax at resort. Welcome dinner at resort. Overnight in Bali."
+      },
+      {
+        day: "Day 02",
+        title: "Ubud Cultural Tour",
+        description: "Breakfast at resort. Full day Ubud tour. Visit Tegalalang Rice Terraces for stunning photos. Explore Sacred Monkey Forest Sanctuary. Visit Tirta Empul Holy Water Temple. Lunch at local restaurant with rice terrace view. Visit traditional art markets and handicraft centers. Return to resort. Overnight in Bali."
+      },
+      {
+        day: "Day 03",
+        title: "Tanah Lot & Beach Activities",
+        description: "Breakfast at resort. Morning visit to Tegenungan Waterfall. Afternoon water sports at Nusa Dua Beach - banana boat, parasailing, jet ski. Evening visit to iconic Tanah Lot Temple for spectacular sunset views. Dinner at beachfront restaurant. Return to resort. Overnight in Bali."
+      },
+      {
+        day: "Day 04",
+        title: "Uluwatu Temple & Kecak Dance",
+        description: "Breakfast at resort. Morning at leisure - enjoy resort facilities or optional activities. Afternoon visit to Uluwatu Temple perched on cliff edge. Watch traditional Kecak Fire Dance performance at sunset. Seafood dinner at Jimbaran Beach. Return to resort. Overnight in Bali."
+      },
+      {
+        day: "Day 05",
+        title: "Spa & Leisure Day",
+        description: "Breakfast at resort. Morning traditional Balinese spa and massage session. Afternoon free for shopping at Seminyak or relaxing at beach. Optional: Visit Bali Safari Park or water park. Farewell dinner at resort. Overnight in Bali."
+      },
+      {
+        day: "Day 06",
+        title: "Departure",
+        description: "Breakfast at resort. Check-out. Last minute shopping or beach time if flight schedule permits. Transfer to Ngurah Rai Airport for departure flight. End of tour with wonderful memories of Bali."
+      }
+    ],
+    pricing: {
+      per_person_double: "PKR 195,000 ($684)",
+      per_person_triple: "PKR 185,000 ($649)",
+      single_supplement: "PKR 40,000 ($140)"
+    },
+    notes: [
+      "Indonesia offers visa on arrival for Pakistani passport holders",
+      "Best time to visit: April to October (dry season)",
+      "Currency: Indonesian Rupiah (IDR)",
+      "Modest dress required for temple visits",
+      "Bali is known for affordable shopping and dining",
+      "Prices may vary according to season and flight availability"
     ]
   }
 };
@@ -585,7 +783,7 @@ default function InternationalTourDetail() {
             {tour.pricing && (
               <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
                 <h2 className="text-3xl font-bold text-blue-800 mb-6">Pricing Options</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   {Object.entries(tour.pricing).map(([key, value]: [string, any]) => (
                     <div key={key} className="bg-white rounded-lg p-6 border-2 border-blue-300 hover:border-blue-500 transition-colors">
                       <h3 className="text-lg font-bold text-blue-700 mb-2 capitalize">
@@ -594,6 +792,11 @@ default function InternationalTourDetail() {
                       <p className="text-2xl font-bold text-gray-900">{value}</p>
                     </div>
                   ))}
+                </div>
+                <div className="bg-blue-100 border-l-4 border-blue-600 p-4 rounded">
+                  <p className="text-sm text-blue-800 font-semibold">
+                    💡 Note: Prices may vary according to season and flight availability. Peak season rates may be higher. Early booking recommended for better rates.
+                  </p>
                 </div>
               </section>
             )}
@@ -623,8 +826,11 @@ default function InternationalTourDetail() {
                 <div className="text-sm text-gray-600 mb-1">Starting from</div>
                 <div className="text-3xl font-bold text-blue-600">
                   {tour.price}
-                  <span className="text-lg text-gray-600 font-normal">/person</span>
                 </div>
+                {tour.priceUSD && (
+                  <div className="text-lg text-gray-600 mt-1">({tour.priceUSD} USD)</div>
+                )}
+                <div className="text-sm text-gray-600 mt-2">/person</div>
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-blue-500 text-blue-500" />
