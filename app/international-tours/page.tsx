@@ -342,7 +342,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
               <div className="text-xs text-white/80 font-semibold">Destinations</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">5-7</div>
+              <div className="text-2xl font-bold text-white">4-21</div>
               <div className="text-xs text-white/80 font-semibold">Days Tours</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">

@@ -21,7 +21,7 @@ const formatTextWithBold = (text: string) => {
     'trekking', 'hiking', 'camping', 'rafting', 'bonfire', 'jeep', 'Jeep', 'sightseeing',
     'Musical Night', 'Cycling Tours', 'Cultural Tours', 'Adventure', 'adventure',
     // Important terms
-    '@towardsdestination.pk', 'Book', 'Experience', 'Beauty', 'Mesmerizing', 'mesmerizing',
+    'Book', 'Experience', 'Beauty', 'Mesmerizing', 'mesmerizing',
     'Best', 'best', 'North Pakistan', 'Pakistan Tour', 'Valley', 'Lake', 'Meadows',
     'Waterfall', 'waterfalls', 'Border', 'Mountains', 'Scenic', 'scenic',
     // Tour specifics
@@ -32,6 +32,11 @@ const formatTextWithBold = (text: string) => {
 
   let formattedText = text;
   
+  // First, make company name extra bold (font-weight: 900)
+  const companyRegex = new RegExp(`\\b(towardsdestination\\.pk)\\b`, 'gi');
+  formattedText = formattedText.replace(companyRegex, '<strong style="font-weight: 900;">$1</strong>');
+  
+  // Then apply regular bold to other important words
   importantWords.forEach(word => {
     // Create a regex that matches the word with word boundaries, case-insensitive
     const regex = new RegExp(`\\b(${word})\\b`, 'gi');
@@ -57,9 +62,9 @@ const packageDetails: any = {
     duration: "3 days 2 nights",
     price: 14500,
     image: "/kumrat.jpg",
-    groupSize: "20 - 25",
+    groupSize: "21-25",
     tourType: "Daily Tour",
-    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with @towardsdestination.pk Pvt. Ltd. Book your Trip Now and Experience the Beauty of Kumrat Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    description: "Experience the mesmerizing view of Kumrat, Kala Chashma & Dojanga Meadows with @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Kumrat Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     pointsToVisit: [
       "Kumrat Valley",
       "Kala Chashma",
@@ -91,7 +96,7 @@ const packageDetails: any = {
       "Any other Charages which are not included in the Package"
     ],
     hotelList: [
-      { location: "Kumrat", standard: "Maskan Hotel", deluxe: "Khanabadosh Hut/ Pods", premium: "Khanabadosh Chalet", executive: "Khanabadosh Glamps" }
+      { location: "Kumrat", standard: "Maskan Hotel / Regal Inn / Alpine Guest House", deluxe: "Khanabadosh Hut / Khanabadosh Pods", premium: "Khanabadosh Chalet / Mountain View Resort", executive: "Khanabadosh Glamps / Luxury Cottages" }
     ],
     departureSchedule: [
       { city: "Islamabad", departure1: "Every Friday Morning", departure2: "—" },
@@ -148,9 +153,9 @@ const packageDetails: any = {
     "duration": "5 Days, 4 Nights",
     "price": 22000,
     "image": "/hunza1.jpg",
-    "groupSize": "100 people",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Mansehra",
       "Balakot",
@@ -208,31 +213,31 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Chilas",
-        "standard": "FM Cottages",
-        "deluxe": "Grace Continental",
-        "premium": "Shangrilla Hotel",
-        "executive": "Shangrilla Hotel"
+        "standard": "FM Cottages / Mountain Inn / Valley View",
+        "deluxe": "Grace Continental / Chilas Resort",
+        "premium": "Shangrilla Hotel / Premium Lodge",
+        "executive": "Shangrilla Hotel / Executive Suites"
       },
       {
         "location": "Naran",
-        "standard": "Gateway/ Rose Valley",
-        "deluxe": "Naran International",
-        "premium": "Hotel Homes",
-        "executive": "Hotel Homes"
+        "standard": "Gateway Hotel / Rose Valley / Alpine Inn",
+        "deluxe": "Naran International / Mountain View Hotel",
+        "premium": "Hotel Homes / Luxury Resort",
+        "executive": "Hotel Homes / Executive Retreat"
       },
       {
         "location": "Hunza",
-        "standard": "River Garden",
-        "deluxe": "Northern Sapphire",
-        "premium": "Roomy Dastan",
-        "executive": "Ambiance Resort"
+        "standard": "River Garden / Valley Inn / Mountain Lodge",
+        "deluxe": "Northern Sapphire / Hunza Serena",
+        "premium": "Roomy Dastan / Premium Resort",
+        "executive": "Ambiance Resort / Luxury Villas"
       },
       {
         "location": "Besham",
-        "standard": "Ramada Besham",
-        "deluxe": "Ramada Besham",
-        "premium": "Besham Hilton",
-        "executive": "Besham Hilton"
+        "standard": "Ramada Besham / Besham Inn / Valley Hotel",
+        "deluxe": "Ramada Besham / Deluxe Suites",
+        "premium": "Besham Hilton / Premium Hotel",
+        "executive": "Besham Hilton / Executive Tower"
       }
     ],
     "departureSchedule": [
@@ -323,7 +328,7 @@ const packageDetails: any = {
     "duration": "3 Days 2 Nights",
     "price": 105000,
     "image": "/naran1.jpg",
-    "groupSize": "3 people",
+    "groupSize": "21-25 person",
     "tourType": "Daily Tour",
     "description": "Indulge in a dreamy getaway with our Naran & Shogran Honeymoon Tour Package (3 Days), designed for couples seeking romance and adventure. This short yet enchanting trip offers breathtaking views, serene landscapes, and unforgettable experiences. Whether you wish to explore lush green valleys, enjoy cozy evenings by the riverside, or capture stunning moments in nature, this tour has everything to make your honeymoon truly special.",
     "pointsToVisit": [
@@ -363,9 +368,9 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Naran",
-        "standard": "Gateway Hotel",
-        "deluxe": "Hotel Homes",
-        "executive": "Masonite Hotel"
+        "standard": "Gateway Hotel / Alpine Inn / Valley View",
+        "deluxe": "Hotel Homes / Mountain Resort / Naran International",
+        "executive": "Masonite Hotel / Luxury Retreat / Executive Suites"
       }
     ],
     "departureSchedule": [],
@@ -418,9 +423,9 @@ const packageDetails: any = {
     "duration": "3 Days 2 Nights",
     "price": 14000,
     "image": "/naran1.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Naran with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NARAN, SHOGRAN AND SIRI PAYE MEADOWS WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Naran with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more.",
     "pointsToVisit": [
       "Shogran",
       "Siri paye Meadows",
@@ -460,10 +465,10 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Naran",
-        "standard": "Eagle Resort or Eqv",
-        "deluxe": "Naran International or Eqv",
+        "standard": "Eagle Resort / Gateway Hotel / Alpine Inn",
+        "deluxe": "Naran International / Mountain View / Valley Resort",
         "premium": "Not Available",
-        "executive": "Hotel Homes or Eqv"
+        "executive": "Hotel Homes / Luxury Retreat / Executive Suites"
       }
     ],
     "departureSchedule": [
@@ -544,9 +549,9 @@ const packageDetails: any = {
     "duration": "5 Days 4 Nights",
     "price": 25000,
     "image": "/neelum5.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with @towardsdestination.pk.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Neelum Valley | Taobat| Arang Kel & Ratti Gali with @towardsdestination.pk.",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -595,19 +600,19 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Sharda",
-        "standard": "Neelum Continental",
+        "standard": "Neelum Continental / Sharda Inn / Valley View Hotel",
         "deluxe": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Taobat",
-        "standard": "Taobat Continental",
+        "standard": "Taobat Continental / Mountain Lodge / Alpine Resort",
         "deluxe": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Keran",
-        "standard": "Keran Residency",
+        "standard": "Keran Residency / River View Hotel / Border Inn",
         "deluxe": "Not Available",
         "executive": "Not Available"
       }
@@ -693,9 +698,9 @@ const packageDetails: any = {
     "duration": "4 Days 3 Nights",
     "price": 17000,
     "image": "/neelum.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with @towardsdestination.pk.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Ratti Gali & Arang Kel with @towardsdestination.pk.",
     "pointsToVisit": [
       "Muzafrabad",
       "Neelum_Jhelum_project",
@@ -741,13 +746,13 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Sharda",
-        "standard": "Neelum Continental",
+        "standard": "Neelum Continental / Sharda Inn / Valley View Hotel",
         "deluxe": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Keran",
-        "standard": "Keran Residency",
+        "standard": "Keran Residency / River View Hotel / Border Inn",
         "deluxe": "Not Available",
         "executive": "Not Available"
       }
@@ -893,13 +898,13 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Sharda",
-        "standard": "Neelum Continental",
+        "standard": "Neelum Continental / Sharda Inn / Valley View Hotel",
         "deluxe": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Taobat",
-        "standard": "Taobat Continental",
+        "standard": "Taobat Continental / Mountain Lodge / Alpine Resort",
         "deluxe": "Not Available",
         "executive": "Not Available"
       }
@@ -981,9 +986,9 @@ const packageDetails: any = {
     "duration": "4 Days 3 Nights",
     "price": 17500,
     "image": "/kumrat.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with @towardsdestination.pk.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF KUMRAT | JAHAZ BANDA & KATORA LAKE WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Kumrat Valley, Jahaz Banda & Katora Lake with @towardsdestination.pk.",
     "pointsToVisit": [
       "Chakdara",
       "Upper Dir",
@@ -1028,13 +1033,13 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Kumrat",
-        "standard": "Maskan Hotel",
+        "standard": "Maskan Hotel / Regal Inn / Alpine Guest House",
         "deluxe": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Jahaz Banda",
-        "standard": "Punjab Hotel",
+        "standard": "Punjab Hotel / Mountain Camp / Meadow Lodge",
         "deluxe": "Not Available",
         "executive": "Not Available"
       }
@@ -1121,9 +1126,9 @@ const packageDetails: any = {
     "duration": "3 Days 2 Nights",
     "price": 13500,
     "image": "/neelum3.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with @towardsdestination.pk.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY RATTI GALI KASHMIR WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Ratti Gali Kashmir with @towardsdestination.pk.",
     "pointsToVisit": [
       "Ratti Gali",
       "Kutton Waterfall",
@@ -1162,7 +1167,7 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Keran",
-        "standard": "Keran Residency",
+        "standard": "Keran Residency / River View Hotel / Border Inn",
         "deluxe": "Not Available",
         "executive": "Not Available"
       }
@@ -1251,7 +1256,7 @@ const packageDetails: any = {
     "duration": "5 Days 4 Nights",
     "price": 24000,
     "image": "/logo.jpeg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "@towardsdestination.pk Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
@@ -1295,30 +1300,30 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Chilas",
-        "standard": "Regal Inn",
+        "standard": "Regal Inn / Mountain View / Valley Hotel",
         "deluxe": "Not Available",
-        "premium": "Shangrilla Hotel",
+        "premium": "Shangrilla Hotel / Premium Resort",
         "executive": "Not Available"
       },
       {
         "location": "Fairy Meadows",
-        "standard": "Fairy Meadows View Point Cottages",
+        "standard": "Fairy Meadows View Point Cottages / Alpine Huts / Mountain Lodge",
         "deluxe": "Not Available",
-        "premium": "Hotel Sarai",
+        "premium": "Hotel Sarai / Luxury Cottages",
         "executive": "Not Available"
       },
       {
         "location": "Naran",
-        "standard": "Gateway Hotel",
+        "standard": "Gateway Hotel / Alpine Inn / Valley View",
         "deluxe": "Not Available",
-        "premium": "Naran International",
+        "premium": "Naran International / Hotel Homes",
         "executive": "Not Available"
       },
       {
         "location": "Besham",
-        "standard": "Ramada Besham",
+        "standard": "Ramada Besham / Besham Inn / Valley Hotel",
         "deluxe": "Not Available",
-        "premium": "Besham Hilton",
+        "premium": "Besham Hilton / Premium Hotel",
         "executive": "Not Available"
       }
     ],
@@ -1458,28 +1463,28 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "CHILAS",
-        "standard": "Fairy Meadows Cottages",
+        "standard": "Fairy Meadows Cottages / Mountain Inn / Regal Inn",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "RAMA",
-        "standard": "Camping Site",
+        "standard": "Camping Site / Rama Cottages / Alpine Tents",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "Astore",
-        "standard": "Rama Midway Hotel",
+        "standard": "Rama Midway Hotel / Astore Inn / Valley Lodge",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
       },
       {
         "location": "MINIMARG",
-        "standard": "Tent Village",
+        "standard": "Tent Village / Camping Site / Alpine Camps",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
@@ -1571,7 +1576,7 @@ const packageDetails: any = {
     "duration": "8 Days 7 Nights",
     "price": 32000,
     "image": "/skardu8.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "@towardsdestination.pk Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
@@ -1788,7 +1793,7 @@ const packageDetails: any = {
     "duration": "6 Days 5 Nights",
     "price": 26000,
     "image": "/skardu6.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "@towardsdestination.pk presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
@@ -1860,31 +1865,31 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Chilas",
-        "standard": "FM Cottages",
-        "deluxe": "Grace Continental",
-        "premium": "Shangrilla Hotel",
-        "executive": "Shangrilla Hotel"
+        "standard": "FM Cottages / Mountain Inn / Regal Inn",
+        "deluxe": "Grace Continental / Chilas Resort",
+        "premium": "Shangrilla Hotel / Premium Lodge",
+        "executive": "Shangrilla Hotel / Executive Suites"
       },
       {
         "location": "Naran",
-        "standard": "Gatewat/ Rose Valley",
-        "deluxe": "Naran International",
-        "premium": "Hotel Homes",
-        "executive": "Hotel Homes"
+        "standard": "Gateway Hotel / Rose Valley / Alpine Inn",
+        "deluxe": "Naran International / Mountain View Hotel",
+        "premium": "Hotel Homes / Luxury Resort",
+        "executive": "Hotel Homes / Executive Retreat"
       },
       {
         "location": "Skardu",
-        "standard": "Trout Villa",
-        "deluxe": "Hisper Hotel",
-        "premium": "Gumaan Resorts",
-        "executive": "Gumaan Resorts"
+        "standard": "Trout Villa / Skardu Inn / Valley View",
+        "deluxe": "Hisper Hotel / Mountain Resort",
+        "premium": "Gumaan Resorts / Luxury Lodge",
+        "executive": "Gumaan Resorts / Executive Suites"
       },
       {
         "location": "Besham",
-        "standard": "Ramada Besham",
-        "deluxe": "Ramada Besham",
-        "premium": "Besham Hilton",
-        "executive": "Besham Hilton"
+        "standard": "Ramada Besham / Besham Inn / Valley Hotel",
+        "deluxe": "Ramada Besham / Deluxe Suites",
+        "premium": "Besham Hilton / Premium Hotel",
+        "executive": "Besham Hilton / Executive Tower"
       }
     ],
     "departureSchedule": [
@@ -1980,7 +1985,7 @@ const packageDetails: any = {
     "price": 14000,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF NEELUM VALLEY AND ARANG KEL WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Neelum Valley & Arang Kel with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Shardah",
       "Kel",
@@ -2104,9 +2109,9 @@ const packageDetails: any = {
     "duration": "3 Days 2 Nights",
     "price": 14000,
     "image": "/swat.jpg",
-    "groupSize": "Unlimited",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH @towardsdestination.pk PVT. LTD. Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF SWAT VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Swat and Kalam Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Sightseeing of Swat",
       "Mingora",
@@ -2149,15 +2154,15 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Kalam",
-        "standard": "Holiday Inn",
-        "deluxe": "Holiday Inn [Deluxe Rooms]",
-        "executive": "Zen Luxus"
+        "standard": "Holiday Inn / Kalam Inn / Valley View Hotel",
+        "deluxe": "Holiday Inn [Deluxe Rooms] / Mountain Resort",
+        "executive": "Zen Luxus / Luxury Retreat"
       },
       {
         "location": "Fizaghat",
-        "standard": "Parkway Hotel",
-        "deluxe": "Parkway Hotel [Deluxe Rooms]",
-        "executive": "Burj al Swat"
+        "standard": "Parkway Hotel / Swat Inn / Valley Lodge",
+        "deluxe": "Parkway Hotel [Deluxe Rooms] / Premium Suites",
+        "executive": "Burj al Swat / Executive Hotel"
       }
     ],
     "departureSchedule": [
@@ -2237,7 +2242,7 @@ const packageDetails: any = {
     "duration": "8 days, 7 nights",
     "price": 38000,
     "image": "/shogran.jpg",
-    "groupSize": "24 people",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "Nature Explorer Tours Presents Shogran & Kashmir valley Trips from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
     "pointsToVisit": [
@@ -2287,15 +2292,15 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "KERAN",
-        "standard": "Meer continental"
+        "standard": "Meer Continental / Keran Residency / River View Hotel"
       },
       {
         "location": "ISLAMABAD",
-        "standard": "Madcrew Lodges"
+        "standard": "Madcrew Lodges / Capital Inn / City Hotel"
       },
       {
         "location": "BALAKOT",
-        "standard": "Royal Park"
+        "standard": "Royal Park / Balakot Inn / Valley View Hotel"
       }
     ],
     "departureSchedule": [
@@ -2390,7 +2395,7 @@ const packageDetails: any = {
     "duration": "10 days, 9 nights",
     "price": 48000,
     "image": "/swat.jpg",
-    "groupSize": "24 people",
+    "groupSize": "21-25 persone",
     "tourType": "Specific Tour",
     "description": "Nature Explorer Tours Presents Pakistan Trip to Swat, Shogran & Kashmir valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Swat, Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
     "pointsToVisit": [
@@ -2572,7 +2577,7 @@ const packageDetails: any = {
     "duration": "7 days, 6 nights",
     "price": 30000,
     "image": "/swat.jpg",
-    "groupSize": "24 people",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "Nature Explorer Tours Presents 07 Days Trip to Swat valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Swat Valley with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
     "pointsToVisit": [
@@ -2620,15 +2625,15 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Fizaghat",
-        "standard": "Parkway Hotel",
-        "deluxe": "Parkway Hotel",
-        "executive": "Burj ul swat"
+        "standard": "Parkway Hotel / Swat Inn / Valley Lodge",
+        "deluxe": "Parkway Hotel / Premium Suites",
+        "executive": "Burj ul swat / Executive Hotel"
       },
       {
         "location": "KALAM",
-        "standard": "Holday Inn",
-        "deluxe": "Holiday Inn",
-        "executive": "Zen Lexus"
+        "standard": "Holiday Inn / Kalam Inn / Valley View Hotel",
+        "deluxe": "Holiday Inn / Mountain Resort",
+        "executive": "Zen Lexus / Luxury Retreat"
       }
     ],
     "departureSchedule": [
@@ -2690,7 +2695,7 @@ const packageDetails: any = {
     "duration": "9 days, 8 nights",
     "price": 42000,
     "image": "/hunza1.jpg",
-    "groupSize": "24 people",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "Nature Explorer Tours Presents 09 Days Trip to Hunza valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
     "pointsToVisit": [
@@ -2755,24 +2760,24 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "Chilas",
-        "standard": "Regal Inn",
-        "deluxe": "Grace Continental",
-        "premium": "Shangrilla Hotel",
-        "executive": "Shangrilla Hotel"
+        "standard": "Regal Inn / Mountain View / Valley Hotel",
+        "deluxe": "Grace Continental / Chilas Resort",
+        "premium": "Shangrilla Hotel / Premium Lodge",
+        "executive": "Shangrilla Hotel / Executive Suites"
       },
       {
         "location": "Hunza",
-        "standard": "Hunza Hidden Palace",
-        "deluxe": "Northern Sapphire",
-        "premium": "Roomy Dastan",
-        "executive": "Luxus Hunza"
+        "standard": "Hunza Hidden Palace / Valley Inn / Mountain Lodge",
+        "deluxe": "Northern Sapphire / Hunza Serena",
+        "premium": "Roomy Dastan / Premium Resort",
+        "executive": "Luxus Hunza / Luxury Villas"
       },
       {
         "location": "Besham",
-        "standard": "Ramada Besham",
-        "deluxe": "Ramada Besham",
-        "premium": "Besham Hilton",
-        "executive": "Besham Hilton"
+        "standard": "Ramada Besham / Besham Inn / Valley Hotel",
+        "deluxe": "Ramada Besham / Deluxe Suites",
+        "premium": "Besham Hilton / Premium Hotel",
+        "executive": "Besham Hilton / Executive Tower"
       }
     ],
     "departureSchedule": [
@@ -2831,7 +2836,7 @@ const packageDetails: any = {
     "duration": "12 days, 11 nights",
     "price": 50000,
     "image": "/skardu8.jpg",
-    "groupSize": "24 people",
+    "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "Nature Explorer Tours Presents 12 Days Trip to Hunza & Skardu valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip then just DM us & book your Trip now with us.",
     "pointsToVisit": [
@@ -2998,7 +3003,7 @@ const packageDetails: any = {
     "duration": "8 Days 7 Nights",
     "price": 455,
     "image": "/hunza1.jpg",
-    "groupSize": "17 people",
+    "groupSize": "21-25",
     "tourType": "Daily Tour",
     "description": "Nature Explorer tours Offers Discover Pakistan: Hunza | Skardu | Lahore | Islamabad Package for their beloved clients. If you are looking for comfortable Trip to North Pakistan in one go then you are at right place. We have a Various range of trekking tours in north Pakistan. People who are looking for adventurous tours then these Tour Package are recommended. Experience the beauty of Pakistan with this amazing journey. Explore the peaceful valleys of Hunza and Skardu, full of natural wonders. Visit Lahore for its rich culture and history, and enjoy the modern charm of Islamabad. Travel by road and air for a smooth and memorable trip!",
     "pointsToVisit": [
@@ -3171,7 +3176,7 @@ export default function TourDetailPage() {
   const handleBook = () => {
     const message = `*Tour Booking - ${pkg.title}*%0A%0A*Date:* ${bookingData.date}%0A*Trip From:* ${bookingData.tripFrom}%0A*Sharing Type:* ${bookingData.sharingType}%0A*Package Type:* ${bookingData.packageType}%0A*Adults:* ${bookingData.adults}%0A*Children:* ${bookingData.children}%0A*Infants:* ${bookingData.infants}`;
     
-    const whatsappNumber = "923447079307";
+    const whatsappNumber = "923153309070";
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
@@ -3735,6 +3740,11 @@ export default function TourDetailPage() {
                     </tbody>
                   </table>
                 </div>
+                <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg">
+                  <p className="text-gray-700 font-medium">
+                    <span className="font-bold text-yellow-800">Note:</span> Hotels are subject to availability and may be changed due to unforeseen circumstances. In such cases, equivalent or better alternatives will be provided.
+                  </p>
+                </div>
               </section>
             )}
 
@@ -4121,8 +4131,8 @@ export default function TourDetailPage() {
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <div className="flex items-center gap-2 text-gray-600 mb-3">
                     <Phone className="w-4 h-4" />
-                    <a href="tel:+923480456456" className="text-sm hover:text-green-600 transition-colors">
-                      +923 480 456 456
+                    <a href="tel:+923174101300" className="text-sm hover:text-green-600 transition-colors">
+                      +92 317 4101300
                     </a>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
