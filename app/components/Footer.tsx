@@ -14,13 +14,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 animate-fade-in-up">
           {/* Company Info */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            <Link href="/" className="flex items-center mb-4">
-              <div className="relative w-80 h-20 sm:w-56 sm:h-20 shrink-0">
+            <Link href="/" className="flex items-center justify-center mb-4">
+              <div className="relative w-full h-40 sm:h-40 md:h-40">
                 <Image
-                  src="/logo1.jpeg"
+                  src="/footer.png"
                   alt="TOWARDSDESTINATION.PK"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   priority
                 />
               </div>

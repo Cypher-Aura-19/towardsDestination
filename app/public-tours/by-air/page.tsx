@@ -259,9 +259,12 @@ export default function PublicToursByAir() {
                       <p className="text-sm text-gray-600">Starting from</p>
                       <p className="text-2xl font-bold text-red-600">{pkg.price}</p>
                     </div>
-                    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
-                      Book Now
-                    </button>
+                    <a 
+                      href={`/public-tours/by-air/${pkg.id}`}
+                      className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                    >
+                      View Details
+                    </a>
                   </div>
                 </div>
               </div>

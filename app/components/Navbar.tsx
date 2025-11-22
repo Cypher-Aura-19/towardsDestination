@@ -19,31 +19,23 @@ export default function Navbar() {
     <>
       <TopBar />
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg border-b border-gray-100" style={{ marginTop: '33px' }}>
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 py-0.5 sm:py-1">
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 pt-0.5 pb-0 sm:pt-1 sm:pb-0">
         <div className="flex items-center justify-between gap-4 sm:gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 md:gap-4 shrink-0">
-            {/* Logo Icon */}
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center shrink-0">
+          <Link href="/" className="flex items-center gap-4 sm:gap-5 md:gap-6 shrink-0 ml-4 sm:ml-0">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shrink-0">
               <Image
-                src="/logo1.jpeg"
+                src="/footer.png"
                 alt="TOWARDSDESTINATION.PK"
-                width={120}
-                height={120}
-                className="object-contain w-full h-full"
+                width={150}
+                height={200}
+                className="object-contain w-full h-full scale-200 md:scale-250"
                 priority
                 quality={100}
               />
             </div>
-            {/* Logo Text */}
-            <div className="flex flex-col justify-center">
-              <span className="text-red-600 font-bold text-sm sm:text-base md:text-lg lg:text-xl leading-tight tracking-wide">
-                TOWARDSDESTINATION.PK
-              </span>
-              <span className="text-gray-600 text-[10px] sm:text-xs md:text-sm font-medium">
-                Let's have an Adventure
-              </span>
-            </div>
+
+           
           </Link>
 
           {/* Desktop Navigation Links */}
