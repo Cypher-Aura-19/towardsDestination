@@ -24,7 +24,7 @@ export default function PrivateToursByAir() {
       duration: "3 Days 2 Nights",
       location: "Hunza",
       price: 0,
-      image: "/hunza1.jpg",
+      image: "/hunza2.jpg",
       rating: null,
       reviews: 0
     },

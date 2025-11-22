@@ -13,7 +13,7 @@ export default function PublicToursByAir() {
       location: "Gilgit-Baltistan",
       duration: "5 Days / 4 Nights",
       price: "PKR 65,000",
-      image: "/hunza.jpg",
+      image: "/hunza1.jpg",
       highlights: [
         "Round-trip flights from Islamabad",
         "4-star hotel accommodation",
@@ -125,7 +125,7 @@ export default function PublicToursByAir() {
       location: "Gilgit-Baltistan",
       duration: "4 Days / 3 Nights",
       price: "PKR 58,000",
-      image: "/hunza.jpg",
+      image: "/astore.jpg",
       highlights: [
         "Flight to Gilgit",
         "Rama Lake trek",

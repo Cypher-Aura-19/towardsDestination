@@ -4,9 +4,12 @@ import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import TourContactSection from "@/app/components/TourContactSection";
-import { MapPin, Calendar, Users, Check, X, Plane, MessageCircle } from "lucide-react";
+import { MapPin, Calendar, Users, Check, X, Plane, MessageCircle, Minus, Plus } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import image from "next/image";
+import { title } from "process";
+
 
 // Helper function to make important words bold
 const formatTextWithBold = (text: string) => {
@@ -55,7 +58,7 @@ const packageDetails: any = {
     location: "Gilgit-Baltistan",
     duration: "5 Days / 4 Nights",
     price: 65000,
-    image: "/hunza.jpg",
+    image: "/hunza1.jpg",
     groupSize: "15-20 person",
     tourType: "By Air",
     description: "Experience the mesmerizing beauty of Hunza Valley with @towardsdestination.pk. Book your Trip Now and Experience the Beauty of Hunza Valley with comfortable air travel. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan with premium services.",
@@ -253,6 +256,610 @@ const packageDetails: any = {
       instagram: "@towardsdestination.pk"
     },
     bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
+  },
+  "3": {
+    id: 3,
+    title: "Fairy Meadows Expedition (By Air)",
+    location: "Nanga Parbat Base",
+    duration: "4 Days / 3 Nights",
+    price: 55000,
+    image: "/mountain trekking.jpg",
+    groupSize: "15-20 person",
+    tourType: "By Air",
+    description: "Experience the magical Fairy Meadows with @towardsdestination.pk. Trek to the base of Nanga Parbat, the Killer Mountain, and witness breathtaking views with comfortable air travel.",
+    pointsToVisit: [
+      "Gilgit Airport",
+      "Raikot Bridge",
+      "Tattu Village",
+      "Fairy Meadows",
+      "Nanga Parbat Base Camp",
+      "Beyal Camp",
+      "German Viewpoint"
+    ],
+    highlights: [
+      "Flight to Gilgit",
+      "Jeep ride to Fairy Meadows",
+      "Nanga Parbat base camp trek",
+      "Mountain huts accommodation",
+      "Stunning valley views",
+      "Photography opportunities",
+      "Professional trekking guide"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Gilgit-Islamabad)",
+      "Airport transfers",
+      "Jeep from Raikot to Tattu Village",
+      "Mountain hut accommodation (3 nights)",
+      "All meals (3 Breakfasts, 3 Dinners)",
+      "Professional trekking guide",
+      "Porter services",
+      "Basic first aid"
+    ],
+    excluded: [
+      "Personal expenses",
+      "Lunch meals",
+      "Tips for guide and porter",
+      "Travel insurance",
+      "Personal trekking gear"
+    ],
+    hotelList: [
+      { location: "Fairy Meadows", standard: "Mountain Huts / Alpine Cottages / Meadow Lodge", deluxe: "Premium Cottages / Luxury Huts", premium: "Not Available", executive: "Not Available" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "Every Saturday Morning", departure2: "Every Wednesday Morning" }
+    ],
+    pricing: {
+      perPerson: { standard: "55,000", deluxe: "70,000", premium: "Not Available", executive: "Not Available" }
+    },
+    exceptions: [
+      "Kids age 5-12: 50% charges",
+      "Kids age <= 4: Not recommended for safety reasons"
+    ],
+    notes: [
+      "Flight schedules are subject to weather conditions",
+      "Moderate fitness level required for trekking",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Warm clothing and trekking shoes mandatory"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Gilgit (By Air) - Raikot",
+        description: "Morning flight from Islamabad to Gilgit. Drive to Raikot Bridge (3 hours). Check-in at hotel. Evening briefing about trek. Dinner and overnight at Raikot."
+      },
+      {
+        day: "Day 02",
+        title: "Raikot - Tattu - Fairy Meadows",
+        description: "After breakfast, jeep ride to Tattu Village (1 hour). Start trek to Fairy Meadows (3-4 hours). Arrival at Fairy Meadows. Check-in at mountain huts. Explore surroundings. Dinner and overnight."
+      },
+      {
+        day: "Day 03",
+        title: "Fairy Meadows - Nanga Parbat Base Camp",
+        description: "Early breakfast. Trek to Nanga Parbat Base Camp (4-5 hours). Spectacular views of Nanga Parbat. Photography time. Trek back to Fairy Meadows. Dinner and overnight."
+      },
+      {
+        day: "Day 04",
+        title: "Fairy Meadows - Gilgit - Islamabad (By Air)",
+        description: "After breakfast, trek down to Tattu Village. Jeep ride to Raikot. Drive to Gilgit Airport. Flight to Islamabad. End of memorable expedition."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
+  },
+  "4": {
+    id: 4,
+    title: "Chitral & Kalash Valley (By Air)",
+    location: "Khyber Pakhtunkhwa",
+    duration: "5 Days / 4 Nights",
+    price: 68000,
+    image: "/cultural tours.jpg",
+    groupSize: "15-20 person",
+    tourType: "By Air",
+    description: "Discover the unique Kalash culture with @towardsdestination.pk. Experience the ancient traditions, colorful festivals, and stunning landscapes of Chitral Valley with comfortable air travel.",
+    pointsToVisit: [
+      "Chitral Airport",
+      "Chitral Fort",
+      "Chitral Museum",
+      "Bumburet Valley",
+      "Rumbur Valley",
+      "Birir Valley",
+      "Kalash Villages",
+      "Shahi Mosque"
+    ],
+    highlights: [
+      "Flight to Chitral",
+      "Kalash Valley cultural tour",
+      "Traditional villages visit",
+      "Local festivals (seasonal)",
+      "Chitral Fort exploration",
+      "Cultural immersion experience",
+      "Traditional dance performances"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Chitral-Islamabad)",
+      "Airport transfers",
+      "Hotel accommodation (4 nights)",
+      "All meals (4 Breakfasts, 4 Dinners)",
+      "Professional cultural guide",
+      "Transportation to Kalash valleys",
+      "Entry permits",
+      "Cultural activities"
+    ],
+    excluded: [
+      "Personal expenses",
+      "Lunch meals",
+      "Tips for guide and driver",
+      "Travel insurance",
+      "Photography fees in villages"
+    ],
+    hotelList: [
+      { location: "Chitral", standard: "Chitral Inn / Mountain View Hotel / Valley Lodge", deluxe: "Hindukush Heights / Premium Hotel", premium: "Chitral Resort / Luxury Lodge", executive: "Executive Suites / Premium Resort" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "Every Thursday Morning", departure2: "Every Monday Morning" }
+    ],
+    pricing: {
+      perPerson: { standard: "68,000", deluxe: "85,000", premium: "105,000", executive: "125,000" }
+    },
+    exceptions: [
+      "Kids age 5-12: 50% charges",
+      "Kids age <= 4: 25% charges"
+    ],
+    notes: [
+      "Flight schedules are subject to weather conditions",
+      "Respect local customs and traditions",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Festival dates vary - contact for specific dates"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Chitral (By Air)",
+        description: "Morning flight from Islamabad to Chitral. Spectacular mountain views during flight. Arrival at Chitral. Check-in at hotel. Visit Chitral Fort and Museum. Evening free. Dinner and overnight."
+      },
+      {
+        day: "Day 02",
+        title: "Chitral - Bumburet Valley",
+        description: "After breakfast, drive to Bumburet Valley (2 hours). Visit Kalash villages. Interact with locals. Learn about unique culture and traditions. Visit local museum. Return to Chitral. Dinner and overnight."
+      },
+      {
+        day: "Day 03",
+        title: "Rumbur & Birir Valleys",
+        description: "Breakfast at hotel. Full day excursion to Rumbur and Birir valleys. Visit traditional Kalash houses. Witness daily life. Photography opportunities. Cultural performances (if available). Return to Chitral. Dinner and overnight."
+      },
+      {
+        day: "Day 04",
+        title: "Chitral Local Sightseeing",
+        description: "After breakfast, visit Shahi Mosque. Explore Chitral bazaar. Visit local handicraft centers. Free time for shopping. Farewell dinner with cultural show. Overnight at Chitral."
+      },
+      {
+        day: "Day 05",
+        title: "Chitral - Islamabad (By Air)",
+        description: "Early breakfast. Transfer to Chitral Airport. Flight to Islamabad. End of cultural journey with beautiful memories."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
+  },
+  "5": {
+    id: 5,
+    title: "Swat Valley Paradise (By Air)",
+    location: "Swat, Khyber Pakhtunkhwa",
+    duration: "4 Days / 3 Nights",
+    price: 50000,
+    image: "/naran.jpg",
+    groupSize: "15-20 person",
+    tourType: "By Air",
+    description: "Explore the Switzerland of Pakistan with @towardsdestination.pk. Experience the lush green valleys, ancient Buddhist sites, and scenic beauty of Swat with comfortable air travel.",
+    pointsToVisit: [
+      "Islamabad Airport",
+      "Mingora City",
+      "Malam Jabba",
+      "Fizaghat",
+      "Kalam Valley",
+      "Mahodand Lake",
+      "Buddhist Stupas",
+      "White Palace"
+    ],
+    highlights: [
+      "Flight to Islamabad + road transfer",
+      "Malam Jabba ski resort",
+      "Mingora city tour",
+      "Buddhist archaeological sites",
+      "Mahodand Lake excursion",
+      "Luxury hotel stay",
+      "Scenic valley views"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad)",
+      "Airport transfers",
+      "Transportation to Swat",
+      "Hotel accommodation (3 nights)",
+      "All meals (3 Breakfasts, 3 Dinners)",
+      "Professional tour guide",
+      "Entry tickets to sites",
+      "Jeep for Mahodand Lake"
+    ],
+    excluded: [
+      "Personal expenses",
+      "Lunch meals",
+      "Tips for guide and driver",
+      "Travel insurance",
+      "Ski equipment rental"
+    ],
+    hotelList: [
+      { location: "Swat", standard: "Swat Serena / Valley Inn / Mountain Lodge", deluxe: "Malam Jabba Resort / Premium Hotel", premium: "Luxury Resort / Executive Suites", executive: "Five Star Hotel / Premium Resort" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "Every Friday Morning", departure2: "Every Tuesday Morning" }
+    ],
+    pricing: {
+      perPerson: { standard: "50,000", deluxe: "65,000", premium: "85,000", executive: "105,000" }
+    },
+    exceptions: [
+      "Kids age 5-12: 50% charges",
+      "Kids age <= 4: 25% charges"
+    ],
+    notes: [
+      "Road transfer from Islamabad to Swat (4-5 hours)",
+      "Ski season: December to March",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Buddhist sites require special permits"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Swat Valley",
+        description: "Pick up from Islamabad. Drive to Swat Valley via Malakand Pass. Stop at scenic points. Arrival at Mingora. Check-in at hotel. Evening visit to Mingora bazaar. Dinner and overnight."
+      },
+      {
+        day: "Day 02",
+        title: "Malam Jabba & Buddhist Sites",
+        description: "After breakfast, drive to Malam Jabba. Enjoy ski resort activities. Visit chairlift. Lunch at resort. Visit Buddhist stupas and archaeological sites. Return to hotel. Dinner and overnight."
+      },
+      {
+        day: "Day 03",
+        title: "Kalam & Mahodand Lake",
+        description: "Early breakfast. Drive to Kalam Valley. Transfer to jeep for Mahodand Lake. Enjoy the pristine lake. Photography time. Visit Ushu Forest. Return to hotel. Dinner and overnight."
+      },
+      {
+        day: "Day 04",
+        title: "Swat - Islamabad",
+        description: "Breakfast at hotel. Visit White Palace. Last-minute shopping. Drive back to Islamabad. Drop at airport/hotel. End of tour."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
+  }
+  ,
+  "6": {
+    id: 6,
+    title: "Naran Kaghan Express (By Air)",
+    location: "Khyber Pakhtunkhwa",
+    duration: "3 Days / 2 Nights",
+    price: 45000,
+    image: "/photography.jpg",
+    groupSize: "15-20 person",
+    tourType: "By Air",
+    description: "Experience the beauty of Naran and Kaghan valleys with @towardsdestination.pk. Quick getaway to pristine lakes and mountain scenery with comfortable air travel.",
+    pointsToVisit: [
+      "Islamabad Airport",
+      "Balakot",
+      "Naran Valley",
+      "Lake Saif-ul-Malook",
+      "Babusar Top",
+      "Lulusar Lake",
+      "Kunhar River",
+      "Kaghan Valley"
+    ],
+    highlights: [
+      "Flight to Islamabad",
+      "Lake Saif-ul-Malook visit",
+      "Babusar Top excursion",
+      "Lulusar Lake stop",
+      "Comfortable hotel stay",
+      "Scenic photography spots",
+      "Kunhar River views"
+    ],
+    included: [
+      "Round-trip flight tickets",
+      "Airport transfers",
+      "Transportation to Naran",
+      "Hotel accommodation (2 nights)",
+      "All meals (2 Breakfasts, 2 Dinners)",
+      "Professional tour guide",
+      "Jeep for Lake Saif-ul-Malook",
+      "Entry tickets"
+    ],
+    excluded: [
+      "Personal expenses",
+      "Lunch meals",
+      "Tips for guide and driver",
+      "Travel insurance",
+      "Horse riding at lake"
+    ],
+    hotelList: [
+      { location: "Naran", standard: "Gateway Hotel / Alpine Inn / Valley View", deluxe: "Naran International / Mountain Resort", premium: "Hotel Homes / Luxury Lodge", executive: "Executive Suites / Premium Resort" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "Every Friday Morning", departure2: "Every Monday Morning" }
+    ],
+    pricing: {
+      perPerson: { standard: "45,000", deluxe: "58,000", premium: "75,000", executive: "92,000" }
+    },
+    exceptions: [
+      "Kids age 5-12: 50% charges",
+      "Kids age <= 4: 25% charges"
+    ],
+    notes: [
+      "Babusar Top accessible May to October only",
+      "Lake Saif-ul-Malook jeep charges included",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Warm clothing recommended"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Naran Valley",
+        description: "Pick up from Islamabad. Drive to Naran Valley via Mansehra and Balakot. Stop at scenic points. Arrival at Naran. Check-in at hotel. Evening walk along Kunhar River. Dinner and overnight."
+      },
+      {
+        day: "Day 02",
+        title: "Lake Saif-ul-Malook & Babusar Top",
+        description: "Early morning jeep ride to Lake Saif-ul-Malook. Enjoy the pristine lake. Photography time. Return to Naran. After lunch, drive to Babusar Top (if accessible). Visit Lulusar Lake. Return to hotel. Dinner and overnight."
+      },
+      {
+        day: "Day 03",
+        title: "Naran - Islamabad",
+        description: "Breakfast at hotel. Last-minute shopping at Naran bazaar. Drive back to Islamabad. Stop at Balakot for lunch (own expense). Drop at airport/hotel. End of tour."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
+  },
+  "7": {
+    id: 7,
+    title: "K2 Base Camp Trek (By Air)",
+    location: "Skardu to K2",
+    duration: "12 Days / 11 Nights",
+    price: 180000,
+    image: "/mountain trekking.jpg",
+    groupSize: "10-15 person",
+    tourType: "By Air",
+    description: "Embark on the ultimate adventure with @towardsdestination.pk. Trek to K2 Base Camp, witness the world's second-highest peak, and experience the majestic Karakoram Range.",
+    pointsToVisit: [
+      "Skardu Airport",
+      "Askole Village",
+      "Jhola Camp",
+      "Paiju Camp",
+      "Urdukas",
+      "Goro II",
+      "Concordia",
+      "K2 Base Camp",
+      "Broad Peak Base Camp"
+    ],
+    highlights: [
+      "Flight to Skardu",
+      "Professional trekking guide",
+      "Porter & camping equipment",
+      "Concordia viewpoint",
+      "K2 base camp visit",
+      "All meals & permits included",
+      "Experienced support team"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Skardu-Islamabad)",
+      "Airport transfers",
+      "Professional trekking guide and assistant",
+      "Porter services",
+      "All camping equipment",
+      "All meals during trek",
+      "Permits and entry fees",
+      "Emergency evacuation insurance",
+      "Satellite phone",
+      "First aid and medical kit"
+    ],
+    excluded: [
+      "Personal trekking gear",
+      "Personal expenses",
+      "Tips for guide and porters",
+      "International travel insurance",
+      "Helicopter rescue (if needed)"
+    ],
+    hotelList: [
+      { location: "Skardu", standard: "Trout Villa / Skardu Inn / Valley View", deluxe: "Shangrila Resort / Mountain Hotel", premium: "Not Available", executive: "Not Available" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "June to August (Specific dates)", departure2: "Contact for schedule" }
+    ],
+    pricing: {
+      perPerson: { standard: "180,000", deluxe: "220,000", premium: "Not Available", executive: "Not Available" }
+    },
+    exceptions: [
+      "Minimum age: 18 years",
+      "Medical fitness certificate required",
+      "Previous trekking experience recommended"
+    ],
+    notes: [
+      "Trek season: June to August only",
+      "High altitude trek - acclimatization required",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Weather dependent - itinerary may change",
+      "Physical fitness mandatory"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Skardu (By Air)",
+        description: "Morning flight to Skardu. Spectacular mountain views. Arrival and check-in. Rest and acclimatization. Briefing about trek. Dinner and overnight."
+      },
+      {
+        day: "Day 02",
+        title: "Skardu - Askole",
+        description: "Drive to Askole village (6-7 hours). Last village with facilities. Meet porters. Final preparations. Overnight at Askole."
+      },
+      {
+        day: "Day 03",
+        title: "Askole - Jhola Camp",
+        description: "Start trek to Jhola. Cross Braldu River. Trek through rocky terrain (6-7 hours). Camp at Jhola. Dinner and overnight."
+      },
+      {
+        day: "Day 04",
+        title: "Jhola - Paiju Camp",
+        description: "Trek to Paiju (5-6 hours). Cross Korofon River. Reach Paiju - last vegetation point. Rest day tomorrow. Camp and overnight."
+      },
+      {
+        day: "Day 05",
+        title: "Paiju - Rest & Acclimatization",
+        description: "Rest day at Paiju for acclimatization. Short hikes around camp. Prepare for glacier crossing. Overnight at Paiju."
+      },
+      {
+        day: "Day 06",
+        title: "Paiju - Urdukas",
+        description: "Cross Baltoro Glacier. Trek to Urdukas (6-7 hours). Spectacular views of Trango Towers. Camp at Urdukas. Overnight."
+      },
+      {
+        day: "Day 07",
+        title: "Urdukas - Goro II",
+        description: "Continue on Baltoro Glacier. Trek to Goro II (6-7 hours). Views of Cathedral Peak. Camp and overnight."
+      },
+      {
+        day: "Day 08",
+        title: "Goro II - Concordia",
+        description: "Trek to Concordia (4-5 hours). Junction of Baltoro and Godwin-Austen glaciers. 360-degree mountain views. Camp at Concordia. Overnight."
+      },
+      {
+        day: "Day 09",
+        title: "Concordia - K2 Base Camp - Concordia",
+        description: "Early start to K2 Base Camp (3-4 hours). Reach base of world's second-highest peak. Photography time. Return to Concordia. Overnight."
+      },
+      {
+        day: "Day 10-11",
+        title: "Return Trek to Askole",
+        description: "Trek back to Askole via same route. Two days of descent. Overnight camps at Urdukas and Jhola. Reach Askole on Day 11."
+      },
+      {
+        day: "Day 12",
+        title: "Askole - Skardu - Islamabad",
+        description: "Drive to Skardu. Flight to Islamabad. End of epic adventure with lifetime memories."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-10 adults"
+  },
+  "8": {
+    id: 8,
+    title: "Astore Valley Explorer (By Air)",
+    location: "Gilgit-Baltistan",
+    duration: "4 Days / 3 Nights",
+    price: 58000,
+    image: "/astore.jpg",
+    groupSize: "15-20 person",
+    tourType: "By Air",
+    description: "Discover the hidden gem of Astore Valley with @towardsdestination.pk. Experience pristine Rama Lake, majestic Nanga Parbat views, and untouched natural beauty.",
+    pointsToVisit: [
+      "Gilgit Airport",
+      "Astore Valley",
+      "Rama Lake",
+      "Rama Meadows",
+      "Astore Fort",
+      "Rupal Valley",
+      "Nanga Parbat South Face",
+      "Minimarg"
+    ],
+    highlights: [
+      "Flight to Gilgit",
+      "Rama Lake trek",
+      "Astore Fort visit",
+      "Rupal Valley tour",
+      "Nanga Parbat south face view",
+      "Local guesthouse experience",
+      "Pristine natural beauty"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Gilgit-Islamabad)",
+      "Airport transfers",
+      "Transportation to Astore",
+      "Hotel/Guesthouse accommodation (3 nights)",
+      "All meals (3 Breakfasts, 3 Dinners)",
+      "Professional tour guide",
+      "Jeep for Rama Lake",
+      "Entry permits"
+    ],
+    excluded: [
+      "Personal expenses",
+      "Lunch meals",
+      "Tips for guide and driver",
+      "Travel insurance",
+      "Horse riding at Rama"
+    ],
+    hotelList: [
+      { location: "Astore", standard: "Astore Inn / Valley Lodge / Mountain View", deluxe: "Rama Meadows Resort / Premium Hotel", premium: "Luxury Cottages / Executive Lodge", executive: "Not Available" }
+    ],
+    departureSchedule: [
+      { city: "Islamabad", departure1: "Every Saturday Morning", departure2: "Every Wednesday Morning" }
+    ],
+    pricing: {
+      perPerson: { standard: "58,000", deluxe: "75,000", premium: "95,000", executive: "Not Available" }
+    },
+    exceptions: [
+      "Kids age 5-12: 50% charges",
+      "Kids age <= 4: 25% charges"
+    ],
+    notes: [
+      "Flight schedules are subject to weather conditions",
+      "Rama Lake accessible June to September",
+      "All hotels are subject to availability and may be changed due to unforeseen circumstances",
+      "Moderate trekking required for Rama Lake"
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Gilgit (By Air) - Astore",
+        description: "Morning flight from Islamabad to Gilgit. Drive to Astore Valley (2-3 hours). Check-in at hotel. Visit Astore Fort. Evening walk in valley. Dinner and overnight."
+      },
+      {
+        day: "Day 02",
+        title: "Astore - Rama Lake - Rama Meadows",
+        description: "After breakfast, drive to Rama Meadows. Trek to Rama Lake (2-3 hours). Enjoy the pristine alpine lake. Photography time. Return to Rama Meadows. Overnight at Rama."
+      },
+      {
+        day: "Day 03",
+        title: "Rupal Valley & Nanga Parbat View",
+        description: "Early breakfast. Drive to Rupal Valley. Spectacular views of Nanga Parbat south face (Rupal Face - highest mountain face). Visit local villages. Return to Astore. Dinner and overnight."
+      },
+      {
+        day: "Day 04",
+        title: "Astore - Gilgit - Islamabad (By Air)",
+        description: "Breakfast at hotel. Drive to Gilgit. Last-minute shopping. Transfer to airport. Flight to Islamabad. End of peaceful valley tour."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Group Discount Offer: 5% discount for groups of 5-15 adults"
   }
 };
 
@@ -269,11 +876,16 @@ export default function TourDetailPage() {
 
   const [bookingData, setBookingData] = useState({
     date: "",
+    tripFrom: "Islamabad",
+    sharingType: "",
+    packageType: "",
     adults: 1,
-    children: 0
+    children: 0,
+    infants: 0
   });
 
   const [showInquiryForm, setShowInquiryForm] = useState(false);
+  const [showMoreOptions, setShowMoreOptions] = useState(false);
 
   const pkg = packageDetails[packageId] || packageDetails["1"];
 
@@ -281,16 +893,16 @@ export default function TourDetailPage() {
     setBookingData(prev => ({ ...prev, [field]: value }));
   };
 
-  const incrementGuest = (type: 'adults' | 'children') => {
+  const incrementGuest = (type: 'adults' | 'children' | 'infants') => {
     setBookingData(prev => ({ ...prev, [type]: prev[type] + 1 }));
   };
 
-  const decrementGuest = (type: 'adults' | 'children') => {
+  const decrementGuest = (type: 'adults' | 'children' | 'infants') => {
     setBookingData(prev => ({ ...prev, [type]: Math.max(type === 'adults' ? 1 : 0, prev[type] - 1) }));
   };
 
   const handleBook = () => {
-    const message = `*Tour Booking - ${pkg.title}*%0A%0A*Date:* ${bookingData.date}%0A*Adults:* ${bookingData.adults}%0A*Children:* ${bookingData.children}`;
+    const message = `*Tour Booking - ${pkg.title}*%0A%0A*Date:* ${bookingData.date}%0A*Trip From:* ${bookingData.tripFrom}%0A*Sharing Type:* ${bookingData.sharingType}%0A*Package Type:* ${bookingData.packageType}%0A*Adults:* ${bookingData.adults}%0A*Children:* ${bookingData.children}%0A*Infants:* ${bookingData.infants}`;
     const whatsappNumber = "923153309070";
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
@@ -703,67 +1315,150 @@ export default function TourDetailPage() {
               {/* Form Content */}
               <div className="p-6">
                 {!showInquiryForm ? (
-                  <form className="space-y-4">
+                  <div className="space-y-5">
+                    {/* Date */}
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Travel Date</label>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Date</label>
                       <input
                         type="date"
                         value={bookingData.date}
                         onChange={(e) => handleBookingChange('date', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 bg-white"
                       />
                     </div>
 
+                    {/* Trip From */}
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Adults</label>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Trip From:</label>
+                      <select
+                        value={bookingData.tripFrom}
+                        onChange={(e) => handleBookingChange('tripFrom', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 bg-white"
+                      >
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Lahore">Lahore</option>
+                      </select>
+                    </div>
+
+                    {/* Package Type */}
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Package Type:</label>
+                      <select
+                        value={bookingData.packageType}
+                        onChange={(e) => handleBookingChange('packageType', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-900 bg-white"
+                      >
+                        <option value="">Select Package</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Executive">Executive</option>
+                      </select>
+                    </div>
+
+                    {/* Adults */}
+                    <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                      <div>
+                        <div className="font-semibold text-gray-900">Adults</div>
+                        <div className="text-sm text-gray-500">Age 13+</div>
+                      </div>
                       <div className="flex items-center gap-3">
                         <button
-                          type="button"
                           onClick={() => decrementGuest('adults')}
-                          className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center"
-                        >
-                          -
-                        </button>
-                        <span className="flex-1 text-center font-semibold">{bookingData.adults}</span>
-                        <button
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
                           type="button"
-                          onClick={() => incrementGuest('adults')}
-                          className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center"
                         >
-                          +
+                          <Minus className="w-4 h-4 text-gray-600" />
+                        </button>
+                        <span className="w-8 text-center font-semibold text-gray-900">{bookingData.adults}</span>
+                        <button
+                          onClick={() => incrementGuest('adults')}
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
+                          type="button"
+                        >
+                          <Plus className="w-4 h-4 text-gray-600" />
                         </button>
                       </div>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Children</label>
+                    {/* Children */}
+                    <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                      <div>
+                        <div className="font-semibold text-gray-900">Children</div>
+                        <div className="text-sm text-gray-500">Age 6-12</div>
+                      </div>
                       <div className="flex items-center gap-3">
                         <button
-                          type="button"
                           onClick={() => decrementGuest('children')}
-                          className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center"
-                        >
-                          -
-                        </button>
-                        <span className="flex-1 text-center font-semibold">{bookingData.children}</span>
-                        <button
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
                           type="button"
-                          onClick={() => incrementGuest('children')}
-                          className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center"
                         >
-                          +
+                          <Minus className="w-4 h-4 text-gray-600" />
+                        </button>
+                        <span className="w-8 text-center font-semibold text-gray-900">{bookingData.children}</span>
+                        <button
+                          onClick={() => incrementGuest('children')}
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
+                          type="button"
+                        >
+                          <Plus className="w-4 h-4 text-gray-600" />
                         </button>
                       </div>
                     </div>
 
+                    {/* More Options Toggle */}
                     <button
+                      onClick={() => setShowMoreOptions(!showMoreOptions)}
+                      className="w-full py-3 text-green-700 font-semibold hover:bg-green-50 rounded-lg transition-colors flex items-center justify-center gap-2"
                       type="button"
-                      onClick={handleBook}
-                      className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition-colors"
                     >
-                      Book via WhatsApp
+                      More option
+                      <svg 
+                        className={`w-5 h-5 transition-transform ${showMoreOptions ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
                     </button>
-                  </form>
+
+                    {/* Infants */}
+                    {showMoreOptions && (
+                      <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                        <div>
+                          <div className="font-semibold text-gray-900">Infants</div>
+                          <div className="text-sm text-gray-500">Age 0-5</div>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <button
+                            onClick={() => decrementGuest('infants')}
+                            className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
+                            type="button"
+                          >
+                            <Minus className="w-4 h-4 text-gray-600" />
+                          </button>
+                          <span className="w-8 text-center font-semibold text-gray-900">{bookingData.infants}</span>
+                          <button
+                            onClick={() => incrementGuest('infants')}
+                            className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
+                            type="button"
+                          >
+                            <Plus className="w-4 h-4 text-gray-600" />
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Book Button */}
+                    <button
+                      onClick={handleBook}
+                      className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg mt-6"
+                      type="button"
+                    >
+                      Book Now
+                    </button>
+                  </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
@@ -831,3 +1526,8 @@ export default function TourDetailPage() {
     </div>
   );
 }
+
+// Note: Packages 6, 7, and 8 can be added following the same structure above
+// Package 6: Naran Kaghan Express
+// Package 7: K2 Base Camp Trek  
+// Package 8: Astore Valley Explorer
