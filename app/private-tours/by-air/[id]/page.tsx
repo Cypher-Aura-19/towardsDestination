@@ -12,11 +12,11 @@ import Link from "next/link";
 const packageDetails: any = {
   "1": {
     id: 1,
-    title: "Honeymoon in Hunza & Skardu 7 Days – By Air",
+    title: "7 Days By-Air Tour to Hunza & Skardu Valley",
     location: "Hunza & Skardu",
     duration: "7 Days 6 Nights",
     price: null,
-    image: "/hunza1.jpg",
+    image: "/hs.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Embark on a 7-day honeymoon in Hunza and Skardu by air, designed for couples seeking romance, adventure, and breathtaking landscapes. This exclusive getaway offers a blend of luxury, culture, and nature, making it the perfect honeymoon experience.",
@@ -62,9 +62,9 @@ const packageDetails: any = {
       { location: "Gilgit", standard: "Alpine Guest House", deluxe: "Duroyou Inn", executive: "Serena Gilgit" }
     ],
     departureSchedule: [
-      { city: "Islamabad", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "—" },
-      { city: "Lahore", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "—" },
-      { city: "Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "—" }
+      { city: "Islamabad", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" },
+      { city: "Lahore", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" },
+      { city: "Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -129,11 +129,11 @@ const packageDetails: any = {
   },
   "2": {
     id: 2,
-    title: "3-Day Honeymoon in Hunza – By Air",
+    title: "3 Days By-Air Tour to Hunza Valley",
     location: "Hunza",
     duration: "3 Days 2 Nights",
     price: null,
-    image: "/hunza1.jpg",
+    image: "/huna.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Escape to Hunza Valley with a 3-day honeymoon package by air, designed for couples seeking breathtaking landscapes, luxury, and intimate moments. This trip blends serene beauty, rich culture, and adventure, creating a perfect getaway for newlyweds.",
@@ -169,7 +169,7 @@ const packageDetails: any = {
       { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" }
     ],
     departureSchedule: [
-      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "—" }
+      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -214,11 +214,11 @@ const packageDetails: any = {
   },
   "3": {
     id: 3,
-    title: "4 Days By Air Honeymoon Package for Hunza Valley",
+    title: "4 Days By-Air Tour to Hunza Valley",
     location: "Gilgit",
     duration: "4 Days 3 Nights",
     price: null,
-    image: "/hunza1.jpg",
+    image: "/huna.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Embark on a 4-day by air trip to Hunza Valley, where nature, history, and adventure come together for an unforgettable experience. Located in Gilgit-Baltistan, Hunza is renowned for its snow-capped peaks, crystal-clear lakes, and centuries-old forts. This tour ensures comfort and convenience, making it perfect for a short yet immersive getaway.",
@@ -257,7 +257,7 @@ const packageDetails: any = {
       { location: "Gilgit", standard: "Duroyou Inn", deluxe: "Destination Hotel", executive: "Ramada Gilgit" }
     ],
     departureSchedule: [
-      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "—" }
+      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -307,11 +307,11 @@ const packageDetails: any = {
   },
   "4": {
     id: 4,
-    title: "5 Days By Air Honeymoon Package for Hunza Valley",
+    title: "5 Days By-Air Tour to Hunza Valley",
     location: "Hunza",
     duration: "5 Days 4 Nights",
     price: null, // Price is complex, see pricing object
-    image: "/hunza1.jpg",
+    image: "/huna.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Discover the breathtaking beauty of Hunza Valley with our 5-day by air trip, designed for a seamless and unforgettable experience. Nestled in Gilgit-Baltistan, Hunza is famous for its majestic peaks, serene lakes, and rich cultural heritage. This journey offers comfort, adventure, and spectacular landscapes, making it an ideal escape for travelers.",
@@ -349,7 +349,7 @@ const packageDetails: any = {
       { location: "Gilgit", standard: "Duroyou Inn", deluxe: "Destination Hotel", executive: "Ramada Gilgit" }
     ],
     departureSchedule: [
-      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "—" }
+      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -404,11 +404,11 @@ const packageDetails: any = {
   },
   "5": {
     id: 5,
-    title: "4 Days By Air Honeymoon Package for Skardu Valley",
+    title: "4 Days By-Air Tour to Skardu Valley",
     location: "Skardu",
     duration: "4 Days 3 Nights",
     price: null,
-    image: "/skardu1.jpg",
+    image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Nature Explorer Tours proudly presents the By Air Honeymoon Package to Skardu Valley, designed for couples seeking a perfect blend of romance, adventure, and relaxation. With breathtaking landscapes, seamless travel, and premium accommodations, this package ensures an unforgettable experience.",
@@ -453,7 +453,7 @@ const packageDetails: any = {
       { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     departureSchedule: [
-      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "—" }
+      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -503,11 +503,11 @@ const packageDetails: any = {
   },
   "6": {
     id: 6,
-    title: "5 Days By Air Honeymoon Package for Skardu Valley",
+    title: "5 Days By-Air Tour to Skardu Valley",
     location: "Skardu",
     duration: "5 Days 4 Nights",
     price: null,
-    image: "/skardu1.jpg",
+    image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
     description: "Nature Explorer Tours offer best By air Honeymoon Package for thier Beloved clients. If you are looking for by Air Honeymoon Package to Skardu Valley then you are at right place. Our Gilgit Baltistan tour package is designed for domestic and foreign tourists interested in visiting northern areas of Pakistan.",
@@ -554,7 +554,7 @@ const packageDetails: any = {
       { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     departureSchedule: [
-      { city: "ISB/LHR/KHI", departure1: "BY AIR (PIA/AIR BLUE)", departure2: "—" }
+      { city: "ISB/LHR/KHI", departure1: "BY AIR (PIA/AIR BLUE)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -609,11 +609,11 @@ const packageDetails: any = {
   },
   "7": {
     id: 7,
-    title: "Soq Valley Tour",
+    title: "7 Days By-Air Tour to Soq Valley",
     location: "Gilgit",
     duration: "7 Days 6 Nights",
     price: 720,
-    image: "/skardu1.jpg",
+    image: "/ska345.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
     description: "The Soq Valley Tour provides a tranquil escape to a magnificent valley surrounded by majestic mountains and flowing rivers. The vacation is ideal for nature lovers and adventurers, with options for walking, camping under the stars, and trout fishing in crystal-clear waterways. Along with experiencing the valley’s rough beauty, you’ll also explore adjacent scenic places, offering your tour the ideal balance of relaxation and adventure in an unspoiled natural wonderland.",
@@ -660,7 +660,7 @@ const packageDetails: any = {
     ],
     hotelList: null,
     departureSchedule: [
-      { city: "All Seasons", departure1: "Daily", departure2: "—" }
+      { city: "All Seasons", departure1: "Daily", departure2: "-" }
     ],
     pricing: {
       "perPerson_Spring_USD": { "price": "720" },
@@ -718,11 +718,11 @@ const packageDetails: any = {
   },
   "8": {
     id: 8,
-    title: "Nazbar Valley Tour",
+    title: "8 Days By-Air Tour to Nazbar Valley",
     location: "Gilgit",
     duration: "8 Days 7 Nights",
     price: 930,
-    image: "/skardu1.jpg",
+    image: "/ska345.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
     description: "Explore the hidden beauty of Nazbar Valley in Yasin, Gilgit-Baltistan. This journey offers stunning vistas of lush meadows, deep forests, and clear streams, providing a peaceful respite from the everyday. Enjoy picturesque hikes to stunning overlooks and interact with the friendly locals. The Nazbar Valley Trip is ideal for nature lovers and explorers, offering an amazing experience in one of Pakistan’s most lovely valleys.",
@@ -772,7 +772,7 @@ const packageDetails: any = {
     ],
     hotelList: null,
     departureSchedule: [
-      { city: "All Seasons", departure1: "Daily", departure2: "—" }
+      { city: "All Seasons", departure1: "Daily", departure2: "-" }
     ],
     pricing: {
       "perPerson_Spring_USD": { "price": "930" },
@@ -835,11 +835,11 @@ const packageDetails: any = {
   },
   "9": {
     id: 9,
-    title: "Khorkundus Valley Tour",
+    title: "7 Days By-Air Tour to Khorkundus Valley",
     location: "Gilgit",
     duration: "7 Days 6 Nights",
     price: 1000,
-    image: "/skardu1.jpg",
+    image: "/ska345.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
     description: "Join an exciting Khorkundus Valley Tour to discover the natural landscapes of Ghanche District, Gilgit-Baltistan. Nestled at an elevation of 3,399 meters, this hidden gem is bordered by towering peaks such as K13, Sherpi Kangri, and Saltoro Kangri. Experience the charm of traditional Balti culture, relax in the valley’s curative hot springs, and take in the spectacular scenery of this secluded sanctuary.",
@@ -891,7 +891,7 @@ const packageDetails: any = {
     ],
     hotelList: null,
     departureSchedule: [
-      { city: "All Seasons", departure1: "Daily", departure2: "—" }
+      { city: "All Seasons", departure1: "Daily", departure2: "-" }
     ],
     pricing: {
       "perPerson_Spring_USD": { "price": "1000" },
@@ -948,6 +948,187 @@ const packageDetails: any = {
       instagram: "https://www.instagram.com/natureexplorers.pk?igsh=ZzgwMXk1aTl2ajR4&utm_source=qr"
     },
     bulkDiscount: null
+  },
+  "10": {
+    id: 10,
+    title: "5 Days By-Air Tour to Fairy Meadows",
+    location: "Fairy Meadows & Nanga Parbat",
+    duration: "5 Days 4 Nights",
+    price: null,
+    image: "/fa.jpg",
+    groupSize: "Flexible (Private Tour)",
+    tourType: "Private Tour",
+    description: "Experience the magical beauty of Fairy Meadows with our exclusive 5-day private tour by air. Trek to the base of Nanga Parbat, the 'Killer Mountain', and witness breathtaking views of one of the world's highest peaks. This private tour offers personalized service, comfortable accommodations, and an unforgettable adventure in the heart of the Himalayas.",
+    pointsToVisit: [
+      "Gilgit Airport",
+      "Raikot Bridge",
+      "Tattu Village",
+      "Fairy Meadows",
+      "Nanga Parbat Base Camp",
+      "Beyal Camp",
+      "German Viewpoint",
+      "Raikot Glacier"
+    ],
+    highlights: [
+      "Scenic flight to Gilgit with mountain views",
+      "Private 4x4 jeep ride to Tattu Village",
+      "Trek through pine forests to Fairy Meadows",
+      "Visit Nanga Parbat Base Camp (Beyal Camp)",
+      "Spectacular views of Nanga Parbat (8,126m)",
+      "Stay in comfortable mountain huts",
+      "Professional trekking guide",
+      "Flexible itinerary for private groups"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Gilgit-Islamabad)",
+      "Airport transfers",
+      "Private 4x4 jeep from Raikot to Tattu Village",
+      "Professional trekking guide",
+      "Porter services for luggage",
+      "Mountain hut accommodation (4 nights)",
+      "All meals during trek (4 Breakfasts, 4 Dinners)",
+      "Camping equipment if needed",
+      "First aid kit and emergency support",
+      "All permits and entry fees"
+    ],
+    excluded: [
+      "Personal trekking gear (shoes, jackets, etc.)",
+      "Lunch meals",
+      "Personal expenses",
+      "Tips for guide and porters",
+      "Travel insurance",
+      "Any meals in Gilgit/Islamabad",
+      "Horse riding (optional)"
+    ],
+    hotelList: [
+      { location: "Raikot", hotel: "Raikot Inn / Mountain View Hotel" },
+      { location: "Fairy Meadows", hotel: "Fairy Meadows Cottages / Alpine Huts / Mountain Lodge" },
+      { location: "Gilgit", hotel: "Serena Hotel / Mountain Lodge (if needed)" }
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Gilgit (By Air) - Raikot",
+        description: "Morning flight from Islamabad to Gilgit with spectacular aerial views of Nanga Parbat, Rakaposhi, and other peaks. Upon arrival, meet your guide and drive to Raikot Bridge (approximately 3 hours). Check-in at hotel near Raikot. Evening briefing about the trek. Dinner and overnight at Raikot."
+      },
+      {
+        day: "Day 02",
+        title: "Raikot - Tattu Village - Fairy Meadows",
+        description: "After breakfast, transfer to 4x4 jeep for an adventurous ride to Tattu Village (approximately 1 hour on rough mountain track). Begin trek to Fairy Meadows through beautiful pine forests (3-4 hours, moderate difficulty). Arrival at Fairy Meadows and check-in at mountain huts. Explore the meadows and enjoy stunning views of Nanga Parbat. Dinner and overnight at Fairy Meadows."
+      },
+      {
+        day: "Day 03",
+        title: "Fairy Meadows - Nanga Parbat Base Camp - Fairy Meadows",
+        description: "Early breakfast and start trek to Nanga Parbat Base Camp (Beyal Camp). Trek through rocky terrain and glacial moraines (4-5 hours). Reach base camp at approximately 3,300 meters. Spectacular close-up views of Nanga Parbat's Raikot Face. Photography time and packed lunch. Trek back to Fairy Meadows. Dinner and overnight at Fairy Meadows."
+      },
+      {
+        day: "Day 04",
+        title: "Fairy Meadows - Tattu - Raikot - Gilgit",
+        description: "After breakfast, trek down to Tattu Village (2-3 hours). Transfer to 4x4 jeep back to Raikot. Drive to Gilgit (3 hours). Check-in at hotel. Free time to explore Gilgit bazaar or relax. Dinner and overnight at Gilgit."
+      },
+      {
+        day: "Day 05",
+        title: "Gilgit - Islamabad (By Air)",
+        description: "Early breakfast at hotel. Transfer to Gilgit Airport. Morning flight to Islamabad with final views of the Karakoram Range. Arrival in Islamabad. End of memorable Fairy Meadows adventure."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Special Offer: 10% discount for groups of 4 or more people"
+  },
+  "11": {
+    id: 11,
+    title: "5 Days By-Air Tour to Astore & Minimarg",
+    location: "Astore, Minimarg & Deosai Plains",
+    duration: "5 Days 4 Nights",
+    price: null,
+    image: "/asa.jpg",
+    groupSize: "Flexible (Private Tour)",
+    tourType: "Private Tour",
+    description: "Discover the pristine beauty of Astore Valley and the remote wilderness of Minimarg with our exclusive 5-day private tour by air. Trek to Rama Lake, explore Minimarg's Rainbow and Crystal Lakes, cross the historic Burzil Pass, and experience the stunning Deosai Plains - all in one unforgettable adventure through Gilgit-Baltistan's hidden gems.",
+    pointsToVisit: [
+      "Gilgit Airport",
+      "Astore Valley",
+      "Rama Lake",
+      "Rama Meadows",
+      "Chilam Check Post",
+      "Burzil Pass",
+      "Minimarg Valley",
+      "Rainbow Lake",
+      "Crystal Lake",
+      "Deosai Plains",
+      "Sheosar Lake"
+    ],
+    highlights: [
+      "Scenic flight to Gilgit",
+      "Trek to pristine Rama Lake",
+      "Cross spectacular Burzil Pass (4,200m)",
+      "Explore remote Minimarg Valley",
+      "Visit Rainbow Lake and Crystal Lake",
+      "Deosai Plains safari",
+      "Wildlife spotting opportunities",
+      "Mix of hotel stays and camping experience"
+    ],
+    included: [
+      "Round-trip flight tickets (Islamabad-Gilgit-Islamabad)",
+      "Airport transfers",
+      "Private 4x4 jeeps for entire tour",
+      "Professional tour guide",
+      "Hotel accommodation (2 nights) + Camping (2 nights)",
+      "Camping equipment and tents",
+      "All meals (4 Breakfasts, 4 Dinners)",
+      "Entry permits for Deosai",
+      "First aid kit and emergency support"
+    ],
+    excluded: [
+      "Lunch meals",
+      "Personal expenses",
+      "Tips for guide and driver",
+      "Travel insurance",
+      "Personal camping/trekking gear",
+      "Any meals in Gilgit/Islamabad"
+    ],
+    hotelList: [
+      { location: "Astore", hotel: "Astore Inn / Valley Lodge / Mountain View Hotel" },
+      { location: "Rama Meadows", hotel: "Rama Meadows Resort / Alpine Cottages" },
+      { location: "Minimarg", hotel: "Camping / Tent Village" }
+    ],
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Islamabad - Gilgit (By Air) - Astore - Rama Lake",
+        description: "Morning flight from Islamabad to Gilgit with spectacular mountain views. Upon arrival, drive to Astore Valley (2-3 hours). Continue to Rama Meadows. Transfer to 4x4 jeep. Trek to Rama Lake (2-3 hours). Enjoy the pristine alpine lake surrounded by snow-capped peaks. Trek back to Rama Meadows. Check-in at resort. Dinner and overnight at Rama Meadows."
+      },
+      {
+        day: "Day 02",
+        title: "Rama Meadows - Astore - Chilam - Burzil Pass - Minimarg",
+        description: "After breakfast, drive back to Astore. Continue journey to Minimarg. Drive to Chilam Check Post. Transfer to 4x4 jeeps. Cross the spectacular Burzil Pass (4,200m) with breathtaking mountain views. Arrival at Minimarg Valley. Set up camp. Explore the surroundings. Dinner and overnight camping at Minimarg."
+      },
+      {
+        day: "Day 03",
+        title: "Minimarg - Rainbow Lake - Crystal Lake",
+        description: "Early breakfast. Full day exploring Minimarg area. Visit Rainbow Lake with its stunning multi-colored waters. Trek to Crystal Lake. Photography opportunities. Wildlife spotting (Himalayan ibex, marmots). Experience the remote wilderness. Return to camp. Bonfire and stargazing. Dinner and overnight at Minimarg."
+      },
+      {
+        day: "Day 04",
+        title: "Minimarg - Deosai Plains - Astore",
+        description: "After breakfast, drive to Deosai Plains. Visit Sheosar Lake - one of the highest lakes in the world. Wildlife safari (look for Himalayan brown bears, if lucky). Enjoy the vast plateau landscape. Packed lunch at Deosai. Drive back to Astore via Burzil Pass. Check-in at hotel. Dinner and overnight at Astore."
+      },
+      {
+        day: "Day 05",
+        title: "Astore - Gilgit - Islamabad (By Air)",
+        description: "Breakfast at hotel. Drive to Gilgit (2-3 hours). Last-minute shopping if time permits. Transfer to Gilgit Airport. Morning flight to Islamabad. End of adventurous Astore & Minimarg expedition."
+      }
+    ],
+    contact: {
+      email: "Info.Towardsdestination@gmail.com",
+      whatsapp: "+92315 3309070",
+      instagram: "@towardsdestination.pk"
+    },
+    bulkDiscount: "Special Offer: 10% discount for groups of 4 or more people"
   }
 };
 export default function PrivateTourByAirDetail() {
