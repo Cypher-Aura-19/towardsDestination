@@ -328,20 +328,20 @@ const packageDetails: any = {
   },
   "6": {
     id: 6,
-    title: "7 Days Honeymoon Tour for Swat & Hunza (by Road)",
-    location: "Swat & Hunza",
+    title: "7 Days Honeymoon Tour for Swat & HUNZA (by Road)",
+    location: "Swat & HUNZA",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Embark on a romantic journey through Swat and Hunza valleys. Experience the perfect blend of natural beauty, culture, and adventure with your loved one. This comprehensive tour covers two of Pakistan's most beautiful valleys, offering diverse landscapes and unforgettable experiences.",
+    description: "Embark on a romantic journey through Swat and HUNZA valleys. Experience the perfect blend of natural beauty, culture, and adventure with your loved one. This comprehensive tour covers two of Pakistan's most beautiful valleys, offering diverse landscapes and unforgettable experiences.",
     pointsToVisit: [
       "Malam Jabba",
       "Kalam Valley",
       "Mahodand Lake",
       "Chilas",
-      "Hunza Valley",
+      "HUNZA Valley",
       "Attabad Lake",
       "Baltit Fort",
       "Altit Fort",
@@ -349,12 +349,12 @@ const packageDetails: any = {
       "Khunjerab Pass"
     ],
     highlights: [
-      "Explore both Swat and Hunza valleys",
+      "Explore both Swat and HUNZA valleys",
       "Visit Mahodand Lake",
       "Cable car ride at Malam Jabba",
       "Boat ride at Attabad Lake",
       "Visit to Khunjerab Pass (China Border)",
-      "Historical forts of Hunza",
+      "Historical forts of HUNZA",
       "Romantic stays in premium hotels"
     ],
     included: [
@@ -392,18 +392,18 @@ const packageDetails: any = {
       },
       {
         day: "Day 04",
-        title: "Chilas - Hunza",
-        description: "Breakfast call. Departure for Hunza Valley. Visit Rakaposhi viewpoint. Arrival at Hunza. Visit Baltit and Altit Forts. Shopping at Karimabad Bazar. Check-in hotel. Romantic dinner. Overnight at Hunza."
+        title: "Chilas - HUNZA",
+        description: "Breakfast call. Departure for HUNZA Valley. Visit Rakaposhi viewpoint. Arrival at HUNZA. Visit Baltit and Altit Forts. Shopping at Karimabad Bazar. Check-in hotel. Romantic dinner. Overnight at HUNZA."
       },
       {
         day: "Day 05",
-        title: "Hunza - Khunjerab Pass",
-        description: "Breakfast call. Departure for Khunjerab Pass. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Bridge. Visit Khunjerab Border (if open). Back to Hunza. Romantic dinner. Overnight at Hunza."
+        title: "HUNZA - Khunjerab Pass",
+        description: "Breakfast call. Departure for Khunjerab Pass. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Bridge. Visit Khunjerab Border (if open). Back to HUNZA. Romantic dinner. Overnight at HUNZA."
       },
       {
         day: "Day 06",
-        title: "Hunza - Chilas",
-        description: "Breakfast call. Free time in Hunza. Visit Eagle's Nest viewpoint. Departure for Chilas. Arrival at Chilas. Dinner and overnight at Chilas."
+        title: "HUNZA - Chilas",
+        description: "Breakfast call. Free time in HUNZA. Visit Eagle's Nest viewpoint. Departure for Chilas. Arrival at Chilas. Dinner and overnight at Chilas."
       },
       {
         day: "Day 07",
@@ -414,7 +414,7 @@ const packageDetails: any = {
     hotelList: [
       { location: "Kalam", standard: "Kalam Inn", deluxe: "Ushu Forest Hotel", executive: "Luxury Mountain Resort" },
       { location: "Chilas", standard: "Shangrilla Chilas", deluxe: "Grace Continental", executive: "Shangrilla Hotel" },
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" }
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus HUNZA" }
     ],
     pricing: {
       perCouple: {
@@ -431,19 +431,19 @@ const packageDetails: any = {
   },
   "7": {
     id: 7,
-    title: "7 Days Skardu Honeymoon Tour",
-    location: "Skardu",
+    title: "7 Days SKARDU Honeymoon Tour",
+    location: "SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Explore the majestic beauty of Skardu with your partner. Visit Shangrila Lake, Deosai Plains, and create unforgettable memories in this romantic destination. This comprehensive tour covers all major attractions of Skardu, offering a perfect blend of natural beauty and adventure.",
+    description: "Explore the majestic beauty of SKARDU with your partner. Visit Shangrila Lake, DEOSAI Plains, and create unforgettable memories in this romantic destination. This comprehensive tour covers all major attractions of SKARDU, offering a perfect blend of natural beauty and adventure.",
     pointsToVisit: [
       "Shangrila Lake",
       "Upper Kachura Lake",
       "Lower Kachura Lake",
-      "Deosai National Park",
+      "DEOSAI National Park",
       "Sheosar Lake",
       "Manthoka Waterfall",
       "Sarfaranga Cold Desert",
@@ -453,7 +453,7 @@ const packageDetails: any = {
     ],
     highlights: [
       "Visit to Shangrila Resort",
-      "Explore Deosai Plains (Land of Giants)",
+      "Explore DEOSAI Plains (Land of Giants)",
       "Boat ride at Kachura Lakes",
       "Visit Sarfaranga Cold Desert",
       "Explore Basho Valley",
@@ -466,7 +466,7 @@ const packageDetails: any = {
       "Professional Driver cum Guide",
       "6 Nights Accommodation",
       "6 Breakfasts",
-      "Jeeps for Deosai and Basho Valley",
+      "Jeeps for DEOSAI and Basho Valley",
       "Bonfire",
       "Romantic room decoration"
     ],
@@ -484,27 +484,27 @@ const packageDetails: any = {
       },
       {
         day: "Day 02",
-        title: "Chilas - Skardu",
-        description: "Breakfast call. Departure for Skardu. Visit Shangrila Lake and Resort. Visit Upper Kachura Lake. Check-in hotel in Skardu. Romantic dinner. Overnight at Skardu."
+        title: "Chilas - SKARDU",
+        description: "Breakfast call. Departure for SKARDU. Visit Shangrila Lake and Resort. Visit Upper Kachura Lake. Check-in hotel in SKARDU. Romantic dinner. Overnight at SKARDU."
       },
       {
         day: "Day 03",
-        title: "Skardu - Deosai Plains",
-        description: "Breakfast call. Transfer to 4x4 jeeps. Departure for Deosai National Park. Visit Sheosar Lake. Explore the Land of Giants. Wildlife spotting. Back to Skardu. Bonfire. Overnight at Skardu."
+        title: "SKARDU - DEOSAI Plains",
+        description: "Breakfast call. Transfer to 4x4 jeeps. Departure for DEOSAI National Park. Visit Sheosar Lake. Explore the Land of Giants. Wildlife spotting. Back to SKARDU. Bonfire. Overnight at SKARDU."
       },
       {
         day: "Day 04",
         title: "Manthoka - Sarfaranga - Shigar",
-        description: "Breakfast call. Visit Manthoka Waterfall. Visit Sarfaranga Cold Desert. Free time for activities. Visit Shigar Fort. Visit Amburuk Mosque. Back to Skardu. Overnight at Skardu."
+        description: "Breakfast call. Visit Manthoka Waterfall. Visit Sarfaranga Cold Desert. Free time for activities. Visit Shigar Fort. Visit Amburuk Mosque. Back to SKARDU. Overnight at SKARDU."
       },
       {
         day: "Day 05",
         title: "Basho Valley",
-        description: "Breakfast call. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Picnic lunch. Back to Skardu. Romantic dinner. Overnight at Skardu."
+        description: "Breakfast call. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Picnic lunch. Back to SKARDU. Romantic dinner. Overnight at SKARDU."
       },
       {
         day: "Day 06",
-        title: "Skardu - Chilas",
+        title: "SKARDU - Chilas",
         description: "Breakfast call. Visit Satpara Lake. Free time for shopping. Departure for Chilas. Arrival at Chilas. Dinner and overnight at Chilas."
       },
       {
@@ -515,7 +515,7 @@ const packageDetails: any = {
     ],
     hotelList: [
       { location: "Chilas", standard: "Shangrilla Chilas", deluxe: "Grace Continental", executive: "Shangrilla Hotel" },
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     pricing: {
       perCouple: {
@@ -525,42 +525,42 @@ const packageDetails: any = {
       }
     },
     notes: [
-      "Deosai Plains accessible from June to September only.",
-      "Jeep charges for Deosai approximately PKR 3,000/head.",
+      "DEOSAI Plains accessible from June to September only.",
+      "Jeep charges for DEOSAI approximately PKR 3,000/head.",
       "Hotels can be changed according to availability."
     ]
   },
   "8": {
     id: 8,
-    title: "Honeymoon Tour to Hunza Valley 6 Days– By Road",
-    location: "Hunza Valley",
+    title: "Honeymoon Tour to HUNZA Valley 6 Days– By Road",
+    location: "HUNZA Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Discover the enchanting Hunza Valley with your loved one. Visit Attabad Lake, Baltit Fort, and enjoy the stunning mountain scenery on this romantic journey. This tour offers a perfect blend of culture, history, and natural beauty, making it ideal for couples seeking a memorable honeymoon experience.",
+    description: "Discover the enchanting HUNZA Valley with your loved one. Visit Attabad Lake, Baltit Fort, and enjoy the stunning mountain scenery on this romantic journey. This tour offers a perfect blend of culture, history, and natural beauty, making it ideal for couples seeking a memorable honeymoon experience.",
     pointsToVisit: [
       "Naran Valley",
       "Babusar Top",
       "Lulusar Lake",
       "Chilas",
       "Rakaposhi Viewpoint",
-      "Hunza Valley",
+      "HUNZA Valley",
       "Baltit Fort",
       "Altit Fort",
       "Attabad Lake",
       "Passu Cones",
       "Hussaini Bridge",
       "Khunjerab Pass",
-      "Naltar Valley"
+      "NALTAR Valley"
     ],
     highlights: [
       "Scenic drive via Babusar Top",
       "Visit to Attabad Lake with boat ride",
       "Explore Baltit and Altit Forts",
       "Drive to Khunjerab Pass (China Border)",
-      "Visit Naltar Valley",
+      "Visit NALTAR Valley",
       "Shopping at Karimabad Bazar",
       "Romantic stays with mountain views"
     ],
@@ -570,7 +570,7 @@ const packageDetails: any = {
       "Professional Driver cum Guide",
       "5 Nights Accommodation",
       "5 Breakfasts",
-      "Jeeps for Naltar Valley",
+      "Jeeps for NALTAR Valley",
       "Bonfire",
       "Romantic room decoration"
     ],
@@ -588,18 +588,18 @@ const packageDetails: any = {
       },
       {
         day: "Day 02",
-        title: "Chilas - Hunza",
-        description: "Breakfast call. Departure for Hunza Valley. Visit Rakaposhi viewpoint. Arrival at Hunza. Visit Baltit and Altit Forts. Shopping at Karimabad Bazar. Check-in hotel. Romantic dinner. Overnight at Hunza."
+        title: "Chilas - HUNZA",
+        description: "Breakfast call. Departure for HUNZA Valley. Visit Rakaposhi viewpoint. Arrival at HUNZA. Visit Baltit and Altit Forts. Shopping at Karimabad Bazar. Check-in hotel. Romantic dinner. Overnight at HUNZA."
       },
       {
         day: "Day 03",
-        title: "Hunza - Khunjerab Pass",
-        description: "Breakfast call. Departure for Khunjerab Pass. Visit Attabad Lake. Boat ride at Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Border (if open). Back to Hunza. Bonfire and romantic setup. Overnight at Hunza."
+        title: "HUNZA - Khunjerab Pass",
+        description: "Breakfast call. Departure for Khunjerab Pass. Visit Attabad Lake. Boat ride at Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Border (if open). Back to HUNZA. Bonfire and romantic setup. Overnight at HUNZA."
       },
       {
         day: "Day 04",
-        title: "Hunza - Naltar Valley",
-        description: "Breakfast call. Departure for Naltar Valley. Transfer to jeeps at Nomal. Visit Satrangi Lake. Visit Blue Water Lake. Explore Naltar Valley. Back to Gilgit. Check-in hotel. Dinner and overnight at Gilgit."
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call. Departure for NALTAR Valley. Transfer to jeeps at Nomal. Visit Satrangi Lake. Visit Blue Water Lake. Explore NALTAR Valley. Back to Gilgit. Check-in hotel. Dinner and overnight at Gilgit."
       },
       {
         day: "Day 05",
@@ -614,7 +614,7 @@ const packageDetails: any = {
     ],
     hotelList: [
       { location: "Chilas", standard: "Shangrilla Chilas", deluxe: "Grace Continental", executive: "Shangrilla Hotel" },
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Alpine Guest House", deluxe: "Duroyou Inn", executive: "Serena Gilgit" },
       { location: "Naran", standard: "Gateway Hotel", deluxe: "Hotel Homes", executive: "Masonite Hotel" }
     ],
@@ -628,20 +628,20 @@ const packageDetails: any = {
     notes: [
       "Babusar Top accessible from June to September only.",
       "Khunjerab Pass visit subject to weather and border opening.",
-      "Jeep charges for Naltar approximately PKR 2,500/head.",
+      "Jeep charges for NALTAR approximately PKR 2,500/head.",
       "Hotels can be changed according to availability."
     ]
   },
   "9": {
     id: 9,
-    title: "Honeymoon in Hunza & Skardu 7 Days – By Air",
-    location: "Hunza & Skardu",
+    title: "Honeymoon in HUNZA & SKARDU 7 Days – By Air",
+    location: "HUNZA & SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Experience the ultimate romantic getaway with flights to Gilgit. Explore both Hunza and Skardu valleys, creating memories that will last a lifetime. This exclusive honeymoon package combines luxury, adventure, and breathtaking landscapes, designed for couples seeking romance and adventure.",
+    description: "Experience the ultimate romantic getaway with flights to Gilgit. Explore both HUNZA and SKARDU valleys, creating memories that will last a lifetime. This exclusive honeymoon package combines luxury, adventure, and breathtaking landscapes, designed for couples seeking romance and adventure.",
     pointsToVisit: [
       "Shangrila Lake",
       "Upper Kachura Lake",
@@ -654,10 +654,10 @@ const packageDetails: any = {
       "Baltit Fort",
       "Altit Fort",
       "Khunjerab Pass",
-      "Naltar Valley"
+      "NALTAR Valley"
     ],
     highlights: [
-      "Scenic flight to Skardu",
+      "Scenic flight to SKARDU",
       "Luxury honeymoon accommodations",
       "Boat ride at Attabad Lake",
       "Visit to Khunjerab Pass (China Border)",
@@ -671,7 +671,7 @@ const packageDetails: any = {
       "6 Nights Accommodation",
       "6 Breakfasts",
       "Jeeps for Basho Valley",
-      "Jeeps for Naltar",
+      "Jeeps for NALTAR",
       "Bonfire",
       "Romantic room decoration"
     ],
@@ -685,33 +685,33 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Flight to Skardu",
-        description: "Pick up from Skardu Airport. Arrival at Hotel and check-in. Visit Shangrilla Lake and Resort. Visit Upper Kachura Lake. Free time for activities. Romantic dinner and overnight stay in Skardu."
+        title: "Flight to SKARDU",
+        description: "Pick up from SKARDU Airport. Arrival at Hotel and check-in. Visit Shangrilla Lake and Resort. Visit Upper Kachura Lake. Free time for activities. Romantic dinner and overnight stay in SKARDU."
       },
       {
         day: "Day 02",
         title: "Sarfaranga Cold Desert - Manthoka Waterfall",
-        description: "Breakfast call. Visit Manthoka waterfall. Departure for Sarfaranga Cold Desert. Free time for activities (Jeep Safari, Paragliding). Visit Shigar Fort and Amburuk Mosque. Back to hotel. Overnight stay at Skardu."
+        description: "Breakfast call. Visit Manthoka waterfall. Departure for Sarfaranga Cold Desert. Free time for activities (Jeep Safari, Paragliding). Visit Shigar Fort and Amburuk Mosque. Back to hotel. Overnight stay at SKARDU."
       },
       {
         day: "Day 03",
         title: "Basho Valley",
-        description: "Breakfast call. Visit Chocolate Rocks. Transfer to 4x4 jeeps for Basho Meadows. Explore Basho Valley. Visit Basho Suspension Bridge. Back to hotel. Overnight stay at Skardu."
+        description: "Breakfast call. Visit Chocolate Rocks. Transfer to 4x4 jeeps for Basho Meadows. Explore Basho Valley. Visit Basho Suspension Bridge. Back to hotel. Overnight stay at SKARDU."
       },
       {
         day: "Day 04",
-        title: "Skardu to Hunza",
-        description: "After breakfast departure for Hunza Valley. Short stay at Astak Nala. Visit Rakaposhi viewpoint. Visit Altit Fort & Baltit Fort. Shopping at Karimabad bazar. Check-in at Hunza hotel. Romantic dinner and night stay."
+        title: "SKARDU to HUNZA",
+        description: "After breakfast departure for HUNZA Valley. Short stay at Astak Nala. Visit Rakaposhi viewpoint. Visit Altit Fort & Baltit Fort. Shopping at Karimabad bazar. Check-in at HUNZA hotel. Romantic dinner and night stay."
       },
       {
         day: "Day 05",
-        title: "Explore Hunza - Khunjerab Pass",
-        description: "After breakfast departure for Khunjerab Pass. Visit Attabad Lake. Visit Hussaini Suspension Bridge. Visit Passu Cones. Visit Khunjerab Border (if open). Drive back to Hunza. Romantic dinner and overnight stay."
+        title: "Explore HUNZA - Khunjerab Pass",
+        description: "After breakfast departure for Khunjerab Pass. Visit Attabad Lake. Visit Hussaini Suspension Bridge. Visit Passu Cones. Visit Khunjerab Border (if open). Drive back to HUNZA. Romantic dinner and overnight stay."
       },
       {
         day: "Day 06",
-        title: "Hunza - Naltar Valley",
-        description: "Breakfast call. Arrival to Nomal Valley. Transfer to Jeep for Naltar Valley. Visit Satrangi Lake and Blue Water Lake. Explore Naltar Valley. Leave for Gilgit. Dinner and night stay at Gilgit."
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call. Arrival to Nomal Valley. Transfer to Jeep for NALTAR Valley. Visit Satrangi Lake and Blue Water Lake. Explore NALTAR Valley. Leave for Gilgit. Dinner and night stay at Gilgit."
       },
       {
         day: "Day 07",
@@ -720,8 +720,8 @@ const packageDetails: any = {
       }
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" },
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" },
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Alpine Guest House", deluxe: "Duroyou Inn", executive: "Serena Gilgit" }
     ],
     pricing: {
@@ -739,18 +739,18 @@ const packageDetails: any = {
   },
   "10": {
     id: 10,
-    title: "3-Day Honeymoon in Hunza – By Air",
-    location: "Hunza",
+    title: "3-Day Honeymoon in HUNZA – By Air",
+    location: "HUNZA",
     duration: "3 Days 2 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "A quick romantic escape to Hunza Valley by air. Perfect for couples with limited time who want to experience the beauty of Hunza. Fly to Gilgit and explore the stunning Hunza Valley with its majestic mountains, historic forts, and crystal-clear lakes.",
+    description: "A quick romantic escape to HUNZA Valley by air. Perfect for couples with limited time who want to experience the beauty of HUNZA. Fly to Gilgit and explore the stunning HUNZA Valley with its majestic mountains, historic forts, and crystal-clear lakes.",
     pointsToVisit: [
       "Gilgit Airport",
       "Rakaposhi Viewpoint",
-      "Hunza Valley",
+      "HUNZA Valley",
       "Baltit Fort",
       "Altit Fort",
       "Karimabad Bazar",
@@ -787,13 +787,13 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Flight to Gilgit - Hunza",
-        description: "Pickup from Gilgit Airport. Departure for Hunza Valley. Sightseeing of Indus River. Visit Rakaposhi viewpoint. Arrival in Hunza. Visit Altit and Baltit Fort. Visit Karimabad Shopping Center. Visit Duikar for sunset (Eagle Nest point). Check-in hotel. Romantic dinner. Night stay at Hunza."
+        title: "Flight to Gilgit - HUNZA",
+        description: "Pickup from Gilgit Airport. Departure for HUNZA Valley. Sightseeing of Indus River. Visit Rakaposhi viewpoint. Arrival in HUNZA. Visit Altit and Baltit Fort. Visit Karimabad Shopping Center. Visit Duikar for sunset (Eagle Nest point). Check-in hotel. Romantic dinner. Night stay at HUNZA."
       },
       {
         day: "Day 02",
-        title: "Exploring Hunza Valley",
-        description: "Breakfast call. Departure for Khunjerab. Experience Attabad Tunnel drive. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Pass (if open). Back to Hunza. Visit Karimabad Bazar. Bonfire and romantic setup. Overnight at Hunza."
+        title: "Exploring HUNZA Valley",
+        description: "Breakfast call. Departure for Khunjerab. Experience Attabad Tunnel drive. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Pass (if open). Back to HUNZA. Visit Karimabad Bazar. Bonfire and romantic setup. Overnight at HUNZA."
       },
       {
         day: "Day 03",
@@ -802,7 +802,7 @@ const packageDetails: any = {
       }
     ],
     hotelList: [
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus Hunza" }
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus HUNZA" }
     ],
     pricing: {
       perCouple: {
@@ -819,18 +819,18 @@ const packageDetails: any = {
   },
   "11": {
     id: 11,
-    title: "4 Days By Air Honeymoon Package for Hunza Valley",
-    location: "Hunza Valley",
+    title: "4 Days By Air Honeymoon Package for HUNZA Valley",
+    location: "HUNZA Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Fly to Gilgit and explore the romantic beauty of Hunza Valley. Visit Attabad Lake, Passu Cones, and enjoy quality time with your partner. This 4-day package includes visits to Naltar Valley, making it a comprehensive Hunza experience.",
+    description: "Fly to Gilgit and explore the romantic beauty of HUNZA Valley. Visit Attabad Lake, Passu Cones, and enjoy quality time with your partner. This 4-day package includes visits to NALTAR Valley, making it a comprehensive HUNZA experience.",
     pointsToVisit: [
       "Gilgit Airport",
       "Rakaposhi Viewpoint",
-      "Hunza Valley",
+      "HUNZA Valley",
       "Baltit Fort",
       "Altit Fort",
       "Eagle's Nest",
@@ -838,7 +838,7 @@ const packageDetails: any = {
       "Passu Cones",
       "Hussaini Bridge",
       "Khunjerab Pass",
-      "Naltar Valley",
+      "NALTAR Valley",
       "Satrangi Lake",
       "Blue Water Lake"
     ],
@@ -847,7 +847,7 @@ const packageDetails: any = {
       "Visit Attabad Lake and Passu Cones",
       "Explore Baltit and Altit Forts",
       "Drive to Khunjerab Pass",
-      "Visit Naltar Valley",
+      "Visit NALTAR Valley",
       "Romantic stays with mountain views"
     ],
     included: [
@@ -856,7 +856,7 @@ const packageDetails: any = {
       "Professional Driver cum Guide",
       "3 Nights Accommodation",
       "3 Breakfasts",
-      "Jeeps for Naltar",
+      "Jeeps for NALTAR",
       "Bonfire",
       "Romantic room decoration"
     ],
@@ -869,18 +869,18 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Flight to Gilgit - Hunza",
-        description: "Pickup from Gilgit Airport. Departure for Hunza Valley. Sightseeing of Indus River. Visit Rakaposhi viewpoint. Arrival in Hunza. Visit Altit and Baltit Fort. Visit Karimabad Shopping Center. Visit Eagle Nest point for sunset. Check-in hotel. Romantic dinner. Night stay at Hunza."
+        title: "Flight to Gilgit - HUNZA",
+        description: "Pickup from Gilgit Airport. Departure for HUNZA Valley. Sightseeing of Indus River. Visit Rakaposhi viewpoint. Arrival in HUNZA. Visit Altit and Baltit Fort. Visit Karimabad Shopping Center. Visit Eagle Nest point for sunset. Check-in hotel. Romantic dinner. Night stay at HUNZA."
       },
       {
         day: "Day 02",
-        title: "Exploring Hunza Valley",
-        description: "Breakfast call. Departure for Khunjerab. Experience Attabad Tunnel drive. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Pass (if open). Back to Hunza. Visit Karimabad Bazar. Bonfire. Overnight at Hunza."
+        title: "Exploring HUNZA Valley",
+        description: "Breakfast call. Departure for Khunjerab. Experience Attabad Tunnel drive. Visit Attabad Lake. Visit Passu Cones. Visit Hussaini Suspension Bridge. Visit Khunjerab Pass (if open). Back to HUNZA. Visit Karimabad Bazar. Bonfire. Overnight at HUNZA."
       },
       {
         day: "Day 03",
-        title: "Hunza - Naltar Valley",
-        description: "Breakfast call. Arrival to Nomal Valley. Transfer to Jeep for Naltar Valley. Visit Naltar Valley. Visit Satrangi Lake. Visit Blue Water Lake. Explore the Beauty of Naltar Valley. Leave for Gilgit. Dinner and night stay at Gilgit."
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call. Arrival to Nomal Valley. Transfer to Jeep for NALTAR Valley. Visit NALTAR Valley. Visit Satrangi Lake. Visit Blue Water Lake. Explore the Beauty of NALTAR Valley. Leave for Gilgit. Dinner and night stay at Gilgit."
       },
       {
         day: "Day 04",
@@ -889,7 +889,7 @@ const packageDetails: any = {
       }
     ],
     hotelList: [
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus Hunza" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Duroyou Inn", deluxe: "Destination Hotel", executive: "Ramada Gilgit" }
     ],
     pricing: {
@@ -901,20 +901,20 @@ const packageDetails: any = {
     },
     notes: [
       "AIR FARES are not included. They will be charged separately.",
-      "Jeep charges for Naltar approximately PKR 2,500/head.",
+      "Jeep charges for NALTAR approximately PKR 2,500/head.",
       "Hotels can be changed according to availability."
     ]
   },
   "12": {
     id: 12,
-    title: "5 Days By Air Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "5 Days By Air Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Experience the magical beauty of Skardu with a convenient flight. Visit Shangrila Resort, Kachura Lakes, and create romantic memories. This package offers the perfect blend of natural beauty, adventure, and romantic experiences in one of Pakistan's most stunning valleys.",
+    description: "Experience the magical beauty of SKARDU with a convenient flight. Visit Shangrila Resort, Kachura Lakes, and create romantic memories. This package offers the perfect blend of natural beauty, adventure, and romantic experiences in one of Pakistan's most stunning valleys.",
     pointsToVisit: [
       "Shangrila Lake",
       "Upper Kachura Lake",
@@ -927,7 +927,7 @@ const packageDetails: any = {
       "Chaqchan Mosque"
     ],
     highlights: [
-      "Scenic flight to Skardu",
+      "Scenic flight to SKARDU",
       "Visit Shangrila Resort",
       "Explore Sarfaranga Cold Desert",
       "Visit historic Shigar Fort",
@@ -954,32 +954,32 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Flight to Skardu",
-        description: "Pick up from Skardu Airport. Visit Shangrilla Lake and Resort. Visit Upper Kachura Lake. Free time for activities. Check-in hotel. Romantic dinner. Overnight stay in Skardu."
+        title: "Flight to SKARDU",
+        description: "Pick up from SKARDU Airport. Visit Shangrilla Lake and Resort. Visit Upper Kachura Lake. Free time for activities. Check-in hotel. Romantic dinner. Overnight stay in SKARDU."
       },
       {
         day: "Day 02",
         title: "Sarfaranga - Shigar",
-        description: "Breakfast call. Visit Manthoka waterfall. Visit Sarfaranga Cold Desert. Free time for activities. Visit Shigar Fort. Visit Amburuk Mosque. Back to hotel. Overnight at Skardu."
+        description: "Breakfast call. Visit Manthoka waterfall. Visit Sarfaranga Cold Desert. Free time for activities. Visit Shigar Fort. Visit Amburuk Mosque. Back to hotel. Overnight at SKARDU."
       },
       {
         day: "Day 03",
         title: "Basho Valley",
-        description: "Breakfast call. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Back to hotel. Bonfire. Overnight at Skardu."
+        description: "Breakfast call. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Back to hotel. Bonfire. Overnight at SKARDU."
       },
       {
         day: "Day 04",
         title: "Khaplu Valley",
-        description: "Breakfast call. Departure for Khaplu. Visit Khaplu Palace. Visit Chaqchan Mosque. Explore Khaplu Valley. Back to Skardu. Romantic dinner. Overnight at Skardu."
+        description: "Breakfast call. Departure for Khaplu. Visit Khaplu Palace. Visit Chaqchan Mosque. Explore Khaplu Valley. Back to SKARDU. Romantic dinner. Overnight at SKARDU."
       },
       {
         day: "Day 05",
         title: "Fly Back Home",
-        description: "Breakfast call. After breakfast leave for Skardu Airport. Drop off at airport. Fly back to Islamabad."
+        description: "Breakfast call. After breakfast leave for SKARDU Airport. Drop off at airport. Fly back to Islamabad."
       }
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     pricing: {
       perCouple: {
@@ -996,14 +996,14 @@ const packageDetails: any = {
   },
   "13": {
     id: 13,
-    title: "4 Days By Air Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "4 Days By Air Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "A perfect short honeymoon to Skardu by air. Explore the stunning landscapes and enjoy romantic moments at beautiful lakes and valleys. This compact package covers all major attractions of Skardu, perfect for couples with limited time.",
+    description: "A perfect short honeymoon to SKARDU by air. Explore the stunning landscapes and enjoy romantic moments at beautiful lakes and valleys. This compact package covers all major attractions of SKARDU, perfect for couples with limited time.",
     pointsToVisit: [
       "Shangrila Lake",
       "Upper Kachura Lake",
@@ -1014,7 +1014,7 @@ const packageDetails: any = {
       "Chocolate Rocks"
     ],
     highlights: [
-      "Scenic flight to Skardu",
+      "Scenic flight to SKARDU",
       "Visit Shangrila Resort",
       "Explore Sarfaranga Cold Desert",
       "Visit Manthoka Waterfall",
@@ -1040,27 +1040,27 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Flight to Skardu",
-        description: "Pick up from Skardu Airport. Visit Shangrilla Lake. Visit Upper Kachura Lake. Free time for activities. Check-in hotel. Romantic dinner. Overnight stay in Skardu."
+        title: "Flight to SKARDU",
+        description: "Pick up from SKARDU Airport. Visit Shangrilla Lake. Visit Upper Kachura Lake. Free time for activities. Check-in hotel. Romantic dinner. Overnight stay in SKARDU."
       },
       {
         day: "Day 02",
         title: "Sarfaranga - Manthoka",
-        description: "Breakfast call. Visit Manthoka waterfall. Visit Sarfaranga Cold Desert. Visit Shigar Fort. Back to hotel. Bonfire. Overnight at Skardu."
+        description: "Breakfast call. Visit Manthoka waterfall. Visit Sarfaranga Cold Desert. Visit Shigar Fort. Back to hotel. Bonfire. Overnight at SKARDU."
       },
       {
         day: "Day 03",
         title: "Basho Valley",
-        description: "Breakfast call. Visit Chocolate Rocks. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Back to hotel. Romantic dinner. Overnight at Skardu."
+        description: "Breakfast call. Visit Chocolate Rocks. Transfer to 4x4 jeeps for Basho Valley. Explore Basho Meadows. Visit Basho Suspension Bridge. Back to hotel. Romantic dinner. Overnight at SKARDU."
       },
       {
         day: "Day 04",
         title: "Fly Back Home",
-        description: "Breakfast call. After breakfast leave for Skardu Airport. Drop off at airport. Fly back to Islamabad."
+        description: "Breakfast call. After breakfast leave for SKARDU Airport. Drop off at airport. Fly back to Islamabad."
       }
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     pricing: {
       perCouple: {
@@ -1077,19 +1077,19 @@ const packageDetails: any = {
   },
   "14": {
     id: 14,
-    title: "10 Days Honeymoon Tour for Swat, Hunza & Skardu Valley",
-    location: "Swat, Hunza & Skardu",
+    title: "10 Days Honeymoon Tour for Swat, HUNZA & SKARDU Valley",
+    location: "Swat, HUNZA & SKARDU",
     duration: "10 Days 9 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "The ultimate honeymoon experience covering three beautiful valleys. Enjoy an extended romantic journey through Swat, Hunza, and Skardu. This comprehensive tour offers the best of northern Pakistan's natural beauty, culture, and adventure.",
+    description: "The ultimate honeymoon experience covering three beautiful valleys. Enjoy an extended romantic journey through Swat, HUNZA, and SKARDU. This comprehensive tour offers the best of northern Pakistan's natural beauty, culture, and adventure.",
     pointsToVisit: [
-      "Swat Valley", "Malam Jabba", "Kalam", "Mahodand Lake", "Chilas", "Hunza Valley", "Attabad Lake", "Baltit Fort", "Khunjerab Pass", "Skardu", "Shangrila Lake", "Deosai Plains"
+      "Swat Valley", "Malam Jabba", "Kalam", "Mahodand Lake", "Chilas", "HUNZA Valley", "Attabad Lake", "Baltit Fort", "Khunjerab Pass", "SKARDU", "Shangrila Lake", "DEOSAI Plains"
     ],
     highlights: [
-      "Explore three major valleys", "Visit Mahodand Lake", "Drive to Khunjerab Pass", "Explore Deosai Plains", "Visit historic forts", "Romantic stays throughout"
+      "Explore three major valleys", "Visit Mahodand Lake", "Drive to Khunjerab Pass", "Explore DEOSAI Plains", "Visit historic forts", "Romantic stays throughout"
     ],
     included: [
       "Transport", "9 Nights Accommodation", "9 Breakfasts", "Professional Guide", "Jeeps for special locations", "Bonfire", "Romantic room decoration"
@@ -1110,16 +1110,16 @@ const packageDetails: any = {
   },
   "15": {
     id: 15,
-    title: "6 Days Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "6 Days Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Immerse yourself in the beauty of Skardu with this comprehensive honeymoon package. Visit all major attractions and enjoy romantic experiences.",
-    pointsToVisit: ["Shangrila Lake", "Deosai Plains", "Manthoka Waterfall", "Sarfaranga Cold Desert", "Basho Valley", "Khaplu Valley"],
-    highlights: ["Visit Shangrila Resort", "Explore Deosai Plains", "Jeep safari to Basho Valley", "Visit Khaplu Palace", "Romantic stays"],
+    description: "Immerse yourself in the beauty of SKARDU with this comprehensive honeymoon package. Visit all major attractions and enjoy romantic experiences.",
+    pointsToVisit: ["Shangrila Lake", "DEOSAI Plains", "Manthoka Waterfall", "Sarfaranga Cold Desert", "Basho Valley", "Khaplu Valley"],
+    highlights: ["Visit Shangrila Resort", "Explore DEOSAI Plains", "Jeep safari to Basho Valley", "Visit Khaplu Palace", "Romantic stays"],
     included: ["Transport", "5 Nights Accommodation", "5 Breakfasts", "Professional Guide", "Jeeps for special locations", "Bonfire"],
     excluded: ["Lunch and Dinner", "Entry Tickets", "Personal expenses"],
     pricing: { perCouple: { standard: "PKR 165,000", deluxe: "PKR 210,000", executive: "PKR 255,000" } },
@@ -1161,33 +1161,33 @@ const packageDetails: any = {
   },
   "18": {
     id: 18,
-    title: "5 Days Honeymoon Package for Hunza Valley",
-    location: "Hunza Valley",
+    title: "5 Days Honeymoon Package for HUNZA Valley",
+    location: "HUNZA Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "Spend 5 romantic days in the beautiful Hunza Valley. Visit iconic locations and create unforgettable memories with your partner.",
-    pointsToVisit: ["Hunza Valley", "Attabad Lake", "Baltit Fort", "Altit Fort", "Passu Cones", "Khunjerab Pass", "Naltar Valley"],
-    highlights: ["Visit Attabad Lake", "Explore historic forts", "Drive to Khunjerab Pass", "Visit Naltar Valley", "Romantic stays"],
-    included: ["Transport", "4 Nights Accommodation", "4 Breakfasts", "Professional Guide", "Jeeps for Naltar", "Bonfire"],
+    description: "Spend 5 romantic days in the beautiful HUNZA Valley. Visit iconic locations and create unforgettable memories with your partner.",
+    pointsToVisit: ["HUNZA Valley", "Attabad Lake", "Baltit Fort", "Altit Fort", "Passu Cones", "Khunjerab Pass", "NALTAR Valley"],
+    highlights: ["Visit Attabad Lake", "Explore historic forts", "Drive to Khunjerab Pass", "Visit NALTAR Valley", "Romantic stays"],
+    included: ["Transport", "4 Nights Accommodation", "4 Breakfasts", "Professional Guide", "Jeeps for NALTAR", "Bonfire"],
     excluded: ["Lunch and Dinner", "Entry Tickets", "Personal expenses"],
     pricing: { perCouple: { standard: "PKR 145,000", deluxe: "PKR 185,000", executive: "PKR 225,000" } },
     notes: ["Hotels can be changed according to availability."]
   },
   "19": {
     id: 19,
-    title: "8 Days Honeymoon Package for Hunza Valley and Skardu Valley",
-    location: "Hunza & Skardu",
+    title: "8 Days Honeymoon Package for HUNZA Valley and SKARDU Valley",
+    location: "HUNZA & SKARDU",
     duration: "8 Days 7 nights",
     price: "Contact for Pricing",
     image: "/skardu1.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package",
-    description: "An extensive honeymoon tour covering both Hunza and Skardu valleys. Experience the best of northern Pakistan with your loved one.",
-    pointsToVisit: ["Hunza Valley", "Attabad Lake", "Khunjerab Pass", "Skardu", "Shangrila Lake", "Deosai Plains", "Basho Valley"],
-    highlights: ["Explore two major valleys", "Visit Khunjerab Pass", "Explore Deosai Plains", "Visit Shangrila Resort", "Romantic stays"],
+    description: "An extensive honeymoon tour covering both HUNZA and SKARDU valleys. Experience the best of northern Pakistan with your loved one.",
+    pointsToVisit: ["HUNZA Valley", "Attabad Lake", "Khunjerab Pass", "SKARDU", "Shangrila Lake", "DEOSAI Plains", "Basho Valley"],
+    highlights: ["Explore two major valleys", "Visit Khunjerab Pass", "Explore DEOSAI Plains", "Visit Shangrila Resort", "Romantic stays"],
     included: ["Transport", "7 Nights Accommodation", "7 Breakfasts", "Professional Guide", "Jeeps", "Bonfire"],
     excluded: ["Lunch and Dinner", "Entry Tickets", "Personal expenses"],
     pricing: { perCouple: { standard: "PKR 225,000", deluxe: "PKR 285,000", executive: "PKR 345,000" } },
@@ -1375,18 +1375,19 @@ export default function HoneymoonTourDetail() {
 
             {/* Itinerary */}
             {pkg.itinerary && pkg.itinerary.length > 0 && (
-              <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-red-700 mb-6">Itinerary</h2>
+              <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
+                <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
                 <div className="space-y-6">
                   {pkg.itinerary.map((item: any, index: number) => (
-                    <div key={index} className="border-l-4 border-red-600 pl-6 pb-6 last:pb-0">
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                          {item.day}
+                    <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                      <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                        <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                          <span className="text-[9px] uppercase tracking-wider">DAY</span>
+                          <span className="text-xl leading-none">{item.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                         </span>
-                        <h3 className="text-xl font-bold text-red-700">{item.title}</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
                       </div>
-                      <p className="text-gray-700 leading-relaxed whitespace-pre-line">{item.description}</p>
+                      <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{item.description}</p>
                     </div>
                   ))}
                 </div>

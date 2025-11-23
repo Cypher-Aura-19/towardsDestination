@@ -10,9 +10,9 @@ export default function PrivateToursByAir() {
   const packages = [
     {
       id: 1,
-      title: "7 Days By-Air Tour to Hunza & Skardu Valley",
+      title: "7 Days By-Air Tour to HUNZA & SKARDU Valley",
       duration: "7 Days 6 Nights",
-      location: "Hunza & Skardu",
+      location: "HUNZA & SKARDU",
       price: 0,
       image: "/hs.jpg",
       rating: null,
@@ -20,29 +20,29 @@ export default function PrivateToursByAir() {
     },
     {
       id: 2,
-      title: "3 Days By-Air Tour to Hunza Valley",
+      title: "3 Days By-Air Tour to HUNZA Valley",
       duration: "3 Days 2 Nights",
-      location: "Hunza",
+      location: "HUNZA",
       price: 0,
-      image: "/huna.jpg",
+      image: "/h345.jpg",
       rating: null,
       reviews: 0
     },
     {
       id: 3,
-      title: "4 Days By-Air Tour to Hunza Valley",
+      title: "4 Days By-Air Tour to HUNZA Valley",
       duration: "4 Days 3 Nights",
-      location: "Hunza Valley",
+      location: "HUNZA Valley",
       price: 0,
-      image: "/huna.jpg",
+      image: "/h345.jpg",
       rating: null,
       reviews: 0
     },
     {
       id: 4,
-      title: "5 Days By-Air Tour to Hunza Valley",
+      title: "5 Days By-Air Tour to HUNZA Valley",
       duration: "5 Days 4 Nights",
-      location: "Hunza Valley",
+      location: "HUNZA Valley",
       price: 0,
       image: "/huna.jpg",
       rating: null,
@@ -50,9 +50,9 @@ export default function PrivateToursByAir() {
     },
     {
       id: 5,
-      title: "4 Days By-Air Tour to Skardu Valley",
+      title: "4 Days By-Air Tour to SKARDU Valley",
       duration: "4 Days 3 Nights",
-      location: "Skardu Valley",
+      location: "SKARDU Valley",
       price: 0,
       image: "/ska345.jpg",
       rating: null,
@@ -60,9 +60,9 @@ export default function PrivateToursByAir() {
     },
     {
       id: 6,
-      title: "5 Days By-Air Tour to Skardu Valley",
+      title: "5 Days By-Air Tour to SKARDU Valley",
       duration: "5 Days 4 Nights",
-      location: "Skardu Valley",
+      location: "SKARDU Valley",
       price: 0,
       image: "/ska345.jpg",
       rating: null,
@@ -70,39 +70,39 @@ export default function PrivateToursByAir() {
     },
     {
       id: 7,
-      title: "7 Days By-Air Tour to Soq Valley",
+      title: "7 Days By-Air Tour to SOQ Valley",
       duration: "7 Days 6 Nights",
-      location: "Soq Valley",
+      location: "SOQ Valley",
       price: 0,
-      image: "/ska345.jpg",
+      image: "/temp.jpg",
       rating: null,
       reviews: 0
     },
     {
       id: 8,
-      title: "8 Days By-Air Tour to Nazbar Valley",
+      title: "8 Days By-Air Tour to NAZBAR Valley",
       duration: "8 Days 7 Nights",
-      location: "Nazbar Valley",
+      location: "NAZBAR Valley",
       price: 0,
-      image: "/ska345.jpg",
+      image: "/temp.jpg",
       rating: null,
       reviews: 0
     },
     {
       id: 9,
-      title: "7 Days By-Air Tour to Khorkundus Valley",
+      title: "7 Days By-Air Tour to KHORKUNDUS Valley",
       duration: "7 Days 6 Nights",
-      location: "Khorkundus Valley",
+      location: "KHORKUNDUS Valley",
       price: 0,
-      image: "/ska345.jpg",
+      image: "/temp.jpg",
       rating: null,
       reviews: 0
     },
     {
       id: 10,
-      title: "5 Days By-Air Tour to Fairy Meadows",
+      title: "5 Days By-Air Tour to FAIRY MEADOWS",
       duration: "5 Days 4 Nights",
-      location: "Fairy Meadows & Nanga Parbat",
+      location: "FAIRY MEADOWS & NANGA PARBAT",
       price: 0,
       image: "/fa.jpg",
       rating: null,
@@ -110,9 +110,9 @@ export default function PrivateToursByAir() {
     },
     {
       id: 11,
-      title: "5 Days By-Air Tour to Astore & Minimarg",
+      title: "5 Days By-Air Tour to ASTORE & MINIMARG",
       duration: "5 Days 4 Nights",
-      location: "Astore, Minimarg & Deosai Plains",
+      location: "ASTORE, MINIMARG & DEOSAI Plains",
       price: 0,
       image: "/asa.jpg",
       rating: null,
@@ -140,33 +140,33 @@ export default function PrivateToursByAir() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold" style={{ fontFamily: "'Poppins', sans-serif" }}>
               ✈️ TOWARDSDESTINATION.PK - Private Tours By Air
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Private Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Air Travel</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>By Air Travel</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
             Experience the beauty of Northern Pakistan with our exclusive private tours by air. Fast, comfortable, and personalized journeys tailored just for you.
           </p>
           
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 max-w-2xl">
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">9+</div>
-              <div className="text-xs text-white/80 font-semibold">Tour Packages</div>
+              <div className="text-2xl font-bold text-white font-numbers">9+</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Tour Packages</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">3-8</div>
-              <div className="text-xs text-white/80 font-semibold">Days Duration</div>
+              <div className="text-2xl font-bold text-white font-numbers">3-8</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Days Duration</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-xs text-white/80 font-semibold">Private & Custom</div>
+              <div className="text-2xl font-bold text-white font-numbers">100%</div>
+              <div className="text-xs text-white/80 font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>Private & Custom</div>
             </div>
           </div>
         </div>
@@ -177,13 +177,13 @@ export default function PrivateToursByAir() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
               ✈️ AVAILABLE PRIVATE TOUR PACKAGES
             </span>
-            <h2 className="text-4xl font-extrabold text-red-700 mb-4">
+            <h2 className="text-4xl font-extrabold text-red-700 mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Choose Your Perfect Air Tour
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
               All packages include flights, accommodation, meals, and personalized service. Contact us for custom pricing.
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function PrivateToursByAir() {
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
                     <Plane className="w-4 h-4 text-red-600" />
-                    <span className="text-xs font-medium text-red-600">By Air</span>
+                    <span className="text-xs font-medium text-red-600" style={{ fontFamily: "'Inter', sans-serif" }}>By Air</span>
                   </div>
                   {pkg.rating && (
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full flex items-center gap-1">
@@ -222,17 +222,17 @@ export default function PrivateToursByAir() {
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-gray-600 mb-2">
                     <MapPin className="w-4 h-4 text-red-600" />
-                    <span className="text-sm">{pkg.location}</span>
+                    <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-red-700 mb-3 group-hover:text-red-800 transition-colors">
+                  <h3 className="text-xl font-bold text-red-700 mb-3 group-hover:text-red-800 transition-colors card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     {pkg.title}
                   </h3>
 
                   <div className="flex items-center gap-4 mb-4 text-sm text-red-600">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      <span className="font-semibold">{pkg.duration}</span>
+                      <span className="font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.duration}</span>
                     </div>
                   </div>
 
@@ -241,14 +241,14 @@ export default function PrivateToursByAir() {
                     <div>
                       {pkg.price > 0 ? (
                         <>
-                          <p className="text-sm text-gray-600">Starting from</p>
-                          <p className="text-2xl font-bold text-red-700">PKR {pkg.price.toLocaleString()}</p>
+                          <p className="text-sm text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>Starting from</p>
+                          <p className="text-2xl font-bold text-red-700 font-numbers">PKR {pkg.price.toLocaleString()}</p>
                         </>
                       ) : (
-                        <p className="text-sm font-semibold text-red-600">Contact for Pricing</p>
+                        <p className="text-sm font-semibold text-red-600" style={{ fontFamily: "'Inter', sans-serif" }}>Contact for Pricing</p>
                       )}
                     </div>
-                    <div className="bg-red-600 group-hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
+                    <div className="bg-red-600 group-hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2" style={{ fontFamily: "'Inter', sans-serif" }}>
                       View Details
                       <ArrowRight className="w-4 h-4" />
                     </div>
@@ -263,7 +263,7 @@ export default function PrivateToursByAir() {
       {/* Why Choose Air Travel */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-red-700 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-red-700 mb-12 text-center section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Why Choose Private Tours By Air?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -271,8 +271,8 @@ export default function PrivateToursByAir() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Plane className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-700 mb-2">Save Time</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-700 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Save Time</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Reach your destination in hours instead of days, maximizing your vacation time.
               </p>
             </div>
@@ -280,8 +280,8 @@ export default function PrivateToursByAir() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-700 mb-2">Aerial Views</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-700 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Aerial Views</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Enjoy breathtaking views of mountain ranges and valleys from above.
               </p>
             </div>
@@ -289,8 +289,8 @@ export default function PrivateToursByAir() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-700 mb-2">Exclusive Experience</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-700 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Exclusive Experience</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Private tours tailored to your preferences with personalized service.
               </p>
             </div>

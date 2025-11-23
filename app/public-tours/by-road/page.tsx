@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
@@ -20,18 +20,18 @@ const packages = [
     image: "/kumrat.jpg",
     rating: 4.8,
     reviews: 125,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 2,
-    title: "5 Days Trip to Hunza & Naltar Valley",
+    title: "5 Days Trip to HUNZA & NALTAR Valley",
     duration: "5 Days, 4 Nights",
-    location: "Hunza & Naltar",
+    location: "HUNZA & NALTAR",
     price: 22000,
     image: "/hunza1.jpg",
     rating: 4.9,
     reviews: 210,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const packages = [
     image: "/naran1.jpg",
     rating: 5.0,
     reviews: 98,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const packages = [
     image: "/naran1.jpg",
     rating: 4.7,
     reviews: 156,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const packages = [
     image: "/neelum5.jpg",
     rating: 4.9,
     reviews: 189,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const packages = [
     image: "/neelum.jpg",
     rating: 4.6,
     reviews: 87,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ const packages = [
     image: "/neelum.jpg",
     rating: 4.7,
     reviews: 92,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ const packages = [
     image: "/kumrat.jpg",
     rating: 4.8,
     reviews: 143,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 9,
@@ -108,51 +108,51 @@ const packages = [
     image: "/neelum3.jpg",
     rating: 4.5,
     reviews: 76,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 10,
-    title: "5 Days Trip to Fairy Meadows & Beyal Camp",
+    title: "5 Days Trip to FAIRY MEADOWS & Beyal Camp",
     duration: "5 Days 4 Nights",
-    location: "Fairy Meadows",
+    location: "FAIRY MEADOWS",
     price: 24000,
     image: "/logo.jpeg",
     rating: 4.9,
     reviews: 167,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 11,
-    title: "6 Days Trip to Astore | Minimarg | Rama Meadows| Deosai",
+    title: "6 Days Trip to ASTORE | MINIMARG | Rama Meadows| DEOSAI",
     duration: "6 Days 5 Nights",
-    location: "Astore & Deosai",
+    location: "ASTORE & DEOSAI",
     price: 28000,
     image: "/astore.jpg",
     rating: 4.8,
     reviews: 134,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 12,
-    title: "8 Days Trip to Hunza & Skardu Valley",
+    title: "8 Days Trip to HUNZA & SKARDU Valley",
     duration: "8 Days 7 Nights",
-    location: "Hunza & Skardu",
+    location: "HUNZA & SKARDU",
     price: 32000,
     image: "/skardu8.jpg",
     rating: 4.8,
     reviews: 150,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 13,
-    title: "6 Days Trip to Skardu & Deosai Plains",
+    title: "6 Days Trip to SKARDU & DEOSAI Plains",
     duration: "6 Days 5 Nights",
-    location: "Skardu & Deosai",
+    location: "SKARDU & DEOSAI",
     price: 26000,
     image: "/skardu6.jpg",
     rating: 4.7,
     reviews: 120,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 14,
@@ -163,7 +163,7 @@ const packages = [
     image: "/neelum.jpg",
     rating: 4.6,
     reviews: 95,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 15,
@@ -174,7 +174,7 @@ const packages = [
     image: "/swat.jpg",
     rating: 4.7,
     reviews: 110,
-    city: "lahore-islamabad-faisalabad"
+    city: "Lahore-Islamabad-Faisalabad"
   },
   {
     id: 16,
@@ -211,9 +211,9 @@ const packages = [
   },
   {
     id: 19,
-    title: "09 Days Trip to Hunza Valley (From Karachi)",
+    title: "09 Days Trip to HUNZA Valley (From Karachi)",
     duration: "9 days, 8 nights",
-    location: "Hunza Valley",
+    location: "HUNZA Valley",
     price: 42000,
     image: "/hunza1.jpg",
     rating: 0,
@@ -222,9 +222,9 @@ const packages = [
   },
   {
     id: 20,
-    title: "12 Days Tour package Hunza & Skardu Valley (From Karachi)",
+    title: "12 Days Tour package HUNZA & SKARDU Valley (From Karachi)",
     duration: "12 days, 11 nights",
-    location: "Hunza & Skardu Valley",
+    location: "HUNZA & SKARDU Valley",
     price: 50000,
     image: "/skardu8.jpg",
     rating: 0,
@@ -233,14 +233,14 @@ const packages = [
   },
   {
     id: 21,
-    title: "Discover Pakistan: Hunza | Skardu | Lahore | Islamabad (8 Days Trip)",
+    title: "Discover Pakistan: HUNZA | SKARDU | Lahore | Islamabad (8 Days Trip)",
     duration: "8 Days 7 Nights",
-    location: "Hunza, Skardu, Lahore & Islamabad",
+    location: "HUNZA, SKARDU, Lahore & Islamabad",
     price: 455,
     image: "/hunza1.jpg",
     rating: 0,
     reviews: 0,
-    city: "lahore-islamabad-faisalabad",
+    city: "Lahore-Islamabad-Faisalabad",
     currency: "USD"
   }
 ];
@@ -270,17 +270,17 @@ const packages = [
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
               🚌 TOWARDSDESTINATION.PK - Public Group Tours
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Northern Pakistan Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Road Travel</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>By Road Travel</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
             Journey through the legendary Karakoram Highway with our group tours. Experience scenic mountain roads and breathtaking views at a comfortable pace.
           </p>
           
@@ -307,13 +307,13 @@ const packages = [
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
               🚌 AVAILABLE TOUR PACKAGES
             </span>
-            <h2 className="text-4xl font-extrabold text-red-600 mb-4">
+            <h2 className="text-4xl font-extrabold text-red-600 mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Choose Your Perfect Road Tour
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
               All packages include comfortable transport, accommodation, meals, and guided tours. Experience the journey!
             </p>
           </div>
@@ -332,9 +332,9 @@ const packages = [
                 All Tours
               </button>
               <button
-                onClick={() => setSelectedCity("lahore-islamabad-faisalabad")}
+                onClick={() => setSelectedCity("Lahore-Islamabad-Faisalabad")}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                  selectedCity === "lahore-islamabad-faisalabad"
+                  selectedCity === "Lahore-Islamabad-Faisalabad"
                     ? "bg-red-600 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
@@ -382,7 +382,7 @@ const packages = [
                     <span className="text-sm">{pkg.location}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-red-600 mb-3">
+                  <h3 className="text-xl font-bold text-red-600 mb-3 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     {pkg.title}
                   </h3>
 
@@ -429,7 +429,7 @@ const packages = [
       {/* Why Choose Road Travel */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Why Choose Road Travel?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -437,8 +437,8 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Scenic Journey</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Scenic Journey</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Experience the world-famous Karakoram Highway with countless photo opportunities.
               </p>
             </div>
@@ -446,8 +446,8 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Bus className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Budget Friendly</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Budget Friendly</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 More economical option while still enjoying comfortable travel and great experiences.
               </p>
             </div>
@@ -455,8 +455,8 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Cultural Immersion</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Cultural Immersion</h3>
+              <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Stop at local villages, interact with communities, and experience authentic culture.
               </p>
             </div>

@@ -49,8 +49,8 @@ const packageDetails: any = {
   },
   "5": {
     id: 5,
-    title: "Explore Pakistan: Hunza | Skardu | Islamabad (12 Days Trip: By Road)",
-    location: "Hunza, Skardu & Islamabad",
+    title: "Explore Pakistan: HUNZA | SKARDU | Islamabad (12 Days Trip: By Road)",
+    location: "HUNZA, SKARDU & Islamabad",
     duration: "12 Days 10 Nights",
     price: "Contact for Pricing",
     image: "/hunza1.jpg",
@@ -97,11 +97,11 @@ export default function LuxuryToursPage() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Premium Luxury Tours
           </h1>
           
-          <p className="text-xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md">
+          <p className="text-xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md" style={{ fontFamily: "'Inter', sans-serif" }}>
             Experience Pakistan's beauty in ultimate comfort and style. Our luxury tours offer 
             premium accommodations, exclusive experiences, and personalized service.
           </p>
@@ -126,10 +126,10 @@ export default function LuxuryToursPage() {
       {/* Tours Grid */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Our Luxury Tour Packages
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
             Indulge in the finest travel experiences with our carefully curated luxury packages
           </p>
         </div>
@@ -160,18 +160,18 @@ export default function LuxuryToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-amber-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-amber-600 transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   {pkg.title}
                 </h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">
                     <MapPin className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span className="text-sm">{pkg.location}</span>
+                    <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
                     <Calendar className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span className="text-sm">{pkg.duration}</span>
+                    <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.duration}</span>
                   </div>
                 </div>
 
@@ -205,8 +205,8 @@ export default function LuxuryToursPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Accommodations</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Premium Accommodations</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Stay in the finest 5-star hotels and luxury resorts with world-class amenities
               </p>
             </div>
@@ -215,8 +215,8 @@ export default function LuxuryToursPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Exclusive Experiences</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Exclusive Experiences</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Access to VIP locations and unique experiences not available to regular tourists
               </p>
             </div>
@@ -225,8 +225,8 @@ export default function LuxuryToursPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Personalized Service</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Personalized Service</h3>
+              <p className="text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Dedicated tour managers and 24/7 concierge service for your comfort
               </p>
             </div>

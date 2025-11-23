@@ -12,9 +12,9 @@ import { useState } from "react";
 const formatTextWithBold = (text: string) => {
   const importantWords = [
     // Locations
-    'Kumrat', 'Kala Chashma', 'Dojanga', 'Hunza', 'Skardu', 'Naltar', 'Neelum', 'Arang Kel', 'Ratti Gali',
-    'Naran', 'Shogran', 'Swat', 'Kalam', 'Malam Jabba', 'Fairy Meadows', 'Beyal Camp', 'Deosai',
-    'Astore', 'Minimarg', 'Rama', 'Attabad', 'Passu', 'Khunjerab', 'Chitral', 'Kalash', 'Shandur',
+    'Kumrat', 'Kala Chashma', 'Dojanga', 'HUNZA', 'SKARDU', 'NALTAR', 'Neelum', 'Arang Kel', 'Ratti Gali',
+    'Naran', 'Shogran', 'Swat', 'Kalam', 'Malam Jabba', 'FAIRY MEADOWS', 'Beyal Camp', 'DEOSAI',
+    'ASTORE', 'MINIMARG', 'Rama', 'Attabad', 'Passu', 'Khunjerab', 'Chitral', 'Kalash', 'Shandur',
     'Gilgit', 'Baltistan', 'Kashmir', 'Taobat', 'Sharda', 'Kel', 'Keran', 'Basho', 'Shigar',
     'Khyber Pakhtunkhwa', 'KPK', 'AJK', 'Azad Kashmir', 'Baltit Fort', 'Altit Fort',
     // Activities
@@ -148,14 +148,14 @@ const packageDetails: any = {
   },
   "2": {
     "id": 2,
-    "title": "5 Days Trip to Hunza & Naltar Valley",
+    "title": "5 Days Trip to HUNZA & NALTAR Valley",
     "location": "Gilgit",
     "duration": "5 Days, 4 Nights",
     "price": 22000,
     "image": "/hunza1.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of Hunza & Naltar Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
+    "description": "EXPERIENCE THE MESMERIZING VIEW OF HUNZA AND NALTAR VALLEY WITH @towardsdestination.pk . Book your Trip Now and Experience the Beauty of HUNZA & NALTAR Valley with @towardsdestination.pk. @towardsdestination.pk is known for planning and executing the best tours in North Pakistan, including trekking tours, Cycling Tours, Camping Tours, Cultural Tours and much more. Please visit our website to get the complete details of available Pakistan Tour Package. Our tour guides and other local support staff enable a host-guest environment in North Pakistan which others fail to deliver.",
     "pointsToVisit": [
       "Mansehra",
       "Balakot",
@@ -168,11 +168,11 @@ const packageDetails: any = {
       "Junction Point Of Three Mightiest Mountains",
       "Gilgit",
       "Nomal",
-      "Naltar Valley",
+      "NALTAR Valley",
       "Satrangi Lake",
       "Blue Water Lake",
-      "Hunza Valley",
-      "Hunza Shopping Center",
+      "HUNZA Valley",
+      "HUNZA Shopping Center",
       "Karimabad Bazar",
       "Attabad Lake",
       "Attabad Tunnel",
@@ -185,7 +185,7 @@ const packageDetails: any = {
       "Khunjerab Pass"
     ],
     "highlights": [
-      "Visit Hunza & Naltar Valley",
+      "Visit HUNZA & NALTAR Valley",
       "Explore Satrangi Lake and Blue Water Lake",
       "Visit Attabad Lake and Passu Cones",
       "Drive to Khunjerab Pass (China Border)",
@@ -226,9 +226,9 @@ const packageDetails: any = {
         "executive": "Hotel Homes / Executive Retreat"
       },
       {
-        "location": "Hunza",
+        "location": "HUNZA",
         "standard": "River Garden / Valley Inn / Mountain Lodge",
-        "deluxe": "Northern Sapphire / Hunza Serena",
+        "deluxe": "Northern Sapphire / HUNZA Serena",
         "premium": "Roomy Dastan / Premium Resort",
         "executive": "Ambiance Resort / Luxury Villas"
       },
@@ -279,7 +279,7 @@ const packageDetails: any = {
     "notes": [
       "DINNER IS NOT INCLUDED IN EXECUTIVE PACKAGE.",
       "Any Type of Jeep charges and Entry Tickets are not included in the package.",
-      "Jeep charges for Naltar Valley will be Rs. 2500/head. (Approximately)",
+      "Jeep charges for NALTAR Valley will be Rs. 2500/head. (Approximately)",
       "All the Hotels are subject to availability and can be changed due to availability issues."
     ],
     "itinerary": [
@@ -296,7 +296,7 @@ const packageDetails: any = {
       {
         "day": "Day 02",
         "title": "(NALTAR VALLEY - HUNZA VALLEY)",
-        "description": "Breakfast call Departure for Hunza Valley at 9:00Am Sightseeing of Indus River Short stay at Nanga Parbat Viewpoint Short stay at where three Mightiest Mountain Ranges of the world Meet Arrival to Nomal Valley Transfer to Jeep for Naltar Valley (jeep charges not included) Departure for Naltar Valley Visit Naltar Valley Visit Satrangi Lake visit Blue Water Lake Explore the Beauty of Naltar Valley Back to Nomal Valley and Transfer to Coaster/Van"
+        "description": "Breakfast call Departure for HUNZA Valley at 9:00Am Sightseeing of Indus River Short stay at Nanga Parbat Viewpoint Short stay at where three Mightiest Mountain Ranges of the world Meet Arrival to Nomal Valley Transfer to Jeep for NALTAR Valley (jeep charges not included) Departure for NALTAR Valley Visit NALTAR Valley Visit Satrangi Lake visit Blue Water Lake Explore the Beauty of NALTAR Valley Back to Nomal Valley and Transfer to Coaster/Van"
       },
       {
         "day": "Day 03",
@@ -330,7 +330,7 @@ const packageDetails: any = {
     "image": "/naran1.jpg",
     "groupSize": "21-25 person",
     "tourType": "Daily Tour",
-    "description": "Indulge in a dreamy getaway with our Naran & Shogran Honeymoon Tour Package (3 Days), designed for couples seeking romance and adventure. This short yet enchanting trip offers breathtaking views, serene landscapes, and unforgettable experiences. Whether you wish to explore lush green valleys, enjoy cozy evenings by the riverside, or capture stunning moments in nature, this tour has everything to make your honeymoon truly special.",
+    "description": "Indulge in a dreamy getaway with our Naran & Shogran Honeymoon Tour Package (3 Days), designed for couples seeking romance and adventure. This short yet enchanting trip offers breathtaking views, serene landscapes, and unforgettable experiences. Whether you wish to explore lush green Valleys, enjoy cozy evenings by the riverside, or capture stunning moments in nature, this tour has everything to make your honeymoon truly special.",
     "pointsToVisit": [
       "Shogran",
       "Siri paye Meadows",
@@ -849,7 +849,7 @@ const packageDetails: any = {
     "price": 17500,
     "image": "/neelum.jpg",
     "tourType": "Specific Tour",
-    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with @towardsdestination.pk (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
+    "description": "Experience the mesmerizing beauty of Taobat and Arang Kel, Kashmir with @towardsdestination.pk (Pvt.) Ltd. Our well-planned trips offer breathtaking views of lush Valleys, crystal rivers, and snow-capped peaks. Whether you are a nature lover, photographer, or adventure seeker, this Kashmir tour is your chance to discover the true charm of northern Pakistan. Book now and explore the untouched beauty of Neelum Valley with us!",
     "pointsToVisit": [
       "Murree",
       "Kohalla_Bridge",
@@ -1251,14 +1251,14 @@ const packageDetails: any = {
   },
   "10": {
     "id": 10,
-    "title": "5 Days Trip to Fairy Meadows & Beyal Camp",
-    "location": "Fairy Meadows",
+    "title": "5 Days Trip to FAIRY MEADOWS & Beyal Camp",
+    "location": "FAIRY MEADOWS",
     "duration": "5 Days 4 Nights",
     "price": 24000,
     "image": "/logo.jpeg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "@towardsdestination.pk Presents 5 Days Trip to Fairy Meadows & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk Presents 5 Days Trip to FAIRY MEADOWS & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1267,12 +1267,12 @@ const packageDetails: any = {
       "Chillas",
       "Raikot Bridge",
       "Tattu village",
-      "Fairy meadows",
+      "FAIRY MEADOWS",
       "German View point",
       "Nanga Parbat Base Camp (Beyal Camp)"
     ],
     "highlights": [
-      "Trek to Fairy Meadows",
+      "Trek to FAIRY MEADOWS",
       "Visit Beyal Camp (Nanga Parbat Base Camp)",
       "See the German Viewpoint",
       "Jeep ride from Raikot Bridge to Tattu village",
@@ -1306,8 +1306,8 @@ const packageDetails: any = {
         "executive": "Not Available"
       },
       {
-        "location": "Fairy Meadows",
-        "standard": "Fairy Meadows View Point Cottages / Alpine Huts / Mountain Lodge",
+        "location": "FAIRY MEADOWS",
+        "standard": "FAIRY MEADOWS View Point Cottages / Alpine Huts / Mountain Lodge",
         "deluxe": "Not Available",
         "premium": "Hotel Sarai / Luxury Cottages",
         "executive": "Not Available"
@@ -1382,12 +1382,12 @@ const packageDetails: any = {
       {
         "day": "Day 02",
         "title": "CHILAS- RAIKOT- FAIRY MEADOWS",
-        "description": "Breakfast Call early Morning Departure for Raikot at 9:00 AM Jeep Ride from Raikot to tattu Village (Jeeps charges are not included in the package) Start trek to Fairy Meadows (3 hrs.) Short stays on the way Arrival to fairy Meadows Dinner/Night Stay in Fairy Meadows"
+        "description": "Breakfast Call early Morning Departure for Raikot at 9:00 AM Jeep Ride from Raikot to tattu Village (Jeeps charges are not included in the package) Start trek to FAIRY MEADOWS (3 hrs.) Short stays on the way Arrival to FAIRY MEADOWS Dinner/Night Stay in FAIRY MEADOWS"
       },
       {
         "day": "Day 03",
         "title": "FAIRY MEAOWS - BEYAL CAMP",
-        "description": "Early morning breakfast call Start Trek to Nanga Parbat Base Camp (3 to 4 Hrs) Short Stay and Refreshments at Nanga Parbat Base Camp Visit German view point Trek back to Fairy Meadows Bonfire and musical night at Camp site Dinner and Night Stay in Fairy Meadows"
+        "description": "Early morning breakfast call Start Trek to Nanga Parbat Base Camp (3 to 4 Hrs) Short Stay and Refreshments at Nanga Parbat Base Camp Visit German view point Trek back to FAIRY MEADOWS Bonfire and musical night at Camp site Dinner and Night Stay in FAIRY MEADOWS"
       },
       {
         "day": "Day 04",
@@ -1409,13 +1409,13 @@ const packageDetails: any = {
   },
   "11": {
     "id": 11,
-    "title": "6 Days Trip to Astore | Minimarg | Rama Meadows| Deosai",
+    "title": "6 Days Trip to ASTORE | MINIMARG | Rama Meadows| DEOSAI",
     "location": "Gilgit",
     "duration": "6 Days 5 Nights",
     "price": 28000,
     "image": "/astore.jpg",
     "tourType": "Specific Tour",
-    "description": "@towardsdestination.pk presents Astore | Minimarg | Rama Meadows| Deosai. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk presents ASTORE | MINIMARG | Rama Meadows| DEOSAI. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1425,9 +1425,9 @@ const packageDetails: any = {
       "Babusar Top",
       "Lulusar lake",
       "Chillas",
-      "Astore",
+      "ASTORE",
       "Rama Meadows",
-      "Deosai Plains",
+      "DEOSAI Plains",
       "Chilam",
       "Minimerg",
       "Domail",
@@ -1435,8 +1435,8 @@ const packageDetails: any = {
       "Trishing Valley"
     ],
     "highlights": [
-      "Explore Astore, Minimarg, Rama Meadows, and Deosai",
-      "Visit Rama Lake and Deosai Plains",
+      "Explore ASTORE, MINIMARG, Rama Meadows, and DEOSAI",
+      "Visit Rama Lake and DEOSAI Plains",
       "See Sheosar Lake",
       "Visit Burzil Top and Domail",
       "Explore Trishing Valley",
@@ -1463,7 +1463,7 @@ const packageDetails: any = {
     "hotelList": [
       {
         "location": "CHILAS",
-        "standard": "Fairy Meadows Cottages / Mountain Inn / Regal Inn",
+        "standard": "FAIRY MEADOWS Cottages / Mountain Inn / Regal Inn",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
@@ -1476,8 +1476,8 @@ const packageDetails: any = {
         "executive": "Not Available"
       },
       {
-        "location": "Astore",
-        "standard": "Rama Midway Hotel / Astore Inn / Valley Lodge",
+        "location": "ASTORE",
+        "standard": "Rama Midway Hotel / ASTORE Inn / Valley Lodge",
         "deluxe": "Not Available",
         "premium": "Not Available",
         "executive": "Not Available"
@@ -1534,12 +1534,12 @@ const packageDetails: any = {
       {
         "day": "Day 01",
         "title": "ISLAMABAD - CHILAS",
-        "description": "First stop of 40 Minutes for Breakfast at Balakot valley Sightseeing of Kunhar river Short stay at Kiwai waterfall Short stay at Naran bazar Short stay at Lulusar lake Short stay at Babusar Top Sightseeing of Water streams on way Continue Drive to Chilas Short stays on the ways Dinner and Night stay in Chilas"
+        "description": "First stop of 40 Minutes for Breakfast at Balakot Valley Sightseeing of Kunhar river Short stay at Kiwai waterfall Short stay at Naran bazar Short stay at Lulusar lake Short stay at Babusar Top Sightseeing of Water streams on way Continue Drive to Chilas Short stays on the ways Dinner and Night stay in Chilas"
       },
       {
         "day": "Day 02",
         "title": "CHILAS - RAMA MEADOWS",
-        "description": "Breakfast Call Departure for Rama Meadows Arrival to Astore Bazar Transfer to 4*4 Jeep Visit Rama Meadows start hiking towards Rama Meadows Visit Rama Lake and surrounding Back to Rama Meadows in the Evening Overnight at Rama Meadows"
+        "description": "Breakfast Call Departure for Rama Meadows Arrival to ASTORE Bazar Transfer to 4*4 Jeep Visit Rama Meadows start hiking towards Rama Meadows Visit Rama Lake and surrounding Back to Rama Meadows in the Evening Overnight at Rama Meadows"
       },
       {
         "day": "Day 03",
@@ -1548,8 +1548,8 @@ const packageDetails: any = {
       },
       {
         "day": "Day 04",
-        "title": "MINIMARG - DEOSAI - Astore",
-        "description": "Breakfast call Departure for Deosai Plains Short stay at Burzil Top Visit Sheosar Lake Free time for enjoyment at Deasai National Park Back to Astore in the evening Dinner and night stay at Astore"
+        "title": "MINIMARG - DEOSAI - ASTORE",
+        "description": "Breakfast call Departure for DEOSAI Plains Short stay at Burzil Top Visit Sheosar Lake Free time for enjoyment at DEOSAI National Park Back to ASTORE in the evening Dinner and night stay at ASTORE"
       },
       {
         "day": "Day 05",
@@ -1559,7 +1559,7 @@ const packageDetails: any = {
       {
         "day": "Day 06",
         "title": "CHILAS/ NARAN - ISB- LHR",
-        "description": "Breakfast Call Free Time for Rafting at Naran Departure for islamabad and Lahore Short stay at Balakot for Lunch Arrival in Islamabad 6:00PM Arrival in Lahore Late Night"
+        "description": "Breakfast Call Free Time for Rafting at Naran Departure for Islamabad and Lahore Short stay at Balakot for Lunch Arrival in Islamabad 6:00PM Arrival in Lahore Late Night"
       }
     ],
     "contact": {
@@ -1571,14 +1571,14 @@ const packageDetails: any = {
   },
   "12": {
     "id": 12,
-    "title": "8 Days Trip to Hunza & Skardu Valley",
+    "title": "8 Days Trip to HUNZA & SKARDU Valley",
     "location": "Gilgit",
     "duration": "8 Days 7 Nights",
     "price": 32000,
     "image": "/skardu8.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "@towardsdestination.pk Presents 8 Days Trip to Hunza & Skardu Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk Presents 8 Days Trip to HUNZA & SKARDU Valley. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -1593,8 +1593,8 @@ const packageDetails: any = {
       "Gilgit",
       "Altit Fort",
       "Baltit Fort",
-      "Hunza Valley",
-      "Hunza Shoping Center",
+      "HUNZA Valley",
+      "HUNZA Shoping Center",
       "Attabad Lake",
       "Attabad Tunnel",
       "Rakaposhi View Point",
@@ -1618,13 +1618,13 @@ const packageDetails: any = {
       "Basho suspention Bridge"
     ],
     "highlights": [
-      "Explore Hunza and Skardu Valleys",
+      "Explore HUNZA and SKARDU Valleys",
       "Visit Attabad Lake, Passu Cones, and Khunjerab Pass (seasonal)",
       "See Altit and Baltit Forts",
       "Visit Upper Kachura Lake and Shangrilla Resort",
       "Explore Shigar Fort and Sarfaranga Cold Desert",
       "Visit Manthoka Waterfall",
-      "Visit Deosai Plains (seasonal) or Basho Valley (seasonal)",
+      "Visit DEOSAI Plains (seasonal) or Basho Valley (seasonal)",
       "Drive along the Karakoram Highway",
       "Cross Babusar Top (seasonal)",
       "Visit Nanga Parbat View Point"
@@ -1651,7 +1651,7 @@ const packageDetails: any = {
       "Tips for Guide, porter & cook",
       "Anything not mentioned in the “SERVICES INCLUDES” list",
       "Dinner (for Premium and Executive Packages)",
-      "Jeep charges for Deosai Plains (Rs. 3,000/head)"
+      "Jeep charges for DEOSAI Plains (Rs. 3,000/head)"
     ],
     "hotelList": [
       {
@@ -1669,14 +1669,14 @@ const packageDetails: any = {
         "executive": "Hotel Homes"
       },
       {
-        "location": "Hunza",
-        "standard": "Hunza Hidden Palace",
+        "location": "HUNZA",
+        "standard": "HUNZA Hidden Palace",
         "deluxe": "Blossom Inn",
         "premium": "Roomy Dastan",
         "executive": "Ambiance Resort"
       },
       {
-        "location": "Skardu",
+        "location": "SKARDU",
         "standard": "Trout Villa",
         "deluxe": "Hisper Hotel",
         "premium": "Gumaan Resorts",
@@ -1729,7 +1729,7 @@ const packageDetails: any = {
     "notes": [
       "Any Type of Jeep charges and Entry Tickets are not included in the package.",
       "Dinner is not inlcuded in Premium and Executive Package.",
-      "Jeep charges for Deosai Plains will be Rs. 3,000/head. (Approximately)",
+      "Jeep charges for DEOSAI Plains will be Rs. 3,000/head. (Approximately)",
       "All the Hotels are subject to availability and can be changed due to availability issues."
     ],
     "itinerary": [
@@ -1746,27 +1746,27 @@ const packageDetails: any = {
       {
         "day": "Day 02",
         "title": "CHILAS - KACHURA LAKE - SKARDU",
-        "description": "Breakfast call Departure for Skardu Valley Short stay at Nanga Parbat view point short stay at 3 Mountain Junction point Visit Upper Kachura lake skardu. Visit Shangrilla resort and Shangrilla Lake Arrival to Skardu Overnight at Skardu"
+        "description": "Breakfast call Departure for SKARDU Valley Short stay at Nanga Parbat view point short stay at 3 Mountain Junction point Visit Upper Kachura lake skardu. Visit Shangrilla resort and Shangrilla Lake Arrival to SKARDU Overnight at SKARDU"
       },
       {
         "day": "Day 03",
         "title": "SKARDU - MANTHOKA - SHIGAR",
-        "description": "Breakfast Call Departure for Manthoka waterfall Free time for Enjoyment at Manthoka waterfall Departure for Sarfaranga Cold Desert Arrival to Sarfaranga Cold Desert Free time for activities at Sarfarnga Cold Desert Visit Shigar Fort Visit Amburuq Masjid (if time left) Back to Skardu city Overnight at Skardu Valley"
+        "description": "Breakfast Call Departure for Manthoka waterfall Free time for Enjoyment at Manthoka waterfall Departure for Sarfaranga Cold Desert Arrival to Sarfaranga Cold Desert Free time for activities at Sarfarnga Cold Desert Visit Shigar Fort Visit Amburuq Masjid (if time left) Back to SKARDU city Overnight at SKARDU Valley"
       },
       {
         "day": "Day 04",
         "title": "SKRADU - BASHO MEADOWS",
-        "description": "Breakfast Call Transfer to jeeps On this day, Transfer to 4x4 jeeps for Basho Valley then Departure for Basho Valley Visit Bashu Suspension Bridge Visit Basho Valley Spend whole day there Back to Skardu in the evening Overnight at Skardu"
+        "description": "Breakfast Call Transfer to jeeps On this day, Transfer to 4x4 jeeps for Basho Valley then Departure for Basho Valley Visit Bashu Suspension Bridge Visit Basho Valley Spend whole day there Back to SKARDU in the evening Overnight at SKARDU"
       },
       {
         "day": "Day 05",
         "title": "SKARDU - HUNZA",
-        "description": "Breakfast call Travaling towards Hunza on the way Short stay at Astak Nala Visit Nagar Rakaposhi view point, Visit Altit fort /Baltit fort Visit Karimabad Bazar Dinner and night stay in Hunza"
+        "description": "Breakfast call Travaling towards HUNZA on the way Short stay at Astak Nala Visit Nagar Rakaposhi view point, Visit Altit fort /Baltit fort Visit Karimabad Bazar Dinner and night stay in HUNZA"
       },
       {
         "day": "Day 06",
         "title": "HUNZA - ATTABAD LAKE - PASSU CONES - HUNZA",
-        "description": "Breakfast call Traveling towards China border (If Opens) Visit Ataabad lake Visit Hussaini bridge/Rainbow Bridge, Visit Passu cones, Visit Passu glaciar Lunch break at Gircha Visit Khunjrab Border (If Opens) Free time for Enjoyment at Khunjrab Border Back to Hunza Overnight at Hunza Valley"
+        "description": "Breakfast call Traveling towards China border (If Opens) Visit Ataabad lake Visit Hussaini bridge/Rainbow Bridge, Visit Passu cones, Visit Passu glaciar Lunch break at Gircha Visit Khunjrab Border (If Opens) Free time for Enjoyment at Khunjrab Border Back to HUNZA Overnight at HUNZA Valley"
       },
       {
         "day": "Day 07",
@@ -1788,14 +1788,14 @@ const packageDetails: any = {
   },
   "13": {
     "id": 13,
-    "title": "6 Days Trip to Skardu & Deosai Plains",
+    "title": "6 Days Trip to SKARDU & DEOSAI Plains",
     "location": "Gilgit",
     "duration": "6 Days 5 Nights",
     "price": 26000,
     "image": "/skardu6.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "@towardsdestination.pk presents 6 days trip to Skardu & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
+    "description": "@towardsdestination.pk presents 6 days trip to SKARDU & Basho Meadows. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",
     "pointsToVisit": [
       "Sightseeing of Balakot",
       "Kiwai Waterfall",
@@ -1808,7 +1808,7 @@ const packageDetails: any = {
       "Nanga Parbat view point",
       "3 mountain junction point",
       "Shangrila Resort",
-      "Skardu valley",
+      "SKARDU Valley",
       "lower Kachura Lake",
       "Upper Kachura Lake",
       "Sadpara lake",
@@ -1816,11 +1816,11 @@ const packageDetails: any = {
       "Kharmang Valley",
       "Shigar Valley",
       "Shigar Fort",
-      "Deosai Plains",
+      "DEOSAI Plains",
       "Sheosar Lake",
       "Sarfranga Cold Desert",
       "Katpana cold desert",
-      "Skardu city",
+      "SKARDU city",
       "Chunda Valley",
       "Sightseeing of Besham",
       "Dassu waterfall",
@@ -1832,7 +1832,7 @@ const packageDetails: any = {
       "Basho waterfall"
     ],
     "highlights": [
-      "Explore Skardu Valley and Deosai Plains (seasonal)",
+      "Explore SKARDU Valley and DEOSAI Plains (seasonal)",
       "Visit Shangrila Resort and Upper/Lower Kachura Lakes",
       "See Manthoka Waterfall and Shigar Fort",
       "Experience Sarfranga/Katpana Cold Deserts",
@@ -1860,7 +1860,7 @@ const packageDetails: any = {
       "Rescue, Helicopter coverage.",
       "Tips for Guide, porter & cook",
       "Anything not mentioned in the “SERVICES INCLUDES” list",
-      "Jeep charges for Deosai Plains (Rs. 3,000/head)"
+      "Jeep charges for DEOSAI Plains (Rs. 3,000/head)"
     ],
     "hotelList": [
       {
@@ -1878,8 +1878,8 @@ const packageDetails: any = {
         "executive": "Hotel Homes / Executive Retreat"
       },
       {
-        "location": "Skardu",
-        "standard": "Trout Villa / Skardu Inn / Valley View",
+        "location": "SKARDU",
+        "standard": "Trout Villa / SKARDU Inn / Valley View",
         "deluxe": "Hisper Hotel / Mountain Resort",
         "premium": "Gumaan Resorts / Luxury Lodge",
         "executive": "Gumaan Resorts / Executive Suites"
@@ -1930,7 +1930,7 @@ const packageDetails: any = {
     ],
     "notes": [
       "Any Type of Jeep charges and Entry Tickets are not included in the package.",
-      "Jeep charges for Deosai Plains will be Rs. 3,000/head. (Approximately)",
+      "Jeep charges for DEOSAI Plains will be Rs. 3,000/head. (Approximately)",
       "All the Hotels are subject to availability and can be changed due to availability issues."
     ],
     "itinerary": [
@@ -1947,17 +1947,17 @@ const packageDetails: any = {
       {
         "day": "Day 02",
         "title": "CHILAS - KACHURA LAKES - SKARDU",
-        "description": "Breakfast call Departure for Skardu Valley Short stay at Nanga Parbat view point short stay at 3 Mountain Junction point Visit Upper Kachura lake skardu. Visit Shangrilla resort and Shangrilla Lake Arrival to Skardu Overnight at Skardu"
+        "description": "Breakfast call Departure for SKARDU Valley Short stay at Nanga Parbat view point short stay at 3 Mountain Junction point Visit Upper Kachura lake skardu. Visit Shangrilla resort and Shangrilla Lake Arrival to SKARDU Overnight at SKARDU"
       },
       {
         "day": "Day 03",
         "title": "SKARDU - MANTHOKA - SHIGAR",
-        "description": "Breakfast Call Departure for Manthoka waterfall Free time for Enjoyment at Manthoka waterfall Departure for Sarfaranga Cold Desert Arrival to Sarfaranga Cold Desert Free time for activities at Sarfarnga Cold Desert Visit Shigar Fort Visit Amburuq Masjid (if time left) Back to Skardu city Overnight at Skardu Valley"
+        "description": "Breakfast Call Departure for Manthoka waterfall Free time for Enjoyment at Manthoka waterfall Departure for Sarfaranga Cold Desert Arrival to Sarfaranga Cold Desert Free time for activities at Sarfarnga Cold Desert Visit Shigar Fort Visit Amburuq Masjid (if time left) Back to SKARDU city Overnight at SKARDU Valley"
       },
       {
         "day": "Day 04",
         "title": "SKARDU - BASHO MEADOWS",
-        "description": "Breakfast Call Transfer to jeeps On this day, Transfer to 4x4 jeeps for Basho Valley then Departure for Basho Valley Visit Bashu Suspension Bridge Visit Basho Valley Spend whole day there Back to Skardu in the evening Overnight at Skardu"
+        "description": "Breakfast Call Transfer to jeeps On this day, Transfer to 4x4 jeeps for Basho Valley then Departure for Basho Valley Visit Bashu Suspension Bridge Visit Basho Valley Spend whole day there Back to SKARDU in the evening Overnight at SKARDU"
       },
       {
         "day": "Day 05",
@@ -2244,7 +2244,7 @@ const packageDetails: any = {
     "image": "/shogran.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents Shogran & Kashmir valley Trips from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
+    "description": "Nature Explorer Tours Presents Shogran & Kashmir Valley Trips from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
     "pointsToVisit": [
       "Balakot",
       "Kiwai waterfall",
@@ -2320,10 +2320,10 @@ const packageDetails: any = {
       "karachiTwinSharing": {
         "standard": "52,500"
       },
-      "islamabadQuadSharing": {
+      "IslamabadQuadSharing": {
         "standard": "22,000"
       },
-      "islamabadTwinSharing": {
+      "IslamabadTwinSharing": {
         "standard": "27,500"
       }
     },
@@ -2397,7 +2397,7 @@ const packageDetails: any = {
     "image": "/swat.jpg",
     "groupSize": "21-25 persone",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents Pakistan Trip to Swat, Shogran & Kashmir valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Swat, Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
+    "description": "Nature Explorer Tours Presents Pakistan Trip to Swat, Shogran & Kashmir Valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Paksitan Trip with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Swat, Kashmir & Shogran Valley in one go then just DM us & book your Trip now with us.",
     "pointsToVisit": [
       "Swat Valley",
       "Fizaghat",
@@ -2406,7 +2406,7 @@ const packageDetails: any = {
       "Kalam",
       "Madayan",
       "Ushu Forest",
-      "Palogha valley",
+      "Palogha Valley",
       "Mahudhand Lake",
       "Saif ullah Lake",
       "Shangla Top",
@@ -2491,10 +2491,10 @@ const packageDetails: any = {
       "karachiTwinSharing": {
         "standard": "62,000"
       },
-      "islamabadQuadSharing": {
+      "IslamabadQuadSharing": {
         "standard": "30,000"
       },
-      "islamabadTwinSharing": {
+      "IslamabadTwinSharing": {
         "standard": "40,000"
       }
     },
@@ -2579,7 +2579,7 @@ const packageDetails: any = {
     "image": "/swat.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents 07 Days Trip to Swat valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Swat Valley with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
+    "description": "Nature Explorer Tours Presents 07 Days Trip to Swat Valley from Karachi for thier Beloved Clients. Enjoy your Special Moments at Swat Valley with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to HUNZA Valley then just DM us & book your Trip now with us.",
     "pointsToVisit": [
       "Swat Valley",
       "Fizaghat",
@@ -2588,7 +2588,7 @@ const packageDetails: any = {
       "Kalam",
       "Madayan",
       "Ushu Forest",
-      "Palogha valley",
+      "Palogha Valley",
       "Mahudhand Lake",
       "Saif ullah Lake"
     ],
@@ -2597,7 +2597,7 @@ const packageDetails: any = {
       "Visit Malam Jabba ski resort",
       "See Kalam & Bahrain",
       "Visit Mahudhand Lake & Saif ullah Lake",
-      "Explore Ushu Forest & Palogha valley",
+      "Explore Ushu Forest & Palogha Valley",
       "Bonfire & Live BBQ"
     ],
     "included": [
@@ -2658,11 +2658,11 @@ const packageDetails: any = {
         "deluxe": "45,000",
         "executive": "52,500"
       },
-      "islamabadQuadSharing": {
+      "IslamabadQuadSharing": {
         "standard": "13,000",
         "deluxe": "17,500"
       },
-      "islamabadTwinSharing": {
+      "IslamabadTwinSharing": {
         "standard": "15,000",
         "deluxe": "20,000",
         "executive": "27,500"
@@ -2690,14 +2690,14 @@ const packageDetails: any = {
   },
   "19": {
     "id": 19,
-    "title": "09 Days Trip to Hunza Valley (From Karachi)",
-    "location": "Hunza Valley",
+    "title": "09 Days Trip to HUNZA Valley (From Karachi)",
+    "location": "HUNZA Valley",
     "duration": "9 days, 8 nights",
     "price": 42000,
     "image": "/hunza1.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents 09 Days Trip to Hunza valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to Hunza Valley then just DM us & book your Trip now with us.",
+    "description": "Nature Explorer Tours Presents 09 Days Trip to HUNZA Valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip to HUNZA Valley then just DM us & book your Trip now with us.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -2712,8 +2712,8 @@ const packageDetails: any = {
       "Gilgit",
       "Altit Fort",
       "Baltit Fort",
-      "Hunza Valley",
-      "Hunza Shoping Center",
+      "HUNZA Valley",
+      "HUNZA Shoping Center",
       "Attabad Lake",
       "Attabad Tunnel",
       "Rakaposhi View Point",
@@ -2726,7 +2726,7 @@ const packageDetails: any = {
       "Basha dam Sight"
     ],
     "highlights": [
-      "Visit Hunza Valley & Karimabad",
+      "Visit HUNZA Valley & Karimabad",
       "Explore Attabad Lake & Passu Cones",
       "Drive to Khunjerab Pass (China Border)",
       "Visit Altit & Baltit Forts",
@@ -2766,11 +2766,11 @@ const packageDetails: any = {
         "executive": "Shangrilla Hotel / Executive Suites"
       },
       {
-        "location": "Hunza",
-        "standard": "Hunza Hidden Palace / Valley Inn / Mountain Lodge",
-        "deluxe": "Northern Sapphire / Hunza Serena",
+        "location": "HUNZA",
+        "standard": "HUNZA Hidden Palace / Valley Inn / Mountain Lodge",
+        "deluxe": "Northern Sapphire / HUNZA Serena",
         "premium": "Roomy Dastan / Premium Resort",
-        "executive": "Luxus Hunza / Luxury Villas"
+        "executive": "Luxus HUNZA / Luxury Villas"
       },
       {
         "location": "Besham",
@@ -2800,10 +2800,10 @@ const packageDetails: any = {
         "premium": "65,000",
         "executive": "85,000"
       },
-      "islamabadQuadSharing": {
+      "IslamabadQuadSharing": {
         "standard": "21,000"
       },
-      "islamabadTwinSharing": {
+      "IslamabadTwinSharing": {
         "standard": "24,000",
         "deluxe": "32,500",
         "premium": "40,000",
@@ -2818,7 +2818,7 @@ const packageDetails: any = {
       "For Karachi Participants: Only Standard hotels will be provided in Islamabad, regardless of the package they choose.",
       "Executive class bus tickets are included in the package. (for Karachi to Islamabad – Islamabad to Karachi Travel)",
       "Any Type of Jeep charges and Entry Tickets are not included in the package.",
-      "Jeep charges for Naltar Valley will be Rs. 3,000/head. (Approximately)",
+      "Jeep charges for NALTAR Valley will be Rs. 3,000/head. (Approximately)",
       "All the Hotels are subject to availability and can be changed due to availability issues."
     ],
     "itinerary": [],
@@ -2831,14 +2831,14 @@ const packageDetails: any = {
   },
   "20": {
     "id": 20,
-    "title": "12 Days Tour package Hunza & Skardu Valley (From Karachi)",
-    "location": "Hunza & Skardu Valley",
+    "title": "12 Days Tour package HUNZA & SKARDU Valley (From Karachi)",
+    "location": "HUNZA & SKARDU Valley",
     "duration": "12 days, 11 nights",
     "price": 50000,
     "image": "/skardu8.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
-    "description": "Nature Explorer Tours Presents 12 Days Trip to Hunza & Skardu valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip then just DM us & book your Trip now with us.",
+    "description": "Nature Explorer Tours Presents 12 Days Trip to HUNZA & SKARDU Valley from Karachi for thier Beloved Clients. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones. If you are looking for Travelling with your Loved ones for Honeymoon or Bacholor Trip then just DM us & book your Trip now with us.",
     "pointsToVisit": [
       "Mansehra",
       "Karakoram highway",
@@ -2853,8 +2853,8 @@ const packageDetails: any = {
       "Gilgit",
       "Altit Fort",
       "Baltit Fort",
-      "Hunza Valley",
-      "Hunza Shoping Center",
+      "HUNZA Valley",
+      "HUNZA Shoping Center",
       "Attabad Lake",
       "Attabad Tunnel",
       "Rakaposhi View Point",
@@ -2878,7 +2878,7 @@ const packageDetails: any = {
       "Basho suspention Bridge"
     ],
     "highlights": [
-      "Visit Hunza Valley & Skardu Valley",
+      "Visit HUNZA Valley & SKARDU Valley",
       "Explore Attabad Lake & Passu Cones",
       "Drive to Khunjerab Pass (China Border)",
       "Visit Altit & Baltit Forts",
@@ -2926,14 +2926,14 @@ const packageDetails: any = {
         "executive": "Serena Hotel"
       },
       {
-        "location": "Hunza",
-        "standard": "Hunza Hidden Palace",
+        "location": "HUNZA",
+        "standard": "HUNZA Hidden Palace",
         "deluxe": "Northern Sapphire",
         "premium": "Roomy Dastan",
-        "executive": "Luxus Hunza"
+        "executive": "Luxus HUNZA"
       },
       {
-        "location": "Skardu",
+        "location": "SKARDU",
         "standard": "Trout Villa",
         "deluxe": "Snowland",
         "premium": "Avari Express",
@@ -2967,10 +2967,10 @@ const packageDetails: any = {
         "premium": "92,500",
         "executive": "120,000"
       },
-      "islamabadQuadSharing": {
+      "IslamabadQuadSharing": {
         "standard": "30,000"
       },
-      "islamabadTwinSharing": {
+      "IslamabadTwinSharing": {
         "standard": "35,000",
         "deluxe": "50,000",
         "premium": "67,500",
@@ -2998,26 +2998,26 @@ const packageDetails: any = {
   },
   "21": {
     "id": 21,
-    "title": "Discover Pakistan: Hunza | Skardu | Lahore | Islamabad (8 Days Trip)",
-    "location": "Hunza, Skardu, Lahore & Islamabad",
+    "title": "Discover Pakistan: HUNZA | SKARDU | Lahore | Islamabad (8 Days Trip)",
+    "location": "HUNZA, SKARDU, Lahore & Islamabad",
     "duration": "8 Days 7 Nights",
     "price": 455,
     "image": "/hunza1.jpg",
     "groupSize": "21-25",
     "tourType": "Daily Tour",
-    "description": "Nature Explorer tours Offers Discover Pakistan: Hunza | Skardu | Lahore | Islamabad Package for their beloved clients. If you are looking for comfortable Trip to North Pakistan in one go then you are at right place. We have a Various range of trekking tours in north Pakistan. People who are looking for adventurous tours then these Tour Package are recommended. Experience the beauty of Pakistan with this amazing journey. Explore the peaceful valleys of Hunza and Skardu, full of natural wonders. Visit Lahore for its rich culture and history, and enjoy the modern charm of Islamabad. Travel by road and air for a smooth and memorable trip!",
+    "description": "Nature Explorer tours Offers Discover Pakistan: HUNZA | SKARDU | Lahore | Islamabad Package for their beloved clients. If you are looking for comfortable Trip to North Pakistan in one go then you are at right place. We have a Various range of trekking tours in north Pakistan. People who are looking for adventurous tours then these Tour Package are recommended. Experience the beauty of Pakistan with this amazing journey. Explore the peaceful Valleys of HUNZA and SKARDU, full of natural wonders. Visit Lahore for its rich culture and history, and enjoy the modern charm of Islamabad. Travel by road and air for a smooth and memorable trip!",
     "pointsToVisit": [
       "Islamabad",
       "Naran Valley",
       "Gilgit",
-      "Hunza Valley",
+      "HUNZA Valley",
       "Attabad Lake",
       "Passu Cones",
       "Khunjerab Pass",
       "Altit Fort",
       "Baltit Fort",
-      "Naltar Valley",
-      "Skardu Valley",
+      "NALTAR Valley",
+      "SKARDU Valley",
       "Shangrila Resort",
       "Upper Kachura Lake",
       "Shigar Valley",
@@ -3029,11 +3029,11 @@ const packageDetails: any = {
       "Minar-e-Pakistan"
     ],
     "highlights": [
-      "Explore Hunza Valley & Skardu Valley",
+      "Explore HUNZA Valley & SKARDU Valley",
       "Visit Attabad Lake with boating",
       "Drive to Khunjerab Pass (China Border)",
       "Visit Altit & Baltit Forts",
-      "Explore Naltar Valley & SOQ Valley",
+      "Explore NALTAR Valley & SOQ Valley",
       "Visit Shangrila Resort & Upper Kachura Lake",
       "See Manthoka Waterfall",
       "Visit Saif ul Malook Lake",
@@ -3049,7 +3049,7 @@ const packageDetails: any = {
       "07 Nights Hotel accommodation (Twin Sharing)",
       "Meal: Full Board (7 Breakfast-7 Lunches- 8 Dinners)",
       "Visa support/invitation letter for travelling",
-      "Jeeps for Naltar, SOQ Valley and Saif ul Malook Lake",
+      "Jeeps for NALTAR, SOQ Valley and Saif ul Malook Lake",
       "Tickets for Altit/Baltit fort/Shangrila Resort/ Manthoka Waterfall/ Khunjrab National Park",
       "Boating at Attabad Lake",
       "Traditional Musical Night with Bonfire",
@@ -3084,10 +3084,10 @@ const packageDetails: any = {
         "executive": "Serena Hotel Gilgit / Riverdale Hotel"
       },
       {
-        "location": "Hunza Valley",
-        "standard": "Hunza Hidden Palace / Darvesh Hotel / Campo de Berg",
-        "deluxe": "Grand Motel Hunza / Tribes and Tales / Passu Tourist Lodges",
-        "executive": "Monarch Resort / Famree Resort / Hunza Darbar / Luxus Hotel Attabad Lake / Hard Rocks"
+        "location": "HUNZA Valley",
+        "standard": "HUNZA Hidden Palace / Darvesh Hotel / Campo de Berg",
+        "deluxe": "Grand Motel HUNZA / Tribes and Tales / Passu Tourist Lodges",
+        "executive": "Monarch Resort / Famree Resort / HUNZA Darbar / Luxus Hotel Attabad Lake / Hard Rocks"
       },
       {
         "location": "Besham",
@@ -3096,8 +3096,8 @@ const packageDetails: any = {
         "executive": "Besham Hilton Hotel / Besham Continental"
       },
       {
-        "location": "Skardu",
-        "standard": "Trout Villa Hotel / Skardu Viewpoint / Baltistan Resort",
+        "location": "SKARDU",
+        "standard": "Trout Villa Hotel / SKARDU Viewpoint / Baltistan Resort",
         "deluxe": "Space Hotel Shigar / Maple Hotel / Himalaya Inn",
         "executive": "La Vista Resort / Shangrila Hotel / Khoj Resort / Serena Hotel Shigar Valley / Serena Hotel Khaplu Valley / Byrsa"
       },
@@ -3346,7 +3346,7 @@ export default function TourDetailPage() {
                 Why Choose the {pkg.title}?
               </h2>
               <p className="text-gray-700 leading-relaxed text-lg font-light tracking-wide">
-                This package blends natural beauty, tranquility, and adventure, making it an ideal choice for travelers. From exploring scenic valleys to enjoying peaceful moments, every aspect is filled with memorable experiences and relaxation.
+                This package blends natural beauty, tranquility, and adventure, making it an ideal choice for travelers. From exploring scenic Valleys to enjoying peaceful moments, every aspect is filled with memorable experiences and relaxation.
               </p>
             </section>
 
@@ -3527,32 +3527,32 @@ export default function TourDetailPage() {
                     <h3 className="text-xl font-bold text-gray-900 mb-4">From Islamabad</h3>
                     
                     {/* Quad Sharing */}
-                    {pkg.pricing.islamabadQuadSharing && (
+                    {pkg.pricing.IslamabadQuadSharing && (
                       <div className="mb-4">
                         <h4 className="text-sm font-semibold text-gray-700 mb-2">Quad Sharing (4 Persons in one Room)</h4>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                          {pkg.pricing.islamabadQuadSharing.standard && (
+                          {pkg.pricing.IslamabadQuadSharing.standard && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Standard</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.standard}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadQuadSharing.standard}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadQuadSharing.deluxe && (
+                          {pkg.pricing.IslamabadQuadSharing.deluxe && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Deluxe</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.deluxe}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadQuadSharing.deluxe}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadQuadSharing.premium && (
+                          {pkg.pricing.IslamabadQuadSharing.premium && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Premium</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.premium}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadQuadSharing.premium}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadQuadSharing.executive && (
+                          {pkg.pricing.IslamabadQuadSharing.executive && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Executive</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadQuadSharing.executive}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadQuadSharing.executive}</div>
                             </div>
                           )}
                         </div>
@@ -3560,32 +3560,32 @@ export default function TourDetailPage() {
                     )}
                     
                     {/* Twin Sharing */}
-                    {pkg.pricing.islamabadTwinSharing && (
+                    {pkg.pricing.IslamabadTwinSharing && (
                       <div>
                         <h4 className="text-sm font-semibold text-gray-700 mb-2">Twin Sharing (2 Persons in one Room)</h4>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                          {pkg.pricing.islamabadTwinSharing.standard && (
+                          {pkg.pricing.IslamabadTwinSharing.standard && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Standard</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.standard}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadTwinSharing.standard}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadTwinSharing.deluxe && (
+                          {pkg.pricing.IslamabadTwinSharing.deluxe && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Deluxe</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.deluxe}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadTwinSharing.deluxe}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadTwinSharing.premium && (
+                          {pkg.pricing.IslamabadTwinSharing.premium && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Premium</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.premium}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadTwinSharing.premium}</div>
                             </div>
                           )}
-                          {pkg.pricing.islamabadTwinSharing.executive && (
+                          {pkg.pricing.IslamabadTwinSharing.executive && (
                             <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
                               <div className="text-xs text-gray-600 mb-1">Executive</div>
-                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.islamabadTwinSharing.executive}</div>
+                              <div className="text-lg font-bold text-blue-700">PKR {pkg.pricing.IslamabadTwinSharing.executive}</div>
                             </div>
                           )}
                         </div>
@@ -3833,17 +3833,19 @@ export default function TourDetailPage() {
             </section>
 
             {/* Tour Itinerary */}
-            <section className="bg-white rounded-xl p-8 shadow-sm">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Tour Itinerary</h2>
+            <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
+              <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
               <div className="space-y-6">
                 {pkg.itinerary.map((day: any, index: number) => (
-                  <div key={index} className="relative border-l-4 border-teal-600 pl-8 py-4 hover:bg-teal-50 rounded-r-lg transition-colors group">
-                    <div className="absolute -left-3 top-6 w-6 h-6 bg-teal-600 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                      <span className="text-teal-600">{day.day}:</span>
-                      <span>{day.title}</span>
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed font-light">
+                  <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                    <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                      <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                        <span className="text-[9px] uppercase tracking-wider">DAY</span>
+                        <span className="text-xl leading-none">{day.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
+                      </span>
+                      <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <FormattedText text={day.description} />
                     </p>
                   </div>

@@ -337,13 +337,19 @@ export default function LuxuryTourDetail() {
 
             {/* Itinerary */}
             {pkg.itinerary && (
-              <section className="bg-white rounded-xl p-8 border border-amber-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-amber-700 mb-6">Detailed Itinerary</h2>
+              <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
+                <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
                 <div className="space-y-6">
                   {pkg.itinerary.map((day: any, index: number) => (
-                    <div key={index} className="border-l-4 border-amber-500 pl-6 py-2">
-                      <h3 className="text-xl font-bold text-amber-700 mb-2">{day.day}: {day.title}</h3>
-                      <p className="text-gray-700 leading-relaxed">{day.description}</p>
+                    <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                      <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                        <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                          <span className="text-[9px] uppercase tracking-wider">DAY</span>
+                          <span className="text-xl leading-none">{day.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
+                        </span>
+                        <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{day.description}</p>
                     </div>
                   ))}
                 </div>

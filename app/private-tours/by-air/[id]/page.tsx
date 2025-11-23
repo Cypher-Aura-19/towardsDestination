@@ -12,23 +12,23 @@ import Link from "next/link";
 const packageDetails: any = {
   "1": {
     id: 1,
-    title: "7 Days By-Air Tour to Hunza & Skardu Valley",
-    location: "Hunza & Skardu",
+    title: "7 Days By-Air Tour to HUNZA & SKARDU Valley",
+    location: "HUNZA & SKARDU",
     duration: "7 Days 6 Nights",
     price: null,
     image: "/hs.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Embark on a 7-day honeymoon in Hunza and Skardu by air, designed for couples seeking romance, adventure, and breathtaking landscapes. This exclusive getaway offers a blend of luxury, culture, and nature, making it the perfect honeymoon experience.",
+    description: "Embark on a 7-day honeymoon in HUNZA and SKARDU by air, designed for couples seeking romance, adventure, and breathtaking landscapes. This exclusive getaway offers a blend of luxury, culture, and nature, making it the perfect honeymoon experience.",
     pointsToVisit: [
       "Scenic Flight to Gilgit",
       "Luxury Honeymoon Stays",
       "Attabad Lake Boat Ride",
       "Eagle’s Nest Sunset",
       "Baltit & Altit Forts",
-      "Deosai National Park",
+      "DEOSAI National Park",
       "Shangrila & Upper Kachura Lake",
-      "Cold Desert of Skardu"
+      "Cold Desert of SKARDU"
     ],
     highlights: [
       "Scenic Flight to Gilgit",
@@ -36,9 +36,9 @@ const packageDetails: any = {
       "Attabad Lake Boat Ride",
       "Eagle’s Nest Sunset",
       "Baltit & Altit Forts",
-      "Deosai National Park",
+      "DEOSAI National Park",
       "Shangrila & Upper Kachura Lake",
-      "Cold Desert of Skardu"
+      "Cold Desert of SKARDU"
     ],
     included: [
       "Transport (Toyota Corolla/Toyota Parado)",
@@ -46,7 +46,7 @@ const packageDetails: any = {
       "7 Days,6 Nights",
       "6 Breakfasts",
       "Jeeps for Basho Valley",
-      "Jeeps for Naltar",
+      "Jeeps for NALTAR",
       "Destination Photoshoot (will be charged separately)",
       "Bonfire",
       "Music Instrument"
@@ -57,14 +57,14 @@ const packageDetails: any = {
       "Any kind of Entry Tickets"
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" },
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" },
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Alpine Guest House", deluxe: "Duroyou Inn", executive: "Serena Gilgit" }
     ],
     departureSchedule: [
-      { city: "Islamabad", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" },
-      { city: "Lahore", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" },
-      { city: "Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" }
+      { city: "Islamabad", departure1: "Flight to SKARDU (PIA/Air Blue)", departure2: "-" },
+      { city: "Lahore", departure1: "Flight to SKARDU (PIA/Air Blue)", departure2: "-" },
+      { city: "Karachi", departure1: "Flight to SKARDU (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -86,33 +86,33 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Skardu valley",
-        description: "Pick up members from Skardu Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in Skardu"
+        title: "Lahore/Islamabad - SKARDU Valley",
+        description: "Pick up members from SKARDU Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in SKARDU"
       },
       {
         day: "Day 02",
         title: "Sarfaranga Cold Desert - Manthoka Waterfall",
-        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 03",
         title: "Chocolate Rocks - Basho Valley",
-        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 04",
-        title: "Skardu to Hunza",
-        description: "After breakfast Departure for Hunza Valley \nShort stay at Astak Nala \nVisit Rakaposhi view point \nVisit Altit Fort & Baltit Fort (If time allows, otherwise will visit on return) \nFree time for shopping at Karimabad bazar \nArrival at Hunza and Check in Hotel \nDinner and Night stay in Skardu"
+        title: "SKARDU To HUNZA",
+        description: "After breakfast Departure for HUNZA Valley \nShort stay at Astak Nala \nVisit Rakaposhi view point \nVisit Altit Fort & Baltit Fort (If time allows, otherwise will visit on return) \nFree time for shopping at Karimabad bazar \nArrival at HUNZA and Check in Hotel \nDinner and Night stay in SKARDU"
       },
       {
         day: "Day 05",
-        title: "Explore Hunza- Attabad Lake - Passu Cones",
-        description: "After breakfast Departure for Khunjrab Pass \nVisit Attabad Lake by crossing the longest tunnel beside Attabad \nLake. \nVisit of Suspension Bridge Hussaini Bridge \nVisit borith lake \nShort stay at Passu Cones and Glacier View Point. \nVisit Khunjrab Border (if road is open) \nDrive back to Hunza \nDinner & Night at Hunza"
+        title: "Explore HUNZA - Attabad Lake - Passu Cones",
+        description: "After breakfast Departure for Khunjrab Pass \nVisit Attabad Lake by crossing the longest tunnel beside Attabad \nLake. \nVisit of Suspension Bridge Hussaini Bridge \nVisit borith lake \nShort stay at Passu Cones and Glacier View Point. \nVisit Khunjrab Border (if road is open) \nDrive back to HUNZA \nDinner & Night at HUNZA"
       },
       {
         day: "Day 06",
-        title: "Hunza - Naltar",
-        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for Naltar Valley \nVisit Naltar Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of Naltar Valley \nAfter Visiting Naltar and Leave for Gilgit \nDinner and Night stay at Gilgit"
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for NALTAR Valley \nVisit NALTAR Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of NALTAR Valley \nAfter Visiting NALTAR and Leave for Gilgit \nDinner and Night stay at Gilgit"
       },
       {
         day: "Day 07",
@@ -129,14 +129,14 @@ const packageDetails: any = {
   },
   "2": {
     id: 2,
-    title: "3 Days By-Air Tour to Hunza Valley",
-    location: "Hunza",
+    title: "3 Days By-Air Tour to HUNZA Valley",
+    location: "HUNZA",
     duration: "3 Days 2 Nights",
     price: null,
-    image: "/huna.jpg",
+    image: "/h345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Escape to Hunza Valley with a 3-day honeymoon package by air, designed for couples seeking breathtaking landscapes, luxury, and intimate moments. This trip blends serene beauty, rich culture, and adventure, creating a perfect getaway for newlyweds.",
+    description: "Escape to HUNZA Valley with a 3-day honeymoon package by air, designed for couples seeking breathtaking landscapes, luxury, and intimate moments. This trip blends serene beauty, rich culture, and adventure, creating a perfect getaway for newlyweds.",
     pointsToVisit: [
       "Scenic Flight to Gilgit",
       "Luxury Stay with a Romantic Setup",
@@ -166,7 +166,7 @@ const packageDetails: any = {
       "Any kind of Entry Tickets"
     ],
     hotelList: [
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus Hunza" }
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Northern Sapphire", executive: "Luxus HUNZA" }
     ],
     departureSchedule: [
       { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Gilgit (PIA/Air Blue)", departure2: "-" }
@@ -191,13 +191,13 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Gilgit Airport",
-        description: "Pickup Members from Gilgit Airport \nDeparture for Hunza Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in Hunza \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in Hunza"
+        title: "Lahore/Islamabad - Gilgit Airport",
+        description: "Pickup Members from Gilgit Airport \nDeparture for HUNZA Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in HUNZA \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 02",
-        title: "Exploring Hunza Valley",
-        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to Hunza and Visit Karimabad Bazar \nOvernight stay in Hunza \nNight stay and Dinner in Hunza"
+        title: "Exploring HUNZA Valley",
+        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to HUNZA and Visit Karimabad Bazar \nOvernight stay in HUNZA \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 03",
@@ -214,35 +214,35 @@ const packageDetails: any = {
   },
   "3": {
     id: 3,
-    title: "4 Days By-Air Tour to Hunza Valley",
+    title: "4 Days By-Air Tour to HUNZA Valley",
     location: "Gilgit",
     duration: "4 Days 3 Nights",
     price: null,
-    image: "/huna.jpg",
+    image: "/h345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Embark on a 4-day by air trip to Hunza Valley, where nature, history, and adventure come together for an unforgettable experience. Located in Gilgit-Baltistan, Hunza is renowned for its snow-capped peaks, crystal-clear lakes, and centuries-old forts. This tour ensures comfort and convenience, making it perfect for a short yet immersive getaway.",
+    description: "Embark on a 4-day by air trip to HUNZA Valley, where nature, history, and adventure come together for an unforgettable experience. Located in Gilgit-Baltistan, HUNZA is renowned for its snow-capped peaks, crystal-clear lakes, and centuries-old forts. This tour ensures comfort and convenience, making it perfect for a short yet immersive getaway.",
     pointsToVisit: [
       "Scenic Flight to Gilgit",
       "Attabad Lake & Passu Cones",
       "Baltit & Altit Forts",
       "Eagle’s Nest Viewpoint",
       "Local Culture & Cuisine",
-      "Naltar Valley"
+      "NALTAR Valley"
     ],
     highlights: [
       "Scenic Flight to Gilgit – Fly over the majestic Karakoram Range.",
       "Attabad Lake & Passu Cones – Witness the stunning turquoise lake and dramatic rock formations.",
-      "Baltit & Altit Forts – Step into Hunza’s rich history.",
+      "Baltit & Altit Forts – Step into HUNZA’s rich history.",
       "Eagle’s Nest Viewpoint – Enjoy panoramic sunrise and sunset views.",
-      "Local Culture & Cuisine – Indulge in traditional Hunza dishes and meet warm, hospitable locals."
+      "Local Culture & Cuisine – Indulge in traditional HUNZA dishes and meet warm, hospitable locals."
     ],
     included: [
       "Transport (Toyota Corolla/Toyota Parado)",
       "Fuel/Toll Tax/Challan/Driver/Guide",
       "4 Days,3 Nights",
       "3 Breakfasts",
-      "Jeeps for Naltar",
+      "Jeeps for NALTAR",
       "Destination Photoshoot (will be charged separately)",
       "Bonfire",
       "Music Instrument"
@@ -253,7 +253,7 @@ const packageDetails: any = {
       "Any kind of Entry Tickets"
     ],
     hotelList: [
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus Hunza" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Duroyou Inn", deluxe: "Destination Hotel", executive: "Ramada Gilgit" }
     ],
     departureSchedule: [
@@ -279,18 +279,18 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Gilgit Airport",
-        description: "Pickup Members from Gilgit Airport \nDeparture for Hunza Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in Hunza \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in Hunza"
+        title: "Lahore/Islamabad - Gilgit Airport",
+        description: "Pickup Members from Gilgit Airport \nDeparture for HUNZA Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in HUNZA \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 02",
-        title: "Exploring Hunza Valley",
-        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to Hunza and Visit Karimabad Bazar \nOvernight stay in Hunza \nNight stay and Dinner in Hunza"
+        title: "Exploring HUNZA Valley",
+        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to HUNZA and Visit Karimabad Bazar \nOvernight stay in HUNZA \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 03",
-        title: "Hunza - Naltar Valley",
-        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for Naltar Valley \nVisit Naltar Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of Naltar Valley \nAfter Visiting Naltar and Leave for Gilgit \nDinner and Night stay at Gilgit"
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for NALTAR Valley \nVisit NALTAR Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of NALTAR Valley \nAfter Visiting NALTAR and Leave for Gilgit \nDinner and Night stay at Gilgit"
       },
       {
         day: "Day 04",
@@ -307,14 +307,14 @@ const packageDetails: any = {
   },
   "4": {
     id: 4,
-    title: "5 Days By-Air Tour to Hunza Valley",
-    location: "Hunza",
+    title: "5 Days By-Air Tour to HUNZA Valley",
+    location: "HUNZA",
     duration: "5 Days 4 Nights",
     price: null, // Price is complex, see pricing object
     image: "/huna.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Discover the breathtaking beauty of Hunza Valley with our 5-day by air trip, designed for a seamless and unforgettable experience. Nestled in Gilgit-Baltistan, Hunza is famous for its majestic peaks, serene lakes, and rich cultural heritage. This journey offers comfort, adventure, and spectacular landscapes, making it an ideal escape for travelers.",
+    description: "Discover the breathtaking beauty of HUNZA Valley with our 5-day by air trip, designed for a seamless and unforgettable experience. Nestled in Gilgit-Baltistan, HUNZA is famous for its majestic peaks, serene lakes, and rich cultural heritage. This journey offers comfort, adventure, and spectacular landscapes, making it an ideal escape for travelers.",
     pointsToVisit: [
       "Scenic Flight to Gilgit",
       "Attabad Lake & Passu Cones",
@@ -334,7 +334,7 @@ const packageDetails: any = {
       "Fuel/Toll Tax/Challan/Driver/Guide",
       "5 Days,4 Nights",
       "5 Breakfasts",
-      "Jeeps for Naltar",
+      "Jeeps for NALTAR",
       "Destination Photoshoot (will be charged separately)", // Combined from two broken list items
       "Bonfire",
       "Music Instrument"
@@ -345,7 +345,7 @@ const packageDetails: any = {
       "Any kind of Entry Tickets"
     ],
     hotelList: [
-      { location: "Hunza", standard: "Hunza Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus Hunza" },
+      { location: "HUNZA", standard: "HUNZA Hidden Palace", deluxe: "Dastan By Roomy", executive: "Luxus HUNZA" },
       { location: "Gilgit", standard: "Duroyou Inn", deluxe: "Destination Hotel", executive: "Ramada Gilgit" }
     ],
     departureSchedule: [
@@ -371,23 +371,23 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Gilgit Airport",
-        description: "Pickup Members from Gilgit Airport \nDeparture for Hunza Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in Hunza \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in Hunza"
+        title: "Lahore/Islamabad - Gilgit Airport",
+        description: "Pickup Members from Gilgit Airport \nDeparture for HUNZA Valley \nSightseeing of Indus River \nVisit Rakaposhi viewpoint \nArrival in HUNZA \nVisit Altit and Baltit fort \nVisit karimabad Shoping Center \nVisit Duikar for sunset (Also called as Eagle Nest point) \nBack to Hotel and check in Hotel \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 02",
-        title: "Exploring Hunza Valley",
-        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to Hunza and Visit Karimabad Bazar \nOvernight stay in Hunza \nNight stay and Dinner in Hunza"
+        title: "Exploring HUNZA Valley",
+        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to HUNZA and Visit Karimabad Bazar \nOvernight stay in HUNZA \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 03",
-        title: "Hunza - Hopper Valley",
-        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to Hunza and Visit Karimabad Bazar \nOvernight stay in Hunza \nNight stay and Dinner in Hunza"
+        title: "HUNZA - Hopper Valley",
+        description: " Breakfast Call \nAfter Breakfast leave for Khunjrab \nExperience the car drive of 2nd Longest Tunnel of Pakistan (Attabad \nTunnel) \nVisit Attabad Lake \nVisit Passu Cones \nVisit Hussaini Suspension Bridge \nVisit Khunerab Pass \nBack to HUNZA and Visit Karimabad Bazar \nOvernight stay in HUNZA \nNight stay and Dinner in HUNZA"
       },
       {
         day: "Day 04",
-        title: "Hunza - Naltar Valley",
-        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for Naltar Valley \nVisit Naltar Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of Naltar Valley \nAfter Visiting Naltar and Leave for Gilgit \nDinner and Night stay at Gilgit"
+        title: "HUNZA - NALTAR Valley",
+        description: "Breakfast call \nArrival to Nomal Valley \nTransfer to Jeep for NALTAR Valley \nVisit NALTAR Valley \nVisit Satrangi Lake \nvisit Blue Water Lake \nExplore the Beauty of NALTAR Valley \nAfter Visiting NALTAR and Leave for Gilgit \nDinner and Night stay at Gilgit"
       },
       {
         day: "Day 05",
@@ -404,14 +404,14 @@ const packageDetails: any = {
   },
   "5": {
     id: 5,
-    title: "4 Days By-Air Tour to Skardu Valley",
-    location: "Skardu",
+    title: "4 Days By-Air Tour to SKARDU Valley",
+    location: "SKARDU",
     duration: "4 Days 3 Nights",
     price: null,
     image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Nature Explorer Tours proudly presents the By Air Honeymoon Package to Skardu Valley, designed for couples seeking a perfect blend of romance, adventure, and relaxation. With breathtaking landscapes, seamless travel, and premium accommodations, this package ensures an unforgettable experience.",
+    description: "Nature Explorer Tours proudly presents the By Air Honeymoon Package to SKARDU Valley, designed for couples seeking a perfect blend of romance, adventure, and relaxation. With breathtaking landscapes, seamless travel, and premium accommodations, this package ensures an unforgettable experience.",
     pointsToVisit: [
       "Shangrilla Lake",
       "Lower Kachura Lake",
@@ -450,10 +450,10 @@ const packageDetails: any = {
       "AIR FARES (Will be charged separately)"
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     departureSchedule: [
-      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to Skardu (PIA/Air Blue)", departure2: "-" }
+      { city: "Islamabad/Lahore/Karachi", departure1: "Flight to SKARDU (PIA/Air Blue)", departure2: "-" }
     ],
     pricing: {
       "sedanCar_perCouple": { 
@@ -475,23 +475,23 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Skardu valley",
-        description: "Pick up members from Skardu Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in Skardu"
+        title: "Lahore/Islamabad - SKARDU Valley",
+        description: "Pick up members from SKARDU Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in SKARDU"
       },
       {
         day: "Day 02",
         title: "Sarfaranga Cold Desert - Manthoka Waterfall",
-        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 03",
         title: "Chocolate Rocks - Basho Valley",
-        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 04",
         title: "Fly Back to Home",
-        description: "Breakfast call\nAfter Breakfast leave for Skardu Airport\nDrop off at Skardu Airport\nFly back to Islamabad"
+        description: "Breakfast call\nAfter Breakfast leave for SKARDU Airport\nDrop off at SKARDU Airport\nFly back to Islamabad"
       }
     ],
     contact: {
@@ -503,14 +503,14 @@ const packageDetails: any = {
   },
   "6": {
     id: 6,
-    title: "5 Days By-Air Tour to Skardu Valley",
-    location: "Skardu",
+    title: "5 Days By-Air Tour to SKARDU Valley",
+    location: "SKARDU",
     duration: "5 Days 4 Nights",
     price: null,
     image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Nature Explorer Tours offer best By air Honeymoon Package for thier Beloved clients. If you are looking for by Air Honeymoon Package to Skardu Valley then you are at right place. Our Gilgit Baltistan tour package is designed for domestic and foreign tourists interested in visiting northern areas of Pakistan.",
+    description: "Nature Explorer Tours offer best By air Honeymoon Package for thier Beloved clients. If you are looking for by Air Honeymoon Package to SKARDU Valley then you are at right place. Our Gilgit Baltistan tour package is designed for domestic and foreign tourists interested in visiting northern areas of Pakistan.",
     pointsToVisit: [
       "Shangrilla Lake",
       "Lower Kachura Lake",
@@ -551,7 +551,7 @@ const packageDetails: any = {
       "Any kind of Entry Tickets"
     ],
     hotelList: [
-      { location: "Skardu", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
+      { location: "SKARDU", standard: "Trout Villa", deluxe: "Gumaan Resort", executive: "Gumaan Resort" }
     ],
     departureSchedule: [
       { city: "ISB/LHR/KHI", departure1: "BY AIR (PIA/AIR BLUE)", departure2: "-" }
@@ -576,28 +576,28 @@ const packageDetails: any = {
     itinerary: [
       {
         day: "Day 01",
-        title: "Lahore/islamabad - Skardu valley",
-        description: "Pick up members from Skardu Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in Skardu"
+        title: "Lahore/Islamabad - SKARDU Valley",
+        description: "Pick up members from SKARDU Airport\nArrival at Hotel and Check in\nAfter check in leave for Shangrilla Lake\nVisit Lower Kachura Lake and Shangrilla Resort\nFree time for activities at lake\nVisit Upper Kachura Lake\nOvernight stay in SKARDU"
       },
       {
         day: "Day 02",
         title: "Sarfaranga Cold Desert - Manthoka Waterfall",
-        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast Departure for Manthoka waterfall\nFree time for Enjoyment at Manthoka waterfall\nDeparture Sarfaranga Cold Desert\nVisit Sarfaranga Cold Desert\nFree time for Activities there (Jeep Safari, Paragliding etc.)\nVisit Shigar Fort\nvisit Amburuk Mosque\nVisit Blind Lake (if time allows)\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 03",
         title: "Chocolate Rocks - Basho Valley",
-        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast visit Chocolate Rocks\nTransfer to 4x4 jeeps for Basho Meadows\nExplore the beauty of Basho Meadows\nVisit Basho Suspension Bridge\nBack to hotel in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 04",
         title: "Khaplu Valley - Ghanche",
-        description: "Breakfast call\nAfter breakfast elave for Khapluu\nVisit KhapluVisit Sailing Fish Farm\nVisit Chagchan Mosque\nVisit Ghanche\nBack to hotel in in the evening\nOvernight stay at Skardu"
+        description: "Breakfast call\nAfter breakfast elave for Khapluu\nVisit KhapluVisit Sailing Fish Farm\nVisit Chagchan Mosque\nVisit Ghanche\nBack to hotel in in the evening\nOvernight stay at SKARDU"
       },
       {
         day: "Day 05",
         title: "Fly Back to Home",
-        description: "Breakfast call\nAfter Breakfast leave for Skardu Airport\nDrop off at Skardu Airport\nFly back to Islamabad"
+        description: "Breakfast call\nAfter Breakfast leave for SKARDU Airport\nDrop off at SKARDU Airport\nFly back to Islamabad"
       }
     ],
     contact: {
@@ -609,28 +609,28 @@ const packageDetails: any = {
   },
   "7": {
     id: 7,
-    title: "7 Days By-Air Tour to Soq Valley",
+    title: "7 Days By-Air Tour to SOQ Valley",
     location: "Gilgit",
     duration: "7 Days 6 Nights",
     price: 720,
-    image: "/ska345.jpg",
+    image: "/temp.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
-    description: "The Soq Valley Tour provides a tranquil escape to a magnificent valley surrounded by majestic mountains and flowing rivers. The vacation is ideal for nature lovers and adventurers, with options for walking, camping under the stars, and trout fishing in crystal-clear waterways. Along with experiencing the valley’s rough beauty, you’ll also explore adjacent scenic places, offering your tour the ideal balance of relaxation and adventure in an unspoiled natural wonderland.",
+    description: "The SOQ Valley Tour provides a tranquil escape to a magnificent valley surrounded by majestic mountains and flowing rivers. The vacation is ideal for nature lovers and adventurers, with options for walking, camping under the stars, and trout fishing in crystal-clear waterways. Along with experiencing the valley’s rough beauty, you’ll also explore adjacent scenic places, offering your tour the ideal balance of relaxation and adventure in an unspoiled natural wonderland.",
     pointsToVisit: [
       "Islamabad",
-      "Skardu",
+      "SKARDU",
       "Shangrila Lake",
       "Upper Kachura Lake",
-      "Soq Valley",
+      "SOQ Valley",
       "Katpana Desert",
       "Satpara Lake"
     ],
     highlights: [
-      "Fly to Skardu",
-      "Drive to Soq Valley",
-      "Hiking in Soq Valley",
-      "Trout fishing in Soq River",
+      "Fly to SKARDU",
+      "Drive to SOQ Valley",
+      "Hiking in SOQ Valley",
+      "Trout fishing in SOQ River",
       "Camping/Bonfire under the stars",
       "Visit Shangrila & Upper Kachura Lake",
       "Visit Katpana Desert",
@@ -681,27 +681,27 @@ const packageDetails: any = {
       {
         day: "Day 02",
         title: "FLY TO SKARDU",
-        description: "Your tour begins with an early morning flight from Islamabad to Skardu, a magnificent 1-hour flight with stunning views of the Karakoram and Himalayan mountains. When you arrive in Skardu, you will be transferred to your accommodation... In the afternoon, spend some time exploring Skardu town. You may explore the bustling Skardu Bazaar... In Skardu, spend the night in a hotel."
+        description: "Your tour begins with an early morning flight from Islamabad to SKARDU, a magnificent 1-hour flight with stunning views of the Karakoram and Himalayan mountains. When you arrive in SKARDU, you will be transferred to your accommodation... In the afternoon, spend some time exploring SKARDU town. You may explore the bustling SKARDU Bazaar... In SKARDU, spend the night in a hotel."
       },
       {
         day: "Day 03",
         title: "DRIVE TO SOQ VALLEY",
-        description: "After breakfast, take a scenic trip to Soq Valley... En route, stop at Shangrila Lake (Lower Kachura Lake)... Continue your journey to Upper Kachura Lake... From here, the route turns into Soq Valley... When you arrive in Soq Valley, pitch your tent or stay in a guesthouse. Spend the afternoon fishing for trout... relax by a bonfire... overnight camping or a stay at a nearby motel."
+        description: "After breakfast, take a scenic trip to SOQ Valley... En route, stop at Shangrila Lake (Lower Kachura Lake)... Continue your journey to Upper Kachura Lake... From here, the route turns into SOQ Valley... When you arrive in SOQ Valley, pitch your tent or stay in a guesthouse. Spend the afternoon fishing for trout... relax by a bonfire... overnight camping or a stay at a nearby motel."
       },
       {
         day: "Day 04",
         title: "EXPLORE SOQ VALLEY",
-        description: "This day is dedicated to completely experiencing the natural splendor of Soq Valley. After breakfast, begin a full day of hiking... For lunch, picnic beside the river... Spend the afternoon exploring... Return to your tent or guesthouse in the evening... Stay overnight at Soq Valley."
+        description: "This day is dedicated to completely experiencing the natural splendor of SOQ Valley. After breakfast, begin a full day of hiking... For lunch, picnic beside the river... Spend the afternoon exploring... Return to your tent or guesthouse in the evening... Stay overnight at SOQ Valley."
       },
       {
         day: "Day 05",
         title: "BACK TO SKARDU",
-        description: "After breakfast, begin your drive back to Skardu... Your first destination will be Upper Kachura Lake... Continue your journey to the Katpana Desert... From there, travel to Satpara Lake... return to your accommodation for an overnight stay."
+        description: "After breakfast, begin your drive back to SKARDU... Your first destination will be Upper Kachura Lake... Continue your journey to the Katpana Desert... From there, travel to Satpara Lake... return to your accommodation for an overnight stay."
       },
       {
         day: "Day 06",
         title: "FLY BACK TO ISLAMABAD",
-        description: "On this day the participants will take a flight from the airport in Skardu to Islamabad aiport. You will have a good time to relax at the hotel in Islamabad. The domestic flights sometimes get canceled... In case of flight cancellation, you will drive to Chilas overnight."
+        description: "On this day the participants will take a flight from the airport in SKARDU to Islamabad aiport. You will have a good time to relax at the hotel in Islamabad. The domestic flights sometimes get canceled... In case of flight cancellation, you will drive to Chilas overnight."
       },
       {
         day: "Day 07",
@@ -718,21 +718,21 @@ const packageDetails: any = {
   },
   "8": {
     id: 8,
-    title: "8 Days By-Air Tour to Nazbar Valley",
+    title: "8 Days By-Air Tour to NAZBAR Valley",
     location: "Gilgit",
     duration: "8 Days 7 Nights",
     price: 930,
-    image: "/ska345.jpg",
+    image: "/temp.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
-    description: "Explore the hidden beauty of Nazbar Valley in Yasin, Gilgit-Baltistan. This journey offers stunning vistas of lush meadows, deep forests, and clear streams, providing a peaceful respite from the everyday. Enjoy picturesque hikes to stunning overlooks and interact with the friendly locals. The Nazbar Valley Trip is ideal for nature lovers and explorers, offering an amazing experience in one of Pakistan’s most lovely valleys.",
+    description: "Explore the hidden beauty of NAZBAR Valley in Yasin, Gilgit-Baltistan. This journey offers stunning vistas of lush meadows, deep forests, and clear streams, providing a peaceful respite from the everyday. Enjoy picturesque hikes to stunning overlooks and interact with the friendly locals. The NAZBAR Valley Trip is ideal for nature lovers and explorers, offering an amazing experience in one of Pakistan’s most lovely valleys.",
     pointsToVisit: [
       "Islamabad",
       "Gilgit",
       "Yasin Valley",
       "Ishkoman Bridge",
       "Autumn Gardens",
-      "Nazbar Valley",
+      "NAZBAR Valley",
       "Phander Valley",
       "Khalti Lake",
       "Dream Island",
@@ -743,7 +743,7 @@ const packageDetails: any = {
     highlights: [
       "Fly to Gilgit",
       "Drive to Yasin Valley",
-      "Explore Nazbar Valley (hiking, picnic)",
+      "Explore NAZBAR Valley (hiking, picnic)",
       "Interact with friendly locals",
       "Explore Phander Valley",
       "Visit Khalti Lake & Phander Lake"
@@ -793,7 +793,7 @@ const packageDetails: any = {
       {
         day: "Day 02",
         title: "FLY TO GILGIT",
-        description: "On this Day: Participants on this morning will take the spectacular flight from Islamabad airport to Gilgit airport. After arrival in Gilgit, the day is free."
+        description: "On this Day: Participants on this morning will take the spectacular flight from Islamabad airport to Gilgit Airport. After arrival in Gilgit, the day is free."
       },
       {
         day: "Day 03",
@@ -803,7 +803,7 @@ const packageDetails: any = {
       {
         day: "Day 04",
         title: "EXLPORE NAZBAR VALLEY",
-        description: "On this Day: After breakfast, take a picturesque drive to Nazbar Valley... Explore the valley on foot, strolling along lovely pathways... Enjoy a calm picnic lunch beside a stream or meadow... Interact with friendly locals... Return to Yasin Valley in the late evening... retire for the night."
+        description: "On this Day: After breakfast, take a picturesque drive to NAZBAR Valley... Explore the valley on foot, strolling along lovely pathways... Enjoy a calm picnic lunch beside a stream or meadow... Interact with friendly locals... Return to Yasin Valley in the late evening... retire for the night."
       },
       {
         day: "Day 05",
@@ -835,34 +835,34 @@ const packageDetails: any = {
   },
   "9": {
     id: 9,
-    title: "7 Days By-Air Tour to Khorkundus Valley",
+    title: "7 Days By-Air Tour to KHORKUNDUS Valley",
     location: "Gilgit",
     duration: "7 Days 6 Nights",
     price: 1000,
-    image: "/ska345.jpg",
+    image: "/temp.jpg",
     groupSize: "Unlimited",
     tourType: "Daily Tour",
-    description: "Join an exciting Khorkundus Valley Tour to discover the natural landscapes of Ghanche District, Gilgit-Baltistan. Nestled at an elevation of 3,399 meters, this hidden gem is bordered by towering peaks such as K13, Sherpi Kangri, and Saltoro Kangri. Experience the charm of traditional Balti culture, relax in the valley’s curative hot springs, and take in the spectacular scenery of this secluded sanctuary.",
+    description: "Join an exciting KHORKUNDUS Valley Tour to discover the natural landscapes of Ghanche District, Gilgit-Baltistan. Nestled at an elevation of 3,399 meters, this hidden gem is bordered by towering peaks such as K13, Sherpi Kangri, and Saltoro Kangri. Experience the charm of traditional Balti culture, relax in the valley’s curative hot springs, and take in the spectacular scenery of this secluded sanctuary.",
     pointsToVisit: [
-      "Skardu",
+      "SKARDU",
       "Shangrila Resort",
       "Upper Kachura Lake",
       "Khaplu",
       "Khaplu Palace",
       "Chaqchan Mosque",
-      "Khorkundus Village",
-      "Khorkundus Hot Springs",
+      "KHORKUNDUS Village",
+      "KHORKUNDUS Hot Springs",
       "Lachat Village",
       "Thang Village",
       "Shigar Valley",
       "Shigar Fort"
     ],
     highlights: [
-      "Fly to Skardu with views of Karakoram/Himalayas",
+      "Fly to SKARDU with views of Karakoram/Himalayas",
       "Visit Shangrila Resort and Upper Kachura Lake",
       "Drive along the Shyok River",
       "Explore Khaplu Palace and Chaqchan Mosque",
-      "Visit Khorkundus village and its curative hot springs",
+      "Visit KHORKUNDUS village and its curative hot springs",
       "Hike to the base of Saltoro Kangri, K13, or Sherpi Kangri",
       "Explore traditional Balti culture in Lachat and Thang",
       "Visit the historic Shigar Fort"
@@ -909,7 +909,7 @@ const packageDetails: any = {
       {
         day: "Day 01",
         title: "FLY TO SKARDU",
-        description: "Fly to Skardu (about one hour). Alternatively, start your trip on the Karakoram Highway (which necessitates an overnight stop in Chilas). Arrive in Skardu, move to the hotel, and rest. Visit Shangrila Resort and Upper Kachura Lake. Spend the night at a hotel in Skardu."
+        description: "Fly to SKARDU (about one hour). Alternatively, start your trip on the Karakoram Highway (which necessitates an overnight stop in Chilas). Arrive in SKARDU, move to the hotel, and rest. Visit Shangrila Resort and Upper Kachura Lake. Spend the night at a hotel in SKARDU."
       },
       {
         day: "Day 02",
@@ -934,7 +934,7 @@ const packageDetails: any = {
       {
         day: "Day 06",
         title: "KHAPLU TO SKARDU",
-        description: "Drive back to Skardu. Explore Shigar Valley and see Shigar Fort. Enjoy a trip around the area's luscious orchards. Relax and eat dinner at the hotel in Skardu. Overnight stay in Skardu."
+        description: "Drive back to SKARDU. Explore Shigar Valley and see Shigar Fort. Enjoy a trip around the area's luscious orchards. Relax and eat dinner at the hotel in SKARDU. Overnight stay in SKARDU."
       },
       {
         day: "Day 07",
@@ -951,14 +951,14 @@ const packageDetails: any = {
   },
   "10": {
     id: 10,
-    title: "5 Days By-Air Tour to Fairy Meadows",
+    title: "5 Days By-Air Tour toFAIRY MEADOWS",
     location: "Fairy Meadows & Nanga Parbat",
     duration: "5 Days 4 Nights",
     price: null,
     image: "/fa.jpg",
     groupSize: "Flexible (Private Tour)",
     tourType: "Private Tour",
-    description: "Experience the magical beauty of Fairy Meadows with our exclusive 5-day private tour by air. Trek to the base of Nanga Parbat, the 'Killer Mountain', and witness breathtaking views of one of the world's highest peaks. This private tour offers personalized service, comfortable accommodations, and an unforgettable adventure in the heart of the Himalayas.",
+    description: "Experience the magical beauty ofFAIRY MEADOWS with our exclusive 5-day private tour by air. Trek to the base of Nanga Parbat, the 'Killer Mountain', and witness breathtaking views of one of the world's highest peaks. This private tour offers personalized service, comfortable accommodations, and an unforgettable adventure in the heart of the Himalayas.",
     pointsToVisit: [
       "Gilgit Airport",
       "Raikot Bridge",
@@ -972,7 +972,7 @@ const packageDetails: any = {
     highlights: [
       "Scenic flight to Gilgit with mountain views",
       "Private 4x4 jeep ride to Tattu Village",
-      "Trek through pine forests to Fairy Meadows",
+      "Trek through pine forests toFAIRY MEADOWS",
       "Visit Nanga Parbat Base Camp (Beyal Camp)",
       "Spectacular views of Nanga Parbat (8,126m)",
       "Stay in comfortable mountain huts",
@@ -1013,13 +1013,13 @@ const packageDetails: any = {
       },
       {
         day: "Day 02",
-        title: "Raikot - Tattu Village - Fairy Meadows",
-        description: "After breakfast, transfer to 4x4 jeep for an adventurous ride to Tattu Village (approximately 1 hour on rough mountain track). Begin trek to Fairy Meadows through beautiful pine forests (3-4 hours, moderate difficulty). Arrival at Fairy Meadows and check-in at mountain huts. Explore the meadows and enjoy stunning views of Nanga Parbat. Dinner and overnight at Fairy Meadows."
+        title: "Raikot - Tattu Village -FAIRY MEADOWS",
+        description: "After breakfast, transfer to 4x4 jeep for an adventurous ride to Tattu Village (approximately 1 hour on rough mountain track). Begin trek toFAIRY MEADOWS through beautiful pine forests (3-4 hours, moderate difficulty). Arrival atFAIRY MEADOWS and check-in at mountain huts. Explore the meadows and enjoy stunning views of Nanga Parbat. Dinner and overnight atFAIRY MEADOWS."
       },
       {
         day: "Day 03",
-        title: "Fairy Meadows - Nanga Parbat Base Camp - Fairy Meadows",
-        description: "Early breakfast and start trek to Nanga Parbat Base Camp (Beyal Camp). Trek through rocky terrain and glacial moraines (4-5 hours). Reach base camp at approximately 3,300 meters. Spectacular close-up views of Nanga Parbat's Raikot Face. Photography time and packed lunch. Trek back to Fairy Meadows. Dinner and overnight at Fairy Meadows."
+        title: "Fairy Meadows - Nanga Parbat Base Camp -FAIRY MEADOWS",
+        description: "Early breakfast and start trek to Nanga Parbat Base Camp (Beyal Camp). Trek through rocky terrain and glacial moraines (4-5 hours). Reach base camp at approximately 3,300 meters. Spectacular close-up views of Nanga Parbat's Raikot Face. Photography time and packed lunch. Trek back toFAIRY MEADOWS. Dinner and overnight atFAIRY MEADOWS."
       },
       {
         day: "Day 04",
@@ -1029,7 +1029,7 @@ const packageDetails: any = {
       {
         day: "Day 05",
         title: "Gilgit - Islamabad (By Air)",
-        description: "Early breakfast at hotel. Transfer to Gilgit Airport. Morning flight to Islamabad with final views of the Karakoram Range. Arrival in Islamabad. End of memorable Fairy Meadows adventure."
+        description: "Early breakfast at hotel. Transfer to Gilgit Airport. Morning flight to Islamabad with final views of the Karakoram Range. Arrival in Islamabad. End of memorableFAIRY MEADOWS adventure."
       }
     ],
     contact: {
@@ -1041,22 +1041,22 @@ const packageDetails: any = {
   },
   "11": {
     id: 11,
-    title: "5 Days By-Air Tour to Astore & Minimarg",
-    location: "Astore, Minimarg & Deosai Plains",
+    title: "5 Days By-Air Tour to ASTORE & MINIMARG",
+    location: "ASTORE, MINIMARG & Deosai Plains",
     duration: "5 Days 4 Nights",
     price: null,
     image: "/asa.jpg",
     groupSize: "Flexible (Private Tour)",
     tourType: "Private Tour",
-    description: "Discover the pristine beauty of Astore Valley and the remote wilderness of Minimarg with our exclusive 5-day private tour by air. Trek to Rama Lake, explore Minimarg's Rainbow and Crystal Lakes, cross the historic Burzil Pass, and experience the stunning Deosai Plains - all in one unforgettable adventure through Gilgit-Baltistan's hidden gems.",
+    description: "Discover the pristine beauty of ASTORE Valley and the remote wilderness of MINIMARG with our exclusive 5-day private tour by air. Trek to Rama Lake, explore MINIMARG's Rainbow and Crystal Lakes, cross the historic Burzil Pass, and experience the stunning Deosai Plains - all in one unforgettable adventure through Gilgit-Baltistan's hidden gems.",
     pointsToVisit: [
       "Gilgit Airport",
-      "Astore Valley",
+      "ASTORE Valley",
       "Rama Lake",
       "Rama Meadows",
       "Chilam Check Post",
       "Burzil Pass",
-      "Minimarg Valley",
+      "MINIMARG Valley",
       "Rainbow Lake",
       "Crystal Lake",
       "Deosai Plains",
@@ -1066,7 +1066,7 @@ const packageDetails: any = {
       "Scenic flight to Gilgit",
       "Trek to pristine Rama Lake",
       "Cross spectacular Burzil Pass (4,200m)",
-      "Explore remote Minimarg Valley",
+      "Explore remote MINIMARG Valley",
       "Visit Rainbow Lake and Crystal Lake",
       "Deosai Plains safari",
       "Wildlife spotting opportunities",
@@ -1092,35 +1092,35 @@ const packageDetails: any = {
       "Any meals in Gilgit/Islamabad"
     ],
     hotelList: [
-      { location: "Astore", hotel: "Astore Inn / Valley Lodge / Mountain View Hotel" },
+      { location: "ASTORE", hotel: "ASTORE Inn / Valley Lodge / Mountain View Hotel" },
       { location: "Rama Meadows", hotel: "Rama Meadows Resort / Alpine Cottages" },
-      { location: "Minimarg", hotel: "Camping / Tent Village" }
+      { location: "MINIMARG", hotel: "Camping / Tent Village" }
     ],
     itinerary: [
       {
         day: "Day 01",
-        title: "Islamabad - Gilgit (By Air) - Astore - Rama Lake",
-        description: "Morning flight from Islamabad to Gilgit with spectacular mountain views. Upon arrival, drive to Astore Valley (2-3 hours). Continue to Rama Meadows. Transfer to 4x4 jeep. Trek to Rama Lake (2-3 hours). Enjoy the pristine alpine lake surrounded by snow-capped peaks. Trek back to Rama Meadows. Check-in at resort. Dinner and overnight at Rama Meadows."
+        title: "Islamabad - Gilgit (By Air) - ASTORE - Rama Lake",
+        description: "Morning flight from Islamabad to Gilgit with spectacular mountain views. Upon arrival, drive to ASTORE Valley (2-3 hours). Continue to Rama Meadows. Transfer to 4x4 jeep. Trek to Rama Lake (2-3 hours). Enjoy the pristine alpine lake surrounded by snow-capped peaks. Trek back to Rama Meadows. Check-in at resort. Dinner and overnight at Rama Meadows."
       },
       {
         day: "Day 02",
-        title: "Rama Meadows - Astore - Chilam - Burzil Pass - Minimarg",
-        description: "After breakfast, drive back to Astore. Continue journey to Minimarg. Drive to Chilam Check Post. Transfer to 4x4 jeeps. Cross the spectacular Burzil Pass (4,200m) with breathtaking mountain views. Arrival at Minimarg Valley. Set up camp. Explore the surroundings. Dinner and overnight camping at Minimarg."
+        title: "Rama Meadows - ASTORE - Chilam - Burzil Pass - MINIMARG",
+        description: "After breakfast, drive back to ASTORE. Continue journey to MINIMARG. Drive to Chilam Check Post. Transfer to 4x4 jeeps. Cross the spectacular Burzil Pass (4,200m) with breathtaking mountain views. Arrival at MINIMARG Valley. Set up camp. Explore the surroundings. Dinner and overnight camping at MINIMARG."
       },
       {
         day: "Day 03",
-        title: "Minimarg - Rainbow Lake - Crystal Lake",
-        description: "Early breakfast. Full day exploring Minimarg area. Visit Rainbow Lake with its stunning multi-colored waters. Trek to Crystal Lake. Photography opportunities. Wildlife spotting (Himalayan ibex, marmots). Experience the remote wilderness. Return to camp. Bonfire and stargazing. Dinner and overnight at Minimarg."
+        title: "MINIMARG - Rainbow Lake - Crystal Lake",
+        description: "Early breakfast. Full day exploring MINIMARG area. Visit Rainbow Lake with its stunning multi-colored waters. Trek to Crystal Lake. Photography opportunities. Wildlife spotting (Himalayan ibex, marmots). Experience the remote wilderness. Return to camp. Bonfire and stargazing. Dinner and overnight at MINIMARG."
       },
       {
         day: "Day 04",
-        title: "Minimarg - Deosai Plains - Astore",
-        description: "After breakfast, drive to Deosai Plains. Visit Sheosar Lake - one of the highest lakes in the world. Wildlife safari (look for Himalayan brown bears, if lucky). Enjoy the vast plateau landscape. Packed lunch at Deosai. Drive back to Astore via Burzil Pass. Check-in at hotel. Dinner and overnight at Astore."
+        title: "MINIMARG - Deosai Plains - ASTORE",
+        description: "After breakfast, drive to Deosai Plains. Visit Sheosar Lake - one of the highest lakes in the world. Wildlife safari (look for Himalayan brown bears, if lucky). Enjoy the vast plateau landscape. Packed lunch at Deosai. Drive back to ASTORE via Burzil Pass. Check-in at hotel. Dinner and overnight at ASTORE."
       },
       {
         day: "Day 05",
-        title: "Astore - Gilgit - Islamabad (By Air)",
-        description: "Breakfast at hotel. Drive to Gilgit (2-3 hours). Last-minute shopping if time permits. Transfer to Gilgit Airport. Morning flight to Islamabad. End of adventurous Astore & Minimarg expedition."
+        title: "ASTORE - Gilgit - Islamabad (By Air)",
+        description: "Breakfast at hotel. Drive to Gilgit (2-3 hours). Last-minute shopping if time permits. Transfer to Gilgit Airport. Morning flight to Islamabad. End of adventurous ASTORE & MINIMARG expedition."
       }
     ],
     contact: {
@@ -1250,18 +1250,19 @@ export default function PrivateTourByAirDetail() {
             </section>
 
             {/* Itinerary */}
-            <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-              <h2 className="text-3xl font-bold text-red-700 mb-6">Itinerary</h2>
+            <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
+              <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
               <div className="space-y-6">
                 {pkg.itinerary.map((item: any, index: number) => (
-                  <div key={index} className="border-l-4 border-red-600 pl-6 pb-6 last:pb-0">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        {item.day}
+                  <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                    <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                      <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                        <span className="text-[9px] uppercase tracking-wider">DAY</span>
+                        <span className="text-xl leading-none">{item.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                       </span>
-                      <h3 className="text-xl font-bold text-red-700">{item.title}</h3>
+                      <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
                     </div>
-                    <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                    <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{item.description}</p>
                   </div>
                 ))}
               </div>

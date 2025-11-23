@@ -59,8 +59,8 @@ const packageDetails: any = {
   },
   "6": {
     id: 6,
-    title: "7 Days Honeymoon Tour for Swat & Hunza (by Road)",
-    location: "Swat & Hunza",
+    title: "7 Days Honeymoon Tour for SWAT & HUNZA (by Road)",
+    location: "SWAT & HUNZA",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -69,8 +69,8 @@ const packageDetails: any = {
   },
   "7": {
     id: 7,
-    title: "7 Days Skardu Honeymoon Tour",
-    location: "Skardu",
+    title: "7 Days SKARDU Honeymoon Tour",
+    location: "SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -79,8 +79,8 @@ const packageDetails: any = {
   },
   "8": {
     id: 8,
-    title: "Honeymoon Tour to Hunza Valley 6 Days– By Road",
-    location: "Hunza Valley",
+    title: "Honeymoon Tour to HUNZA Valley 6 Days– By Road",
+    location: "HUNZA Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -89,8 +89,8 @@ const packageDetails: any = {
   },
   "9": {
     id: 9,
-    title: "Honeymoon in Hunza & Skardu 7 Days – By Air",
-    location: "Hunza & Skardu",
+    title: "Honeymoon in HUNZA & SKARDU 7 Days – By Air",
+    location: "HUNZA & SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -99,8 +99,8 @@ const packageDetails: any = {
   },
   "10": {
     id: 10,
-    title: "3-Day Honeymoon in Hunza – By Air",
-    location: "Hunza",
+    title: "3-Day Honeymoon in HUNZA – By Air",
+    location: "HUNZA",
     duration: "3 Days 2 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -109,8 +109,8 @@ const packageDetails: any = {
   },
   "11": {
     id: 11,
-    title: "4 Days By Air Honeymoon Package for Hunza Valley",
-    location: "Hunza Valley",
+    title: "4 Days By Air Honeymoon Package for HUNZA Valley",
+    location: "HUNZA Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -119,8 +119,8 @@ const packageDetails: any = {
   },
   "12": {
     id: 12,
-    title: "5 Days By Air Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "5 Days By Air Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -129,8 +129,8 @@ const packageDetails: any = {
   },
   "13": {
     id: 13,
-    title: "4 Days By Air Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "4 Days By Air Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -139,8 +139,8 @@ const packageDetails: any = {
   },
   "14": {
     id: 14,
-    title: "10 Days Honeymoon Tour for Swat, Hunza & Skardu Valley",
-    location: "Swat, Hunza & Skardu",
+    title: "10 Days Honeymoon Tour for SWAT, HUNZA & SKARDU Valley",
+    location: "SWAT, HUNZA & SKARDU",
     duration: "10 Days 9 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -149,8 +149,8 @@ const packageDetails: any = {
   },
   "15": {
     id: 15,
-    title: "6 Days Honeymoon Package for Skardu Valley",
-    location: "Skardu Valley",
+    title: "6 Days Honeymoon Package for SKARDU Valley",
+    location: "SKARDU Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -159,8 +159,8 @@ const packageDetails: any = {
   },
   "16": {
     id: 16,
-    title: "Honeymoon Tour Package: Swat , Shogran | Kashmir (7 Days)",
-    location: "Swat, Shogran & Kashmir",
+    title: "Honeymoon Tour Package: SWAT , Shogran | Kashmir (7 Days)",
+    location: "SWAT, Shogran & Kashmir",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -169,8 +169,8 @@ const packageDetails: any = {
   },
   "17": {
     id: 17,
-    title: "Honeymoon Package for Swat Valley & Shogran Valley (05 Days)",
-    location: "Swat & Shogran",
+    title: "Honeymoon Package for SWAT Valley & Shogran Valley (05 Days)",
+    location: "SWAT & Shogran",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -179,8 +179,8 @@ const packageDetails: any = {
   },
   "18": {
     id: 18,
-    title: "5 Days Honeymoon Package for Hunza Valley",
-    location: "Hunza Valley",
+    title: "5 Days Honeymoon Package for HUNZA Valley",
+    location: "HUNZA Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -189,8 +189,8 @@ const packageDetails: any = {
   },
   "19": {
     id: 19,
-    title: "8 Days Honeymoon Package for Hunza Valley and Skardu Valley",
-    location: "Hunza & Skardu",
+    title: "8 Days Honeymoon Package for HUNZA Valley and SKARDU Valley",
+    location: "HUNZA & SKARDU",
     duration: "8 Days 7 nights",
     price: "Contact for Pricing",
     image: "/honey.jpg",
@@ -241,17 +241,17 @@ export default function HoneymoonToursPage() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="mb-6">
-            <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg border border-white/30">
+            <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg border border-white/30 badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
               <Heart className="w-5 h-5" />
               Honeymoon Packages
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Romantic Honeymoon Tours
           </h1>
           
-          <p className="text-xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md">
+          <p className="text-xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
             Create unforgettable memories with our specially curated honeymoon packages. 
             Experience romance, adventure, and luxury in Pakistan's most beautiful destinations.
           </p>
@@ -300,27 +300,27 @@ export default function HoneymoonToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-red-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-red-600 transition-colors card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   {pkg.title}
                 </h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">
                     <MapPin className="w-4 h-4 text-red-600 shrink-0" />
-                    <span className="text-sm">{pkg.location}</span>
+                    <span className="text-sm font-label" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
                     <Calendar className="w-4 h-4 text-red-600 shrink-0" />
-                    <span className="text-sm">{pkg.duration}</span>
+                    <span className="text-sm font-label" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.duration}</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                   <div>
-                    <div className="text-sm text-gray-500">Starting from</div>
-                    <div className="text-xl font-bold text-red-600">{pkg.price}</div>
+                    <div className="text-sm text-gray-500 font-label" style={{ fontFamily: "'Inter', sans-serif" }}>Starting from</div>
+                    <div className="text-xl font-bold text-red-600 price-display font-numbers">{pkg.price}</div>
                   </div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold transition-colors shadow-md">
+                  <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold transition-colors shadow-md btn-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     View Details
                   </button>
                 </div>
@@ -333,10 +333,10 @@ export default function HoneymoonToursPage() {
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-red-600 to-pink-600 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Ready to Plan Your Dream Honeymoon?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-white/90 mb-8 font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
             Contact us today to customize your perfect romantic getaway
           </p>
           <div className="flex flex-wrap justify-center gap-4">
