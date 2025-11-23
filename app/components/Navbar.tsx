@@ -29,7 +29,7 @@ export default function Navbar() {
                 alt="TOWARDSDESTINATION.PK"
                 width={150}
                 height={200}
-                className="object-contain w-full h-full scale-270 md:scale-270"
+                className="object-contain w-full h-full scale-200 md:scale-250"
                 priority
                 quality={100}
               />
@@ -60,12 +60,7 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               <div className={`absolute top-full left-0 mt-2 w-52 bg-white rounded-lg shadow-xl py-2 border border-gray-100 transition-all duration-200 ${isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                <Link 
-                  href="/public-tours/by-air"
-                  className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
-                >
-                 🛫 By Air
-                </Link>
+              
                 <Link 
                   href="/public-tours/by-road"
                   className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
@@ -236,13 +231,7 @@ export default function Navbar() {
               <div className={`transition-all duration-200 overflow-hidden ${
                 isMobileDropdownOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
               }`}>
-                <Link 
-                  href="/public-tours/by-air"
-                  className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  🛫 By Air
-                </Link>
+                
                 <Link 
                   href="/public-tours/by-road"
                   className="block pl-8 pr-4 py-3 text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all duration-200 rounded-lg"

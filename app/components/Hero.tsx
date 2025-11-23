@@ -135,7 +135,8 @@ export default function Hero() {
             
             <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up" style={{animationDelay: '0.2s', fontFamily: "'Playfair Display', 'Georgia', serif"}}>
               Explore Pakistan's<br />
-              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 inline-block rounded-lg mt-2 text-[18px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl shadow-2xl hover:scale-105 transition-transform duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>Northern Beauty</span> & Beyond
+              <span className="bg-white text-red-600 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 inline-block rounded-lg mt-2 text-[18px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl shadow-2xl hover:scale-105 transition-transform duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>Northern Beauty</span>
+              <h1> & Beyond </h1>
             </h1>
 
             {/* Description */}
@@ -147,11 +148,11 @@ export default function Hero() {
             {/* Trust Badges - Travel Company Style */}
             <div className="grid grid-cols-3 gap-1.5 xs:gap-2 sm:gap-4 mb-8 w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>15K+</div>
+                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>22k+</div>
                 <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight" style={{ fontFamily: "'Inter', sans-serif" }}>Happy Travelers</div>
               </div>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>12+</div>
+                <div className="text-base xs:text-lg sm:text-2xl font-bold text-red-600" style={{ fontFamily: "'Poppins', sans-serif" }}>7+</div>
                 <div className="text-[9px] xs:text-[10px] sm:text-xs text-gray-600 font-semibold leading-tight" style={{ fontFamily: "'Inter', sans-serif" }}>Years Experience</div>
               </div>
               <div className="bg-white/95 backdrop-blur-sm px-1.5 xs:px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">

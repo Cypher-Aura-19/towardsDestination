@@ -316,21 +316,21 @@ export default function InternationalToursPage() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Name - More Visible */}
-          <div className="mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <div className="mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-wide" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '0.03em' }}>
               TOWARDSDESTINATION.PK
             </h2>
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-md text-sm font-bold">
-              🌍 International Tours
+            <span className="inline-block bg-red-600 text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg tracking-wider" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '0.1em' }}>
+              🌍 INTERNATIONAL TOURS
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
             Explore the World<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>With Premium Packages</span>
+            <span className="bg-white text-red-600 px-6 py-3 inline-block rounded-xl mt-3 text-2xl md:text-3xl lg:text-4xl whitespace-nowrap font-bold shadow-2xl" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.02em' }}>With Premium Packages</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
+          <p className="text-white text-base md:text-lg max-w-3xl mb-6 leading-relaxed font-light tracking-wide" style={{ fontFamily: "'Inter', sans-serif", lineHeight: '1.8' }}>
          Explore the World with Towardsdestination.pk, Join our International Tour Packages.
 From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the Nature of Maldives and Baki, we offer complete Travel Solutions with Flights Assistance, Hotel Accommodations and Guide Assistance 24/7
           </p>
