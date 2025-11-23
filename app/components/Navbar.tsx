@@ -25,11 +25,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-4 sm:gap-5 md:gap-6 shrink-0 ml-4 sm:ml-0">
             <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shrink-0">
               <Image
-                src="/footer.png"
+                src="/nav3.png"
                 alt="TOWARDSDESTINATION.PK"
                 width={150}
                 height={200}
-                className="object-contain w-full h-full scale-200 md:scale-250"
+                className="object-contain w-full h-full scale-270 md:scale-270"
                 priority
                 quality={100}
               />

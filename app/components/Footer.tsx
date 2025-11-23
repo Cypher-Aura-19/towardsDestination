@@ -17,7 +17,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center justify-center mb-4">
               <div className="relative w-full h-40 sm:h-40 md:h-40">
                 <Image
-                  src="/footer.png"
+                  src="/nav3.png"
                   alt="TOWARDSDESTINATION.PK"
                   fill
                   className="object-cover"
