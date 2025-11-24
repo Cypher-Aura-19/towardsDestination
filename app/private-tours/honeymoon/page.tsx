@@ -9,147 +9,147 @@ import Link from "next/link";
 const packageDetails: any = {
   "1": {
     id: 1,
-    title: "Naran & Shogran Honeymoon Tour Package (3 Days)",
+    title: "NARAN & SHOGRAN — Honeymoon Special Trip (03 Days)",
     location: "Naran & Shogran",
     duration: "3 Days 2 Nights",
     price: "PKR 105,000",
-    image: "/honey.jpg",
+    image: "/hn3.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "2": {
     id: 2,
-    title: "Kumrat Honeymoon Tour Package (3 Days)",
+    title: "KUMRAT VALLEY — Honeymoon Special Trip (03 Days)",
     location: "Kumrat Valley",
     duration: "3 Days, 2 Nights",
     price: "PKR 125,000",
-    image: "/honey.jpg",
+    image: "/hk3.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "3": {
     id: 3,
-    title: "Nathia Gali Honeymoon Package – A Romantic Mountain Retreat",
+    title: "NATHIA GALI — Romantic Mountain Retreat (02 Days)",
     location: "Nathia Gali",
     duration: "2 Days 1 Night",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hnath2.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "4": {
     id: 4,
-    title: "Malam Jabba Honeymoon Tour Package (2 Days)",
+    title: "MALAM JABBA — Honeymoon Special Trip (02 Days)",
     location: "Malam Jabba",
     duration: "2 Days 1 Night",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hma2.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "5": {
     id: 5,
-    title: "Kashmir Honeymoon Tour Package (3 Days)",
+    title: "KASHMIR VALLEY — Honeymoon Special Trip (03 Days)",
     location: "Kashmir",
     duration: "3 Days 2 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/nel3.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "6": {
     id: 6,
-    title: "7 Days Honeymoon Tour for SWAT & HUNZA (by Road)",
+    title: "SWAT & HUNZA — Honeymoon Tour by Road (07 Days)",
     location: "SWAT & HUNZA",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hswh7.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "7": {
     id: 7,
-    title: "7 Days SKARDU Honeymoon Tour",
+    title: "SKARDU VALLEY — Honeymoon Special Trip (07 Days)",
     location: "SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hsk7.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "8": {
     id: 8,
-    title: "Honeymoon Tour to HUNZA Valley 6 Days– By Road",
+    title: "HUNZA VALLEY — Honeymoon Tour by Road (06 Days)",
     location: "HUNZA Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hh6.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "9": {
     id: 9,
-    title: "Honeymoon in HUNZA & SKARDU 7 Days – By Air",
+    title: "HUNZA & SKARDU — Honeymoon Tour by Air (07 Days)",
     location: "HUNZA & SKARDU",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hs.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "10": {
     id: 10,
-    title: "3-Day Honeymoon in HUNZA – By Air",
+    title: "HUNZA VALLEY — Honeymoon Tour by Air (03 Days)",
     location: "HUNZA",
     duration: "3 Days 2 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hswh7.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "11": {
     id: 11,
-    title: "4 Days By Air Honeymoon Package for HUNZA Valley",
+    title: "HUNZA VALLEY — Honeymoon Tour by Air (04 Days)",
     location: "HUNZA Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hswh7.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "12": {
     id: 12,
-    title: "5 Days By Air Honeymoon Package for SKARDU Valley",
+    title: "SKARDU VALLEY — Honeymoon Tour by Air (05 Days)",
     location: "SKARDU Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hs.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "13": {
     id: 13,
-    title: "4 Days By Air Honeymoon Package for SKARDU Valley",
+    title: "SKARDU VALLEY — Honeymoon Tour by Air (04 Days)",
     location: "SKARDU Valley",
     duration: "4 Days 3 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hs.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "14": {
     id: 14,
-    title: "10 Days Honeymoon Tour for SWAT, HUNZA & SKARDU Valley",
+    title: "SWAT, HUNZA & SKARDU — Grand Honeymoon Tour (10 Days)",
     location: "SWAT, HUNZA & SKARDU",
     duration: "10 Days 9 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/sw5.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "15": {
     id: 15,
-    title: "6 Days Honeymoon Package for SKARDU Valley",
+    title: "SKARDU VALLEY — Honeymoon Special Trip (06 Days)",
     location: "SKARDU Valley",
     duration: "6 Days 5 Nights",
     price: "Contact for Pricing",
@@ -159,7 +159,7 @@ const packageDetails: any = {
   },
   "16": {
     id: 16,
-    title: "Honeymoon Tour Package: SWAT , Shogran | Kashmir (7 Days)",
+    title: "SWAT, SHOGRAN & KASHMIR — Honeymoon Tour (07 Days)",
     location: "SWAT, Shogran & Kashmir",
     duration: "7 Days 6 Nights",
     price: "Contact for Pricing",
@@ -169,37 +169,37 @@ const packageDetails: any = {
   },
   "17": {
     id: 17,
-    title: "Honeymoon Package for SWAT Valley & Shogran Valley (05 Days)",
+    title: "SWAT & SHOGRAN — Honeymoon Special Trip (05 Days)",
     location: "SWAT & Shogran",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/sw5.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "18": {
     id: 18,
-    title: "5 Days Honeymoon Package for HUNZA Valley",
+    title: "HUNZA VALLEY — Honeymoon Special Trip (05 Days)",
     location: "HUNZA Valley",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/hh6.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "19": {
     id: 19,
-    title: "8 Days Honeymoon Package for HUNZA Valley and SKARDU Valley",
+    title: "HUNZA & SKARDU — Honeymoon Special Trip (08 Days)",
     location: "HUNZA & SKARDU",
     duration: "8 Days 7 nights",
     price: "Contact for Pricing",
-    image: "/honey.jpg",
+    image: "/h8.jpg",
     groupSize: "2 people",
     tourType: "Honeymoon Package"
   },
   "20": {
     id: 20,
-    title: "Arang Kel, Taobat, Ratti Gali Tour – 05 Days",
+    title: "KASHMIR — Arang Kel, Taobat & Ratti Gali Tour (05 Days)",
     location: "Kashmir",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
@@ -209,7 +209,7 @@ const packageDetails: any = {
   },
   "21": {
     id: 21,
-    title: "Couple Tour To Kashmir From Islamabad – 05 Days",
+    title: "KASHMIR VALLEY — Couple Special Tour (05 Days)",
     location: "Kashmir",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
@@ -300,7 +300,7 @@ export default function HoneymoonToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-red-600 transition-colors card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
                   {pkg.title}
                 </h3>
 
@@ -317,10 +317,10 @@ export default function HoneymoonToursPage() {
 
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                   <div>
-                    <div className="text-sm text-gray-500 font-label" style={{ fontFamily: "'Inter', sans-serif" }}>Starting from</div>
-                    <div className="text-xl font-bold text-red-600 price-display font-numbers">{pkg.price}</div>
+                    <div className="text-xs text-gray-500">Starting from</div>
+                    <div className="text-lg font-bold text-red-600">{pkg.price}</div>
                   </div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold transition-colors shadow-md btn-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
                     View Details
                   </button>
                 </div>

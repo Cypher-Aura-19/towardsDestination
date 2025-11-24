@@ -662,40 +662,7 @@ default function InternationalTourDetail() {
             </div>
           </div>
 
-          {/* Why Choose Us Box - Full Width */}
-          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-5 shadow-xl text-white">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-lg">
-                  <Star className="w-5 h-5" />
-                </div>
-                <h3 className="text-lg font-bold">Why Choose Us?</h3>
-              </div>
-              
-              <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">6+ Years Experience</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">20,000+ Happy Clients</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">100% Visa Assistance</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">24/7 Support</span>
-                </div>
-              </div>
-
-              <div className="hidden lg:block text-xs text-white/90 max-w-xs">
-                Expert team handling every aspect of your journey.
-              </div>
-            </div>
-          </div>
+   
         </div>
       </section>
 
@@ -732,41 +699,7 @@ default function InternationalTourDetail() {
               </div>
             </section>
 
-            {/* Why Choose Us */}
-            <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 border-2 border-blue-200 shadow-lg">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="bg-blue-600 text-white p-3 rounded-full">
-                  <Plane className="w-6 h-6" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-blue-800 mb-3">
-                    Why Choose Towardsdestination.pk?
-                  </h2>
-                  <p className="text-gray-700 leading-relaxed">
-                    Towardsdestination.pk is a leading travel company with <span className="font-bold text-blue-600">6+ years of experience</span>, dedicated to providing exceptional travel experiences. With a proven track record of serving <span className="font-bold text-blue-600">20,000+ clients</span>, our team of experts handles every aspect of your journey, from flights and accommodations to activities and tours, ensuring a seamless and memorable trip.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                <div className="bg-white rounded-lg p-4 shadow text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">6+</div>
-                  <div className="text-xs text-gray-600 font-semibold">Years Experience</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">20,000+</div>
-                  <div className="text-xs text-gray-600 font-semibold">Happy Clients</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">100%</div>
-                  <div className="text-xs text-gray-600 font-semibold">Visa Assistance</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">24/7</div>
-                  <div className="text-xs text-gray-600 font-semibold">Support</div>
-                </div>
-              </div>
-            </section>
+         
 
             {/* Points to Visit */}
             {tour.pointsToVisit && (

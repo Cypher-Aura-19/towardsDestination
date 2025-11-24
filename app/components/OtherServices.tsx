@@ -136,7 +136,7 @@ export default function OtherServices() {
           <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
             🚗 OTHER SERVICES
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">
+          <h2 className="section-heading text-3xl xs:text-4xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="gradient-text">Rental & Hotel Services</span>
           </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto mb-6">
@@ -219,7 +219,7 @@ export default function OtherServices() {
 
                 {/* Content */}
                 <div className="p-4">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
                     {vehicle.name}
                   </h3>
                   
@@ -297,7 +297,7 @@ export default function OtherServices() {
 
                 {/* Content */}
                 <div className="p-4">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors line-clamp-2">
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-1 group-hover:text-red-700 transition-colors line-clamp-2">
                     {hotel.name}
                   </h3>
                   

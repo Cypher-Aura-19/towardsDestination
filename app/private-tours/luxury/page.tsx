@@ -160,7 +160,7 @@ export default function LuxuryToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-amber-600 transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-amber-700 transition-colors">
                   {pkg.title}
                 </h3>
 
@@ -181,7 +181,7 @@ export default function LuxuryToursPage() {
                       <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
                     ))}
                   </div>
-                  <button className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
+                  <button className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg">
                     View Details
                   </button>
                 </div>

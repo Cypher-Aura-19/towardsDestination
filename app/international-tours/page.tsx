@@ -299,35 +299,35 @@ export default function InternationalToursPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20">
+      <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/umrah.jpg"
             alt="International Tours"
             fill
             className="object-cover"
+            priority
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           {/* Company Name - More Visible */}
           <div className="mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-wide" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '0.03em' }}>
-              TOWARDSDESTINATION.PK
-            </h2>
-            <span className="inline-block bg-red-600 text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg tracking-wider" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '0.1em' }}>
+    
+
+            <span className="inline-block bg-red-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold shadow-lg">
               🌍 INTERNATIONAL TOURS
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="section-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Explore the World<br />
-            <span className="bg-white text-red-600 px-6 py-3 inline-block rounded-xl mt-3 text-2xl md:text-3xl lg:text-4xl whitespace-nowrap font-bold shadow-2xl" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.02em' }}>With Premium Packages</span>
+            <span className="bg-white text-red-600 px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 inline-block rounded-lg sm:rounded-xl mt-2 sm:mt-3 text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold shadow-2xl">With Premium Packages</span>
           </h1>
           
           <p className="text-white text-base md:text-lg max-w-3xl mb-6 leading-relaxed font-light tracking-wide" style={{ fontFamily: "'Inter', sans-serif", lineHeight: '1.8' }}>
@@ -336,18 +336,18 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
           </p>
           
           {/* Quick Stats */}
-          <div className="grid grid-cols-3 gap-4 max-w-2xl">
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">10+</div>
-              <div className="text-xs text-white/80 font-semibold">Destinations</div>
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-2xl">
+            <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-2 sm:py-3 rounded-lg">
+              <div className="text-lg sm:text-2xl font-bold text-white">10+</div>
+              <div className="text-[10px] sm:text-xs text-white/80 font-semibold">Destinations</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">4-21</div>
-              <div className="text-xs text-white/80 font-semibold">Days Tours</div>
+            <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-2 sm:py-3 rounded-lg">
+              <div className="text-lg sm:text-2xl font-bold text-white">4-21</div>
+              <div className="text-[10px] sm:text-xs text-white/80 font-semibold">Days Tours</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-xs text-white/80 font-semibold">Visa Assistance</div>
+            <div className="bg-white/10 backdrop-blur-sm px-2 sm:px-4 py-2 sm:py-3 rounded-lg">
+              <div className="text-lg sm:text-2xl font-bold text-white">100%</div>
+              <div className="text-[10px] sm:text-xs text-white/80 font-semibold">Visa Assistance</div>
             </div>
           </div>
         </div>
@@ -359,9 +359,9 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              ✈️ EXPLORE THE WORLD
+              🌍 EXPLORE THE WORLD
             </span>
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
+            <h2 className="section-heading text-4xl font-bold text-red-600 mb-4">
               International Tour Packages
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
@@ -522,16 +522,14 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       <div className="flex gap-3">
                         <Link 
                           href={tour.isMultiPackage ? `/international-tours/turkey` : `/international-tours/${tour.id}`}
-                          className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
+                         
                         >
-                          View Details
+                          <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
+                    View Details
+                  </button>
                         </Link>
-                        <Link 
-                          href={tour.isMultiPackage ? `/international-tours/turkey` : `/international-tours/${tour.id}`}
-                          className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105"
-                        >
-                          Book Now
-                        </Link>
+                       
+                     
                       </div>
                     </div>
                   </div>
@@ -634,12 +632,9 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                           <p className="text-xs text-gray-500 mt-1">per person</p>
                         </div>
                         <div className="flex gap-3">
-                          <span className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
-                            View Details
-                          </span>
-                          <span className="px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
-                            Book Now
-                          </span>
+                         <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
+                    View Details
+                  </button>
                         </div>
                       </div>
                     </div>

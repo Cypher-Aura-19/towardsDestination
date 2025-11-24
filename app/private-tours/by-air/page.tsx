@@ -10,7 +10,7 @@ export default function PrivateToursByAir() {
   const packages = [
     {
       id: 1,
-      title: "7 Days By-Air Tour to HUNZA & SKARDU Valley",
+      title: "HUNZA & SKARDU — Private Tour by Air (07 Days)",
       duration: "7 Days 6 Nights",
       location: "HUNZA & SKARDU",
       price: 0,
@@ -20,7 +20,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 2,
-      title: "3 Days By-Air Tour to HUNZA Valley",
+      title: "HUNZA VALLEY — Private Tour by Air (03 Days)",
       duration: "3 Days 2 Nights",
       location: "HUNZA",
       price: 0,
@@ -30,7 +30,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 3,
-      title: "4 Days By-Air Tour to HUNZA Valley",
+      title: "HUNZA VALLEY — Private Tour by Air (04 Days)",
       duration: "4 Days 3 Nights",
       location: "HUNZA Valley",
       price: 0,
@@ -40,7 +40,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 4,
-      title: "5 Days By-Air Tour to HUNZA Valley",
+      title: "HUNZA VALLEY — Private Tour by Air (05 Days)",
       duration: "5 Days 4 Nights",
       location: "HUNZA Valley",
       price: 0,
@@ -50,7 +50,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 5,
-      title: "4 Days By-Air Tour to SKARDU Valley",
+      title: "SKARDU VALLEY — Private Tour by Air (04 Days)",
       duration: "4 Days 3 Nights",
       location: "SKARDU Valley",
       price: 0,
@@ -60,7 +60,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 6,
-      title: "5 Days By-Air Tour to SKARDU Valley",
+      title: "SKARDU VALLEY — Private Tour by Air (05 Days)",
       duration: "5 Days 4 Nights",
       location: "SKARDU Valley",
       price: 0,
@@ -70,7 +70,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 7,
-      title: "7 Days By-Air Tour to SOQ Valley",
+      title: "SOQ VALLEY — Private Tour by Air (07 Days)",
       duration: "7 Days 6 Nights",
       location: "SOQ Valley",
       price: 0,
@@ -80,7 +80,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 8,
-      title: "8 Days By-Air Tour to NAZBAR Valley",
+      title: "NAZBAR VALLEY — Private Tour by Air (08 Days)",
       duration: "8 Days 7 Nights",
       location: "NAZBAR Valley",
       price: 0,
@@ -90,7 +90,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 9,
-      title: "7 Days By-Air Tour to KHORKUNDUS Valley",
+      title: "KHORKUNDUS VALLEY — Private Tour by Air (07 Days)",
       duration: "7 Days 6 Nights",
       location: "KHORKUNDUS Valley",
       price: 0,
@@ -100,7 +100,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 10,
-      title: "5 Days By-Air Tour to FAIRY MEADOWS",
+      title: "FAIRY MEADOWS — Private Tour by Air (05 Days)",
       duration: "5 Days 4 Nights",
       location: "FAIRY MEADOWS & NANGA PARBAT",
       price: 0,
@@ -110,7 +110,7 @@ export default function PrivateToursByAir() {
     },
     {
       id: 11,
-      title: "5 Days By-Air Tour to ASTORE & MINIMARG",
+      title: "ASTORE & MINIMARG — Private Tour by Air (05 Days)",
       duration: "5 Days 4 Nights",
       location: "ASTORE, MINIMARG & DEOSAI Plains",
       price: 0,
@@ -140,17 +140,17 @@ export default function PrivateToursByAir() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
               ✈️ TOWARDSDESTINATION.PK - Private Tours By Air
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h1 className="section-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Private Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>By Air Travel</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Air Travel</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
             Experience the beauty of Northern Pakistan with our exclusive private tours by air. Fast, comfortable, and personalized journeys tailored just for you.
           </p>
           
@@ -225,7 +225,7 @@ export default function PrivateToursByAir() {
                     <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-red-700 mb-3 group-hover:text-red-800 transition-colors card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-3 group-hover:text-red-700 transition-colors line-clamp-2">
                     {pkg.title}
                   </h3>
 

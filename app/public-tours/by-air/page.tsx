@@ -162,7 +162,7 @@ export default function PublicToursByAir() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="section-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Northern Pakistan Tours<br />
             <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Air Travel</span>
           </h1>

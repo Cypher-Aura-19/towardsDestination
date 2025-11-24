@@ -270,17 +270,17 @@ const packages = [
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
               🚌 TOWARDSDESTINATION.PK - Public Group Tours
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h1 className="section-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Northern Pakistan Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>By Road Travel</span>
+            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Road Travel</span>
           </h1>
           
-          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
             Journey through the legendary Karakoram Highway with our group tours. Experience scenic mountain roads and breathtaking views at a comfortable pace.
           </p>
           
@@ -382,7 +382,7 @@ const packages = [
                     <span className="text-sm">{pkg.location}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-red-600 mb-3 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
                     {pkg.title}
                   </h3>
 
@@ -437,7 +437,7 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Scenic Journey</h3>
+              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Scenic Journey</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Experience the world-famous Karakoram Highway with countless photo opportunities.
               </p>
@@ -446,7 +446,7 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Bus className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Budget Friendly</h3>
+              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Budget Friendly</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 More economical option while still enjoying comfortable travel and great experiences.
               </p>
@@ -455,7 +455,7 @@ const packages = [
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>Cultural Immersion</h3>
+              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Cultural Immersion</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Stop at local villages, interact with communities, and experience authentic culture.
               </p>

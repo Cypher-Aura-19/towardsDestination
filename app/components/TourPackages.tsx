@@ -44,10 +44,10 @@ export default function TourPackages() {
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header - Travel Agency Style */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up relative z-40">
-          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
             🏔️ POPULAR TOUR PACKAGES
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="section-heading text-3xl xs:text-4xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="gradient-text">Explore Northern Pakistan</span>
 
           </h2>
@@ -131,7 +131,7 @@ export default function TourPackages() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-xl font-bold text-red-700 mb-2 group-hover:text-red-800 transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <h3 className="tour-title text-lg font-semibold text-gray-800 mb-2 group-hover:text-red-700 transition-colors leading-snug">
                   {destination.name}
                 </h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">

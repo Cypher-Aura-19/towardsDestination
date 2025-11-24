@@ -138,40 +138,7 @@ export default function TurkeyToursPage() {
             </div>
           </div>
 
-          {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-5 shadow-xl text-white">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-lg">
-                  <Star className="w-5 h-5" />
-                </div>
-                <h3 className="text-lg font-bold">Why Choose Us?</h3>
-              </div>
-              
-              <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">6+ Years Experience</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">20,000+ Happy Clients</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">100% Visa Assistance</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">24/7 Support</span>
-                </div>
-              </div>
-
-              <div className="hidden lg:block text-xs text-white/90 max-w-xs">
-                Expert team handling every aspect of your journey.
-              </div>
-            </div>
-          </div>
+      
         </div>
       </section>
 
