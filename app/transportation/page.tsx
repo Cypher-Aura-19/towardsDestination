@@ -16,20 +16,6 @@ export default function TransportationPage() {
 
   const cars = [
     {
-      id: 1,
-      name: "VAN - Classic",
-      type: "Rent a car",
-      price: 8000,
-      passengers: 12,
-      gearShift: "Auto",
-      baggage: 8,
-      doors: 3,
-      image: "/car/1.png",
-      rating: 4.8,
-      reviews: 45,
-      description: "Perfect for large groups and family trips. Spacious interior with comfortable seating for 12 passengers."
-    },
-    {
       id: 2,
       name: "Toyota Hiace",
       type: "Rent a car",
@@ -38,7 +24,7 @@ export default function TransportationPage() {
       gearShift: "Auto",
       baggage: 7,
       doors: 3,
-      image: "/car/2.png",
+      image: "/car/hi1.jpg",
       rating: 4.9,
       reviews: 67,
       description: "Reliable and comfortable van ideal for group tours. Excellent fuel efficiency and smooth ride."
@@ -52,39 +38,10 @@ export default function TransportationPage() {
       gearShift: "Auto",
       baggage: 15,
       doors: 2,
-      image: "/car/3.png",
+      image: "/car/c1.jpg",
       rating: 4.7,
       reviews: 32,
       description: "Large capacity bus perfect for big groups. Maximum comfort and space for extended journeys."
-    },
-    {
-      id: 4,
-      name: "Mountain Jeep",
-      type: "For Rent",
-      price: 7998,
-      passengers: 4,
-      gearShift: "Manual",
-      baggage: 4,
-      doors: 2,
-      image: "/car/4.png",
-      rating: 5.0,
-      reviews: 89,
-      description: "Rugged 4x4 jeep designed for mountain terrains. Perfect for adventure trips and off-road expeditions."
-    },
-  
-    {
-      id: 5,
-      name: "Toyota Grand Cabin",
-      type: "Rent a car",
-      price: 13000,
-      passengers: 13,
-      gearShift: "Auto",
-      baggage: 11,
-      doors: 3,
-      image: "/car/6.png",
-      rating: 4.8,
-      reviews: 78,
-      description: "Spacious cabin with excellent legroom. Ideal for family trips and group travel with ample storage."
     },
     {
       id: 6,
@@ -95,7 +52,7 @@ export default function TransportationPage() {
       gearShift: "Auto",
       baggage: 3,
       doors: 4,
-      image: "/car/6.png",
+      image: "/car/brv.jpg",
       rating: 4.6,
       reviews: 43,
       description: "Compact SUV with modern features. Great fuel economy and comfortable for small groups."
@@ -109,12 +66,11 @@ export default function TransportationPage() {
       gearShift: "Auto",
       baggage: 3,
       doors: 4,
-      image: "/car/7.png",
+      image: "/car/corrxli.jpg",
       rating: 4.7,
       reviews: 92,
       description: "Economical sedan perfect for city travel and short trips. Reliable and fuel-efficient."
     },
-
     {
       id: 8,
       name: "Corolla Grande",
@@ -124,7 +80,7 @@ export default function TransportationPage() {
       gearShift: "Auto",
       baggage: 3,
       doors: 4,
-      image: "/car/8.jpg",
+      image: "/car/cor1.jpg",
       rating: 4.7,
       reviews: 92,
       description: "Economical sedan perfect for city travel and short trips. Reliable and fuel-efficient."

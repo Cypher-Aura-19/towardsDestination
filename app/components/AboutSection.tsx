@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function AboutSection() {
   const stats = [
     {
-      value: "12+",
+      value: "7+",
       label: "Years of Experience"
     },
     {
@@ -14,7 +14,7 @@ export default function AboutSection() {
       label: "Destination Countries"
     },
     {
-      value: "15K+",
+      value: "22K+",
       label: "Satisfied Clients"
     }
   ];

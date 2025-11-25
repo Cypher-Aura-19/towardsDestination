@@ -13,7 +13,7 @@ const packageDetails: any = {
     location: "Nathia Gali",
     duration: "2 Days 1 Night",
     price: "Contact for Pricing",
-    image: "/naran1.jpg",
+    image: "/hnath2.jpg",
     groupSize: "2 people",
     tourType: "Luxury Package"
   },
@@ -23,7 +23,7 @@ const packageDetails: any = {
     location: "Malam Jabba",
     duration: "2 Days 1 Night",
     price: "Contact for Pricing",
-    image: "/swat.jpg",
+    image: "/hma2.jpg",
     groupSize: "2 people",
     tourType: "Luxury Package"
   },

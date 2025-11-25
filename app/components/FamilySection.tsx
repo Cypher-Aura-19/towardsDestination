@@ -6,13 +6,13 @@ export default function FamilySection() {
   const familyStats = [
     {
       icon: Users,
-      number: "15,000+",
+      number: "22,000+",
       label: "Happy Travelers",
       description: "Families who trusted us"
     },
     {
       icon: Heart,
-      number: "12+",
+      number: "7+",
       label: "Years Experience",
       description: "Serving since 2012"
     },
@@ -64,7 +64,7 @@ export default function FamilySection() {
           <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-xl hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
             👨‍👩‍👧‍👦 JOIN OUR FAMILY
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
+          <h2 className="text-[2px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
             The TOWARDSDESTINATION Family
           </h2>
           <p className="text-white/80 text-base sm:text-lg max-w-3xl mx-auto">
