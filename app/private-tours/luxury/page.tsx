@@ -43,7 +43,7 @@ const packageDetails: any = {
     location: "Swat & Shogran",
     duration: "5 Days 4 Nights",
     price: "Contact for Pricing",
-    image: "/swat.jpg",
+    image: "/l5.jpg",
     groupSize: "2 people",
     tourType: "Luxury Package"
   },
@@ -53,7 +53,7 @@ const packageDetails: any = {
     location: "HUNZA, SKARDU & Islamabad",
     duration: "12 Days 10 Nights",
     price: "Contact for Pricing",
-    image: "/hunza1.jpg",
+    image: "/l6.jpg",
     groupSize: "Flexible",
     tourType: "Luxury Package"
   },
@@ -63,7 +63,7 @@ const packageDetails: any = {
     location: "Islamabad",
     duration: "4 Day 3 Night",
     price: "Contact for Pricing",
-    image: "/hero.jpg",
+    image: "/isl.jpg",
     groupSize: "Flexible",
     tourType: "Luxury Package"
   }
@@ -160,9 +160,18 @@ export default function LuxuryToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-amber-700 transition-colors">
-                  {pkg.title}
-                </h3>
+              <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-amber-700 transition-colors min-h-[3.5rem]">
+  {/* Part 1: pkg.duration (e.g., 5 Days) - Uses 'Dancing Script' and text-sm for smaller size */}
+  <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
+    {pkg.duration.split(' ')[0]} {pkg.duration.split(' ')[1]}
+  </span>
+  {' '}
+  {/* Part 2: pkg.location (e.g., Hunza) - Uses font-medium (standard size) */}
+  <span className="">{pkg.location}</span>
+  {' '}
+  {/* Part 3: Parenthetical text - Uses font-normal and text-sm for smaller size */}
+  <span className="font-normal">(Honeymoon Special Luxury trip)</span>
+</h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">

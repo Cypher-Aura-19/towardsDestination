@@ -15,8 +15,8 @@ export default function TourContactSection() {
             <Image 
               src="/wha3.png" 
               alt="Call / WhatsApp" 
-              width={50} 
-              height={100}
+              width={70} 
+              height={80}
             />
             <a href="tel:+923012404050" className="text-yellow-600 hover:text-yellow-700 font-bold text-3xl whitespace-nowrap">
               +92 301 2404050
@@ -71,8 +71,8 @@ export default function TourContactSection() {
               <Image 
                 src="/wha3.png" 
                 alt="Call / WhatsApp" 
-                width={60} 
-                height={60}
+                width={70} 
+                height={80}
               />
               <a href="tel:+923012404050" className="text-red-600 hover:text-red-700 font-bold text-xl whitespace-nowrap">
                 +92 301 2404050
@@ -101,8 +101,8 @@ export default function TourContactSection() {
            <Image 
               src="/wha3.png" 
               alt="Call / WhatsApp" 
-              width={60} 
-              height={60}
+              width={70} 
+              height={80}
             />
             <a href="tel:+923012404050" className="text-yellow-600 hover:text-yellow-700 font-bold text-2xl whitespace-nowrap">
               +92 301 2404050
@@ -158,8 +158,8 @@ export default function TourContactSection() {
                 <Image 
                   src="/wha3.png" 
                   alt="Call / WhatsApp" 
-                  width={60} 
-                  height={60}
+                  width={70} 
+                  height={80}
                 />
                 <a href="tel:+923012404050" className="text-red-600 hover:text-red-700 font-bold text-lg whitespace-nowrap">
                   +92 301 2404050

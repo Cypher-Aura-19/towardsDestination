@@ -300,9 +300,26 @@ export default function HoneymoonToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
-                  {pkg.title}
-                </h3>
+                <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-red-700 transition-colors min-h-[3.5rem]">
+  {/* Part 1: Main Title - Retains default size (text-base) */}
+  <span className="">{pkg.title.split('—')[0].trim()}</span>
+  {pkg.title.includes('—') && (
+    <>
+      {' — '}
+      {/* Part 2: Middle Section - Uses text-sm for smaller size */}
+      <span className="font-normal">{pkg.title.split('—')[1].split('(')[0].trim()}</span>
+      {pkg.title.includes('(') && (
+        <>
+          {' '}
+          {/* Part 3: Parentheses Text - Uses 'Dancing Script' */}
+          <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
+            ({pkg.title.match(/\(([^)]+)\)/)?.[1]})
+          </span>
+        </>
+      )}
+    </>
+  )}
+</h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">

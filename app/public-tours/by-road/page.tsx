@@ -1,8 +1,8 @@
-﻿"use client";
+"use client";
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Bus, Calendar, Users, MapPin, Check, Star } from "lucide-react";
+import { Bus, Calendar, Users, MapPin, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,7 +13,7 @@ export default function PublicToursByRoad() {
 const packages = [
   {
     id: 1,
-    title: "KUMRAT, KALA CHASHMA & DOJANGA MEADOWS (3 Days) Tour",
+    title: "03 days KUMRAT VALLEY",
     duration: "3 days 2 nights",
     location: "Kumrat Valley",
     price: 14500,
@@ -24,9 +24,9 @@ const packages = [
   },
   {
     id: 2,
-    title: "5 Days Trip to HUNZA & NALTAR Valley",
+    title: "05 days HUNZA VALLEY",
     duration: "5 Days, 4 Nights",
-    location: "HUNZA & NALTAR",
+    location: "HUNZA VALLEY",
     price: 22000,
     image: "/hunza1.jpg",
     rating: 4.9,
@@ -35,7 +35,7 @@ const packages = [
   },
   {
     id: 3,
-    title: "Naran & Shogran Honeymoon Tour Package (3 Days)",
+    title: "03 days NARAN & SHOGRAN",
     duration: "3 Days 2 Nights",
     location: "Naran & Shogran",
     price: 105000,
@@ -46,7 +46,7 @@ const packages = [
   },
   {
     id: 4,
-    title: "3 Days – Naran | Shogran Group Tour Packages",
+    title: "03 days NARAN & SHOGRAN",
     duration: "3 Days 2 Nights",
     location: "Naran & Shogran",
     price: 14000,
@@ -57,7 +57,7 @@ const packages = [
   },
   {
     id: 5,
-    title: "5 Days Trip to Neelum Valley | Taobat| Arang Kel & Ratti Gali",
+    title: "05 days NEELUM VALLEY",
     duration: "5 Days 4 Nights",
     location: "Neelum Valley, Kashmir",
     price: 25000,
@@ -68,7 +68,7 @@ const packages = [
   },
   {
     id: 6,
-    title: "4 Days Trip to Ratti Gali & Arang kel",
+    title: "04 days KASHMIR",
     duration: "4 Days 3 Nights",
     location: "Kashmir",
     price: 0,
@@ -79,7 +79,7 @@ const packages = [
   },
   {
     id: 7,
-    title: "Taobat & Arang kel Kashmir : 4 Days Trip",
+    title: "04 days KASHMIR",
     duration: "4 Days 3 Nights",
     location: "Kashmir",
     price: 17500,
@@ -90,7 +90,7 @@ const packages = [
   },
   {
     id: 8,
-    title: "4 Days Trip to Kumrat | Jahaz Banda & Katora Lake",
+    title: "04 days KUMRAT VALLEY",
     duration: "4 Days 3 Nights",
     location: "Kumrat Valley",
     price: 17500,
@@ -101,7 +101,7 @@ const packages = [
   },
   {
     id: 9,
-    title: "3 Days Trip to Ratti Gali Kashmir",
+    title: "03 days KASHMIR",
     duration: "3 Days 2 Nights",
     location: "Kashmir",
     price: 15500,
@@ -112,7 +112,7 @@ const packages = [
   },
   {
     id: 10,
-    title: "5 Days Trip to FAIRY MEADOWS & Beyal Camp",
+    title: "05 days FAIRY MEADOWS",
     duration: "5 Days 4 Nights",
     location: "FAIRY MEADOWS",
     price: 24000,
@@ -123,7 +123,7 @@ const packages = [
   },
   {
     id: 11,
-    title: "6 Days Trip to ASTORE | MINIMARG | Rama Meadows| DEOSAI",
+    title: "06 days ASTORE & DEOSAI",
     duration: "6 Days 5 Nights",
     location: "ASTORE & DEOSAI",
     price: 28000,
@@ -134,7 +134,7 @@ const packages = [
   },
   {
     id: 12,
-    title: "8 Days Trip to HUNZA & SKARDU Valley",
+    title: "08 days HUNZA & SKARDU",
     duration: "8 Days 7 Nights",
     location: "HUNZA & SKARDU",
     price: 32000,
@@ -145,7 +145,7 @@ const packages = [
   },
   {
     id: 13,
-    title: "6 Days Trip to SKARDU & DEOSAI Plains",
+    title: "06 days SKARDU & DEOSAI",
     duration: "6 Days 5 Nights",
     location: "SKARDU & DEOSAI",
     price: 26000,
@@ -156,7 +156,7 @@ const packages = [
   },
   {
     id: 14,
-    title: "3 Days Trip to Neelum Valley & Arang Kel",
+    title: "03 days NEELUM VALLEY",
     duration: "3 Days 2 Nights",
     location: "Neelum Valley, Kashmir",
     price: 14000,
@@ -167,7 +167,7 @@ const packages = [
   },
   {
     id: 15,
-    title: "3 Days Trip to Kalam & Malam Jabba, Swat Valley",
+    title: "03 days SWAT VALLEY",
     duration: "3 Days 2 Nights",
     location: "Swat Valley",
     price: 14000,
@@ -178,7 +178,7 @@ const packages = [
   },
   {
     id: 16,
-    title: "08 Days Pakistan Trip to Shogran & Kashmir Valley (From Karachi)",
+    title: "08 days SHOGRAN & KASHMIR",
     duration: "8 days, 7 nights",
     location: "Shogran & Kashmir Valley",
     price: 38000,
@@ -189,7 +189,7 @@ const packages = [
   },
   {
     id: 17,
-    title: "10 Days Pakistan Trip to Swat, Shogran & Kashmir Valley (From Karachi)",
+    title: "10 days SWAT, SHOGRAN & KASHMIR",
     duration: "10 days, 9 nights",
     location: "Swat, Shogran & Kashmir Valley",
     price: 48000,
@@ -200,7 +200,7 @@ const packages = [
   },
   {
     id: 18,
-    title: "07 Days Trip to Swat Valley (From Karachi)",
+    title: "07 days SWAT VALLEY",
     duration: "7 days, 6 nights",
     location: "Swat Valley",
     price: 30000,
@@ -211,7 +211,7 @@ const packages = [
   },
   {
     id: 19,
-    title: "09 Days Trip to HUNZA Valley (From Karachi)",
+    title: "09 days HUNZA VALLEY",
     duration: "9 days, 8 nights",
     location: "HUNZA Valley",
     price: 42000,
@@ -222,7 +222,7 @@ const packages = [
   },
   {
     id: 20,
-    title: "12 Days Tour package HUNZA & SKARDU Valley (From Karachi)",
+    title: "12 days HUNZA & SKARDU",
     duration: "12 days, 11 nights",
     location: "HUNZA & SKARDU Valley",
     price: 50000,
@@ -233,7 +233,7 @@ const packages = [
   },
   {
     id: 21,
-    title: "Discover Pakistan: HUNZA | SKARDU | Lahore | Islamabad (8 Days Trip)",
+    title: "08 days HUNZA & SKARDU",
     duration: "8 Days 7 Nights",
     location: "HUNZA, SKARDU, Lahore & Islamabad",
     price: 455,
@@ -382,11 +382,17 @@ const packages = [
                     <span className="text-sm">{pkg.location}</span>
                   </div>
                   
-                  <h3 className="card-title text-base font-semibold text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
-                    {pkg.title}
-                  </h3>
-
-                  {/* Duration */}
+                  <h3 className="card-title text-base text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
+                      {/* The 'Business' part - using a cursive/script-like Google Font */}
+                      <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
+                        {pkg.title.split(' ')[0]} {pkg.title.split(' ')[1]}
+                      </span>{' '}
+                      {/* The 'WEBSITE' part - keeping a strong, non-cursive font */}
+                      <span className="">
+                        {pkg.title.split(' ').slice(2).join(' ')}
+                      </span>
+                    </h3>
+                                      {/* Duration */}
                   <div className="flex items-center gap-2 text-gray-600 mb-3">
                     <Calendar className="w-4 h-4" />
                     <span className="text-sm">{pkg.duration}</span>

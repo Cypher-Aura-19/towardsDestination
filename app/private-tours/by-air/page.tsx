@@ -225,10 +225,16 @@ export default function PrivateToursByAir() {
                     <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   
-                  <h3 className="card-title text-base font-semibold text-gray-800 mb-3 group-hover:text-red-700 transition-colors line-clamp-2">
-                    {pkg.title}
-                  </h3>
-
+                              <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-red-700 transition-colors min-h-[3.5rem]">
+  {/* Part 1: pkg.duration - Uses 'Dancing Script' and font-light */}
+  <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
+    {pkg.duration.split(' ')[0]} {pkg.duration.split(' ')[1]}
+  </span>
+  {/* Part 2: Added <span> and font-normal for 'simple' style */}
+  <span className="font-normal">{' By Air Private tour to '}</span>
+  {/* Part 3: pkg.location - Uses font-medium */}
+  <span className="">{pkg.location}</span>
+</h3>
                   <div className="flex items-center gap-4 mb-4 text-sm text-red-600">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
