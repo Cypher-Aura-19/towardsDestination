@@ -159,6 +159,7 @@ export default function ContactPage() {
               );
             })}
           </div>
+           <TourContactSection/>
         </div>
       </section>
 
@@ -166,7 +167,7 @@ export default function ContactPage() {
       <section className="py-12 xs:py-16 sm:py-20">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           
-        <TourContactSection/>
+       
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xs:gap-8 sm:gap-12">
             {/* Form */}

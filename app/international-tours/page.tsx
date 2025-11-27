@@ -36,7 +36,7 @@ export default function InternationalToursPage() {
     },
     {
       id: 2,
-      name: "Turkey Tours 2024-2025",
+      name: "Turkey Tours",
       duration: "5-7 Days Options",
       price: "PKR 339,999",
       priceUSD: "$1,193",
@@ -582,7 +582,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <h3 className="text-2xl font-bold text-red-600 mb-2">
-                            Umrah Packages 2024-2025
+                            Umrah Packages
                           </h3>
                           <div className="flex items-center gap-2 text-gray-600">
                             <Calendar className="w-4 h-4" />

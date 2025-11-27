@@ -18,8 +18,8 @@ export default function TourContactSection() {
               width={70} 
               height={80}
             />
-            <a href="tel:+923012404050" className="text-yellow-600 hover:text-yellow-700 font-bold text-3xl whitespace-nowrap">
-              +92 301 2404050
+            <a href="tel:+92 3174101300" className="text-yellow-600 hover:text-yellow-700 font-bold text-3xl whitespace-nowrap">
+              +92 317 4101300
             </a>
           </div>
 
@@ -74,8 +74,8 @@ export default function TourContactSection() {
                 width={70} 
                 height={80}
               />
-              <a href="tel:+923012404050" className="text-red-600 hover:text-red-700 font-bold text-xl whitespace-nowrap">
-                +92 301 2404050
+              <a href="tel:+92 3174101300" className="text-red-600 hover:text-red-700 font-bold text-xl whitespace-nowrap">
+                +92 317 4101300
               </a>
             </div>
             <div className="flex items-center gap-3">
@@ -104,8 +104,8 @@ export default function TourContactSection() {
               width={70} 
               height={80}
             />
-            <a href="tel:+923012404050" className="text-yellow-600 hover:text-yellow-700 font-bold text-2xl whitespace-nowrap">
-              +92 301 2404050
+            <a href="tel:+92 3174101300" className="text-yellow-600 hover:text-yellow-700 font-bold text-2xl whitespace-nowrap">
+              +92 317 4101300
             </a>
           </div>
 
@@ -161,8 +161,8 @@ export default function TourContactSection() {
                   width={70} 
                   height={80}
                 />
-                <a href="tel:+923012404050" className="text-red-600 hover:text-red-700 font-bold text-lg whitespace-nowrap">
-                  +92 301 2404050
+                <a href="tel:+92 3174101300" className="text-red-600 hover:text-red-700 font-bold text-lg whitespace-nowrap">
+                  +92 317 4101300
                 </a>
               </div>
               <div className="flex items-center gap-3">

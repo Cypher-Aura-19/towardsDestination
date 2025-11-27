@@ -120,7 +120,7 @@ export default function TurkeyToursPage() {
           </div>
           
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Turkey Tours 2024-2025
+            Turkey Tours
           </h1>
           
           <div className="flex flex-wrap items-center gap-6 text-gray-700 mb-6">

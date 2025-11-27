@@ -171,7 +171,6 @@ export default function UmrahPackages() {
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
             Umrah Packages<br />
-            <span className="text-white/90">2024-2025</span>
           </h1>
           <p className="text-white/95 text-lg max-w-2xl">
             Embark on a spiritual journey with our comprehensive Umrah packages. 

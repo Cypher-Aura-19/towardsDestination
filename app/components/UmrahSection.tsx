@@ -23,7 +23,7 @@ export default function UmrahSection() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
           <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pulse-glow">
-            🕋 UMRAH PACKAGES 2024-2025
+            🕋 UMRAH PACKAGES
           </span>
           <h2 className="section-heading text-3xl xs:text-4xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="gradient-text">Sacred Journey to Makkah & Madinah</span>

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default function AboutPage() {
   const stats = [
-    { value: "12+", label: "Years of Experience" },
-    { value: "15K+", label: "Happy Travelers" },
+    { value: "7+", label: "Years of Experience" },
+    { value: "22K+", label: "Happy Travelers" },
     { value: "120+", label: "Destinations Covered" },
     { value: "500+", label: "Umrah Pilgrims" }
   ];
@@ -44,7 +44,7 @@ const team = [
   },
   {
     name: "Ms. Aqsa Aziz Jamali", // [cite: 36]
-    role: "Team Member", // Placeholder role
+    role: "Founder/CEO", // Placeholder role
     image: "/team/2.png", // Placeholder path
     description: "Valuable member of the team" // Placeholder description
   },
@@ -87,10 +87,10 @@ const team = [
 ];
 
   const milestones = [
-    { year: "2012", event: "Company Founded", description: "Started with a vision to showcase Pakistan's beauty" },
+    { year: "2018", event: "Company Founded", description: "Started with a vision to showcase Pakistan's beauty" },
     { year: "2015", event: "First Umrah Package", description: "Expanded services to include sacred journeys" },
     { year: "2018", event: "Hotel Established", description: "Opened our premium hotel facility" },
-    { year: "2024", event: "15K+ Travelers", description: "Reached milestone of serving thousands" }
+    { year: "2024", event: "22K+ Travelers", description: "Reached milestone of serving thousands" }
   ];
 
   return (
@@ -127,7 +127,7 @@ const team = [
           </p>
           
           <p className="text-white/95 text-sm xs:text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-4 xs:mb-6">
-            Pakistan's Leading Travel Company Since 2012
+            Pakistan's Leading Travel Company Since 2018
           </p>
           
           {/* Registration Badge */}
@@ -171,7 +171,7 @@ const team = [
             <div>
               <div className="space-y-4 xs:space-y-6 text-gray-600 leading-relaxed text-sm xs:text-base sm:text-lg">
                 <p>
-                  Founded in 2012, TOWARDSDESTINATION.PK began with a simple mission: to share the breathtaking beauty of Pakistan's northern regions with travelers from around the world. What started as a small tour operation has grown into a comprehensive travel service provider.
+                  Founded in 2018, TOWARDSDESTINATION.PK began with a simple mission: to share the breathtaking beauty of Pakistan's northern regions with travelers from around the world. What started as a small tour operation has grown into a comprehensive travel service provider.
                 </p>
                 <p>
                   Over the years, we've expanded our services to include sacred Umrah journeys and established our own premium hotel facility. Our commitment to excellence and customer satisfaction has made us one of the most trusted names in Pakistan's tourism industry.

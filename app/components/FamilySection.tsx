@@ -14,7 +14,7 @@ export default function FamilySection() {
       icon: Heart,
       number: "7+",
       label: "Years Experience",
-      description: "Serving since 2012"
+      description: "Serving since 2018"
     },
     {
       icon: Award,
@@ -69,7 +69,7 @@ export default function FamilySection() {
           </h2>
           <p className="text-white/80 text-base sm:text-lg max-w-3xl mx-auto">
             When you travel with us, you're not just a customer – you're part of our family. 
-            We've been creating unforgettable memories for thousands of travelers since 2012.
+            We've been creating unforgettable memories for thousands of travelers since 2018.
           </p>
         </div>
 

@@ -2,7 +2,7 @@
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Bus, Calendar, Users, MapPin, Star } from "lucide-react";
+import { Bus, Calendar, Users, MapPin, Star, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";

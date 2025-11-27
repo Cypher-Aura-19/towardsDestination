@@ -199,7 +199,7 @@ export default function UmrahPackagesPage() {
           </div>
           
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Umrah Packages 2024-2025
+            Umrah Packages
           </h1>
           
           <div className="flex flex-wrap items-center gap-6 text-gray-700 mb-6">
@@ -230,11 +230,11 @@ export default function UmrahPackagesPage() {
               <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">6+ Years Experience</span>
+                  <span className="text-sm font-semibold">7+ Years Experience</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm font-semibold">20,000+ Happy Clients</span>
+                  <span className="text-sm font-semibold">22,000+ Happy Clients</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 flex-shrink-0" />

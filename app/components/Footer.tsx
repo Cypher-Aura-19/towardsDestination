@@ -27,7 +27,7 @@ export default function Footer() {
               
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2012.
+              Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2018.
             </p>
             <div className="text-gray-300 text-sm space-y-1">
               <p className="font-semibold text-white">Registered from:</p>

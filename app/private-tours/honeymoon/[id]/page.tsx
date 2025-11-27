@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import TourContactSection from "@/app/components/TourContactSection";
-import { MapPin, Calendar, Heart, Phone, Mail, Send, Check, X } from "lucide-react";
+import { MapPin, Calendar, Heart, Phone, Mail, Send, Check, X, Star } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
@@ -1305,6 +1305,41 @@ export default function HoneymoonTourDetail() {
             <div className="flex items-center gap-2">
               <Heart className="w-5 h-5 text-red-600" />
               <span className="text-lg">For Couples</span>
+            </div>
+          </div>
+          
+          {/* Why Choose Us Box */}
+          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white mt-5">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="bg-white/20 p-2 rounded-lg">
+                  <Star className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-bold">Why Choose Us?</h3>
+              </div>
+              
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">7+ Years Experience</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">22,000+ Happy Clients</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">100% Visa Assistance</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm font-semibold">24/7 Support</span>
+                </div>
+              </div>
+
+              <div className="hidden lg:block text-xs text-white/90 max-w-xs">
+                Expert team handling every aspect of your journey.
+              </div>
             </div>
           </div>
         </div>

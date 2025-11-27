@@ -141,7 +141,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-white text-sm xs:text-base sm:text-lg md:text-xl mb-6 max-w-2xl leading-relaxed font-medium animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              Premium Tour Packages • Umrah Services • Luxury Hotels<br />
+              Tour Packages • Hotel Booking • Transportation<br />
               <span className="bg-red-600/80 text-white px-2 sm:px-3 py-1 rounded-md inline-block mt-2 text-xs xs:text-sm sm:text-base animate-pulse-glow">Book Your Dream Journey Today!</span>
             </p>
             

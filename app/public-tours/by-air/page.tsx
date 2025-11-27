@@ -2,7 +2,7 @@
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Plane, Calendar, Users, MapPin, Check } from "lucide-react";
+import { Plane, Calendar, Users, MapPin, Check, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function PublicToursByAir() {
