@@ -2,7 +2,7 @@
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Users, Award, Globe, Heart, Target, Eye, Shield, Clock } from "lucide-react";
+import { Users, Award, Globe, Heart, Target, Eye, Shield, Clock, User } from "lucide-react";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -38,51 +38,59 @@ export default function AboutPage() {
 const team = [
   {
     name: "Muhammad Asad Sindhu",
-    role: "Founder/CEO", // 
-    image: "/team/1.png", // Placeholder path
-    description: "Founder & CEO of TowardsDestination.pk" // 
+    role: "Founder/CEO",
+    image: "/team/1.png",
+    usePlaceholder: false,
+    description: "Founder & CEO of TowardsDestination.pk"
   },
   {
-    name: "Ms. Aqsa Aziz Jamali", // [cite: 36]
-    role: "Founder/CEO", // Placeholder role
-    image: "/team/2.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Ms. Aqsa Aziz Jamali",
+    role: "Founder/CEO",
+    image: "/team/2.png",
+    usePlaceholder: true,
+    description: "Valuable member of the team"
   },
   {
-    name: "Mis Iqra Arshad Faraz", // [cite: 40]
-    role: "Team Member", // Placeholder role
-    image: "/team/3.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Mis Iqra Arshad Faraz",
+    role: "Team Member",
+    image: "/team/3.png",
+    usePlaceholder: true,
+    description: "Valuable member of the team"
   },
   {
-    name: "Shafah Mehmood", // [cite: 41]
-    role: "Team Member", // Placeholder role
-    image: "/team/4.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Shafah Mehmood",
+    role: "Team Member",
+    image: "/team/4.png",
+    usePlaceholder: true,
+    description: "Valuable member of the team"
   },
   {
-    name: "Ms. Fatima Nadeem", // [cite: 42]
-    role: "Team Member", // Placeholder role
-    image: "/team/5.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Ms. Fatima Nadeem",
+    role: "Team Member",
+    image: "/team/5.png",
+    usePlaceholder: true,
+    description: "Valuable member of the team"
   },
   {
-    name: "Mariam Tahir", // [cite: 43]
-    role: "Team Member", // Placeholder role
-    image: "/team/6.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Mariam Tahir",
+    role: "Team Member",
+    image: "/team/6.png",
+    usePlaceholder: true,
+    description: "Valuable member of the team"
   },
   {
-    name: "Mr. Hafiz Zeeshan", // [cite: 44]
-    role: "Team Member", // Placeholder role
-    image: "/team/7.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Mr. Hafiz Zeeshan",
+    role: "Team Member",
+    image: "/team/7.png",
+    usePlaceholder: false,
+    description: "Valuable member of the team"
   },
   {
-    name: "Mr. Arham Gull", // [cite: 45]
-    role: "Team Member", // Placeholder role
-    image: "/team/8.png", // Placeholder path
-    description: "Valuable member of the team" // Placeholder description
+    name: "Mr. Arham Gull",
+    role: "Team Member",
+    image: "/team/8.png",
+    usePlaceholder: false,
+    description: "Valuable member of the team"
   }
 ];
 
@@ -346,12 +354,20 @@ const team = [
             {team.map((member, index) => (
               <div key={index} className="group">
                 <div className="relative h-80 rounded-2xl overflow-hidden mb-4 bg-gray-100">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-contain group-hover:scale-105 transition-transform duration-300"
-                  />
+                  {member.usePlaceholder ? (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg">
+                        <User className="w-16 h-16 text-white" />
+                      </div>
+                    </div>
+                  ) : (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
                 <h3 className="text-xl font-bold text-red-600 mb-1">
                   {member.name}
