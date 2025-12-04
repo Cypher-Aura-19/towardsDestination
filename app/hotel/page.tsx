@@ -1,11 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Wifi, Coffee, Car, Utensils, Star, MapPin, Phone, Mail, Check, Users, Bed, Clock } from "lucide-react";
+import { Wifi, Coffee, Car, Utensils, Star, MapPin, Phone, Mail, Check, Users, Bed, Clock, X, Snowflake, Fan } from "lucide-react";
 import Image from "next/image";
 
 export default function HotelPage() {
+  const [selectedRoom, setSelectedRoom] = useState<typeof roomTypes[0] | null>(null);
+  const [selectedVariant, setSelectedVariant] = useState<"nonAc" | "ac">("nonAc");
+  const [showBookingModal, setShowBookingModal] = useState(false);
+
   const amenities = [
     { icon: Wifi, label: "Free High-Speed Wi-Fi", description: "Stay connected throughout your stay" },
     { icon: Coffee, label: "Complimentary Breakfast", description: "Fresh breakfast buffet daily" },
@@ -18,53 +23,91 @@ export default function HotelPage() {
   const roomTypes = [
     {
       id: 1,
-      name: "Standard Room",
-      price: "PKR 8,000",
-      image: "/hotel.jpg",
+      name: "Economy Room",
+      bedType: "Master Bed / Twin Beds",
+      priceNonAc: 3500,
+      priceAc: 4500,
+      acLabel: "AC",
+      image: "/hotel/1.jpeg",
       features: [
-        "Queen or Twin beds",
-        "Mountain view",
+        "Master or Twin beds",
         "Private bathroom",
-        "Air conditioning",
         "LED TV with cable",
-        "Mini refrigerator"
+        "Basic amenities"
       ],
-      size: "250 sq ft",
+      size: "200 sq ft",
       occupancy: "2 Adults"
     },
     {
       id: 2,
       name: "Deluxe Room",
-      price: "PKR 12,000",
-      image: "/hotel.jpg",
+      bedType: "Master or Twin Beds",
+      priceNonAc: 5000,
+      priceAc: 6000,
+      acLabel: "Inverter AC",
+      image: "/hotel/2.jpeg",
       features: [
-        "King-size bed",
-        "Panoramic mountain view",
-        "Luxury bathroom",
-        "Climate control",
-        "Smart TV",
-        "Work desk & seating area"
+        "Master or Twin beds",
+        "Private bathroom",
+        "LED TV with cable",
+        "Work desk",
+        "Premium amenities"
       ],
-      size: "350 sq ft",
-      occupancy: "2 Adults + 1 Child"
+      size: "280 sq ft",
+      occupancy: "2 Adults"
     },
     {
       id: 3,
-      name: "Family Suite",
-      price: "PKR 18,000",
-      image: "/hotel.jpg",
+      name: "Deluxe Room Plus",
+      bedType: "Master + Single Bed",
+      priceNonAc: 6000,
+      priceAc: 7000,
+      acLabel: "Inverter AC",
+      image: "/hotel/3.jpeg",
       features: [
-        "Separate bedroom & living area",
-        "Stunning valley views",
-        "Premium bathroom amenities",
-        "Kitchenette",
-        "Multiple TVs",
-        "Complimentary snacks"
+        "Master bed + Single bed",
+        "Private bathroom",
+        "LED TV with cable",
+        "Work desk",
+        "Premium amenities"
       ],
-      size: "500 sq ft",
-      occupancy: "4 Adults + 2 Children"
+      size: "320 sq ft",
+      occupancy: "3 Adults"
+    },
+    {
+      id: 4,
+      name: "Family Room",
+      bedType: "Master + 3 Single Beds",
+      priceNonAc: 7500,
+      priceAc: 9000,
+      acLabel: "Inverter AC",
+      image: "/hotel/4.jpeg",
+      features: [
+        "Master bed + 3 Single beds",
+        "Spacious layout",
+        "Private bathroom",
+        "LED TV with cable",
+        "Seating area",
+        "Premium amenities"
+      ],
+      size: "450 sq ft",
+      occupancy: "5 Adults"
     }
   ];
+
+  const handleBookRoom = (room: typeof roomTypes[0]) => {
+    setSelectedRoom(room);
+    setSelectedVariant("nonAc");
+    setShowBookingModal(true);
+  };
+
+  const getWhatsAppLink = () => {
+    if (!selectedRoom) return "";
+    const price = selectedVariant === "ac" ? selectedRoom.priceAc : selectedRoom.priceNonAc;
+    const acType = selectedVariant === "ac" ? `with ${selectedRoom.acLabel}` : "Non-AC";
+    const message = `Hi! I would like to book the ${selectedRoom.name} (${selectedRoom.bedType}) - ${acType} at PKR ${price.toLocaleString()} per night.`;
+    return `https://wa.me/923153309070?text=${encodeURIComponent(message)}`;
+  };
 
   const reviews = [
     {
@@ -217,6 +260,7 @@ export default function HotelPage() {
                         <h3 className="text-2xl font-bold text-red-600 mb-2">
                           {room.name}
                         </h3>
+                        <p className="text-gray-500 text-sm mb-2">{room.bedType}</p>
                         <div className="flex items-center gap-4 text-sm text-gray-600">
                           <div className="flex items-center gap-1">
                             <Bed className="w-4 h-4" />
@@ -240,17 +284,33 @@ export default function HotelPage() {
                       ))}
                     </ul>
 
-                    {/* Price & Button */}
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-red-600">{room.price}</p>
-                        <p className="text-xs text-gray-500 mt-1">per night</p>
+                    {/* Pricing Options */}
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Fan className="w-4 h-4 text-gray-500" />
+                          <span className="text-sm font-medium text-gray-600">Non-AC</span>
+                        </div>
+                        <p className="text-2xl font-bold text-red-600">PKR {room.priceNonAc.toLocaleString()}</p>
+                        <p className="text-xs text-gray-500">per night</p>
                       </div>
-                      <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
-                        Book Now
-                      </button>
+                      <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Snowflake className="w-4 h-4 text-blue-500" />
+                          <span className="text-sm font-medium text-blue-600">{room.acLabel}</span>
+                        </div>
+                        <p className="text-2xl font-bold text-red-600">PKR {room.priceAc.toLocaleString()}</p>
+                        <p className="text-xs text-gray-500">per night</p>
+                      </div>
                     </div>
+
+                    {/* Book Button */}
+                    <button 
+                      onClick={() => handleBookRoom(room)}
+                      className="w-full bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors"
+                    >
+                      Select & Book This Room
+                    </button>
                   </div>
                 </div>
               </div>
@@ -258,6 +318,79 @@ export default function HotelPage() {
           </div>
         </div>
       </section>
+
+      {/* Booking Modal */}
+      {showBookingModal && selectedRoom && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 relative">
+            <button 
+              onClick={() => setShowBookingModal(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            
+            <h3 className="text-2xl font-bold text-red-600 mb-2">Book {selectedRoom.name}</h3>
+            <p className="text-gray-500 text-sm mb-6">{selectedRoom.bedType}</p>
+            
+            <div className="space-y-3 mb-6">
+              <label className="block">
+                <input 
+                  type="radio" 
+                  name="roomVariant" 
+                  value="nonAc"
+                  checked={selectedVariant === "nonAc"}
+                  onChange={() => setSelectedVariant("nonAc")}
+                  className="sr-only peer"
+                />
+                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-red-600 peer-checked:bg-red-50 border-gray-200 hover:border-gray-300 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <Fan className="w-5 h-5 text-gray-500" />
+                    <span className="font-medium">Non-AC</span>
+                  </div>
+                  <span className="font-bold text-red-600">PKR {selectedRoom.priceNonAc.toLocaleString()}</span>
+                </div>
+              </label>
+              
+              <label className="block">
+                <input 
+                  type="radio" 
+                  name="roomVariant" 
+                  value="ac"
+                  checked={selectedVariant === "ac"}
+                  onChange={() => setSelectedVariant("ac")}
+                  className="sr-only peer"
+                />
+                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-red-600 peer-checked:bg-red-50 border-gray-200 hover:border-gray-300 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <Snowflake className="w-5 h-5 text-blue-500" />
+                    <span className="font-medium">{selectedRoom.acLabel}</span>
+                  </div>
+                  <span className="font-bold text-red-600">PKR {selectedRoom.priceAc.toLocaleString()}</span>
+                </div>
+              </label>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-4 mb-6">
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">Selected:</span>
+                <span className="font-bold text-red-600">
+                  PKR {(selectedVariant === "ac" ? selectedRoom.priceAc : selectedRoom.priceNonAc).toLocaleString()}/night
+                </span>
+              </div>
+            </div>
+            
+            <a 
+              href={getWhatsAppLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-green-600 hover:bg-green-700 text-white text-center px-8 py-3 rounded-full font-medium transition-colors"
+            >
+              Book via WhatsApp
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* Amenities */}
       <section className="py-20 bg-gray-50">

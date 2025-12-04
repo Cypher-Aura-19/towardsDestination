@@ -267,12 +267,12 @@ export default function HotelsPage() {
                   href={`/hotels/${hotel.id}`}
                   className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="relative h-64">
+                  <div className="relative h-64 bg-gray-100">
                     <Image
                       src={hotel.image}
                       alt={hotel.name}
                       fill
-                      className="object-contain group-hover:scale-110 transition-transform duration-500"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     {hotel.topPick && (
                       <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">

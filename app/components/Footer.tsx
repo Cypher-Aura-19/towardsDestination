@@ -15,13 +15,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
             <Link href="/" className="flex items-center justify-center mb-4">
-              <div className="relative w-full h-40 sm:h-40 md:h-40">
-                <Image
-                  src="/footer2.png"
+              <div className="relative w-[120%] -ml-[10%] h-52 sm:h-56 md:h-60">
+                <img
+                  src="/footer2.png?v=2"
                   alt="TOWARDSDESTINATION.PK"
-                  fill
-                  className="object-cover"
-                  priority
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
               

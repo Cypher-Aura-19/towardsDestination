@@ -16,7 +16,7 @@ const hotelDetails: any = {
     address: "Nust Uni EME Main Peshawar Rd, Jhangi Syedian, Islamabad",
     rating: 4,
     reviews: 0,
-    price: 3499,
+    price: 3500,
     image: "/one.jpeg",
     images: ["/one.jpeg", "/one.jpeg", "/one.jpeg"],
     description: "ONE INN Hotel is a modern, budget-friendly hotel located on the main Peshawar Road in Islamabad. Offering comfortable accommodations with contemporary amenities, this hotel is ideal for business travelers and tourists alike. Its strategic location provides easy access to major attractions, universities, and the city center.",
@@ -33,10 +33,14 @@ const hotelDetails: any = {
       "Airport Shuttle (Paid)"
     ],
     roomTypes: [
-      { type: "Standard Room", price: 3499, capacity: "2 Adults" },
-      { type: "Deluxe Room", price: 4999, capacity: "2 Adults + 1 Child" },
-      { type: "Executive Room", price: 6499, capacity: "2 Adults + 2 Children" },
-      { type: "Suite", price: 8999, capacity: "4 Adults" }
+      { type: "Economy Room (Non-AC)", price: 3500, capacity: "2 Adults", image: "/hotel/1.jpeg" },
+      { type: "Economy Room (AC)", price: 4500, capacity: "2 Adults", image: "/hotel/1.jpeg" },
+      { type: "Deluxe Room (Non-AC)", price: 5000, capacity: "2 Adults", image: "/hotel/2.jpeg" },
+      { type: "Deluxe Room (Inverter AC)", price: 6000, capacity: "2 Adults", image: "/hotel/2.jpeg" },
+      { type: "Deluxe Room Plus (Non-AC)", price: 6000, capacity: "3 Adults", image: "/hotel/3.jpeg" },
+      { type: "Deluxe Room Plus (Inverter AC)", price: 7000, capacity: "3 Adults", image: "/hotel/3.jpeg" },
+      { type: "Family Room (Non-AC)", price: 7500, capacity: "5 Adults", image: "/hotel/4.jpeg" },
+      { type: "Family Room (Inverter AC)", price: 9000, capacity: "5 Adults", image: "/hotel/4.jpeg" }
     ],
     nearbyAttractions: [
       "NUST University - 2 km",
@@ -188,17 +192,29 @@ export default function HotelDetail() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Room Types & Pricing</h2>
               <div className="space-y-4">
                 {hotel.roomTypes.map((room: any, index: number) => (
-                  <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-red-500 transition-colors">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
-                        <p className="text-gray-600">Capacity: {room.capacity}</p>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-red-600">
-                          PKR {room.price.toLocaleString()}
+                  <div key={index} className="border border-gray-200 rounded-lg overflow-hidden hover:border-red-500 transition-colors">
+                    <div className="flex flex-col md:flex-row">
+                      {room.image && (
+                        <div className="relative w-full md:w-48 h-32 md:h-auto flex-shrink-0">
+                          <Image
+                            src={room.image}
+                            alt={room.type}
+                            fill
+                            className="object-cover"
+                          />
                         </div>
-                        <div className="text-sm text-gray-600">per night</div>
+                      )}
+                      <div className="flex-1 p-6 flex items-center justify-between">
+                        <div>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
+                          <p className="text-gray-600">Capacity: {room.capacity}</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-2xl font-bold text-red-600">
+                            PKR {room.price.toLocaleString()}
+                          </div>
+                          <div className="text-sm text-gray-600">per night</div>
+                        </div>
                       </div>
                     </div>
                   </div>
