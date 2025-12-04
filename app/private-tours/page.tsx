@@ -87,7 +87,7 @@ export default function PrivateToursPage() {
           </h1>
           
           <p className="text-white text-base md:text-lg max-w-4xl mb-6 leading-relaxed" style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif" }}>
-            Experience Pakistan's breathtaking beauty with Towardsdestination.pk's Exclusive Private Tours. From the majestic valleys of Hunza and Skardu to the serene landscapes of Naran and Swat, we craft personalized journeys tailored to your preferences. Travel at your own pace with dedicated vehicles, expert guides, flexible itineraries, and premium accommodations. Whether by road or air, we handle every detail for your perfect adventure.
+            Experience Pakistan's breathtaking beauty with Towardsdestination.pk's Exclusive Private Tours. From the majestic valleys of HUNZA and SKARDU to the serene landscapes of Naran and Swat, we craft personalized journeys tailored to your preferences. Travel at your own pace with dedicated vehicles, expert guides, flexible itineraries, and premium accommodations. Whether by road or air, we handle every detail for your perfect adventure.
           </p>
           
           {/* Quick Stats */}

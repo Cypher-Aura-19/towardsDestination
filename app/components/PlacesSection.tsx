@@ -7,7 +7,7 @@ export default function PlacesSection() {
   const places = [
     {
       id: 1,
-      name: "Hunza Valley",
+      name: "HUNZA VALLEY",
       region: "Gilgit-Baltistan",
       image: "/hunza1.jpg",
       highlights: ["Karimabad", "Attabad Lake", "Rakaposhi View"],
@@ -15,10 +15,10 @@ export default function PlacesSection() {
     },
     {
       id: 2,
-      name: "Skardu",
+      name: "SKARDU",
       region: "Gilgit-Baltistan",
       image: "/skardu1.jpg",
-      highlights: ["Shangrila Resort", "Deosai Plains", "Shigar Fort"],
+      highlights: ["Shangrila Resort", "DEOSAI Plains", "Shigar Fort"],
       description: "Gateway to K2 and breathtaking mountain landscapes"
     },
     {
@@ -39,7 +39,7 @@ export default function PlacesSection() {
     },
     {
       id: 5,
-      name: "Fairy Meadows",
+      name: "FAIRY MEADOWS",
       region: "Gilgit-Baltistan",
       image: "/mountain trekking.jpg",
       highlights: ["Nanga Parbat View", "Beyal Camp", "Raikot Bridge"],
@@ -63,14 +63,14 @@ export default function PlacesSection() {
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-16 animate-fade-in-up">
-          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pulse-glow">
+          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-pulse-glow badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
             🗺️ EXPLORE PAKISTAN
           </span>
-          <h2 className="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
+          <h2 className="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             <span className="gradient-text">Top Places to Visit in Pakistan</span>
 
           </h2>
-          <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
             Discover the breathtaking beauty of Pakistan's northern regions. From majestic mountains to serene valleys, 
             experience the adventure of a lifetime with TOWARDSDESTINATION.PK
           </p>
@@ -104,10 +104,10 @@ export default function PlacesSection() {
 
                 {/* Place Info Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-2xl font-extrabold text-white mb-2">
+                  <h3 className="text-2xl font-extrabold text-white mb-2 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     {place.name}
                   </h3>
-                  <p className="text-white/90 text-sm mb-3">
+                  <p className="text-white/90 text-sm mb-3 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                     {place.description}
                   </p>
                   
