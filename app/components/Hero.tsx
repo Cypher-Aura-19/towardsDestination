@@ -90,7 +90,7 @@ export default function Hero() {
       {/* Background Image - Mobile */}
       <div className="absolute inset-0 z-0 md:hidden">
         <Image
-          src="/hero9.png"
+          src="/mobil.png"
           alt="Northern Pakistan"
           fill
           className="object-cover object-center"
@@ -105,7 +105,7 @@ export default function Hero() {
       {/* Background Image - Desktop */}
       <div className="absolute inset-0 z-0 hidden md:block">
         <Image
-          src="/hero4.png"
+          src="/gemini.png"
           alt="Northern Pakistan"
           fill
           className="object-cover object-center"

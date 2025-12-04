@@ -10,30 +10,6 @@ import Link from "next/link";
 const hotels = [
   {
     id: 1,
-    name: "Trout Villa, Skardu",
-    location: "Skardu",
-    address: "Trout Villa near Clifton Bridge",
-    rating: 3,
-    reviews: 0,
-    price: 5000,
-    image: "/tr.jpg",
-    topPick: true,
-    facilities: ["WiFi", "Parking", "Restaurant", "Room Service"]
-  },
-  {
-    id: 2,
-    name: "Parkway Hotel, Fizaghat Swat",
-    location: "Fizaghat, Swat",
-    address: "Fizaghat, Swat",
-    rating: 3,
-    reviews: 0,
-    price: 8000,
-    image: "/pr.jpeg",
-    topPick: true,
-    facilities: ["WiFi", "Parking", "Restaurant", "Garden"]
-  },
-  {
-    id: 3,
     name: "ONE INN Hotel, Islamabad",
     location: "Islamabad",
     address: "Nust Uni EME Main Peshawar Rd, jhangi Syedian, Islamabad",
