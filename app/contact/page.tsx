@@ -117,10 +117,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Info Cards - Hidden on Mobile */}
-      <section className="hidden lg:block py-8 xs:py-10 sm:py-12 bg-gray-50 border-b border-gray-200">
+      {/* Contact Info Cards */}
+      <section className="py-8 xs:py-10 sm:py-12 bg-gray-50 border-b border-gray-200">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {contactInfo.map((info, index) => {
               const IconComponent = info.icon;
               return (
@@ -159,7 +159,7 @@ export default function ContactPage() {
               );
             })}
           </div>
-           <TourContactSection/>
+          <TourContactSection/>
         </div>
       </section>
 

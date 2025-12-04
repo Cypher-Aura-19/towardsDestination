@@ -7,36 +7,36 @@ export default function TourContactSection() {
       {/* Desktop Contact Section */}
       <div className="hidden lg:grid lg:grid-cols-2 gap-6 mt-8">
         {/* Our Contact Card */}
-        <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border border-red-100 shadow-lg">
-          <h2 className="text-3xl font-bold text-red-700 mb-6 text-center" style={{ fontFamily: 'cursive' }}>Our Contact</h2>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 shadow-lg">
+          <h2 className="text-3xl font-bold text-white mb-4 text-center" style={{ fontFamily: 'cursive' }}>Our Contact</h2>
           
           {/* Call / WhatsApp */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Image 
-              src="/wha3.png" 
-              alt="Call / WhatsApp" 
-              width={70} 
-              height={80}
-            />
-            <a href="tel:+92 3174101300" className="text-yellow-600 hover:text-yellow-700 font-bold text-3xl whitespace-nowrap">
-              +92 317 4101300
+          <div className="flex items-center justify-center mb-4">
+            <a href="tel:+923174101300" className="cursor-pointer hover:opacity-80 transition-opacity">
+              <Image 
+                src="/wha5.png" 
+                alt="Call / WhatsApp" 
+                width={250} 
+                height={60}
+                className="object-contain"
+              />
             </a>
           </div>
 
           {/* Email */}
-          <div className="flex flex-col items-center mb-6">
+          <div className="flex flex-col items-center mb-4">
             <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center mb-2">
               <Mail className="w-7 h-7 text-white" />
             </div>
-            <h3 className="text-base font-bold text-gray-800 mb-1" style={{ fontFamily: 'cursive' }}>Email Address</h3>
-            <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-600 hover:text-red-700 font-semibold underline break-all text-center">
+            <h3 className="text-base font-bold text-white mb-1" style={{ fontFamily: 'cursive' }}>Email Address</h3>
+            <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-400 hover:text-red-300 font-semibold underline break-all text-center">
               Info.Towardsdestination@gmail.com
             </a>
           </div>
 
           {/* Social Media */}
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-bold text-gray-800 mb-3" style={{ fontFamily: 'cursive' }}>Social Media</h3>
+            <h3 className="text-lg font-bold text-white mb-3" style={{ fontFamily: 'cursive' }}>Social Media</h3>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/towardsdestination.pk" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors shadow-md">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -58,31 +58,31 @@ export default function TourContactSection() {
         </div>
 
         {/* Where to Find Us Card */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
-          <h2 className="text-3xl font-bold text-red-700 mb-8 text-center" style={{ fontFamily: 'cursive' }}>Where to Find Us</h2>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 shadow-lg">
+          <h2 className="text-3xl font-bold text-white mb-6 text-center" style={{ fontFamily: 'cursive' }}>Where to Find Us</h2>
           
-          <h3 className="text-xl font-bold text-red-600 mb-4 text-center" style={{ fontFamily: 'cursive' }}>Islamabad Office (Main Head Office)</h3>
-          <p className="text-gray-700 mb-8 leading-relaxed text-center">
+          <h3 className="text-xl font-bold text-red-400 mb-3 text-center" style={{ fontFamily: 'cursive' }}>Islamabad Office (Main Head Office)</h3>
+          <p className="text-gray-300 mb-6 leading-relaxed text-center">
             Office no 406, Main Peshawar Rd, near Hotel One Inn Daewoo Express, Jhangi Sayedan, Islamabad, 44000
           </p>
           
-          <div className="space-y-4 flex flex-col items-center">
-            <div className="flex items-center gap-3">
-              <Image 
-                src="/wha3.png" 
-                alt="Call / WhatsApp" 
-                width={70} 
-                height={80}
-              />
-              <a href="tel:+92 3174101300" className="text-red-600 hover:text-red-700 font-bold text-xl whitespace-nowrap">
-                +92 317 4101300
+          <div className="space-y-3 flex flex-col items-center">
+            <div className="flex items-center justify-center">
+              <a href="tel:+923174101300" className="cursor-pointer hover:opacity-80 transition-opacity">
+                <Image 
+                  src="/wha5.png" 
+                  alt="Call / WhatsApp" 
+                  width={250} 
+                  height={60}
+                  className="object-contain"
+                />
               </a>
             </div>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                 <Mail className="w-6 h-6 text-white" />
               </div>
-              <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-600 hover:text-red-700 font-semibold break-all">
+              <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-400 hover:text-red-300 font-semibold break-all">
                 Info.Towardsdestination@gmail.com
               </a>
             </div>
@@ -93,36 +93,36 @@ export default function TourContactSection() {
       {/* Mobile Contact Section */}
       <div className="lg:hidden mt-8 space-y-6">
         {/* Our Contact Card */}
-        <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border border-red-100 shadow-lg">
-          <h2 className="text-3xl font-bold text-red-700 mb-8 text-center">Our Contact</h2>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 shadow-lg">
+          <h2 className="text-3xl font-bold text-white mb-6 text-center">Our Contact</h2>
           
           {/* Call / WhatsApp */}
-          <div className="flex items-center justify-center gap-4 mb-8">
-           <Image 
-              src="/wha3.png" 
-              alt="Call / WhatsApp" 
-              width={70} 
-              height={80}
-            />
-            <a href="tel:+92 3174101300" className="text-yellow-600 hover:text-yellow-700 font-bold text-2xl whitespace-nowrap">
-              +92 317 4101300
+          <div className="flex items-center justify-center mb-4">
+            <a href="tel:+923174101300" className="cursor-pointer hover:opacity-80 transition-opacity">
+              <Image 
+                src="/wha5.png" 
+                alt="Call / WhatsApp" 
+                width={250} 
+                height={70}
+                className="object-contain"
+              />
             </a>
           </div>
 
           {/* Email */}
-          <div className="flex flex-col items-center mb-8">
-            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
+          <div className="flex flex-col items-center mb-6">
+            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-lg font-bold text-gray-800 mb-3">Email Address</h3>
-            <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-600 hover:text-red-700 font-semibold underline text-center break-all">
+            <h3 className="text-lg font-bold text-white mb-2">Email Address</h3>
+            <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-400 hover:text-red-300 font-semibold underline text-center break-all">
               Info.Towardsdestination@gmail.com
             </a>
           </div>
 
           {/* Social Media */}
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-bold text-gray-800 mb-4">Social Media</h3>
+            <h3 className="text-lg font-bold text-white mb-4">Social Media</h3>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/towardsdestination.pk" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors shadow-lg">
                 <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -144,32 +144,32 @@ export default function TourContactSection() {
         </div>
 
         {/* Where to Find Us Card */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
-          <h2 className="text-3xl font-bold text-red-700 mb-6 text-center">Where to Find Us</h2>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 shadow-lg">
+          <h2 className="text-3xl font-bold text-white mb-5 text-center">Where to Find Us</h2>
           
           <div className="text-center">
-            <h3 className="text-xl font-bold text-red-600 mb-4">Islamabad Office (Main Head Office)</h3>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <h3 className="text-xl font-bold text-red-400 mb-3">Islamabad Office (Main Head Office)</h3>
+            <p className="text-gray-300 mb-5 leading-relaxed">
               Office no 406, Main Peshawar Rd, near Hotel One Inn Daewoo Express, Jhangi Sayedan, Islamabad, 44000
             </p>
             
-            <div className="space-y-4 flex flex-col items-center">
-              <div className="flex items-center gap-3">
-                <Image 
-                  src="/wha3.png" 
-                  alt="Call / WhatsApp" 
-                  width={70} 
-                  height={80}
-                />
-                <a href="tel:+92 3174101300" className="text-red-600 hover:text-red-700 font-bold text-lg whitespace-nowrap">
-                  +92 317 4101300
+            <div className="space-y-3 flex flex-col items-center">
+              <div className="flex items-center justify-center">
+                <a href="tel:+923174101300" className="cursor-pointer hover:opacity-80 transition-opacity">
+                  <Image 
+                    src="/wha5.png" 
+                    alt="Call / WhatsApp" 
+                    width={250} 
+                    height={60}
+                    className="object-contain"
+                  />
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
-                <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-600 hover:text-red-700 font-semibold break-all">
+                <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-400 hover:text-red-300 font-semibold break-all">
                   Info.Towardsdestination@gmail.com
                 </a>
               </div>
