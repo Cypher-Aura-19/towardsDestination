@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import TourContactSection from "@/app/components/TourContactSection";
 import { MapPin, Star, Phone, Mail, Wifi, Car, Coffee, Utensils, Check, X, Send } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -67,6 +68,7 @@ export default function HotelDetail() {
   const id = params?.id as string;
   const hotel = hotelDetails[id];
 
+  const [selectedRoomPrice, setSelectedRoomPrice] = useState(hotel?.price || 3500);
   const [bookingData, setBookingData] = useState({
     name: "",
     email: "",
@@ -77,6 +79,14 @@ export default function HotelDetail() {
     roomType: "",
     message: ""
   });
+
+  const handleRoomSelect = (roomType: string, roomPrice: number) => {
+    setSelectedRoomPrice(roomPrice);
+    setBookingData({
+      ...bookingData,
+      roomType: roomType
+    });
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setBookingData({
@@ -190,9 +200,18 @@ export default function HotelDetail() {
             {/* Room Types & Pricing */}
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Room Types & Pricing</h2>
+              <p className="text-gray-600 mb-4">Click on a room type to select it for booking</p>
               <div className="space-y-4">
                 {hotel.roomTypes.map((room: any, index: number) => (
-                  <div key={index} className="border border-gray-200 rounded-lg overflow-hidden hover:border-red-500 transition-colors">
+                  <button
+                    key={index}
+                    onClick={() => handleRoomSelect(room.type, room.price)}
+                    className={`w-full border-2 rounded-lg overflow-hidden transition-all ${
+                      bookingData.roomType === room.type
+                        ? 'border-red-600 bg-red-50 shadow-lg'
+                        : 'border-gray-200 hover:border-red-400 hover:shadow-md'
+                    }`}
+                  >
                     <div className="flex flex-col md:flex-row">
                       {room.image && (
                         <div className="relative w-full md:w-48 h-32 md:h-auto flex-shrink-0">
@@ -205,9 +224,14 @@ export default function HotelDetail() {
                         </div>
                       )}
                       <div className="flex-1 p-6 flex items-center justify-between">
-                        <div>
+                        <div className="text-left">
                           <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
                           <p className="text-gray-600">Capacity: {room.capacity}</p>
+                          {bookingData.roomType === room.type && (
+                            <span className="inline-block mt-2 bg-red-600 text-white text-xs px-3 py-1 rounded-full">
+                              Selected
+                            </span>
+                          )}
                         </div>
                         <div className="text-right">
                           <div className="text-2xl font-bold text-red-600">
@@ -217,7 +241,7 @@ export default function HotelDetail() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             </section>
@@ -271,47 +295,26 @@ export default function HotelDetail() {
               </div>
             </section>
 
-            {/* Contact Section */}
-            <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 font-semibold mb-1">Phone</p>
-                    <a href="tel:+923174101300" className="text-red-600 hover:text-red-700 underline font-medium">
-                      +92 317 4101300
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shrink-0">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 font-semibold mb-1">Email</p>
-                    <a href="mailto:Info.Towardsdestination@gmail.com" className="text-red-600 hover:text-red-700 underline font-medium">
-                      Info.Towardsdestination@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <TourContactSection/>
+           
           </div>
 
           {/* Sidebar - Booking Form */}
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
               <div className="p-6 bg-red-50 border-b border-gray-200">
-                <div className="text-sm text-gray-600 mb-1">Starting from</div>
+                <div className="text-sm text-gray-600 mb-1">
+                  {bookingData.roomType ? 'Selected Room Price' : 'Starting from'}
+                </div>
                 <div className="text-3xl font-bold text-red-600">
-                  PKR {hotel.price.toLocaleString()}
+                  PKR {selectedRoomPrice.toLocaleString()}
                   <span className="text-lg text-gray-600 font-normal">/night</span>
                 </div>
+                {bookingData.roomType && (
+                  <div className="text-sm text-gray-700 mt-2 font-medium">
+                    {bookingData.roomType}
+                  </div>
+                )}
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(hotel.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-red-500 text-red-500" />

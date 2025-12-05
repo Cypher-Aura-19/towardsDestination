@@ -12,7 +12,7 @@ export default function TourPackages() {
   const destinations = [
     {
       id: 2,
-      name: "5 Days Trip to Hunza & Naltar Valley",
+      name: "05 days HUNZA & NALTAR",
       location: "Hunza & Naltar",
       price: 22000,
       image: "/hunza1.jpg",
@@ -20,7 +20,7 @@ export default function TourPackages() {
     },
     {
       id: 12,
-      name: "8 Days Trip to Hunza & Skardu Valley",
+      name: "08 days HUNZA & SKARDU",
       location: "Hunza & Skardu",
       price: 32000,
       image: "/skardu8.jpg",
@@ -28,7 +28,7 @@ export default function TourPackages() {
     },
     {
       id: 4,
-      name: "3 Days – Naran | Shogran Group Tour",
+      name: "03 days NARAN & SHOGRAN",
       location: "Naran & Shogran",
       price: 14000,
       image: "/naran1.jpg",
@@ -131,8 +131,9 @@ export default function TourPackages() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="tour-title text-lg font-semibold text-gray-800 mb-2 group-hover:text-red-700 transition-colors leading-snug">
-                  {destination.name}
+                <h3 className="tour-title text-lg text-gray-800 mb-2 group-hover:text-red-700 transition-colors leading-snug">
+                  <span className="font-normal italic">{destination.name.split(' ').slice(0, 2).join(' ')}</span>{' '}
+                  <span className="font-semibold">{destination.name.split(' ').slice(2).join(' ')}</span>
                 </h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
                   <MapPin className="w-4 h-4 text-red-600" />
