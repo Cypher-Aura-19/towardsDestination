@@ -95,10 +95,12 @@ const team = [
 ];
 
   const milestones = [
-    { year: "2018", event: "Company Founded", description: "Started with a vision to showcase Pakistan's beauty" },
-    { year: "2019", event: "First Umrah Package", description: "Expanded services to include sacred journeys" },
+    { year: "2018", event: "Starting", description: "Founded with a vision to showcase Pakistan's beauty" },
+    { year: "2019", event: "Domestic Tours", description: "Launched comprehensive domestic tour packages" },
+    { year: "2023", event: "International Tours", description: "Expanded services to international destinations" },
     { year: "2024", event: "Hotel Established", description: "Opened our premium hotel facility" },
-    { year: "2025", event: "22K+ Travelers", description: "Reached milestone of serving thousands" }
+    { year: "2025", event: "22000+ Customers", description: "Served over 22,000 satisfied customers" },
+    { year: "2025", event: "Pakistan Top Leading Tourism Company", description: "Recognized as Pakistan's leading tourism company" }
   ];
 
   return (
