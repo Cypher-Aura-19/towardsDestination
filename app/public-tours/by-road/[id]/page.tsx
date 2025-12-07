@@ -1255,7 +1255,7 @@ const packageDetails: any = {
     "location": "FAIRY MEADOWS",
     "duration": "5 Days 4 Nights",
     "price": 24000,
-    "image": "/logo.jpeg",
+    "image": "/medows.jpg",
     "groupSize": "21-25 person",
     "tourType": "Specific Tour",
     "description": "@towardsdestination.pk Presents 5 Days Trip to FAIRY MEADOWS & Beyal Camp. Enjoy your Special Moments with us and make your moments more Memorable with your Love ones.",

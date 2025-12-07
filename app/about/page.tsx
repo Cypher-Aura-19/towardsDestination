@@ -47,35 +47,35 @@ const team = [
     name: "Ms. Aqsa Aziz Jamali",
     role: "Founder/CEO",
     image: "/team/2.png",
-    usePlaceholder: true,
+    usePlaceholder: false,
     description: "Valuable member of the team"
   },
   {
     name: "Mis Iqra Arshad Faraz",
     role: "Team Member",
     image: "/team/3.png",
-    usePlaceholder: true,
+    usePlaceholder: false,
     description: "Valuable member of the team"
   },
   {
     name: "Shafah Mehmood",
     role: "Team Member",
     image: "/team/4.png",
-    usePlaceholder: true,
+    usePlaceholder: false,
     description: "Valuable member of the team"
   },
   {
     name: "Ms. Fatima Nadeem",
     role: "Team Member",
     image: "/team/5.png",
-    usePlaceholder: true,
+    usePlaceholder: false,
     description: "Valuable member of the team"
   },
   {
     name: "Mariam Tahir",
     role: "Team Member",
     image: "/team/6.png",
-    usePlaceholder: true,
+    usePlaceholder: false,
     description: "Valuable member of the team"
   },
   {
@@ -96,9 +96,9 @@ const team = [
 
   const milestones = [
     { year: "2018", event: "Company Founded", description: "Started with a vision to showcase Pakistan's beauty" },
-    { year: "2015", event: "First Umrah Package", description: "Expanded services to include sacred journeys" },
-    { year: "2018", event: "Hotel Established", description: "Opened our premium hotel facility" },
-    { year: "2024", event: "22K+ Travelers", description: "Reached milestone of serving thousands" }
+    { year: "2019", event: "First Umrah Package", description: "Expanded services to include sacred journeys" },
+    { year: "2024", event: "Hotel Established", description: "Opened our premium hotel facility" },
+    { year: "2025", event: "22K+ Travelers", description: "Reached milestone of serving thousands" }
   ];
 
   return (
@@ -325,7 +325,7 @@ const team = [
                         <Clock className="w-5 h-5 text-red-600" />
                         <span className="text-2xl font-bold text-red-600">{milestone.year}</span>
                       </div>
-                      <h3 className="text-xl font-bold text-red-600 mb-2">{milestone.event}</h3>
+                       <span className="text-2xl font-bold text-red-600">{milestone.event}</span>
                       <p className="text-gray-600">{milestone.description}</p>
                     </div>
                   </div>

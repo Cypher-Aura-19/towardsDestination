@@ -116,7 +116,7 @@ const packages = [
     duration: "5 Days 4 Nights",
     location: "FAIRY MEADOWS",
     price: 24000,
-    image: "/logo.jpeg",
+    image: "/medows.jpg",
     rating: 4.9,
     reviews: 167,
     city: "Lahore-Islamabad-Faisalabad"

@@ -4,10 +4,101 @@ import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import TourContactSection from "@/app/components/TourContactSection";
-import { MapPin, Star, Phone, Mail, Wifi, Car, Coffee, Utensils, Check, X, Send } from "lucide-react";
+import { MapPin, Star, Phone, Mail, Wifi, Car, Coffee, Utensils, Check, X, Send, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+
+// Hotel Gallery Carousel Component
+function HotelGalleryCarousel() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const hotelImages = [
+    "/hotel/1.jpeg",
+    "/hotel/2.jpeg",
+    "/hotel/3.jpeg",
+    "/hotel/4.jpeg",
+    "/hotel/5.jpg",
+    "/hotel/6.jpg"
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % hotelImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [hotelImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % hotelImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + hotelImages.length) % hotelImages.length);
+  };
+
+  return (
+    <div className="relative w-full rounded-2xl overflow-hidden shadow-xl h-[400px] md:h-[500px] lg:h-[600px]">
+      {/* Images */}
+      {hotelImages.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-700 ${
+            index === currentSlide ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={image}
+            alt={`Hotel view ${index + 1}`}
+            fill
+            className="object-cover"
+            priority={index === 0}
+          />
+        </div>
+      ))}
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all shadow-lg"
+      >
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all shadow-lg"
+      >
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
+      </button>
+
+      {/* Thumbnail Navigation */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-2 bg-black/50 backdrop-blur-sm px-3 py-2 rounded-full">
+        {hotelImages.map((image, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`relative w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden transition-all border-2 ${
+              index === currentSlide
+                ? "border-white scale-110"
+                : "border-transparent opacity-60 hover:opacity-100"
+            }`}
+          >
+            <Image
+              src={image}
+              alt={`Thumbnail ${index + 1}`}
+              fill
+              className="object-cover"
+            />
+          </button>
+        ))}
+      </div>
+
+      {/* Image Counter */}
+      <div className="absolute top-4 right-4 z-10 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold">
+        {currentSlide + 1} / {hotelImages.length}
+      </div>
+    </div>
+  );
+}
 
 const hotelDetails: any = {
   "1": {
@@ -18,8 +109,8 @@ const hotelDetails: any = {
     rating: 4,
     reviews: 0,
     price: 3500,
-    image: "/one.jpeg",
-    images: ["/one.jpeg", "/one.jpeg", "/one.jpeg"],
+    image: "/hotel/4.jpeg",
+    images: ["/1.jpeg", "/2.jpeg", "/3.jpeg"],
     description: "ONE INN Hotel is a modern, budget-friendly hotel located on the main Peshawar Road in Islamabad. Offering comfortable accommodations with contemporary amenities, this hotel is ideal for business travelers and tourists alike. Its strategic location provides easy access to major attractions, universities, and the city center.",
     facilities: [
       "Free WiFi",
@@ -156,17 +247,8 @@ export default function HotelDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Hero Image */}
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src={hotel.image}
-                alt={hotel.name}
-                width={1200}
-                height={600}
-                className="w-full h-auto object-cover"
-                priority
-              />
-            </div>
+            {/* Hotel Gallery Carousel */}
+            <HotelGalleryCarousel />
 
             {/* Description */}
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
@@ -197,10 +279,158 @@ export default function HotelDetail() {
               </div>
             </section>
 
-            {/* Room Types & Pricing */}
+            {/* Room Types & Pricing - Grouped by Category */}
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Room Types & Pricing</h2>
-              <p className="text-gray-600 mb-4">Click on a room type to select it for booking</p>
+              <p className="text-gray-600 mb-6">Select your preferred room type</p>
+              
+              <div className="space-y-6">
+                {/* Economy Rooms */}
+                <div className="border-2 border-blue-200 rounded-xl p-6 bg-blue-50">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    Economy Rooms
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">Perfect for budget-conscious travelers • 2 Adults</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {hotel.roomTypes.filter((room: any) => room.type.includes("Economy")).map((room: any, index: number) => (
+                      <button
+                        key={index}
+                        onClick={() => handleRoomSelect(room.type, room.price)}
+                        className={`border-2 rounded-lg p-4 transition-all text-left ${
+                          bookingData.roomType === room.type
+                            ? 'border-blue-600 bg-white shadow-lg'
+                            : 'border-blue-200 bg-white hover:border-blue-400 hover:shadow-md'
+                        }`}
+                      >
+                        <div className="flex justify-between items-start mb-2">
+                          <span className="font-semibold text-gray-900">
+                            {room.type.includes("Non-AC") ? "Non-AC" : "AC"}
+                          </span>
+                          <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                            {room.capacity}
+                          </span>
+                        </div>
+                        <div className="text-2xl font-bold text-blue-600">
+                          PKR {room.price.toLocaleString()}
+                          <span className="text-sm text-gray-600 font-normal">/night</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Deluxe Rooms */}
+                <div className="border-2 border-purple-200 rounded-xl p-6 bg-purple-50">
+                  <h3 className="text-2xl font-bold text-purple-800 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-purple-600 rounded-full"></span>
+                    Deluxe Rooms
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">Enhanced comfort with premium amenities</p>
+                  <div className="space-y-4">
+                    {/* Standard Deluxe */}
+                    <div>
+                      <p className="text-sm font-semibold text-purple-700 mb-2">Standard Deluxe (2 Adults)</p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {hotel.roomTypes.filter((room: any) => room.type.includes("Deluxe Room (") && !room.type.includes("Plus")).map((room: any, index: number) => (
+                          <button
+                            key={index}
+                            onClick={() => handleRoomSelect(room.type, room.price)}
+                            className={`border-2 rounded-lg p-4 transition-all text-left ${
+                              bookingData.roomType === room.type
+                                ? 'border-purple-600 bg-white shadow-lg'
+                                : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
+                            }`}
+                          >
+                            <div className="flex justify-between items-start mb-2">
+                              <span className="font-semibold text-gray-900">
+                                {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                              </span>
+                              <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
+                                {room.capacity}
+                              </span>
+                            </div>
+                            <div className="text-2xl font-bold text-purple-600">
+                              PKR {room.price.toLocaleString()}
+                              <span className="text-sm text-gray-600 font-normal">/night</span>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    {/* Deluxe Plus */}
+                    <div>
+                      <p className="text-sm font-semibold text-purple-700 mb-2">Deluxe Plus (3 Adults)</p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {hotel.roomTypes.filter((room: any) => room.type.includes("Deluxe Room Plus")).map((room: any, index: number) => (
+                          <button
+                            key={index}
+                            onClick={() => handleRoomSelect(room.type, room.price)}
+                            className={`border-2 rounded-lg p-4 transition-all text-left ${
+                              bookingData.roomType === room.type
+                                ? 'border-purple-600 bg-white shadow-lg'
+                                : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
+                            }`}
+                          >
+                            <div className="flex justify-between items-start mb-2">
+                              <span className="font-semibold text-gray-900">
+                                {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                              </span>
+                              <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
+                                {room.capacity}
+                              </span>
+                            </div>
+                            <div className="text-2xl font-bold text-purple-600">
+                              PKR {room.price.toLocaleString()}
+                              <span className="text-sm text-gray-600 font-normal">/night</span>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Family Rooms */}
+                <div className="border-2 border-green-200 rounded-xl p-6 bg-green-50">
+                  <h3 className="text-2xl font-bold text-green-800 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                    Family Rooms
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">Spacious rooms perfect for families • 5 Adults</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {hotel.roomTypes.filter((room: any) => room.type.includes("Family")).map((room: any, index: number) => (
+                      <button
+                        key={index}
+                        onClick={() => handleRoomSelect(room.type, room.price)}
+                        className={`border-2 rounded-lg p-4 transition-all text-left ${
+                          bookingData.roomType === room.type
+                            ? 'border-green-600 bg-white shadow-lg'
+                            : 'border-green-200 bg-white hover:border-green-400 hover:shadow-md'
+                        }`}
+                      >
+                        <div className="flex justify-between items-start mb-2">
+                          <span className="font-semibold text-gray-900">
+                            {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                          </span>
+                          <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                            {room.capacity}
+                          </span>
+                        </div>
+                        <div className="text-2xl font-bold text-green-600">
+                          PKR {room.price.toLocaleString()}
+                          <span className="text-sm text-gray-600 font-normal">/night</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Continue with old structure for reference */}
+            <div className="hidden">
               <div className="space-y-4">
                 {hotel.roomTypes.map((room: any, index: number) => (
                   <button
@@ -244,7 +474,7 @@ export default function HotelDetail() {
                   </button>
                 ))}
               </div>
-            </section>
+            </div>
 
             {/* Nearby Attractions */}
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
