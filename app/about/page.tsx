@@ -192,7 +192,7 @@ const team = [
             <div className="grid grid-cols-2 gap-2 xs:gap-3 sm:gap-4">
               <div className="relative h-40 xs:h-48 sm:h-56 md:h-64 rounded-xl xs:rounded-2xl overflow-hidden">
                 <Image
-                  src="/hunza.jpg"
+                  src="/hunza1.jpg"
                   alt="Our Journey"
                   fill
                   className="object-cover"

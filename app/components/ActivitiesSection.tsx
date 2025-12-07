@@ -9,7 +9,7 @@ export default function ActivitiesSection() {
       id: 1,
       title: "Mountain Trekking",
       description: "Experience thrilling treks through the Karakoram and Himalayan ranges with expert guides and stunning views.",
-      image: "/mountain trekking.jpg",
+      image: "/muskpuri.jpg",
     },
     {
       id: 2,

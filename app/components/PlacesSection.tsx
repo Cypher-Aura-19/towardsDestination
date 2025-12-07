@@ -41,7 +41,7 @@ export default function PlacesSection() {
       id: 5,
       name: "FAIRY MEADOWS",
       region: "Gilgit-Baltistan",
-      image: "/mountain trekking.jpg",
+      image: "/fa.jpg",
       highlights: ["Nanga Parbat View", "Beyal Camp", "Raikot Bridge"],
       description: "Stunning views of the 9th highest mountain in the world"
     },

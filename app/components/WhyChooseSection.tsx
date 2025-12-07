@@ -2,8 +2,23 @@
 
 import { ArrowRight, Users, MapPin, Home, Headphones, Play } from "lucide-react";
 import Image from "next/image";
+import { useState, useRef } from "react";
 
 export default function WhyChooseSection() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
   const features = [
     {
       id: 1,
@@ -62,19 +77,30 @@ export default function WhyChooseSection() {
         </div>
 
         {/* Video Section */}
-        <div className="relative h-96 rounded-3xl overflow-hidden mb-12 group cursor-pointer shadow-2xl hover:shadow-red-500/20 transition-shadow duration-500 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          <Image
-            src="/hero.jpg"
-            alt="Why Choose Towards Destination"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-125 transition-transform duration-500 shadow-xl animate-pulse-glow">
-              <Play className="w-10 h-10 text-red-600 fill-red-600 ml-1" />
+        <div 
+          className="relative h-96 rounded-3xl overflow-hidden mb-12 group cursor-pointer shadow-2xl hover:shadow-red-500/20 transition-shadow duration-500 animate-fade-in-up" 
+          style={{animationDelay: '0.2s'}}
+          onClick={handlePlayVideo}
+        >
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover"
+            onEnded={() => setIsPlaying(false)}
+            poster=""
+          >
+            <source src="/video/IMG_5738.MP4" type="video/mp4" />
+          </video>
+          
+          <div className={`absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors ${isPlaying ? 'opacity-0' : 'opacity-100'}`}></div>
+          
+          {/* Play Button */}
+          {!isPlaying && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-125 transition-transform duration-500 shadow-xl animate-pulse-glow">
+                <Play className="w-10 h-10 text-red-600 fill-red-600 ml-1" />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Features Grid */}

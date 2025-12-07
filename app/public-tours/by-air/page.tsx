@@ -45,7 +45,7 @@ export default function PublicToursByAir() {
       location: "Nanga Parbat Base",
       duration: "4 Days / 3 Nights",
       price: "PKR 55,000",
-      image: "/mountain trekking.jpg",
+      image: "/muskpuri.jpg",
       highlights: [
         "Flight to Gilgit",
         "Jeep ride to Fairy Meadows",
@@ -109,7 +109,7 @@ export default function PublicToursByAir() {
       location: "Skardu to K2",
       duration: "12 Days / 11 Nights",
       price: "PKR 180,000",
-      image: "/mountain trekking.jpg",
+      image: "/skardu1.jpg",
       highlights: [
         "Flight to Skardu",
         "Professional trekking guide",

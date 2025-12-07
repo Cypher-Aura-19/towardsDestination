@@ -1,9 +1,10 @@
 "use client";
 
-import { ArrowRight, Play, Star } from "lucide-react";
+import { ArrowRight, Play, Star, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
+import DesignTripModal from "./DesignTripModal";
 
 // Popular destinations
 const popularLocations = [
@@ -38,6 +39,7 @@ export default function Hero() {
   const [children, setChildren] = useState("0");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredLocations, setFilteredLocations] = useState<string[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const suggestionsRef = useRef<HTMLDivElement>(null);
 
   // Filter locations based on input
@@ -87,34 +89,19 @@ export default function Hero() {
   };
   return (
     <section className="relative min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-[120px] overflow-hidden bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
-      {/* Background Image - Mobile */}
-      <div className="absolute inset-0 z-0 md:hidden">
-        <Image
-          src="/mobil.png"
-          alt="Northern Pakistan"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-          sizes="100vw"
-        />
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video/IMG_5738.MP4" type="video/mp4" />
+        </video>
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-red-900/20 to-black/40 z-10"></div>
-      </div>
-      
-      {/* Background Image - Desktop */}
-      <div className="absolute inset-0 z-0 hidden md:block">
-        <Image
-          src="/gemini.png"
-          alt="Northern Pakistan"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-          sizes="100vw"
-        />
-        {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-red-900/20 to-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-red-900/30 to-black/50 z-10"></div>
       </div>
       
       {/* Animated Shapes */}
@@ -144,6 +131,18 @@ export default function Hero() {
               Tour Packages • Hotel Booking • Transportation<br />
               <span className="bg-red-600/80 text-white px-2 sm:px-3 py-1 rounded-md inline-block mt-2 text-xs xs:text-sm sm:text-base animate-pulse-glow">Book Your Dream Journey Today!</span>
             </p>
+
+            {/* Design My Trip Button */}
+            <div className="mb-6 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="group bg-gradient-to-r from-red-600 via-red-700 to-red-800 hover:from-red-700 hover:via-red-800 hover:to-red-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 sm:gap-3"
+              >
+                <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 group-hover:rotate-12 transition-transform" />
+                Design My Trip
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
             
             {/* Trust Badges - Travel Company Style */}
             <div className="grid grid-cols-3 gap-1.5 xs:gap-2 sm:gap-4 mb-8 w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
@@ -279,6 +278,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Design Trip Modal */}
+      <DesignTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

@@ -61,7 +61,7 @@ export default function AboutSection() {
               {/* Top Left Image */}
               <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
                 <Image
-                  src="/hunza.jpg"
+                  src="/hunza1.jpg"
                   alt="Hunza Valley"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
