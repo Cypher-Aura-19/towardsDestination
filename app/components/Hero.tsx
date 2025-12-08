@@ -41,7 +41,7 @@ export default function Hero() {
           {/* Main Heading */}
           <h1 className="text-base sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-4" style={{animationDelay: '0.2s'}}>
             DISCOVER WITH<br />
-            <span className="">TOWARDSDESTINATION.PK</span>
+            TOWARDS<br className="sm:hidden"/>DESTINATION.PK
           </h1>
 
           {/* Design My Trip Button */}
