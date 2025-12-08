@@ -17,8 +17,7 @@ function HotelGalleryCarousel() {
     "/hotel/2.jpeg",
     "/hotel/3.jpeg",
     "/hotel/4.jpeg",
-    "/hotel/5.jpg",
-    "/hotel/6.jpg"
+    "/hotel/5.jpeg"
   ];
 
   useEffect(() => {

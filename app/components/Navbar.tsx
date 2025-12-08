@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       <TopBar />
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg border-b border-gray-100" style={{ marginTop: '33px' }}>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 backdrop-blur-md shadow-lg border-b border-white/20" style={{ marginTop: '33px' }}>
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 pt-0.5 pb-0 sm:pt-1 sm:pb-0">
         <div className="flex items-center justify-between gap-4 sm:gap-8">
           {/* Logo */}
@@ -29,7 +29,7 @@ export default function Navbar() {
                 alt="TOWARDSDESTINATION.PK"
                 width={150}
                 height={200}
-                className="object-contain w-full h-full scale-200 md:scale-250"
+                className="object-contain w-full h-full scale-200 md:scale-250 brightness-0 invert"
                 priority
                 quality={100}
               />
@@ -42,7 +42,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center gap-6 flex-1 justify-center">
             <Link 
               href="/" 
-              className="text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap"
+              className="text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap"
             >
               Home
             </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap">
+              <button className="flex items-center gap-1 text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap">
                 Public Tours
                 <ChevronDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -76,7 +76,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsPrivateDropdownOpen(true)}
               onMouseLeave={() => setIsPrivateDropdownOpen(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap">
+              <button className="flex items-center gap-1 text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap">
                 Private Tours
                 <ChevronDown className={`w-4 h-4 transition-transform ${isPrivateDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -129,7 +129,7 @@ export default function Navbar() {
             </div>
             <Link 
               href="/international-tours" 
-              className="text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap"
+              className="text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap"
             >
               International Tours
             </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
               onMouseLeave={() => setIsServicesDropdownOpen(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap">
+              <button className="flex items-center gap-1 text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap">
                 Other Services
                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -163,19 +163,19 @@ export default function Navbar() {
             </div>
             <Link 
               href="/gallery"
-              className="text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap"
+              className="text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap"
             >
               Gallery
             </Link>
             <Link 
               href="/about" 
-              className="text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap"
+              className="text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap"
             >
               About
             </Link>
             <Link 
               href="/contact" 
-              className="text-gray-700 hover:text-red-600 transition-colors text-base font-semibold whitespace-nowrap"
+              className="text-white hover:text-red-400 transition-colors text-base font-semibold whitespace-nowrap"
             >
               Contact
             </Link>

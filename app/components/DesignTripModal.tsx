@@ -1,6 +1,6 @@
 "use client";
 
-import { X, User, Phone, Mail, Calendar, MapPin, Hotel, Users, Minus, Plus } from "lucide-react";
+import { X, User, Mail, Calendar, MapPin, Hotel, Users, Minus, Plus } from "lucide-react";
 import { useState } from "react";
 
 interface DesignTripModalProps {
@@ -11,7 +11,6 @@ interface DesignTripModalProps {
 export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProps) {
   const [formData, setFormData] = useState({
     name: "",
-    contact: "",
     email: "",
     date: "",
     startingPoint: "",
@@ -30,8 +29,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
     // Format WhatsApp message
     const message = `*CUSTOM TRIP REQUEST*\n\n` +
       `👤 Name: ${formData.name}\n` +
-      `📱 Contact: ${formData.contact}\n` +
-      `📧 Email: ${formData.email}\n` +
+      `📧 Email: ${formData.email || "N/A"}\n` +
       `📅 Departure Date: ${formData.date}\n` +
       `📍 Trip Starting Point: ${formData.startingPoint}\n` +
       `🎯 Trip Destination: ${formData.destination}\n` +
@@ -42,7 +40,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
       `🛏️ Select Rooms: ${formData.rooms}\n` +
       `📝 Additional Info: ${formData.additionalInfo || "N/A"}`;
 
-    const whatsappUrl = `https://wa.me/923335184467?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/923153309070?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
     onClose();
   };
@@ -93,30 +91,14 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
             />
           </div>
 
-          {/* Your Contact No. */}
-          <div className="relative">
-            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
-              <Phone className="w-4 h-4" />
-            </div>
-            <input
-              type="tel"
-              required
-              placeholder="Your Contact No."
-              value={formData.contact}
-              onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
-              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
-            />
-          </div>
-
-          {/* Your Email */}
+          {/* Your Email (Optional) */}
           <div className="relative">
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
               <Mail className="w-4 h-4" />
             </div>
             <input
               type="email"
-              required
-              placeholder="Your Email"
+              placeholder="Your Email (Optional)"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
@@ -149,10 +131,10 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
               className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 transition-all appearance-none cursor-pointer"
             >
               <option value="" className="text-gray-900">Trip Starting Point</option>
-              <option value="Islamabad" className="text-gray-900">Islamabad</option>
+              <option value="Rawalpindi/Islamabad" className="text-gray-900">Rawalpindi/Islamabad</option>
               <option value="Lahore" className="text-gray-900">Lahore</option>
               <option value="Karachi" className="text-gray-900">Karachi</option>
-              <option value="Rawalpindi" className="text-gray-900">Rawalpindi</option>
+              <option value="Skardu" className="text-gray-900">Skardu</option>
               <option value="Other" className="text-gray-900">Other</option>
             </select>
           </div>
@@ -176,7 +158,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
               <option value="Neelum Valley" className="text-gray-900">Neelum Valley</option>
               <option value="Swat" className="text-gray-900">Swat</option>
               <option value="Kumrat" className="text-gray-900">Kumrat</option>
-              <option value="Kashmir" className="text-gray-900">Kashmir</option>
+              <option value="Fairy Meadows" className="text-gray-900">Fairy Meadows</option>
               <option value="Other" className="text-gray-900">Other</option>
             </select>
           </div>
@@ -186,20 +168,14 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
               <Calendar className="w-4 h-4" />
             </div>
-            <select
+            <input
+              type="text"
               required
+              placeholder="Trip Duration (e.g., 5 Days / 4 Nights)"
               value={formData.duration}
               onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
-              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 transition-all appearance-none cursor-pointer"
-            >
-              <option value="" className="text-gray-900">Trip Duration</option>
-              <option value="3 Days / 2 Nights" className="text-gray-900">3 Days / 2 Nights</option>
-              <option value="4 Days / 3 Nights" className="text-gray-900">4 Days / 3 Nights</option>
-              <option value="5 Days / 4 Nights" className="text-gray-900">5 Days / 4 Nights</option>
-              <option value="6 Days / 5 Nights" className="text-gray-900">6 Days / 5 Nights</option>
-              <option value="7 Days / 6 Nights" className="text-gray-900">7 Days / 6 Nights</option>
-              <option value="Custom" className="text-gray-900">Custom Duration</option>
-            </select>
+              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+            />
           </div>
 
           {/* Select Hotel Accommodation Type */}
@@ -214,11 +190,10 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
               className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 transition-all appearance-none cursor-pointer"
             >
               <option value="" className="text-gray-900">Select Hotel Accommodation Type</option>
-              <option value="3 Star" className="text-gray-900">3 Star</option>
-              <option value="4 Star" className="text-gray-900">4 Star</option>
-              <option value="5 Star" className="text-gray-900">5 Star</option>
-              <option value="Budget" className="text-gray-900">Budget</option>
-              <option value="Luxury" className="text-gray-900">Luxury</option>
+              <option value="Economy-Standard" className="text-gray-900">Economy-Standard</option>
+              <option value="Value" className="text-gray-900">Value</option>
+              <option value="Deluxe" className="text-gray-900">Deluxe</option>
+              <option value="Executive" className="text-gray-900">Executive</option>
             </select>
           </div>
 
@@ -276,24 +251,19 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
             </div>
           </div>
 
-          {/* Select Rooms */}
+          {/* Number of Rooms */}
           <div className="relative">
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
               <Hotel className="w-4 h-4" />
             </div>
-            <select
+            <input
+              type="text"
               required
+              placeholder="Number of Rooms (e.g., 2 Double Rooms)"
               value={formData.rooms}
               onChange={(e) => setFormData({ ...formData, rooms: e.target.value })}
-              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 transition-all appearance-none cursor-pointer"
-            >
-              <option value="" className="text-gray-900">Select Rooms</option>
-              <option value="Single Room" className="text-gray-900">Single Room</option>
-              <option value="Double Room" className="text-gray-900">Double Room</option>
-              <option value="Triple Room" className="text-gray-900">Triple Room</option>
-              <option value="Family Room" className="text-gray-900">Family Room</option>
-              <option value="Multiple Rooms" className="text-gray-900">Multiple Rooms</option>
-            </select>
+              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+            />
           </div>
 
           {/* Please select us required items as per available with us */}

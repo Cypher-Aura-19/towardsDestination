@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function TopBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-linear-to-r from-red-800 via-red-700 to-red-800 text-white py-2 text-base">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-red-600/30 backdrop-blur-md text-white py-2 text-base border-b border-white/10">
       <div className="w-full max-w-[1400px] mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-2">
           {/* Contact Info */}
