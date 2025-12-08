@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-red-600 hover:bg-red-700 text-white px-10 xs:px-12 sm:px-16 md:px-20 py-4 xs:py-5 sm:py-6 md:py-7 rounded-lg font-bold text-base xs:text-lg sm:text-xl md:text-2xl uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105 animate-bounce-slow"
+              className="bg-red-600 hover:bg-red-700 text-white px-10 xs:px-12 sm:px-16 md:px-20 py-4 xs:py-5 sm:py-6 md:py-7 rounded-2xl font-bold text-base xs:text-lg sm:text-xl md:text-2xl uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105 animate-bounce-slow"
             >
               DESIGN MY TRIP
             </button>
