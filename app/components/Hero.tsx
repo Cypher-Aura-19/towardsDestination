@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="w-12 sm:w-16 h-0.5 sm:h-1 bg-red-600 mx-auto mb-4 sm:mb-6 md:mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}></div>
           
           {/* Main Heading */}
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-2" style={{animationDelay: '0.2s'}}>
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-2" style={{animationDelay: '0.2s'}}>
             DISCOVER WITH<br />
             <span className="block mt-1 sm:mt-2">TOWARDSDESTINATION</span>
           </h1>
