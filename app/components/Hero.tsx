@@ -29,26 +29,26 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full h-screen flex items-center justify-center">
-        <div className="text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        <div className="text-center px-4 sm:px-6 max-w-5xl mx-auto">
           {/* Top Text */}
-          <p className="text-white text-sm sm:text-base md:text-lg font-medium mb-4 tracking-wide animate-fade-in-up">
+          <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium mb-3 sm:mb-4 tracking-wide animate-fade-in-up">
             MAKE YOUR OWN TOUR WITH A SINGLE CLICK!
           </p>
           
           {/* Decorative Line */}
-          <div className="w-16 h-1 bg-red-600 mx-auto mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}></div>
+          <div className="w-12 sm:w-16 h-0.5 sm:h-1 bg-red-600 mx-auto mb-4 sm:mb-6 md:mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}></div>
           
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-12 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-2" style={{animationDelay: '0.2s'}}>
             DISCOVER WITH<br />
-            TOWARDSDESTINATION
+            <span className="block mt-1 sm:mt-2">TOWARDSDESTINATION</span>
           </h1>
 
           {/* Design My Trip Button */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-red-600 hover:bg-red-700 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-lg font-bold text-base sm:text-lg uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+              className="bg-red-600 hover:bg-red-700 text-white px-6 xs:px-8 sm:px-12 py-3 xs:py-3.5 sm:py-4 md:py-5 rounded-lg font-bold text-sm xs:text-base sm:text-lg uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
               DESIGN MY TRIP
             </button>
