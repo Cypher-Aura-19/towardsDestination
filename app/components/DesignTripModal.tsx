@@ -56,8 +56,8 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in-up">
-      <div className="relative w-full max-w-md max-h-[90vh] overflow-y-auto bg-gradient-to-br from-red-500 via-red-600 to-red-700 rounded-2xl shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in-up overflow-y-auto">
+      <div className="relative w-full max-w-md my-2 sm:my-4 bg-gradient-to-br from-red-500 via-red-600 to-red-700 rounded-2xl shadow-2xl max-h-[98vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -67,15 +67,15 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
         </button>
 
         {/* Header */}
-        <div className="p-6 pb-4 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1">
+        <div className="p-4 sm:p-6 pb-3 sm:pb-4 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
             DESIGN MY OWN
           </h2>
-          <p className="text-sm text-red-100">CUSTOMIZED TRIP</p>
+          <p className="text-xs sm:text-sm text-red-100">CUSTOMIZED TRIP</p>
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="px-6 pb-6 space-y-3">
+        <form onSubmit={handleSubmit} className="px-4 sm:px-6 pb-4 sm:pb-6 space-y-2">
           {/* Your Name */}
           <div className="relative">
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
