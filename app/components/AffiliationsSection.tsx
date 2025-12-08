@@ -17,7 +17,7 @@ export default function AffiliationsSection() {
     {
       id: 3,
       name: "COTHM Pakistan",
-      image: "/affiliations/3.png",
+      image: "/affiliations/5.png",
     },
   ];
 
@@ -54,7 +54,7 @@ export default function AffiliationsSection() {
         {/* License Numbers */}
         <div className="text-center mt-12">
           <p className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-600 tracking-wider">
-            GL # 5866 | TM # 663170
+            GL # 607764
           </p>
         </div>
       </div>
