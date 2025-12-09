@@ -17,7 +17,7 @@ export default function AffiliationsSection() {
     {
       id: 3,
       name: "COTHM Pakistan",
-      image: "/affiliations/5.png",
+      image: "/affiliations/10.png",
     },
   ];
 
