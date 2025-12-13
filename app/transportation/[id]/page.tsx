@@ -1,4 +1,6 @@
 "use client";
+import ImportantInstructionsSection from '@/app/components/ImportantInstructionsSection';
+import CancellationPolicySection from '@/app/components/CancellationPolicySection';
 
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
@@ -584,7 +586,9 @@ export default function CarDetailPage() {
             </div>
           </div>
         </div>
-        
+
+        <ImportantInstructionsSection />
+<CancellationPolicySection />
 <TourContactSection/>
 
       </div>

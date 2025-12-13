@@ -1,4 +1,6 @@
 "use client";
+import ImportantInstructionsSection from '@/app/components/ImportantInstructionsSection';
+import CancellationPolicySection from '@/app/components/CancellationPolicySection';
 
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
@@ -1533,6 +1535,8 @@ export default function PrivateTourByAirDetail() {
                 <p className="text-gray-700 leading-relaxed">{pkg.bulkDiscount}</p>
               </section>
             )}
+            <ImportantInstructionsSection />
+<CancellationPolicySection />
           <TourContactSection/>
 
           </div>

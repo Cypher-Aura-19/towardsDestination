@@ -19,6 +19,18 @@ const hotels = [
     image: "/one.jpeg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Mountain View"]
+  },
+  {
+    id: 2,
+    name: "Imperial Resort Kalam",
+    location: "Kalam, Swat",
+    address: "Kalam Valley, Swat, Khyber Pakhtunkhwa",
+    rating: 5,
+    reviews: 0,
+    price: 5999,
+    image: "/hotel/hotel2/1.jpg",
+    topPick: true,
+    facilities: ["WiFi", "Parking", "Restaurant", "Mountain View", "24/7 Hot Water", "Breakfast Included"]
   }
 ];
 
