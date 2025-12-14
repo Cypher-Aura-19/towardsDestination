@@ -31,6 +31,16 @@ export default function FAQSection() {
       id: 5,
       question: "Do you provide visa assistance for Umrah packages?",
       answer: "Yes, we provide complete visa processing assistance for all our Umrah packages. Our experienced team will guide you through the documentation and application process."
+    },
+    {
+      id: 6,
+      question: "What happens if fuel prices increase after booking?",
+      answer: "If fuel prices increase, the rates will be updated, and you will be sent an invoice with the updated rate. We also reserve the right to substitute or postpone trips due to landslides, roadblocks, or other problems, offering customers options for alternate tours; refunds are not offered in these circumstances."
+    },
+    {
+      id: 7,
+      question: "What is your cancellation policy?",
+      answer: "The advance payment can't be refunded but can be used for future trips within a year (only if pre-informed before commencement dates). Refund schedule: 100% amount adjusted if informed 10+ days earlier, 75% if informed 3-10 days earlier, 60% if informed less than 3 days. In case of cancellation, we issue a voucher valid for one year. No amount will be refunded if any person leaves the trip after departure."
     }
   ];
 
