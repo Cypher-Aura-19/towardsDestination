@@ -28,7 +28,7 @@ const hotels = [
     rating: 5,
     reviews: 0,
     price: 5999,
-    image: "/hotel/hotel2/1.jpg",
+    image: "/hotel/hotel2/7.jpg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Mountain View", "24/7 Hot Water", "Breakfast Included"]
   }
