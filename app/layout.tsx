@@ -3,7 +3,7 @@ import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "TOWARDSDESTINATION.PK - Pakistan's #1 Travel Company",
+  title: "TOWARDSDESTINATION - Pakistan's #1 Travel Company",
   description: "Explore Northern Pakistan, Umrah Packages & Premium Hotels. Book your dream journey with Pakistan's most trusted travel partner since 2018.",
 };
 
