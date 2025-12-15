@@ -359,28 +359,41 @@ export default function HotelDetail() {
                       <p className="text-sm text-gray-600 mb-4">Perfect for budget-conscious travelers • 2 Adults</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {hotel.roomTypes.filter((room: any) => room.type.includes("Economy")).map((room: any, index: number) => (
-                          <button
-                            key={index}
-                            onClick={() => handleRoomSelect(room.type, room.price)}
-                            className={`border-2 rounded-lg p-4 transition-all text-left ${
-                              bookingData.roomType === room.type
-                                ? 'border-blue-600 bg-white shadow-lg'
-                                : 'border-blue-200 bg-white hover:border-blue-400 hover:shadow-md'
-                            }`}
-                          >
-                            <div className="flex justify-between items-start mb-2">
-                              <span className="font-semibold text-gray-900">
-                                {room.type.includes("Non-AC") ? "Non-AC" : "AC"}
-                              </span>
-                              <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
-                                {room.capacity}
-                              </span>
-                            </div>
-                            <div className="text-2xl font-bold text-blue-600">
-                              PKR {room.price.toLocaleString()}
-                              <span className="text-sm text-gray-600 font-normal">/night</span>
-                            </div>
-                          </button>
+                          <div key={index} className="space-y-2">
+                            <button
+                              onClick={() => handleRoomSelect(room.type, room.price)}
+                              className={`w-full border-2 rounded-lg p-4 transition-all text-left ${
+                                bookingData.roomType === room.type
+                                  ? 'border-blue-600 bg-white shadow-lg'
+                                  : 'border-blue-200 bg-white hover:border-blue-400 hover:shadow-md'
+                              }`}
+                            >
+                              <div className="flex justify-between items-start mb-2">
+                                <span className="font-semibold text-gray-900">
+                                  {room.type.includes("Non-AC") ? "Non-AC" : "AC"}
+                                </span>
+                                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                                  {room.capacity}
+                                </span>
+                              </div>
+                              <div className="text-2xl font-bold text-blue-600">
+                                PKR {room.price.toLocaleString()}
+                                <span className="text-sm text-gray-600 font-normal">/night</span>
+                              </div>
+                            </button>
+                            {bookingData.roomType === room.type && (
+                              <button
+                                onClick={() => {
+                                  const message = `*Hotel Booking Inquiry - ${hotel.name}*%0A%0A*Room Type:* ${room.type}%0A*Price:* PKR ${room.price.toLocaleString()}/night%0A*Capacity:* ${room.capacity}%0A%0AI would like to book this room. Please provide availability and further details.`;
+                                  window.open(`https://wa.me/923153309070?text=${message}`, '_blank');
+                                }}
+                                className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                              >
+                                <Send className="w-4 h-4" />
+                                Book Now
+                              </button>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -401,28 +414,41 @@ export default function HotelDetail() {
                             <p className="text-sm font-semibold text-purple-700 mb-2">Standard Deluxe (2 Adults)</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                               {hotel.roomTypes.filter((room: any) => room.type.includes("Deluxe Room (") && !room.type.includes("Plus")).map((room: any, index: number) => (
-                                <button
-                                  key={index}
-                                  onClick={() => handleRoomSelect(room.type, room.price)}
-                                  className={`border-2 rounded-lg p-4 transition-all text-left ${
-                                    bookingData.roomType === room.type
-                                      ? 'border-purple-600 bg-white shadow-lg'
-                                      : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
-                                  }`}
-                                >
-                                  <div className="flex justify-between items-start mb-2">
-                                    <span className="font-semibold text-gray-900">
-                                      {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
-                                    </span>
-                                    <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
-                                      {room.capacity}
-                                    </span>
-                                  </div>
-                                  <div className="text-2xl font-bold text-purple-600">
-                                    PKR {room.price.toLocaleString()}
-                                    <span className="text-sm text-gray-600 font-normal">/night</span>
-                                  </div>
-                                </button>
+                                <div key={index} className="space-y-2">
+                                  <button
+                                    onClick={() => handleRoomSelect(room.type, room.price)}
+                                    className={`w-full border-2 rounded-lg p-4 transition-all text-left ${
+                                      bookingData.roomType === room.type
+                                        ? 'border-purple-600 bg-white shadow-lg'
+                                        : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
+                                    }`}
+                                  >
+                                    <div className="flex justify-between items-start mb-2">
+                                      <span className="font-semibold text-gray-900">
+                                        {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                                      </span>
+                                      <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
+                                        {room.capacity}
+                                      </span>
+                                    </div>
+                                    <div className="text-2xl font-bold text-purple-600">
+                                      PKR {room.price.toLocaleString()}
+                                      <span className="text-sm text-gray-600 font-normal">/night</span>
+                                    </div>
+                                  </button>
+                                  {bookingData.roomType === room.type && (
+                                    <button
+                                      onClick={() => {
+                                        const message = `*Hotel Booking Inquiry - ${hotel.name}*%0A%0A*Room Type:* ${room.type}%0A*Price:* PKR ${room.price.toLocaleString()}/night%0A*Capacity:* ${room.capacity}%0A%0AI would like to book this room. Please provide availability and further details.`;
+                                        window.open(`https://wa.me/923153309070?text=${message}`, '_blank');
+                                      }}
+                                      className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                                    >
+                                      <Send className="w-4 h-4" />
+                                      Book Now
+                                    </button>
+                                  )}
+                                </div>
                               ))}
                             </div>
                           </div>
@@ -434,28 +460,41 @@ export default function HotelDetail() {
                             <p className="text-sm font-semibold text-purple-700 mb-2">Deluxe Plus (3 Adults)</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                               {hotel.roomTypes.filter((room: any) => room.type.includes("Deluxe Room Plus")).map((room: any, index: number) => (
-                                <button
-                                  key={index}
-                                  onClick={() => handleRoomSelect(room.type, room.price)}
-                                  className={`border-2 rounded-lg p-4 transition-all text-left ${
-                                    bookingData.roomType === room.type
-                                      ? 'border-purple-600 bg-white shadow-lg'
-                                      : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
-                                  }`}
-                                >
-                                  <div className="flex justify-between items-start mb-2">
-                                    <span className="font-semibold text-gray-900">
-                                      {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
-                                    </span>
-                                    <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
-                                      {room.capacity}
-                                    </span>
-                                  </div>
-                                  <div className="text-2xl font-bold text-purple-600">
-                                    PKR {room.price.toLocaleString()}
-                                    <span className="text-sm text-gray-600 font-normal">/night</span>
-                                  </div>
-                                </button>
+                                <div key={index} className="space-y-2">
+                                  <button
+                                    onClick={() => handleRoomSelect(room.type, room.price)}
+                                    className={`w-full border-2 rounded-lg p-4 transition-all text-left ${
+                                      bookingData.roomType === room.type
+                                        ? 'border-purple-600 bg-white shadow-lg'
+                                        : 'border-purple-200 bg-white hover:border-purple-400 hover:shadow-md'
+                                    }`}
+                                  >
+                                    <div className="flex justify-between items-start mb-2">
+                                      <span className="font-semibold text-gray-900">
+                                        {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                                      </span>
+                                      <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
+                                        {room.capacity}
+                                      </span>
+                                    </div>
+                                    <div className="text-2xl font-bold text-purple-600">
+                                      PKR {room.price.toLocaleString()}
+                                      <span className="text-sm text-gray-600 font-normal">/night</span>
+                                    </div>
+                                  </button>
+                                  {bookingData.roomType === room.type && (
+                                    <button
+                                      onClick={() => {
+                                        const message = `*Hotel Booking Inquiry - ${hotel.name}*%0A%0A*Room Type:* ${room.type}%0A*Price:* PKR ${room.price.toLocaleString()}/night%0A*Capacity:* ${room.capacity}%0A%0AI would like to book this room. Please provide availability and further details.`;
+                                        window.open(`https://wa.me/923153309070?text=${message}`, '_blank');
+                                      }}
+                                      className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                                    >
+                                      <Send className="w-4 h-4" />
+                                      Book Now
+                                    </button>
+                                  )}
+                                </div>
                               ))}
                             </div>
                           </div>
@@ -474,28 +513,41 @@ export default function HotelDetail() {
                       <p className="text-sm text-gray-600 mb-4">Spacious rooms perfect for families • 5 Adults</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {hotel.roomTypes.filter((room: any) => room.type.includes("Family")).map((room: any, index: number) => (
-                          <button
-                            key={index}
-                            onClick={() => handleRoomSelect(room.type, room.price)}
-                            className={`border-2 rounded-lg p-4 transition-all text-left ${
-                              bookingData.roomType === room.type
-                                ? 'border-green-600 bg-white shadow-lg'
-                                : 'border-green-200 bg-white hover:border-green-400 hover:shadow-md'
-                            }`}
-                          >
-                            <div className="flex justify-between items-start mb-2">
-                              <span className="font-semibold text-gray-900">
-                                {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
-                              </span>
-                              <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
-                                {room.capacity}
-                              </span>
-                            </div>
-                            <div className="text-2xl font-bold text-green-600">
-                              PKR {room.price.toLocaleString()}
-                              <span className="text-sm text-gray-600 font-normal">/night</span>
-                            </div>
-                          </button>
+                          <div key={index} className="space-y-2">
+                            <button
+                              onClick={() => handleRoomSelect(room.type, room.price)}
+                              className={`w-full border-2 rounded-lg p-4 transition-all text-left ${
+                                bookingData.roomType === room.type
+                                  ? 'border-green-600 bg-white shadow-lg'
+                                  : 'border-green-200 bg-white hover:border-green-400 hover:shadow-md'
+                              }`}
+                            >
+                              <div className="flex justify-between items-start mb-2">
+                                <span className="font-semibold text-gray-900">
+                                  {room.type.includes("Non-AC") ? "Non-AC" : "Inverter AC"}
+                                </span>
+                                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                                  {room.capacity}
+                                </span>
+                              </div>
+                              <div className="text-2xl font-bold text-green-600">
+                                PKR {room.price.toLocaleString()}
+                                <span className="text-sm text-gray-600 font-normal">/night</span>
+                              </div>
+                            </button>
+                            {bookingData.roomType === room.type && (
+                              <button
+                                onClick={() => {
+                                  const message = `*Hotel Booking Inquiry - ${hotel.name}*%0A%0A*Room Type:* ${room.type}%0A*Price:* PKR ${room.price.toLocaleString()}/night%0A*Capacity:* ${room.capacity}%0A%0AI would like to book this room. Please provide availability and further details.`;
+                                  window.open(`https://wa.me/923153309070?text=${message}`, '_blank');
+                                }}
+                                className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                              >
+                                <Send className="w-4 h-4" />
+                                Book Now
+                              </button>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -505,39 +557,52 @@ export default function HotelDetail() {
                 // Hotel 2 and others - Simple List
                 <div className="space-y-4">
                   {hotel.roomTypes.map((room: any, index: number) => (
-                    <button
-                      key={index}
-                      onClick={() => handleRoomSelect(room.type, room.price)}
-                      className={`w-full border-2 rounded-lg p-6 transition-all text-left ${
-                        bookingData.roomType === room.type
-                          ? 'border-red-600 bg-red-50 shadow-lg'
-                          : 'border-gray-200 hover:border-red-400 hover:shadow-md'
-                      }`}
-                    >
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div className="flex-1">
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
-                          {room.beds && (
-                            <p className="text-sm text-gray-600 mb-1">🛏️ {room.beds}</p>
-                          )}
-                          {room.rooms && (
-                            <p className="text-sm text-gray-600 mb-1">🏠 Available: {room.rooms}</p>
-                          )}
-                          <p className="text-sm text-gray-600">👥 Occupancy: {room.capacity}</p>
-                          {bookingData.roomType === room.type && (
-                            <span className="inline-block mt-2 bg-red-600 text-white text-xs px-3 py-1 rounded-full">
-                              Selected
-                            </span>
-                          )}
-                        </div>
-                        <div className="text-right">
-                          <div className="text-3xl font-bold text-red-600">
-                            PKR {room.price.toLocaleString()}
+                    <div key={index} className="space-y-2">
+                      <button
+                        onClick={() => handleRoomSelect(room.type, room.price)}
+                        className={`w-full border-2 rounded-lg p-6 transition-all text-left ${
+                          bookingData.roomType === room.type
+                            ? 'border-red-600 bg-red-50 shadow-lg'
+                            : 'border-gray-200 hover:border-red-400 hover:shadow-md'
+                        }`}
+                      >
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                          <div className="flex-1">
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
+                            {room.beds && (
+                              <p className="text-sm text-gray-600 mb-1">🛏️ {room.beds}</p>
+                            )}
+                            {room.rooms && (
+                              <p className="text-sm text-gray-600 mb-1">🏠 Available: {room.rooms}</p>
+                            )}
+                            <p className="text-sm text-gray-600">👥 Occupancy: {room.capacity}</p>
+                            {bookingData.roomType === room.type && (
+                              <span className="inline-block mt-2 bg-red-600 text-white text-xs px-3 py-1 rounded-full">
+                                Selected
+                              </span>
+                            )}
                           </div>
-                          <div className="text-sm text-gray-600">per night</div>
+                          <div className="text-right">
+                            <div className="text-3xl font-bold text-red-600">
+                              PKR {room.price.toLocaleString()}
+                            </div>
+                            <div className="text-sm text-gray-600">per night</div>
+                          </div>
                         </div>
-                      </div>
-                    </button>
+                      </button>
+                      {bookingData.roomType === room.type && (
+                        <button
+                          onClick={() => {
+                            const message = `*Hotel Booking Inquiry - ${hotel.name}*%0A%0A*Room Type:* ${room.type}%0A*Price:* PKR ${room.price.toLocaleString()}/night%0A*Capacity:* ${room.capacity}${room.beds ? `%0A*Beds:* ${room.beds}` : ''}${room.rooms ? `%0A*Available:* ${room.rooms}` : ''}%0A%0AI would like to book this room. Please provide availability and further details.`;
+                            window.open(`https://wa.me/923153309070?text=${message}`, '_blank');
+                          }}
+                          className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
+                        >
+                          <Send className="w-5 h-5" />
+                          Book Now via WhatsApp
+                        </button>
+                      )}
+                    </div>
                   ))}
                 </div>
               )}
