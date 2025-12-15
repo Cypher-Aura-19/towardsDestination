@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import PopupModal from "./components/PopupModal";
 import TestimonialSection from "./components/TestimonialSection";
 import AffiliationsSection from "./components/AffiliationsSection";
 import TourPackages from "./components/TourPackages";
@@ -15,6 +16,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <PopupModal />
       <Navbar />
       <Hero />
       <TestimonialSection />
