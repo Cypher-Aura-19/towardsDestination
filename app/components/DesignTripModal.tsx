@@ -57,7 +57,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in-up overflow-y-auto">
-      <div className="relative w-full max-w-md my-2 sm:my-4 bg-gradient-to-br from-red-500 via-red-600 to-red-700 rounded-2xl shadow-2xl max-h-[98vh] overflow-y-auto">
+      <div className="relative w-full max-w-md lg:max-w-3xl my-2 sm:my-4 bg-gradient-to-br from-red-500 via-red-600 to-red-700 rounded-2xl shadow-2xl max-h-[98vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -67,15 +67,17 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
         </button>
 
         {/* Header */}
-        <div className="p-4 sm:p-6 pb-3 sm:pb-4 text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+        <div className="p-3 sm:p-4 pb-2 text-center">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-0.5">
             DESIGN MY OWN
           </h2>
-          <p className="text-xs sm:text-sm text-red-100">CUSTOMIZED TRIP</p>
+          <p className="text-xs text-red-100">CUSTOMIZED TRIP</p>
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="px-4 sm:px-6 pb-4 sm:pb-6 space-y-2">
+        <form onSubmit={handleSubmit} className="px-3 sm:px-4 pb-3 sm:pb-4">
+          {/* Form Grid - 2 columns on large screens */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3">
           {/* Your Name */}
           <div className="relative">
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
@@ -87,7 +89,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
               placeholder="Your Name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+              className="w-full pl-10 pr-4 py-2.5 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all text-sm"
             />
           </div>
 
@@ -198,7 +200,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
           </div>
 
           {/* No. of Adults */}
-          <div className="bg-white/20 border border-white/30 rounded-lg p-3">
+          <div className="bg-white/20 border border-white/30 rounded-lg p-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-white">
                 <Users className="w-4 h-4" />
@@ -225,7 +227,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
           </div>
 
           {/* No. of Kids */}
-          <div className="bg-white/20 border border-white/30 rounded-lg p-3">
+          <div className="bg-white/20 border border-white/30 rounded-lg p-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-white">
                 <Users className="w-4 h-4" />
@@ -267,20 +269,21 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
           </div>
 
           {/* Please select us required items as per available with us */}
-          <div className="relative">
+          <div className="relative lg:col-span-2">
             <textarea
               placeholder="Please select us required items as per available with us"
               value={formData.additionalInfo}
               onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
-              rows={3}
-              className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all resize-none"
+              rows={2}
+              className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all resize-none text-sm"
             />
+          </div>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-4 bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+            className="w-full py-2.5 mt-2 bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
             SHARE MY TRIP
           </button>
