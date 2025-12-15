@@ -39,16 +39,16 @@ export default function Hero() {
           <div className="w-12 sm:w-16 h-0.5 sm:h-1 bg-red-600 mx-auto mb-4 sm:mb-6 md:mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}></div>
           
           {/* Main Heading */}
-          <h1 className="text-base sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-4" style={{animationDelay: '0.2s'}}>
+          <h1 className="text-base sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-6 sm:mb-8 md:mb-12 animate-fade-in-up px-4 font-sans" style={{animationDelay: '0.2s', fontFamily: 'Poppins, sans-serif'}}>
             DISCOVER WITH<br />
-            <span className="block mt-1 sm:mt-2 text-sm sm:text-2xl md:text-4xl">TOWARDSDESTINATION</span>
+            TOWARDS<br className="sm:hidden"/>DESTINATION.PK
           </h1>
 
           {/* Design My Trip Button */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-red-600 hover:bg-red-700 text-white px-6 xs:px-8 sm:px-12 py-3 xs:py-3.5 sm:py-4 md:py-5 rounded-lg font-bold text-sm xs:text-base sm:text-lg uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+              className="bg-red-600 hover:bg-red-700 text-white px-10 xs:px-12 sm:px-16 md:px-20 py-4 xs:py-5 sm:py-6 md:py-7 rounded-2xl font-bold text-base xs:text-lg sm:text-xl md:text-2xl uppercase tracking-wider shadow-2xl hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105 animate-bounce-slow"
             >
               DESIGN MY TRIP
             </button>

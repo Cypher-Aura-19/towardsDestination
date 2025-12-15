@@ -225,6 +225,15 @@ p, span, div, a, button, input, textarea, select, label {
   }
 }
 
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
 /* Utility Classes */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
@@ -250,6 +259,10 @@ p, span, div, a, button, input, textarea, select, label {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
 /* Gradient Text - Enhanced Red Variations */
 .gradient-text {
   background: linear-gradient(135deg, #CC2222 0%, #E62727 50%, #F87171 100%);
@@ -268,4 +281,29 @@ p, span, div, a, button, input, textarea, select, label {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* smooth */
+  }
+  50% {
+    transform: translateY(-10px); /* smaller bounce */
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 2s infinite;
+}
+/* Hide 
+Scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
 }

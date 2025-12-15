@@ -1,4 +1,6 @@
 "use client";
+import ImportantInstructionsSection from '@/app/components/ImportantInstructionsSection';
+import CancellationPolicySection from '@/app/components/CancellationPolicySection';
 
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
@@ -411,7 +413,7 @@ const packageDetails: any = {
     image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Nature Explorer Tours proudly presents the By Air Honeymoon Package to SKARDU Valley, designed for couples seeking a perfect blend of romance, adventure, and relaxation. With breathtaking landscapes, seamless travel, and premium accommodations, this package ensures an unforgettable experience.",
+    description: "Towards Destination Tours proudly presents the By Air Honeymoon Package to SKARDU Valley, designed for couples seeking a perfect blend of romance, adventure, and relaxation. With breathtaking landscapes, seamless travel, and premium accommodations, this package ensures an unforgettable experience.",
     pointsToVisit: [
       "Shangrilla Lake",
       "Lower Kachura Lake",
@@ -510,7 +512,7 @@ const packageDetails: any = {
     image: "/ska345.jpg",
     groupSize: "2 people",
     tourType: "Daily Tour",
-    description: "Nature Explorer Tours offer best By air Honeymoon Package for thier Beloved clients. If you are looking for by Air Honeymoon Package to SKARDU Valley then you are at right place. Our Gilgit Baltistan tour package is designed for domestic and foreign tourists interested in visiting northern areas of Pakistan.",
+    description: "Towards Destination Tours offer best By air Honeymoon Package for thier Beloved clients. If you are looking for by Air Honeymoon Package to SKARDU Valley then you are at right place. Our Gilgit Baltistan tour package is designed for domestic and foreign tourists interested in visiting northern areas of Pakistan.",
     pointsToVisit: [
       "Shangrilla Lake",
       "Lower Kachura Lake",
@@ -1533,6 +1535,8 @@ export default function PrivateTourByAirDetail() {
                 <p className="text-gray-700 leading-relaxed">{pkg.bulkDiscount}</p>
               </section>
             )}
+            <ImportantInstructionsSection />
+<CancellationPolicySection />
           <TourContactSection/>
 
           </div>

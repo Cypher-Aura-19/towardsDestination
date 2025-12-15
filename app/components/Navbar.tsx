@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import TopBar from "./TopBar";
+import DesignTripModal from "./DesignTripModal";
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -14,11 +15,12 @@ export default function Navbar() {
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMobilePrivateDropdownOpen, setIsMobilePrivateDropdownOpen] = useState(false);
   const [isMobileServicesDropdownOpen, setIsMobileServicesDropdownOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
       <TopBar />
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 backdrop-blur-md shadow-lg border-b border-white/20" style={{ marginTop: '33px' }}>
+      <nav className="fixed top-[33px] left-0 right-0 z-50 bg-gray-400/90 backdrop-blur-md shadow-lg border-b border-gray-600/50">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 pt-0.5 pb-0 sm:pt-1 sm:pb-0">
         <div className="flex items-center justify-between gap-4 sm:gap-8">
           {/* Logo */}
@@ -181,13 +183,13 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Book Now Button */}
-          <Link 
-            href="/private-tours"
+          {/* Desktop Design My Trip Button */}
+          <button 
+            onClick={() => setIsModalOpen(true)}
             className="hidden xl:inline-flex bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-base font-bold transition-colors shadow-md whitespace-nowrap shrink-0"
           >
-            Book Now
-          </Link>
+            Design My Trip
+          </button>
 
           {/* Mobile Menu Button */}
           <button
@@ -356,18 +358,23 @@ export default function Navbar() {
               Contact
             </Link>
             
-            {/* Mobile Book Now Button */}
-            <Link 
-              href="/private-tours"
-              className="block mx-4 mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-center font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-base"
-              onClick={() => setIsMobileMenuOpen(false)}
+            {/* Mobile Design My Trip Button */}
+            <button 
+              onClick={() => {
+                setIsModalOpen(true);
+                setIsMobileMenuOpen(false);
+              }}
+              className="block mx-4 mt-4 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-center font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-base w-[calc(100%-2rem)]"
             >
-              Book Now
-            </Link>
+              Design My Trip
+            </button>
           </div>
         </div>
       </div>
     </nav>
+
+    {/* Design Trip Modal */}
+    <DesignTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

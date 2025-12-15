@@ -10,27 +10,54 @@ export default function FAQSection() {
     {
       id: 1,
       question: "What's included in the Northern Pakistan tour packages?",
-      answer: "Our packages include transportation, accommodation, meals, experienced tour guides, and all necessary permits. Specific inclusions vary by package - check individual tour details for complete information."
+      answer: "Our packages include transportation, accommodation, meals, experienced tour guides, and all necessary permits. Specific inclusions vary by package - check individual tour details for complete information.",
+      isList: false
     },
     {
       id: 2,
       question: "What's the difference between Umrah by Air and by Road?",
-      answer: "Umrah by Air offers faster travel with round-trip flights and typically 15-day duration. Umrah by Road is more economical, travels by comfortable bus, takes about 20 days, and includes scenic stops along the way."
+      answer: "Umrah by Air offers faster travel with round-trip flights and typically 15-day duration. Umrah by Road is more economical, travels by comfortable bus, takes about 20 days, and includes scenic stops along the way.",
+      isList: false
     },
     {
       id: 3,
       question: "Is your hotel available for independent bookings?",
-      answer: "Yes! Our hotel is available for both package tours and independent bookings. We offer standard rooms, deluxe rooms, and suites with modern amenities and traditional Pakistani hospitality."
+      answer: "Yes! Our hotel is available for both package tours and independent bookings. We offer standard rooms, deluxe rooms, and suites with modern amenities and traditional Pakistani hospitality.",
+      isList: false
     },
     {
       id: 4,
       question: "What's the best time to visit Northern Pakistan?",
-      answer: "The best time is from April to October when weather is pleasant. Summer (June-August) is ideal for high-altitude areas. Spring (April-May) and autumn (September-October) offer moderate temperatures and beautiful scenery."
+      answer: "The best time is from April to October when weather is pleasant. Summer (June-August) is ideal for high-altitude areas. Spring (April-May) and autumn (September-October) offer moderate temperatures and beautiful scenery.",
+      isList: false
     },
     {
       id: 5,
       question: "Do you provide visa assistance for Umrah packages?",
-      answer: "Yes, we provide complete visa processing assistance for all our Umrah packages. Our experienced team will guide you through the documentation and application process."
+      answer: "Yes, we provide complete visa processing assistance for all our Umrah packages. Our experienced team will guide you through the documentation and application process.",
+      isList: false
+    },
+    {
+      id: 6,
+      question: "What are the important instructions I should know?",
+      answer: [
+        "If fuel prices increase, the rates will be updated, and you will be sent an invoice with the updated rate.",
+        "Company may substitute or postpone trips due to landslides, roadblocks, or other problems, offering customers options for alternate tours; refunds are not offered in these circumstances."
+      ],
+      isList: true
+    },
+    {
+      id: 7,
+      question: "What is your cancellation policy?",
+      answer: [
+        "The advance payment can't be refunded but can be used for future trips within a year, (only if pre-informed before commencement dates).",
+        "100% amount adjusted if informed before 10 days or more earlier.",
+        "75% amount adjusted if informed before 3-10 days earlier.",
+        "60% amount adjusted if informed before less than 3 days.",
+        "In case of Cancellation, The company will issue a voucher for the canceled amount, valid for one year.",
+        "No Amount will be refunded if any Person leaves the Trip after departure at any stage due to any Issue."
+      ],
+      isList: true
     }
   ];
 
@@ -90,12 +117,23 @@ export default function FAQSection() {
                 {/* Answer - Expandable */}
                 <div 
                   className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-40 mt-4' : 'max-h-0'
+                    openIndex === index ? 'max-h-96 mt-4' : 'max-h-0'
                   }`}
                 >
-                  <p className="text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  {faq.isList ? (
+                    <ul className="space-y-2">
+                      {(faq.answer as string[]).map((item, i) => (
+                        <li key={i} className="text-gray-600 leading-relaxed flex gap-2">
+                          <span className="text-red-600 font-bold">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-gray-600 leading-relaxed">
+                      {faq.answer as string}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
