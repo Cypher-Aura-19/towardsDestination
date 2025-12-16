@@ -4,6 +4,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Users, Award, Globe, Heart, Target, Eye, Shield, Clock, User } from "lucide-react";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function AboutPage() {
   const stats = [

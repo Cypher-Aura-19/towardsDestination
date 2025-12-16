@@ -66,7 +66,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-linear-to-b from-white via-red-50 to-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-white via-red-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-80 h-80 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '2s'}}></div>

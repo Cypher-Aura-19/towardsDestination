@@ -312,7 +312,7 @@ export default function CarDetailPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-br from-black/70 via-red-900/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-red-900/40 to-black/70"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">

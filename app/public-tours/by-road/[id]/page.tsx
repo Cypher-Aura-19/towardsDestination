@@ -3666,7 +3666,7 @@ export default function TourDetailPage() {
 
               {/* Couple Package Pricing */}
               {pkg.pricing && pkg.pricing.couplePackage && (
-                <div className="bg-linear-to-r from-pink-50 to-purple-50 border-2 border-pink-300 rounded-lg p-6 mb-6">
+                <div className="bg-gradient-to-r from-pink-50 to-purple-50 border-2 border-pink-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">💑 Couple Package</h3>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-pink-700">PKR {pkg.pricing.couplePackage.standard}</div>
@@ -3677,7 +3677,7 @@ export default function TourDetailPage() {
 
               {/* Karachi Addon Pricing */}
               {pkg.pricing && pkg.pricing.karachiAddon && (
-                <div className="bg-linear-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
+                <div className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">✈️ Additional Charges for Karachi Participants</h3>
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -3815,7 +3815,7 @@ export default function TourDetailPage() {
             {pkg.departureNote && (
               <section className="bg-white rounded-xl p-8 shadow-sm">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Departure Information</h2>
-                <div className="bg-linear-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-lg p-6">
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-lg p-6">
                   <div className="flex items-start gap-4">
                     <Calendar className="w-8 h-8 text-blue-700 shrink-0 mt-1" />
                     <div>
@@ -3898,7 +3898,7 @@ export default function TourDetailPage() {
             {/* Bulk Discount */}
             {pkg.bulkDiscount && (
               <section>
-                <div className="p-8 bg-linear-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
                   <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
                     <span className="text-3xl">💰</span> Special Offer!
                   </h3>

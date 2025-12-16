@@ -173,7 +173,7 @@ export default function PrivateToursByAir() {
       </section>
 
       {/* Packages Grid */}
-      <section className="py-20 bg-linear-to-b from-red-50 via-white to-red-50">
+      <section className="py-20 bg-gradient-to-b from-red-50 via-white to-red-50">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">

@@ -125,7 +125,7 @@ export default function OtherServices() {
   };
 
   return (
-    <section id="other-services" className="py-12 sm:py-20 bg-linear-to-b from-white via-gray-50 to-white relative overflow-hidden">
+    <section id="other-services" className="py-12 sm:py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-30"></div>
@@ -198,7 +198,7 @@ export default function OtherServices() {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Image Container */}
-                <div className="relative h-48 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                   <Image
                     src={vehicle.image}
                     alt={vehicle.name}
@@ -276,7 +276,7 @@ export default function OtherServices() {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Image Container */}
-                <div className="relative h-48 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                   <Image
                     src={hotel.image}
                     alt={hotel.name}

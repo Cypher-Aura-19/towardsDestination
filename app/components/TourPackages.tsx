@@ -37,7 +37,7 @@ export default function TourPackages() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-linear-to-b from-red-50 via-white to-red-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-red-50 via-white to-red-50 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-50"></div>
@@ -110,7 +110,7 @@ export default function TourPackages() {
               style={{animationDelay: `${destination.id * 0.1}s`}}
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src={destination.image}
                   alt={destination.name}

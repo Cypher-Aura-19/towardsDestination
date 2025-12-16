@@ -255,7 +255,7 @@ function SearchResultsContent() {
       <Navbar />
 
       {/* Search Results Header with Search Bar */}
-      <section className="pt-32 pb-8 bg-linear-to-br from-red-600 to-red-800">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-red-600 to-red-800">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6">
             Search Results
@@ -504,7 +504,7 @@ function SearchResultsContent() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute top-4 right-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
                       <Bus className="w-4 h-4 text-red-600" />
                       <span className="text-xs font-bold text-red-600">By Road</span>

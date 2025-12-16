@@ -56,7 +56,7 @@ export default function PlacesSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-linear-to-b from-white via-red-50 to-white relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-white via-red-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-40 animate-float" style={{animationDelay: '2s'}}></div>
@@ -92,7 +92,7 @@ export default function PlacesSection() {
                   fill
                   className="object-cover group-hover:scale-125 group-hover:rotate-1 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-red-900/20 to-transparent group-hover:from-black/90 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-red-900/20 to-transparent group-hover:from-black/90 transition-all duration-500"></div>
                 
                 {/* Region Badge */}
                 <div className="absolute top-4 left-4 animate-fade-in-left">

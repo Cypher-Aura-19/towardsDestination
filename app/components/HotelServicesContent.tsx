@@ -138,7 +138,7 @@ export default function HotelServicesContent() {
               style={{animationDelay: `${index * 0.1}s`}}
             >
               {/* Image Container */}
-              <div className="relative h-48 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src={hotel.image}
                   alt={hotel.name}

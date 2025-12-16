@@ -1271,7 +1271,7 @@ export default function TourDetailPage() {
             {/* Bulk Discount */}
             {pkg.bulkDiscount && (
               <section>
-                <div className="p-8 bg-linear-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
                   <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
                     <span className="text-3xl">💰</span> Special Offer!
                   </h3>

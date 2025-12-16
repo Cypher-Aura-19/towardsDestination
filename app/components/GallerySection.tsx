@@ -91,7 +91,7 @@ export default function GallerySection() {
                   style={{ width: `${100 / stories.length}%` }}
                 >
                   {/* Placeholder for image - Replace with actual images from public folder */}
-                  <div className="absolute inset-0 bg-linear-to-br from-red-600 via-red-700 to-red-800">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-700 to-red-800">
                     <div className="absolute inset-0 flex items-center justify-center text-white text-sm">
                       Add image: {story.image}
                     </div>
@@ -106,7 +106,7 @@ export default function GallerySection() {
                   */}
                   
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                   
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

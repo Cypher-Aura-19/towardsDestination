@@ -15,7 +15,7 @@ export default function UmrahSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-linear-to-b from-white via-red-50 to-red-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-white via-red-50 to-red-50 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
@@ -51,7 +51,7 @@ export default function UmrahSection() {
             </p>
 
             {/* Duration & Price */}
-            <div className="bg-linear-to-br from-red-100 via-red-50 to-white rounded-2xl p-6 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-red-200">
+            <div className="bg-gradient-to-br from-red-100 via-red-50 to-white rounded-2xl p-6 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-red-200">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2 text-gray-600">
                   <Calendar className="w-5 h-5" />
