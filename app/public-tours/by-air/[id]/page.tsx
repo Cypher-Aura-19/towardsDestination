@@ -993,12 +993,10 @@ export default function TourDetailPage() {
                   type="button"
                   className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-3 shadow-lg hover:shadow-xl"
                 >
-                  <MessageCircle className="w-6 h-6" />
-                  Inquire via WhatsApp
+                 
+                  BOOK NOW
                 </button>
-                <p className="text-center text-sm text-gray-500 mt-3">
-                  Click to chat with us on WhatsApp for instant booking and queries
-                </p>
+               
               </div>
             </section>
 
