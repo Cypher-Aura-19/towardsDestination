@@ -4210,8 +4210,8 @@ export default function TourDetailPage() {
               >
                 <X className="w-6 h-6" />
               </button>
-              <h2 className="text-3xl font-bold text-white" style={{ fontFamily: 'cursive' }}>BOOK NOW</h2>
-              <p className="text-white/90 text-sm mt-1">CUSTOMIZED TRIP</p>
+              <h2 className="text-3xl font-bold text-white not-italic" style={{ fontFamily: 'sans-serif', fontStyle: 'normal' }}>BOOK NOW</h2>
+              <p className="text-white/90 text-sm mt-1 font-semibold not-italic" style={{ fontStyle: 'normal' }}>CUSTOMIZED TRIP</p>
             </div>
 
             {/* Modal Body */}
@@ -4346,9 +4346,9 @@ export default function TourDetailPage() {
                   handleBook();
                   setShowBookingModal(false);
                 }}
-                className="w-full bg-white hover:bg-gray-100 text-red-600 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl uppercase"
+                className="w-full bg-white hover:bg-gray-100 text-red-600 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl uppercase not-italic"
                 type="button"
-                style={{ fontFamily: 'cursive' }}
+                style={{ fontFamily: 'sans-serif', fontStyle: 'normal' }}
               >
                 Share My Trip
               </button>
