@@ -3159,7 +3159,8 @@ export default function TourDetailPage() {
 
   const [showInquiryForm, setShowInquiryForm] = useState(false);
   const [showMoreOptions, setShowMoreOptions] = useState(false);
-  const [showFormFields, setShowFormFields] = useState(false);
+  const [showFormFields, setShowFormFields] = useState(true); // Default to expanded
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   // Get package details or use demo data
   const pkg = packageDetails[packageId] || packageDetails["1"];
@@ -3301,18 +3302,20 @@ export default function TourDetailPage() {
                 <FormattedText text={pkg.description} />
               </p>
               
-              {/* WhatsApp Inquiry Button */}
+              {/* Book Now Button */}
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <button
-                  onClick={handleWhatsAppInquiry}
+                  onClick={() => setShowBookingModal(true)}
                   type="button"
-                  className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-3 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  <MessageCircle className="w-6 h-6" />
-                  Inquire via WhatsApp
+                  <span className="flex items-center justify-center gap-3">
+                    <Calendar className="w-6 h-6" />
+                    Book Now
+                  </span>
                </button>
                 <p className="text-center text-sm text-gray-500 mt-3">
-                  Click to chat with us on WhatsApp for instant booking and queries
+                  Click to fill booking details and confirm via WhatsApp
                 </p>
               </div>
             </section>
@@ -3975,29 +3978,7 @@ export default function TourDetailPage() {
                       </select>
                     </div>
 
-                    {/* Show More Button */}
-                    {!showFormFields && (
-                      <button
-                        onClick={() => setShowFormFields(true)}
-                        className="w-full py-3 text-green-700 font-semibold hover:bg-green-50 rounded-lg transition-colors flex items-center justify-center gap-2 border border-green-200"
-                        type="button"
-                      >
-                        Show More
-                        <svg 
-                          className="w-5 h-5" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                    )}
-
-                    {/* Additional Fields - Shown when expanded */}
-                    {showFormFields && (
-                      <>
-                        {/* Sharing Type */}
+                    {/* Sharing Type */}
                         <div>
                           <label className="block text-sm font-semibold text-gray-700 mb-2">Sharing Type:</label>
                           <select
@@ -4078,71 +4059,57 @@ export default function TourDetailPage() {
                           </div>
                         </div>
 
-                        {/* More Options Toggle */}
+                    {/* Infants */}
+                    <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                      <div>
+                        <div className="font-semibold text-gray-900">Infants</div>
+                        <div className="text-sm text-gray-500">Age 0-5</div>
+                      </div>
+                      <div className="flex items-center gap-3">
                         <button
-                          onClick={() => setShowMoreOptions(!showMoreOptions)}
-                          className="w-full py-3 text-green-700 font-semibold hover:bg-green-50 rounded-lg transition-colors flex items-center justify-center gap-2"
+                          onClick={() => decrementGuest('infants')}
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
                           type="button"
                         >
-                          More option
-                          <svg 
-                            className={`w-5 h-5 transition-transform ${showMoreOptions ? 'rotate-180' : ''}`} 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
+                          <Minus className="w-4 h-4 text-gray-600" />
                         </button>
-
-                        {/* Infants (shown when More Options is expanded) */}
-                        {showMoreOptions && (
-                          <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                            <div>
-                              <div className="font-semibold text-gray-900">Infants</div>
-                              <div className="text-sm text-gray-500">Age 0-5</div>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <button
-                                onClick={() => decrementGuest('infants')}
-                                className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
-                                type="button"
-                              >
-                                <Minus className="w-4 h-4 text-gray-600" />
-                              </button>
-                              <span className="w-8 text-center font-semibold text-gray-900">{bookingData.infants}</span>
-                              <button
-                                onClick={() => incrementGuest('infants')}
-                                className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
-                                type="button"
-                              >
-                                <Plus className="w-4 h-4 text-gray-600" />
-                              </button>
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Show Less Button */}
+                        <span className="w-8 text-center font-semibold text-gray-900">{bookingData.infants}</span>
                         <button
-                          onClick={() => {
-                            setShowFormFields(false);
-                            setShowMoreOptions(false);
-                          }}
-                          className="w-full py-3 text-gray-600 font-semibold hover:bg-gray-50 rounded-lg transition-colors flex items-center justify-center gap-2 border border-gray-300"
+                          onClick={() => incrementGuest('infants')}
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-green-600 hover:bg-green-50 transition-colors"
                           type="button"
                         >
-                          Show Less
-                          <svg 
-                            className="w-5 h-5 rotate-180" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
+                          <Plus className="w-4 h-4 text-gray-600" />
                         </button>
-                      </>
-                    )}
+                      </div>
+                    </div>
+
+                    {/* Book Now Button - Inside scrollable area */}
+                    <div className="pt-6">
+                      <button
+                        onClick={handleBook}
+                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
+                        type="button"
+                      >
+                        Book Now
+                      </button>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div className="pt-6 border-t border-gray-200">
+                      <div className="flex items-center gap-2 text-gray-600 mb-3">
+                        <Phone className="w-4 h-4" />
+                        <a href="tel:+923174101300" className="text-sm hover:text-green-600 transition-colors">
+                          +92 317 4101300
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-600">
+                        <Mail className="w-4 h-4" />
+                        <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-green-600 transition-colors">
+                          Info.Towardsdestination@gmail.com
+                        </a>
+                      </div>
+                    </div>
 
                     </div>
                   ) : (
@@ -4196,62 +4163,33 @@ export default function TourDetailPage() {
                       />
                     </div>
 
-                    </form>
-                  )}
-                </div>
-
-                {/* Fixed Bottom Section - Book Now Button and Contact Info */}
-                <div className="flex-shrink-0 border-t border-gray-200 bg-white">
-                  {!showInquiryForm ? (
-                    <div className="p-6 pt-4">
-                      <button
-                        onClick={handleBook}
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg mb-4"
-                        type="button"
-                      >
-                        Book Now
-                      </button>
-                      {/* Contact Info */}
-                      <div className="pt-4 border-t border-gray-200">
-                        <div className="flex items-center gap-2 text-gray-600 mb-3">
-                          <Phone className="w-4 h-4" />
-                          <a href="tel:+923174101300" className="text-sm hover:text-green-600 transition-colors">
-                            +92 317 4101300
-                          </a>
-                        </div>
-                        <div className="flex items-center gap-2 text-gray-600">
-                          <Mail className="w-4 h-4" />
-                          <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-green-600 transition-colors">
-                            Info.Towardsdestination@gmail.com
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="p-6 pt-4">
+                    {/* Send Inquiry Button */}
+                    <div className="pt-2">
                       <button
                         type="submit"
-                        onClick={handleSubmit}
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg mb-4"
+                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
                       >
                         Send Inquiry
                       </button>
-                      {/* Contact Info */}
-                      <div className="pt-4 border-t border-gray-200">
-                        <div className="flex items-center gap-2 text-gray-600 mb-3">
-                          <Phone className="w-4 h-4" />
-                          <a href="tel:+923174101300" className="text-sm hover:text-green-600 transition-colors">
-                            +92 317 4101300
-                          </a>
-                        </div>
-                        <div className="flex items-center gap-2 text-gray-600">
-                          <Mail className="w-4 h-4" />
-                          <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-green-600 transition-colors">
-                            Info.Towardsdestination@gmail.com
-                          </a>
-                        </div>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div className="pt-6 border-t border-gray-200">
+                      <div className="flex items-center gap-2 text-gray-600 mb-3">
+                        <Phone className="w-4 h-4" />
+                        <a href="tel:+923174101300" className="text-sm hover:text-green-600 transition-colors">
+                          +92 317 4101300
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-600">
+                        <Mail className="w-4 h-4" />
+                        <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-green-600 transition-colors">
+                          Info.Towardsdestination@gmail.com
+                        </a>
                       </div>
                     </div>
+
+                    </form>
                   )}
                 </div>
               </div>
@@ -4260,6 +4198,164 @@ export default function TourDetailPage() {
         </div>
       </div>
 
+      {/* Booking Modal */}
+      {showBookingModal && (
+        <div className="fixed inset-0 bg-white/30 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-gradient-to-br from-red-500 via-red-600 to-orange-600 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="sticky top-0 bg-gradient-to-r from-red-500 to-orange-600 p-6 flex flex-col items-center justify-center relative">
+              <button
+                onClick={() => setShowBookingModal(false)}
+                className="absolute top-4 right-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <h2 className="text-3xl font-bold text-white" style={{ fontFamily: 'cursive' }}>BOOK NOW</h2>
+              <p className="text-white/90 text-sm mt-1">CUSTOMIZED TRIP</p>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 space-y-4">
+              {/* Two Column Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Date */}
+                <div>
+                  <input
+                    type="date"
+                    value={bookingData.date}
+                    onChange={(e) => handleBookingChange('date', e.target.value)}
+                    placeholder="dd/mm/yyyy"
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-white placeholder-white/70"
+                  />
+                </div>
+
+                {/* Trip From */}
+                <div>
+                  <select
+                    value={bookingData.tripFrom}
+                    onChange={(e) => handleBookingChange('tripFrom', e.target.value)}
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-white"
+                  >
+                    <option value="Islamabad" className="text-gray-900">Islamabad</option>
+                    <option value="Lahore" className="text-gray-900">Lahore</option>
+                  </select>
+                </div>
+
+                {/* Sharing Type */}
+                <div>
+                  <select
+                    value={bookingData.sharingType}
+                    onChange={(e) => handleBookingChange('sharingType', e.target.value)}
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-white"
+                  >
+                    <option value="" className="text-gray-900">Sharing Type</option>
+                    <option value="Quad Sharing" className="text-gray-900">Quad Sharing</option>
+                    <option value="Twin Sharing" className="text-gray-900">Twin Sharing</option>
+                    <option value="Solo Sharing" className="text-gray-900">Solo Sharing</option>
+                  </select>
+                </div>
+
+                {/* Package Type */}
+                <div>
+                  <select
+                    value={bookingData.packageType}
+                    onChange={(e) => handleBookingChange('packageType', e.target.value)}
+                    className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-white"
+                  >
+                    <option value="" className="text-gray-900">Package Type</option>
+                    <option value="Standard" className="text-gray-900">Standard</option>
+                    <option value="Deluxe" className="text-gray-900">Deluxe</option>
+                    <option value="Premium" className="text-gray-900">Premium</option>
+                    <option value="Executive" className="text-gray-900">Executive</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Guest Counters in Two Columns */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Adults */}
+                <div className="bg-white/20 border border-white/30 rounded-lg p-4 flex items-center justify-between">
+                  <span className="text-white font-semibold">Adults</span>
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => decrementGuest('adults')}
+                      className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                      type="button"
+                    >
+                      <Minus className="w-4 h-4 text-white" />
+                    </button>
+                    <span className="w-8 text-center font-bold text-white">{bookingData.adults}</span>
+                    <button
+                      onClick={() => incrementGuest('adults')}
+                      className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                      type="button"
+                    >
+                      <Plus className="w-4 h-4 text-white" />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Children */}
+                <div className="bg-white/20 border border-white/30 rounded-lg p-4 flex items-center justify-between">
+                  <span className="text-white font-semibold">Kids</span>
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => decrementGuest('children')}
+                      className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                      type="button"
+                    >
+                      <Minus className="w-4 h-4 text-white" />
+                    </button>
+                    <span className="w-8 text-center font-bold text-white">{bookingData.children}</span>
+                    <button
+                      onClick={() => incrementGuest('children')}
+                      className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                      type="button"
+                    >
+                      <Plus className="w-4 h-4 text-white" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Infants - Full Width */}
+              <div className="bg-white/20 border border-white/30 rounded-lg p-4 flex items-center justify-between">
+                <span className="text-white font-semibold">Infants (Age 0-5)</span>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => decrementGuest('infants')}
+                    className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                    type="button"
+                  >
+                    <Minus className="w-4 h-4 text-white" />
+                  </button>
+                  <span className="w-8 text-center font-bold text-white">{bookingData.infants}</span>
+                  <button
+                    onClick={() => incrementGuest('infants')}
+                    className="w-8 h-8 rounded-full bg-white/30 hover:bg-white/40 flex items-center justify-center transition-colors"
+                    type="button"
+                  >
+                    <Plus className="w-4 h-4 text-white" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Book Now Button */}
+              <button
+                onClick={() => {
+                  handleBook();
+                  setShowBookingModal(false);
+                }}
+                className="w-full bg-white hover:bg-gray-100 text-red-600 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl uppercase"
+                type="button"
+                style={{ fontFamily: 'cursive' }}
+              >
+                Share My Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
      
       <Footer />
     </div>

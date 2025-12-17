@@ -3,7 +3,7 @@ import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Home - TowardsDestination.com",
+  title: "TowardsDestination",
   description: "Pakistan's #1 Travel Company. Tours to Hunza, Skardu, Naran, Swat & more.",
   icons: {
     icon: "/footer2.png",
