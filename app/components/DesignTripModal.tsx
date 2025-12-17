@@ -68,8 +68,10 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
 
         {/* Header */}
         <div className="p-2 sm:p-6 pb-2 sm:pb-4 text-center clear-both">
-          <h2 className="text-3xl font-bold text-white not-italic" style={{ fontFamily: 'sans-serif', fontStyle: 'normal' }}>DESIGN MY OWN</h2>
-          <p className="text-xs sm:text-sm text-red-100">CUSTOMIZED TRIP</p>
+           <div className="text-3xl font-bold text-white not-italic" style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal' }}>DESIGN MY OWN</div>
+          <div className="text-white/90 text-sm mt-1 font-semibold not-italic" style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal' }}>CUSTOMIZED TRIP</div>
+          
+          
         </div>
 
         {/* Form */}
