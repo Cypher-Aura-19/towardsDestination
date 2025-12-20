@@ -3,10 +3,19 @@ import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
+  title: {
+    default: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
+    template: "%s | TowardsDestination",
+  },
   description: "Discover Pakistan with TowardsDestination. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more. Book your adventure today!",
-  keywords: "Pakistan tours, Hunza tours, Skardu tours, Naran tours, Swat tours, Pakistan travel, tour packages Pakistan, northern areas Pakistan",
+  keywords: "Pakistan tours, Hunza tours, Skardu tours, Naran tours, Swat tours, Pakistan travel, tour packages Pakistan, northern areas Pakistan, umrah packages, car rental Pakistan",
   authors: [{ name: "TowardsDestination" }],
+  creator: "TowardsDestination",
+  publisher: "TowardsDestination",
+  metadataBase: new URL("https://towardsdestination.pk"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
     description: "Discover Pakistan with TowardsDestination. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more.",
@@ -31,14 +40,28 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/footer2.png", sizes: "any" },
-      { url: "/footer2.png", type: "image/png", sizes: "32x32" },
-      { url: "/footer2.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", type: "image/x-icon" },
     ],
     apple: "/footer2.png",
-    shortcut: "/footer2.png",
+    shortcut: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add your Google Search Console verification code here
+    // google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -49,9 +72,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/footer2.png" sizes="any" />
-        <link rel="icon" href="/footer2.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/footer2.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/footer2.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
