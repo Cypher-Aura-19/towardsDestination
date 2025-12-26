@@ -113,7 +113,7 @@ export default function ContactPage() {
             Have questions about our tours or packages? We're here to help you plan your perfect journey.
           </p>
           <div className="flex items-center gap-2 text-white/90 text-xs xs:text-sm">
-            <div className="w-2 h-2 bg-red-500 rounded-full shrink-0"></div>
+            <div className="w-2 h-2 bg-emerald-500 rounded-full shrink-0"></div>
             <span>Registered with FBR, SECP, DTS & Nadra</span>
           </div>
         </div>
@@ -137,22 +137,22 @@ export default function ContactPage() {
                       />
                     </div>
                   ) : (
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-5 mx-auto">
+                    <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-5 mx-auto">
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                   )}
-                  <h3 className="font-bold text-red-600 mb-3 text-lg" style={{ fontFamily: 'cursive' }}>{info.title}</h3>
+                  <h3 className="font-bold text-emerald-600 mb-3 text-lg" style={{ fontFamily: 'cursive' }}>{info.title}</h3>
                   {info.link ? (
                     <a href={info.link} className="block">
                       {info.details.map((detail, idx) => (
-                        <p key={idx} className={`${idx === 0 ? 'text-red-600 font-semibold text-base break-words' : 'text-gray-600 text-sm'}`}>
+                        <p key={idx} className={`${idx === 0 ? 'text-emerald-600 font-semibold text-base break-words' : 'text-gray-600 text-sm'}`}>
                           {detail}
                         </p>
                       ))}
                     </a>
                   ) : (
                     info.details.map((detail, idx) => (
-                      <p key={idx} className={`${idx === 0 ? 'text-red-600 font-semibold text-base break-words' : 'text-gray-600 text-sm'}`}>
+                      <p key={idx} className={`${idx === 0 ? 'text-emerald-600 font-semibold text-base break-words' : 'text-gray-600 text-sm'}`}>
                         {detail}
                       </p>
                     ))
@@ -178,7 +178,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-xl xs:rounded-2xl shadow-lg p-4 xs:p-6 sm:p-8 border border-gray-200">
-                <h2 className="text-2xl xs:text-3xl font-bold text-red-600 mb-2">
+                <h2 className="text-2xl xs:text-3xl font-bold text-emerald-600 mb-2">
                   Send us a Message
                 </h2>
                 <p className="text-sm xs:text-base text-gray-600 mb-6 xs:mb-8">
@@ -188,7 +188,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-red-600 mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-emerald-600 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -198,12 +198,12 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-emerald-600"
                         placeholder="Your name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-red-600 mb-2">
+                      <label htmlFor="email" className="block text-sm font-semibold text-emerald-600 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -213,7 +213,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-emerald-600"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -221,7 +221,7 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-red-600 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-emerald-600 mb-2">
                         Phone Number *
                       </label>
                       <input
@@ -231,12 +231,12 @@ export default function ContactPage() {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-emerald-600"
                         placeholder="+92 XXX XXXXXXX"
                       />
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-semibold text-red-600 mb-2">
+                      <label htmlFor="subject" className="block text-sm font-semibold text-emerald-600 mb-2">
                         Subject *
                       </label>
                       <select
@@ -245,7 +245,7 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600 bg-white"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-emerald-600 bg-white"
                       >
                         <option value="">Select a subject</option>
                         <option value="Northern Tours">Northern Tours Inquiry</option>
@@ -258,7 +258,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-red-600 mb-2">
+                    <label htmlFor="message" className="block text-sm font-semibold text-emerald-600 mb-2">
                       Your Message *
                     </label>
                     <textarea
@@ -268,14 +268,14 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-red-600 resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-emerald-600 resize-none"
                       placeholder="Tell us about your travel plans..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-full font-medium transition-colors flex items-center justify-center gap-2"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-full font-medium transition-colors flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
                     Send Message via WhatsApp
@@ -291,11 +291,11 @@ export default function ContactPage() {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* WhatsApp Direct */}
-              <div className="bg-red-50 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 border border-red-200">
-                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-4">
+              <div className="bg-emerald-50 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 border border-emerald-200">
+                <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-red-600 mb-2">
+                <h3 className="text-xl font-bold text-emerald-600 mb-2">
                   Chat on WhatsApp
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm">
@@ -305,7 +305,7 @@ export default function ContactPage() {
                   href="https://wa.me/923153309070"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-medium transition-colors text-center"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-full font-medium transition-colors text-center"
                 >
                   Start Chat
                 </a>
@@ -313,7 +313,7 @@ export default function ContactPage() {
 
               {/* Quick Links */}
               <div className="bg-gray-50 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6">
-                <h3 className="text-xl font-bold text-red-600 mb-4">
+                <h3 className="text-xl font-bold text-emerald-600 mb-4">
                   Quick Links
                 </h3>
                 <ul className="space-y-3">
@@ -321,9 +321,9 @@ export default function ContactPage() {
                     <li key={index}>
                       <a
                         href={link.href}
-                        className="text-gray-600 hover:text-red-600 transition-colors flex items-center gap-2"
+                        className="text-gray-600 hover:text-emerald-600 transition-colors flex items-center gap-2"
                       >
-                        <span className="w-1.5 h-1.5 bg-red-600 rounded-full"></span>
+                        <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full"></span>
                         {link.label}
                       </a>
                     </li>
@@ -332,7 +332,7 @@ export default function ContactPage() {
               </div>
 
               {/* Office Hours */}
-              <div className="bg-red-600 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 text-white">
+              <div className="bg-emerald-600 rounded-xl xs:rounded-2xl p-4 xs:p-5 sm:p-6 text-white">
                 <h3 className="text-xl font-bold mb-4">
                   Office Hours
                 </h3>
@@ -365,7 +365,7 @@ export default function ContactPage() {
       <section className="py-12 xs:py-16 sm:py-20 bg-gray-50">
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
-            <h2 className="text-2xl xs:text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-2xl xs:text-3xl font-bold text-emerald-600 mb-4">
               Visit Our Office
             </h2>
             <p className="text-sm xs:text-base text-gray-600 mb-2">
@@ -392,7 +392,7 @@ export default function ContactPage() {
               href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-medium transition-colors"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full font-medium transition-colors"
             >
               <MapPin className="w-5 h-5" />
               Open in Google Maps
@@ -405,3 +405,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

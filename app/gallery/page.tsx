@@ -7,7 +7,7 @@ import fs from "fs";
 import path from "path";
 
 export const metadata = {
-  title: "Gallery - Towards Destination",
+  title: "Gallery",
   description: "Photos and videos from our tours",
 };
 
@@ -82,3 +82,4 @@ export default function Page() {
     </div>
   );
 }
+

@@ -156,7 +156,7 @@ export default function HotelPage() {
           <div className="flex items-center gap-3 mb-4">
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                <Star key={i} className="w-5 h-5 fill-black text-black" />
               ))}
             </div>
             <span className="text-white/90 text-sm font-medium">4.8/5.0 Rating</span>
@@ -170,10 +170,10 @@ export default function HotelPage() {
             Your perfect base for mountain adventures and spiritual journeys.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-3 rounded-full font-medium transition-colors">
+            <button className="bg-white hover:bg-gray-100 text-emerald-600 px-8 py-3 rounded-full font-medium transition-colors">
               Book Your Stay
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-3 rounded-full font-medium transition-colors">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-3 rounded-full font-medium transition-colors">
               View Rooms
             </button>
           </div>
@@ -185,37 +185,37 @@ export default function HotelPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 mb-1">Location</p>
-                <a href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic" target="_blank" rel="noopener noreferrer" className="font-semibold text-red-600 hover:text-red-700">
+                <a href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-600 hover:text-emerald-700">
                   Jhangi Sayedan, Islamabad
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 mb-1">Phone</p>
-                <a href="tel:+923174101300" className="font-semibold text-red-600 hover:text-red-700 block">
+                <a href="tel:+923174101300" className="font-semibold text-emerald-600 hover:text-emerald-700 block">
                   UAN: +92 317 4101300
                 </a>
-                <a href="https://wa.me/923153309070" target="_blank" rel="noopener noreferrer" className="font-semibold text-red-600 hover:text-red-700 block">
+                <a href="https://wa.me/923153309070" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-600 hover:text-emerald-700 block">
                   WhatsApp: 0315 3309070
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 mb-1">Email</p>
-                <a href="mailto:info@towardsdestination.pk" className="font-semibold text-red-600 hover:text-red-700">
+                <a href="mailto:info@towardsdestination.pk" className="font-semibold text-emerald-600 hover:text-emerald-700">
                   info@towardsdestination.pk
                 </a>
               </div>
@@ -228,7 +228,7 @@ export default function HotelPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
+            <h2 className="text-4xl font-bold text-emerald-600 mb-4">
               Our Rooms & Suites
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -257,7 +257,7 @@ export default function HotelPage() {
                   <div className="p-8 lg:col-span-7">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold text-red-600 mb-2">
+                        <h3 className="text-2xl font-bold text-emerald-600 mb-2">
                           {room.name}
                         </h3>
                         <p className="text-gray-500 text-sm mb-2">{room.bedType}</p>
@@ -278,7 +278,7 @@ export default function HotelPage() {
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 pb-6 border-b border-gray-200">
                       {room.features.map((feature, index) => (
                         <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -291,7 +291,7 @@ export default function HotelPage() {
                           <Fan className="w-4 h-4 text-gray-500" />
                           <span className="text-sm font-medium text-gray-600">Non-AC</span>
                         </div>
-                        <p className="text-2xl font-bold text-red-600">PKR {room.priceNonAc.toLocaleString()}</p>
+                        <p className="text-2xl font-bold text-emerald-600">PKR {room.priceNonAc.toLocaleString()}</p>
                         <p className="text-xs text-gray-500">per night</p>
                       </div>
                       <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
@@ -299,7 +299,7 @@ export default function HotelPage() {
                           <Snowflake className="w-4 h-4 text-blue-500" />
                           <span className="text-sm font-medium text-blue-600">{room.acLabel}</span>
                         </div>
-                        <p className="text-2xl font-bold text-red-600">PKR {room.priceAc.toLocaleString()}</p>
+                        <p className="text-2xl font-bold text-emerald-600">PKR {room.priceAc.toLocaleString()}</p>
                         <p className="text-xs text-gray-500">per night</p>
                       </div>
                     </div>
@@ -307,7 +307,7 @@ export default function HotelPage() {
                     {/* Book Button */}
                     <button 
                       onClick={() => handleBookRoom(room)}
-                      className="w-full bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors"
+                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors"
                     >
                       Select & Book This Room
                     </button>
@@ -330,7 +330,7 @@ export default function HotelPage() {
               <X className="w-6 h-6" />
             </button>
             
-            <h3 className="text-2xl font-bold text-red-600 mb-2">Book {selectedRoom.name}</h3>
+            <h3 className="text-2xl font-bold text-emerald-600 mb-2">Book {selectedRoom.name}</h3>
             <p className="text-gray-500 text-sm mb-6">{selectedRoom.bedType}</p>
             
             <div className="space-y-3 mb-6">
@@ -343,12 +343,12 @@ export default function HotelPage() {
                   onChange={() => setSelectedVariant("nonAc")}
                   className="sr-only peer"
                 />
-                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-red-600 peer-checked:bg-red-50 border-gray-200 hover:border-gray-300 transition-colors">
+                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-emerald-600 peer-checked:bg-emerald-50 border-gray-200 hover:border-gray-300 transition-colors">
                   <div className="flex items-center gap-3">
                     <Fan className="w-5 h-5 text-gray-500" />
                     <span className="font-medium">Non-AC</span>
                   </div>
-                  <span className="font-bold text-red-600">PKR {selectedRoom.priceNonAc.toLocaleString()}</span>
+                  <span className="font-bold text-emerald-600">PKR {selectedRoom.priceNonAc.toLocaleString()}</span>
                 </div>
               </label>
               
@@ -361,12 +361,12 @@ export default function HotelPage() {
                   onChange={() => setSelectedVariant("ac")}
                   className="sr-only peer"
                 />
-                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-red-600 peer-checked:bg-red-50 border-gray-200 hover:border-gray-300 transition-colors">
+                <div className="flex items-center justify-between p-4 border-2 rounded-xl cursor-pointer peer-checked:border-emerald-600 peer-checked:bg-emerald-50 border-gray-200 hover:border-gray-300 transition-colors">
                   <div className="flex items-center gap-3">
                     <Snowflake className="w-5 h-5 text-blue-500" />
                     <span className="font-medium">{selectedRoom.acLabel}</span>
                   </div>
-                  <span className="font-bold text-red-600">PKR {selectedRoom.priceAc.toLocaleString()}</span>
+                  <span className="font-bold text-emerald-600">PKR {selectedRoom.priceAc.toLocaleString()}</span>
                 </div>
               </label>
             </div>
@@ -374,7 +374,7 @@ export default function HotelPage() {
             <div className="bg-gray-50 rounded-xl p-4 mb-6">
               <div className="flex justify-between items-center">
                 <span className="text-gray-600">Selected:</span>
-                <span className="font-bold text-red-600">
+                <span className="font-bold text-emerald-600">
                   PKR {(selectedVariant === "ac" ? selectedRoom.priceAc : selectedRoom.priceNonAc).toLocaleString()}/night
                 </span>
               </div>
@@ -396,7 +396,7 @@ export default function HotelPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
+            <h2 className="text-4xl font-bold text-emerald-600 mb-4">
               Hotel Amenities
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -409,10 +409,10 @@ export default function HotelPage() {
               const IconComponent = amenity.icon;
               return (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-red-600 mb-2">
+                  <h3 className="text-lg font-bold text-emerald-600 mb-2">
                     {amenity.label}
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -429,16 +429,16 @@ export default function HotelPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-red-600 mb-4">
+            <h2 className="text-4xl font-bold text-emerald-600 mb-4">
               Guest Reviews
             </h2>
             <div className="flex items-center justify-center gap-2 mb-2">
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-6 h-6 fill-black text-black" />
                 ))}
               </div>
-              <span className="text-2xl font-bold text-red-600">4.8/5.0</span>
+              <span className="text-2xl font-bold text-emerald-600">4.8/5.0</span>
             </div>
             <p className="text-gray-600">Based on 200+ verified reviews</p>
           </div>
@@ -448,14 +448,14 @@ export default function HotelPage() {
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-4 h-4 fill-black text-black" />
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4 leading-relaxed">
                   "{review.comment}"
                 </p>
                 <div className="flex items-center justify-between">
-                  <p className="font-semibold text-red-600">{review.name}</p>
+                  <p className="font-semibold text-emerald-600">{review.name}</p>
                   <p className="text-sm text-gray-500">{review.date}</p>
                 </div>
               </div>
@@ -465,7 +465,7 @@ export default function HotelPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-red-600">
+      <section className="py-20 bg-emerald-600">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Book Your Stay?
@@ -474,10 +474,10 @@ export default function HotelPage() {
             Experience comfort and hospitality at our premium hotel. Book now and enjoy special rates for tour packages.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="bg-white hover:bg-gray-100 text-emerald-600 px-8 py-4 rounded-full font-medium transition-colors">
               Book Now
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-full font-medium transition-colors">
               Contact Us
             </button>
           </div>
@@ -488,3 +488,4 @@ export default function HotelPage() {
     </div>
   );
 }
+

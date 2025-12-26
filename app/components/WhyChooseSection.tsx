@@ -25,52 +25,52 @@ export default function WhyChooseSection() {
       icon: Users,
       title: "Expert Travel Guides",
       description: "Hey, you've gotta check out these awesome tips and local hacks for a trip you won't forget!",
-      color: "bg-red-100 text-red-700"
+      color: "bg-emerald-100 text-emerald-700"
     },
     {
       id: 2,
       icon: MapPin,
       title: "Customizable Itineraries",
       description: "Turn your trip into your own adventure – switch things up however you like!",
-      color: "bg-red-200 text-red-800"
+      color: "bg-emerald-200 text-emerald-800"
     },
     {
       id: 3,
       icon: Home,
       title: "Handpicked Destinations",
       description: "Hey, you gotta see some of the wildest and most unique spots on the planet!",
-      color: "bg-red-50 text-red-600"
+      color: "bg-emerald-50 text-emerald-600"
     },
     {
       id: 4,
       icon: Headphones,
       title: "24/7 Customer Support",
       description: "You can totally rely on our awesome team to help you out whenever you need!",
-      color: "bg-red-300 text-red-900"
+      color: "bg-emerald-300 text-emerald-900"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-red-50 via-white to-red-50 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-emerald-50 via-white to-emerald-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
-      <div className="absolute top-0 left-0 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute top-0 left-0 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 animate-fade-in-up">
           <div>
-            <div className="inline-flex items-center gap-2 bg-red-100 border border-red-200 px-4 py-2 rounded-full mb-4 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <span className="text-red-700 font-bold text-sm">TOWARDSDESTINATION.PK</span>
+            <div className="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-200 px-4 py-2 rounded-full mb-4 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <span className="text-emerald-700 font-bold text-sm">TOWARDSDESTINATION.PK</span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold text-red-700 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-4">
               Why Choose Us
             </h2>
             <p className="text-gray-600 max-w-2xl">
               We're Pakistan's trusted travel partner, offering exceptional service, local expertise, and unforgettable experiences for over a decade. Officially registered with FBR, SECP, DTS & Nadra.
             </p>
           </div>
-          <button className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
+          <button className="flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
             Contact Us
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -78,7 +78,7 @@ export default function WhyChooseSection() {
 
         {/* Video Section */}
         <div 
-          className="relative h-96 rounded-3xl overflow-hidden mb-12 group cursor-pointer shadow-2xl hover:shadow-red-500/20 transition-shadow duration-500 animate-fade-in-up" 
+          className="relative h-96 rounded-3xl overflow-hidden mb-12 group cursor-pointer shadow-2xl hover:shadow-emerald-500/20 transition-shadow duration-500 animate-fade-in-up" 
           style={{animationDelay: '0.2s'}}
           onClick={handlePlayVideo}
         >
@@ -97,7 +97,7 @@ export default function WhyChooseSection() {
           {!isPlaying && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-125 transition-transform duration-500 shadow-xl animate-pulse-glow">
-                <Play className="w-10 h-10 text-red-600 fill-red-600 ml-1" />
+                <Play className="w-10 h-10 text-emerald-600 fill-emerald-600 ml-1" />
               </div>
             </div>
           )}
@@ -120,7 +120,7 @@ export default function WhyChooseSection() {
                 
                 {/* Content */}
                 <div>
-                  <h3 className="text-xl font-bold text-red-700 mb-2">
+                  <h3 className="text-xl font-bold text-emerald-700 mb-2">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -135,3 +135,4 @@ export default function WhyChooseSection() {
     </section>
   );
 }
+

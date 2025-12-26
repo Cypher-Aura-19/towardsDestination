@@ -95,7 +95,7 @@ export default function HotelsPage() {
                   placeholder="Where are you going?"
                   value={searchData.location}
                   onChange={(e) => setSearchData({...searchData, location: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                 />
               </div>
 
@@ -108,7 +108,7 @@ export default function HotelsPage() {
                   type="date"
                   value={searchData.checkIn}
                   onChange={(e) => setSearchData({...searchData, checkIn: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                 />
               </div>
 
@@ -121,7 +121,7 @@ export default function HotelsPage() {
                   type="date"
                   value={searchData.checkOut}
                   onChange={(e) => setSearchData({...searchData, checkOut: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                 />
               </div>
 
@@ -135,14 +135,14 @@ export default function HotelsPage() {
                   placeholder="1 guest, 1 room"
                   value={searchData.guests}
                   onChange={(e) => setSearchData({...searchData, guests: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                 />
               </div>
             </div>
 
             <button
               onClick={handleSearch}
-              className="w-full mt-6 bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-lg"
+              className="w-full mt-6 bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-lg"
             >
               <Search className="w-5 h-5" />
               Search
@@ -159,7 +159,7 @@ export default function HotelsPage() {
           </h2>
           
           <div className="flex items-center gap-4">
-            <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900">
+            <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900">
               <option>Sort by: Recommended</option>
               <option>Price: Low to High</option>
               <option>Price: High to Low</option>
@@ -169,13 +169,13 @@ export default function HotelsPage() {
             <div className="flex gap-2 border border-gray-300 rounded-lg p-1">
               <button
                 onClick={() => setViewMode("grid")}
-                className={`p-2 rounded ${viewMode === "grid" ? "bg-red-600 text-white" : "text-gray-600 hover:bg-gray-100"}`}
+                className={`p-2 rounded ${viewMode === "grid" ? "bg-emerald-600 text-white" : "text-gray-600 hover:bg-gray-100"}`}
               >
                 <Grid className="w-5 h-5" />
               </button>
               <button
                 onClick={() => setViewMode("list")}
-                className={`p-2 rounded ${viewMode === "list" ? "bg-red-600 text-white" : "text-gray-600 hover:bg-gray-100"}`}
+                className={`p-2 rounded ${viewMode === "list" ? "bg-emerald-600 text-white" : "text-gray-600 hover:bg-gray-100"}`}
               >
                 <List className="w-5 h-5" />
               </button>
@@ -220,7 +220,7 @@ export default function HotelsPage() {
                     className="w-full"
                   />
                 </div>
-                <button className="w-full mt-4 bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg font-semibold transition-colors">
+                <button className="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold transition-colors">
                   Apply
                 </button>
               </div>
@@ -235,11 +235,11 @@ export default function HotelsPage() {
                         type="checkbox"
                         checked={selectedRating === rating}
                         onChange={() => setSelectedRating(selectedRating === rating ? null : rating)}
-                        className="w-4 h-4 text-red-600 rounded focus:ring-red-500"
+                        className="w-4 h-4 text-emerald-600 rounded focus:ring-emerald-500"
                       />
                       <div className="flex items-center gap-1">
                         {[...Array(rating)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                          <Star key={i} className="w-4 h-4 fill-black text-black" />
                         ))}
                       </div>
                     </label>
@@ -253,10 +253,10 @@ export default function HotelsPage() {
                 <div className="space-y-2">
                   {[5, 4, 3, 2, 1].map((stars) => (
                     <label key={stars} className="flex items-center gap-2 cursor-pointer">
-                      <input type="checkbox" className="w-4 h-4 text-red-600 rounded focus:ring-red-500" />
+                      <input type="checkbox" className="w-4 h-4 text-emerald-600 rounded focus:ring-emerald-500" />
                       <div className="flex items-center gap-1">
                         {[...Array(stars)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-red-500 text-red-500" />
+                          <Star key={i} className="w-4 h-4 fill-emerald-500 text-emerald-500" />
                         ))}
                       </div>
                     </label>
@@ -264,7 +264,7 @@ export default function HotelsPage() {
                 </div>
               </div>
 
-              <button className="w-full text-red-600 hover:text-red-700 font-semibold py-2">
+              <button className="w-full text-emerald-600 hover:text-emerald-700 font-semibold py-2">
                 Clear
               </button>
             </div>
@@ -287,7 +287,7 @@ export default function HotelsPage() {
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     {hotel.topPick && (
-                      <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-bold">
                         Top Pick
                       </div>
                     )}
@@ -301,10 +301,10 @@ export default function HotelsPage() {
                       <div className="flex-1">
                         <div className="flex items-center gap-1 mb-1">
                           {[...Array(hotel.rating)].map((_, i) => (
-                            <Star key={i} className="w-4 h-4 fill-red-500 text-red-500" />
+                            <Star key={i} className="w-4 h-4 fill-emerald-500 text-emerald-500" />
                           ))}
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
+                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-emerald-600 transition-colors">
                           {hotel.name}
                         </h3>
                         <p className="text-sm text-gray-600 mt-1">{hotel.address}</p>
@@ -313,7 +313,7 @@ export default function HotelsPage() {
 
                     <div className="flex items-center justify-between mt-4 pt-4 border-t">
                       <div className="flex items-center gap-2">
-                        <div className="bg-red-600 text-white px-2 py-1 rounded text-sm font-bold">
+                        <div className="bg-emerald-600 text-white px-2 py-1 rounded text-sm font-bold">
                           {hotel.rating}/5
                         </div>
                         <span className="text-sm text-gray-600">
@@ -322,7 +322,7 @@ export default function HotelsPage() {
                       </div>
                       <div className="text-right">
                         <div className="text-sm text-gray-600">From:</div>
-                        <div className="text-2xl font-bold text-red-600">
+                        <div className="text-2xl font-bold text-emerald-600">
                           PKR {hotel.price.toLocaleString()}
                           <span className="text-sm text-gray-600 font-normal">/night</span>
                         </div>
@@ -340,3 +340,4 @@ export default function HotelsPage() {
     </div>
   );
 }
+

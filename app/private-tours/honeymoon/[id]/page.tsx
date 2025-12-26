@@ -1267,8 +1267,8 @@ export default function HoneymoonTourDetail() {
       <div className="min-h-screen bg-white">
         <Navbar />
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl font-bold text-red-600 mb-4">Tour Not Found</h1>
-          <Link href="/private-tours/honeymoon" className="text-red-600 hover:underline">
+          <h1 className="text-4xl font-bold text-emerald-600 mb-4">Tour Not Found</h1>
+          <Link href="/private-tours/honeymoon" className="text-emerald-600 hover:underline">
             Back to Honeymoon Tours
           </Link>
         </div>
@@ -1285,7 +1285,7 @@ export default function HoneymoonTourDetail() {
       <section className="bg-white border-b border-gray-200 pt-40 pb-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-4">
-            <span className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-bold">
               <Heart className="w-4 h-4" />
               Honeymoon Package
             </span>
@@ -1297,21 +1297,21 @@ export default function HoneymoonTourDetail() {
           
           <div className="flex flex-wrap items-center gap-6 text-gray-700">
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-red-600" />
+              <MapPin className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">{pkg.location}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-red-600" />
+              <Calendar className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">{pkg.duration}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Heart className="w-5 h-5 text-red-600" />
+              <Heart className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">For Couples</span>
             </div>
           </div>
           
           {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white mt-5">
+          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl p-5 shadow-xl text-white mt-5">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-2 rounded-lg">
@@ -1365,8 +1365,8 @@ export default function HoneymoonTourDetail() {
             </div>
 
             {/* Description */}
-            <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-              <h2 className="text-3xl font-bold text-red-700 mb-4">About This Package</h2>
+            <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+              <h2 className="text-3xl font-bold text-emerald-700 mb-4">About This Package</h2>
               <p className="text-gray-700 leading-relaxed text-lg">{pkg.description}</p>
               
               <div className="mt-6 pt-6 border-t border-gray-200">
@@ -1382,12 +1382,12 @@ export default function HoneymoonTourDetail() {
 
             {/* Highlights */}
             {pkg.highlights && pkg.highlights.length > 0 && (
-              <section className="bg-pink-50 rounded-xl p-8 border border-pink-200">
-                <h2 className="text-3xl font-bold text-red-800 mb-6">Package Highlights</h2>
+              <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Package Highlights</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {pkg.highlights.map((highlight: string, index: number) => (
                     <div key={index} className="flex items-start gap-3">
-                      <Heart className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
+                      <Heart className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700">{highlight}</span>
                     </div>
                   ))}
@@ -1397,12 +1397,12 @@ export default function HoneymoonTourDetail() {
 
             {/* Points to Visit */}
             {pkg.pointsToVisit && pkg.pointsToVisit.length > 0 && (
-              <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-red-700 mb-6">Places to Visit</h2>
+              <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-3xl font-bold text-emerald-700 mb-6">Places to Visit</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {pkg.pointsToVisit.map((point: string, index: number) => (
                     <div key={index} className="flex items-start gap-3">
-                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700">{point}</span>
                     </div>
                   ))}
@@ -1412,17 +1412,17 @@ export default function HoneymoonTourDetail() {
 
             {/* Itinerary */}
             {pkg.itinerary && pkg.itinerary.length > 0 && (
-              <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
-                <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
+              <section className="bg-white rounded-xl p-4 md:p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-2xl md:text-3xl font-bold text-emerald-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
                 <div className="space-y-6">
                   {pkg.itinerary.map((item: any, index: number) => (
-                    <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                    <div key={index} className="border-l-4 border-emerald-600 pl-4 md:pl-6 pb-6 last:pb-0">
                       <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
-                        <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                        <span className="bg-emerald-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
                           <span className="text-[9px] uppercase tracking-wider">DAY</span>
                           <span className="text-xl leading-none">{item.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                         </span>
-                        <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-emerald-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{item.description}</p>
                     </div>
@@ -1435,15 +1435,15 @@ export default function HoneymoonTourDetail() {
             {(pkg.included || pkg.excluded) && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {pkg.included && (
-                  <section className="bg-pink-50 rounded-xl p-6 border border-pink-200">
-                    <h3 className="text-2xl font-bold text-red-800 mb-4 flex items-center gap-2">
+                  <section className="bg-emerald-50 rounded-xl p-6 border border-emerald-200">
+                    <h3 className="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
                       <Heart className="w-6 h-6" />
                       What's Included
                     </h3>
                     <ul className="space-y-2">
                       {pkg.included.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <span className="text-red-600 mt-1">✓</span>
+                          <span className="text-emerald-600 mt-1">✓</span>
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -1452,15 +1452,15 @@ export default function HoneymoonTourDetail() {
                 )}
 
                 {pkg.excluded && (
-                  <section className="bg-white rounded-xl p-6 border border-red-200">
-                    <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                  <section className="bg-white rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-2xl font-bold text-gray-700 mb-4 flex items-center gap-2">
                       <span className="text-2xl">✗</span>
                       What's Excluded
                     </h3>
                     <ul className="space-y-2">
                       {pkg.excluded.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <span className="text-red-600 mt-1">✗</span>
+                          <span className="text-gray-600 mt-1">✗</span>
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -1472,21 +1472,21 @@ export default function HoneymoonTourDetail() {
 
             {/* Hotel List */}
             {pkg.hotelList && pkg.hotelList.length > 0 && (
-              <section className="bg-pink-50 rounded-xl p-8 border border-pink-200">
-                <h2 className="text-3xl font-bold text-red-800 mb-6">Accommodation Options</h2>
+              <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Accommodation Options</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b-2 border-red-300">
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Location</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Standard</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Deluxe</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Executive</th>
+                      <tr className="border-b-2 border-emerald-300">
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Location</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Standard</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Deluxe</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Executive</th>
                       </tr>
                     </thead>
                     <tbody>
                       {pkg.hotelList.map((hotel: any, index: number) => (
-                        <tr key={index} className="border-b border-red-200">
+                        <tr key={index} className="border-b border-emerald-200">
                           <td className="py-3 px-4 font-semibold text-gray-800">{hotel.location}</td>
                           <td className="py-3 px-4 text-gray-700">{hotel.standard}</td>
                           <td className="py-3 px-4 text-gray-700">{hotel.deluxe}</td>
@@ -1501,31 +1501,31 @@ export default function HoneymoonTourDetail() {
 
             {/* Pricing */}
             {pkg.pricing && (
-              <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-red-700 mb-6">Pricing Details</h2>
+              <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-3xl font-bold text-emerald-700 mb-6">Pricing Details</h2>
                 
                 {pkg.pricing.fromIslamabad && (
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-red-700 mb-4">From Islamabad</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">From Islamabad</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {pkg.pricing.fromIslamabad.standard_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromIslamabad.standard_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.standard_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.fromIslamabad.deluxe_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromIslamabad.deluxe_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.deluxe_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.fromIslamabad.executive_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromIslamabad.executive_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.executive_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
@@ -1535,26 +1535,26 @@ export default function HoneymoonTourDetail() {
 
                 {pkg.pricing.fromLahore && (
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-red-700 mb-4">From Lahore</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">From Lahore</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {pkg.pricing.fromLahore.standard_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromLahore.standard_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.standard_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.fromLahore.deluxe_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromLahore.deluxe_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.deluxe_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.fromLahore.executive_per_couple && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.fromLahore.executive_per_couple}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.executive_per_couple}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
@@ -1564,26 +1564,26 @@ export default function HoneymoonTourDetail() {
 
                 {pkg.pricing.perCouple && (
                   <div>
-                    <h3 className="text-xl font-bold text-red-700 mb-4">Package Pricing</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Package Pricing</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {pkg.pricing.perCouple.standard && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.perCouple.standard}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.standard}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.perCouple.deluxe && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.perCouple.deluxe}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.deluxe}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
                       {pkg.pricing.perCouple.executive && (
-                        <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.perCouple.executive}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.executive}</div>
                           <div className="text-xs text-gray-500 mt-1">Per Couple</div>
                         </div>
                       )}
@@ -1595,12 +1595,12 @@ export default function HoneymoonTourDetail() {
 
             {/* Notes */}
             {pkg.notes && pkg.notes.length > 0 && (
-              <section className="bg-yellow-50 rounded-xl p-8 border border-yellow-300">
-                <h2 className="text-3xl font-bold text-yellow-800 mb-6">Important Notes</h2>
+              <section className="bg-gray-100 rounded-xl p-8 border border-gray-300">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Important Notes</h2>
                 <ul className="space-y-3">
                   {pkg.notes.map((note: string, index: number) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-yellow-600 font-bold mt-1">•</span>
+                      <span className="text-gray-800 font-bold mt-1">•</span>
                       <span className="text-gray-700">{note}</span>
                     </li>
                   ))}
@@ -1615,10 +1615,10 @@ export default function HoneymoonTourDetail() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-red-200 overflow-hidden">
+            <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-emerald-200 overflow-hidden">
              
               <div className="p-6">
-                <h3 className="text-xl font-bold text-red-700 mb-4">Request Information</h3>
+                <h3 className="text-xl font-bold text-emerald-700 mb-4">Request Information</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <input
@@ -1628,7 +1628,7 @@ export default function HoneymoonTourDetail() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1640,7 +1640,7 @@ export default function HoneymoonTourDetail() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Your Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1652,7 +1652,7 @@ export default function HoneymoonTourDetail() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="Phone/WhatsApp"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1663,13 +1663,13 @@ export default function HoneymoonTourDetail() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Your Message or Special Requirements"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 resize-none text-gray-900"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
                   >
                     Send Inquiry
                   </button>

@@ -3239,7 +3239,7 @@ export default function TourDetailPage() {
             <span className="text-gray-400">{pkg.title}</span>
           </nav>
                {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white mt-5">
+          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl p-5 shadow-xl text-white mt-5">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-2 rounded-lg">
@@ -3307,7 +3307,7 @@ export default function TourDetailPage() {
                 <button
                   onClick={() => setShowBookingModal(true)}
                   type="button"
-                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-6 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   <span className="flex items-center justify-center gap-3">
                     <Calendar className="w-6 h-6" />
@@ -3341,8 +3341,8 @@ export default function TourDetailPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Points to Visit</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                   {pkg.pointsToVisit.map((point: string, index: number) => (
-                    <div key={index} className="flex items-start gap-3 group hover:bg-red-50 p-3 rounded-lg transition-colors">
-                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                    <div key={index} className="flex items-start gap-3 group hover:bg-emerald-50 p-3 rounded-lg transition-colors">
+                      <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                       <span className="text-gray-700 font-medium">
                         <FormattedText text={point} />
                       </span>
@@ -3681,7 +3681,7 @@ export default function TourDetailPage() {
 
               {/* Karachi Addon Pricing */}
               {pkg.pricing && pkg.pricing.karachiAddon && (
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
+                <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 border-2 border-emerald-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">✈️ Additional Charges for Karachi Participants</h3>
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -3780,9 +3780,9 @@ export default function TourDetailPage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg">
+                <div className="mt-6 p-4 bg-gray-100 border-l-4 border-gray-800 rounded-lg">
                   <p className="text-gray-700 font-medium">
-                    <span className="font-bold text-yellow-800">Note:</span> Hotels are subject to availability and may be changed due to unforeseen circumstances. In such cases, equivalent or better alternatives will be provided.
+                    <span className="font-bold text-gray-900">Note:</span> Hotels are subject to availability and may be changed due to unforeseen circumstances. In such cases, equivalent or better alternatives will be provided.
                   </p>
                 </div>
               </section>
@@ -3853,15 +3853,15 @@ export default function TourDetailPage() {
                     ))}
                   </div>
                 </div>
-                <div className="bg-red-50 rounded-xl p-6 border border-red-200">
-                  <h3 className="text-xl font-bold text-red-800 mb-5 flex items-center gap-2">
+                <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-800 mb-5 flex items-center gap-2">
                     <X className="w-6 h-6" />
                     Excluded
                   </h3>
                   <div className="space-y-3">
                     {pkg.excluded.map((item: string, index: number) => (
                       <div key={index} className="flex items-start gap-3 group">
-                        <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                        <X className="w-5 h-5 text-gray-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                         <span className="text-gray-700 font-medium">
                           <FormattedText text={item} />
                         </span>
@@ -3873,17 +3873,17 @@ export default function TourDetailPage() {
             </section>
 
             {/* Tour Itinerary */}
-            <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
-              <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
+            <section className="bg-white rounded-xl p-4 md:p-8 border border-emerald-200 shadow-lg">
+              <h2 className="text-2xl md:text-3xl font-bold text-emerald-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
               <div className="space-y-6">
                 {pkg.itinerary.map((day: any, index: number) => (
-                  <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                  <div key={index} className="border-l-4 border-emerald-600 pl-4 md:pl-6 pb-6 last:pb-0">
                     <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
-                      <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                      <span className="bg-emerald-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
                         <span className="text-[9px] uppercase tracking-wider">DAY</span>
                         <span className="text-xl leading-none">{day.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                       </span>
-                      <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
+                      <h3 className="text-lg md:text-xl font-bold text-emerald-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
                     </div>
                     <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <FormattedText text={day.description} />
@@ -3902,8 +3902,8 @@ export default function TourDetailPage() {
             {/* Bulk Discount */}
             {pkg.bulkDiscount && (
               <section>
-                <div className="p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-300 shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                <div className="p-8 bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-xl border-2 border-emerald-300 shadow-lg hover:shadow-xl transition-shadow">
+                  <h3 className="text-2xl font-bold text-emerald-700 mb-4 flex items-center gap-2">
                     <span className="text-3xl">💰</span> Special Offer!
                   </h3>
                   <p className="text-gray-800 text-lg font-medium leading-relaxed">
@@ -4088,7 +4088,7 @@ export default function TourDetailPage() {
                     <div className="pt-6">
                       <button
                         onClick={handleBook}
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
+                        className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
                         type="button"
                       >
                         Book Now
@@ -4167,7 +4167,7 @@ export default function TourDetailPage() {
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
+                        className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
                       >
                         Send Inquiry
                       </button>
@@ -4201,9 +4201,9 @@ export default function TourDetailPage() {
       {/* Booking Modal */}
       {showBookingModal && (
         <div className="fixed inset-0 bg-white/30 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-gradient-to-br from-red-500 via-red-600 to-orange-600 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             {/* Modal Header */}
-            <div className="sticky top-0 bg-gradient-to-r from-red-500 to-orange-600 p-6 flex flex-col items-center justify-center relative">
+            <div className="sticky top-0 bg-gradient-to-r from-emerald-500 to-emerald-700 p-6 flex flex-col items-center justify-center relative">
               <button
                 onClick={() => setShowBookingModal(false)}
                 className="absolute top-4 right-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors"
@@ -4346,7 +4346,7 @@ export default function TourDetailPage() {
                   handleBook();
                   setShowBookingModal(false);
                 }}
-                className="w-full bg-white hover:bg-gray-100 text-red-600 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl uppercase not-italic"
+                className="w-full bg-white hover:bg-gray-100 text-emerald-600 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl uppercase not-italic"
                 type="button"
                 style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal', fontWeight: 'bold' }}
               >

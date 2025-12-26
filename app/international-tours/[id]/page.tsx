@@ -771,14 +771,14 @@ default function InternationalTourDetail() {
                   )}
                   {tour.excluded && (
                     <div>
-                      <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                      <h3 className="text-xl font-bold text-gray-700 mb-4 flex items-center gap-2">
                         <X className="w-6 h-6" />
                         Excluded
                       </h3>
                       <ul className="space-y-3">
                         {tour.excluded.map((item: string, index: number) => (
                           <li key={index} className="flex items-start gap-2">
-                            <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                            <X className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
                             <span className="text-gray-700">{item}</span>
                           </li>
                         ))}

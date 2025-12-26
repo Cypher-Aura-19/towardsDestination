@@ -20,18 +20,18 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-red-50 via-white to-red-50 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-emerald-50 via-white to-emerald-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '2s'}}></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 items-center animate-fade-in-up">
           {/* Left Side - Text Content */}
           <div className="animate-fade-in-left">
-            <div className="inline-flex items-center gap-2 bg-red-100 border border-red-200 px-4 py-2 rounded-full mb-4 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <span className="text-red-700 font-bold text-sm">TOWARDSDESTINATION.PK</span>
-              <span className="text-red-600">•</span>
-              <span className="text-red-600 text-sm">Let's have an Adventure</span>
+            <div className="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-200 px-4 py-2 rounded-full mb-4 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <span className="text-emerald-700 font-bold text-sm">TOWARDSDESTINATION.PK</span>
+              <span className="text-emerald-600">•</span>
+              <span className="text-emerald-600 text-sm">Let's have an Adventure</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -44,11 +44,11 @@ export default function AboutSection() {
             </p>
             
             {/* Registration Badge */}
-            <div className="bg-red-50 border-2 border-red-600 rounded-lg p-4 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <p className="text-sm font-semibold text-red-700 mb-1">Officially Registered & Certified</p>
-              <p className="text-sm text-red-600 font-medium">FBR • SECP • DTS for Travel • Nadra</p>
+            <div className="bg-emerald-50 border-2 border-emerald-600 rounded-lg p-4 mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <p className="text-sm font-semibold text-emerald-700 mb-1">Officially Registered & Certified</p>
+              <p className="text-sm text-emerald-600 font-medium">FBR • SECP • DTS for Travel • Nadra</p>
             </div>
-            <a href="/about" className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
+            <a href="/about" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
               Learn More About Us
               <ArrowRight className="w-5 h-5" />
             </a>
@@ -103,7 +103,7 @@ export default function AboutSection() {
             <div className="flex flex-col justify-center space-y-10">
               {stats.map((stat, index) => (
                 <div key={index} className="text-left">
-                  <p className="text-4xl lg:text-5xl font-bold text-red-600 mb-1">{stat.value}</p>
+                  <p className="text-4xl lg:text-5xl font-bold text-emerald-600 mb-1">{stat.value}</p>
                   <p className="text-sm text-gray-600 whitespace-nowrap">{stat.label}</p>
                 </div>
               ))}
@@ -114,3 +114,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

@@ -255,7 +255,7 @@ function SearchResultsContent() {
       <Navbar />
 
       {/* Search Results Header with Search Bar */}
-      <section className="pt-32 pb-8 bg-gradient-to-br from-red-600 to-red-800">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-emerald-600 to-emerald-800">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6">
             Search Results
@@ -271,7 +271,7 @@ function SearchResultsContent() {
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder="Search location..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                   />
                 </div>
                 <div>
@@ -279,7 +279,7 @@ function SearchResultsContent() {
                     type="date"
                     value={checkIn}
                     onChange={(e) => setCheckIn(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                   />
                 </div>
                 <div>
@@ -287,12 +287,12 @@ function SearchResultsContent() {
                     type="date"
                     value={checkOut}
                     onChange={(e) => setCheckOut(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
+                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
                 >
                   Search
                   <ArrowRight className="w-5 h-5" />
@@ -322,7 +322,7 @@ function SearchResultsContent() {
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:border-red-600 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:border-emerald-600 transition-colors"
               >
                 <Filter className="w-5 h-5" />
                 <span className="font-semibol text-gray-900 ">Filters</span>
@@ -332,7 +332,7 @@ function SearchResultsContent() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 font-semibold text-gray-900"
+                className="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 font-semibold text-gray-900"
               >
                 <option value="relevance" className="font-semibold">Sort by: Relevance</option>
                 <option value="price-low" className="font-semibold">Price: Low to High</option>
@@ -343,7 +343,7 @@ function SearchResultsContent() {
               {(priceRange !== "all" || duration !== "all") && (
                 <button
                   onClick={clearFilters}
-                  className="flex items-center gap-2 px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                 >
                   <X className="w-4 h-4" />
                   Clear Filters
@@ -366,7 +366,7 @@ function SearchResultsContent() {
                           value="all"
                           checked={priceRange === "all"}
                           onChange={(e) => setPriceRange(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">All Prices</span>
                       </label>
@@ -377,7 +377,7 @@ function SearchResultsContent() {
                           value="budget"
                           checked={priceRange === "budget"}
                           onChange={(e) => setPriceRange(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Budget (Under PKR 15,000)</span>
                       </label>
@@ -388,7 +388,7 @@ function SearchResultsContent() {
                           value="mid"
                           checked={priceRange === "mid"}
                           onChange={(e) => setPriceRange(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Mid-Range (PKR 15,000 - 25,000)</span>
                       </label>
@@ -399,7 +399,7 @@ function SearchResultsContent() {
                           value="premium"
                           checked={priceRange === "premium"}
                           onChange={(e) => setPriceRange(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Premium (PKR 25,000+)</span>
                       </label>
@@ -417,7 +417,7 @@ function SearchResultsContent() {
                           value="all"
                           checked={duration === "all"}
                           onChange={(e) => setDuration(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">All Durations</span>
                       </label>
@@ -428,7 +428,7 @@ function SearchResultsContent() {
                           value="short"
                           checked={duration === "short"}
                           onChange={(e) => setDuration(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Short (1-3 Days)</span>
                       </label>
@@ -439,7 +439,7 @@ function SearchResultsContent() {
                           value="medium"
                           checked={duration === "medium"}
                           onChange={(e) => setDuration(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Medium (4-5 Days)</span>
                       </label>
@@ -450,7 +450,7 @@ function SearchResultsContent() {
                           value="long"
                           checked={duration === "long"}
                           onChange={(e) => setDuration(e.target.value)}
-                          className="text-red-600 focus:ring-red-600"
+                          className="text-emerald-600 focus:ring-emerald-600"
                         />
                         <span className="text-gray-700">Long (6+ Days)</span>
                       </label>
@@ -462,17 +462,17 @@ function SearchResultsContent() {
                     <h3 className="font-semibold text-gray-900 mb-3">Active Filters</h3>
                     <div className="space-y-2">
                       {priceRange !== "all" && (
-                        <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm">
+                        <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 px-3 py-1 rounded-full text-sm">
                           <span>Price: {priceRange === "budget" ? "Budget" : priceRange === "mid" ? "Mid-Range" : "Premium"}</span>
-                          <button onClick={() => setPriceRange("all")} className="hover:bg-red-100 rounded-full">
+                          <button onClick={() => setPriceRange("all")} className="hover:bg-emerald-100 rounded-full">
                             <X className="w-3 h-3" />
                           </button>
                         </div>
                       )}
                       {duration !== "all" && (
-                        <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm ml-2">
+                        <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 px-3 py-1 rounded-full text-sm ml-2">
                           <span>Duration: {duration === "short" ? "Short" : duration === "medium" ? "Medium" : "Long"}</span>
-                          <button onClick={() => setDuration("all")} className="hover:bg-red-100 rounded-full">
+                          <button onClick={() => setDuration("all")} className="hover:bg-emerald-100 rounded-full">
                             <X className="w-3 h-3" />
                           </button>
                         </div>
@@ -506,8 +506,8 @@ function SearchResultsContent() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute top-4 right-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
-                      <Bus className="w-4 h-4 text-red-600" />
-                      <span className="text-xs font-bold text-red-600">By Road</span>
+                      <Bus className="w-4 h-4 text-emerald-600" />
+                      <span className="text-xs font-bold text-emerald-600">By Road</span>
                     </div>
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="flex items-center gap-2 text-white mb-1">
@@ -519,7 +519,7 @@ function SearchResultsContent() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-red-600 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors">
                       {pkg.title}
                     </h3>
 
@@ -531,8 +531,8 @@ function SearchResultsContent() {
 
                     {/* Reviews */}
                     <div className="flex items-center gap-2 mb-4">
-                      <div className="flex items-center gap-1 bg-yellow-50 px-2 py-1 rounded">
-                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <div className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded">
+                        <Star className="w-4 h-4 fill-black text-black" />
                         <span className="text-sm font-bold text-gray-900">
                           {pkg.rating}
                         </span>
@@ -546,11 +546,11 @@ function SearchResultsContent() {
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                       <div>
                         <p className="text-xs text-gray-500 mb-1">Starting from</p>
-                        <p className="text-2xl font-bold text-red-600">
+                        <p className="text-2xl font-bold text-emerald-600">
                           PKR {pkg.price.toLocaleString()}
                         </p>
                       </div>
-                      <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg">
                         View Details
                       </button>
                     </div>
@@ -570,7 +570,7 @@ function SearchResultsContent() {
               <div className="flex gap-4 justify-center">
                 <button
                   onClick={clearFilters}
-                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
                 >
                   Clear Filters
                 </button>
@@ -602,3 +602,4 @@ export default function SearchPage() {
     </Suspense>
   );
 }
+

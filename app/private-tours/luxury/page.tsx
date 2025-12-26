@@ -86,7 +86,7 @@ export default function LuxuryToursPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-900/70 via-yellow-900/60 to-orange-900/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/70 via-emerald-800/60 to-emerald-900/70"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
@@ -150,7 +150,7 @@ export default function LuxuryToursPage() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
+                  <span className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
                     <Star className="w-4 h-4" />
                     Luxury
                   </span>
@@ -160,7 +160,7 @@ export default function LuxuryToursPage() {
 
               {/* Content */}
               <div className="p-6">
-              <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-amber-700 transition-colors min-h-[3.5rem]">
+              <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-emerald-700 transition-colors min-h-[3.5rem]">
   {/* Part 1: pkg.duration (e.g., 5 Days) - Uses 'Dancing Script' and text-sm for smaller size */}
   <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
     {pkg.duration.split(' ')[0]} {pkg.duration.split(' ')[1]}
@@ -187,10 +187,10 @@ export default function LuxuryToursPage() {
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
+                      <Star key={i} className="w-4 h-4 fill-black text-black" />
                     ))}
                   </div>
-                  <button className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg">
+                  <button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg">
                     View Details
                   </button>
                 </div>
@@ -201,7 +201,7 @@ export default function LuxuryToursPage() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 py-16">
+      <section className="bg-gradient-to-br from-emerald-50 via-emerald-100 to-emerald-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -211,7 +211,7 @@ export default function LuxuryToursPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Premium Accommodations</h3>
@@ -221,7 +221,7 @@ export default function LuxuryToursPage() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Exclusive Experiences</h3>
@@ -231,7 +231,7 @@ export default function LuxuryToursPage() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Personalized Service</h3>
@@ -244,7 +244,7 @@ export default function LuxuryToursPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-amber-600 to-yellow-600 py-16">
+      <section className="bg-gradient-to-r from-emerald-600 to-emerald-700 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready for a Luxury Experience?
@@ -255,7 +255,7 @@ export default function LuxuryToursPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/contact"
-              className="bg-white text-amber-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg"
+              className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg"
             >
               Contact Us
             </Link>
@@ -275,3 +275,4 @@ export default function LuxuryToursPage() {
     </div>
   );
 }
+

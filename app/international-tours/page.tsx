@@ -320,14 +320,14 @@ export default function InternationalToursPage() {
           <div className="mb-6">
     
 
-            <span className="inline-block bg-red-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold shadow-lg">
+            <span className="inline-block bg-emerald-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold shadow-lg">
               🌍 INTERNATIONAL TOURS
             </span>
           </div>
           
           <h1 className="section-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Explore the World<br />
-            <span className="bg-white text-red-600 px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 inline-block rounded-lg sm:rounded-xl mt-2 sm:mt-3 text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold shadow-2xl">With Premium Packages</span>
+            <span className="bg-white text-emerald-600 px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 inline-block rounded-lg sm:rounded-xl mt-2 sm:mt-3 text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold shadow-2xl">With Premium Packages</span>
           </h1>
           
           <p className="text-white text-base md:text-lg max-w-3xl mb-6 leading-relaxed font-light tracking-wide" style={{ fontFamily: "'Inter', sans-serif", lineHeight: '1.8' }}>
@@ -358,10 +358,10 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
               🌍 EXPLORE THE WORLD
             </span>
-            <h2 className="section-heading text-4xl font-bold text-red-600 mb-4">
+            <h2 className="section-heading text-4xl font-bold text-emerald-600 mb-4">
               International Tour Packages
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
@@ -374,7 +374,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("all")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "all"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -384,7 +384,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("umrah")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "umrah"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -394,7 +394,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("turkey")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "turkey"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -404,7 +404,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("baku")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "baku"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -414,7 +414,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("bali")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "bali"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -424,7 +424,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("maldives")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "maldives"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -434,7 +434,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                 onClick={() => setActiveTab("dubai")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   activeTab === "dubai"
-                    ? "bg-red-600 text-white scale-105"
+                    ? "bg-emerald-600 text-white scale-105"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -450,12 +450,12 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
               <div 
                 key={tour.id}
                 className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ${
-                  tour.popular ? 'ring-2 ring-red-600' : ''
+                  tour.popular ? 'ring-2 ring-emerald-600' : ''
                 }`}
               >
                 {tour.popular && (
                   <div className="absolute top-6 right-6 z-10">
-                    <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                    <span className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
                       <Star className="w-4 h-4 fill-white" />
                       {tour.isMultiPackage ? tour.packageCount : 'Most Popular'}
                     </span>
@@ -472,7 +472,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       className="object-cover"
                     />
                     <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                      <span className="text-sm font-medium text-red-600">{tour.category}</span>
+                      <span className="text-sm font-medium text-emerald-600">{tour.category}</span>
                     </div>
                   </div>
 
@@ -480,7 +480,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                   <div className="p-8 lg:col-span-7">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold text-red-600 mb-2">
+                        <h3 className="text-2xl font-bold text-emerald-600 mb-2">
                           {tour.name}
                         </h3>
                         <div className="flex items-center gap-4 text-gray-600 mb-2">
@@ -498,11 +498,11 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
 
                     {/* Highlights */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-red-600 mb-3">Package Includes:</h4>
+                      <h4 className="font-semibold text-emerald-600 mb-3">Package Includes:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {tour.highlights.map((highlight, index) => (
                           <div key={index} className="flex items-start gap-2">
-                            <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                            <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                             <span className="text-sm text-gray-600">{highlight}</span>
                           </div>
                         ))}
@@ -513,7 +513,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-red-600">{tour.price}</p>
+                        <p className="text-3xl font-bold text-emerald-600">{tour.price}</p>
                         {tour.priceUSD && (
                           <p className="text-lg text-gray-500">({tour.priceUSD} USD)</p>
                         )}
@@ -524,7 +524,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                           href={tour.isMultiPackage ? `/international-tours/turkey` : `/international-tours/${tour.id}`}
                          
                         >
-                          <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
+                          <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
                     View Details
                   </button>
                         </Link>
@@ -542,10 +542,10 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
           {(activeTab === "all" || activeTab === "umrah") && (
             <>
               <div className="text-center mb-12 mt-20">
-                <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                   🕋 SACRED JOURNEY
                 </span>
-                <h2 className="text-4xl font-bold text-red-600 mb-4">
+                <h2 className="text-4xl font-bold text-emerald-600 mb-4">
                   Umrah Packages
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
@@ -555,9 +555,9 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
 
               {/* Single Consolidated Umrah Card */}
               <Link href="/international-tours/umrah">
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ring-2 ring-red-600 mb-8 cursor-pointer">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ring-2 ring-emerald-600 mb-8 cursor-pointer">
                   <div className="absolute top-6 right-6 z-10">
-                    <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                    <span className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
                       <Star className="w-4 h-4 fill-white" />
                       6 Package Options
                     </span>
@@ -573,7 +573,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                         className="object-cover"
                       />
                       <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                        <span className="text-sm font-medium text-red-600">Multiple Options Available</span>
+                        <span className="text-sm font-medium text-emerald-600">Multiple Options Available</span>
                       </div>
                     </div>
 
@@ -581,7 +581,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     <div className="p-8 lg:col-span-7">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-2xl font-bold text-red-600 mb-2">
+                          <h3 className="text-2xl font-bold text-emerald-600 mb-2">
                             Umrah Packages
                           </h3>
                           <div className="flex items-center gap-2 text-gray-600">
@@ -597,7 +597,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                           {umrahPackages.map((pkg) => (
                             <div key={pkg.id} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
-                              <p className="text-xs font-semibold text-red-600 mb-1">{pkg.name}</p>
+                              <p className="text-xs font-semibold text-emerald-600 mb-1">{pkg.name}</p>
                               <p className="text-xs text-gray-600">{pkg.price}</p>
                             </div>
                           ))}
@@ -607,19 +607,19 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       {/* Key Highlights */}
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                         <li className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>Round-trip airfare included</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>3 to 5-star hotel options</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>Complete visa processing</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>Ziyarat tours included</span>
                         </li>
                       </ul>
@@ -628,11 +628,11 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                         <div>
                           <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                          <p className="text-3xl font-bold text-red-600">PKR 180,000</p>
+                          <p className="text-3xl font-bold text-emerald-600">PKR 180,000</p>
                           <p className="text-xs text-gray-500 mt-1">per person</p>
                         </div>
                         <div className="flex gap-3">
-                         <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
+                         <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
                     View Details
                   </button>
                         </div>
@@ -648,12 +648,12 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
               <div 
                 key={pkg.id}
                 className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative ${
-                  pkg.popular ? 'ring-2 ring-red-600' : ''
+                  pkg.popular ? 'ring-2 ring-emerald-600' : ''
                 }`}
               >
                 {pkg.popular && (
                   <div className="absolute top-6 right-6 z-10">
-                    <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1">
+                    <span className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1">
                       <Star className="w-4 h-4 fill-white" />
                       Most Popular
                     </span>
@@ -670,7 +670,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       className="object-cover"
                     />
                     <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full">
-                      <span className="text-sm font-medium text-red-600">{pkg.category}</span>
+                      <span className="text-sm font-medium text-emerald-600">{pkg.category}</span>
                     </div>
                   </div>
 
@@ -678,7 +678,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                   <div className="p-8 lg:col-span-7">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold text-red-600 mb-2">
+                        <h3 className="text-2xl font-bold text-emerald-600 mb-2">
                           {pkg.name}
                         </h3>
                         <div className="flex items-center gap-2 text-gray-600">
@@ -692,19 +692,19 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-200">
                       <div className="flex items-start gap-3">
                         <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Hotel className="w-4 h-4 text-red-600" />
+                          <Hotel className="w-4 h-4 text-emerald-600" />
                         </div>
                         <div>
-                          <p className="font-semibold text-red-600 text-sm mb-1">Makkah</p>
+                          <p className="font-semibold text-emerald-600 text-sm mb-1">Makkah</p>
                           <p className="text-gray-600 text-sm">{pkg.makkahHotel}</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Hotel className="w-4 h-4 text-red-600" />
+                          <Hotel className="w-4 h-4 text-emerald-600" />
                         </div>
                         <div>
-                          <p className="font-semibold text-red-600 text-sm mb-1">Madinah</p>
+                          <p className="font-semibold text-emerald-600 text-sm mb-1">Madinah</p>
                           <p className="text-gray-600 text-sm">{pkg.madinahHotel}</p>
                         </div>
                       </div>
@@ -714,7 +714,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                       {pkg.highlights.slice(0, 4).map((highlight, index) => (
                         <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                          <Check className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -724,10 +724,10 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                       <div>
                         <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-red-600">{pkg.price}</p>
+                        <p className="text-3xl font-bold text-emerald-600">{pkg.price}</p>
                         <p className="text-xs text-gray-500 mt-1">per person</p>
                       </div>
-                      <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
                         Book Now
                       </button>
                     </div>
@@ -746,7 +746,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-red-600 mb-6">
+              <h2 className="text-4xl font-bold text-emerald-600 mb-6">
                 Ziyarat Tours Included
               </h2>
               <p className="text-gray-600 text-lg mb-8">
@@ -755,7 +755,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {ziyadatPlaces.map((place, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <MapPin className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{place}</span>
                   </div>
                 ))}
@@ -774,7 +774,7 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-red-600">
+      <section className="py-20 bg-emerald-600">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Begin Your Spiritual Journey?
@@ -783,10 +783,10 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
             Contact us today to book your Umrah package or get a customized quote for your group.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="bg-white hover:bg-gray-100 text-emerald-600 px-8 py-4 rounded-full font-medium transition-colors">
               Book Now
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-full font-medium transition-colors">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-full font-medium transition-colors">
               Request Custom Quote
             </button>
           </div>
@@ -797,3 +797,4 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
     </div>
   );
 }
+

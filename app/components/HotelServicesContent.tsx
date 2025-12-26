@@ -45,14 +45,14 @@ export default function HotelServicesContent() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-emerald-600 px-4 py-2 rounded-md text-sm font-bold">
               🏨 TOWARDSDESTINATION.PK - Premium Hotel Services
             </span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
             Premium Hotel Accommodations<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">Comfort & Hospitality</span>
+            <span className="bg-white text-emerald-600 px-4 py-2 inline-block rounded-lg mt-2">Comfort & Hospitality</span>
           </h1>
           
           <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
@@ -82,28 +82,28 @@ export default function HotelServicesContent() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Hotel className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Prime Locations</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Prime Locations</h3>
               <p className="text-gray-600">
                 Hotels strategically located near major tourist attractions and scenic spots.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Quality Assured</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Quality Assured</h3>
               <p className="text-gray-600">
                 Handpicked hotels with verified reviews and quality standards.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <HeartHandshake className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Best Prices</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Best Prices</h3>
               <p className="text-gray-600">
                 Competitive rates with special packages for tour groups and families.
               </p>
@@ -117,10 +117,10 @@ export default function HotelServicesContent() {
         <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6">
           {/* Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg">
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg">
               🏨 OUR PARTNERS
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-emerald-600 mb-4">
               Featured Hotels
             </h2>
             <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
@@ -134,7 +134,7 @@ export default function HotelServicesContent() {
             <a
               href={`/hotel-services/${hotel.id}`}
               key={hotel.id}
-              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up block"
+              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-emerald-200 hover:-translate-y-2 animate-fade-in-up block"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               {/* Image Container */}
@@ -146,12 +146,12 @@ export default function HotelServicesContent() {
                   className="object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                   ⭐ {hotel.rating}
                 </div>
                 
                 {/* Price Badge */}
-                <div className="absolute bottom-4 right-4 bg-red-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute bottom-4 right-4 bg-emerald-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
                   <div className="text-xs font-semibold">PKR {hotel.price.toLocaleString()}</div>
                   <div className="text-xs">{hotel.priceType}</div>
                 </div>
@@ -159,20 +159,20 @@ export default function HotelServicesContent() {
 
               {/* Content */}
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors line-clamp-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">
                   {hotel.name}
                 </h3>
                 
                 {/* Location & Rating */}
                 <div className="flex items-center gap-2 text-gray-600 mb-3">
-                  <MapPin className="w-4 h-4 text-red-600" />
+                  <MapPin className="w-4 h-4 text-emerald-600" />
                   <span className="text-sm">{hotel.location}</span>
                 </div>
                 
                 <div className="flex items-center gap-1 mb-3 pb-3 border-b border-gray-200">
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-yellow-400 text-xs">★</span>
+                      <span key={i} className="text-black text-xs">★</span>
                     ))}
                   </div>
                   <span className="text-xs text-gray-600">({hotel.reviews} reviews)</span>
@@ -196,7 +196,7 @@ export default function HotelServicesContent() {
                 </div>
                 
                 {/* Book Button */}
-                <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
+                <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
                   View Details
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -228,7 +228,7 @@ export default function HotelServicesContent() {
                       {hotel.name}
                     </h2>
                     <div className="flex items-center gap-2 text-gray-600 mb-4">
-                      <MapPin className="w-5 h-5 text-red-600" />
+                      <MapPin className="w-5 h-5 text-emerald-600" />
                       <span className="text-lg">{hotel.location}</span>
                     </div>
 
@@ -236,7 +236,7 @@ export default function HotelServicesContent() {
                     <div className="flex items-center gap-2 mb-6">
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                          <Star key={i} className="w-5 h-5 fill-black text-black" />
                         ))}
                       </div>
                       <span className="text-gray-600">{hotel.rating}/5.0 ({hotel.reviews} reviews)</span>
@@ -254,8 +254,8 @@ export default function HotelServicesContent() {
                           const IconComponent = amenity.icon;
                           return (
                             <div key={index} className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg">
-                              <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                                <IconComponent className="w-5 h-5 text-red-600" />
+                              <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                <IconComponent className="w-5 h-5 text-emerald-600" />
                               </div>
                               <span className="text-gray-700 font-medium">{amenity.label}</span>
                             </div>
@@ -265,16 +265,16 @@ export default function HotelServicesContent() {
                     </div>
 
                     {/* Pricing */}
-                    <div className="bg-red-50 p-6 rounded-xl mb-6 border border-red-200">
+                    <div className="bg-emerald-50 p-6 rounded-xl mb-6 border border-emerald-200">
                       <div className="text-sm text-gray-600 mb-2">Per Night Rate</div>
-                      <div className="text-4xl font-bold text-red-600 mb-2">
+                      <div className="text-4xl font-bold text-emerald-600 mb-2">
                         PKR {hotel.price.toLocaleString()}
                       </div>
                       <div className="text-sm text-gray-600">{hotel.priceType}</div>
                     </div>
 
                     {/* Book Button */}
-                    <button className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
+                    <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
                       Book Your Stay
                       <ArrowRight className="w-5 h-5" />
                     </button>
@@ -289,3 +289,4 @@ export default function HotelServicesContent() {
     </>
   );
 }
+

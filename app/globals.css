@@ -20,21 +20,21 @@
   --font-sans: var(--body-font);
   --font-mono: var(--font-geist-mono);
   
-  /* Enhanced Red Color Palette - Brand Primary */
-  --color-red-50: #FEF2F2;
-  --color-red-100: #FEE2E2;
-  --color-red-200: #FECACA;
-  --color-red-300: #FCA5A5;
-  --color-red-400: #F87171;
-  --color-red-500: #EF4444;
-  --color-red-600: #E62727;
-  --color-red-700: #CC2222;
-  --color-red-800: #991B1B;
-  --color-red-900: #7F1D1D;
+  /* Enhanced Emerald Color Palette - Brand Primary */
+  --color-emerald-50: #ECFDF5;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-300: #6EE7B7;
+  --color-emerald-400: #34D399;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065F46;
+  --color-emerald-900: #064E3B;
   
-  /* Custom Dark Red Variations */
-  --color-dark-red: #8B1A1A;
-  --color-deep-red: #6B1515;
+  /* Custom Dark Emerald Variations */
+  --color-dark-emerald: #065F46;
+  --color-deep-emerald: #064E3B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -218,10 +218,10 @@ p, span, div, a, button, input, textarea, select, label {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(230, 39, 39, 0.4);
+    box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
   }
   50% {
-    box-shadow: 0 0 40px rgba(230, 39, 39, 0.8);
+    box-shadow: 0 0 40px rgba(5, 150, 105, 0.8);
   }
 }
 
@@ -263,9 +263,9 @@ p, span, div, a, button, input, textarea, select, label {
   animation: bounce-slow 2s ease-in-out infinite;
 }
 
-/* Gradient Text - Enhanced Red Variations */
+/* Gradient Text - Enhanced Emerald Variations */
 .gradient-text {
-  background: linear-gradient(135deg, #CC2222 0%, #E62727 50%, #F87171 100%);
+  background: linear-gradient(135deg, #047857 0%, #059669 50%, #34D399 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

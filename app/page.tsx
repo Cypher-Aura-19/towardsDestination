@@ -15,20 +15,20 @@ import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "TowardsDestination - Explore Pakistan's Northern Beauty | Tour Packages",
-  description: "Book unforgettable Pakistan tour packages with TowardsDestination. Explore Hunza Valley, Skardu, Naran, Kaghan, Swat, Neelum Valley, Fairy Meadows & more. Professional guides, best prices, and memorable experiences. Start your adventure today!",
+  title: "Home",
+  description: "Book unforgettable Pakistan tour packages with TowardsDestination.pk. Explore Hunza Valley, Skardu, Naran, Kaghan, Swat, Neelum Valley, Fairy Meadows & more. Professional guides, best prices, and memorable experiences. Start your adventure today!",
   keywords: "Pakistan tours, Hunza Valley tours, Skardu tours, Naran Kaghan tours, Swat Valley tours, Neelum Valley tours, Fairy Meadows, northern areas Pakistan, Pakistan travel packages, tour operators Pakistan, Pakistan tourism",
   openGraph: {
-    title: "TowardsDestination - Explore Pakistan's Northern Beauty",
+    title: "Home - TowardsDestination.pk",
     description: "Book unforgettable Pakistan tour packages. Explore Hunza, Skardu, Naran, Swat & more with professional guides.",
     url: "https://towardsdestination.pk",
-    siteName: "TowardsDestination",
+    siteName: "TowardsDestination.pk",
     images: [
       {
         url: "/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "TowardsDestination - Pakistan Tours",
+        alt: "TowardsDestination.pk - Pakistan Tours",
       },
     ],
     locale: "en_US",
@@ -56,3 +56,4 @@ export default function Home() {
     </div>
   );
 }
+

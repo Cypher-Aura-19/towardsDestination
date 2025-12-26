@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "luc
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-red-600 via-red-700 to-red-600 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-600 text-white relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
@@ -157,10 +157,10 @@ export default function Footer() {
               <Link href="#" className="text-gray-300 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-red-300 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-emerald-300 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-red-300 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-emerald-300 transition-colors">
                 Cookie Policy
               </Link>
             </div>
@@ -170,3 +170,4 @@ export default function Footer() {
     </footer>
   );
 }
+

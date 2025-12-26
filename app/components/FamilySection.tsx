@@ -54,14 +54,14 @@ export default function FamilySection() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-br from-red-600 via-red-700 to-red-600 relative overflow-hidden">
+    <section className="py-12 sm:py-20 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-600 relative overflow-hidden">
       {/* Animated Background Shapes */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-16 animate-fade-in-up">
-          <span className="inline-block bg-white text-red-600 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-xl hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
+          <span className="inline-block bg-white text-emerald-600 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-xl hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
             👨‍👩‍👧‍👦 JOIN OUR FAMILY
           </span>
           <h2 className="text-[2px] xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
@@ -84,7 +84,7 @@ export default function FamilySection() {
                 style={{animationDelay: `${index * 0.1 + 0.6}s`}}
               >
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-8 h-8 text-red-600" />
+                  <Icon className="w-8 h-8 text-emerald-600" />
                 </div>
                 <div className="text-4xl font-extrabold text-white mb-2">{stat.number}</div>
                 <div className="text-white font-bold mb-1">{stat.label}</div>
@@ -123,3 +123,4 @@ export default function FamilySection() {
     </section>
   );
 }
+

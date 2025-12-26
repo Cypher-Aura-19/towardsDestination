@@ -26,10 +26,10 @@ export default function ActivitiesSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-red-50 to-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-white via-emerald-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-20 right-20 w-80 h-80 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-20 right-20 w-80 h-80 bg-emerald-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute bottom-20 left-20 w-72 h-72 bg-emerald-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '1.5s'}}></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
@@ -47,7 +47,7 @@ export default function ActivitiesSection() {
           {activities.map((activity, index) => (
             <div 
               key={activity.id}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 border border-red-100 hover:border-red-300 animate-fade-in-up"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 border border-emerald-100 hover:border-emerald-300 animate-fade-in-up"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               {/* Image */}
@@ -62,7 +62,7 @@ export default function ActivitiesSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-red-700 mb-2 group-hover:text-red-800 transition-colors">
+                <h3 className="text-xl font-bold text-emerald-700 mb-2 group-hover:text-emerald-800 transition-colors">
                   {activity.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -75,7 +75,7 @@ export default function ActivitiesSection() {
 
         {/* Browse All Button */}
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
+          <button className="flex items-center gap-2 px-6 py-3 border-2 border-emerald-600 text-emerald-600 rounded-full hover:bg-emerald-600 hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
             Browse All Activities
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -84,3 +84,4 @@ export default function ActivitiesSection() {
     </section>
   );
 }
+

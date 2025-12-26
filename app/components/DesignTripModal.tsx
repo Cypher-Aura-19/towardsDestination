@@ -57,7 +57,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in-up overflow-y-auto">
-      <div className="relative w-full max-w-4xl h-full sm:h-auto sm:my-4 bg-gradient-to-br from-red-500 via-red-600 to-red-700 sm:rounded-2xl shadow-2xl sm:max-h-[95vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">
+      <div className="relative w-full max-w-4xl h-full sm:h-auto sm:my-4 bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 sm:rounded-2xl shadow-2xl sm:max-h-[95vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -285,7 +285,7 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-2.5 sm:py-4 text-sm sm:text-base bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+            className="w-full py-2.5 sm:py-4 text-sm sm:text-base bg-gradient-to-r from-emerald-700 to-emerald-800 hover:from-emerald-800 hover:to-emerald-900 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
             SHARE MY TRIP
           </button>
@@ -294,3 +294,4 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
     </div>
   );
 }
+

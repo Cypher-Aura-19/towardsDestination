@@ -29,7 +29,7 @@ export default function AffiliationsSection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Affiliations
           </h2>
-          <div className="w-16 h-1 bg-red-600 mx-auto"></div>
+          <div className="w-16 h-1 bg-emerald-600 mx-auto"></div>
         </div>
 
         {/* 3 Logos Side by Side */}
@@ -61,3 +61,4 @@ export default function AffiliationsSection() {
     </section>
   );
 }
+

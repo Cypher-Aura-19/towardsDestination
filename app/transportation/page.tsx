@@ -107,13 +107,13 @@ export default function TransportationPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-red-900/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-emerald-900/40 to-black/70"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-emerald-600 px-4 py-2 rounded-md text-sm font-bold">
               🚗 TOWARDSDESTINATION.PK - Car Rental Services
             </span>
           </div>
@@ -128,7 +128,7 @@ export default function TransportationPage() {
           
           {/* Search Form */}
           <div className="bg-white/95 backdrop-blur-md rounded-xl shadow-2xl p-6 md:p-8 border border-gray-100">
-            <h3 className="text-xl md:text-2xl font-bold text-red-600 mb-6 text-center">
+            <h3 className="text-xl md:text-2xl font-bold text-emerald-600 mb-6 text-center">
               Find Your Perfect Vehicle
             </h3>
             
@@ -136,7 +136,7 @@ export default function TransportationPage() {
               {/* Location */}
               <div className="flex flex-col gap-2">
                 <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-red-600" />
+                  <MapPin className="w-4 h-4 text-emerald-600" />
                   Location
                 </label>
                 <input
@@ -144,21 +144,21 @@ export default function TransportationPage() {
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   placeholder="Where are you going?"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-gray-900"
                 />
               </div>
 
               {/* Pick Up Date */}
               <div className="flex flex-col gap-2">
                 <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-red-600" />
+                  <Calendar className="w-4 h-4 text-emerald-600" />
                   Pick Up Date
                 </label>
                 <input
                   type="date"
                   value={pickupDate}
                   onChange={(e) => setPickupDate(e.target.value)}
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-gray-900"
                 />
               </div>
 
@@ -169,7 +169,7 @@ export default function TransportationPage() {
                   type="time"
                   value={pickupTime}
                   onChange={(e) => setPickupTime(e.target.value)}
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-gray-900"
                 />
               </div>
 
@@ -180,7 +180,7 @@ export default function TransportationPage() {
                   type="date"
                   value={returnDate}
                   onChange={(e) => setReturnDate(e.target.value)}
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent text-gray-900"
                 />
               </div>
 
@@ -189,7 +189,7 @@ export default function TransportationPage() {
                 <label className="text-sm font-semibold text-gray-700 invisible">Search</label>
                 <button 
                   type="submit"
-                  className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px] shadow-lg hover:shadow-xl"
+                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 h-[46px] shadow-lg hover:shadow-xl"
                 >
                   <Search className="w-5 h-5" />
                   Search
@@ -205,10 +205,10 @@ export default function TransportationPage() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
               🚗 AVAILABLE VEHICLES
             </span>
-            <h2 className="text-4xl font-extrabold text-red-600 mb-4">
+            <h2 className="text-4xl font-extrabold text-emerald-600 mb-4">
               Choose Your Perfect Vehicle
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -221,7 +221,7 @@ export default function TransportationPage() {
               <Link 
                 key={car.id}
                 href={`/transportation/${car.id}`}
-                className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl hover:border-red-200 transition-all duration-300"
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl hover:border-emerald-200 transition-all duration-300"
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -232,12 +232,12 @@ export default function TransportationPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                    <Car className="w-4 h-4 text-red-600" />
-                    <span className="text-xs font-medium text-red-600">{car.type}</span>
+                    <Car className="w-4 h-4 text-emerald-600" />
+                    <span className="text-xs font-medium text-emerald-600">{car.type}</span>
                   </div>
                   {/* Rating Badge */}
                   <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star className="w-4 h-4 fill-black text-black" />
                     <span className="text-xs font-semibold text-gray-900">{car.rating}</span>
                     <span className="text-xs text-gray-500">({car.reviews})</span>
                   </div>
@@ -245,26 +245,26 @@ export default function TransportationPage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">
+                  <h3 className="text-xl font-bold text-emerald-600 mb-2">
                     {car.name}
                   </h3>
                   
                   {/* Car Specs */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Users className="w-4 h-4 text-red-600" />
+                      <Users className="w-4 h-4 text-emerald-600" />
                       <span className="text-sm">{car.passengers} Passengers</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Settings className="w-4 h-4 text-red-600" />
+                      <Settings className="w-4 h-4 text-emerald-600" />
                       <span className="text-sm">{car.gearShift}</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Luggage className="w-4 h-4 text-red-600" />
+                      <Luggage className="w-4 h-4 text-emerald-600" />
                       <span className="text-sm">{car.baggage} Baggage</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <DoorOpen className="w-4 h-4 text-red-600" />
+                      <DoorOpen className="w-4 h-4 text-emerald-600" />
                       <span className="text-sm">{car.doors} Doors</span>
                     </div>
                   </div>
@@ -273,10 +273,10 @@ export default function TransportationPage() {
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-red-600">PKR {car.price.toLocaleString()}</p>
+                      <p className="text-2xl font-bold text-emerald-600">PKR {car.price.toLocaleString()}</p>
                       <p className="text-xs text-gray-500">per day</p>
                     </div>
-                    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                       View Details
                     </button>
                   </div>
@@ -290,33 +290,33 @@ export default function TransportationPage() {
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-emerald-600 mb-12 text-center">
             Why Choose Our Car Rental Service?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Car className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Well-Maintained Fleet</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Well-Maintained Fleet</h3>
               <p className="text-gray-600">
                 All our vehicles are regularly serviced and maintained to ensure your safety and comfort.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Professional Drivers</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Professional Drivers</h3>
               <p className="text-gray-600">
                 Experienced and licensed drivers available upon request for your peace of mind.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Settings className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-red-600 mb-2">Flexible Options</h3>
+              <h3 className="text-xl font-bold text-emerald-600 mb-2">Flexible Options</h3>
               <p className="text-gray-600">
                 Choose from self-drive or chauffeur-driven options to suit your needs.
               </p>
@@ -329,4 +329,5 @@ export default function TransportationPage() {
     </div>
   );
 }
+
 

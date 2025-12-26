@@ -4,29 +4,29 @@ import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: {
-    default: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
-    template: "%s | TowardsDestination",
+    default: "Home - TowardsDestination.pk",
+    template: "%s - TowardsDestination.pk",
   },
-  description: "Discover Pakistan with TowardsDestination. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more. Book your adventure today!",
+  description: "Discover Pakistan with TowardsDestination.pk. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more. Book your adventure today!",
   keywords: "Pakistan tours, Hunza tours, Skardu tours, Naran tours, Swat tours, Pakistan travel, tour packages Pakistan, northern areas Pakistan, umrah packages, car rental Pakistan",
-  authors: [{ name: "TowardsDestination" }],
-  creator: "TowardsDestination",
-  publisher: "TowardsDestination",
+  authors: [{ name: "TowardsDestination.pk" }],
+  creator: "TowardsDestination.pk",
+  publisher: "TowardsDestination.pk",
   metadataBase: new URL("https://towardsdestination.pk"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
-    description: "Discover Pakistan with TowardsDestination. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more.",
+    title: "Home - TowardsDestination.pk",
+    description: "Discover Pakistan with TowardsDestination.pk. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more.",
     url: "https://towardsdestination.pk",
-    siteName: "TowardsDestination",
+    siteName: "TowardsDestination.pk",
     images: [
       {
         url: "/footer2.png",
         width: 1200,
         height: 630,
-        alt: "TowardsDestination - Pakistan Tours",
+        alt: "TowardsDestination.pk - Pakistan Tours",
       },
     ],
     locale: "en_US",
@@ -34,16 +34,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TowardsDestination - Pakistan's #1 Travel & Tour Company",
-    description: "Discover Pakistan with TowardsDestination. Expert tour packages to Hunza, Skardu, Naran, Swat & more.",
+    title: "Home - TowardsDestination.pk",
+    description: "Discover Pakistan with TowardsDestination.pk. Expert tour packages to Hunza, Skardu, Naran, Swat & more.",
     images: ["/footer2.png"],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: "/footer2.png",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
     shortcut: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
@@ -71,9 +74,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/footer2.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Pacifico&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Satisfy&family=Allura&display=swap" rel="stylesheet" />
@@ -85,3 +90,4 @@ export default function RootLayout({
     </html>
   );
 }
+

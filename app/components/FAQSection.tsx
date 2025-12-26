@@ -66,22 +66,22 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-red-50 to-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-white via-emerald-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-red-200 rounded-full blur-3xl opacity-30 animate-float"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-0 left-0 w-80 h-80 bg-emerald-200 rounded-full blur-3xl opacity-30 animate-float"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-25 animate-float" style={{animationDelay: '2s'}}></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 animate-fade-in-up">
           {/* Left Side - Header */}
           <div className="animate-fade-in-left">
-            <h2 className="text-4xl lg:text-5xl font-bold text-red-700 mb-6 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-6 leading-tight">
               Frequently Asked<br />
               Questions
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Have questions? We've got answers! Learn everything you need to plan your journey to Northern Pakistan or your Umrah pilgrimage.
             </p>
-            <button className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
+            <button className="flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">
               Contact Us
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -92,19 +92,19 @@ export default function FAQSection() {
             {faqs.map((faq, index) => (
               <div 
                 key={faq.id}
-                className="bg-white rounded-xl p-6 shadow-sm border border-red-100 hover:shadow-lg hover:border-red-300 transition-all duration-300 pb-4"
+                className="bg-white rounded-xl p-6 shadow-sm border border-emerald-100 hover:shadow-lg hover:border-emerald-300 transition-all duration-300 pb-4"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex items-center justify-between text-left group"
                 >
-                  <span className="text-lg font-semibold text-red-700 pr-4 group-hover:text-red-800 transition-colors">
+                  <span className="text-lg font-semibold text-emerald-700 pr-4 group-hover:text-emerald-800 transition-colors">
                     {faq.question}
                   </span>
                   <div className={`shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-colors ${
                     openIndex === index 
-                      ? 'bg-red-600 border-red-600 text-white' 
-                      : 'border-red-600 text-red-600 group-hover:bg-red-600 group-hover:border-red-600 group-hover:text-white'
+                      ? 'bg-emerald-600 border-emerald-600 text-white' 
+                      : 'border-emerald-600 text-emerald-600 group-hover:bg-emerald-600 group-hover:border-emerald-600 group-hover:text-white'
                   }`}>
                     {openIndex === index ? (
                       <Minus className="w-4 h-4" />
@@ -124,7 +124,7 @@ export default function FAQSection() {
                     <ul className="space-y-2">
                       {(faq.answer as string[]).map((item, i) => (
                         <li key={i} className="text-gray-600 leading-relaxed flex gap-2">
-                          <span className="text-red-600 font-bold">•</span>
+                          <span className="text-emerald-600 font-bold">•</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -143,3 +143,4 @@ export default function FAQSection() {
     </section>
   );
 }
+

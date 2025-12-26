@@ -247,7 +247,7 @@ export default function LuxuryTourDetail() {
       <section className="bg-white border-b border-gray-200 pt-40 pb-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-4">
-            <span className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-md text-sm font-bold">
               <Star className="w-4 h-4" />
               Luxury Package
             </span>
@@ -273,7 +273,7 @@ export default function LuxuryTourDetail() {
           </div>
           
           {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white mt-5">
+          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl p-5 shadow-xl text-white mt-5">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-2 rounded-lg">
@@ -359,12 +359,12 @@ export default function LuxuryTourDetail() {
 
             {/* Tour Highlights */}
             {pkg.highlights && (
-              <section className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-8 border border-amber-200">
-                <h2 className="text-3xl font-bold text-amber-800 mb-6">Tour Highlights</h2>
+              <section className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Tour Highlights</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {pkg.highlights.map((highlight: string, index: number) => (
                     <div key={index} className="flex items-start gap-3">
-                      <Star className="w-6 h-6 text-amber-600 shrink-0 mt-0.5" />
+                      <Star className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700 font-medium">{highlight}</span>
                     </div>
                   ))}
@@ -374,17 +374,17 @@ export default function LuxuryTourDetail() {
 
             {/* Itinerary */}
             {pkg.itinerary && (
-              <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
-                <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
+              <section className="bg-white rounded-xl p-4 md:p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-2xl md:text-3xl font-bold text-emerald-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
                 <div className="space-y-6">
                   {pkg.itinerary.map((day: any, index: number) => (
-                    <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                    <div key={index} className="border-l-4 border-emerald-600 pl-4 md:pl-6 pb-6 last:pb-0">
                       <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
-                        <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                        <span className="bg-emerald-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
                           <span className="text-[9px] uppercase tracking-wider">DAY</span>
                           <span className="text-xl leading-none">{day.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                         </span>
-                        <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-emerald-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{day.title}</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{day.description}</p>
                     </div>
@@ -416,14 +416,14 @@ export default function LuxuryTourDetail() {
                   )}
                   {pkg.excluded && (
                     <div>
-                      <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                      <h3 className="text-xl font-bold text-gray-700 mb-4 flex items-center gap-2">
                         <X className="w-6 h-6" />
                         Excluded
                       </h3>
                       <ul className="space-y-3">
                         {pkg.excluded.map((item: string, index: number) => (
                           <li key={index} className="flex items-start gap-2">
-                            <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                            <X className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
                             <span className="text-gray-700">{item}</span>
                           </li>
                         ))}
@@ -436,12 +436,12 @@ export default function LuxuryTourDetail() {
 
             {/* Pricing */}
             {pkg.pricing && (
-              <section className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-8 border border-amber-200">
-                <h2 className="text-3xl font-bold text-amber-800 mb-6">Pricing Options</h2>
+              <section className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Pricing Options</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {Object.entries(pkg.pricing).map(([key, value]: [string, any]) => (
-                    <div key={key} className="bg-white rounded-lg p-6 border-2 border-amber-300 hover:border-amber-500 transition-colors">
-                      <h3 className="text-lg font-bold text-amber-700 mb-2 capitalize">
+                    <div key={key} className="bg-white rounded-lg p-6 border-2 border-emerald-300 hover:border-emerald-500 transition-colors">
+                      <h3 className="text-lg font-bold text-emerald-700 mb-2 capitalize">
                         {key.replace(/_/g, ' ')}
                       </h3>
                       <p className="text-2xl font-bold text-gray-900">{value}</p>
@@ -527,7 +527,7 @@ export default function LuxuryTourDetail() {
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
+                    className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
                   >
                     Send Inquiry
                   </button>

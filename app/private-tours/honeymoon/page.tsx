@@ -236,7 +236,7 @@ export default function HoneymoonToursPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-900/70 via-red-900/60 to-rose-900/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-900/70 via-emerald-900/60 to-rose-900/70"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
@@ -291,7 +291,7 @@ export default function HoneymoonToursPage() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
+                  <span className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
                     <Heart className="w-4 h-4" />
                     Honeymoon
                   </span>
@@ -300,7 +300,7 @@ export default function HoneymoonToursPage() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-red-700 transition-colors min-h-[3.5rem]">
+                <h3 className="card-title text-base text-gray-800 mb-3 group-hover:text-emerald-700 transition-colors min-h-[3.5rem]">
   {/* Part 1: Main Title - Retains default size (text-base) */}
   <span className="">{pkg.title.split('—')[0].trim()}</span>
   {pkg.title.includes('—') && (
@@ -323,11 +323,11 @@ export default function HoneymoonToursPage() {
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">
-                    <MapPin className="w-4 h-4 text-red-600 shrink-0" />
+                    <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span className="text-sm font-label" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
-                    <Calendar className="w-4 h-4 text-red-600 shrink-0" />
+                    <Calendar className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span className="text-sm font-label" style={{ fontFamily: "'Inter', sans-serif" }}>{pkg.duration}</span>
                   </div>
                 </div>
@@ -335,9 +335,9 @@ export default function HoneymoonToursPage() {
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                   <div>
                     <div className="text-xs text-gray-500">Starting from</div>
-                    <div className="text-lg font-bold text-red-600">{pkg.price}</div>
+                    <div className="text-lg font-bold text-emerald-600">{pkg.price}</div>
                   </div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
+                  <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
                     View Details
                   </button>
                 </div>
@@ -348,7 +348,7 @@ export default function HoneymoonToursPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-red-600 to-pink-600 py-16">
+      <section className="bg-gradient-to-r from-emerald-600 to-pink-600 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Ready to Plan Your Dream Honeymoon?
@@ -359,7 +359,7 @@ export default function HoneymoonToursPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/contact"
-              className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg"
+              className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg"
             >
               Contact Us
             </Link>
@@ -379,3 +379,4 @@ export default function HoneymoonToursPage() {
     </div>
   );
 }
+

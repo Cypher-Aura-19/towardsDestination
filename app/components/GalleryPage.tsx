@@ -36,7 +36,7 @@ export default function GalleryPage({
 
       {/* Photos Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4 text-red-600">Photos</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-emerald-600">Photos</h2>
         {photos.length === 0 ? (
           <div className="rounded-lg border border-dashed border-gray-200 p-8 text-center text-gray-500">
             No photos yet. Add photo paths to <code className="bg-gray-100 px-1 rounded">photosDefault</code> or pass <code>initialPhotos</code> from the page.
@@ -66,7 +66,7 @@ export default function GalleryPage({
 
       {/* Videos Section */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4 text-red-600">Videos</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-emerald-600">Videos</h2>
         {videos.length === 0 ? (
           <div className="rounded-lg border border-dashed border-gray-200 p-8 text-center text-gray-500">
             No videos yet. Add video paths to <code className="bg-gray-100 px-1 rounded">videosDefault</code> or pass <code>initialVideos</code> from the page.
@@ -165,3 +165,4 @@ export default function GalleryPage({
     </div>
   );
 }
+

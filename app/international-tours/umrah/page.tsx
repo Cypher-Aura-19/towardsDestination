@@ -195,7 +195,7 @@ export default function UmrahPackagesPage() {
       <section className="bg-white border-b border-gray-200 pt-40 pb-10 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-4">
-            <span className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-600 text-white px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-orange-600 text-white px-4 py-2 rounded-md text-sm font-bold">
               🕋 Umrah Package
             </span>
           </div>
@@ -206,21 +206,21 @@ export default function UmrahPackagesPage() {
           
           <div className="flex flex-wrap items-center gap-6 text-gray-700 mb-6">
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-red-600" />
+              <MapPin className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">Makkah & Madinah</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-red-600" />
+              <Calendar className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">10-20 Days Options</span>
             </div>
             <div className="flex items-center gap-2">
-              <Plane className="w-5 h-5 text-red-600" />
+              <Plane className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">6 Package Options</span>
             </div>
           </div>
 
           {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white">
+          <div className="bg-gradient-to-r from-emerald-600 to-orange-600 rounded-xl p-5 shadow-xl text-white">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-2 rounded-lg">
@@ -263,7 +263,7 @@ export default function UmrahPackagesPage() {
           <div className="lg:col-span-2 space-y-6">
             {/* Package Selection */}
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
-              <h2 className="text-3xl font-bold text-red-600 mb-6">Select Your Package</h2>
+              <h2 className="text-3xl font-bold text-emerald-600 mb-6">Select Your Package</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {umrahPackages.map((pkg) => (
                   <button
@@ -271,16 +271,16 @@ export default function UmrahPackagesPage() {
                     onClick={() => setSelectedPackage(pkg.id)}
                     className={`text-left p-5 rounded-xl border-2 transition-all duration-300 ${
                       selectedPackage === pkg.id
-                        ? 'border-red-600 bg-red-50 shadow-lg scale-105'
-                        : 'border-gray-200 hover:border-red-300 hover:shadow-md'
+                        ? 'border-emerald-600 bg-emerald-50 shadow-lg scale-105'
+                        : 'border-gray-200 hover:border-emerald-300 hover:shadow-md'
                     }`}
                   >
                     {pkg.popular && (
-                      <span className="inline-block bg-red-600 text-white text-xs px-2 py-1 rounded-full mb-2">
+                      <span className="inline-block bg-emerald-600 text-white text-xs px-2 py-1 rounded-full mb-2">
                         Most Popular
                       </span>
                     )}
-                    <h3 className="font-bold text-red-600 mb-1">{pkg.name}</h3>
+                    <h3 className="font-bold text-emerald-600 mb-1">{pkg.name}</h3>
                     <p className="text-sm text-gray-600 mb-2">{pkg.duration}</p>
                     <p className="text-2xl font-bold text-gray-900">{pkg.price}</p>
                     <p className="text-sm text-gray-500">({pkg.priceUSD} USD)</p>
@@ -323,21 +323,21 @@ export default function UmrahPackagesPage() {
             <section className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Hotel Accommodation</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4 p-4 bg-red-50 rounded-lg">
-                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-4 p-4 bg-emerald-50 rounded-lg">
+                  <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Hotel className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-bold text-red-600 mb-2">Makkah</p>
+                    <p className="font-bold text-emerald-600 mb-2">Makkah</p>
                     <p className="text-gray-700">{selectedPkg.makkahHotel}</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-red-50 rounded-lg">
-                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-4 p-4 bg-emerald-50 rounded-lg">
+                  <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Hotel className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-bold text-red-600 mb-2">Madinah</p>
+                    <p className="font-bold text-emerald-600 mb-2">Madinah</p>
                     <p className="text-gray-700">{selectedPkg.madinahHotel}</p>
                   </div>
                 </div>
@@ -345,12 +345,12 @@ export default function UmrahPackagesPage() {
             </section>
 
             {/* Package Highlights */}
-            <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 border border-red-200">
-              <h2 className="text-3xl font-bold text-red-800 mb-6">Package Includes</h2>
+            <section className="bg-gradient-to-br from-emerald-50 to-orange-50 rounded-xl p-8 border border-emerald-200">
+              <h2 className="text-3xl font-bold text-emerald-800 mb-6">Package Includes</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {selectedPkg.highlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Check className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
+                    <Check className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                     <span className="text-gray-700 font-medium">{highlight}</span>
                   </div>
                 ))}
@@ -366,7 +366,7 @@ export default function UmrahPackagesPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {ziyadatPlaces.map((place, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <MapPin className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{place}</span>
                   </div>
                 ))}
@@ -380,16 +380,16 @@ export default function UmrahPackagesPage() {
           {/* Sidebar - Booking Form */}
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-              <div className="p-6 bg-gradient-to-br from-red-50 to-orange-50 border-b border-gray-200">
+              <div className="p-6 bg-gradient-to-br from-emerald-50 to-orange-50 border-b border-gray-200">
                 <div className="text-sm text-gray-600 mb-1">Selected Package</div>
-                <div className="text-2xl font-bold text-red-600 mb-2">
+                <div className="text-2xl font-bold text-emerald-600 mb-2">
                   {selectedPkg.price}
                 </div>
                 <div className="text-sm text-gray-600 mb-2">({selectedPkg.priceUSD} USD) /person</div>
                 <div className="text-sm font-semibold text-gray-700">{selectedPkg.duration}</div>
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-red-500 text-red-500" />
+                    <Star key={i} className="w-5 h-5 fill-emerald-500 text-emerald-500" />
                   ))}
                 </div>
               </div>
@@ -405,7 +405,7 @@ export default function UmrahPackagesPage() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -417,7 +417,7 @@ export default function UmrahPackagesPage() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Your Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -429,7 +429,7 @@ export default function UmrahPackagesPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="Phone/WhatsApp"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -440,7 +440,7 @@ export default function UmrahPackagesPage() {
                       required
                       value={formData.travelers}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     >
                       <option value="1">1 Person</option>
                       <option value="2">2 Person</option>
@@ -457,20 +457,20 @@ export default function UmrahPackagesPage() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Your Message or Special Requirements"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 resize-none text-gray-900"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
                   >
                     Send Inquiry
                   </button>
                 </form>
 
                 <div className="mt-4 pt-4 border-t border-gray-200">
-                  <Link href="/international-tours" className="text-red-600 hover:underline text-sm">
+                  <Link href="/international-tours" className="text-emerald-600 hover:underline text-sm">
                     ← Back to All Tours
                   </Link>
                 </div>
@@ -484,3 +484,4 @@ export default function UmrahPackagesPage() {
     </div>
   );
 }
+

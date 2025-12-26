@@ -91,7 +91,7 @@ export default function GallerySection() {
                   style={{ width: `${100 / stories.length}%` }}
                 >
                   {/* Placeholder for image - Replace with actual images from public folder */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-700 to-red-800">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800">
                     <div className="absolute inset-0 flex items-center justify-center text-white text-sm">
                       Add image: {story.image}
                     </div>
@@ -134,14 +134,14 @@ export default function GallerySection() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
+              className="w-12 h-12 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
+              className="w-12 h-12 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center transition-colors shadow-lg hover:shadow-xl"
               aria-label="Next slide"
             >
               <ChevronRight className="w-6 h-6" />
@@ -152,3 +152,4 @@ export default function GallerySection() {
     </section>
   );
 }
+

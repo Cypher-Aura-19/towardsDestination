@@ -1169,8 +1169,8 @@ export default function PrivateTourByAirDetail() {
       <div className="min-h-screen bg-white">
         <Navbar />
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl font-bold text-red-600 mb-4">Tour Not Found</h1>
-          <Link href="/private-tours/by-air" className="text-red-600 hover:underline">
+          <h1 className="text-4xl font-bold text-emerald-600 mb-4">Tour Not Found</h1>
+          <Link href="/private-tours/by-air" className="text-emerald-600 hover:underline">
             Back to Tours
           </Link>
         </div>
@@ -1188,7 +1188,7 @@ export default function PrivateTourByAirDetail() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Tag */}
           <div className="mb-4">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-bold">
               ✈️ By Air - Private Tour
             </span>
           </div>
@@ -1201,21 +1201,21 @@ export default function PrivateTourByAirDetail() {
           {/* Info Row */}
           <div className="flex flex-wrap items-center gap-6 text-gray-700">
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-red-600" />
+              <MapPin className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">{pkg.location}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-red-600" />
+              <Calendar className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">{pkg.duration}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Plane className="w-5 h-5 text-red-600" />
+              <Plane className="w-5 h-5 text-emerald-600" />
               <span className="text-lg">Private Tour</span>
             </div>
           </div>
           
           {/* Why Choose Us Box */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-5 shadow-xl text-white mt-5">
+          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl p-5 shadow-xl text-white mt-5">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-2 rounded-lg">
@@ -1269,18 +1269,18 @@ export default function PrivateTourByAirDetail() {
               />
             </div>
             {/* Description */}
-            <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-              <h2 className="text-3xl font-bold text-red-700 mb-4">About This Tour</h2>
+            <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+              <h2 className="text-3xl font-bold text-emerald-700 mb-4">About This Tour</h2>
               <p className="text-gray-700 leading-relaxed text-lg">{pkg.description}</p>
             </section>
 
             {/* Highlights */}
-            <section className="bg-red-50 rounded-xl p-8 border border-red-200">
-              <h2 className="text-3xl font-bold text-red-800 mb-6">Tour Highlights</h2>
+            <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
+              <h2 className="text-3xl font-bold text-emerald-800 mb-6">Tour Highlights</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {pkg.highlights.map((highlight: string, index: number) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Check className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
+                    <Check className="w-6 h-6 text-emerald-600 shrink-0 mt-0.5" />
                     <span className="text-gray-700">{highlight}</span>
                   </div>
                 ))}
@@ -1288,17 +1288,17 @@ export default function PrivateTourByAirDetail() {
             </section>
 
             {/* Itinerary */}
-            <section className="bg-white rounded-xl p-4 md:p-8 border border-red-200 shadow-lg">
-              <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
+            <section className="bg-white rounded-xl p-4 md:p-8 border border-emerald-200 shadow-lg">
+              <h2 className="text-2xl md:text-3xl font-bold text-emerald-700 mb-6 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>Itinerary</h2>
               <div className="space-y-6">
                 {pkg.itinerary.map((item: any, index: number) => (
-                  <div key={index} className="border-l-4 border-red-600 pl-4 md:pl-6 pb-6 last:pb-0">
+                  <div key={index} className="border-l-4 border-emerald-600 pl-4 md:pl-6 pb-6 last:pb-0">
                     <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
-                      <span className="bg-red-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
+                      <span className="bg-emerald-600 text-white px-3 py-2 rounded-lg flex flex-col items-center justify-center font-bold shrink-0 w-fit">
                         <span className="text-[9px] uppercase tracking-wider">DAY</span>
                         <span className="text-xl leading-none">{item.day.replace('Day ', '').replace('day ', '').replace('DAY ', '')}</span>
                       </span>
-                      <h3 className="text-lg md:text-xl font-bold text-red-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
+                      <h3 className="text-lg md:text-xl font-bold text-emerald-700 card-title" style={{ fontFamily: "'Poppins', sans-serif" }}>{item.title}</h3>
                     </div>
                     <p className="text-gray-600 leading-relaxed text-sm md:text-base font-body" style={{ fontFamily: "'Inter', sans-serif" }}>{item.description}</p>
                   </div>
@@ -1308,30 +1308,30 @@ export default function PrivateTourByAirDetail() {
 
             {/* Included & Excluded */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <section className="bg-red-50 rounded-xl p-6 border border-red-200">
-                <h3 className="text-2xl font-bold text-red-800 mb-4 flex items-center gap-2">
+              <section className="bg-emerald-50 rounded-xl p-6 border border-emerald-200">
+                <h3 className="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
                   <Check className="w-6 h-6" />
                   What's Included
                 </h3>
                 <ul className="space-y-2">
                   {pkg.included.map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
               </section>
 
-              <section className="bg-white rounded-xl p-6 border border-red-200">
-                <h3 className="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2">
+              <section className="bg-white rounded-xl p-6 border border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-700 mb-4 flex items-center gap-2">
                   <X className="w-6 h-6" />
                   What's Excluded
                 </h3>
                 <ul className="space-y-2">
                   {pkg.excluded.map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
-                      <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <X className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -1341,12 +1341,12 @@ export default function PrivateTourByAirDetail() {
 
             {/* Points to Visit */}
             {pkg.pointsToVisit && pkg.pointsToVisit.length > 0 && (
-              <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-red-700 mb-6">Points to Visit</h2>
+              <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-3xl font-bold text-emerald-700 mb-6">Points to Visit</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {pkg.pointsToVisit.map((point: string, index: number) => (
                     <div key={index} className="flex items-start gap-3">
-                      <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700">{point}</span>
                     </div>
                   ))}
@@ -1356,21 +1356,21 @@ export default function PrivateTourByAirDetail() {
 
             {/* Hotel List */}
             {pkg.hotelList && pkg.hotelList.length > 0 && (
-              <section className="bg-red-50 rounded-xl p-8 border border-red-200">
-                <h2 className="text-3xl font-bold text-red-800 mb-6">Hotel Options</h2>
+              <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Hotel Options</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b-2 border-red-300">
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Location</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Standard</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Deluxe</th>
-                        <th className="text-left py-3 px-4 text-red-800 font-bold">Executive</th>
+                      <tr className="border-b-2 border-emerald-300">
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Location</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Standard</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Deluxe</th>
+                        <th className="text-left py-3 px-4 text-emerald-800 font-bold">Executive</th>
                       </tr>
                     </thead>
                     <tbody>
                       {pkg.hotelList.map((hotel: any, index: number) => (
-                        <tr key={index} className="border-b border-red-200">
+                        <tr key={index} className="border-b border-emerald-200">
                           <td className="py-3 px-4 font-semibold text-gray-800">{hotel.location}</td>
                           <td className="py-3 px-4 text-gray-700">{hotel.standard}</td>
                           <td className="py-3 px-4 text-gray-700">{hotel.deluxe}</td>
@@ -1385,16 +1385,16 @@ export default function PrivateTourByAirDetail() {
 
             {/* Departure Schedule */}
             {pkg.departureSchedule && pkg.departureSchedule.length > 0 && (
-              <section className="bg-white rounded-xl p-8 border border-red-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-red-700 mb-6">Departure Schedule</h2>
+              <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
+                <h2 className="text-3xl font-bold text-emerald-700 mb-6">Departure Schedule</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b-2 border-red-300">
-                        <th className="text-left py-3 px-4 text-red-700 font-bold">City</th>
-                        <th className="text-left py-3 px-4 text-red-700 font-bold">Departure</th>
+                      <tr className="border-b-2 border-emerald-300">
+                        <th className="text-left py-3 px-4 text-emerald-700 font-bold">City</th>
+                        <th className="text-left py-3 px-4 text-emerald-700 font-bold">Departure</th>
                         {pkg.departureSchedule[0].departure2 && (
-                          <th className="text-left py-3 px-4 text-red-700 font-bold">Alternative</th>
+                          <th className="text-left py-3 px-4 text-emerald-700 font-bold">Alternative</th>
                         )}
                       </tr>
                     </thead>
@@ -1416,29 +1416,29 @@ export default function PrivateTourByAirDetail() {
 
             {/* Pricing */}
             {pkg.pricing && (
-              <section className="bg-red-50 rounded-xl p-8 border border-red-200">
-                <h2 className="text-3xl font-bold text-red-800 mb-6">Pricing Details</h2>
+              <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
+                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Pricing Details</h2>
                 
                 {pkg.pricing.sedanCar_perCouple && (
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-red-700 mb-4">Sedan Car (Per Couple)</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Sedan Car (Per Couple)</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {pkg.pricing.sedanCar_perCouple.standard && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.sedanCar_perCouple.standard}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.standard}</div>
                         </div>
                       )}
                       {pkg.pricing.sedanCar_perCouple.deluxe && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.sedanCar_perCouple.deluxe}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.deluxe}</div>
                         </div>
                       )}
                       {pkg.pricing.sedanCar_perCouple.executive && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.sedanCar_perCouple.executive}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.executive}</div>
                         </div>
                       )}
                     </div>
@@ -1447,24 +1447,24 @@ export default function PrivateTourByAirDetail() {
 
                 {pkg.pricing.jeep4x4_perCouple && (
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-red-700 mb-4">Jeep 4x4 (Per Couple)</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Jeep 4x4 (Per Couple)</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {pkg.pricing.jeep4x4_perCouple.standard && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.jeep4x4_perCouple.standard}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.standard}</div>
                         </div>
                       )}
                       {pkg.pricing.jeep4x4_perCouple.deluxe && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.jeep4x4_perCouple.deluxe}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.deluxe}</div>
                         </div>
                       )}
                       {pkg.pricing.jeep4x4_perCouple.executive && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-red-700">{pkg.pricing.jeep4x4_perCouple.executive}</div>
+                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.executive}</div>
                         </div>
                       )}
                     </div>
@@ -1473,30 +1473,30 @@ export default function PrivateTourByAirDetail() {
 
                 {pkg.pricing.perPerson_Spring_USD && (
                   <div>
-                    <h3 className="text-xl font-bold text-red-700 mb-4">Per Person Pricing (USD)</h3>
+                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Per Person Pricing (USD)</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {pkg.pricing.perPerson_Spring_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Spring</div>
-                          <div className="text-xl font-bold text-red-700">${pkg.pricing.perPerson_Spring_USD.price}</div>
+                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Spring_USD.price}</div>
                         </div>
                       )}
                       {pkg.pricing.perPerson_Summer_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Summer</div>
-                          <div className="text-xl font-bold text-red-700">${pkg.pricing.perPerson_Summer_USD.price}</div>
+                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Summer_USD.price}</div>
                         </div>
                       )}
                       {pkg.pricing.perPerson_Autumn_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Autumn</div>
-                          <div className="text-xl font-bold text-red-700">${pkg.pricing.perPerson_Autumn_USD.price}</div>
+                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Autumn_USD.price}</div>
                         </div>
                       )}
                       {pkg.pricing.perPerson_Winter_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
                           <div className="text-sm text-gray-600 mb-1">Winter</div>
-                          <div className="text-xl font-bold text-red-700">${pkg.pricing.perPerson_Winter_USD.price}</div>
+                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Winter_USD.price}</div>
                         </div>
                       )}
                     </div>
@@ -1507,12 +1507,12 @@ export default function PrivateTourByAirDetail() {
 
             {/* Notes */}
             {pkg.notes && pkg.notes.length > 0 && (
-              <section className="bg-yellow-50 rounded-xl p-8 border border-yellow-300">
-                <h2 className="text-3xl font-bold text-yellow-800 mb-6">Important Notes</h2>
+              <section className="bg-gray-100 rounded-xl p-8 border border-gray-300">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Important Notes</h2>
                 <ul className="space-y-3">
                   {pkg.notes.map((note: string, index: number) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-yellow-600 font-bold mt-1">•</span>
+                      <span className="text-gray-800 font-bold mt-1">•</span>
                       <span className="text-gray-700">{note}</span>
                     </li>
                   ))}
@@ -1543,15 +1543,15 @@ export default function PrivateTourByAirDetail() {
 
           {/* Sidebar - Inquiry Form */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-red-200 overflow-hidden">
-              <div className="p-6 bg-red-50 border-b border-red-200">
+            <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-emerald-200 overflow-hidden">
+              <div className="p-6 bg-emerald-50 border-b border-emerald-200">
                 <div className="text-sm text-gray-600 mb-1">Private Tour Package</div>
-                <div className="text-2xl font-bold text-red-700">Contact for Pricing</div>
+                <div className="text-2xl font-bold text-emerald-700">Contact for Pricing</div>
                 <p className="text-sm text-gray-600 mt-2">Custom pricing based on your requirements</p>
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-red-700 mb-4">Request Information</h3>
+                <h3 className="text-xl font-bold text-emerald-700 mb-4">Request Information</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <input
@@ -1561,7 +1561,7 @@ export default function PrivateTourByAirDetail() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1573,7 +1573,7 @@ export default function PrivateTourByAirDetail() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Your Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1585,7 +1585,7 @@ export default function PrivateTourByAirDetail() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="Phone/WhatsApp"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -1596,13 +1596,13 @@ export default function PrivateTourByAirDetail() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Your Message or Inquiry"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 resize-none text-gray-900"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-md hover:shadow-lg"
                   >
                     Send Inquiry
                   </button>
@@ -1611,13 +1611,13 @@ export default function PrivateTourByAirDetail() {
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <div className="flex items-center gap-2 text-gray-600 mb-3">
                     <Phone className="w-4 h-4" />
-                    <a href="tel:+923174101300" className="text-sm hover:text-red-600 transition-colors">
+                    <a href="tel:+923174101300" className="text-sm hover:text-emerald-600 transition-colors">
                       +92 317 4101300
                     </a>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
                     <Mail className="w-4 h-4" />
-                    <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-red-600 transition-colors">
+                    <a href="mailto:Info.Towardsdestination@gmail.com" className="text-sm hover:text-emerald-600 transition-colors">
                       Info.Towardsdestination@gmail.com
                     </a>
                   </div>

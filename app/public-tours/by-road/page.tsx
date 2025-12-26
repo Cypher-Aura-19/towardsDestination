@@ -270,14 +270,14 @@ const packages = [
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Company Badge */}
           <div className="mb-6">
-            <span className="inline-block bg-white text-red-600 px-4 py-2 rounded-md text-sm font-bold">
+            <span className="inline-block bg-white text-emerald-600 px-4 py-2 rounded-md text-sm font-bold">
               🚌 TOWARDSDESTINATION.PK - Public Group Tours
             </span>
           </div>
           
           <h1 className="section-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Northern Pakistan Tours<br />
-            <span className="bg-white text-red-600 px-4 py-2 inline-block rounded-lg mt-2">By Road Travel</span>
+            <span className="bg-white text-emerald-600 px-4 py-2 inline-block rounded-lg mt-2">By Road Travel</span>
           </h1>
           
           <p className="text-white text-lg md:text-xl max-w-3xl mb-6 leading-relaxed">
@@ -307,10 +307,10 @@ const packages = [
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 badge-premium" style={{ fontFamily: "'Poppins', sans-serif" }}>
               🚌 AVAILABLE TOUR PACKAGES
             </span>
-            <h2 className="text-4xl font-extrabold text-red-600 mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="text-4xl font-extrabold text-emerald-600 mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Choose Your Perfect Road Tour
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -325,7 +325,7 @@ const packages = [
                 onClick={() => setSelectedCity("all")}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                   selectedCity === "all"
-                    ? "bg-red-600 text-white"
+                    ? "bg-emerald-600 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -335,7 +335,7 @@ const packages = [
                 onClick={() => setSelectedCity("Lahore-Islamabad-Faisalabad")}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                   selectedCity === "Lahore-Islamabad-Faisalabad"
-                    ? "bg-red-600 text-white"
+                    ? "bg-emerald-600 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -345,7 +345,7 @@ const packages = [
                 onClick={() => setSelectedCity("karachi")}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                   selectedCity === "karachi"
-                    ? "bg-red-600 text-white"
+                    ? "bg-emerald-600 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -370,8 +370,8 @@ const packages = [
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1">
-                    <Bus className="w-4 h-4 text-red-600" />
-                    <span className="text-xs font-medium text-red-600">By Road</span>
+                    <Bus className="w-4 h-4 text-emerald-600" />
+                    <span className="text-xs font-medium text-emerald-600">By Road</span>
                   </div>
                 </div>
 
@@ -382,7 +382,7 @@ const packages = [
                     <span className="text-sm">{pkg.location}</span>
                   </div>
                   
-                  <h3 className="card-title text-base text-gray-800 mb-3 line-clamp-2 group-hover:text-red-700 transition-colors">
+                  <h3 className="card-title text-base text-gray-800 mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors">
                       {/* The 'Business' part - using a cursive/script-like Google Font */}
                       <span style={{ fontFamily: 'Dancing Script, cursive' }} className="font-light">
                         {pkg.title.split(' ')[0]} {pkg.title.split(' ')[1]}
@@ -402,7 +402,7 @@ const packages = [
                   {pkg.reviews > 0 ? (
                     <div className="flex items-center gap-2 mb-4">
                       <div className="flex items-center gap-1">
-                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="w-4 h-4 fill-black text-black" />
                         <span className="text-sm font-semibold text-gray-900">{pkg.rating}</span>
                       </div>
                       <span className="text-sm text-gray-500">({pkg.reviews} reviews)</span>
@@ -417,11 +417,11 @@ const packages = [
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-red-600">
+                      <p className="text-2xl font-bold text-emerald-600">
                         {pkg.currency === "USD" ? `USD ${pkg.price}` : `PKR ${pkg.price.toLocaleString()}`}
                       </p>
                     </div>
-                    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                       View Details
                     </button>
                   </div>
@@ -435,33 +435,33 @@ const packages = [
       {/* Why Choose Road Travel */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h2 className="text-3xl font-bold text-emerald-600 mb-12 text-center section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Why Choose Road Travel?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Scenic Journey</h3>
+              <h3 className="card-title text-xl font-bold text-emerald-600 mb-2">Scenic Journey</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Experience the world-famous Karakoram Highway with countless photo opportunities.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Bus className="w-8 h-8 text-white" />
               </div>
-              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Budget Friendly</h3>
+              <h3 className="card-title text-xl font-bold text-emerald-600 mb-2">Budget Friendly</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 More economical option while still enjoying comfortable travel and great experiences.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="card-title text-xl font-bold text-red-600 mb-2">Cultural Immersion</h3>
+              <h3 className="card-title text-xl font-bold text-emerald-600 mb-2">Cultural Immersion</h3>
               <p className="text-gray-600 card-description" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Stop at local villages, interact with communities, and experience authentic culture.
               </p>
@@ -474,3 +474,4 @@ const packages = [
     </div>
   );
 }
+

@@ -127,13 +127,13 @@ export default function OtherServices() {
   return (
     <section id="other-services" className="py-12 sm:py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-30"></div>
       
       <div className="w-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up relative z-40">
-          <span className="inline-block bg-red-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <span className="inline-block bg-emerald-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
             🚗 OTHER SERVICES
           </span>
           <h2 className="section-heading text-3xl xs:text-4xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -150,7 +150,7 @@ export default function OtherServices() {
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2">
+              <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2">
                 {activeService === "rental" ? "🚗 Rental Services" : "🏨 Hotel Services"}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -164,8 +164,8 @@ export default function OtherServices() {
                   }}
                   className={`w-full text-left px-5 py-3 text-base font-medium transition-colors ${
                     activeService === "rental" 
-                      ? "bg-red-50 text-red-600" 
-                      : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                      ? "bg-emerald-50 text-emerald-600" 
+                      : "text-gray-700 hover:bg-emerald-50 hover:text-emerald-600"
                   }`}
                 >
                   🚗 Rental Services
@@ -177,8 +177,8 @@ export default function OtherServices() {
                   }}
                   className={`w-full text-left px-5 py-3 text-base font-medium transition-colors ${
                     activeService === "hotel" 
-                      ? "bg-red-50 text-red-600" 
-                      : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                      ? "bg-emerald-50 text-emerald-600" 
+                      : "text-gray-700 hover:bg-emerald-50 hover:text-emerald-600"
                   }`}
                 >
                   🏨 Hotel Services
@@ -194,7 +194,7 @@ export default function OtherServices() {
             {rentalServices.map((vehicle, index) => (
               <div
                 key={vehicle.id}
-                className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
+                className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-emerald-200 hover:-translate-y-2 animate-fade-in-up"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Image Container */}
@@ -206,12 +206,12 @@ export default function OtherServices() {
                     className="object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700"
                   />
                   {/* Badge */}
-                  <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                     ⭐ AVAILABLE
                   </div>
                   
                   {/* Price Badge */}
-                  <div className="absolute bottom-4 right-4 bg-red-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                  <div className="absolute bottom-4 right-4 bg-emerald-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
                     <div className="text-xs font-semibold">PKR {vehicle.price.toLocaleString()}</div>
                     <div className="text-xs">{vehicle.priceType}</div>
                   </div>
@@ -219,35 +219,35 @@ export default function OtherServices() {
 
                 {/* Content */}
                 <div className="p-4">
-                  <h3 className="card-title text-base font-semibold text-gray-800 mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-2 group-hover:text-emerald-700 transition-colors line-clamp-2">
                     {vehicle.name}
                   </h3>
                   
                   {/* Specs Grid */}
                   <div className="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-200">
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-red-600" />
+                      <Users className="w-4 h-4 text-emerald-600" />
                       <div>
                         <div className="text-xs text-gray-500">Seats</div>
                         <div className="text-sm font-semibold text-gray-900">{vehicle.seats}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Zap className="w-4 h-4 text-red-600" />
+                      <Zap className="w-4 h-4 text-emerald-600" />
                       <div>
                         <div className="text-xs text-gray-500">Trans</div>
                         <div className="text-sm font-semibold text-gray-900">{vehicle.transmission}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Wind className="w-4 h-4 text-red-600" />
+                      <Wind className="w-4 h-4 text-emerald-600" />
                       <div>
                         <div className="text-xs text-gray-500">Luggage</div>
                         <div className="text-sm font-semibold text-gray-900">{vehicle.luggage}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Gauge className="w-4 h-4 text-red-600" />
+                      <Gauge className="w-4 h-4 text-emerald-600" />
                       <div>
                         <div className="text-xs text-gray-500">AC</div>
                         <div className="text-sm font-semibold text-gray-900">{vehicle.ac}</div>
@@ -256,7 +256,7 @@ export default function OtherServices() {
                   </div>
                   
                   {/* Book Button */}
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
+                  <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
                     Book Now
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -272,7 +272,7 @@ export default function OtherServices() {
             {hotelServices.map((hotel, index) => (
               <div
                 key={hotel.id}
-                className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2 animate-fade-in-up"
+                className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-emerald-200 hover:-translate-y-2 animate-fade-in-up"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Image Container */}
@@ -284,12 +284,12 @@ export default function OtherServices() {
                     className="object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700"
                   />
                   {/* Badge */}
-                  <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                     ⭐ {hotel.rating}
                   </div>
                   
                   {/* Price Badge */}
-                  <div className="absolute bottom-4 right-4 bg-red-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                  <div className="absolute bottom-4 right-4 bg-emerald-600 text-white px-3 py-2 rounded-lg shadow-2xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
                     <div className="text-xs font-semibold">PKR {hotel.price.toLocaleString()}</div>
                     <div className="text-xs">{hotel.priceType}</div>
                   </div>
@@ -297,20 +297,20 @@ export default function OtherServices() {
 
                 {/* Content */}
                 <div className="p-4">
-                  <h3 className="card-title text-base font-semibold text-gray-800 mb-1 group-hover:text-red-700 transition-colors line-clamp-2">
+                  <h3 className="card-title text-base font-semibold text-gray-800 mb-1 group-hover:text-emerald-700 transition-colors line-clamp-2">
                     {hotel.name}
                   </h3>
                   
                   {/* Location & Rating */}
                   <div className="flex items-center gap-2 text-gray-600 mb-3">
-                    <MapPin className="w-4 h-4 text-red-600" />
+                    <MapPin className="w-4 h-4 text-emerald-600" />
                     <span className="text-sm">{hotel.location}</span>
                   </div>
                   
                   <div className="flex items-center gap-1 mb-3 pb-3 border-b border-gray-200">
                     <div className="flex gap-0.5">
                       {[...Array(5)].map((_, i) => (
-                        <span key={i} className="text-yellow-400 text-xs">★</span>
+                        <span key={i} className="text-black text-xs">★</span>
                       ))}
                     </div>
                     <span className="text-xs text-gray-600">({hotel.reviews} reviews)</span>
@@ -334,7 +334,7 @@ export default function OtherServices() {
                   </div>
                   
                   {/* Book Button */}
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
+                  <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105 flex items-center justify-center gap-2 text-sm">
                     Book Stay
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -347,3 +347,4 @@ export default function OtherServices() {
     </section>
   );
 }
+

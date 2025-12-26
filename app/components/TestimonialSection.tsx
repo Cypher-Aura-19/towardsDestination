@@ -18,10 +18,10 @@ export default function TestimonialSection() {
 
           {/* Testimonial Content */}
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-600 mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-600 mb-4 sm:mb-6">
               "HAD AN INCREDIBLE TIME WITH TOWARDSDESTINATION TEAM ON A MEMORABLE TRIP!
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-red-600 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-emerald-600 leading-relaxed">
               From laughter to learning, every moment was truly special. Exploring new places together built stronger bonds.."
             </p>
           </div>
@@ -30,3 +30,4 @@ export default function TestimonialSection() {
     </section>
   );
 }
+

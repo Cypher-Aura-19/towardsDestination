@@ -265,8 +265,8 @@ export default function HotelDetail() {
       <div className="min-h-screen bg-white">
         <Navbar />
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl font-bold text-red-600 mb-4">Hotel Not Found</h1>
-          <Link href="/hotels" className="text-red-600 hover:underline">
+          <h1 className="text-4xl font-bold text-emerald-600 mb-4">Hotel Not Found</h1>
+          <Link href="/hotels" className="text-emerald-600 hover:underline">
             Back to Hotels
           </Link>
         </div>
@@ -285,7 +285,7 @@ export default function HotelDetail() {
           <div className="mb-4">
             <div className="flex items-center gap-2">
               {[...Array(hotel.rating)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-red-500 text-red-500" />
+                <Star key={i} className="w-5 h-5 fill-black text-black" />
               ))}
               <span className="text-gray-600 ml-2">
                 {hotel.reviews > 0 ? `${hotel.reviews} reviews` : "No reviews yet"}
@@ -298,7 +298,7 @@ export default function HotelDetail() {
           </h1>
           
           <div className="flex items-center gap-2 text-gray-700">
-            <MapPin className="w-5 h-5 text-red-600" />
+            <MapPin className="w-5 h-5 text-emerald-600" />
             <span className="text-lg">{hotel.address}</span>
           </div>
         </div>
@@ -562,8 +562,8 @@ export default function HotelDetail() {
                         onClick={() => handleRoomSelect(room.type, room.price)}
                         className={`w-full border-2 rounded-lg p-6 transition-all text-left ${
                           bookingData.roomType === room.type
-                            ? 'border-red-600 bg-red-50 shadow-lg'
-                            : 'border-gray-200 hover:border-red-400 hover:shadow-md'
+                            ? 'border-emerald-600 bg-emerald-50 shadow-lg'
+                            : 'border-gray-200 hover:border-emerald-400 hover:shadow-md'
                         }`}
                       >
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -577,13 +577,13 @@ export default function HotelDetail() {
                             )}
                             <p className="text-sm text-gray-600">👥 Occupancy: {room.capacity}</p>
                             {bookingData.roomType === room.type && (
-                              <span className="inline-block mt-2 bg-red-600 text-white text-xs px-3 py-1 rounded-full">
+                              <span className="inline-block mt-2 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">
                                 Selected
                               </span>
                             )}
                           </div>
                           <div className="text-right">
-                            <div className="text-3xl font-bold text-red-600">
+                            <div className="text-3xl font-bold text-emerald-600">
                               PKR {room.price.toLocaleString()}
                             </div>
                             <div className="text-sm text-gray-600">per night</div>
@@ -617,8 +617,8 @@ export default function HotelDetail() {
                     onClick={() => handleRoomSelect(room.type, room.price)}
                     className={`w-full border-2 rounded-lg overflow-hidden transition-all ${
                       bookingData.roomType === room.type
-                        ? 'border-red-600 bg-red-50 shadow-lg'
-                        : 'border-gray-200 hover:border-red-400 hover:shadow-md'
+                        ? 'border-emerald-600 bg-emerald-50 shadow-lg'
+                        : 'border-gray-200 hover:border-emerald-400 hover:shadow-md'
                     }`}
                   >
                     <div className="flex flex-col md:flex-row">
@@ -637,13 +637,13 @@ export default function HotelDetail() {
                           <h3 className="text-xl font-bold text-gray-900 mb-2">{room.type}</h3>
                           <p className="text-gray-600">Capacity: {room.capacity}</p>
                           {bookingData.roomType === room.type && (
-                            <span className="inline-block mt-2 bg-red-600 text-white text-xs px-3 py-1 rounded-full">
+                            <span className="inline-block mt-2 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">
                               Selected
                             </span>
                           )}
                         </div>
                         <div className="text-right">
-                          <div className="text-2xl font-bold text-red-600">
+                          <div className="text-2xl font-bold text-emerald-600">
                             PKR {room.price.toLocaleString()}
                           </div>
                           <div className="text-sm text-gray-600">per night</div>
@@ -661,7 +661,7 @@ export default function HotelDetail() {
               <div className="space-y-3">
                 {hotel.nearbyAttractions.map((attraction: string, index: number) => (
                   <div key={index} className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-1" />
+                    <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-1" />
                     <span className="text-gray-700">{attraction}</span>
                   </div>
                 ))}
@@ -673,8 +673,8 @@ export default function HotelDetail() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Hotel Policies</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="bg-red-100 p-3 rounded-lg">
-                    <Check className="w-6 h-6 text-red-600" />
+                  <div className="bg-emerald-100 p-3 rounded-lg">
+                    <Check className="w-6 h-6 text-emerald-600" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Check-in</h3>
@@ -682,8 +682,8 @@ export default function HotelDetail() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="bg-red-100 p-3 rounded-lg">
-                    <X className="w-6 h-6 text-red-600" />
+                  <div className="bg-emerald-100 p-3 rounded-lg">
+                    <X className="w-6 h-6 text-emerald-600" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Check-out</h3>
@@ -695,7 +695,7 @@ export default function HotelDetail() {
                   <ul className="space-y-2">
                     {hotel.policies.map((policy: string, index: number) => (
                       <li key={index} className="flex items-start gap-2 text-gray-700">
-                        <span className="text-red-600 font-bold">•</span>
+                        <span className="text-emerald-600 font-bold">•</span>
                         <span>{policy}</span>
                       </li>
                     ))}
@@ -713,11 +713,11 @@ export default function HotelDetail() {
           {/* Sidebar - Booking Form */}
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-              <div className="p-6 bg-red-50 border-b border-gray-200">
+              <div className="p-6 bg-emerald-50 border-b border-gray-200">
                 <div className="text-sm text-gray-600 mb-1">
                   {bookingData.roomType ? 'Selected Room Price' : 'Starting from'}
                 </div>
-                <div className="text-3xl font-bold text-red-600">
+                <div className="text-3xl font-bold text-emerald-600">
                   PKR {selectedRoomPrice.toLocaleString()}
                   <span className="text-lg text-gray-600 font-normal">/night</span>
                 </div>
@@ -728,7 +728,7 @@ export default function HotelDetail() {
                 )}
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(hotel.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-red-500 text-red-500" />
+                    <Star key={i} className="w-5 h-5 fill-black text-black" />
                   ))}
                 </div>
               </div>
@@ -744,7 +744,7 @@ export default function HotelDetail() {
                       value={bookingData.name}
                       onChange={handleChange}
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -756,7 +756,7 @@ export default function HotelDetail() {
                       value={bookingData.email}
                       onChange={handleChange}
                       placeholder="Your Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -768,7 +768,7 @@ export default function HotelDetail() {
                       value={bookingData.phone}
                       onChange={handleChange}
                       placeholder="Phone/WhatsApp"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -780,7 +780,7 @@ export default function HotelDetail() {
                       required
                       value={bookingData.checkIn}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -792,7 +792,7 @@ export default function HotelDetail() {
                       required
                       value={bookingData.checkOut}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -805,7 +805,7 @@ export default function HotelDetail() {
                       min="1"
                       value={bookingData.guests}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     />
                   </div>
 
@@ -816,7 +816,7 @@ export default function HotelDetail() {
                       required
                       value={bookingData.roomType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 text-gray-900"
                     >
                       <option value="">Select Room Type</option>
                       {hotel.roomTypes.map((room: any, index: number) => (
@@ -834,13 +834,13 @@ export default function HotelDetail() {
                       onChange={handleChange}
                       rows={3}
                       placeholder="Special Requests (Optional)"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600 resize-none text-gray-900"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-lg font-bold text-lg transition-all shadow-md hover:shadow-lg"
                   >
                     Send Booking Request
                   </button>
