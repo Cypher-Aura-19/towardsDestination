@@ -113,12 +113,6 @@ export default function FamilySection() {
           })}
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-semibold border border-white/20">
-            ✓ Registered: FBR • SECP • DTS for Travel • Nadra
-          </div>
-        </div>
       </div>
     </section>
   );

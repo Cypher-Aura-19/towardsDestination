@@ -67,7 +67,7 @@ export default function WhyChooseSection() {
               Why Choose Us
             </h2>
             <p className="text-gray-600 max-w-2xl">
-              We're Pakistan's trusted travel partner, offering exceptional service, local expertise, and unforgettable experiences for over a decade. Officially registered with FBR, SECP, DTS & Nadra.
+              We're Pakistan's trusted travel partner, offering exceptional service, local expertise, and unforgettable experiences for over a decade.
             </p>
           </div>
           <button className="flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105 animate-pulse-glow">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import PopupModal from "./components/PopupModal";
 import TestimonialSection from "./components/TestimonialSection";
 import AffiliationsSection from "./components/AffiliationsSection";
 import TourPackages from "./components/TourPackages";
@@ -39,17 +38,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <PopupModal />
       <Navbar />
       <Hero />
-      <TestimonialSection />
       <AffiliationsSection />
       <TourPackages />
       <PlacesSection />
-      <UmrahSection />
       <FamilySection />
       <AboutSection />
-      <ActivitiesSection />
       <WhyChooseSection />
       <FAQSection />
       <Footer />

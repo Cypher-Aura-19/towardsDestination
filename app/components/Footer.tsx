@@ -27,10 +27,6 @@ export default function Footer() {
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2018.
             </p>
-            <div className="text-gray-300 text-sm space-y-1">
-              <p className="font-semibold text-white">Registered from:</p>
-              <p>FBR • SECP • DTS for Travel • Nadra</p>
-            </div>
             <div className="flex gap-3 mt-4">
               <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
                 <Facebook className="w-5 h-5" />
