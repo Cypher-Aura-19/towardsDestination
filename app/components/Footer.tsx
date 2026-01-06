@@ -28,17 +28,11 @@ export default function Footer() {
               Your trusted travel partner for Northern Pakistan tours, Umrah packages, and premium accommodation. Creating unforgettable journeys since 2018.
             </p>
             <div className="flex gap-3 mt-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
+              <a href="https://www.facebook.com/share/1BqtmTTWrN/?mibextid=wwXIfr" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
+              <a href="https://www.instagram.com/towardsdestination.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Home",
   description: "Book unforgettable Pakistan tour packages with TowardsDestination.pk. Explore Hunza Valley, Skardu, Naran, Kaghan, Swat, Neelum Valley, Fairy Meadows & more. Professional guides, best prices, and memorable experiences. Start your adventure today!",
   keywords: "Pakistan tours, Hunza Valley tours, Skardu tours, Naran Kaghan tours, Swat Valley tours, Neelum Valley tours, Fairy Meadows, northern areas Pakistan, Pakistan travel packages, tour operators Pakistan, Pakistan tourism",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Home - TowardsDestination.pk",
     description: "Book unforgettable Pakistan tour packages. Explore Hunza, Skardu, Naran, Swat & more with professional guides.",

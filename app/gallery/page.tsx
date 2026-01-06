@@ -9,6 +9,9 @@ import path from "path";
 export const metadata = {
   title: "Gallery",
   description: "Photos and videos from our tours",
+  alternates: {
+    canonical: "/gallery",
+  },
 };
 
 function isImage(name: string) {

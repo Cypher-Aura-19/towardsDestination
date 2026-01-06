@@ -13,9 +13,6 @@ export const metadata: Metadata = {
   creator: "TowardsDestination.pk",
   publisher: "TowardsDestination.pk",
   metadataBase: new URL("https://towardsdestination.pk"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Home - TowardsDestination.pk",
     description: "Discover Pakistan with TowardsDestination.pk. Expert tour packages to Hunza, Skardu, Naran, Swat, Neelum Valley, Fairy Meadows & more.",

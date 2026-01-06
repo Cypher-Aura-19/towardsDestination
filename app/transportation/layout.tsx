@@ -3,6 +3,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Car Rental",
   description: "Rent cars, jeeps, coasters & hiace for your Pakistan tours.",
+  alternates: {
+    canonical: "/transportation",
+  },
 };
 
 export default function TransportationLayout({

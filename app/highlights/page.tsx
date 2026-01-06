@@ -6,7 +6,7 @@ import { X, ChevronLeft, ChevronRight, Camera, Sparkles } from "lucide-react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
-export default function UpdatesPage() {
+export default function HighlightsPage() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
@@ -57,37 +57,37 @@ export default function UpdatesPage() {
       {/* Header Section */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
         {/* Background Decoration */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
-            <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse-glow" style={{ fontFamily: "'Poppins', sans-serif" }}>
-              📸 LATEST UPDATES
+            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse-glow" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              ⭐ TOUR HIGHLIGHTS
             </span>
             <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 section-heading" style={{ fontFamily: "'Poppins', sans-serif" }}>
-              <span className="gradient-text">Tour Updates & Photos</span>
+              <span className="gradient-text">Tour Highlights & Photos</span>
             </h1>
             <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
-              Stay updated with our latest adventures, breathtaking destinations, and memorable moments from our tours across Pakistan.
+              Discover the best moments from our tours - breathtaking destinations, memorable experiences, and unforgettable adventures across Pakistan.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Updates Gallery */}
+      {/* Highlights Gallery */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 md:pb-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-red-200 animate-fade-in-up"
+              className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-emerald-200 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => openLightbox(index)}
             >
               <Image
                 src={image}
-                alt={`Update ${index + 1}`}
+                alt={`Highlight ${index + 1}`}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -100,7 +100,7 @@ export default function UpdatesPage() {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500"></div>
               
               {/* Image Number Badge */}
-              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-red-600 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300 flex items-center gap-1.5">
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-emerald-600 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300 flex items-center gap-1.5">
                 <Camera className="w-3 h-3" />
                 <span>#{index + 1}</span>
               </div>
@@ -108,7 +108,7 @@ export default function UpdatesPage() {
               {/* View Icon on Hover */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 shadow-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300">
-                  <Sparkles className="w-8 h-8 text-red-600" />
+                  <Sparkles className="w-8 h-8 text-emerald-600" />
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function UpdatesPage() {
             <div className="relative bg-black">
               <Image
                 src={lightboxImage}
-                alt={`Update ${lightboxIndex + 1}`}
+                alt={`Highlight ${lightboxIndex + 1}`}
                 width={1200}
                 height={1600}
                 className="max-h-[90vh] w-auto h-auto mx-auto"
