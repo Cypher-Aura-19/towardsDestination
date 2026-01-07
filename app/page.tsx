@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TestimonialSection from "./components/TestimonialSection";
 import AffiliationsSection from "./components/AffiliationsSection";
+import HighlightsSection from "./components/HighlightsSection";
 import TourPackages from "./components/TourPackages";
 import PlacesSection from "./components/PlacesSection";
 import UmrahSection from "./components/UmrahSection";
@@ -43,6 +44,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <HighlightsSection />
       <AffiliationsSection />
       <TourPackages />
       <PlacesSection />
