@@ -2,6 +2,7 @@
 
 import { X, User, Mail, Calendar, MapPin, Hotel, Users, Minus, Plus } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 interface DesignTripModalProps {
   isOpen: boolean;
@@ -68,7 +69,20 @@ export default function DesignTripModal({ isOpen, onClose }: DesignTripModalProp
 
         {/* Header */}
         <div className="p-2 sm:p-6 pb-2 sm:pb-4 text-center clear-both">
-           <div className="text-3xl font-bold text-white not-italic" style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal' }}>DESIGN MY OWN</div>
+          {/* Logo */}
+          <div className="flex justify-center mb-4 sm:mb-6">
+            <div className="relative w-full max-w-[200px] sm:max-w-[250px] h-24 sm:h-32">
+              <Image
+                src="/footer2.png"
+                alt="TOWARDSDESTINATION.PK"
+                fill
+                className="object-contain object-center"
+                priority
+              />
+            </div>
+          </div>
+          
+          <div className="text-3xl font-bold text-white not-italic" style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal' }}>DESIGN MY OWN</div>
           <div className="text-white/90 text-sm mt-1 font-semibold not-italic" style={{ fontFamily: 'Poppins, Arial, sans-serif', fontStyle: 'normal' }}>CUSTOMIZED TRIP</div>
           
           

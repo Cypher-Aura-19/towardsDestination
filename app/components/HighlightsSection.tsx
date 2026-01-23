@@ -6,22 +6,22 @@ import { ChevronLeft, ChevronRight, Camera } from "lucide-react";
 
 const highlights = [
   {
-    src: "/popup/1.jpeg",
+    src: "/popup/5.jpeg",
     alt: "Mountain lake with boats",
     label: "Hunza Valley",
   },
   {
-    src: "/popup/2.jpeg",
+    src: "/popup/6.jpeg",
     alt: "Snow covered peaks",
     label: "Skardu Peaks",
   },
   {
-    src: "/popup/3.jpeg",
+    src: "/popup/7.jpeg",
     alt: "Green valley and river",
     label: "Naran Valley",
   },
   {
-    src: "/popup/4.jpeg",
+    src: "/popup/8.jpeg",
     alt: "Sunset over mountains",
     label: "Fairy Meadows",
   },
@@ -32,6 +32,14 @@ export default function HighlightsSection() {
 
   const nextSlide = () => setActiveIndex((prev) => (prev + 1) % highlights.length);
   const prevSlide = () => setActiveIndex((prev) => (prev - 1 + highlights.length) % highlights.length);
+
+  const handleImageClick = () => {
+    const whatsappNumber = "923153309070";
+    const currentHighlight = highlights[activeIndex];
+    const message = `Hello! I'm interested in learning more about Towards Destination tour package. Can you please provide more details?`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   useEffect(() => {
     const interval = setInterval(nextSlide, 4500);
@@ -47,27 +55,36 @@ export default function HighlightsSection() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-0 sm:px-4 md:px-6">
         {/* Carousel only */}
         <div className="relative rounded-none sm:rounded-3xl overflow-hidden">
-          <div className="relative aspect-video w-full min-h-[280px] sm:min-h-[340px] md:min-h-[420px]">
+          <div 
+            className="relative aspect-video w-full min-h-[280px] sm:min-h-[340px] md:min-h-[420px] cursor-pointer"
+            onClick={handleImageClick}
+          >
             <Image
               key={highlights[activeIndex].src}
               src={highlights[activeIndex].src}
               alt={highlights[activeIndex].alt}
               fill
-              className="object-contain object-center transition-all duration-700"
+              className="object-contain object-center transition-all duration-700 hover:opacity-90"
               priority
               sizes="100vw"
             />
 
             {/* Controls */}
             <button
-              onClick={prevSlide}
+              onClick={(e) => {
+                e.stopPropagation();
+                prevSlide();
+              }}
               className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2 sm:p-3 rounded-full shadow-lg transition z-10"
               aria-label="Previous highlight"
             >
               <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
             <button
-              onClick={nextSlide}
+              onClick={(e) => {
+                e.stopPropagation();
+                nextSlide();
+              }}
               className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2 sm:p-3 rounded-full shadow-lg transition z-10"
               aria-label="Next highlight"
             >
