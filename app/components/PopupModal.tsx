@@ -4,16 +4,16 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
+const POPUP_MEDIA = [
+  { type: "image", src: "/popup/5.PNG?v=20260329" },
+  { type: "image", src: "/popup/6.jpeg?v=20260329" },
+  { type: "image", src: "/popup/7.jpeg?v=20260329" },
+  { type: "video", src: "/popup/8.MP4?v=20260329" },
+] as const;
+
 export default function PopupModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const images = [
-    "/popup/1.jpeg",
-    "/popup/2.jpeg",
-    "/popup/3.jpeg",
-    "/popup/4.jpeg",
-  ];
 
   useEffect(() => {
     // Show popup once per page refresh
@@ -26,20 +26,23 @@ export default function PopupModal() {
 
   useEffect(() => {
     if (!isOpen) return;
-    
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % images.length);
+
+    const currentItem = POPUP_MEDIA[currentSlide];
+    if (currentItem.type !== "image") return;
+
+    const timer = setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % POPUP_MEDIA.length);
     }, 2500);
 
-    return () => clearInterval(timer);
-  }, [isOpen, images.length]);
+    return () => clearTimeout(timer);
+  }, [isOpen, currentSlide]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+    setCurrentSlide((prev) => (prev + 1) % POPUP_MEDIA.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentSlide((prev) => (prev - 1 + POPUP_MEDIA.length) % POPUP_MEDIA.length);
   };
 
   if (!isOpen) return null;
@@ -57,21 +60,36 @@ export default function PopupModal() {
 
         {/* Image Slider */}
         <div className="relative">
-          {images.map((image, index) => (
+          {POPUP_MEDIA.map((item, index) => (
             <div
               key={index}
               className={`transition-all duration-700 ease-in-out ${
                 index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-95 absolute inset-0"
               }`}
             >
-              <Image
-                src={image}
-                alt={`Popup image ${index + 1}`}
-                width={600}
-                height={700}
-                className="max-h-[85vh] w-auto h-auto"
-                priority={index === 0}
-              />
+              {item.type === "image" ? (
+                <Image
+                  src={item.src}
+                  alt={`Popup image ${index + 1}`}
+                  width={600}
+                  height={700}
+                  className="max-h-[85vh] w-auto h-auto"
+                  priority={index === 0}
+                />
+              ) : (
+                <video
+                  src={item.src}
+                  className="max-h-[85vh] w-auto h-auto"
+                  autoPlay={index === currentSlide}
+                  muted
+                  loop={false}
+                  controls
+                  playsInline
+                  onEnded={() => {
+                    if (index === currentSlide) nextSlide();
+                  }}
+                />
+              )}
             </div>
           ))}
 
@@ -91,7 +109,7 @@ export default function PopupModal() {
 
           {/* Dots */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-            {images.map((_, index) => (
+            {POPUP_MEDIA.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}

@@ -6,20 +6,20 @@ import { X, ChevronLeft, ChevronRight, Camera, Sparkles } from "lucide-react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
+const HIGHLIGHT_MEDIA = [
+  { type: "image", src: "/popup/5.PNG?v=20260329" },
+  { type: "image", src: "/popup/6.jpeg?v=20260329" },
+  { type: "image", src: "/popup/7.jpeg?v=20260329" },
+  { type: "video", src: "/popup/8.MP4?v=20260329" },
+] as const;
+
 export default function HighlightsPage() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const images = [
-    "/popup/1.jpeg",
-    "/popup/2.jpeg",
-    "/popup/3.jpeg",
-    "/popup/4.jpeg",
-  ];
-
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
-    setLightboxImage(images[index]);
+    setLightboxImage(HIGHLIGHT_MEDIA[index].src);
   };
 
   const closeLightbox = () => {
@@ -27,24 +27,34 @@ export default function HighlightsPage() {
   };
 
   const nextImage = () => {
-    const nextIndex = (lightboxIndex + 1) % images.length;
+    const nextIndex = (lightboxIndex + 1) % HIGHLIGHT_MEDIA.length;
     setLightboxIndex(nextIndex);
-    setLightboxImage(images[nextIndex]);
+    setLightboxImage(HIGHLIGHT_MEDIA[nextIndex].src);
   };
 
   const prevImage = () => {
-    const prevIndex = (lightboxIndex - 1 + images.length) % images.length;
+    const prevIndex = (lightboxIndex - 1 + HIGHLIGHT_MEDIA.length) % HIGHLIGHT_MEDIA.length;
     setLightboxIndex(prevIndex);
-    setLightboxImage(images[prevIndex]);
+    setLightboxImage(HIGHLIGHT_MEDIA[prevIndex].src);
   };
 
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!lightboxImage) return;
-      if (e.key === "Escape") closeLightbox();
-      if (e.key === "ArrowRight") nextImage();
-      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "Escape") {
+        setLightboxImage(null);
+      }
+      if (e.key === "ArrowRight") {
+        const nextIndex = (lightboxIndex + 1) % HIGHLIGHT_MEDIA.length;
+        setLightboxIndex(nextIndex);
+        setLightboxImage(HIGHLIGHT_MEDIA[nextIndex].src);
+      }
+      if (e.key === "ArrowLeft") {
+        const prevIndex = (lightboxIndex - 1 + HIGHLIGHT_MEDIA.length) % HIGHLIGHT_MEDIA.length;
+        setLightboxIndex(prevIndex);
+        setLightboxImage(HIGHLIGHT_MEDIA[prevIndex].src);
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -78,20 +88,29 @@ export default function HighlightsPage() {
       {/* Highlights Gallery */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 md:pb-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          {images.map((image, index) => (
+          {HIGHLIGHT_MEDIA.map((item, index) => (
             <div
               key={index}
               className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-emerald-200 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => openLightbox(index)}
             >
-              <Image
-                src={image}
-                alt={`Highlight ${index + 1}`}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-700"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              />
+              {item.type === "image" ? (
+                <Image
+                  src={item.src}
+                  alt={`Highlight ${index + 1}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              ) : (
+                <video
+                  src={item.src}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  muted
+                  playsInline
+                />
+              )}
               
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -144,19 +163,31 @@ export default function HighlightsPage() {
 
             {/* Image Counter */}
             <div className="absolute top-4 left-4 z-20 bg-black/70 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              {lightboxIndex + 1} / {images.length}
+              {lightboxIndex + 1} / {HIGHLIGHT_MEDIA.length}
             </div>
 
             {/* Image */}
             <div className="relative bg-black">
-              <Image
-                src={lightboxImage}
-                alt={`Highlight ${lightboxIndex + 1}`}
-                width={1200}
-                height={1600}
-                className="max-h-[90vh] w-auto h-auto mx-auto"
-                priority
-              />
+              {HIGHLIGHT_MEDIA[lightboxIndex].type === "image" ? (
+                <Image
+                  src={lightboxImage}
+                  alt={`Highlight ${lightboxIndex + 1}`}
+                  width={1200}
+                  height={1600}
+                  className="max-h-[90vh] w-auto h-auto mx-auto"
+                  priority
+                />
+              ) : (
+                <video
+                  src={lightboxImage}
+                  className="max-h-[90vh] w-auto h-auto mx-auto"
+                  autoPlay
+                  controls
+                  muted
+                  loop
+                  playsInline
+                />
+              )}
 
               {/* Navigation Arrows */}
               <button
@@ -176,12 +207,12 @@ export default function HighlightsPage() {
 
               {/* Dots Indicator */}
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                {images.map((_, index) => (
+                {HIGHLIGHT_MEDIA.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => {
                       setLightboxIndex(index);
-                      setLightboxImage(images[index]);
+                      setLightboxImage(HIGHLIGHT_MEDIA[index].src);
                     }}
                     className={`rounded-full transition-all duration-300 ${
                       index === lightboxIndex 

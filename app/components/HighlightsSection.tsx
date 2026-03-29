@@ -2,30 +2,34 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const highlights = [
   {
-    src: "/popup/5.jpeg",
+    type: "image",
+    src: "/popup/5.PNG?v=20260329",
     alt: "Mountain lake with boats",
     label: "Hunza Valley",
   },
   {
-    src: "/popup/6.jpeg",
+    type: "image",
+    src: "/popup/6.jpeg?v=20260329",
     alt: "Snow covered peaks",
     label: "Skardu Peaks",
   },
   {
-    src: "/popup/7.jpeg",
+    type: "image",
+    src: "/popup/7.jpeg?v=20260329",
     alt: "Green valley and river",
     label: "Naran Valley",
   },
   {
-    src: "/popup/8.jpeg",
-    alt: "Sunset over mountains",
+    type: "video",
+    src: "/popup/8.MP4?v=20260329",
+    alt: "Tour highlights video",
     label: "Fairy Meadows",
   },
-];
+] as const;
 
 export default function HighlightsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,16 +39,21 @@ export default function HighlightsSection() {
 
   const handleImageClick = () => {
     const whatsappNumber = "923153309070";
-    const currentHighlight = highlights[activeIndex];
     const message = `Hello! I'm interested in learning more about Towards Destination tour package. Can you please provide more details?`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 4500);
-    return () => clearInterval(interval);
-  }, []);
+    const currentItem = highlights[activeIndex];
+    if (currentItem.type !== "image") return;
+
+    const timer = setTimeout(() => {
+      nextSlide();
+    }, 4500);
+
+    return () => clearTimeout(timer);
+  }, [activeIndex]);
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-b from-white via-emerald-50 to-white relative overflow-hidden">
@@ -59,15 +68,29 @@ export default function HighlightsSection() {
             className="relative aspect-video w-full min-h-[280px] sm:min-h-[340px] md:min-h-[420px] cursor-pointer"
             onClick={handleImageClick}
           >
-            <Image
-              key={highlights[activeIndex].src}
-              src={highlights[activeIndex].src}
-              alt={highlights[activeIndex].alt}
-              fill
-              className="object-contain object-center transition-all duration-700 hover:opacity-90"
-              priority
-              sizes="100vw"
-            />
+            {highlights[activeIndex].type === "image" ? (
+              <Image
+                key={highlights[activeIndex].src}
+                src={highlights[activeIndex].src}
+                alt={highlights[activeIndex].alt}
+                fill
+                className="object-contain object-center transition-all duration-700 hover:opacity-90"
+                priority
+                sizes="100vw"
+              />
+            ) : (
+              <video
+                key={highlights[activeIndex].src}
+                src={highlights[activeIndex].src}
+                className="w-full h-full object-contain object-center transition-all duration-700"
+                autoPlay
+                muted
+                loop={false}
+                controls
+                playsInline
+                onEnded={nextSlide}
+              />
+            )}
 
             {/* Controls */}
             <button

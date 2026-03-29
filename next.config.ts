@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    // Allow local public assets (including cache-busting query params like ?v=...)
+    localPatterns: [{ pathname: "/**" }],
+  },
 };
 
 export default nextConfig;
