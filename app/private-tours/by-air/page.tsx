@@ -3,6 +3,7 @@
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Plane, Calendar, MapPin, Star, ArrowRight } from "lucide-react";
+import WhatsAppLogoIcon from "@/app/components/WhatsAppLogoIcon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -245,14 +246,29 @@ export default function PrivateToursByAir() {
                   {/* Price & Button */}
                   <div className="flex items-center justify-between pt-4 border-t border-emerald-100">
                     <div>
-                      {pkg.price > 0 ? (
-                        <>
-                          <p className="text-sm text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>Starting from</p>
-                          <p className="text-2xl font-bold text-emerald-700 font-numbers">PKR {pkg.price.toLocaleString()}</p>
-                        </>
-                      ) : (
-                        <p className="text-sm font-semibold text-emerald-600" style={{ fontFamily: "'Inter', sans-serif" }}>Contact for Pricing</p>
-                      )}
+                      <p className="text-sm text-gray-600" style={{ fontFamily: "'Inter', sans-serif" }}>Pricing</p>
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        aria-label="Get latest price on WhatsApp"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          const message = `Hello! I want latest price for ${pkg.title}.`;
+                          window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            const message = `Hello! I want latest price for ${pkg.title}.`;
+                            window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                          }
+                        }}
+                        className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300 cursor-pointer"
+                      >
+                        <WhatsAppLogoIcon className="w-4 h-4" />
+                      </span>
                     </div>
                     <div className="bg-emerald-600 group-hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2" style={{ fontFamily: "'Inter', sans-serif" }}>
                       View Details

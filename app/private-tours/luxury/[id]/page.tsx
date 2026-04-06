@@ -437,17 +437,15 @@ export default function LuxuryTourDetail() {
             {/* Pricing */}
             {pkg.pricing && (
               <section className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-8 border border-emerald-200">
-                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Pricing Options</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {Object.entries(pkg.pricing).map(([key, value]: [string, any]) => (
-                    <div key={key} className="bg-white rounded-lg p-6 border-2 border-emerald-300 hover:border-emerald-500 transition-colors">
-                      <h3 className="text-lg font-bold text-emerald-700 mb-2 capitalize">
-                        {key.replace(/_/g, ' ')}
-                      </h3>
-                      <p className="text-2xl font-bold text-gray-900">{value}</p>
-                    </div>
-                  ))}
-                </div>
+                <h2 className="text-3xl font-bold text-emerald-800 mb-4">Latest Pricing</h2>
+                <p className="text-gray-700 mb-6">Due to changing fuel costs, rates are shared on WhatsApp.</p>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price on WhatsApp
+                </button>
               </section>
             )}
 

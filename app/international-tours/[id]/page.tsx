@@ -834,14 +834,14 @@ default function InternationalTourDetail() {
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
               <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 border-b border-gray-200">
-                <div className="text-sm text-gray-600 mb-1">Starting from</div>
-                <div className="text-3xl font-bold text-blue-600">
-                  {tour.price}
-                </div>
-                {tour.priceUSD && (
-                  <div className="text-lg text-gray-600 mt-1">({tour.priceUSD} USD)</div>
-                )}
-                <div className="text-sm text-gray-600 mt-2">/person</div>
+                <div className="text-sm text-gray-600 mb-2">Latest price available on WhatsApp</div>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price
+                </button>
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-blue-500 text-blue-500" />

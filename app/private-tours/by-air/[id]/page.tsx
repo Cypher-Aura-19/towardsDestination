@@ -1417,91 +1417,15 @@ export default function PrivateTourByAirDetail() {
             {/* Pricing */}
             {pkg.pricing && (
               <section className="bg-emerald-50 rounded-xl p-8 border border-emerald-200">
-                <h2 className="text-3xl font-bold text-emerald-800 mb-6">Pricing Details</h2>
-                
-                {pkg.pricing.sedanCar_perCouple && (
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Sedan Car (Per Couple)</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {pkg.pricing.sedanCar_perCouple.standard && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.standard}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.sedanCar_perCouple.deluxe && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.deluxe}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.sedanCar_perCouple.executive && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.sedanCar_perCouple.executive}</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {pkg.pricing.jeep4x4_perCouple && (
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Jeep 4x4 (Per Couple)</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {pkg.pricing.jeep4x4_perCouple.standard && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.standard}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.jeep4x4_perCouple.deluxe && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.deluxe}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.jeep4x4_perCouple.executive && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.jeep4x4_perCouple.executive}</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {pkg.pricing.perPerson_Spring_USD && (
-                  <div>
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Per Person Pricing (USD)</h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {pkg.pricing.perPerson_Spring_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Spring</div>
-                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Spring_USD.price}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.perPerson_Summer_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Summer</div>
-                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Summer_USD.price}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.perPerson_Autumn_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Autumn</div>
-                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Autumn_USD.price}</div>
-                        </div>
-                      )}
-                      {pkg.pricing.perPerson_Winter_USD && (
-                        <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Winter</div>
-                          <div className="text-xl font-bold text-emerald-700">${pkg.pricing.perPerson_Winter_USD.price}</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
+                <h2 className="text-3xl font-bold text-emerald-800 mb-4">Latest Pricing</h2>
+                <p className="text-gray-700 mb-6">Due to changing fuel costs, rates are shared on WhatsApp.</p>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price on WhatsApp
+                </button>
               </section>
             )}
 

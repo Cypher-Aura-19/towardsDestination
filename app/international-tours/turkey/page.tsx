@@ -170,8 +170,7 @@ export default function TurkeyToursPage() {
                     )}
                     <h3 className="font-bold text-blue-600 mb-1">{pkg.name}</h3>
                     <p className="text-sm text-gray-600 mb-2">{pkg.duration}</p>
-                    <p className="text-2xl font-bold text-gray-900">{pkg.price}</p>
-                    <p className="text-sm text-gray-500">({pkg.priceUSD} USD)</p>
+                    <p className="text-base font-semibold text-green-700">Latest price on WhatsApp</p>
                   </button>
                 ))}
               </div>
@@ -268,11 +267,14 @@ export default function TurkeyToursPage() {
           <div className="lg:col-span-1">
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
               <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 border-b border-gray-200">
-                <div className="text-sm text-gray-600 mb-1">Selected Package</div>
-                <div className="text-2xl font-bold text-blue-600 mb-2">
-                  {selectedPkg.price}
-                </div>
-                <div className="text-sm text-gray-600 mb-2">({selectedPkg.priceUSD} USD) /person</div>
+                <div className="text-sm text-gray-600 mb-2">Latest price available on WhatsApp</div>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price
+                </button>
                 <div className="text-sm font-semibold text-gray-700">{selectedPkg.duration}</div>
                 <div className="flex items-center gap-1 mt-3">
                   {[...Array(5)].map((_, i) => (

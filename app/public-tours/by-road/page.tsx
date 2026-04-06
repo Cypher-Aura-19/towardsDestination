@@ -3,6 +3,7 @@
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Bus, Calendar, Users, MapPin, Star, Check } from "lucide-react";
+import WhatsAppLogoIcon from "@/app/components/WhatsAppLogoIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -416,10 +417,29 @@ const packages = [
                   {/* Price & Button */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
-                      <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-emerald-600">
-                        {pkg.currency === "USD" ? `USD ${pkg.price}` : `PKR ${pkg.price.toLocaleString()}`}
-                      </p>
+                      <p className="text-sm text-gray-600">Pricing</p>
+                      <span
+                        role="button"
+                        tabIndex={0}
+                        aria-label="Get latest price on WhatsApp"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          const message = `Hello! I want latest price for ${pkg.title}.`;
+                          window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            const message = `Hello! I want latest price for ${pkg.title}.`;
+                            window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                          }
+                        }}
+                        className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300 cursor-pointer"
+                      >
+                        <WhatsAppLogoIcon className="w-4 h-4" />
+                      </span>
                     </div>
                     <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                       View Details

@@ -1502,94 +1502,15 @@ export default function HoneymoonTourDetail() {
             {/* Pricing */}
             {pkg.pricing && (
               <section className="bg-white rounded-xl p-8 border border-emerald-200 shadow-lg">
-                <h2 className="text-3xl font-bold text-emerald-700 mb-6">Pricing Details</h2>
-                
-                {pkg.pricing.fromIslamabad && (
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">From Islamabad</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {pkg.pricing.fromIslamabad.standard_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.standard_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.fromIslamabad.deluxe_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.deluxe_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.fromIslamabad.executive_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromIslamabad.executive_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {pkg.pricing.fromLahore && (
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">From Lahore</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {pkg.pricing.fromLahore.standard_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.standard_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.fromLahore.deluxe_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.deluxe_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.fromLahore.executive_per_couple && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.fromLahore.executive_per_couple}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {pkg.pricing.perCouple && (
-                  <div>
-                    <h3 className="text-xl font-bold text-emerald-700 mb-4">Package Pricing</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {pkg.pricing.perCouple.standard && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Standard</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.standard}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.perCouple.deluxe && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Deluxe</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.deluxe}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                      {pkg.pricing.perCouple.executive && (
-                        <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                          <div className="text-sm text-gray-600 mb-1">Executive</div>
-                          <div className="text-2xl font-bold text-emerald-700">{pkg.pricing.perCouple.executive}</div>
-                          <div className="text-xs text-gray-500 mt-1">Per Couple</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
+                <h2 className="text-3xl font-bold text-emerald-700 mb-4">Latest Pricing</h2>
+                <p className="text-gray-700 mb-6">Due to changing fuel costs, rates are shared on WhatsApp.</p>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price on WhatsApp
+                </button>
               </section>
             )}
 

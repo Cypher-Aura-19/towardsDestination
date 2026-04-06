@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Plane, Calendar, Hotel, Check, Star, MapPin } from "lucide-react";
+import WhatsAppLogoIcon from "@/app/components/WhatsAppLogoIcon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -512,12 +513,18 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     {/* Price & CTA */}
                     <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                       <div>
-                        <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-emerald-600">{tour.price}</p>
-                        {tour.priceUSD && (
-                          <p className="text-lg text-gray-500">({tour.priceUSD} USD)</p>
-                        )}
-                        <p className="text-sm text-gray-600">per person</p>
+                        <p className="text-sm text-gray-600 mb-1">Pricing</p>
+                        <button
+                          type="button"
+                          aria-label="Get latest price on WhatsApp"
+                          onClick={() => {
+                            const message = `Hello! I want latest price for ${tour.name}.`;
+                            window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                          }}
+                          className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300"
+                        >
+                          <WhatsAppLogoIcon className="w-4 h-4" />
+                        </button>
                       </div>
                       <div className="flex gap-3">
                         <Link 
@@ -598,7 +605,19 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                           {umrahPackages.map((pkg) => (
                             <div key={pkg.id} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
                               <p className="text-xs font-semibold text-emerald-600 mb-1">{pkg.name}</p>
-                              <p className="text-xs text-gray-600">{pkg.price}</p>
+                              <button
+                                type="button"
+                                aria-label="Get latest price on WhatsApp"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  const message = `Hello! I want latest price for ${pkg.name}.`;
+                                  window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                                }}
+                                className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300"
+                              >
+                                <WhatsAppLogoIcon className="w-3.5 h-3.5" />
+                              </button>
                             </div>
                           ))}
                         </div>
@@ -627,9 +646,20 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                       {/* Price & Button */}
                       <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                         <div>
-                          <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                          <p className="text-3xl font-bold text-emerald-600">PKR 180,000</p>
-                          <p className="text-xs text-gray-500 mt-1">per person</p>
+                          <p className="text-sm text-gray-600 mb-1">Pricing</p>
+                          <button
+                            type="button"
+                            aria-label="Get latest price on WhatsApp"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              const message = "Hello! I want latest price for Umrah packages.";
+                              window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                            }}
+                            className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300"
+                          >
+                            <WhatsAppLogoIcon className="w-4 h-4" />
+                          </button>
                         </div>
                         <div className="flex gap-3">
                          <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md">
@@ -723,9 +753,18 @@ From the Spiritual Journey of Umrah, Cultural wonders of Turkey and Baku to the 
                     {/* Price & Button */}
                     <div className="flex items-center justify-between pt-6 border-t border-gray-200">
                       <div>
-                        <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-bold text-emerald-600">{pkg.price}</p>
-                        <p className="text-xs text-gray-500 mt-1">per person</p>
+                        <p className="text-sm text-gray-600 mb-1">Pricing</p>
+                        <button
+                          type="button"
+                          aria-label="Get latest price on WhatsApp"
+                          onClick={() => {
+                            const message = `Hello! I want latest price for ${pkg.name}.`;
+                            window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                          }}
+                          className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300"
+                        >
+                          <WhatsAppLogoIcon className="w-4 h-4" />
+                        </button>
                       </div>
                       <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-sm font-medium transition-colors">
                         Book Now

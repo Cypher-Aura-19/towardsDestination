@@ -3,6 +3,7 @@
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Plane, Calendar, Users, MapPin, Check, Star } from "lucide-react";
+import WhatsAppLogoIcon from "@/app/components/WhatsAppLogoIcon";
 import Image from "next/image";
 
 export default function PublicToursByAir() {
@@ -256,8 +257,18 @@ export default function PublicToursByAir() {
                   {/* Price & Button */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
-                      <p className="text-sm text-gray-600">Starting from</p>
-                      <p className="text-2xl font-bold text-emerald-600">{pkg.price}</p>
+                      <p className="text-sm text-gray-600">Pricing</p>
+                      <button
+                        type="button"
+                        aria-label="Get latest price on WhatsApp"
+                        onClick={() => {
+                          const message = `Hello! I want latest price for ${pkg.name}.`;
+                          window.open(`https://wa.me/923153309070?text=${encodeURIComponent(message)}`, "_blank");
+                        }}
+                        className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-sm ring-1 ring-emerald-500/40 transition-all duration-300"
+                      >
+                        <WhatsAppLogoIcon className="w-4 h-4" />
+                      </button>
                     </div>
                     <a 
                       href={`/public-tours/by-air/${pkg.id}`}

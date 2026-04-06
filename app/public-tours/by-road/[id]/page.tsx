@@ -3392,10 +3392,19 @@ export default function TourDetailPage() {
 
             {/* Pricing Table */}
             <section className="bg-white rounded-xl p-8 shadow-sm">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Pricing Options</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Pricing</h2>
+              <p className="text-gray-700 mb-6">Due to changing fuel costs, rates are shared on WhatsApp.</p>
+              <button
+                onClick={handleWhatsAppInquiry}
+                type="button"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                Get Latest Price on WhatsApp
+              </button>
+              
               
               {/* Standard Pricing Table (for most packages) */}
-              {pkg.pricing && (pkg.pricing.quadSharing || pkg.pricing.twinSharing || pkg.pricing.soloSharing) && (
+              {false && pkg.pricing && (pkg.pricing.quadSharing || pkg.pricing.twinSharing || pkg.pricing.soloSharing) && (
                 <div className="overflow-x-auto mb-6">
                   <table className="w-full border-collapse">
                     <thead>
@@ -3440,8 +3449,9 @@ export default function TourDetailPage() {
                 </div>
               )}
 
+
               {/* Special Pricing (from Islamabad/Lahore) - For Honeymoon packages */}
-              {pkg.pricing && (pkg.pricing.fromIslamabad || pkg.pricing.fromLahore) && (
+              {false && pkg.pricing && (pkg.pricing.fromIslamabad || pkg.pricing.fromLahore) && (
                 <div className="space-y-4 mb-6">
                   {pkg.pricing.fromIslamabad && (
                     <div className="bg-white border border-gray-300 rounded-lg p-4">
@@ -3491,7 +3501,7 @@ export default function TourDetailPage() {
               )}
 
               {/* Karachi Specific Pricing */}
-              {pkg.pricing && (pkg.pricing.karachiQuadSharing || pkg.pricing.karachiTwinSharing) && (
+              {false && pkg.pricing && (pkg.pricing.karachiQuadSharing || pkg.pricing.karachiTwinSharing) && (
                 <div className="space-y-4 mb-6">
                   <div className="bg-white border border-orange-300 rounded-lg p-4">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">From Karachi</h3>
@@ -3636,7 +3646,7 @@ export default function TourDetailPage() {
               )}
 
               {/* Foreigner Pricing (USD) */}
-              {pkg.pricing && pkg.pricing.foreignerPricing && (
+              {false && pkg.pricing && pkg.pricing.foreignerPricing && (
                 <div className="bg-gradient-to-r from-green-50 to-teal-50 border-2 border-green-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">🌍 International Package Pricing (USD)</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -3669,7 +3679,7 @@ export default function TourDetailPage() {
               )}
 
               {/* Couple Package Pricing */}
-              {pkg.pricing && pkg.pricing.couplePackage && (
+              {false && pkg.pricing && pkg.pricing.couplePackage && (
                 <div className="bg-gradient-to-r from-pink-50 to-purple-50 border-2 border-pink-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">💑 Couple Package</h3>
                   <div className="text-center">
@@ -3680,7 +3690,7 @@ export default function TourDetailPage() {
               )}
 
               {/* Karachi Addon Pricing */}
-              {pkg.pricing && pkg.pricing.karachiAddon && (
+              {false && pkg.pricing && pkg.pricing.karachiAddon && (
                 <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 border-2 border-emerald-300 rounded-lg p-6 mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">✈️ Additional Charges for Karachi Participants</h3>
                   <div className="space-y-4">
@@ -3717,8 +3727,9 @@ export default function TourDetailPage() {
                     </div>
                   </div>
                 </div>
+
               )}
-              
+
               {/* Exceptions */}
               {pkg.exceptions && pkg.exceptions.length > 0 && (
                 <div className="mt-8 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-lg">
@@ -3919,8 +3930,14 @@ export default function TourDetailPage() {
             <div className="sticky top-24 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden max-h-[calc(100vh-7rem)] flex flex-col">
               {/* Price Header */}
               <div className="p-6 bg-gray-50 border-b border-gray-200 flex-shrink-0">
-                <div className="text-sm text-gray-600 mb-1">From:</div>
-                <div className="text-3xl font-bold text-gray-900">PKR {pkg.price.toLocaleString()}</div>
+                <div className="text-sm text-gray-600 mb-2">Latest price available on WhatsApp</div>
+                <button
+                  onClick={handleWhatsAppInquiry}
+                  type="button"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                >
+                  Get Latest Price
+                </button>
               </div>
 
               {/* Toggle Buttons */}
