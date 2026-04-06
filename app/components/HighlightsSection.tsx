@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const highlights = [
   {
     type: "image",
-    src: "/popup/5.PNG?v=20260406",
+    src: "/popup/10.jpeg?v=20260406",
     alt: "Mountain lake with boats",
     label: "Hunza Valley",
   },
