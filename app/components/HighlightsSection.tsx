@@ -7,25 +7,25 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const highlights = [
   {
     type: "image",
-    src: "/popup/5.PNG?v=20260329",
+    src: "/popup/5.PNG?v=20260406",
     alt: "Mountain lake with boats",
     label: "Hunza Valley",
   },
   {
     type: "image",
-    src: "/popup/6.jpeg?v=20260329",
+    src: "/popup/6.jpeg?v=20260406",
     alt: "Snow covered peaks",
     label: "Skardu Peaks",
   },
   {
     type: "image",
-    src: "/popup/7.jpeg?v=20260329",
+    src: "/popup/9.jpeg?v=20260406",
     alt: "Green valley and river",
     label: "Naran Valley",
   },
   {
     type: "video",
-    src: "/popup/8.MP4?v=20260329",
+    src: "/popup/8.MP4?v=20260406",
     alt: "Tour highlights video",
     label: "Fairy Meadows",
   },
