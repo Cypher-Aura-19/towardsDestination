@@ -15,6 +15,8 @@ import Link from "next/link";
 // Hotel Gallery Carousel Component
 function HotelGalleryCarousel({ hotelId }: { hotelId: string }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [videoErrorIndices, setVideoErrorIndices] = useState<number[]>([]);
+  const hotel = (hotelDetails as any)[hotelId];
   const hotelImages = hotelId === "2" 
     ? [
         "/hotel/hotel2/1.jpg",
@@ -24,6 +26,24 @@ function HotelGalleryCarousel({ hotelId }: { hotelId: string }) {
         "/hotel/hotel2/5.jpg",
         "/hotel/hotel2/6.jpg",
         "/hotel/hotel2/7.jpg"
+      ]
+    : hotelId === "1"
+    ? [
+        "/hotel/hotel1/IMG_9469.JPG.jpeg",
+        "/hotel/hotel1/IMG_9470.JPG.jpeg",
+        "/hotel/hotel1/IMG_9473.JPG.jpeg",
+        "/hotel/hotel1/IMG_9478.JPG.jpeg",
+        "/hotel/hotel1/IMG_9479.JPG.jpeg",
+        "/hotel/hotel1/IMG_9482.JPG.jpeg",
+        "/hotel/hotel1/IMG_9483.JPG.jpeg",
+        "/hotel/hotel1/IMG_9484.JPG.jpeg",
+        "/hotel/hotel1/IMG_9485.JPG.jpeg",
+        "/hotel/hotel1/IMG_9486.JPG.jpeg",
+        "/hotel/hotel1/IMG_9487.JPG.jpeg",
+        "/hotel/hotel1/IMG_9490.JPG.jpeg",
+        "/hotel/hotel1/IMG_9491.JPG.jpeg",
+        "/hotel/hotel1/IMG_9503.MOV",
+        "/hotel/hotel1/IMG_9504.MOV"
       ]
     : [
         "/hotel/1.jpeg",
@@ -51,22 +71,63 @@ function HotelGalleryCarousel({ hotelId }: { hotelId: string }) {
   return (
     <div className="relative w-full rounded-2xl overflow-hidden shadow-xl h-[400px] md:h-[500px] lg:h-[600px]">
       {/* Images */}
-      {hotelImages.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={image}
-            alt={`Hotel view ${index + 1}`}
-            fill
-            className="object-cover"
-            priority={index === 0}
-          />
-        </div>
-      ))}
+      {hotelImages.map((image, index) => {
+        const isVideo = /\.(mp4|mov|webm)$/i.test(image);
+        const hasVideoError = videoErrorIndices.includes(index);
+        const poster = hotel?.image || hotel?.images?.[0] || "/hotel.jpg";
+
+        return (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-700 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {isVideo && !hasVideoError ? (
+              (() => {
+                const base = image.replace(/\.[^/.]+$/, "");
+                const mp4 = `${base}.mp4`;
+                return (
+                  <video
+                    className="w-full h-full object-cover"
+                    controls={true}
+                    autoPlay={index === currentSlide}
+                    muted={index !== currentSlide}
+                    loop={index !== currentSlide}
+                    playsInline
+                    preload="metadata"
+                    poster={poster}
+                    onError={() => setVideoErrorIndices((s) => (s.includes(index) ? s : [...s, index]))}
+                  >
+                    <source src={mp4} type="video/mp4" />
+                    <source src={image} type="video/quicktime" />
+                    Your browser does not support the video tag.
+                  </video>
+                );
+              })()
+            ) : isVideo && hasVideoError ? (
+              <div className="w-full h-full bg-black flex items-center justify-center">
+                <div className="text-center">
+                  <div className="mb-3">
+                    <Image src={poster} alt="video fallback" width={800} height={450} className="object-cover rounded-lg" />
+                  </div>
+                  <a href={image} target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-lg">
+                    Open video in new tab
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <Image
+                src={image}
+                alt={`Hotel view ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            )}
+          </div>
+        );
+      })}
 
       {/* Navigation Arrows */}
       <button
@@ -84,24 +145,26 @@ function HotelGalleryCarousel({ hotelId }: { hotelId: string }) {
 
       {/* Thumbnail Navigation */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-2 bg-black/50 backdrop-blur-sm px-3 py-2 rounded-full">
-        {hotelImages.map((image, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`relative w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden transition-all border-2 ${
-              index === currentSlide
-                ? "border-white scale-110"
-                : "border-transparent opacity-60 hover:opacity-100"
-            }`}
-          >
-            <Image
-              src={image}
-              alt={`Thumbnail ${index + 1}`}
-              fill
-              className="object-cover"
-            />
-          </button>
-        ))}
+        {hotelImages.map((image, index) => {
+          const isVideo = /\.(mp4|mov|webm)$/i.test(image);
+          return (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`relative w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden transition-all border-2 ${
+                index === currentSlide
+                  ? "border-white scale-110"
+                  : "border-transparent opacity-60 hover:opacity-100"
+              }`}
+            >
+              {isVideo ? (
+                <video src={image} className="w-full h-full object-cover" muted autoPlay loop playsInline />
+              ) : (
+                <Image src={image} alt={`Thumbnail ${index + 1}`} fill className="object-cover" />
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Image Counter */}
@@ -120,9 +183,23 @@ const hotelDetails: any = {
     address: "Nust Uni EME Main Peshawar Rd, Jhangi Syedian, Islamabad",
     rating: 4,
     reviews: 0,
-    price: 3500,
-    image: "/hotel/4.jpeg",
-    images: ["/1.jpeg", "/2.jpeg", "/3.jpeg"],
+    price: 4550,
+    image: "/hotel/hotel1/IMG_9469.JPG.jpeg",
+    images: [
+      "/hotel/hotel1/IMG_9469.JPG.jpeg",
+      "/hotel/hotel1/IMG_9470.JPG.jpeg",
+      "/hotel/hotel1/IMG_9473.JPG.jpeg",
+      "/hotel/hotel1/IMG_9478.JPG.jpeg",
+      "/hotel/hotel1/IMG_9479.JPG.jpeg",
+      "/hotel/hotel1/IMG_9482.JPG.jpeg",
+      "/hotel/hotel1/IMG_9483.JPG.jpeg",
+      "/hotel/hotel1/IMG_9484.JPG.jpeg",
+      "/hotel/hotel1/IMG_9485.JPG.jpeg",
+      "/hotel/hotel1/IMG_9486.JPG.jpeg",
+      "/hotel/hotel1/IMG_9487.JPG.jpeg",
+      "/hotel/hotel1/IMG_9490.JPG.jpeg",
+      "/hotel/hotel1/IMG_9491.JPG.jpeg"
+    ],
     description: "ONE INN Hotel is a modern, budget-friendly hotel located on the main Peshawar Road in Islamabad. Offering comfortable accommodations with contemporary amenities, this hotel is ideal for business travelers and tourists alike. Its strategic location provides easy access to major attractions, universities, and the city center.",
     facilities: [
       "Free WiFi",
@@ -137,14 +214,14 @@ const hotelDetails: any = {
       "Airport Shuttle (Paid)"
     ],
     roomTypes: [
-      { type: "Economy Room (Non-AC)", price: 3500, capacity: "2 Adults", image: "/hotel/1.jpeg" },
-      { type: "Economy Room (AC)", price: 4500, capacity: "2 Adults", image: "/hotel/1.jpeg" },
-      { type: "Deluxe Room (Non-AC)", price: 5000, capacity: "2 Adults", image: "/hotel/2.jpeg" },
-      { type: "Deluxe Room (Inverter AC)", price: 6000, capacity: "2 Adults", image: "/hotel/2.jpeg" },
-      { type: "Deluxe Room Plus (Non-AC)", price: 6000, capacity: "3 Adults", image: "/hotel/3.jpeg" },
-      { type: "Deluxe Room Plus (Inverter AC)", price: 7000, capacity: "3 Adults", image: "/hotel/3.jpeg" },
-      { type: "Family Room (Non-AC)", price: 7500, capacity: "5 Adults", image: "/hotel/4.jpeg" },
-      { type: "Family Room (Inverter AC)", price: 9000, capacity: "5 Adults", image: "/hotel/4.jpeg" }
+      { type: "Economy Room (Non-AC)", price: 4550, capacity: "2 Adults", image: "/hotel/hotel1/IMG_9469.JPG.jpeg" },
+      { type: "Economy Room (AC)", price: 5850, capacity: "2 Adults", image: "/hotel/hotel1/IMG_9469.JPG.jpeg" },
+      { type: "Deluxe Room (Non-AC)", price: 6500, capacity: "2 Adults", image: "/hotel/hotel1/IMG_9470.JPG.jpeg" },
+      { type: "Deluxe Room (Inverter AC)", price: 7800, capacity: "2 Adults", image: "/hotel/hotel1/IMG_9470.JPG.jpeg" },
+      { type: "Deluxe Room Plus (Non-AC)", price: 7800, capacity: "3 Adults", image: "/hotel/hotel1/IMG_9473.JPG.jpeg" },
+      { type: "Deluxe Room Plus (Inverter AC)", price: 9100, capacity: "3 Adults", image: "/hotel/hotel1/IMG_9473.JPG.jpeg" },
+      { type: "Family Room (Non-AC)", price: 9750, capacity: "5 Adults", image: "/hotel/hotel1/IMG_9478.JPG.jpeg" },
+      { type: "Family Room (Inverter AC)", price: 11700, capacity: "5 Adults", image: "/hotel/hotel1/IMG_9478.JPG.jpeg" }
     ],
     nearbyAttractions: [
       "NUST University - 2 km",
@@ -171,7 +248,7 @@ const hotelDetails: any = {
     address: "Kalam Valley, Swat, Khyber Pakhtunkhwa",
     rating: 5,
     reviews: 0,
-    price: 5999,
+    price: 7799,
     image: "/hotel/hotel2/1.jpg",
     images: ["/hotel/hotel2/1.jpg", "/hotel/hotel2/2.jpg", "/hotel/hotel2/3.jpg"],
     description: "Imperial Resort Kalam is a premium mountain resort nestled in the breathtaking Kalam Valley of Swat. Surrounded by majestic mountains and pristine natural beauty, this resort offers a perfect blend of luxury and comfort. With modern amenities, stunning views, and warm hospitality, Imperial Resort is your ideal retreat for a memorable mountain getaway.",
@@ -188,11 +265,11 @@ const hotelDetails: any = {
       "Garden Area"
     ],
     roomTypes: [
-      { type: "Deluxe Room", price: 5999, capacity: "2 Persons", beds: "01 King Size Bed or 01 Twin Beds", rooms: "08 rooms", image: "/hotel/hotel2/2.jpg" },
-      { type: "Deluxe Plus Room", price: 6999, capacity: "3 Persons", beds: "01 King Size Bed + 01 Bed", rooms: "15 rooms", image: "/hotel/hotel2/3.jpg" },
-      { type: "Presidential Room", price: 7999, capacity: "4 Persons", beds: "01 King Size Bed or 02 Twin Beds", rooms: "12 rooms", image: "/hotel/hotel2/4.jpg" },
-      { type: "Family Room", price: 9999, capacity: "4 Persons", beds: "01 King Size Bed or 02 Twin Beds + Sofa Cum Bed", rooms: "03 rooms", image: "/hotel/hotel2/5.jpg" },
-      { type: "Family Suite", price: 12999, capacity: "5 Persons", beds: "01 King Size Bed in One Room + 02 Twin Beds with Sofa Cum bed in Second Room or 01 Twin Beds", rooms: "03 Suite", image: "/hotel/hotel2/6.jpg" }
+      { type: "Deluxe Room", price: 7799, capacity: "2 Persons", beds: "01 King Size Bed or 01 Twin Beds", rooms: "08 rooms", image: "/hotel/hotel2/2.jpg" },
+      { type: "Deluxe Plus Room", price: 9099, capacity: "3 Persons", beds: "01 King Size Bed + 01 Bed", rooms: "15 rooms", image: "/hotel/hotel2/3.jpg" },
+      { type: "Presidential Room", price: 10399, capacity: "4 Persons", beds: "01 King Size Bed or 02 Twin Beds", rooms: "12 rooms", image: "/hotel/hotel2/4.jpg" },
+      { type: "Family Room", price: 12999, capacity: "4 Persons", beds: "01 King Size Bed or 02 Twin Beds + Sofa Cum Bed", rooms: "03 rooms", image: "/hotel/hotel2/5.jpg" },
+      { type: "Family Suite", price: 16899, capacity: "5 Persons", beds: "01 King Size Bed in One Room + 02 Twin Beds with Sofa Cum bed in Second Room or 01 Twin Beds", rooms: "03 Suite", image: "/hotel/hotel2/6.jpg" }
     ],
     nearbyAttractions: [
       "Kalam Valley - 1 km",
@@ -221,7 +298,7 @@ export default function HotelDetail() {
   const id = params?.id as string;
   const hotel = hotelDetails[id];
 
-  const [selectedRoomPrice, setSelectedRoomPrice] = useState(hotel?.price || 3500);
+  const [selectedRoomPrice, setSelectedRoomPrice] = useState(hotel?.price || 4550);
   const [bookingData, setBookingData] = useState({
     name: "",
     email: "",
