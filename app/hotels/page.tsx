@@ -15,8 +15,8 @@ const hotels = [
     address: "Nust Uni EME Main Peshawar Rd, jhangi Syedian, Islamabad",
     rating: 4,
     reviews: 0,
-    price: 3499,
-    image: "/one.jpeg",
+    price: 4549,
+    image: "/hotel/hotel1/IMG_9469.JPG.jpeg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Mountain View"]
   },
@@ -27,7 +27,7 @@ const hotels = [
     address: "Kalam Valley, Swat, Khyber Pakhtunkhwa",
     rating: 5,
     reviews: 0,
-    price: 5999,
+    price: 7799,
     image: "/hotel/hotel2/7.jpg",
     topPick: true,
     facilities: ["WiFi", "Parking", "Restaurant", "Mountain View", "24/7 Hot Water", "Breakfast Included"]
