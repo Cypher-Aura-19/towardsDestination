@@ -7,25 +7,49 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const highlights = [
   {
     type: "image",
-    src: "/popup/10.jpeg?v=20260406",
-    alt: "Mountain lake with boats",
-    label: "Hunza Valley",
+    src: "/popup/IMG_0289.JPG.jpeg",
+    alt: "Tour Highlight 1",
+    label: "Tour Highlight 1",
   },
   {
     type: "image",
-    src: "/popup/6.jpeg?v=20260406",
-    alt: "Snow covered peaks",
-    label: "Skardu Peaks",
+    src: "/popup/IMG_0290.JPG.jpeg",
+    alt: "Tour Highlight 2",
+    label: "Tour Highlight 2",
   },
   {
     type: "image",
-    src: "/popup/9.jpeg?v=20260406",
-    alt: "Green valley and river",
-    label: "Naran Valley",
+    src: "/popup/IMG_0291.JPG.jpeg",
+    alt: "Tour Highlight 3",
+    label: "Tour Highlight 3",
+  },
+  {
+    type: "image",
+    src: "/popup/IMG_0292.JPG.jpeg",
+    alt: "Tour Highlight 4",
+    label: "Tour Highlight 4",
+  },
+  {
+    type: "image",
+    src: "/popup/IMG_0293.JPG.jpeg",
+    alt: "Tour Highlight 5",
+    label: "Tour Highlight 5",
+  },
+  {
+    type: "image",
+    src: "/popup/IMG_0294.JPG.jpeg",
+    alt: "Tour Highlight 6",
+    label: "Tour Highlight 6",
+  },
+  {
+    type: "image",
+    src: "/popup/IMG_0295.JPG.jpeg",
+    alt: "Tour Highlight 7",
+    label: "Tour Highlight 7",
   },
   {
     type: "video",
-    src: "/popup/8.MP4?v=20260406",
+    src: "/popup/8.MP4",
     alt: "Tour highlights video",
     label: "Fairy Meadows",
   },
@@ -64,7 +88,7 @@ export default function HighlightsSection() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-0 sm:px-4 md:px-6">
         {/* Carousel only */}
         <div className="relative rounded-none sm:rounded-3xl overflow-hidden">
-          <div 
+          <div
             className="relative aspect-video w-full min-h-[280px] sm:min-h-[340px] md:min-h-[420px] cursor-pointer"
             onClick={handleImageClick}
           >
@@ -126,7 +150,7 @@ export default function HighlightsSection() {
               />
             ))}
           </div>
-          </div>
+        </div>
       </div>
     </section>
   );

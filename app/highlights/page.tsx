@@ -7,10 +7,14 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
 const HIGHLIGHT_MEDIA = [
-  { type: "image", src: "/popup/10.jpeg?v=20260406" },
-  { type: "image", src: "/popup/6.jpeg?v=20260406" },
-  { type: "image", src: "/popup/9.jpeg?v=20260406" },
-  { type: "video", src: "/popup/8.MP4?v=20260406" },
+  { type: "image", src: "/popup/IMG_0289.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0290.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0291.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0292.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0293.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0294.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_0295.JPG.jpeg" },
+  { type: "video", src: "/popup/8.MP4" },
 ] as const;
 
 export default function HighlightsPage() {
@@ -69,7 +73,7 @@ export default function HighlightsPage() {
         {/* Background Decoration */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse-glow" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -111,19 +115,19 @@ export default function HighlightsPage() {
                   playsInline
                 />
               )}
-              
+
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500"></div>
-              
+
               {/* Image Number Badge */}
               <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-emerald-600 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg group-hover:scale-110 transition-transform duration-300 flex items-center gap-1.5">
                 <Camera className="w-3 h-3" />
                 <span>#{index + 1}</span>
               </div>
-              
+
               {/* View Icon on Hover */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 shadow-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300">
@@ -133,7 +137,7 @@ export default function HighlightsPage() {
             </div>
           ))}
         </div>
-        
+
         {/* Info Text */}
         <div className="text-center mt-12">
           <p className="text-gray-500 text-sm font-body" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -144,11 +148,11 @@ export default function HighlightsPage() {
 
       {/* Enhanced Lightbox Modal */}
       {lightboxImage && (
-        <div 
+        <div
           className="fixed inset-0 z-[100] flex items-center justify-center p-2 sm:p-4 bg-black/95 backdrop-blur-md animate-fade-in"
           onClick={closeLightbox}
         >
-          <div 
+          <div
             className="relative max-w-[95vw] max-h-[95vh] rounded-2xl overflow-hidden shadow-2xl animate-scale-in"
             onClick={(e) => e.stopPropagation()}
           >
@@ -214,11 +218,10 @@ export default function HighlightsPage() {
                       setLightboxIndex(index);
                       setLightboxImage(HIGHLIGHT_MEDIA[index].src);
                     }}
-                    className={`rounded-full transition-all duration-300 ${
-                      index === lightboxIndex 
-                        ? "bg-white w-8 h-2" 
+                    className={`rounded-full transition-all duration-300 ${index === lightboxIndex
+                        ? "bg-white w-8 h-2"
                         : "bg-white/50 w-2 h-2 hover:bg-white/75"
-                    }`}
+                      }`}
                     aria-label={`Go to image ${index + 1}`}
                   />
                 ))}
