@@ -7,45 +7,33 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const highlights = [
   {
     type: "image",
-    src: "/popup/IMG_0289.JPG.jpeg",
+    src: "/popup/IMG_2669.PNG",
     alt: "Tour Highlight 1",
     label: "Tour Highlight 1",
   },
   {
     type: "image",
-    src: "/popup/IMG_0290.JPG.jpeg",
+    src: "/popup/IMG_2717.PNG",
     alt: "Tour Highlight 2",
     label: "Tour Highlight 2",
   },
   {
     type: "image",
-    src: "/popup/IMG_0291.JPG.jpeg",
+    src: "/popup/IMG_2719.PNG",
     alt: "Tour Highlight 3",
     label: "Tour Highlight 3",
   },
   {
     type: "image",
-    src: "/popup/IMG_0292.JPG.jpeg",
+    src: "/popup/IMG_2732.PNG",
     alt: "Tour Highlight 4",
     label: "Tour Highlight 4",
   },
   {
     type: "image",
-    src: "/popup/IMG_0293.JPG.jpeg",
+    src: "/popup/IMG_2750.PNG",
     alt: "Tour Highlight 5",
     label: "Tour Highlight 5",
-  },
-  {
-    type: "image",
-    src: "/popup/IMG_0294.JPG.jpeg",
-    alt: "Tour Highlight 6",
-    label: "Tour Highlight 6",
-  },
-  {
-    type: "image",
-    src: "/popup/IMG_0295.JPG.jpeg",
-    alt: "Tour Highlight 7",
-    label: "Tour Highlight 7",
   },
   {
     type: "video",
