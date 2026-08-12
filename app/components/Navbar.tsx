@@ -161,6 +161,12 @@ export default function Navbar() {
                 >
                   🏨 Hotel Services
                 </Link>
+                <Link 
+                  href="/clothing"
+                  className="block px-5 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors"
+                >
+                  👕 Clothing Services
+                </Link>
               </div>
             </div>
             <Link 
@@ -339,6 +345,13 @@ export default function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   🏨 Hotel Services
+                </Link>
+                <Link 
+                  href="/clothing"
+                  className="block pl-8 pr-4 py-3 text-white/90 hover:bg-white/20 hover:text-emerald-400 transition-all duration-200 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  👕 Clothing Services
                 </Link>
               </div>
             </div>

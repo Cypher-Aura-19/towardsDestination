@@ -51,13 +51,7 @@ export default function AboutPage() {
       usePlaceholder: false,
       description: "Valuable member of the team"
     },
-    {
-      name: "Mis Iqra Arshad Faraz",
-      role: "Team Member",
-      image: "/team/3.png",
-      usePlaceholder: false,
-      description: "Valuable member of the team"
-    },
+
     {
       name: "Shafah Mehmood",
       role: "Team Member",
@@ -65,20 +59,7 @@ export default function AboutPage() {
       usePlaceholder: false,
       description: "Valuable member of the team"
     },
-    {
-      name: "Ms. Fatima Nadeem",
-      role: "Team Member",
-      image: "/team/5.png",
-      usePlaceholder: false,
-      description: "Valuable member of the team"
-    },
-    {
-      name: "Mariam Tahir",
-      role: "Team Member",
-      image: "/team/6.png",
-      usePlaceholder: false,
-      description: "Valuable member of the team"
-    },
+
     {
       name: "Mr. Hafiz Zeeshan",
       role: "Team Member",

@@ -5,13 +5,11 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const POPUP_MEDIA = [
-  { type: "image", src: "/popup/IMG_0289.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0290.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0291.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0292.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0293.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0294.JPG.jpeg" },
-  { type: "image", src: "/popup/IMG_0295.JPG.jpeg" },
+  { type: "image", src: "/popup/IMG_2669.PNG" },
+  { type: "image", src: "/popup/IMG_2717.PNG" },
+  { type: "image", src: "/popup/IMG_2719.PNG" },
+  { type: "image", src: "/popup/IMG_2732.PNG" },
+  { type: "image", src: "/popup/IMG_2750.PNG" },
   { type: "video", src: "/popup/8.MP4" },
 ] as const;
 
