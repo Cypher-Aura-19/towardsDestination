@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function TopBar() {
@@ -10,16 +10,6 @@ export default function TopBar() {
         <div className="flex flex-wrap items-center justify-between gap-2">
           {/* Contact Info */}
           <div className="flex flex-wrap items-center gap-3 xs:gap-4 sm:gap-6">
-            <a 
-              href="https://maps.app.goo.gl/rNE3RXtnzyVFKpqC7?g_st=ic"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-emerald-100 transition-colors"
-            >
-              <MapPin className="w-4 h-4 shrink-0" />
-              <span className="hidden lg:inline text-sm font-medium">Office no 406, Main Peshawar Rd, Jhangi Sayedan, Islamabad</span>
-              <span className="lg:hidden text-sm font-medium">Islamabad</span>
-            </a>
             
             <a 
               href="mailto:info@towardsdestination.pk"
