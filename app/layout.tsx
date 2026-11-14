@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "48x48", type: "image/x-icon" },
+      { url: "/favicon.ico?v=3", sizes: "48x48", type: "image/x-icon" },
       { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
     apple: [
       { url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicon.ico?v=2",
+    shortcut: "/favicon.ico?v=3",
   },
   manifest: "/site.webmanifest",
   robots: {
@@ -71,11 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" sizes="48x48" />
+        <link rel="icon" href="/favicon.ico?v=3" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
-        <link rel="shortcut icon" href="/favicon.ico?v=2" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180" />
+        <link rel="shortcut icon" href="/favicon.ico?v=3" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180" />
         <meta name="apple-mobile-web-app-title" content="TowardsDestination.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
